@@ -1,0 +1,284 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="About Lincoln" description="Lincoln Brief 편집장 Lincoln과 운용 철학 소개">
+  <section class="bg-ink-900">
+    <!-- ============================================================
+         PORTRAIT HERO
+         ============================================================ -->
+    <div class="border-b border-ink-600">
+      <div class="container-x py-20 md:py-28">
+        <div class="mx-auto max-w-5xl">
+          <div class="grid grid-cols-1 gap-12 md:grid-cols-2 md:gap-16 md:items-center">
+            <!-- Portrait -->
+            <div class="order-2 md:order-1">
+              <div class="relative mx-auto max-w-md">
+                <img
+                  src="/lincoln-photo.jpg"
+                  alt="Lincoln — student of economics, builder of prosperity"
+                  width="1536"
+                  height="1024"
+                  class="w-full border border-gold-700/60 shadow-[0_30px_80px_-20px_rgba(0,0,0,0.8)]"
+                />
+                <!-- Subtle vignette inside frame -->
+                <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink-900/40 via-transparent to-transparent"></div>
+                <!-- Corner marks -->
+                <span class="absolute -left-2 -top-2 h-5 w-5 border-l-2 border-t-2 border-gold-500"></span>
+                <span class="absolute -right-2 -top-2 h-5 w-5 border-r-2 border-t-2 border-gold-500"></span>
+                <span class="absolute -bottom-2 -left-2 h-5 w-5 border-b-2 border-l-2 border-gold-500"></span>
+                <span class="absolute -bottom-2 -right-2 h-5 w-5 border-b-2 border-r-2 border-gold-500"></span>
+                <!-- Caption -->
+                <p class="mt-4 text-center text-[10px] uppercase tracking-widest-2 text-ink-300">
+                  A. LINCOLN · STUDENT OF ECONOMICS, BUILDER OF PROSPERITY
+                </p>
+              </div>
+            </div>
+
+            <!-- Intro text -->
+            <div class="order-1 md:order-2">
+              <p class="eyebrow mb-6">— About the Editor —</p>
+              <h1 class="font-serif text-5xl font-normal leading-tight tracking-tight text-ink-50 md:text-6xl">
+                저는 <span class="italic text-gold-gradient">Lincoln</span>입니다.
+              </h1>
+              <div class="mt-8 h-px w-16 bg-gold-500"></div>
+              <p class="mt-8 font-serif text-lg italic leading-relaxed text-ink-100">
+                매일 아침, 시장의 소음을 끊고 본질만 추리는 사람입니다.
+                관찰하고, 기록하고, 기다립니다.
+              </p>
+              <p class="mt-6 text-sm leading-relaxed text-ink-200">
+                책상엔 Adam Smith, John Stuart Mill, 그리고 오늘의 시세표가 함께 놓여있습니다.
+                <em class="text-gold-400 not-italic">번영의 과학</em>은 200년 전에도 지금도 같은 원리로 움직인다고 믿어서.
+              </p>
+              <p class="mt-6 text-sm leading-relaxed text-ink-200">
+                Lincoln Brief는 시황·종목·예측·이슈 네 갈래로
+                매일 한 통의 정선된 글을 발행합니다.
+                투자 권유가 아닌 <strong class="text-gold-400">관찰의 기록</strong>입니다.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================================
+         QUOTE BLOCK — Lincoln's words, adapted for the market
+         ============================================================ -->
+    <div class="border-b border-ink-600 bg-ink-950">
+      <div class="container-x py-20 md:py-28">
+        <div class="mx-auto max-w-4xl text-center">
+          <p class="eyebrow mb-8">— In His Own Words —</p>
+          <div class="ornament mb-12">
+            <span class="text-gold-400">◆</span>
+          </div>
+
+          <blockquote class="font-serif text-3xl italic leading-snug text-ink-50 md:text-4xl">
+            “그 일이 가능하고, 또 반드시<br/>
+            <span class="text-gold-gradient">이루어져야 한다고 결심하라.</span><br/>
+            그러면 길은 보이게 될 것이다.”
+          </blockquote>
+          <p class="mt-8 text-[11px] uppercase tracking-widest-3 text-ink-300">
+            — Abraham Lincoln · 1862년 연차 의회 교서
+          </p>
+          <p class="mx-auto mt-8 max-w-xl text-sm leading-relaxed text-ink-200">
+            결심이 먼저고 방법은 따라온다. 이것이 Lincoln Brief 가
+            매일 같은 자리에서, 같은 시간에, 같은 톤으로 쓰는 이유입니다.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================================
+         INVESTMENT PHILOSOPHY
+         ============================================================ -->
+    <div class="border-b border-ink-600">
+      <div class="container-x py-20 md:py-28">
+        <div class="mx-auto max-w-4xl">
+          <div class="mb-12 text-center">
+            <p class="eyebrow mb-4">— Investment Philosophy —</p>
+            <h2 class="headline-lg text-ink-50">운용 철학</h2>
+            <div class="mx-auto mt-8 h-px w-12 bg-gold-500"></div>
+          </div>
+
+          <div class="grid grid-cols-1 gap-px overflow-hidden border border-ink-600 bg-ink-600 md:grid-cols-2">
+            <!-- 1 -->
+            <div class="bg-ink-900 p-10">
+              <span class="index-num">No. 01</span>
+              <h3 class="headline-sm mt-6 text-ink-50">정보보다 통찰</h3>
+              <p class="mt-4 text-sm leading-relaxed text-ink-200">
+                매일 30개의 헤드라인이 아니라, 그 헤드라인이 가리키는
+                <em class="text-gold-400 not-italic">하나의 신호</em>를 봅니다.
+                속도보다 깊이입니다.
+              </p>
+              <blockquote class="mt-6 border-l-2 border-gold-500 pl-4 font-serif text-sm italic text-ink-100">
+                "거의 맞는 말과 정확한 말의 차이는,<br/>
+                반딧불이와 번개의 차이다."<br/>
+                <span class="not-italic text-[10px] uppercase tracking-widest-2 text-ink-300">— Mark Twain (1890)</span>
+              </blockquote>
+            </div>
+
+            <!-- 2 -->
+            <div class="bg-ink-900 p-10">
+              <span class="index-num">No. 02</span>
+              <h3 class="headline-sm mt-6 text-ink-50">예측이 아닌 준비</h3>
+              <p class="mt-4 text-sm leading-relaxed text-ink-200">
+                시장은 예측의 영역이 아니라
+                <em class="text-gold-400 not-italic">시나리오의 영역</em>입니다.
+                세 가지 시나리오를 준비해두면, 어떤 결과가 나와도 패닉이 없습니다.
+              </p>
+              <blockquote class="mt-6 border-l-2 border-gold-500 pl-4 font-serif text-sm italic text-ink-100">
+                "미래를 예측하는 가장 좋은 방법은<br/>
+                그것을 만드는 것이다."<br/>
+                <span class="not-italic text-[10px] uppercase tracking-widest-2 text-ink-300">— Peter Drucker</span>
+              </blockquote>
+            </div>
+
+            <!-- 3 -->
+            <div class="bg-ink-900 p-10">
+              <span class="index-num">No. 03</span>
+              <h3 class="headline-sm mt-6 text-ink-50">손실을 먼저 본다</h3>
+              <p class="mt-4 text-sm leading-relaxed text-ink-200">
+                수익은 시장이 결정하지만, 손실은 자기 자신이 결정합니다.
+                포지션 크기·진입가·손절점 — <em class="text-gold-400 not-italic">통제 가능한 것</em>부터 다스립니다.
+              </p>
+              <blockquote class="mt-6 border-l-2 border-gold-500 pl-4 font-serif text-sm italic text-ink-100">
+                "Rule No.1: 절대 돈을 잃지 마라.<br/>
+                Rule No.2: Rule No.1을 잊지 마라."<br/>
+                <span class="not-italic text-[10px] uppercase tracking-widest-2 text-ink-300">— Warren Buffett</span>
+              </blockquote>
+            </div>
+
+            <!-- 4 -->
+            <div class="bg-ink-900 p-10">
+              <span class="index-num">No. 04</span>
+              <h3 class="headline-sm mt-6 text-ink-50">기다림이 곧 실력</h3>
+              <p class="mt-4 text-sm leading-relaxed text-ink-200">
+                수익은 타이밍에서 오지만,
+                <em class="text-gold-400 not-italic">진짜 실력은 기다림</em>에서 나옵니다.
+                매일 사고팔지 않는 것이 가장 어려운 매매입니다.
+              </p>
+              <blockquote class="mt-6 border-l-2 border-gold-500 pl-4 font-serif text-sm italic text-ink-100">
+                "느리게 가더라도 멈추지만 않는다면,<br/>
+                그것으로 충분하다."<br/>
+                <span class="not-italic text-[10px] uppercase tracking-widest-2 text-ink-300">— 공자(孔子) · 논어</span>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================================
+         TRACK RECORD — Honest first-issue framing
+         ============================================================ -->
+    <div class="border-b border-ink-600 bg-ink-950">
+      <div class="container-x py-20 md:py-28">
+        <div class="mx-auto max-w-4xl">
+          <div class="mb-12 text-center">
+            <p class="eyebrow mb-4">— Track Record —</p>
+            <h2 class="headline-lg text-ink-50">기록</h2>
+            <div class="mx-auto mt-8 h-px w-12 bg-gold-500"></div>
+            <p class="mx-auto mt-8 max-w-xl text-sm leading-relaxed text-ink-200">
+              아직 첫 호입니다. 향후 모든 발행 글의 예측·전망은
+              <strong class="text-gold-400">사후 자기검증 페이지</strong>에 누적 공개됩니다.
+              맞은 것도, 틀린 것도, 동일한 무게로 기록합니다.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-2 gap-px overflow-hidden border border-ink-600 bg-ink-600 md:grid-cols-4">
+            <div class="bg-ink-900 p-8 text-center">
+              <p class="text-[10px] uppercase tracking-widest-2 text-ink-300">총 발행</p>
+              <p class="mt-4 font-serif text-4xl text-gold-400">4</p>
+              <p class="mt-2 text-[10px] uppercase tracking-widest-2 text-ink-300">Issues</p>
+            </div>
+            <div class="bg-ink-900 p-8 text-center">
+              <p class="text-[10px] uppercase tracking-widest-2 text-ink-300">시작일</p>
+              <p class="mt-4 font-serif text-4xl text-gold-400">5/14</p>
+              <p class="mt-2 text-[10px] uppercase tracking-widest-2 text-ink-300">2026</p>
+            </div>
+            <div class="bg-ink-900 p-8 text-center">
+              <p class="text-[10px] uppercase tracking-widest-2 text-ink-300">예측 검증</p>
+              <p class="mt-4 font-serif text-4xl text-ink-200">—</p>
+              <p class="mt-2 text-[10px] uppercase tracking-widest-2 text-ink-300">Pending</p>
+            </div>
+            <div class="bg-ink-900 p-8 text-center">
+              <p class="text-[10px] uppercase tracking-widest-2 text-ink-300">발행 주기</p>
+              <p class="mt-4 font-serif text-3xl text-gold-400">Daily</p>
+              <p class="mt-2 text-[10px] uppercase tracking-widest-2 text-ink-300">06:00 KST</p>
+            </div>
+          </div>
+
+          <p class="mt-12 text-center text-xs leading-relaxed text-ink-300">
+            ※ 모든 예측·전망은 발행 시점의 정보로 작성되며,
+            결과는 분기별로 정직하게 사후 평가됩니다.<br/>
+            수익 인증·종목 권유는 본 사이트의 운영 원칙에 반합니다.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================================
+         DOES / DOESN'T
+         ============================================================ -->
+    <div class="border-b border-ink-600">
+      <div class="container-x py-20 md:py-28">
+        <div class="mx-auto grid max-w-4xl grid-cols-1 gap-12 md:grid-cols-2">
+          <div>
+            <p class="eyebrow mb-4 text-gold-400">— Does —</p>
+            <h3 class="headline-sm mb-6 text-ink-50">다루는 것</h3>
+            <ul class="space-y-4 text-sm leading-relaxed text-ink-100">
+              <li class="flex gap-3"><span class="mt-1.5 h-px w-3 shrink-0 bg-gold-500"></span><span><strong class="text-ink-50">데일리 시황</strong> — 매일 06:00, 미국 마감 + 한국 개장 핵심</span></li>
+              <li class="flex gap-3"><span class="mt-1.5 h-px w-3 shrink-0 bg-gold-500"></span><span><strong class="text-ink-50">종목 분석</strong> — 펀더멘털 · 차트 · 뉴스 흐름</span></li>
+              <li class="flex gap-3"><span class="mt-1.5 h-px w-3 shrink-0 bg-gold-500"></span><span><strong class="text-ink-50">시장 예측</strong> — 거시 · 섹터 시나리오, 확률 가중</span></li>
+              <li class="flex gap-3"><span class="mt-1.5 h-px w-3 shrink-0 bg-gold-500"></span><span><strong class="text-ink-50">경제 이슈</strong> — 금리 · 환율 · 정책 · 지정학</span></li>
+            </ul>
+          </div>
+
+          <div>
+            <p class="eyebrow mb-4 text-bull">— Doesn't —</p>
+            <h3 class="headline-sm mb-6 text-ink-50">다루지 않는 것</h3>
+            <ul class="space-y-4 text-sm leading-relaxed text-ink-100">
+              <li class="flex gap-3"><span class="mt-1.5 h-px w-3 shrink-0 bg-bull"></span><span>특정 종목 <strong class="text-ink-50">매수·매도 권유</strong></span></li>
+              <li class="flex gap-3"><span class="mt-1.5 h-px w-3 shrink-0 bg-bull"></span><span>리딩방 · 코드 · 유료 시그널</span></li>
+              <li class="flex gap-3"><span class="mt-1.5 h-px w-3 shrink-0 bg-bull"></span><span>수익 인증 · 자랑</span></li>
+              <li class="flex gap-3"><span class="mt-1.5 h-px w-3 shrink-0 bg-bull"></span><span>확인되지 않은 루머 · 단정적 미래 발언</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="mx-auto mt-16 max-w-3xl border border-ink-600 bg-ink-950 p-6">
+          <p class="text-xs leading-relaxed text-ink-200">
+            <strong class="text-gold-400">법적 면책.</strong>
+            본 사이트의 모든 콘텐츠는 정보 제공·교육 목적으로 작성되며, 「자본시장과 금융투자업에 관한 법률」상 투자자문이나 권유에 해당하지 않습니다.
+            모든 투자 판단과 책임은 독자 본인에게 있습니다.
+            Lincoln은 글에 언급된 종목의 보유 여부를 게시일 기준으로 상시 공개합니다.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================================
+         CONTACT / ELSEWHERE
+         ============================================================ -->
+    <div class="bg-ink-950">
+      <div class="container-x py-20 md:py-28">
+        <div class="mx-auto max-w-3xl text-center">
+          <p class="eyebrow mb-6">— Elsewhere —</p>
+          <h2 class="headline-md text-ink-50">연결하기</h2>
+          <div class="mx-auto mt-8 h-px w-12 bg-gold-500"></div>
+
+          <div class="mt-12 flex flex-wrap items-center justify-center gap-4">
+            <a href="https://blog.naver.com/lincolnstory" target="_blank" rel="noopener" class="btn-ghost">Naver Blog</a>
+            <a href="/rss.xml" class="btn-ghost">RSS</a>
+            <a href="#subscribe" class="btn-gold-solid">Subscribe</a>
+          </div>
+
+          <div class="mx-auto mt-20 max-w-prose">
+            <div class="mx-auto h-px w-12 bg-gold-500"></div>
+            <p class="mt-8 font-serif text-2xl italic text-ink-100">— Lincoln</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

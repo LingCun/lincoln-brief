@@ -1,0 +1,148 @@
+---
+// Pagefind 검색 모달 — 빌드 후에만 실제 동작 (dev 모드에선 안내 메시지)
+const isDev = import.meta.env.DEV;
+---
+
+<div
+  id="search-modal"
+  class="fixed inset-0 z-[70] hidden items-start justify-center bg-ink-950/90 backdrop-blur p-4 pt-[10vh] md:p-8 md:pt-[12vh]"
+  role="dialog"
+  aria-modal="true"
+  aria-labelledby="search-title"
+  aria-hidden="true"
+>
+  <div class="w-full max-w-2xl border border-gold-700/50 bg-ink-900 shadow-[0_0_60px_-10px_rgba(216,184,120,0.2)]">
+    <div class="flex items-center justify-between border-b border-ink-600 px-6 py-4">
+      <h2 id="search-title" class="eyebrow">— Search the Archive —</h2>
+      <button
+        id="search-close"
+        aria-label="검색 닫기"
+        class="p-1 text-ink-200 hover:text-gold-400"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+
+    <div id="search-container" class="px-6 py-6">
+      {isDev ? (
+        <div class="border border-dashed border-ink-600 p-8 text-center">
+          <p class="font-serif text-lg italic text-ink-50">검색은 빌드 후에 활성화됩니다.</p>
+          <p class="mt-3 text-xs uppercase tracking-widest-2 text-ink-300">
+            <code class="font-mono text-gold-400">npm run build && npm run preview</code>
+          </p>
+          <p class="mt-4 text-sm text-ink-200">
+            Pagefind가 빌드 산출물 (<code class="text-gold-400">dist/</code>)을 색인합니다.
+          </p>
+        </div>
+      ) : (
+        <div id="pagefind-mount"></div>
+      )}
+    </div>
+  </div>
+</div>
+
+{!isDev && (
+  <>
+    <link rel="stylesheet" href="/pagefind/pagefind-ui.css" />
+    <script is:inline src="/pagefind/pagefind-ui.js"></script>
+  </>
+)}
+
+<script is:inline define:vars={{ isDev }}>
+  (function () {
+    const modal = document.getElementById('search-modal');
+    const closeBtn = document.getElementById('search-close');
+    const openBtns = [
+      document.getElementById('search-open'),
+      document.getElementById('mobile-search-open'),
+    ].filter(Boolean);
+    if (!modal) return;
+
+    let initialized = false;
+
+    function initPagefindUI() {
+      if (initialized || isDev) return;
+      const mount = document.getElementById('pagefind-mount');
+      if (!mount || typeof window.PagefindUI === 'undefined') return;
+      new window.PagefindUI({
+        element: '#pagefind-mount',
+        showSubResults: true,
+        showImages: false,
+        translations: {
+          placeholder: '검색어를 입력하세요...',
+          clear_search: '지우기',
+          load_more: '더 보기',
+          search_label: '검색',
+          filters_label: '필터',
+          zero_results: "'[SEARCH_TERM]'에 대한 결과가 없습니다",
+          many_results: "'[SEARCH_TERM]'에 대한 결과 [COUNT]건",
+          one_result: "'[SEARCH_TERM]'에 대한 결과 1건",
+        },
+      });
+      initialized = true;
+    }
+
+    function open() {
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      modal.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+      setTimeout(() => {
+        initPagefindUI();
+        const input = modal.querySelector('input[type="text"]');
+        if (input) input.focus();
+      }, 50);
+    }
+    function shut() {
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+      modal.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    }
+
+    openBtns.forEach((b) => b.addEventListener('click', open));
+    closeBtn?.addEventListener('click', shut);
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) shut();
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !modal.classList.contains('hidden')) shut();
+      // ⌘K / Ctrl+K to open
+      if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
+        e.preventDefault();
+        modal.classList.contains('hidden') ? open() : shut();
+      }
+    });
+  })();
+</script>
+
+<style is:global>
+  /* Pagefind UI 럭셔리 톤 오버라이드 */
+  :root {
+    --pagefind-ui-scale: 0.9;
+    --pagefind-ui-primary: #d8b878;
+    --pagefind-ui-text: #f5edd9;
+    --pagefind-ui-background: transparent;
+    --pagefind-ui-border: #3d3326;
+    --pagefind-ui-tag: #2b2218;
+    --pagefind-ui-border-width: 1px;
+    --pagefind-ui-border-radius: 0;
+    --pagefind-ui-font: 'Pretendard', 'Inter', sans-serif;
+  }
+  .pagefind-ui .pagefind-ui__form { border: 1px solid #3d3326; }
+  .pagefind-ui .pagefind-ui__search-input {
+    background: transparent !important;
+    color: #f5edd9 !important;
+  }
+  .pagefind-ui .pagefind-ui__result-link {
+    color: #f5edd9 !important;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 500;
+  }
+  .pagefind-ui .pagefind-ui__result-link:hover { color: #d8b878 !important; }
+  .pagefind-ui .pagefind-ui__result-excerpt { color: #c4b89e !important; }
+  .pagefind-ui .pagefind-ui__result-excerpt mark {
+    background: rgba(216, 184, 120, 0.25) !important;
+    color: #f0d88c !important;
+  }
+</style>

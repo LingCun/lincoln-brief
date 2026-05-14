@@ -1,0 +1,46 @@
+name: Daily Market Brief
+
+# 매일 평일 새벽 6:00 KST (= 21:00 UTC 전일) 실행
+# 한국시간 06:00 = UTC 21:00 (-9시간)
+# cron 은 UTC 기준이므로 21:00 UTC 사용 (월~금: 미국 마감 후)
+on:
+  schedule:
+    - cron: '0 21 * * 0-4'  # 월~금 06:00 KST (UTC 일~목 21:00)
+  workflow_dispatch:  # 수동 실행도 가능
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Install deps
+        run: npm ci
+
+      - name: Fetch market data
+        run: npm run fetch:market
+
+      - name: Generate daily brief draft
+        run: npm run generate:daily-brief
+
+      - name: Commit & push
+        run: |
+          git config user.name "Lincoln Brief Bot"
+          git config user.email "bot@lincolnbrief.local"
+          git add src/data/market-snapshot.json src/content/blog/*.md public/thumbnails/*.svg
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          DATE=$(date -u -d "+9 hours" +"%Y-%m-%d")  # KST
+          git commit -m "data: daily brief draft for $DATE"
+          git push

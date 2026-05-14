@@ -1,0 +1,64 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import CategoryBadge from './CategoryBadge.astro';
+import FormattedDate from './FormattedDate.astro';
+
+interface Props {
+  post: CollectionEntry<'blog'>;
+  index?: number;
+}
+const { post, index } = Astro.props;
+const { title, description, pubDate, thumbnail, category, readMinutes } = post.data;
+const num = typeof index === 'number' ? String(index + 1).padStart(2, '0') : null;
+---
+
+<article class="card group">
+  <a href={`/blog/${post.slug}/`} class="flex h-full flex-col">
+    {num && (
+      <div class="mb-4 flex items-center justify-between">
+        <span class="index-num">No. {num}</span>
+        <CategoryBadge slug={category} asLink={false} />
+      </div>
+    )}
+    {!num && (
+      <div class="mb-4">
+        <CategoryBadge slug={category} asLink={false} />
+      </div>
+    )}
+
+    {thumbnail && (
+      <div class="mb-6 overflow-hidden border border-ink-700">
+        <img
+          src={thumbnail}
+          alt={title}
+          width="720"
+          height="405"
+          loading="lazy"
+          class="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+        />
+      </div>
+    )}
+
+    <h3 class="headline-md mb-3 text-ink-50 transition-colors group-hover:text-gold-400">
+      {title}
+    </h3>
+    <p class="mb-6 line-clamp-3 flex-1 text-sm leading-relaxed text-ink-200">
+      {description}
+    </p>
+
+    <div class="flex items-center justify-between border-t border-ink-700 pt-4 text-[10px] uppercase tracking-widest-2 text-ink-300">
+      <span class="flex items-center gap-3">
+        <FormattedDate date={pubDate} />
+        {readMinutes && (
+          <>
+            <span class="text-gold-500">◆</span>
+            <span class="font-mono">{readMinutes} min</span>
+          </>
+        )}
+      </span>
+      <span class="text-gold-400 opacity-0 transition-opacity group-hover:opacity-100">
+        Read →
+      </span>
+    </div>
+  </a>
+</article>

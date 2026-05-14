@@ -1,0 +1,25 @@
+---
+import data from '../data/market-snapshot.json';
+const tickers = data.ticker;
+const loop = [...tickers, ...tickers];
+---
+
+<div class="border-b border-ink-600 bg-ink-950 overflow-hidden">
+  <div class="flex items-center">
+    <div class="flex shrink-0 items-center gap-2 border-r border-ink-600 bg-ink-900 px-4 py-2">
+      <span class="live-dot"></span>
+      <span class="text-[10px] font-mono uppercase tracking-widest-2 text-gold-400">{data.asOfLabel}</span>
+    </div>
+    <div class="relative flex-1 overflow-hidden py-2">
+      <div class="flex w-max animate-ticker gap-10 whitespace-nowrap">
+        {loop.map((t) => (
+          <span class="flex items-center gap-3 text-xs font-mono">
+            <span class="text-ink-200 font-medium">{t.symbol}</span>
+            <span class="text-ink-100">{t.value}</span>
+            <span class={t.up ? 'text-bull' : 'text-bear'}>{t.change}</span>
+          </span>
+        ))}
+      </div>
+    </div>
+  </div>
+</div>

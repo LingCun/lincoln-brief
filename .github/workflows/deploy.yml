@@ -1,0 +1,23 @@
+name: Build & Deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm ci
+      - run: npm run build
+      # 정식 배포는 Vercel/Netlify/Cloudflare Pages 의 GitHub 자동 연동 사용 권장.
+      # 이 워크플로는 빌드 검증용. 배포 토큰이 있으면 아래 단계 활성화.
+      # - name: Deploy to Vercel
+      #   env:
+      #     VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+      #   run: npx vercel --prod --token $VERCEL_TOKEN

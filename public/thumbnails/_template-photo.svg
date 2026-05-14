@@ -1,0 +1,77 @@
+<!--
+  Lincoln Brief — Photo Thumbnail Template
+  1280×720 매거진 표지 스타일
+
+  사용법:
+  1. 이 파일을 [slug].svg 로 복사
+  2. <image href="..."> 를 실제 사진 경로로 교체
+  3. 사진은 public/thumbnails/photos/ 에 저장
+  4. _ATTRIBUTION.md 에 출처 한 줄 추가
+  5. Eyebrow, 헤드라인 텍스트 수정
+  6. (선택) 우상단 데이터 박스 수정 또는 제거
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <!-- 좌측에서 우측으로 어두워지는 그라데이션 (텍스트 영역 대비 확보) -->
+    <linearGradient id="darkOverlay" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"  stop-color="#0a0907" stop-opacity="0.92"/>
+      <stop offset="50%" stop-color="#1a1510" stop-opacity="0.65"/>
+      <stop offset="100%" stop-color="#0a0907" stop-opacity="0.35"/>
+    </linearGradient>
+    <!-- 하단 페이드 (브랜드 마크 가독성) -->
+    <linearGradient id="bottomFade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"  stop-color="#0a0907" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#0a0907" stop-opacity="0.8"/>
+    </linearGradient>
+    <!-- 상단 페이드 -->
+    <linearGradient id="topFade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"  stop-color="#0a0907" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#0a0907" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f0d88c"/>
+      <stop offset="50%" stop-color="#d8b878"/>
+      <stop offset="100%" stop-color="#b89a5a"/>
+    </linearGradient>
+  </defs>
+
+  <!-- LAYER 1: 배경 사진 (필수 교체) -->
+  <image
+    href="/thumbnails/photos/PLACEHOLDER.jpg"
+    width="1280" height="720"
+    preserveAspectRatio="xMidYMid slice"
+  />
+
+  <!-- LAYER 2: 다크 오버레이 (가독성) -->
+  <rect width="1280" height="720" fill="url(#darkOverlay)"/>
+  <rect x="0" y="0"   width="1280" height="120" fill="url(#topFade)"/>
+  <rect x="0" y="600" width="1280" height="120" fill="url(#bottomFade)"/>
+
+  <!-- LAYER 3: 브랜드 마크 (좌상단) -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#d8b878" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#f5edd9">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#d8b878">BRIEF</text>
+
+  <!-- 우상단 에디션 라벨 -->
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#d8b878" text-anchor="end">EDITION · CATEGORY</text>
+
+  <!-- LAYER 4: 텍스트 컨텐츠 (좌측) -->
+  <text x="80" y="280" font-family="monospace" font-size="13" letter-spacing="5" fill="#d8b878">— EYEBROW LABEL —</text>
+
+  <text x="80" y="370" font-family="Playfair Display, Georgia, serif" font-size="68" font-weight="500" fill="#f5edd9">메인 헤드라인</text>
+  <text x="80" y="440" font-family="Playfair Display, Georgia, serif" font-size="68" font-style="italic" fill="url(#goldGrad)">두 번째 줄</text>
+
+  <text x="80" y="500" font-family="Pretendard, sans-serif" font-size="20" fill="#c4b89e">부제 또는 요약 문장 한 줄</text>
+
+  <!-- (선택) 우하단 데이터 박스 -->
+  <g transform="translate(960, 540)">
+    <line x1="0" y1="0" x2="60" y2="0" stroke="#d8b878" stroke-width="1.5"/>
+    <text x="0" y="28" font-family="monospace" font-size="10" letter-spacing="3" fill="#988e72">KEY METRIC</text>
+    <text x="0" y="72" font-family="Playfair Display, Georgia, serif" font-size="40" fill="#f5edd9">VALUE</text>
+  </g>
+
+  <!-- 하단 메타 -->
+  <line x1="80" y1="660" x2="1200" y2="660" stroke="#d8b878" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="80" y="690" font-family="monospace" font-size="11" letter-spacing="3" fill="#d8b878" opacity="0.8">DATE · 06:00 KST</text>
+  <text x="1200" y="690" font-family="monospace" font-size="11" letter-spacing="3" fill="#d8b878" opacity="0.8" text-anchor="end">PHOTO · ATTRIBUTION</text>
+</svg>

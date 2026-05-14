@@ -1,0 +1,57 @@
+---
+import { SITE_TITLE, CATEGORIES } from '../consts';
+const year = new Date().getFullYear();
+---
+
+<footer class="mt-32 border-t border-ink-600 bg-ink-950">
+  <div class="container-x py-20">
+    <!-- top: brand mark centered -->
+    <div class="mb-16 text-center">
+      <a href="/" class="inline-flex items-baseline gap-3">
+        <span class="font-display text-5xl leading-none tracking-tight text-ink-50">Lincoln</span>
+        <span class="text-[11px] font-medium uppercase tracking-widest-3 text-gold-500">Brief</span>
+      </a>
+      <div class="mx-auto mt-6 h-px w-16 bg-gold-500"></div>
+      <p class="mx-auto mt-6 max-w-md text-sm text-ink-200">
+        매일 아침, 미국·한국 증시의 핵심을 한 페이지로.<br/>
+        시황 · 종목 · 예측 · 이슈.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 gap-12 md:grid-cols-3">
+      <div>
+        <h3 class="eyebrow mb-5">Editions</h3>
+        <ul class="space-y-3 text-sm text-ink-100">
+          {CATEGORIES.map((c) => (
+            <li>
+              <a href={`/category/${c.slug}/`} class="hover:text-gold-400">{c.name}</a>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="eyebrow mb-5">House</h3>
+        <ul class="space-y-3 text-sm text-ink-100">
+          <li><a href="/about/" class="hover:text-gold-400">About</a></li>
+          <li><a href="/blog/" class="hover:text-gold-400">전체 글</a></li>
+          <li><a href="/rss.xml" class="hover:text-gold-400">RSS</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="eyebrow mb-5">Elsewhere</h3>
+        <ul class="space-y-3 text-sm text-ink-100">
+          <li><a href="https://blog.naver.com/lincolnstory" target="_blank" rel="noopener" class="hover:text-gold-400">Naver Blog</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="border-t border-ink-700">
+    <div class="container-x flex flex-col items-center justify-between gap-3 py-6 text-[10px] uppercase tracking-widest-2 text-ink-300 md:flex-row">
+      <p class="font-mono">© {year} {SITE_TITLE.toUpperCase()}. ALL RIGHTS RESERVED.</p>
+      <p class="text-center">본 콘텐츠는 투자 권유가 아니며, 모든 책임은 본인에게 있습니다.</p>
+    </div>
+  </div>
+</footer>

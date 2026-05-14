@@ -1,0 +1,12 @@
+---
+interface Props {
+  date: Date;
+  format?: 'ko' | 'en';
+}
+const { date, format = 'en' } = Astro.props;
+const formatted = format === 'ko'
+  ? date.toLocaleDateString('ko-KR', { year: 'numeric', month: 'long', day: 'numeric' })
+  : date.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' }).toUpperCase();
+---
+
+<time datetime={date.toISOString()} class="font-mono">{formatted}</time>

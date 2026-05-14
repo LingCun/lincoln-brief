@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "korea-stock": {
+      "command": "npx",
+      "args": ["-y", "korea-stock-mcp@latest"],
+      "env": {
+        "DART_API_KEY": "${DART_API_KEY}",
+        "KRX_API_KEY": "${KRX_API_KEY}"
+      }
+    }
+  }
+}

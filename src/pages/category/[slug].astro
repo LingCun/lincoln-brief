@@ -1,0 +1,53 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PostCard from '../../components/PostCard.astro';
+import { CATEGORIES } from '../../consts';
+
+export async function getStaticPaths() {
+  const allPosts = await getCollection('blog');
+  return CATEGORIES.map((category, idx) => {
+    const posts = allPosts
+      .filter((p) => p.data.category === category.slug)
+      .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+    return {
+      params: { slug: category.slug },
+      props: { category, posts, idx },
+    };
+  });
+}
+
+const { category, posts, idx } = Astro.props;
+---
+
+<BaseLayout title={category.name} description={category.description}>
+  <section class="bg-ink-900">
+    <div class="container-x py-20 md:py-28">
+      <header class="mx-auto mb-16 max-w-3xl text-center">
+        <p class="eyebrow mb-6">— Edition No. {String(idx + 1).padStart(2, '0')} —</p>
+        <h1 class="font-serif text-5xl font-normal leading-tight tracking-tight text-ink-50 md:text-6xl">
+          {category.name}
+        </h1>
+        <div class="mx-auto mt-8 h-px w-12 bg-gold-500"></div>
+        <p class="mx-auto mt-8 max-w-xl font-serif text-lg italic leading-relaxed text-ink-100">
+          {category.description}
+        </p>
+        <p class="mt-6 text-sm uppercase tracking-widest-2 text-ink-300 font-mono">
+          {String(posts.length).padStart(3, '0')} Issues
+        </p>
+      </header>
+
+      <div class="rule-gold mb-16"></div>
+
+      {posts.length === 0 ? (
+        <div class="border border-dashed border-ink-600 p-16 text-center text-ink-300">
+          이 카테고리에는 아직 글이 없습니다.
+        </div>
+      ) : (
+        <div class="grid grid-cols-1 gap-x-12 gap-y-16 md:grid-cols-2 lg:grid-cols-3">
+          {posts.map((post, i) => <PostCard post={post} index={i} />)}
+        </div>
+      )}
+    </div>
+  </section>
+</BaseLayout>

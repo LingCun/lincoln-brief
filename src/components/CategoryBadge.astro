@@ -1,0 +1,18 @@
+---
+import { CATEGORIES, type CategorySlug } from '../consts';
+
+interface Props {
+  slug: CategorySlug;
+  asLink?: boolean;
+}
+const { slug, asLink = true } = Astro.props;
+const category = CATEGORIES.find((c) => c.slug === slug);
+if (!category) throw new Error(`Unknown category: ${slug}`);
+
+const Tag = asLink ? 'a' : 'span';
+const href = asLink ? `/category/${category.slug}/` : undefined;
+---
+
+<Tag {href} class="badge hover:text-gold-300">
+  {category.name}
+</Tag>

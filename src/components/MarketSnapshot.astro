@@ -1,0 +1,83 @@
+---
+import data from '../data/market-snapshot.json';
+
+const usItems = data.us?.snapshot ?? data.snapshot ?? [];
+const krItems = data.kr?.snapshot ?? [];
+const krAvailable = data.kr?.available === true && krItems.some((i) => i.close != null);
+
+const fmt = (n: number) => Number(n).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+const fmtPct = (n: number) => (n >= 0 ? '+' : '') + n.toFixed(2) + '%';
+---
+
+<section class="border-y border-ink-600 bg-ink-950">
+  <div class="container-x py-12 md:py-16">
+    <!-- US row -->
+    <div class="mb-10 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+      <div class="flex items-center gap-4">
+        <span class="live-dot"></span>
+        <p class="eyebrow">— US Market · Snapshot —</p>
+      </div>
+      <span class="text-[10px] font-mono uppercase tracking-widest-2 text-ink-300">
+        {data.asOfLabel} · {data.source}
+      </span>
+    </div>
+
+    <div class="grid grid-cols-2 gap-px overflow-hidden border border-ink-600 bg-ink-600 md:grid-cols-4">
+      {usItems.map((it: any) => {
+        const up = it.changePct >= 0;
+        return (
+          <div class="group relative bg-ink-900 p-6 transition hover:bg-ink-800 md:p-8">
+            <p class="text-[10px] font-mono uppercase tracking-widest-2 text-ink-300">{it.label}</p>
+            <p class="mt-4 font-serif text-3xl font-medium tracking-tight text-ink-50 md:text-4xl">
+              {fmt(it.close)}
+            </p>
+            <div class="mt-3 flex flex-wrap items-center gap-2 md:gap-3">
+              <span class={`text-sm font-mono font-medium ${up ? 'text-bull' : 'text-bear'}`}>
+                {up ? '▲' : '▼'} {fmtPct(it.changePct)}
+              </span>
+              <span class="text-xs text-ink-300">{it.note}</span>
+            </div>
+          </div>
+        );
+      })}
+    </div>
+
+    <!-- Korea row (only when real data is in) -->
+    {krAvailable && (
+      <>
+        <div class="mt-10 mb-6 flex items-center gap-4">
+          <span class="live-dot"></span>
+          <p class="eyebrow">— Korea Market · Snapshot —</p>
+        </div>
+        <div class="grid grid-cols-2 gap-px overflow-hidden border border-ink-600 bg-ink-600 md:grid-cols-4">
+          {krItems.map((it: any) => {
+            if (it.close == null) return null;
+            const up = it.changePct >= 0;
+            return (
+              <div class="group relative bg-ink-900 p-6 transition hover:bg-ink-800 md:p-8">
+                <p class="text-[10px] font-mono uppercase tracking-widest-2 text-ink-300">{it.label}</p>
+                <p class="mt-4 font-serif text-3xl font-medium tracking-tight text-ink-50 md:text-4xl">
+                  {fmt(it.close)}
+                </p>
+                <div class="mt-3 flex flex-wrap items-center gap-2 md:gap-3">
+                  <span class={`text-sm font-mono font-medium ${up ? 'text-bull' : 'text-bear'}`}>
+                    {up ? '▲' : '▼'} {fmtPct(it.changePct)}
+                  </span>
+                  <span class="text-xs text-ink-300">{it.note}</span>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </>
+    )}
+
+    {!krAvailable && data.kr && (
+      <div class="mt-8 border border-dashed border-ink-600 p-5 text-center">
+        <p class="text-[10px] font-mono uppercase tracking-widest-2 text-ink-300">
+          KOREA MARKET · COMING SOON · {data.kr.note}
+        </p>
+      </div>
+    )}
+  </div>
+</section>

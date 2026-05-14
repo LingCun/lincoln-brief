@@ -1,0 +1,70 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content';
+import CategoryBadge from './CategoryBadge.astro';
+import FormattedDate from './FormattedDate.astro';
+import { CATEGORIES } from '../consts';
+
+interface Props {
+  currentSlug: string;
+  currentCategory: CollectionEntry<'blog'>['data']['category'];
+  currentTags?: string[];
+}
+const { currentSlug, currentCategory, currentTags = [] } = Astro.props;
+
+const all = await getCollection('blog');
+
+// Tier 1: same category, most recent
+const sameCat = all
+  .filter((p) => p.slug !== currentSlug && p.data.category === currentCategory)
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+// Tier 2: shared tag (excluding already-picked)
+const pickedSlugs = new Set([currentSlug, ...sameCat.slice(0, 2).map((p) => p.slug)]);
+const tagged = all
+  .filter((p) => !pickedSlugs.has(p.slug))
+  .filter((p) => p.data.tags.some((t) => currentTags.includes(t)))
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+// Build final list — up to 3 items: 2 same-category + 1 tag-matched
+const picks = [...sameCat.slice(0, 2), ...tagged.slice(0, 1)].slice(0, 3);
+
+const categoryName = CATEGORIES.find((c) => c.slug === currentCategory)?.name ?? currentCategory;
+---
+
+{picks.length > 0 && (
+  <div class="mx-auto mt-20 max-w-4xl border-t border-ink-600 pt-12">
+    <p class="eyebrow mb-3 text-center">— More to Read —</p>
+    <h3 class="mb-10 text-center font-serif text-2xl text-ink-50">
+      <span class="italic text-gold-gradient">{categoryName}</span> · 함께 보면 좋은 글
+    </h3>
+
+    <ul class="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-3">
+      {picks.map((post, idx) => (
+        <li>
+          <a href={`/blog/${post.slug}/`} class="group block border-t border-ink-600 pt-6 transition hover:border-gold-500">
+            <div class="mb-3 flex items-center gap-3">
+              <span class="font-mono text-[10px] uppercase tracking-widest-2 text-gold-500">
+                No. {String(idx + 1).padStart(2, '0')}
+              </span>
+              <span class="h-px flex-1 bg-ink-700 transition-colors group-hover:bg-gold-700"></span>
+              <CategoryBadge slug={post.data.category} asLink={false} />
+            </div>
+            <h4 class="font-serif text-lg font-medium leading-snug text-ink-50 transition-colors group-hover:text-gold-400">
+              {post.data.title}
+            </h4>
+            <p class="mt-2 line-clamp-2 text-sm text-ink-200">{post.data.description}</p>
+            <div class="mt-4 flex items-center gap-3 text-[10px] uppercase tracking-widest-2 text-ink-300">
+              <FormattedDate date={post.data.pubDate} />
+              {post.data.readMinutes && (
+                <>
+                  <span class="text-gold-500">◆</span>
+                  <span class="font-mono">{post.data.readMinutes} min</span>
+                </>
+              )}
+            </div>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </div>
+)}

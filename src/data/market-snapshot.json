@@ -1,0 +1,41 @@
+{
+  "asOf": "2026-05-13T16:00:00-04:00",
+  "asOfLabel": "5/13 미국 마감",
+  "source": "Yahoo Finance · KRX",
+  "us": {
+    "snapshot": [
+      { "symbol": "^GSPC", "label": "S&P 500", "close": 7444.25,  "change": 42.97,   "changePct": 0.58,  "note": "사상 최고치" },
+      { "symbol": "^IXIC", "label": "NASDAQ",  "close": 26402.34, "change": 313.81,  "changePct": 1.20,  "note": "AI 모멘텀" },
+      { "symbol": "^DJI",  "label": "DOW",     "close": 49693.20, "change": -67.36,  "changePct": -0.14, "note": "보합" },
+      { "symbol": "NVDA",  "label": "NVDA",    "close": 225.83,   "change": 5.05,    "changePct": 2.29,  "note": "신고가 갱신" }
+    ]
+  },
+  "kr": {
+    "available": false,
+    "note": "KRX API key 발급 대기 중. 발급 후 scripts/fetch-market.mjs 가 자동 채움.",
+    "snapshot": [
+      { "symbol": "KOSPI",   "label": "KOSPI",   "close": null, "change": null, "changePct": null, "note": "데이터 대기" },
+      { "symbol": "KOSDAQ",  "label": "KOSDAQ",  "close": null, "change": null, "changePct": null, "note": "데이터 대기" },
+      { "symbol": "USDKRW",  "label": "USD/KRW", "close": null, "change": null, "changePct": null, "note": "데이터 대기" }
+    ]
+  },
+  "snapshot": [
+    { "symbol": "^GSPC", "label": "S&P 500", "close": 7444.25,  "change": 42.97,   "changePct": 0.58,  "note": "사상 최고치" },
+    { "symbol": "^IXIC", "label": "NASDAQ",  "close": 26402.34, "change": 313.81,  "changePct": 1.20,  "note": "AI 모멘텀" },
+    { "symbol": "^DJI",  "label": "DOW",     "close": 49693.20, "change": -67.36,  "changePct": -0.14, "note": "보합" },
+    { "symbol": "NVDA",  "label": "NVDA",    "close": 225.83,   "change": 5.05,    "changePct": 2.29,  "note": "신고가 갱신" }
+  ],
+  "ticker": [
+    { "symbol": "S&P 500",  "value": "7,444.25",  "change": "+0.58%", "up": true,  "market": "us" },
+    { "symbol": "NASDAQ",   "value": "26,402.34", "change": "+1.20%", "up": true,  "market": "us" },
+    { "symbol": "DOW",      "value": "49,693.20", "change": "-0.14%", "up": false, "market": "us" },
+    { "symbol": "NVDA",     "value": "$225.83",   "change": "+2.29%", "up": true,  "market": "us" },
+    { "symbol": "CSCO",     "value": "$118.94",   "change": "+17%",   "up": true,  "market": "us" },
+    { "symbol": "TSLA",     "value": "$348.20",   "change": "+0.85%", "up": true,  "market": "us" },
+    { "symbol": "USD/KRW",  "value": "1,352.40",  "change": "+0.15%", "up": true,  "market": "fx" },
+    { "symbol": "BTC",      "value": "$97,431",   "change": "+2.18%", "up": true,  "market": "crypto" },
+    { "symbol": "GOLD",     "value": "$2,684.30", "change": "+0.55%", "up": true,  "market": "commodity" },
+    { "symbol": "WTI",      "value": "$72.18",    "change": "-1.04%", "up": false, "market": "commodity" },
+    { "symbol": "US10Y",    "value": "4.218%",    "change": "+4 bp",  "up": true,  "market": "yield" }
+  ]
+}

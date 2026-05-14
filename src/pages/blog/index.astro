@@ -1,0 +1,35 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PostCard from '../../components/PostCard.astro';
+
+const posts = (await getCollection('blog'))
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+---
+
+<BaseLayout title="The Archive" description="Lincoln Brief — 전체 글">
+  <section class="bg-ink-900">
+    <div class="container-x py-20 md:py-28">
+      <header class="mx-auto mb-16 max-w-3xl text-center">
+        <p class="eyebrow mb-6">— The Archive —</p>
+        <h1 class="headline-lg text-ink-50">전체 글</h1>
+        <div class="mx-auto mt-8 h-px w-12 bg-gold-500"></div>
+        <p class="mt-6 text-sm uppercase tracking-widest-2 text-ink-300 font-mono">
+          {String(posts.length).padStart(3, '0')} Issues
+        </p>
+      </header>
+
+      <div class="rule-gold mb-16"></div>
+
+      {posts.length === 0 ? (
+        <div class="border border-dashed border-ink-600 p-16 text-center text-ink-300">
+          아직 발행된 글이 없습니다.
+        </div>
+      ) : (
+        <div class="grid grid-cols-1 gap-x-12 gap-y-16 md:grid-cols-2 lg:grid-cols-3">
+          {posts.map((post, i) => <PostCard post={post} index={i} />)}
+        </div>
+      )}
+    </div>
+  </section>
+</BaseLayout>
