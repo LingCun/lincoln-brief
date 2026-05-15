@@ -1,83 +1,122 @@
 ---
-import data from '../data/market-snapshot.json';
+// Lincoln Brief — Live Market Snapshot
+// TradingView Mini Chart 위젯 8개 그리드. 각 카드 = 진짜 실시간 가격 + 미니 차트.
+//
+// 무료 임베드 라이선스 한계로 한국 직접 심볼 (KRX:KOSPI, KRX:005930) 은 거부됨.
+// → KOREA 섹션은 NYSE 상장 한국 노출 ETF·ADR 로 구성:
+//     EWY  = iShares MSCI South Korea ETF (KOSPI 대표 프록시)
+//     KORU = Direxion Korea Bull 3x ETF (모멘텀 민감)
+//     SSNLF = Samsung Electronics ADR (OTC)
+//     USD/KRW = 한·미 자금 흐름 게이지
 
-const usItems = data.us?.snapshot ?? data.snapshot ?? [];
-const krItems = data.kr?.snapshot ?? [];
-const krAvailable = data.kr?.available === true && krItems.some((i) => i.close != null);
+const KR_CARDS = [
+  { label: 'KOREA (EWY)',   symbol: 'AMEX:EWY',         note: 'iShares MSCI South Korea ETF — KOSPI 프록시' },
+  { label: 'USD / KRW',     symbol: 'FX_IDC:USDKRW',    note: '환율 — 외국인 자금 흐름' },
+  { label: 'KOREA 3X (KORU)', symbol: 'AMEX:KORU',      note: 'Direxion Korea Bull 3x — 모멘텀 민감도' },
+  { label: 'SAMSUNG (ADR)', symbol: 'OTC:SSNLF',        note: '삼성전자 ADR (참고)' },
+];
 
-const fmt = (n: number) => Number(n).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-const fmtPct = (n: number) => (n >= 0 ? '+' : '') + n.toFixed(2) + '%';
+const US_CARDS = [
+  { label: 'S&P 500',   symbol: 'FOREXCOM:SPXUSD',  note: '미국 대형주 벤치마크' },
+  { label: 'NASDAQ 100', symbol: 'FOREXCOM:NSXUSD', note: '미국 기술주 핵심' },
+  { label: 'DOW JONES', symbol: 'FOREXCOM:DJI',     note: '미국 대형 산업주 30' },
+  { label: 'NVDA',      symbol: 'NASDAQ:NVDA',      note: 'AI 인프라 대표주' },
+];
+
+// 골드 #d8b878 = rgb(216,184,120) — 브랜드 컬러
+const GOLD_RGB = '216, 184, 120';
+
+function widgetConfig(symbol: string) {
+  return {
+    symbol,
+    width: '100%',
+    height: 220,
+    locale: 'kr',
+    dateRange: '12M',
+    colorTheme: 'dark',
+    isTransparent: true,
+    autosize: true,
+    largeChartUrl: '',
+    chartOnly: false,
+    noTimeScale: false,
+    trendLineColor: `rgba(${GOLD_RGB}, 1)`,
+    underLineColor: `rgba(${GOLD_RGB}, 0.18)`,
+    underLineBottomColor: `rgba(${GOLD_RGB}, 0)`,
+  };
+}
 ---
 
 <section class="border-y border-ink-600 bg-ink-950">
   <div class="container-x py-12 md:py-16">
-    <!-- US row -->
-    <div class="mb-10 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+    <!-- Korea row -->
+    <div class="mb-6 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
       <div class="flex items-center gap-4">
         <span class="live-dot"></span>
-        <p class="eyebrow">— US Market · Snapshot —</p>
+        <p class="eyebrow">— Korea Market · Live —</p>
       </div>
       <span class="text-[10px] font-mono uppercase tracking-widest-2 text-ink-300">
-        {data.asOfLabel} · {data.source}
+        TradingView · 실시간
       </span>
     </div>
 
-    <div class="grid grid-cols-2 gap-px overflow-hidden border border-ink-600 bg-ink-600 md:grid-cols-4">
-      {usItems.map((it: any) => {
-        const up = it.changePct >= 0;
-        return (
-          <div class="group relative bg-ink-900 p-6 transition hover:bg-ink-800 md:p-8">
-            <p class="text-[10px] font-mono uppercase tracking-widest-2 text-ink-300">{it.label}</p>
-            <p class="mt-4 font-serif text-3xl font-medium tracking-tight text-ink-50 md:text-4xl">
-              {fmt(it.close)}
-            </p>
-            <div class="mt-3 flex flex-wrap items-center gap-2 md:gap-3">
-              <span class={`text-sm font-mono font-medium ${up ? 'text-bull' : 'text-bear'}`}>
-                {up ? '▲' : '▼'} {fmtPct(it.changePct)}
-              </span>
-              <span class="text-xs text-ink-300">{it.note}</span>
-            </div>
+    <div class="mb-12 grid grid-cols-1 gap-px overflow-hidden border border-ink-600 bg-ink-600 sm:grid-cols-2 lg:grid-cols-4">
+      {KR_CARDS.map((c) => (
+        <div class="bg-ink-900 p-4">
+          <div class="mb-3 flex items-baseline justify-between gap-2">
+            <p class="text-[10px] font-mono uppercase tracking-widest-2 text-gold-400">{c.label}</p>
           </div>
-        );
-      })}
+          <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <script
+              type="text/javascript"
+              src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js"
+              async
+              is:inline
+              set:html={JSON.stringify(widgetConfig(c.symbol))}
+            />
+          </div>
+          <p class="mt-2 text-[11px] text-ink-300">{c.note}</p>
+        </div>
+      ))}
     </div>
 
-    <!-- Korea row (only when real data is in) -->
-    {krAvailable && (
-      <>
-        <div class="mt-10 mb-6 flex items-center gap-4">
-          <span class="live-dot"></span>
-          <p class="eyebrow">— Korea Market · Snapshot —</p>
-        </div>
-        <div class="grid grid-cols-2 gap-px overflow-hidden border border-ink-600 bg-ink-600 md:grid-cols-4">
-          {krItems.map((it: any) => {
-            if (it.close == null) return null;
-            const up = it.changePct >= 0;
-            return (
-              <div class="group relative bg-ink-900 p-6 transition hover:bg-ink-800 md:p-8">
-                <p class="text-[10px] font-mono uppercase tracking-widest-2 text-ink-300">{it.label}</p>
-                <p class="mt-4 font-serif text-3xl font-medium tracking-tight text-ink-50 md:text-4xl">
-                  {fmt(it.close)}
-                </p>
-                <div class="mt-3 flex flex-wrap items-center gap-2 md:gap-3">
-                  <span class={`text-sm font-mono font-medium ${up ? 'text-bull' : 'text-bear'}`}>
-                    {up ? '▲' : '▼'} {fmtPct(it.changePct)}
-                  </span>
-                  <span class="text-xs text-ink-300">{it.note}</span>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-      </>
-    )}
-
-    {!krAvailable && data.kr && (
-      <div class="mt-8 border border-dashed border-ink-600 p-5 text-center">
-        <p class="text-[10px] font-mono uppercase tracking-widest-2 text-ink-300">
-          KOREA MARKET · COMING SOON · {data.kr.note}
-        </p>
+    <!-- US row -->
+    <div class="mb-6 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+      <div class="flex items-center gap-4">
+        <span class="live-dot"></span>
+        <p class="eyebrow">— US Market · Live —</p>
       </div>
-    )}
+      <span class="text-[10px] font-mono uppercase tracking-widest-2 text-ink-300">
+        TradingView · 실시간
+      </span>
+    </div>
+
+    <div class="grid grid-cols-1 gap-px overflow-hidden border border-ink-600 bg-ink-600 sm:grid-cols-2 lg:grid-cols-4">
+      {US_CARDS.map((c) => (
+        <div class="bg-ink-900 p-4">
+          <div class="mb-3 flex items-baseline justify-between gap-2">
+            <p class="text-[10px] font-mono uppercase tracking-widest-2 text-gold-400">{c.label}</p>
+          </div>
+          <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <script
+              type="text/javascript"
+              src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js"
+              async
+              is:inline
+              set:html={JSON.stringify(widgetConfig(c.symbol))}
+            />
+          </div>
+          <p class="mt-2 text-[11px] text-ink-300">{c.note}</p>
+        </div>
+      ))}
+    </div>
   </div>
 </section>
+
+<style>
+  /* TradingView 미니 차트 카피라이트 숨김 */
+  :global(.tradingview-widget-copyright) {
+    display: none !important;
+  }
+</style>

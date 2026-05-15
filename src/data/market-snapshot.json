@@ -1,41 +1,38 @@
 {
-  "asOf": "2026-05-13T16:00:00-04:00",
-  "asOfLabel": "5/13 미국 마감",
-  "source": "Yahoo Finance · KRX",
+  "asOf": "2026-05-15T15:30:00+09:00",
+  "asOfLabel": "5/15 한국 마감 · 5/14 미국 마감",
+  "source": "Yahoo Finance",
   "us": {
     "snapshot": [
-      { "symbol": "^GSPC", "label": "S&P 500", "close": 7444.25,  "change": 42.97,   "changePct": 0.58,  "note": "사상 최고치" },
-      { "symbol": "^IXIC", "label": "NASDAQ",  "close": 26402.34, "change": 313.81,  "changePct": 1.20,  "note": "AI 모멘텀" },
-      { "symbol": "^DJI",  "label": "DOW",     "close": 49693.20, "change": -67.36,  "changePct": -0.14, "note": "보합" },
-      { "symbol": "NVDA",  "label": "NVDA",    "close": 225.83,   "change": 5.05,    "changePct": 2.29,  "note": "신고가 갱신" }
+      { "symbol": "^GSPC", "label": "S&P 500", "close": 7501.24,  "change": 56.99,   "changePct": 0.77,  "note": "5/14 미국 마감" },
+      { "symbol": "^IXIC", "label": "NASDAQ",  "close": 26635.22, "change": 232.88,  "changePct": 0.88,  "note": "5/14 종가" },
+      { "symbol": "^DJI",  "label": "DOW",     "close": 50063.46, "change": 370.27,  "changePct": 0.75,  "note": "5/14 종가" },
+      { "symbol": "NVDA",  "label": "NVDA",    "close": 235.74,   "change": 9.91,    "changePct": 4.39,  "note": "신고가권 · 5/14" }
     ]
   },
   "kr": {
-    "available": false,
-    "note": "KRX API key 발급 대기 중. 발급 후 scripts/fetch-market.mjs 가 자동 채움.",
+    "available": true,
+    "note": "5/15 KST 마감, Yahoo ^KS11 / ^KQ11 / KRW=X",
     "snapshot": [
-      { "symbol": "KOSPI",   "label": "KOSPI",   "close": null, "change": null, "changePct": null, "note": "데이터 대기" },
-      { "symbol": "KOSDAQ",  "label": "KOSDAQ",  "close": null, "change": null, "changePct": null, "note": "데이터 대기" },
-      { "symbol": "USDKRW",  "label": "USD/KRW", "close": null, "change": null, "changePct": null, "note": "데이터 대기" }
+      { "symbol": "KOSPI",  "label": "KOSPI",    "close": 7493.18,  "change": -488.23, "changePct": -6.11, "note": "8,046 터치 후 폭락" },
+      { "symbol": "KOSDAQ", "label": "KOSDAQ",   "close": 1129.82,  "change": -61.27,  "changePct": -5.12, "note": "동반 급락" },
+      { "symbol": "005930", "label": "삼성전자",  "close": 270500,    "change": -25500,  "changePct": -8.61, "note": "외국인 매도 집중" },
+      { "symbol": "000660", "label": "SK하이닉스","close": 1819000,   "change": -151000, "changePct": -7.66, "note": "200만원 직전 거부" }
     ]
   },
   "snapshot": [
-    { "symbol": "^GSPC", "label": "S&P 500", "close": 7444.25,  "change": 42.97,   "changePct": 0.58,  "note": "사상 최고치" },
-    { "symbol": "^IXIC", "label": "NASDAQ",  "close": 26402.34, "change": 313.81,  "changePct": 1.20,  "note": "AI 모멘텀" },
-    { "symbol": "^DJI",  "label": "DOW",     "close": 49693.20, "change": -67.36,  "changePct": -0.14, "note": "보합" },
-    { "symbol": "NVDA",  "label": "NVDA",    "close": 225.83,   "change": 5.05,    "changePct": 2.29,  "note": "신고가 갱신" }
+    { "symbol": "^GSPC", "label": "S&P 500", "close": 7501.24,  "change": 56.99,  "changePct": 0.77,  "note": "5/14 미국 마감" },
+    { "symbol": "^IXIC", "label": "NASDAQ",  "close": 26635.22, "change": 232.88, "changePct": 0.88,  "note": "5/14 종가" },
+    { "symbol": "^DJI",  "label": "DOW",     "close": 50063.46, "change": 370.27, "changePct": 0.75,  "note": "5/14 종가" },
+    { "symbol": "NVDA",  "label": "NVDA",    "close": 235.74,   "change": 9.91,   "changePct": 4.39,  "note": "신고가권 · 5/14" }
   ],
   "ticker": [
-    { "symbol": "S&P 500",  "value": "7,444.25",  "change": "+0.58%", "up": true,  "market": "us" },
-    { "symbol": "NASDAQ",   "value": "26,402.34", "change": "+1.20%", "up": true,  "market": "us" },
-    { "symbol": "DOW",      "value": "49,693.20", "change": "-0.14%", "up": false, "market": "us" },
-    { "symbol": "NVDA",     "value": "$225.83",   "change": "+2.29%", "up": true,  "market": "us" },
-    { "symbol": "CSCO",     "value": "$118.94",   "change": "+17%",   "up": true,  "market": "us" },
-    { "symbol": "TSLA",     "value": "$348.20",   "change": "+0.85%", "up": true,  "market": "us" },
-    { "symbol": "USD/KRW",  "value": "1,352.40",  "change": "+0.15%", "up": true,  "market": "fx" },
-    { "symbol": "BTC",      "value": "$97,431",   "change": "+2.18%", "up": true,  "market": "crypto" },
-    { "symbol": "GOLD",     "value": "$2,684.30", "change": "+0.55%", "up": true,  "market": "commodity" },
-    { "symbol": "WTI",      "value": "$72.18",    "change": "-1.04%", "up": false, "market": "commodity" },
-    { "symbol": "US10Y",    "value": "4.218%",    "change": "+4 bp",  "up": true,  "market": "yield" }
+    { "symbol": "KOSPI",    "value": "7,493.18",  "change": "-6.11%", "up": false, "market": "kr" },
+    { "symbol": "KOSDAQ",   "value": "1,129.82",  "change": "-5.12%", "up": false, "market": "kr" },
+    { "symbol": "S&P 500",  "value": "7,501.24",  "change": "+0.77%", "up": true,  "market": "us" },
+    { "symbol": "NASDAQ",   "value": "26,635.22", "change": "+0.88%", "up": true,  "market": "us" },
+    { "symbol": "DOW",      "value": "50,063.46", "change": "+0.75%", "up": true,  "market": "us" },
+    { "symbol": "NVDA",     "value": "$235.74",   "change": "+4.39%", "up": true,  "market": "us" },
+    { "symbol": "USD/KRW",  "value": "1,500.00",  "change": "+0.66%", "up": true,  "market": "fx" }
   ]
 }

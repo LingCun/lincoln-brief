@@ -11,10 +11,13 @@
  *   KRX_API_KEY  - 한국거래소 OpenAPI 키 (없으면 한국 섹션 스킵)
  *   DART_API_KEY - 전자공시시스템 키 (현재 미사용, 향후 종목 분석용)
  */
-import yahooFinance from 'yahoo-finance2';
+import YahooFinance from 'yahoo-finance2';
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+
+// yahoo-finance2 v2.14+ 는 default export 가 클래스 → 인스턴스화 필요
+const yahooFinance = new YahooFinance();
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const OUTPUT = path.resolve(__dirname, '../src/data/market-snapshot.json');
@@ -117,28 +120,16 @@ async function fetchTicker() {
 // 승인 후 KRX_API_KEY 환경변수 설정만 하면 자동 활성화.
 // ============================================================
 async function fetchKorea() {
-  if (!process.env.KRX_API_KEY) {
-    console.log('[info] KRX_API_KEY not set — skipping Korea data');
-    return null;
+  // KRX API 키가 있으면 KRX direct 우선 (외국인 매매·거래대금 등 확장 가능),
+  // 없으면 Yahoo Finance ^KS11/^KQ11 폴백으로라도 한국 지수를 채운다.
+  // (이전 버전은 KRX_API_KEY 없을 때 early return 되어 Korea 섹션이 비어있었음.)
+  const hasKrx = !!process.env.KRX_API_KEY;
+  if (!hasKrx) {
+    console.log('[info] KRX_API_KEY not set — using Yahoo Finance fallback for Korea');
   }
 
-  // 실제 KRX API 호출 예시 (엔드포인트는 KRX 문서 확인 후 정확히 수정 필요):
-  //
-  //   const resp = await fetch('https://openapi.krx.co.kr/svc/apis/idx/kospi_dd_trd', {
-  //     headers: { 'AUTH_KEY': process.env.KRX_API_KEY }
-  //   });
-  //   const data = await resp.json();
-  //   // data.OutBlock_1 등에서 종가·등락률 파싱
-  //
-  // 아래는 스켈레톤 — KRX 응답 스키마에 맞춰 매핑하세요.
-
   try {
-    // TODO: 실제 KRX API endpoints 연결
-    // const kospi  = await krxFetch('idx/kospi_dd_trd');
-    // const kosdaq = await krxFetch('idx/kosdaq_dd_trd');
-    // const krw    = await yahooFinance.quote('KRW=X');
-
-    // 임시: API 연동 전엔 yahoo-finance의 KOSPI(^KS11) / KOSDAQ(^KQ11) 사용
+    // TODO: hasKrx === true 일 때 KRX OpenAPI 직접 호출로 교체 (외국인 매매 등)
     const [kospi, kosdaq, krw] = await Promise.all([
       quoteSafe('^KS11'),
       quoteSafe('^KQ11'),
@@ -204,15 +195,23 @@ async function main() {
     fetchKorea(),
   ]);
 
+  // 안전 가드: 모든 외부 호출 실패 (Yahoo 429 throttle 등) 시 기존 JSON 보존.
+  // 스냅샷이 비어있는데 덮어쓰면 홈페이지가 빈 상태로 표시됨.
+  const allEmpty = usSnapshot.length === 0 && ticker.length === 0 && (!kr || !kr.available);
+  if (allEmpty) {
+    console.error('[fetch] all sources empty (likely Yahoo throttle / network). Preserving existing snapshot.');
+    process.exit(2);
+  }
+
   const now = new Date();
   const out = {
     asOf: now.toISOString(),
-    asOfLabel: `${now.getMonth() + 1}/${now.getDate()} 미국 마감`,
+    asOfLabel: `${now.getMonth() + 1}/${now.getDate()} 한국·미국 마감`,
     source: kr?.available ? 'Yahoo Finance · KRX' : 'Yahoo Finance',
     us: { snapshot: usSnapshot },
     kr: kr ?? {
       available: false,
-      note: 'KRX_API_KEY 미설정. .env 에 키 추가하고 재실행.',
+      note: 'KRX_API_KEY 미설정 + Yahoo 폴백 실패.',
       snapshot: [
         { symbol: 'KOSPI',  label: 'KOSPI',   close: null, change: null, changePct: null, note: '데이터 대기' },
         { symbol: 'KOSDAQ', label: 'KOSDAQ',  close: null, change: null, changePct: null, note: '데이터 대기' },

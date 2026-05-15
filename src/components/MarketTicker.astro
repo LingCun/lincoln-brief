@@ -1,25 +1,64 @@
 ---
-import data from '../data/market-snapshot.json';
-const tickers = data.ticker;
-const loop = [...tickers, ...tickers];
+// Lincoln Brief — Live Market Ticker
+// TradingView Ticker Tape 위젯 임베드. 진짜 실시간 데이터, 무료.
+// Symbols: 한국 (KOSPI/KOSDAQ/삼전/SK하이닉스) + 미국 (NASDAQ/S&P/NVDA) + FX/원자재/크립토
+//
+// 변경 시: 아래 SYMBOLS 배열만 수정하면 됨.
+// TradingView 무료 임베드 위젯의 데이터 라이선스 한계로:
+//   - KRX 직접 심볼 (KRX:KOSPI 등) 거부됨 → NYSE 상장 한국 ETF (EWY) 프록시 사용
+//   - SP:SPX (현물) 등 일부 거부 → FOREXCOM CFD 변형이 더 안정적
+//   - 원자재·금리는 TVC:: 가 가장 호환성 좋음
+const SYMBOLS = [
+  { description: 'KOREA (EWY)',  proName: 'AMEX:EWY' },
+  { description: 'USD/KRW',      proName: 'FX_IDC:USDKRW' },
+  { description: 'S&P 500',      proName: 'FOREXCOM:SPXUSD' },
+  { description: 'NASDAQ 100',   proName: 'FOREXCOM:NSXUSD' },
+  { description: 'DOW',          proName: 'FOREXCOM:DJI' },
+  { description: 'NVDA',         proName: 'NASDAQ:NVDA' },
+  { description: 'TSLA',         proName: 'NASDAQ:TSLA' },
+  { description: 'AAPL',         proName: 'NASDAQ:AAPL' },
+  { description: 'BTC',          proName: 'BITSTAMP:BTCUSD' },
+  { description: 'GOLD',         proName: 'OANDA:XAUUSD' },
+  { description: 'WTI',          proName: 'TVC:USOIL' },
+  // US 10Y / 미국채 수익률은 TradingView 무료 임베드 라이선스 X (TVC:TNX, TVC:US10Y 모두 거부).
+  // 본문 글에서는 야후 ^TNX 데이터로 별도 인용.
+];
+
+const widgetConfig = {
+  symbols: SYMBOLS,
+  showSymbolLogo: false,
+  isTransparent: true,
+  displayMode: 'adaptive',
+  colorTheme: 'dark',
+  locale: 'kr',
+};
 ---
 
-<div class="border-b border-ink-600 bg-ink-950 overflow-hidden">
-  <div class="flex items-center">
-    <div class="flex shrink-0 items-center gap-2 border-r border-ink-600 bg-ink-900 px-4 py-2">
-      <span class="live-dot"></span>
-      <span class="text-[10px] font-mono uppercase tracking-widest-2 text-gold-400">{data.asOfLabel}</span>
-    </div>
-    <div class="relative flex-1 overflow-hidden py-2">
-      <div class="flex w-max animate-ticker gap-10 whitespace-nowrap">
-        {loop.map((t) => (
-          <span class="flex items-center gap-3 text-xs font-mono">
-            <span class="text-ink-200 font-medium">{t.symbol}</span>
-            <span class="text-ink-100">{t.value}</span>
-            <span class={t.up ? 'text-bull' : 'text-bear'}>{t.change}</span>
-          </span>
-        ))}
-      </div>
-    </div>
+<div class="flex items-center border-b border-ink-600 bg-ink-950">
+  <div class="flex shrink-0 items-center gap-2 border-r border-ink-600 bg-ink-900 px-4 py-2">
+    <span class="live-dot"></span>
+    <span class="text-[10px] font-mono uppercase tracking-widest-2 text-gold-400">LIVE</span>
+  </div>
+  <div class="tradingview-widget-container relative flex-1 overflow-hidden">
+    <div class="tradingview-widget-container__widget"></div>
+    <script
+      type="text/javascript"
+      src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js"
+      async
+      is:inline
+      set:html={JSON.stringify(widgetConfig)}
+    />
   </div>
 </div>
+
+<style>
+  /* TradingView 위젯 자체 스타일을 약간 다듬어 헤더 톤과 맞춤 */
+  .tradingview-widget-container :global(.tv-ticker-item__name),
+  .tradingview-widget-container :global(.tv-ticker-tape) {
+    font-family: ui-monospace, monospace;
+  }
+  /* 위젯 우측의 "TradingView" 카피라이트 링크가 끼어들 수 있어 작게 */
+  .tradingview-widget-container :global(.tv-embed-widget-wrapper__copyright) {
+    display: none;
+  }
+</style>

@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a1510"/>
+      <stop offset="100%" stop-color="#0a0907"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f0d88c"/>
+      <stop offset="50%" stop-color="#d8b878"/>
+      <stop offset="100%" stop-color="#b89a5a"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#26201a"/>
+      <stop offset="100%" stop-color="#15110d"/>
+    </linearGradient>
+    <linearGradient id="cardGray" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a1510"/>
+      <stop offset="100%" stop-color="#0d0a07"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bgGrad)"/>
+
+  <!-- 좌상단 브랜드 -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#d8b878" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#f5edd9">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#d8b878">BRIEF</text>
+
+  <!-- 우상단 에디션 -->
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#d8b878" text-anchor="end">EDITION · MARKET FORECAST</text>
+
+  <!-- Eyebrow -->
+  <text x="640" y="170" font-family="monospace" font-size="13" letter-spacing="5" fill="#d8b878" text-anchor="middle">— BOK MPC · 2026.05.22 —</text>
+
+  <!-- 메인 헤드라인 -->
+  <text x="640" y="240" font-family="Playfair Display, Georgia, serif" font-size="56" font-weight="500" fill="#f5edd9" text-anchor="middle">5/22 한은 금통위</text>
+  <text x="640" y="305" font-family="Playfair Display, Georgia, serif" font-size="40" font-style="italic" fill="url(#goldGrad)" text-anchor="middle">인하 카드는 사라졌다</text>
+
+  <!-- 부제 -->
+  <text x="640" y="345" font-family="Pretendard, sans-serif" font-size="17" fill="#988e72" text-anchor="middle">환율 1,500원 돌파 · 미·일 채권금리 급등 · 총재 “인하 어렵다”</text>
+
+  <!-- 세 카드 -->
+  <!-- Card 1: HOLD + Hawkish -->
+  <g transform="translate(150, 400)">
+    <rect width="280" height="200" rx="6" fill="url(#cardGrad)" stroke="#d8b878" stroke-width="1.5"/>
+    <text x="140" y="42" font-family="monospace" font-size="11" letter-spacing="4" fill="#988e72" text-anchor="middle">CARD 1 · HOLD + HAWK</text>
+    <line x1="100" y1="60" x2="180" y2="60" stroke="#d8b878" stroke-width="1"/>
+    <text x="140" y="105" font-family="Playfair Display, Georgia, serif" font-size="44" fill="#f5edd9" text-anchor="middle">동결+매파</text>
+    <text x="140" y="142" font-family="monospace" font-size="13" letter-spacing="2" fill="#d8b878" text-anchor="middle">2.75% · 7~8월 인상 시그널</text>
+    <text x="140" y="178" font-family="Pretendard, sans-serif" font-size="20" fill="#7ec27e" text-anchor="middle">확률 70%</text>
+  </g>
+
+  <!-- Card 2: HIKE -->
+  <g transform="translate(500, 400)">
+    <rect width="280" height="200" rx="6" fill="url(#cardGrad)" stroke="#e8856b" stroke-width="1.5"/>
+    <text x="140" y="42" font-family="monospace" font-size="11" letter-spacing="4" fill="#988e72" text-anchor="middle">CARD 2 · HIKE</text>
+    <line x1="100" y1="60" x2="180" y2="60" stroke="#e8856b" stroke-width="1"/>
+    <text x="140" y="105" font-family="Playfair Display, Georgia, serif" font-size="44" fill="#f5edd9" text-anchor="middle">5월 인상</text>
+    <text x="140" y="142" font-family="monospace" font-size="13" letter-spacing="2" fill="#e8856b" text-anchor="middle">+0.25%p · 환율 충격 가속</text>
+    <text x="140" y="178" font-family="Pretendard, sans-serif" font-size="20" fill="#e8856b" text-anchor="middle">확률 20%</text>
+  </g>
+
+  <!-- Card 3: HOLD + Dove -->
+  <g transform="translate(850, 400)">
+    <rect width="280" height="200" rx="6" fill="url(#cardGray)" stroke="#988e72" stroke-width="1.5" stroke-dasharray="4,3"/>
+    <text x="140" y="42" font-family="monospace" font-size="11" letter-spacing="4" fill="#988e72" text-anchor="middle">CARD 3 · HOLD + DOVE</text>
+    <line x1="100" y1="60" x2="180" y2="60" stroke="#988e72" stroke-width="1"/>
+    <text x="140" y="105" font-family="Playfair Display, Georgia, serif" font-size="44" fill="#c4b89e" text-anchor="middle">동결+비둘기</text>
+    <text x="140" y="142" font-family="monospace" font-size="13" letter-spacing="2" fill="#988e72" text-anchor="middle">시장 안정 우선</text>
+    <text x="140" y="178" font-family="Pretendard, sans-serif" font-size="20" fill="#988e72" text-anchor="middle">확률 10%</text>
+  </g>
+
+  <!-- 하단 — 인하 카드 소멸 메모 -->
+  <text x="640" y="635" font-family="monospace" font-size="11" letter-spacing="4" fill="#988e72" text-anchor="middle" opacity="0.7">— CUT CARD · ELIMINATED · 인하 시나리오 사실상 0% —</text>
+
+  <!-- 하단 메타 -->
+  <line x1="80" y1="660" x2="1200" y2="660" stroke="#d8b878" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="80" y="690" font-family="monospace" font-size="11" letter-spacing="3" fill="#d8b878" opacity="0.8">2026.05.15 · 9 DAYS TO MPC</text>
+  <text x="1200" y="690" font-family="monospace" font-size="11" letter-spacing="3" fill="#d8b878" opacity="0.8" text-anchor="end">BOK · MONETARY POLICY</text>
+</svg>
