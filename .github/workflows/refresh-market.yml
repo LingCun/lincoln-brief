@@ -1,0 +1,50 @@
+name: Refresh market snapshot
+
+# 10분마다 시장 데이터 새로고침. GitHub Actions cron 은 가끔 5~15분 지연되니
+# 사용자가 보는 실제 지연 = "cron 지연 + Vercel 빌드(~30s)" ≒ 5~20분 수준.
+#
+# 변화가 있을 때만 커밋 → 사용자 push 알림과 Vercel 빌드 횟수를 절약.
+on:
+  schedule:
+    - cron: '*/10 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# 동시 실행 차단 — cron 이 겹쳐도 한 번에 하나만.
+concurrency:
+  group: refresh-market
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Install deps
+        run: npm ci
+
+      - name: Fetch market data
+        run: npm run fetch:market
+
+      - name: Commit & push if changed
+        run: |
+          git config user.name "Lincoln Brief Bot"
+          git config user.email "bot@lincolnbrief.local"
+          git add src/data/market-snapshot.json
+          if git diff --staged --quiet; then
+            echo "No changes — skipping commit."
+            exit 0
+          fi
+          TS=$(date -u -d "+9 hours" +"%Y-%m-%d %H:%M KST")
+          git commit -m "data: refresh market snapshot ($TS)"
+          git push
