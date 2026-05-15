@@ -1,0 +1,9 @@
+﻿feat: market snapshot - swipe carousel (4 cards per page, 3 pages each)
+
+- KR/US each show 4 cards at a time, swipe or click prev/next or dots to reveal more
+- 3 pages per market (12 cards total each)
+- Mobile: native touch swipe with scroll-snap proximity
+- Desktop: prev/next buttons + clickable pagination dots
+- setInterval-based smooth animation (works in background tabs unlike rAF)
+- Snap temporarily disabled during animation to prevent intermediate snap-back
+- Page label shows N/3, prev disabled at page 1, next disabled at page 3

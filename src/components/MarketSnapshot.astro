@@ -1,8 +1,8 @@
 ---
 // Lincoln Brief — Market Snapshot
-// scripts/fetch-market.mjs 가 만든 market-snapshot.json 의 top12 (KR/US) 를 카드 그리드로 렌더.
-// 차트는 빌드 타임에 받아온 30일 종가로 인라인 SVG 스파크라인.
-// "준실시간 (약 5분 지연)" — Vercel cron + GitHub Actions 로 정기 재빌드.
+// KR/US 시총 TOP 12 — 한 번에 4개씩 노출, 스와이프/버튼/점으로 페이지 이동.
+// 데이터 출처: scripts/fetch-market.mjs → src/data/market-snapshot.json
+// 스파크라인: 30일 종가 인라인 SVG.
 
 import data from '../data/market-snapshot.json';
 
@@ -21,15 +21,19 @@ const asOfLabel = asOf
     })
   : '';
 
+function chunkInto<T>(arr: T[], size: number): T[][] {
+  const pages: T[][] = [];
+  for (let i = 0; i < arr.length; i += size) pages.push(arr.slice(i, i + size));
+  return pages;
+}
+
+const krPages = chunkInto(krTop12, 4);
+const usPages = chunkInto(usTop12, 4);
+
 function fmtPrice(price: number | null | undefined, currency: string | null | undefined) {
   if (price == null) return '—';
-  if (currency === 'KRW') {
-    return price.toLocaleString('ko-KR', { maximumFractionDigits: 0 });
-  }
-  return price.toLocaleString('en-US', {
-    minimumFractionDigits: 2,
-    maximumFractionDigits: 2,
-  });
+  if (currency === 'KRW') return price.toLocaleString('ko-KR', { maximumFractionDigits: 0 });
+  return price.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 }
 
 function fmtChangePct(pct: number | null | undefined) {
@@ -70,12 +74,27 @@ function sparklineAreaPath(points: number[]) {
   const bottomY = SPARK_H - SPARK_PAD;
   return `${line} L${lastX},${bottomY} L${SPARK_PAD},${bottomY} Z`;
 }
+
+type Card = {
+  ticker: string;
+  name: string;
+  price?: number;
+  changePct?: number;
+  currency?: string;
+  sparkline?: number[];
+  available: boolean;
+};
+
+const carousels: { id: string; label: string; sublabel: string; pages: Card[][]; stripSuffix?: string }[] = [
+  { id: 'kr', label: '한국 시장 · 시가총액 TOP 12', sublabel: 'KOSPI · KRW', pages: krPages, stripSuffix: '.KS' },
+  { id: 'us', label: '미국 시장 · 시가총액 TOP 12', sublabel: 'S&P 500 · USD', pages: usPages },
+];
 ---
 
 <section class="border-y border-ink-600 bg-ink-950">
   <div class="container-x py-12 md:py-16">
     <!-- Header -->
-    <div class="mb-8 flex flex-col items-center text-center">
+    <div class="mb-10 flex flex-col items-center text-center">
       <span class="live-dot mb-3"></span>
       <p class="eyebrow">— Market Snapshot · TOP 12 —</p>
       <p class="mt-2 text-[11px] font-mono uppercase tracking-widest-2 text-ink-300">
@@ -83,118 +102,236 @@ function sparklineAreaPath(points: number[]) {
       </p>
     </div>
 
-    <!-- Korea TOP 12 -->
-    <div class="mb-4 flex items-baseline justify-between">
-      <h2 class="font-mono text-sm uppercase tracking-widest-2 text-gold-400">
-        한국 시장 · 시가총액 TOP 12
-      </h2>
-      <span class="text-[10px] font-mono uppercase tracking-widest-2 text-ink-300">
-        KOSPI · KRW
-      </span>
-    </div>
-    <div class="mb-12 grid grid-cols-2 gap-px overflow-hidden border border-ink-600 bg-ink-600 md:grid-cols-3 lg:grid-cols-4">
-      {krTop12.map((c: any, i: number) => {
-        const up = c.changePct != null && c.changePct >= 0;
-        const accent = up ? 'text-bull' : 'text-bear';
-        const lineStroke = up ? '#d96552' : '#5677b0';
-        const areaFill = up ? 'rgba(217,101,82,0.18)' : 'rgba(86,119,176,0.18)';
-        return (
-          <div class="bg-ink-900 p-4">
-            <div class="mb-1 flex items-center justify-between text-[10px] font-mono uppercase tracking-widest-2 text-ink-300">
-              <span class="text-gold-500">#{String(i + 1).padStart(2, '0')}</span>
-              <span>{c.ticker?.replace('.KS', '')}</span>
-            </div>
-            <h3 class="mb-3 truncate font-serif text-base text-ink-50" title={c.name}>
-              {c.name}
-            </h3>
-            {c.available ? (
-              <>
-                <div class="mb-1 flex items-baseline gap-2">
-                  <span class="font-mono text-xl font-semibold text-ink-50">
-                    {pricePrefix(c.currency)}{fmtPrice(c.price, c.currency)}{priceSuffix(c.currency)}
-                  </span>
-                </div>
-                <div class={`mb-2 font-mono text-xs ${accent}`}>
-                  {fmtChangePct(c.changePct)}
-                </div>
-                <svg
-                  viewBox={`0 0 ${SPARK_W} ${SPARK_H}`}
-                  class="h-10 w-full"
-                  preserveAspectRatio="none"
-                  aria-hidden="true"
-                >
-                  <path d={sparklineAreaPath(c.sparkline)} fill={areaFill} />
-                  <path
-                    d={sparklinePath(c.sparkline)}
-                    stroke={lineStroke}
-                    stroke-width="1.5"
-                    fill="none"
-                  />
-                </svg>
-              </>
-            ) : (
-              <p class="py-8 text-center text-xs text-ink-300">데이터 대기</p>
-            )}
+    {carousels.map((c, idx) => (
+      <div class:list={['market-carousel', idx > 0 && 'mt-12']} data-carousel={c.id}>
+        <!-- Row header: title + arrows + page label -->
+        <div class="mb-4 flex items-end justify-between gap-4">
+          <div>
+            <h2 class="font-mono text-sm uppercase tracking-widest-2 text-gold-400">{c.label}</h2>
+            <p class="mt-1 text-[10px] font-mono uppercase tracking-widest-2 text-ink-300">{c.sublabel}</p>
           </div>
-        );
-      })}
-    </div>
+          <div class="flex items-center gap-3">
+            <span class="font-mono text-[11px] uppercase tracking-widest-2 text-ink-200" data-page-label>1 / {c.pages.length}</span>
+            <button type="button" class="carousel-nav" data-prev aria-label="이전 페이지">
+              <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true">
+                <path d="M10 3 L5 8 L10 13" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <button type="button" class="carousel-nav" data-next aria-label="다음 페이지">
+              <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true">
+                <path d="M6 3 L11 8 L6 13" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </div>
+        </div>
 
-    <!-- US TOP 12 -->
-    <div class="mb-4 flex items-baseline justify-between">
-      <h2 class="font-mono text-sm uppercase tracking-widest-2 text-gold-400">
-        미국 시장 · 시가총액 TOP 12
-      </h2>
-      <span class="text-[10px] font-mono uppercase tracking-widest-2 text-ink-300">
-        S&P 500 · USD
-      </span>
-    </div>
-    <div class="grid grid-cols-2 gap-px overflow-hidden border border-ink-600 bg-ink-600 md:grid-cols-3 lg:grid-cols-4">
-      {usTop12.map((c: any, i: number) => {
-        const up = c.changePct != null && c.changePct >= 0;
-        const accent = up ? 'text-bull' : 'text-bear';
-        const lineStroke = up ? '#d96552' : '#5677b0';
-        const areaFill = up ? 'rgba(217,101,82,0.18)' : 'rgba(86,119,176,0.18)';
-        return (
-          <div class="bg-ink-900 p-4">
-            <div class="mb-1 flex items-center justify-between text-[10px] font-mono uppercase tracking-widest-2 text-ink-300">
-              <span class="text-gold-500">#{String(i + 1).padStart(2, '0')}</span>
-              <span>{c.ticker}</span>
+        <!-- Scroll track: pages of 4 cards each -->
+        <div class="market-track border border-ink-600" data-track>
+          {c.pages.map((page) => (
+            <div class="market-page">
+              {page.map((card, cardIdx) => {
+                const up = card.changePct != null && card.changePct >= 0;
+                const accent = up ? 'text-bull' : 'text-bear';
+                const lineStroke = up ? '#d96552' : '#5677b0';
+                const areaFill = up ? 'rgba(217,101,82,0.18)' : 'rgba(86,119,176,0.18)';
+                const tickerDisplay = c.stripSuffix ? card.ticker.replace(c.stripSuffix, '') : card.ticker;
+                return (
+                  <div class="bg-ink-900 p-4">
+                    <div class="mb-1 flex items-center justify-between text-[10px] font-mono uppercase tracking-widest-2 text-ink-300">
+                      <span class="text-gold-500">#{String(c.pages.indexOf(page) * 4 + cardIdx + 1).padStart(2, '0')}</span>
+                      <span>{tickerDisplay}</span>
+                    </div>
+                    <h3 class="mb-3 truncate font-serif text-base text-ink-50" title={card.name}>
+                      {card.name}
+                    </h3>
+                    {card.available ? (
+                      <>
+                        <div class="mb-1 flex items-baseline gap-2">
+                          <span class="font-mono text-xl font-semibold text-ink-50">
+                            {pricePrefix(card.currency)}{fmtPrice(card.price, card.currency)}{priceSuffix(card.currency)}
+                          </span>
+                        </div>
+                        <div class={`mb-2 font-mono text-xs ${accent}`}>
+                          {fmtChangePct(card.changePct)}
+                        </div>
+                        <svg viewBox={`0 0 ${SPARK_W} ${SPARK_H}`} class="h-10 w-full" preserveAspectRatio="none" aria-hidden="true">
+                          <path d={sparklineAreaPath(card.sparkline ?? [])} fill={areaFill} />
+                          <path d={sparklinePath(card.sparkline ?? [])} stroke={lineStroke} stroke-width="1.5" fill="none" />
+                        </svg>
+                      </>
+                    ) : (
+                      <p class="py-8 text-center text-xs text-ink-300">데이터 대기</p>
+                    )}
+                  </div>
+                );
+              })}
             </div>
-            <h3 class="mb-3 truncate font-serif text-base text-ink-50" title={c.name}>
-              {c.name}
-            </h3>
-            {c.available ? (
-              <>
-                <div class="mb-1 flex items-baseline gap-2">
-                  <span class="font-mono text-xl font-semibold text-ink-50">
-                    {pricePrefix(c.currency)}{fmtPrice(c.price, c.currency)}
-                  </span>
-                </div>
-                <div class={`mb-2 font-mono text-xs ${accent}`}>
-                  {fmtChangePct(c.changePct)}
-                </div>
-                <svg
-                  viewBox={`0 0 ${SPARK_W} ${SPARK_H}`}
-                  class="h-10 w-full"
-                  preserveAspectRatio="none"
-                  aria-hidden="true"
-                >
-                  <path d={sparklineAreaPath(c.sparkline)} fill={areaFill} />
-                  <path
-                    d={sparklinePath(c.sparkline)}
-                    stroke={lineStroke}
-                    stroke-width="1.5"
-                    fill="none"
-                  />
-                </svg>
-              </>
-            ) : (
-              <p class="py-8 text-center text-xs text-ink-300">데이터 대기</p>
-            )}
-          </div>
-        );
-      })}
-    </div>
+          ))}
+        </div>
+
+        <!-- Pagination dots -->
+        <div class="mt-4 flex items-center justify-center gap-2">
+          {c.pages.map((_, i) => (
+            <button
+              type="button"
+              class:list={['page-dot', i === 0 && 'is-active']}
+              data-page-target={i}
+              aria-label={`Page ${i + 1}`}
+            />
+          ))}
+        </div>
+      </div>
+    ))}
   </div>
 </section>
+
+<style>
+  .market-track {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x proximity; /* mandatory 는 Chromium에서 programmatic smooth scroll 과 충돌 → proximity */
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .market-track::-webkit-scrollbar { display: none; }
+
+  .market-page {
+    flex: 0 0 100%;
+    width: 100%;
+    scroll-snap-align: start;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1px;
+    background-color: rgb(61 51 38); /* ink-600 — appears as 1px borders between cards */
+  }
+  @media (min-width: 768px) {
+    .market-page {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+
+  .carousel-nav {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border: 1px solid rgba(216, 184, 120, 0.35);
+    border-radius: 9999px;
+    color: rgb(216, 184, 120);
+    background: transparent;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, border-color 0.2s;
+  }
+  .carousel-nav:hover {
+    background: rgba(216, 184, 120, 0.12);
+    border-color: rgba(216, 184, 120, 0.6);
+  }
+  .carousel-nav:disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+  }
+
+  .page-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 9999px;
+    background: rgba(216, 184, 120, 0.25);
+    border: 1px solid rgba(216, 184, 120, 0.35);
+    transition: width 0.4s ease, background 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+    padding: 0;
+  }
+  .page-dot:hover {
+    transform: scale(1.2);
+    background: rgba(216, 184, 120, 0.55);
+  }
+  .page-dot.is-active {
+    background: rgba(216, 184, 120, 1);
+    width: 28px;
+  }
+</style>
+
+<script is:inline>
+  (function () {
+    window.__lincolnCarouselReady = false;
+    document.querySelectorAll('[data-carousel]').forEach(function (carousel) {
+      carousel.setAttribute('data-carousel-init', '1');
+      var track = carousel.querySelector('[data-track]');
+      var dots = carousel.querySelectorAll('[data-page-target]');
+      var prev = carousel.querySelector('[data-prev]');
+      var next = carousel.querySelector('[data-next]');
+      var label = carousel.querySelector('[data-page-label]');
+      var total = dots.length;
+      if (!track || !total) return;
+
+      function currentPage() {
+        var w = track.clientWidth;
+        if (!w) return 0;
+        return Math.round(track.scrollLeft / w);
+      }
+
+      function updateUI(page) {
+        if (page == null) page = currentPage();
+        if (page < 0) page = 0;
+        if (page >= total) page = total - 1;
+        dots.forEach(function (d, i) {
+          if (i === page) d.classList.add('is-active');
+          else d.classList.remove('is-active');
+        });
+        if (label) label.textContent = page + 1 + ' / ' + total;
+        if (prev) prev.disabled = page === 0;
+        if (next) next.disabled = page === total - 1;
+      }
+
+      track.addEventListener('scroll', function () { updateUI(); }, { passive: true });
+      window.addEventListener('resize', function () { updateUI(); });
+
+      // Chromium 의 scroll-snap 이 animation 중간값들을 snap point (0/W/2W) 으로 되돌림.
+      // 그래서 (1) animation 동안 snap 을 꺼두고, (2) setInterval 로 60fps 흐름 만들고,
+      // (3) 끝났을 때 정확한 snap point 에 안착시킨 뒤 snap 복원.
+      // setInterval 사용 이유: 미리보기 iframe 같이 백그라운드 컨텍스트에서 rAF 가 정지함.
+      function smoothScrollTo(targetLeft, duration) {
+        if (duration === undefined) duration = 400;
+        var startLeft = track.scrollLeft;
+        var distance = targetLeft - startLeft;
+        if (Math.abs(distance) < 1) {
+          track.scrollLeft = targetLeft;
+          return;
+        }
+        var originalSnap = track.style.scrollSnapType;
+        track.style.scrollSnapType = 'none';
+        var startTime = performance.now();
+        var timer = setInterval(function () {
+          var elapsed = performance.now() - startTime;
+          var t = Math.min(1, elapsed / duration);
+          var ease = t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+          track.scrollLeft = startLeft + distance * ease;
+          if (t >= 1) {
+            clearInterval(timer);
+            track.scrollLeft = targetLeft;
+            setTimeout(function () {
+              track.style.scrollSnapType = originalSnap || '';
+            }, 30);
+          }
+        }, 16);
+      }
+
+      function scrollToPage(idx) {
+        if (idx < 0) idx = 0;
+        if (idx >= total) idx = total - 1;
+        smoothScrollTo(idx * track.clientWidth);
+        updateUI(idx); // 즉시 dot/label/disabled 동기화 (scroll 이벤트 의존 X)
+      }
+
+      if (prev) prev.addEventListener('click', function () { scrollToPage(currentPage() - 1); });
+      if (next) next.addEventListener('click', function () { scrollToPage(currentPage() + 1); });
+      dots.forEach(function (dot, i) {
+        dot.addEventListener('click', function () { scrollToPage(i); });
+      });
+
+      updateUI();
+    });
+    window.__lincolnCarouselReady = true;
+  })();
+</script>
