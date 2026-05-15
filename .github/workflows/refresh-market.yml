@@ -6,7 +6,8 @@ name: Refresh market snapshot
 # 변화가 있을 때만 커밋 → 사용자 push 알림과 Vercel 빌드 횟수를 절약.
 on:
   schedule:
-    - cron: '*/10 * * * *'
+    # 매시 정각/30분은 GitHub Actions 부하 피크 → 5분씩 미뤄서 신뢰성 ↑
+    - cron: '5,15,25,35,45,55 * * * *'
   workflow_dispatch:
 
 permissions:
