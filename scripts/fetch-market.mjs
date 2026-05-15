@@ -23,7 +23,42 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const OUTPUT = path.resolve(__dirname, '../src/data/market-snapshot.json');
 
 // ============================================================
-// 미국 + 글로벌 (Yahoo Finance)
+// Top 12 by market cap — KR / US
+// MarketSnapshot.astro 가 이걸로 카드 그리드 렌더.
+// 시총 변동되면 순서/구성 손으로 조정 (자주 안 바뀜).
+// ============================================================
+const KR_TOP_12 = [
+  { ticker: '005930.KS', name: '삼성전자' },
+  { ticker: '000660.KS', name: 'SK하이닉스' },
+  { ticker: '373220.KS', name: 'LG에너지솔루션' },
+  { ticker: '207940.KS', name: '삼성바이오로직스' },
+  { ticker: '005380.KS', name: '현대차' },
+  { ticker: '000270.KS', name: '기아' },
+  { ticker: '005490.KS', name: 'POSCO홀딩스' },
+  { ticker: '105560.KS', name: 'KB금융' },
+  { ticker: '035420.KS', name: 'NAVER' },
+  { ticker: '068270.KS', name: '셀트리온' },
+  { ticker: '055550.KS', name: '신한지주' },
+  { ticker: '035720.KS', name: '카카오' },
+];
+
+const US_TOP_12 = [
+  { ticker: 'NVDA',  name: 'NVIDIA' },
+  { ticker: 'MSFT',  name: 'Microsoft' },
+  { ticker: 'AAPL',  name: 'Apple' },
+  { ticker: 'GOOGL', name: 'Alphabet' },
+  { ticker: 'AMZN',  name: 'Amazon' },
+  { ticker: 'META',  name: 'Meta' },
+  { ticker: 'TSLA',  name: 'Tesla' },
+  { ticker: 'BRK-B', name: 'Berkshire B' },
+  { ticker: 'AVGO',  name: 'Broadcom' },
+  { ticker: 'LLY',   name: 'Eli Lilly' },
+  { ticker: 'JPM',   name: 'JPMorgan' },
+  { ticker: 'WMT',   name: 'Walmart' },
+];
+
+// ============================================================
+// 미국 + 글로벌 (Yahoo Finance) — 기존 호환용 (다른 데가 쓸 수도 있어 보존)
 // ============================================================
 const US_SNAPSHOT = [
   { symbol: '^GSPC', label: 'S&P 500' },
@@ -72,6 +107,82 @@ async function quoteSafe(symbol) {
     console.warn(`[warn] failed to fetch ${symbol}:`, e.message);
     return null;
   }
+}
+
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+
+const YAHOO_HEADERS = {
+  'User-Agent':
+    'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+  Accept: 'application/json,text/plain,*/*',
+  'Accept-Language': 'en-US,en;q=0.9,ko;q=0.8',
+};
+
+/**
+ * Yahoo Finance public chart endpoint — crumb 인증 불필요.
+ * 단일 호출로 price/prevClose/currency + 일일 종가 배열 모두 받음.
+ * 결과: { price, previousClose, currency, exchangeName, closes:[number] }  또는 null.
+ */
+async function fetchChartDirect(ticker, range = '2mo') {
+  const url = `https://query1.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(ticker)}?interval=1d&range=${range}`;
+  try {
+    const res = await fetch(url, { headers: YAHOO_HEADERS });
+    if (!res.ok) {
+      console.warn(`[warn] chart HTTP ${res.status} for ${ticker}`);
+      return null;
+    }
+    const data = await res.json();
+    const result = data?.chart?.result?.[0];
+    if (!result) return null;
+    const meta = result.meta ?? {};
+    const closes = (result.indicators?.quote?.[0]?.close ?? []).filter((v) => v != null);
+    return {
+      price: meta.regularMarketPrice ?? null,
+      previousClose: meta.previousClose ?? meta.chartPreviousClose ?? null,
+      currency: meta.currency ?? null,
+      exchangeName: meta.exchangeName ?? null,
+      closes,
+    };
+  } catch (e) {
+    console.warn(`[warn] chart fetch failed for ${ticker}:`, e.message);
+    return null;
+  }
+}
+
+/**
+ * 12개 ticker → price + change + 30일 sparkline.
+ * Yahoo chart 엔드포인트 (crumb 불필요) 만 사용 → 429 회피.
+ * 결과 항목: { ticker, name, price, change, changePct, currency, sparkline:[number], available:boolean }
+ */
+async function fetchTop12(items, label) {
+  console.log(`[fetch] ${label} top12 (direct chart endpoint)…`);
+  const results = [];
+  for (const item of items) {
+    const chart = await fetchChartDirect(item.ticker, '2mo');
+    if (!chart || chart.price == null) {
+      results.push({ ticker: item.ticker, name: item.name, available: false, sparkline: [] });
+    } else {
+      // meta.previousClose 는 차트 range 첫 점 이전 가격을 반환 → 60일 전 값이 잡힘.
+      // 직전 거래일 종가는 sparkline 마지막 두 점으로 계산.
+      const closes = chart.closes;
+      const prev = closes.length >= 2 ? closes[closes.length - 2] : chart.previousClose ?? chart.price;
+      const change = chart.price - prev;
+      const changePct = prev ? (change / prev) * 100 : 0;
+      results.push({
+        ticker: item.ticker,
+        name: item.name,
+        price: chart.price,
+        change,
+        changePct,
+        currency: chart.currency ?? null,
+        exchange: chart.exchangeName ?? null,
+        sparkline: chart.closes.slice(-30),
+        available: true,
+      });
+    }
+    await sleep(200);
+  }
+  return results;
 }
 
 async function fetchUS() {
@@ -189,15 +300,18 @@ async function fetchKorea() {
 async function main() {
   console.log('[fetch] starting market data fetch…');
 
-  const [usSnapshot, ticker, kr] = await Promise.all([
-    fetchUS(),
-    fetchTicker(),
-    fetchKorea(),
-  ]);
+  // 순차 실행 — Yahoo는 동시 호출 많으면 즉시 429 던짐.
+  const krTop12 = await fetchTop12(KR_TOP_12, 'KR');
+  const usTop12 = await fetchTop12(US_TOP_12, 'US');
+  const usSnapshot = await fetchUS();
+  const ticker = await fetchTicker();
+  const kr = await fetchKorea();
 
-  // 안전 가드: 모든 외부 호출 실패 (Yahoo 429 throttle 등) 시 기존 JSON 보존.
-  // 스냅샷이 비어있는데 덮어쓰면 홈페이지가 빈 상태로 표시됨.
-  const allEmpty = usSnapshot.length === 0 && ticker.length === 0 && (!kr || !kr.available);
+  // 안전 가드: 모든 외부 호출 실패 시 기존 JSON 보존.
+  const krOk = krTop12.some((c) => c.available);
+  const usOk = usTop12.some((c) => c.available);
+  const allEmpty =
+    usSnapshot.length === 0 && ticker.length === 0 && (!kr || !kr.available) && !krOk && !usOk;
   if (allEmpty) {
     console.error('[fetch] all sources empty (likely Yahoo throttle / network). Preserving existing snapshot.');
     process.exit(2);
@@ -208,15 +322,14 @@ async function main() {
     asOf: now.toISOString(),
     asOfLabel: `${now.getMonth() + 1}/${now.getDate()} 한국·미국 마감`,
     source: kr?.available ? 'Yahoo Finance · KRX' : 'Yahoo Finance',
-    us: { snapshot: usSnapshot },
-    kr: kr ?? {
-      available: false,
-      note: 'KRX_API_KEY 미설정 + Yahoo 폴백 실패.',
-      snapshot: [
-        { symbol: 'KOSPI',  label: 'KOSPI',   close: null, change: null, changePct: null, note: '데이터 대기' },
-        { symbol: 'KOSDAQ', label: 'KOSDAQ',  close: null, change: null, changePct: null, note: '데이터 대기' },
-        { symbol: 'USDKRW', label: 'USD/KRW', close: null, change: null, changePct: null, note: '데이터 대기' },
-      ],
+    us: { snapshot: usSnapshot, top12: usTop12 },
+    kr: {
+      ...(kr ?? {
+        available: false,
+        note: 'KRX_API_KEY 미설정 + Yahoo 폴백 실패.',
+        snapshot: [],
+      }),
+      top12: krTop12,
     },
     // Backwards compat (older components read top-level snapshot)
     snapshot: usSnapshot,
@@ -226,7 +339,9 @@ async function main() {
   await fs.mkdir(path.dirname(OUTPUT), { recursive: true });
   await fs.writeFile(OUTPUT, JSON.stringify(out, null, 2) + '\n', 'utf8');
   console.log(`[fetch] wrote ${OUTPUT}`);
-  console.log(`        US snapshot: ${usSnapshot.length} | ticker: ${ticker.length} | KR: ${kr?.available ? 'on' : 'off'}`);
+  console.log(
+    `        US snapshot: ${usSnapshot.length} | ticker: ${ticker.length} | KR base: ${kr?.available ? 'on' : 'off'} | KR top12: ${krTop12.filter((c) => c.available).length}/${krTop12.length} | US top12: ${usTop12.filter((c) => c.available).length}/${usTop12.length}`,
+  );
 }
 
 main().catch((err) => {
