@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="darkOverlay" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"  stop-color="#0a0907" stop-opacity="0.92"/>
+      <stop offset="55%" stop-color="#1c0a07" stop-opacity="0.68"/>
+      <stop offset="100%" stop-color="#0a0907" stop-opacity="0.30"/>
+    </linearGradient>
+    <linearGradient id="bottomFade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"  stop-color="#0a0907" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#0a0907" stop-opacity="0.85"/>
+    </linearGradient>
+    <linearGradient id="topFade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"  stop-color="#0a0907" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#0a0907" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="emberAccent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffd28a"/>
+      <stop offset="55%" stop-color="#f4a06a"/>
+      <stop offset="100%" stop-color="#d96b3d"/>
+    </linearGradient>
+  </defs>
+
+  <image href="/thumbnails/photos/oil-pump-jack.jpg" width="1280" height="720" preserveAspectRatio="xMidYMid slice"/>
+  <rect width="1280" height="720" fill="url(#darkOverlay)"/>
+  <rect x="0" y="0"   width="1280" height="120" fill="url(#topFade)"/>
+  <rect x="0" y="600" width="1280" height="120" fill="url(#bottomFade)"/>
+
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#f4a06a" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#f5edd9">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#f4a06a">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#f4a06a" text-anchor="end">2026.05.16 · ECONOMY ISSUE</text>
+
+  <text x="80" y="270" font-family="monospace" font-size="13" letter-spacing="5" fill="#f4a06a">— 경제 이슈 · 유가·인플레 —</text>
+
+  <text x="80" y="360" font-family="Playfair Display, Georgia, serif" font-size="86" font-weight="500" fill="#f5edd9">WTI $109,</text>
+  <text x="80" y="455" font-family="Playfair Display, Georgia, serif" font-size="86" font-style="italic" fill="url(#emberAccent)">2차 충격</text>
+
+  <text x="80" y="515" font-family="Pretendard, sans-serif" font-size="22" fill="#c4b89e">대이란 강경화 + 4월 CPI +3.8% = 인하 시나리오 폐기</text>
+  <text x="80" y="548" font-family="Pretendard, sans-serif" font-size="18" fill="#a8987a">BofA: 첫 인하 시점 2026년 9월 → 2027년 7월</text>
+
+  <g transform="translate(940, 470)">
+    <line x1="0" y1="0" x2="60" y2="0" stroke="#f4a06a" stroke-width="1.5"/>
+    <text x="0" y="28" font-family="monospace" font-size="10" letter-spacing="3" fill="#a8987a">WTI CRUDE 5/15</text>
+    <text x="0" y="72" font-family="Playfair Display, Georgia, serif" font-size="44" fill="#f5edd9">$105.42</text>
+    <text x="0" y="100" font-family="monospace" font-size="14" fill="#ffd28a">+4.20% · 장중 $109</text>
+  </g>
+
+  <line x1="80" y1="660" x2="1200" y2="660" stroke="#f4a06a" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="80" y="690" font-family="monospace" font-size="11" letter-spacing="3" fill="#f4a06a" opacity="0.8">2026.05.16 SAT · 13:00 KST</text>
+  <text x="1200" y="690" font-family="monospace" font-size="11" letter-spacing="3" fill="#f4a06a" opacity="0.8" text-anchor="end">PHOTO · UNSPLASH</text>
+</svg>

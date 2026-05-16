@@ -1,5 +1,16 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const allPosts = await getCollection('blog');
+const totalPosts = allPosts.length;
+const firstPost = allPosts
+  .map((p) => p.data.pubDate)
+  .sort((a, b) => a.valueOf() - b.valueOf())[0];
+const startLabel = firstPost
+  ? `${firstPost.getMonth() + 1}/${firstPost.getDate()}`
+  : '5/14';
+const startYear = firstPost ? firstPost.getFullYear() : 2026;
 ---
 
 <BaseLayout title="About Lincoln" description="Lincoln Brief 편집장 Lincoln과 운용 철학 소개">
@@ -43,17 +54,24 @@ import BaseLayout from '../layouts/BaseLayout.astro';
               </h1>
               <div class="mt-8 h-px w-16 bg-gold-500"></div>
               <p class="mt-8 font-serif text-lg italic leading-relaxed text-ink-100">
-                매일 아침, 시장의 소음을 끊고 본질만 추리는 사람입니다.
-                관찰하고, 기록하고, 기다립니다.
+                낮에는 핀테크 회사를 다니는 평범한 회사원,
+                밤에는 시장을 관찰하고 기록하는 사람입니다.
               </p>
               <p class="mt-6 text-sm leading-relaxed text-ink-200">
-                책상엔 Adam Smith, John Stuart Mill, 그리고 오늘의 시세표가 함께 놓여있습니다.
-                <em class="text-gold-400 not-italic">번영의 과학</em>은 200년 전에도 지금도 같은 원리로 움직인다고 믿어서.
+                본업은 <strong class="text-gold-400">금융권 시스템과 블록체인</strong> 영역의 실무.
+                돈이 어떻게 흐르고, 어떤 기술이 그 흐름을 다시 짜고 있는지를
+                매일 가까이서 들여다보는 자리에 있습니다.
+              </p>
+              <p class="mt-6 text-sm leading-relaxed text-ink-200">
+                그 일을 하다 보니 자연스레
+                <em class="text-gold-400 not-italic">경제 전체의 흐름과 자본시장</em>이
+                점점 더 궁금해졌고,
+                매일 출근 전에 정리하던 시황 노트가 이 블로그의 출발점이 됐습니다.
               </p>
               <p class="mt-6 text-sm leading-relaxed text-ink-200">
                 Lincoln Brief는 시황·종목·예측·이슈 네 갈래로
-                매일 한 통의 정선된 글을 발행합니다.
-                투자 권유가 아닌 <strong class="text-gold-400">관찰의 기록</strong>입니다.
+                하루 한 통의 정선된 글을 발행합니다.
+                투자 권유가 아니라, <strong class="text-gold-400">한 회사원의 관찰 기록</strong>입니다.
               </p>
             </div>
           </div>
@@ -188,13 +206,13 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           <div class="grid grid-cols-2 gap-px overflow-hidden border border-ink-600 bg-ink-600 md:grid-cols-4">
             <div class="bg-ink-900 p-8 text-center">
               <p class="text-[10px] uppercase tracking-widest-2 text-ink-300">총 발행</p>
-              <p class="mt-4 font-serif text-4xl text-gold-400">4</p>
+              <p class="mt-4 font-serif text-4xl text-gold-400">{totalPosts}</p>
               <p class="mt-2 text-[10px] uppercase tracking-widest-2 text-ink-300">Issues</p>
             </div>
             <div class="bg-ink-900 p-8 text-center">
               <p class="text-[10px] uppercase tracking-widest-2 text-ink-300">시작일</p>
-              <p class="mt-4 font-serif text-4xl text-gold-400">5/14</p>
-              <p class="mt-2 text-[10px] uppercase tracking-widest-2 text-ink-300">2026</p>
+              <p class="mt-4 font-serif text-4xl text-gold-400">{startLabel}</p>
+              <p class="mt-2 text-[10px] uppercase tracking-widest-2 text-ink-300">{startYear}</p>
             </div>
             <div class="bg-ink-900 p-8 text-center">
               <p class="text-[10px] uppercase tracking-widest-2 text-ink-300">예측 검증</p>
@@ -268,9 +286,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           <div class="mx-auto mt-8 h-px w-12 bg-gold-500"></div>
 
           <div class="mt-12 flex flex-wrap items-center justify-center gap-4">
-            <a href="https://blog.naver.com/lincolnstory" target="_blank" rel="noopener" class="btn-ghost">Naver Blog</a>
             <a href="/rss.xml" class="btn-ghost">RSS</a>
-            <a href="#subscribe" class="btn-gold-solid">Subscribe</a>
+            <a href="/#subscribe" class="btn-gold-solid">Subscribe</a>
           </div>
 
           <div class="mx-auto mt-20 max-w-prose">

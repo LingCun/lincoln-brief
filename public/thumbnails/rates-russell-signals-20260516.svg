@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="darkOverlay" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"  stop-color="#0a0907" stop-opacity="0.93"/>
+      <stop offset="55%" stop-color="#0d1018" stop-opacity="0.72"/>
+      <stop offset="100%" stop-color="#0a0907" stop-opacity="0.35"/>
+    </linearGradient>
+    <linearGradient id="bottomFade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"  stop-color="#0a0907" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#0a0907" stop-opacity="0.85"/>
+    </linearGradient>
+    <linearGradient id="topFade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"  stop-color="#0a0907" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#0a0907" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f0d88c"/>
+      <stop offset="50%" stop-color="#d8b878"/>
+      <stop offset="100%" stop-color="#b89a5a"/>
+    </linearGradient>
+  </defs>
+
+  <image href="/thumbnails/photos/us-capitol-rates.jpg" width="1280" height="720" preserveAspectRatio="xMidYMid slice"/>
+  <rect width="1280" height="720" fill="url(#darkOverlay)"/>
+  <rect x="0" y="0"   width="1280" height="120" fill="url(#topFade)"/>
+  <rect x="0" y="600" width="1280" height="120" fill="url(#bottomFade)"/>
+
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#d8b878" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#f5edd9">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#d8b878">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#d8b878" text-anchor="end">2026.05.16 · MARKET FORECAST</text>
+
+  <text x="80" y="270" font-family="monospace" font-size="13" letter-spacing="5" fill="#d8b878">— 시장 예측 · 금리·신용 —</text>
+
+  <text x="80" y="360" font-family="Playfair Display, Georgia, serif" font-size="72" font-weight="500" fill="#f5edd9">10Y 4.60%,</text>
+  <text x="80" y="445" font-family="Playfair Display, Georgia, serif" font-size="72" font-style="italic" fill="url(#goldGrad)">Russell −2.4%</text>
+
+  <text x="80" y="505" font-family="Pretendard, sans-serif" font-size="22" fill="#c4b89e">Fed보다 먼저 가격을 매기는 채권시장</text>
+  <text x="80" y="538" font-family="Pretendard, sans-serif" font-size="18" fill="#988e72">BofA: 2026 연중 동결 → 2027년에야 첫 인하</text>
+
+  <g transform="translate(940, 470)">
+    <line x1="0" y1="0" x2="60" y2="0" stroke="#d8b878" stroke-width="1.5"/>
+    <text x="0" y="28" font-family="monospace" font-size="10" letter-spacing="3" fill="#988e72">US 10Y YIELD</text>
+    <text x="0" y="72" font-family="Playfair Display, Georgia, serif" font-size="44" fill="#f5edd9">4.595%</text>
+    <text x="0" y="100" font-family="monospace" font-size="14" fill="#f4a06a">+13.4bp · 1Y HIGH</text>
+  </g>
+
+  <line x1="80" y1="660" x2="1200" y2="660" stroke="#d8b878" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="80" y="690" font-family="monospace" font-size="11" letter-spacing="3" fill="#d8b878" opacity="0.8">2026.05.16 SAT · 11:00 KST</text>
+  <text x="1200" y="690" font-family="monospace" font-size="11" letter-spacing="3" fill="#d8b878" opacity="0.8" text-anchor="end">PHOTO · UNSPLASH</text>
+</svg>

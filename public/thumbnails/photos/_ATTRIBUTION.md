@@ -23,6 +23,10 @@
 | `seoul-yeouido.jpg` | https://unsplash.com/photos/1538669715315-155098f0fb1d | Unsplash License | `kr-kospi-8000-20260514` | 2026-05-14 |
 | `globe-network.jpg` | https://unsplash.com/photos/1451187580459-43490279c0fa | Unsplash License | `kr-trump-xi-korea-20260514` | 2026-05-14 |
 | `kospi-trading-floor.jpg` | https://unsplash.com/photos/1611974789855-9c2a0a7236a3 | Unsplash License | (deprecated — KR daily brief 에서 semiconductor-chip 로 교체됨) | 2026-05-14 |
+| `nasdaq-marketsite.jpg` | https://unsplash.com/photos/1535320903710-d993d3d77d29 | Unsplash License | `daily-brief-20260516` (US 5/15 correction) | 2026-05-16 |
+| `amd-data-center-gpu.jpg` | https://unsplash.com/photos/1591799264318-7e6ef8ddb7ea | Unsplash License | `amd-analysis-20260516` (AMD Ryzen chip close-up) | 2026-05-16 |
+| `us-capitol-rates.jpg` | https://unsplash.com/photos/gbJsH-zTqU0 (photo-1653410772359-0ef817e04207) | Unsplash License (© Wilmer Olano) | `rates-russell-signals-20260516` | 2026-05-16 |
+| `oil-pump-jack.jpg` | https://unsplash.com/photos/sunset-GrmwVnVSSdU (photo-1516199423456-1f1e91b06f25) | Unsplash License (© Zbynek Burival) | `oil-iran-inflation-20260516` | 2026-05-16 |
 
 ## 본문 외 사진 (About 페이지 등)
 
