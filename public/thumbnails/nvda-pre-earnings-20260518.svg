@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f1815"/>
+      <stop offset="100%" stop-color="#070a09"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f0d88c"/>
+      <stop offset="50%" stop-color="#d8b878"/>
+      <stop offset="100%" stop-color="#b89a5a"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#9bcf78" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#3d7340" stop-opacity="0.5"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#76b900" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#76b900" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1050" cy="360" r="380" fill="url(#glow)"/>
+
+  <!-- 좌상단 브랜드 -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#d8b878" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#f5edd9">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#d8b878">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#d8b878" text-anchor="end">2026.05.18 · STOCK ANALYSIS</text>
+
+  <!-- D-2 거대 카운트다운 (우측) -->
+  <g transform="translate(900, 280)">
+    <circle cx="0" cy="0" r="160" fill="none" stroke="#76b900" stroke-width="1.5" stroke-opacity="0.4"/>
+    <circle cx="0" cy="0" r="130" fill="none" stroke="#76b900" stroke-width="0.5" stroke-opacity="0.6"/>
+    <text x="0" y="-40" font-family="monospace" font-size="12" letter-spacing="6" fill="#76b900" text-anchor="middle">EARNINGS</text>
+    <text x="0" y="30" font-family="Playfair Display, Georgia, serif" font-size="120" font-weight="600" fill="#f5edd9" text-anchor="middle">D−2</text>
+    <text x="0" y="75" font-family="monospace" font-size="12" letter-spacing="4" fill="#988e72" text-anchor="middle">5/20 · WED · NY</text>
+  </g>
+
+  <!-- 헤드라인 (좌측) -->
+  <text x="80" y="200" font-family="monospace" font-size="13" letter-spacing="5" fill="#d8b878">— 종목 분석 · NVDA —</text>
+  <text x="80" y="290" font-family="Playfair Display, Georgia, serif" font-size="58" font-weight="500" fill="#f5edd9">엔비디아 실적,</text>
+  <text x="80" y="360" font-family="Playfair Display, Georgia, serif" font-size="58" font-style="italic" fill="url(#gold)">시장이 95% 베팅한 자리</text>
+  <text x="80" y="410" font-family="Pretendard, sans-serif" font-size="18" fill="#c4b89e">진짜 변수는 숫자가 아니라 가이드 — 5개 라인을 정리한다</text>
+
+  <!-- 좌하단 데이터 박스 -->
+  <g transform="translate(80, 480)">
+    <line x1="0" y1="0" x2="60" y2="0" stroke="#d8b878" stroke-width="1.5"/>
+    <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#988e72">NVDA CLOSE 5/18</text>
+    <text x="0" y="78" font-family="Playfair Display, Georgia, serif" font-size="56" fill="#f5edd9">$222.32</text>
+    <g transform="translate(0, 100)">
+      <polygon points="0,12 16,12 8,0" fill="#d96552"/>
+      <text x="26" y="13" font-family="monospace" font-size="16" fill="#d96552">−1.33%  ·  −$3.00</text>
+    </g>
+  </g>
+
+  <!-- 우하단 1년 변동 -->
+  <g transform="translate(750, 480)">
+    <line x1="0" y1="0" x2="60" y2="0" stroke="#d8b878" stroke-width="1.5"/>
+    <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#988e72">52W CHANGE</text>
+    <text x="0" y="78" font-family="Playfair Display, Georgia, serif" font-size="56" fill="url(#green)">+66.2%</text>
+    <text x="0" y="108" font-family="monospace" font-size="13" fill="#988e72">S&amp;P 500 의 2.7배</text>
+  </g>
+
+  <!-- 하단 메타 -->
+  <line x1="80" y1="660" x2="1200" y2="660" stroke="#d8b878" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="80" y="690" font-family="monospace" font-size="11" letter-spacing="3" fill="#d8b878" opacity="0.8">MAY 18 · 2026 · NVDA EARNINGS WEEK</text>
+  <text x="1200" y="690" font-family="monospace" font-size="11" letter-spacing="3" fill="#d8b878" opacity="0.8" text-anchor="end">CONSENSUS · STRONG BUY · 57 ANALYSTS</text>
+</svg>
