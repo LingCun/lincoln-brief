@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a1510"/>
+      <stop offset="100%" stop-color="#0a0907"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f0d88c"/>
+      <stop offset="50%" stop-color="#d8b878"/>
+      <stop offset="100%" stop-color="#b89a5a"/>
+    </linearGradient>
+    <linearGradient id="bullGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#a3d8c5"/>
+      <stop offset="100%" stop-color="#5a8a7a"/>
+    </linearGradient>
+    <linearGradient id="redGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e8856b"/>
+      <stop offset="100%" stop-color="#a04a3a"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bgGrad)"/>
+
+  <!-- 우측: 박스 시각화 (상단/하단 점선 + 현재 위치) -->
+  <g transform="translate(870, 200)">
+    <!-- 상단 저항 7,600 -->
+    <line x1="0" y1="0" x2="340" y2="0" stroke="#7fb3a8" stroke-width="1.2" stroke-dasharray="6 4" opacity="0.7"/>
+    <text x="345" y="5" font-family="monospace" font-size="11" letter-spacing="2" fill="#7fb3a8" opacity="0.85">7,600</text>
+    <text x="0" y="-12" font-family="monospace" font-size="9" letter-spacing="3" fill="#7fb3a8" opacity="0.65">UPPER</text>
+
+    <!-- 박스 영역 음영 -->
+    <rect x="0" y="0" width="340" height="120" fill="#d8b878" opacity="0.05"/>
+
+    <!-- 중심선 7,500 -->
+    <line x1="0" y1="60" x2="340" y2="60" stroke="#d8b878" stroke-width="0.8" stroke-dasharray="2 4" opacity="0.4"/>
+    <text x="345" y="64" font-family="monospace" font-size="10" letter-spacing="2" fill="#d8b878" opacity="0.55">7,500</text>
+
+    <!-- 하단 1차 7,371 -->
+    <line x1="0" y1="120" x2="340" y2="120" stroke="#e8856b" stroke-width="1.2" stroke-dasharray="6 4" opacity="0.7"/>
+    <text x="345" y="125" font-family="monospace" font-size="11" letter-spacing="2" fill="#e8856b" opacity="0.85">7,371</text>
+    <text x="0" y="142" font-family="monospace" font-size="9" letter-spacing="3" fill="#e8856b" opacity="0.65">LOWER 1</text>
+
+    <!-- 하단 2차 7,200 -->
+    <line x1="0" y1="200" x2="340" y2="200" stroke="#a04a3a" stroke-width="1" stroke-dasharray="3 5" opacity="0.55"/>
+    <text x="345" y="205" font-family="monospace" font-size="10" letter-spacing="2" fill="#a04a3a" opacity="0.75">7,200</text>
+
+    <!-- 현재 위치 (7,418, 하단 1차 위) -->
+    <circle cx="170" cy="110" r="7" fill="#f5edd9"/>
+    <circle cx="170" cy="110" r="12" fill="none" stroke="#f5edd9" stroke-width="1" opacity="0.4"/>
+    <text x="170" y="92" font-family="Playfair Display, Georgia, serif" font-size="14" fill="#f5edd9" text-anchor="middle">7,418</text>
+    <text x="170" y="80" font-family="monospace" font-size="9" letter-spacing="2" fill="#d8b878" text-anchor="middle">NOW</text>
+  </g>
+
+  <!-- 좌상단 브랜드 -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#d8b878" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#f5edd9">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#d8b878">BRIEF</text>
+
+  <!-- 우상단 에디션 -->
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#d8b878" text-anchor="end">EDITION · MARKET FORECAST</text>
+
+  <!-- Eyebrow -->
+  <text x="80" y="200" font-family="monospace" font-size="13" letter-spacing="5" fill="#d8b878">— 2026.05.18 · D−5 BOK —</text>
+
+  <!-- 메인 헤드라인 -->
+  <text x="80" y="290" font-family="Playfair Display, Georgia, serif" font-size="58" font-weight="500" fill="#f5edd9">KOSPI 7,400~7,600</text>
+  <text x="80" y="360" font-family="Playfair Display, Georgia, serif" font-size="58" font-weight="500" fill="#f5edd9">박스</text>
+  <text x="80" y="425" font-family="Playfair Display, Georgia, serif" font-size="38" font-style="italic" fill="url(#goldGrad)">다음 결정의 일주일</text>
+
+  <!-- 부제 -->
+  <text x="80" y="475" font-family="Pretendard, sans-serif" font-size="20" fill="#c4b89e">박스 50% · 하단 이탈 30% · 상단 돌파 20% — 5/22 한은이 답한다</text>
+
+  <!-- 좌하단 데이터: 시나리오 확률 -->
+  <g transform="translate(80, 540)">
+    <line x1="0" y1="0" x2="60" y2="0" stroke="#d8b878" stroke-width="1.5"/>
+    <text x="0" y="22" font-family="monospace" font-size="10" letter-spacing="3" fill="#988e72">박스 횡보</text>
+    <text x="0" y="58" font-family="Playfair Display, Georgia, serif" font-size="32" fill="#f5edd9">50%</text>
+    <text x="0" y="88" font-family="monospace" font-size="11" fill="#988e72">동결+매파</text>
+  </g>
+
+  <g transform="translate(250, 540)">
+    <line x1="0" y1="0" x2="60" y2="0" stroke="#e8856b" stroke-width="1.5"/>
+    <text x="0" y="22" font-family="monospace" font-size="10" letter-spacing="3" fill="#988e72">하단 이탈</text>
+    <text x="0" y="58" font-family="Playfair Display, Georgia, serif" font-size="32" fill="#e8856b">30%</text>
+    <text x="0" y="88" font-family="monospace" font-size="11" fill="#988e72">7,200 시험</text>
+  </g>
+
+  <g transform="translate(420, 540)">
+    <line x1="0" y1="0" x2="60" y2="0" stroke="#7fb3a8" stroke-width="1.5"/>
+    <text x="0" y="22" font-family="monospace" font-size="10" letter-spacing="3" fill="#988e72">상단 돌파</text>
+    <text x="0" y="58" font-family="Playfair Display, Georgia, serif" font-size="32" fill="#7fb3a8">20%</text>
+    <text x="0" y="88" font-family="monospace" font-size="11" fill="#988e72">7,700 회복</text>
+  </g>
+
+  <g transform="translate(600, 540)">
+    <line x1="0" y1="0" x2="60" y2="0" stroke="#d8b878" stroke-width="1.5"/>
+    <text x="0" y="22" font-family="monospace" font-size="10" letter-spacing="3" fill="#988e72">D-Day</text>
+    <text x="0" y="58" font-family="Playfair Display, Georgia, serif" font-size="32" fill="#f0d88c">5/22</text>
+    <text x="0" y="88" font-family="monospace" font-size="11" fill="#988e72">한은 금통위</text>
+  </g>
+
+  <!-- 하단 메타 -->
+  <line x1="80" y1="660" x2="1200" y2="660" stroke="#d8b878" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="80" y="690" font-family="monospace" font-size="11" letter-spacing="3" fill="#d8b878" opacity="0.8">2026.05.18 · WEEKLY FORECAST</text>
+  <text x="1200" y="690" font-family="monospace" font-size="11" letter-spacing="3" fill="#d8b878" opacity="0.8" text-anchor="end">KOSPI · SCENARIOS</text>
+</svg>
