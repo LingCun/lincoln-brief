@@ -15,6 +15,8 @@ const blog = defineCollection({
     // Optional thumbnail tagline overlay (not used yet, future use)
     thumbnailCaption: z.string().optional(),
     category: z.enum(categorySlugs),
+    // 한국/미국/글로벌 시장 라벨. 생략 시 slug·tags 기반 자동 추정.
+    market: z.enum(['KR', 'US', 'GLOBAL']).optional(),
     tags: z.array(z.string()).default([]),
     featured: z.boolean().default(false),
     readMinutes: z.number().optional(),

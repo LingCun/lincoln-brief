@@ -1,0 +1,35 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { detectMarket, MARKET_META, type Market } from '../lib/market';
+
+interface Props {
+  /** post 를 넘기면 자동 감지. market 직접 지정 시엔 그 값 사용. */
+  post?: CollectionEntry<'blog'>;
+  market?: Market;
+  size?: 'sm' | 'md';
+}
+
+const { post, market: marketProp, size = 'sm' } = Astro.props;
+if (!post && !marketProp) {
+  throw new Error('MarketBadge: post 나 market 둘 중 하나는 필수.');
+}
+const market: Market = marketProp ?? detectMarket(post!);
+const meta = MARKET_META[market];
+
+const sizeCls = size === 'md'
+  ? 'px-2.5 py-1 text-[11px] gap-1.5'
+  : 'px-2 py-0.5 text-[10px] gap-1';
+---
+
+<span
+  class:list={[
+    'inline-flex items-center font-mono uppercase tracking-widest-2',
+    'border rounded-sm',
+    sizeCls,
+  ]}
+  style={`color: ${meta.color}; border-color: ${meta.color}80; background-color: ${meta.color}1a;`}
+  title={`Market: ${meta.label}`}
+>
+  <span aria-hidden="true">{meta.flag}</span>
+  <span>{meta.label}</span>
+</span>
