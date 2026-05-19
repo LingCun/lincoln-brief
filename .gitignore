@@ -2,6 +2,9 @@
 .astro/
 dist/
 
+# Vercel adapter
+.vercel/
+
 # Node
 node_modules/
 npm-debug.log*
