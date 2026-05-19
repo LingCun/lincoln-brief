@@ -1,6 +1,6 @@
-name: Spike D1 (Gemini, manual)
+name: Spike D1 (Groq, manual)
 
-# Day-0 차단 요인 검증 전용 (Gemini Free Tier 기반).
+# Day-0 차단 요인 검증 (Groq Free Tier, Llama 3.3 70B).
 # schedule 없음. 마스터님이 Actions 페이지에서 수동 실행.
 # 참조: docs/superpowers/specs/2026-05-20-lincoln-brief-mcp-pipeline-scope-v2.md
 
@@ -24,29 +24,29 @@ jobs:
 
       - name: Secrets 가드
         env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
         run: |
-          if [ -z "$GEMINI_API_KEY" ]; then
-            echo "::error::GEMINI_API_KEY secret 이 등록되지 않음. https://aistudio.google.com/apikey 에서 발급 후 GitHub repo Settings → Secrets and variables → Actions 에 추가."
+          if [ -z "$GROQ_API_KEY" ]; then
+            echo "::error::GROQ_API_KEY secret 이 등록되지 않음. https://console.groq.com/keys 에서 발급 후 GitHub repo Settings → Secrets and variables → Actions 에 추가."
             exit 1
           fi
-          echo "GEMINI_API_KEY 존재 (길이=$(echo -n "$GEMINI_API_KEY" | wc -c))"
+          echo "GROQ_API_KEY 존재 (길이=$(echo -n "$GROQ_API_KEY" | wc -c))"
 
-      - name: Install Google Generative AI SDK (spike 전용, package.json 변경 없음)
-        run: npm install --no-save --no-package-lock @google/generative-ai@latest
+      - name: Install Groq SDK (spike 전용, package.json 변경 없음)
+        run: npm install --no-save --no-package-lock groq-sdk@latest
 
       - name: Run spike
         env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
         run: node scripts/spike-d1-d2.mjs
 
       - name: Job summary
         if: always()
         run: |
           {
-            echo "## Spike D1 (Gemini) 결과"
+            echo "## Spike D1 (Groq Llama 3.3 70B) 결과"
             echo ""
             echo "- 워크플로: ${{ github.workflow }} / ${{ github.run_id }}"
             echo "- Node: $(node --version)"
-            echo "- 자세한 PASS/FAIL 은 상단 'Run spike' step 로그 참고"
+            echo "- 한국어 품질은 'Run spike' step 의 응답 본문 확인"
           } >> "$GITHUB_STEP_SUMMARY"
