@@ -1,10 +1,10 @@
-name: Daily Market Brief (US)
+name: Daily Market Brief (KR)
 
-# 평일 06:00 KST (= 전일 21:00 UTC) — 미국 마감 직후 시점에 미국 4개 카테고리 초안 생성.
-# 한국시간 06:00 = UTC 21:00 (-9시간). cron 은 UTC 기준이므로 21:00 UTC, 일~목.
+# 평일 16:00 KST (= 07:00 UTC) — 한국 마감 (15:30 KST) 직후 4개 카테고리 초안 생성.
+# 한국시간 16:00 = UTC 07:00 (-9시간). cron 은 UTC 기준이므로 07:00 UTC, 월~금.
 on:
   schedule:
-    - cron: '0 21 * * 0-4'  # 월~금 06:00 KST (UTC 일~목 21:00)
+    - cron: '0 7 * * 1-5'  # 월~금 16:00 KST (UTC 월~금 07:00)
   workflow_dispatch:
 
 permissions:
@@ -28,9 +28,9 @@ jobs:
       - name: Fetch market data
         run: npm run fetch:market
 
-      - name: Generate US daily brief drafts (4 categories)
+      - name: Generate KR daily brief drafts (4 categories)
         env:
-          MARKET: US
+          MARKET: KR
         run: npm run generate:daily-brief
 
       - name: Commit & push
@@ -43,5 +43,5 @@ jobs:
             exit 0
           fi
           DATE=$(date -u -d "+9 hours" +"%Y-%m-%d")  # KST
-          git commit -m "data: US daily brief drafts for $DATE"
+          git commit -m "data: KR daily brief drafts for $DATE"
           git push

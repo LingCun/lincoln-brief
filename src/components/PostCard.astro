@@ -1,6 +1,7 @@
 ---
 import type { CollectionEntry } from 'astro:content';
 import CategoryBadge from './CategoryBadge.astro';
+import MarketBadge from './MarketBadge.astro';
 import FormattedDate from './FormattedDate.astro';
 
 interface Props {
@@ -15,13 +16,17 @@ const num = typeof index === 'number' ? String(index + 1).padStart(2, '0') : nul
 <article class="card group">
   <a href={`/blog/${post.slug}/`} class="flex h-full flex-col">
     {num && (
-      <div class="mb-4 flex items-center justify-between">
+      <div class="mb-4 flex items-center justify-between gap-2">
         <span class="index-num">No. {num}</span>
-        <CategoryBadge slug={category} asLink={false} />
+        <div class="flex items-center gap-1.5">
+          <MarketBadge post={post} />
+          <CategoryBadge slug={category} asLink={false} />
+        </div>
       </div>
     )}
     {!num && (
-      <div class="mb-4">
+      <div class="mb-4 flex items-center gap-1.5">
+        <MarketBadge post={post} />
         <CategoryBadge slug={category} asLink={false} />
       </div>
     )}

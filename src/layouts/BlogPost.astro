@@ -2,6 +2,7 @@
 import type { CollectionEntry } from 'astro:content';
 import BaseLayout from './BaseLayout.astro';
 import CategoryBadge from '../components/CategoryBadge.astro';
+import MarketBadge from '../components/MarketBadge.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import RelatedPosts from '../components/RelatedPosts.astro';
 import { CATEGORIES } from '../consts';
@@ -39,7 +40,8 @@ const catColor = CATEGORIES.find((c) => c.slug === category)?.color ?? '#d8b878'
       ></div>
       <div class="container-x relative py-20 md:py-28">
         <div class="mx-auto max-w-3xl text-center">
-          <div class="mb-8 flex justify-center">
+          <div class="mb-8 flex flex-wrap justify-center gap-2">
+            <MarketBadge post={post} size="md" />
             <CategoryBadge slug={category} asLink={false} />
           </div>
           <h1 class="font-serif text-4xl font-normal leading-tight tracking-tight text-ink-50 md:text-5xl lg:text-6xl">
