@@ -1,7 +1,8 @@
-name: Daily Market Brief (US)
+name: Daily Market Brief (US, Claude Code)
 
-# 평일 06:00 KST (= 일~목 21:00 UTC) — 미국 마감 직후 4개 카테고리 초안 생성.
-# 미국시간 마감(16:00 EST = 21:00 UTC) 직후 = 한국시간 다음날 06:00 KST.
+# 평일 06:00 KST (= 일~목 21:00 UTC) — 미국 마감 직후 4개 카테고리 글 자동 생성.
+# Claude Code Action 이 STYLE.md + 최근 글을 참고해 인간 작성 수준으로 4편 발행.
+# Pro/Max 구독 quota 사용 (추가 비용 없음). CLAUDE_CODE_OAUTH_TOKEN secret 필요.
 on:
   schedule:
     - cron: '0 21 * * 0-4'  # 일~목 21:00 UTC = 월~금 06:00 KST
@@ -9,39 +10,83 @@ on:
 
 permissions:
   contents: write
+  pull-requests: write
+  issues: write
 
 jobs:
   generate:
     runs-on: ubuntu-latest
+    timeout-minutes: 25
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Setup Node 22
         uses: actions/setup-node@v4
         with:
           node-version: '22'
 
-      - name: Install deps
-        run: npm ci
-
-      - name: Fetch market data
-        run: npm run fetch:market
-
-      - name: Generate US daily brief drafts (4 categories)
+      - name: Secrets 가드
         env:
-          MARKET: US
-        run: npm run generate:daily-brief
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+        run: |
+          if [ -z "$CLAUDE_CODE_OAUTH_TOKEN" ]; then
+            echo "::error::CLAUDE_CODE_OAUTH_TOKEN secret 미등록. https://docs.claude.com/en/docs/claude-code/github-actions 참고."
+            exit 1
+          fi
+          echo "CLAUDE_CODE_OAUTH_TOKEN 존재 (길이=$(echo -n "$CLAUDE_CODE_OAUTH_TOKEN" | wc -c))"
 
-      - name: Commit & push
+      - name: Install project deps
+        run: npm install --no-audit --no-fund --silent
+
+      - name: Refresh market snapshot (yahoo-finance2)
+        run: node scripts/fetch-market.mjs
+
+      - name: Configure git
         run: |
           git config user.name "Lincoln Brief Bot"
           git config user.email "bot@lincolnbrief.local"
-          git add src/data/market-snapshot.json src/content/blog/*.md public/thumbnails/*.svg
+          git add src/data/market-snapshot.json || true
+          if ! git diff --staged --quiet; then
+            git commit -m "data: refresh market snapshot ($(TZ=Asia/Seoul date +"%Y-%m-%d %H:%M KST"))"
+          fi
+
+      - name: Generate 4 daily-brief articles via Claude Code
+        uses: anthropics/claude-code-action@v1
+        env:
+          MARKET: US
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          claude_args: |
+            --max-turns 80
+            --allowedTools "Bash(npm:*),Bash(npx:*),Bash(git:*),Bash(node:*),Bash(TZ=*:*),Read,Write,Edit,WebFetch"
+          prompt_file: scripts/generation-prompt.md
+
+      - name: Verify build (safety net)
+        run: npx astro build
+
+      - name: Commit & push generated content
+        run: |
+          git add src/content/blog/*.md public/thumbnails/*.svg || true
           if git diff --staged --quiet; then
-            echo "No changes to commit"
+            echo "::notice::커밋할 변경 없음 — 모든 슬러그 skip 또는 모든 카테고리 실패"
+            echo "**커밋 없음** — skip 또는 실패" >> "$GITHUB_STEP_SUMMARY"
             exit 0
           fi
-          DATE=$(date -u -d "+9 hours" +"%Y-%m-%d")  # KST
-          git commit -m "data: US daily brief drafts for $DATE"
+          DATE=$(TZ=Asia/Seoul date +"%Y-%m-%d")
+          git commit -m "data: US daily brief auto-generated for $DATE"
           git push
+          echo "**커밋 푸시 완료** — main 에 4편 반영됨." >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Job summary
+        if: always()
+        run: |
+          {
+            echo ""
+            echo "---"
+            echo "- 워크플로: ${{ github.workflow }} / run ${{ github.run_id }}"
+            echo "- Node: $(node --version)"
+            echo "- 발행 모드: Claude Code Action (Pro/Max quota)"
+          } >> "$GITHUB_STEP_SUMMARY"
