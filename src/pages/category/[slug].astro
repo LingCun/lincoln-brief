@@ -22,10 +22,40 @@ const { category, posts, idx } = Astro.props;
 ---
 
 <BaseLayout title={category.name} description={category.description}>
-  <section class="bg-ink-900">
-    <div class="container-x py-20 md:py-28">
+  <section
+    class="relative overflow-hidden bg-ink-900"
+    style={`--cat-color: ${category.color};`}
+  >
+    <!-- Top theme wash — 챕터 진입감 -->
+    <div
+      class="pointer-events-none absolute inset-x-0 top-0 h-[640px]"
+      style={`background: radial-gradient(ellipse 80% 60% at 50% 0%, ${category.color}26 0%, ${category.color}10 35%, transparent 75%);`}
+      aria-hidden="true"
+    ></div>
+    <!-- Side ambient color (very subtle) -->
+    <div
+      class="pointer-events-none absolute -left-32 top-40 h-[420px] w-[420px] rounded-full blur-3xl"
+      style={`background: ${category.color}1f;`}
+      aria-hidden="true"
+    ></div>
+    <div
+      class="pointer-events-none absolute -right-32 top-80 h-[420px] w-[420px] rounded-full blur-3xl"
+      style={`background: ${category.color}14;`}
+      aria-hidden="true"
+    ></div>
+    <!-- Top chapter accent line -->
+    <div
+      class="pointer-events-none absolute inset-x-0 top-0 h-[2px]"
+      style={`background: linear-gradient(90deg, transparent, ${category.color}, transparent);`}
+      aria-hidden="true"
+    ></div>
+
+    <div class="container-x relative py-20 md:py-28">
       <header class="mx-auto mb-16 max-w-3xl text-center">
-        <p class="eyebrow mb-6">— Edition No. {String(idx + 1).padStart(2, '0')} —</p>
+        <p
+          class="mb-6 text-[10px] uppercase tracking-widest-3"
+          style={`color: ${category.color};`}
+        >— Edition No. {String(idx + 1).padStart(2, '0')} —</p>
         <div class="mb-6 flex justify-center">
           <CategoryIcon slug={category.slug} size={44} />
         </div>
@@ -47,7 +77,10 @@ const { category, posts, idx } = Astro.props;
         </p>
       </header>
 
-      <div class="rule-gold mb-16"></div>
+      <div
+        class="mx-auto mb-16 h-px max-w-3xl"
+        style={`background: linear-gradient(90deg, transparent, ${category.color}99, transparent);`}
+      ></div>
 
       {posts.length === 0 ? (
         <div class="border border-dashed border-ink-600 p-16 text-center text-ink-300">
