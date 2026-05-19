@@ -1,10 +1,14 @@
-name: Test Batch US (Groq, manual)
+name: Daily Market Brief (US, Groq)
 
-# Groq Llama 3.3 70B 로 US 데일리 브리프 4개 카테고리 글 + 썸네일을 1회 자동 생성.
-# 본격 운영 진입 전 검증용 — schedule 없음. 마스터님이 Actions 페이지에서 수동 실행.
+# Groq Llama 3.3 70B 로 US 데일리 브리프 4개 카테고리 글 + 썸네일 자동 생성.
+# - schedule: 평일 21:00 UTC (= 06:00 KST 다음날) 자동 실행. PC 무관.
+# - workflow_dispatch: 수동 트리거 + 모델·토큰 튜닝 가능.
 # 참조: docs/superpowers/specs/2026-05-20-lincoln-brief-mcp-pipeline-scope-v2.md
 
 on:
+  schedule:
+    # 미국 마감 직후. 일~목 21:00 UTC = 월~금 06:00 KST.
+    - cron: '0 21 * * 0-4'
   workflow_dispatch:
     inputs:
       model:
@@ -60,9 +64,10 @@ jobs:
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           MARKET: US
-          MODEL: ${{ github.event.inputs.model }}
-          MAX_TOKENS_PER_POST: ${{ github.event.inputs.max_tokens }}
-          TEMPERATURE: ${{ github.event.inputs.temperature }}
+          # schedule cron 트리거 시 inputs 가 비어 있으므로 fallback 적용
+          MODEL: ${{ github.event.inputs.model || 'llama-3.3-70b-versatile' }}
+          MAX_TOKENS_PER_POST: ${{ github.event.inputs.max_tokens || '4000' }}
+          TEMPERATURE: ${{ github.event.inputs.temperature || '0.5' }}
         run: node scripts/generate-daily-brief-groq.mjs
 
       - name: Commit & push (글 + 썸네일 + 스냅샷)
@@ -87,7 +92,7 @@ jobs:
             echo ""
             echo "---"
             echo "- 워크플로: ${{ github.workflow }} / run ${{ github.run_id }}"
-            echo "- 모델: \`${{ github.event.inputs.model }}\` / max_tokens=${{ github.event.inputs.max_tokens }} / temperature=${{ github.event.inputs.temperature }}"
+            echo "- 모델: \`${{ github.event.inputs.model || 'llama-3.3-70b-versatile' }}\` / max_tokens=${{ github.event.inputs.max_tokens || '4000' }} / temperature=${{ github.event.inputs.temperature || '0.5' }}"
             echo "- Node: $(node --version)"
             echo ""
             echo "다음 액션 — main 의 새 글 4편을 라이브 사이트 또는 PR diff 에서 톤·정확도 검토."

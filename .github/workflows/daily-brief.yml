@@ -1,10 +1,10 @@
-name: Daily Market Brief (US)
+name: Daily Market Brief (US, Yahoo legacy fallback)
 
-# 평일 06:00 KST (= 전일 21:00 UTC) — 미국 마감 직후 시점에 미국 4개 카테고리 초안 생성.
-# 한국시간 06:00 = UTC 21:00 (-9시간). cron 은 UTC 기준이므로 21:00 UTC, 일~목.
+# 폴백 전용. 평소엔 `daily-market-brief-us-groq` (Groq 기반) 이 06:00 KST cron 으로 자동 실행.
+# 이 워크플로는 schedule 제거됨 — Groq 경로 장애 시 수동 트리거(workflow_dispatch)로만 사용.
+# 참조: docs/superpowers/specs/2026-05-20-lincoln-brief-mcp-pipeline-scope-v2.md
 on:
-  schedule:
-    - cron: '0 21 * * 0-4'  # 월~금 06:00 KST (UTC 일~목 21:00)
+  # schedule 제거됨 (Groq 워크플로와 충돌 방지). 응급용 수동 트리거만 유지.
   workflow_dispatch:
 
 permissions:
