@@ -1,0 +1,99 @@
+name: Daily Market Brief (US, Groq)
+
+# Groq Llama 3.3 70B 로 US 데일리 브리프 4개 카테고리 글 + 썸네일 자동 생성.
+# - schedule: 평일 21:00 UTC (= 06:00 KST 다음날) 자동 실행. PC 무관.
+# - workflow_dispatch: 수동 트리거 + 모델·토큰 튜닝 가능.
+# 참조: docs/superpowers/specs/2026-05-20-lincoln-brief-mcp-pipeline-scope-v2.md
+
+on:
+  schedule:
+    # 미국 마감 직후. 일~목 21:00 UTC = 월~금 06:00 KST.
+    - cron: '0 21 * * 0-4'
+  workflow_dispatch:
+    inputs:
+      model:
+        description: 'Groq 모델 ID (기본: llama-3.3-70b-versatile)'
+        required: false
+        default: 'llama-3.3-70b-versatile'
+      max_tokens:
+        description: '글당 max_tokens (기본: 4000)'
+        required: false
+        default: '4000'
+      temperature:
+        description: 'temperature (기본: 0.5)'
+        required: false
+        default: '0.5'
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Secrets 가드
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+        run: |
+          if [ -z "$GROQ_API_KEY" ]; then
+            echo "::error::GROQ_API_KEY secret 이 등록되지 않음. https://console.groq.com/keys 에서 발급 후 GitHub repo Settings → Secrets and variables → Actions 에 추가."
+            exit 1
+          fi
+          echo "GROQ_API_KEY 존재 (길이=$(echo -n "$GROQ_API_KEY" | wc -c))"
+
+      - name: Install Groq SDK (테스트 전용, package.json 변경 없음)
+        run: npm install --no-save --no-package-lock groq-sdk@latest
+
+      - name: Refresh market snapshot (yahoo-finance2)
+        run: |
+          # yahoo-finance2 는 package.json 에 이미 있음 → 일반 npm install
+          npm install --no-audit --no-fund --silent
+          node scripts/fetch-market.mjs
+
+      - name: Generate US batch via Groq
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          MARKET: US
+          # schedule cron 트리거 시 inputs 가 비어 있으므로 fallback 적용
+          MODEL: ${{ github.event.inputs.model || 'llama-3.3-70b-versatile' }}
+          MAX_TOKENS_PER_POST: ${{ github.event.inputs.max_tokens || '4000' }}
+          TEMPERATURE: ${{ github.event.inputs.temperature || '0.5' }}
+        run: node scripts/generate-daily-brief-groq.mjs
+
+      - name: Commit & push (글 + 썸네일 + 스냅샷)
+        run: |
+          git config user.name "Lincoln Brief Bot"
+          git config user.email "noreply@github.com"
+          git add src/data/market-snapshot.json src/content/blog/*.md public/thumbnails/*.svg || true
+          if git diff --staged --quiet; then
+            echo "::notice::커밋할 변경 없음 — 모든 슬러그 skip 되었거나 4개 모두 실패."
+            echo "**커밋 없음** — 모든 슬러그가 이미 존재(skip)했거나 모든 카테고리가 실패했습니다." >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          DATE=$(date -u -d "+9 hours" +"%Y-%m-%d")  # KST
+          git commit -m "test: Groq US batch 4 categories ($DATE)"
+          git push
+          echo "**커밋 푸시 완료** — main 에 변경사항 반영됨." >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Job summary footer
+        if: always()
+        run: |
+          {
+            echo ""
+            echo "---"
+            echo "- 워크플로: ${{ github.workflow }} / run ${{ github.run_id }}"
+            echo "- 모델: \`${{ github.event.inputs.model || 'llama-3.3-70b-versatile' }}\` / max_tokens=${{ github.event.inputs.max_tokens || '4000' }} / temperature=${{ github.event.inputs.temperature || '0.5' }}"
+            echo "- Node: $(node --version)"
+            echo ""
+            echo "다음 액션 — main 의 새 글 4편을 라이브 사이트 또는 PR diff 에서 톤·정확도 검토."
+          } >> "$GITHUB_STEP_SUMMARY"
