@@ -4,19 +4,38 @@ import BaseLayout from './BaseLayout.astro';
 import CategoryBadge from '../components/CategoryBadge.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import RelatedPosts from '../components/RelatedPosts.astro';
+import { CATEGORIES } from '../consts';
 
 interface Props {
   post: CollectionEntry<'blog'>;
 }
 const { post } = Astro.props;
 const { title, description, pubDate, updatedDate, thumbnail, category, tags, readMinutes, sources } = post.data;
+const catColor = CATEGORIES.find((c) => c.slug === category)?.color ?? '#d8b878';
 ---
 
 <BaseLayout title={title} description={description} image={thumbnail}>
-  <article class="bg-ink-900" data-pagefind-body data-pagefind-meta={`category:${category}`}>
-    <!-- HEADER -->
-    <header class="border-b border-ink-600">
-      <div class="container-x py-20 md:py-28">
+  <article
+    class="relative overflow-hidden bg-ink-900"
+    data-pagefind-body
+    data-pagefind-meta={`category:${category}`}
+    style={`--cat-color: ${catColor};`}
+  >
+    <!-- HEADER — 카테고리 테마 라디얼 워시 -->
+    <header class="relative overflow-hidden border-b border-ink-600">
+      <!-- Top accent line -->
+      <div
+        class="pointer-events-none absolute inset-x-0 top-0 h-[2px]"
+        style={`background: linear-gradient(90deg, transparent, ${catColor}, transparent);`}
+        aria-hidden="true"
+      ></div>
+      <!-- Theme radial wash -->
+      <div
+        class="pointer-events-none absolute inset-x-0 top-0 h-full"
+        style={`background: radial-gradient(ellipse 80% 70% at 50% 0%, ${catColor}28 0%, ${catColor}10 40%, transparent 80%);`}
+        aria-hidden="true"
+      ></div>
+      <div class="container-x relative py-20 md:py-28">
         <div class="mx-auto max-w-3xl text-center">
           <div class="mb-8 flex justify-center">
             <CategoryBadge slug={category} asLink={false} />
@@ -24,7 +43,10 @@ const { title, description, pubDate, updatedDate, thumbnail, category, tags, rea
           <h1 class="font-serif text-4xl font-normal leading-tight tracking-tight text-ink-50 md:text-5xl lg:text-6xl">
             {title}
           </h1>
-          <div class="mx-auto mt-8 h-px w-16 bg-gold-500"></div>
+          <div
+            class="mx-auto mt-8 h-px w-16"
+            style={`background: ${catColor};`}
+          ></div>
           <p class="mx-auto mt-8 max-w-2xl font-serif text-lg italic leading-relaxed text-ink-100 md:text-xl">
             {description}
           </p>

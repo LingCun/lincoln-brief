@@ -24,13 +24,13 @@ export const CATEGORIES = [
     slug: 'stock-analysis',
     name: '종목 분석',
     description: '관심 종목 펀더멘털·기술적 분석',
-    color: '#d96552', // bull (coral)
+    color: '#5677b0', // blue
   },
   {
     slug: 'market-forecast',
     name: '시장 예측',
     description: '거시·섹터 흐름 기반 단·중기 전망',
-    color: '#5677b0', // bear (blue)
+    color: '#d96552', // red (coral)
   },
   {
     slug: 'economy-issue',

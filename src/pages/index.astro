@@ -197,27 +197,34 @@ const latestPosts = allPosts.filter((p) => p.slug !== featuredPost?.slug).slice(
         {CATEGORIES.map((c, i) => (
           <a
             href={`/category/${c.slug}/`}
-            class="group relative flex flex-col bg-ink-900 p-10 transition duration-300 hover:bg-ink-800"
+            class="group relative flex flex-col overflow-hidden bg-ink-900 p-10 transition duration-300 hover:bg-ink-800"
+            style={`--cat-color: ${c.color};`}
           >
+            <!-- 카드 라디얼 워시 (카테고리 색) -->
+            <span
+              class="pointer-events-none absolute -bottom-32 -right-20 h-[280px] w-[280px] rounded-full opacity-50 blur-3xl transition-opacity duration-500 group-hover:opacity-80"
+              style={`background: ${c.color}33;`}
+              aria-hidden="true"
+            ></span>
             <!-- top color bar (카테고리 시그니처) -->
             <span
               class="pointer-events-none absolute inset-x-0 top-0 h-[3px]"
               style={`background: ${c.color};`}
             ></span>
 
-            <div class="mb-8 flex items-center justify-between">
+            <div class="relative mb-8 flex items-center justify-between">
               <span class="index-num">No. {String(i + 1).padStart(2, '0')}</span>
               <CategoryIcon slug={c.slug} size={22} />
             </div>
             <h3
-              class="headline-sm text-ink-50 transition-colors"
+              class="relative headline-sm text-ink-50 transition-colors"
               style={`--cat-color: ${c.color};`}
             >
               {c.name}
             </h3>
-            <p class="mt-4 flex-1 text-sm leading-relaxed text-ink-200">{c.description}</p>
+            <p class="relative mt-4 flex-1 text-sm leading-relaxed text-ink-200">{c.description}</p>
             <span
-              class="mt-8 text-[10px] uppercase tracking-widest-2 transition-all group-hover:translate-x-1"
+              class="relative mt-8 text-[10px] uppercase tracking-widest-2 transition-all group-hover:translate-x-1"
               style={`color: ${c.color};`}
             >
               Enter →
