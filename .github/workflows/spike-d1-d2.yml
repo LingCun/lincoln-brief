@@ -1,0 +1,53 @@
+name: Spike D1+D2 (manual)
+
+# Day-0 차단 요인 검증 전용. schedule 없음. 마스터님이 Actions 페이지에서 수동 실행.
+# 참조: docs/superpowers/specs/2026-05-20-lincoln-brief-mcp-pipeline-wbs.md "5. 의존성·차단 요인"
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  spike:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Secrets 가드
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          if [ -z "$ANTHROPIC_API_KEY" ]; then
+            echo "::error::ANTHROPIC_API_KEY secret 이 등록되지 않음. GitHub repo Settings → Secrets and variables → Actions 에 추가 후 재실행."
+            exit 1
+          fi
+          echo "ANTHROPIC_API_KEY 존재 (길이=$(echo -n "$ANTHROPIC_API_KEY" | wc -c))"
+
+      - name: Install Anthropic SDK (spike 전용, package.json 변경 없음)
+        run: npm install --no-save --no-package-lock @anthropic-ai/sdk@latest
+
+      - name: Run spike
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          # PlayMCP 는 OAuth access token 이 별도 필요. 미설정 시 D2 는 분석 결과만 로깅.
+          PLAYMCP_AUTHORIZATION_TOKEN: ${{ secrets.PLAYMCP_AUTHORIZATION_TOKEN }}
+        run: node scripts/spike-d1-d2.mjs
+
+      - name: Job summary
+        if: always()
+        run: |
+          {
+            echo "## Spike D1+D2 결과"
+            echo ""
+            echo "- 워크플로: ${{ github.workflow }} / ${{ github.run_id }}"
+            echo "- Node: $(node --version)"
+            echo "- 자세한 PASS/FAIL 은 상단 'Run spike' step 로그 참고"
+          } >> "$GITHUB_STEP_SUMMARY"
