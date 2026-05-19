@@ -99,6 +99,7 @@ export default config({
         ),
         content: fields.mdx({
           label: '본문 (마크다운)',
+          extension: 'md',
           options: {
             image: { directory: 'public/images', publicPath: '/images/' },
           },
