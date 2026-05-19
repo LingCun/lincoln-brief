@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#101a13"/>
+      <stop offset="100%" stop-color="#070a08"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#9bbc7e"/>
+      <stop offset="50%" stop-color="#7a8c5a"/>
+      <stop offset="100%" stop-color="#516040"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f0d88c"/>
+      <stop offset="100%" stop-color="#b89a5a"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#7a8c5a" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#7a8c5a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1050" cy="180" r="320" fill="url(#glow)"/>
+
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#d8b878" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#f5edd9">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#d8b878">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#7a8c5a" text-anchor="end">2026.05.19 · ECONOMY ISSUE</text>
+
+  <text x="80" y="180" font-family="monospace" font-size="13" letter-spacing="5" fill="#7a8c5a">— 경제 이슈 · USD/KRW —</text>
+  <text x="80" y="265" font-family="Playfair Display, Georgia, serif" font-size="56" font-weight="500" fill="#f5edd9">환율 1,508원,</text>
+  <text x="80" y="333" font-family="Playfair Display, Georgia, serif" font-size="56" font-style="italic" fill="url(#green)">미국 금리가 만든 충격</text>
+  <text x="80" y="375" font-family="Pretendard, sans-serif" font-size="17" fill="#988e72">미국 30년물 5.1% (2007 이후 최고) + 미·이란 답보 + 위험회피</text>
+
+  <!-- 타임라인 -->
+  <g transform="translate(80, 460)">
+    <line x1="0" y1="50" x2="1120" y2="50" stroke="url(#green)" stroke-width="2"/>
+
+    <!-- 2024 -->
+    <circle cx="60" cy="50" r="9" fill="#7a8c5a" stroke="#101a13" stroke-width="3"/>
+    <text x="60" y="20" font-family="monospace" font-size="11" letter-spacing="3" fill="#988e72" text-anchor="middle">2025.05</text>
+    <text x="60" y="86" font-family="Playfair Display, Georgia, serif" font-size="20" fill="#c4b89e" text-anchor="middle">₩1,399</text>
+
+    <!-- 200일 평균 -->
+    <circle cx="420" cy="50" r="9" fill="#988e72" stroke="#101a13" stroke-width="3"/>
+    <text x="420" y="20" font-family="monospace" font-size="11" letter-spacing="3" fill="#988e72" text-anchor="middle">200DMA</text>
+    <text x="420" y="86" font-family="Playfair Display, Georgia, serif" font-size="20" fill="#c4b89e" text-anchor="middle">₩1,446</text>
+
+    <!-- 50일 평균 -->
+    <circle cx="780" cy="50" r="11" fill="#9bbc7e" stroke="#101a13" stroke-width="3"/>
+    <text x="780" y="20" font-family="monospace" font-size="11" letter-spacing="3" fill="#988e72" text-anchor="middle">50DMA</text>
+    <text x="780" y="86" font-family="Playfair Display, Georgia, serif" font-size="20" fill="#c4b89e" text-anchor="middle">₩1,484</text>
+
+    <!-- 5/19 -->
+    <circle cx="1060" cy="50" r="16" fill="#7a8c5a" stroke="#101a13" stroke-width="3"/>
+    <text x="1060" y="20" font-family="monospace" font-size="11" letter-spacing="3" fill="#7a8c5a" text-anchor="middle" font-weight="600">5/19 NOW</text>
+    <text x="1060" y="86" font-family="Playfair Display, Georgia, serif" font-size="28" fill="#f5edd9" text-anchor="middle" font-weight="600">₩1,508</text>
+    <text x="1060" y="110" font-family="monospace" font-size="11" fill="#988e72" text-anchor="middle">+1.37% / day</text>
+  </g>
+
+  <!-- 우측 52w 박스 -->
+  <g transform="translate(940, 195)">
+    <line x1="0" y1="0" x2="60" y2="0" stroke="#7a8c5a" stroke-width="1.5"/>
+    <text x="0" y="28" font-family="monospace" font-size="10" letter-spacing="3" fill="#988e72">52W HIGH</text>
+    <text x="0" y="76" font-family="Playfair Display, Georgia, serif" font-size="46" font-weight="600" fill="url(#green)">₩1,536</text>
+    <text x="0" y="106" font-family="monospace" font-size="11" fill="#988e72">현재 -1.9% 자리</text>
+  </g>
+
+  <line x1="80" y1="660" x2="1200" y2="660" stroke="#7a8c5a" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="80" y="690" font-family="monospace" font-size="11" letter-spacing="3" fill="#7a8c5a" opacity="0.8">US 30Y · 5.10% (HIGH SINCE 2007)</text>
+  <text x="1200" y="690" font-family="monospace" font-size="11" letter-spacing="3" fill="#7a8c5a" opacity="0.8" text-anchor="end">BOK FX RESERVES · ₩4,030B USD</text>
+</svg>
