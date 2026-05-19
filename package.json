@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build && pagefind --site dist",
+    "build": "astro build && pagefind --site .vercel/output/static",
     "preview": "astro preview",
     "astro": "astro",
     "fetch:market": "node scripts/fetch-market.mjs",
