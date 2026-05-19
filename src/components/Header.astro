@@ -262,8 +262,11 @@ const dateNum = today.getDate();
        각 [data-theme] 섹션이 뷰포트 중앙 20% 영역에 들어오면
        --theme-color 갱신 → 헤더·배경 라디얼이 자동 반응.
        LOCK 동작: 같은 섹션 안에서 스크롤 → 콜백 안 일어남 → 색 유지.
+       NB: Header 가 body 최상단에서 렌더되므로 inline script 실행 시점엔
+       아래 슬롯의 [data-theme] 섹션이 아직 없음 → DOMContentLoaded 대기.
     */
-    if ('IntersectionObserver' in window) {
+    const initThemeScrollLock = () => {
+      if (!('IntersectionObserver' in window)) return;
       const root = document.documentElement;
       const DEFAULT_COLOR = '#d8b878';
       const setTheme = (slug, color) => {
@@ -300,6 +303,12 @@ const dateNum = today.getDate();
 
       /* 초기값: 첫 로드 시 default */
       setTheme('', DEFAULT_COLOR);
+    };
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initThemeScrollLock);
+    } else {
+      initThemeScrollLock();
     }
   })();
 </script>

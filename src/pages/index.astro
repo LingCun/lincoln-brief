@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import PostCard from '../components/PostCard.astro';
 import CategoryBadge from '../components/CategoryBadge.astro';
+import MarketBadge from '../components/MarketBadge.astro';
 import CategoryIcon from '../components/CategoryIcon.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import MarketSnapshot from '../components/MarketSnapshot.astro';
@@ -137,7 +138,10 @@ const postsByCategory = CATEGORIES.map((c) => ({
 
         <div class="grid grid-cols-1 gap-12 md:grid-cols-12 md:gap-16">
           <div class="md:col-span-7">
-            <CategoryBadge slug={featuredPost.data.category} asLink={false} />
+            <div class="flex flex-wrap items-center gap-2">
+              <MarketBadge post={featuredPost} size="md" />
+              <CategoryBadge slug={featuredPost.data.category} asLink={false} />
+            </div>
             <h3 class="headline-xl mt-6 text-ink-50">
               <a href={`/blog/${featuredPost.slug}/`} class="hover:text-gold-400">
                 {featuredPost.data.title}
@@ -168,9 +172,10 @@ const postsByCategory = CATEGORIES.map((c) => ({
               {secondaryFeatured.map((post, idx) => (
                 <li>
                   <a href={`/blog/${post.slug}/`} class="group block">
-                    <div class="mb-3 flex items-center gap-4">
+                    <div class="mb-3 flex items-center gap-3">
                       <span class="index-num">No. {String(idx + 2).padStart(2, '0')}</span>
                       <span class="h-px flex-1 bg-ink-600 transition-all group-hover:bg-gold-500"></span>
+                      <MarketBadge post={post} />
                       <CategoryBadge slug={post.data.category} asLink={false} />
                     </div>
                     <h4 class="headline-sm text-ink-50 group-hover:text-gold-400">
