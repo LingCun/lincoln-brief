@@ -27,9 +27,10 @@ tags: [spec, pm, obsidian, sync, git]
 
 - 매일 06:00 KST 발행을 표방하는 한국어 미국·한국 증시 브리핑 블로그.
 - 4 에디션: 데일리 시황 / 종목 분석 / 시장 예측 / 경제 이슈 (`src/consts.ts` 의 `CATEGORIES` 에 enum 으로 정의).
-- 게시물 28편 (2026-05-14~19): KR 14편 + US/GLOBAL 14편.
+- 게시물 28편 (2026-05-14~19): KR 16편 + US/GLOBAL 12편.
 - 메인 화면: 마켓 스냅샷 TOP 12 (KR/US), 4 테마 스크롤 락 섹션, Editors' Pick, Pagefind 검색, RSS.
-- 자동화 파이프라인 2개 (`.github/workflows/`): `refresh-market.yml` (10분 주기), `daily-brief.yml` (평일 21:00 UTC = 06:00 KST). 모두 Lincoln Brief Bot 명의로 main 에 직접 푸시.
+- 자동화 파이프라인 3개 (`.github/workflows/`): `refresh-market.yml` (10분 주기), `daily-brief.yml` (US, 평일 06:00 KST = 일~목 21:00 UTC), `kr-daily-brief.yml` (KR, 평일 16:00 KST = 월~금 07:00 UTC). 모두 Lincoln Brief Bot 명의로 main 에 직접 푸시.
+- CMS: Keystatic 어드민 `/keystatic` (Astro hybrid output + Vercel serverless adapter, GitHub OAuth 인증). `src/content/blog/*.md` 를 노션식 GUI 로 편집. Keystatic UI / 직접 .md / 자동화 스크립트 세 작성 경로 공존.
 - Stibee 구독 URL 미설정 (`src/consts.ts` 의 `STIBEE.SUBSCRIBE_URL = ''`) → "준비 중" 박스 노출.
 
 ### 볼트 현황
@@ -76,7 +77,7 @@ tags: [pm, lincoln-brief, <doc-type>]
 
 | 파일 | 핵심 섹션 |
 |---|---|
-| `01-product-snapshot.md` | 한 줄 정의 · 타깃 독자 · 4 에디션 운영 방식 · 자동화 파이프라인 (10분·06:00 KST cron) · 현재 지표(게시물 28편, KR 14·US-GLOBAL 14) · 핵심 차별점 · "무엇이 아님" |
+| `01-product-snapshot.md` | 한 줄 정의 · 타깃 독자 · 4 에디션 운영 방식 · 자동화 파이프라인 (10분·06:00 KST cron) · 현재 지표(게시물 28편, KR 16·US-GLOBAL 12) · 핵심 차별점 · "무엇이 아님" |
 | `02-roadmap.md` | Now(0~1개월): 유료화 결정 · 뉴스레터 활성 · Astro 6 검토 / Next(1~3개월): 제휴/멤버십 빌드아웃 · 검색·UX 강화 / Later(3~6개월): 자체 결제 · B2B 라이센싱 옵션 |
 | `03-backlog-and-open-decisions.md` | 열린 결정(유료화 a/b/c, GLOBAL 추정 검증, Stibee URL 채우기) + 다음 액션 체크박스 + 보류 항목 |
 | `04-risk-register.md` | DART/KRX API 키 누락 시 폴백 동작 · press02 fetch 차단 · thumbnail base64 누락 · Node 버전 불일치 · cron 실패 시 콘텐츠 공백 · 결제 외부 의존(Stibee) — 각 항목에 영향도/완화책 |
