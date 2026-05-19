@@ -13,14 +13,23 @@ const allPosts = (await getCollection('blog'))
 
 const featuredPost = allPosts.find((p) => p.data.featured) ?? allPosts[0];
 const secondaryFeatured = allPosts.filter((p) => p.slug !== featuredPost?.slug).slice(0, 2);
-const latestPosts = allPosts.filter((p) => p.slug !== featuredPost?.slug).slice(0, 6);
+
+/* 카테고리별 최신 3편 (테마 섹션용) */
+const postsByCategory = CATEGORIES.map((c) => ({
+  ...c,
+  posts: allPosts.filter((p) => p.data.category === c.slug).slice(0, 3),
+}));
 ---
 
 <BaseLayout>
   <!-- ════════════════════════════════════════════════════════
-       HERO — Editorial Magazine Cover with Energy
+       HERO — 기본 테마 (Default Gold)
        ════════════════════════════════════════════════════════ -->
-  <section class="relative overflow-hidden border-b border-ink-600 bg-ink-900">
+  <section
+    class="relative overflow-hidden border-b border-ink-600 bg-ink-900"
+    data-theme=""
+    data-theme-color="#d8b878"
+  >
     <!-- gold radial glow -->
     <div class="pointer-events-none absolute left-1/2 top-1/2 h-[600px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-gold-500/[0.08] blur-3xl"></div>
 
@@ -29,7 +38,6 @@ const latestPosts = allPosts.filter((p) => p.slug !== featuredPost?.slug).slice(
       <svg xmlns="http://www.w3.org/2000/svg" class="h-full w-full" preserveAspectRatio="none" viewBox="0 0 1200 600">
         <polyline points="0,520 100,490 200,510 300,420 400,460 500,360 600,400 700,260 800,330 900,200 1000,260 1100,140 1200,180" fill="none" stroke="#d8b878" stroke-width="1.5"/>
         <polyline points="0,580 100,560 200,570 300,500 400,530 500,460 600,490 700,380 800,420 900,330 1000,360 1100,260 1200,290" fill="none" stroke="#d8b878" stroke-width="1" opacity="0.5"/>
-        <!-- candlesticks decoration -->
         {Array.from({length: 24}).map((_, i) => {
           const x = i * 50 + 20;
           const high = 300 + Math.sin(i * 0.7) * 40;
@@ -74,11 +82,11 @@ const latestPosts = allPosts.filter((p) => p.slug !== featuredPost?.slug).slice(
         </p>
 
         <div class="mt-14 flex flex-wrap items-center justify-center gap-4">
-          <a href="/blog/" class="btn-gold-solid">Read the Latest →</a>
+          <a href="#daily-brief-section" class="btn-gold-solid">Read the Latest →</a>
           <a href="#subscribe" class="btn-ghost">Become a Member</a>
         </div>
 
-        <div class="mx-auto mt-20 flex max-w-2xl items-center justify-center gap-8 border-t border-ink-600 pt-10 text-[10px] uppercase tracking-widest-2 text-ink-300">
+        <div class="mx-auto mt-20 flex max-w-2xl flex-wrap items-center justify-center gap-4 border-t border-ink-600 pt-10 text-[10px] uppercase tracking-widest-2 text-ink-300 md:gap-8">
           <span class="font-mono">A Daily Market Brief</span>
           <span class="font-mono text-gold-500">◆</span>
           <span class="font-mono">발행: 매일 <span class="text-gold-400">06:00 KST</span></span>
@@ -90,15 +98,19 @@ const latestPosts = allPosts.filter((p) => p.slug !== featuredPost?.slug).slice(
   </section>
 
   <!-- ════════════════════════════════════════════════════════
-       MARKET SNAPSHOT — Impact moment with real numbers
+       MARKET SNAPSHOT
        ════════════════════════════════════════════════════════ -->
   <MarketSnapshot />
 
   <!-- ════════════════════════════════════════════════════════
-       FEATURED — Editor's Pick
+       FEATURED — Editor's Pick (기본 테마)
        ════════════════════════════════════════════════════════ -->
   {featuredPost && (
-    <section class="border-b border-ink-600 bg-ink-900">
+    <section
+      class="border-b border-ink-600 bg-ink-900"
+      data-theme=""
+      data-theme-color="#d8b878"
+    >
       <div class="container-x py-20 md:py-28">
         <div class="mb-12 flex items-center justify-between">
           <div class="flex items-center gap-6">
@@ -178,96 +190,110 @@ const latestPosts = allPosts.filter((p) => p.slug !== featuredPost?.slug).slice(
   )}
 
   <!-- ════════════════════════════════════════════════════════
-       CATEGORIES — The Four Editions
+       THE FOUR EDITIONS — 4개 테마 섹션 (스크롤 락 대상)
        ════════════════════════════════════════════════════════ -->
-  <section id="categories" class="relative border-b border-ink-600 bg-ink-950">
-    <div class="pointer-events-none absolute inset-0 grain opacity-50"></div>
-    <div class="container-x relative py-20 md:py-28">
-      <div class="mx-auto mb-16 max-w-2xl text-center">
-        <p class="eyebrow mb-6">— Four Editions —</p>
-        <h2 class="headline-lg text-ink-50">
-          관심 분야부터 <span class="italic text-gold-gradient">정독</span>
-        </h2>
-        <div class="ornament mt-8">
-          <span class="text-gold-400">◆</span>
-        </div>
-      </div>
+  {postsByCategory.map((c, idx) => (
+    <section
+      id={`${c.slug}-section`}
+      data-theme={c.slug}
+      data-theme-color={c.color}
+      class="theme-section relative overflow-hidden border-b border-ink-600 bg-ink-900"
+      style={`--cat-color: ${c.color};`}
+    >
+      <!-- 상단 액센트 라인 -->
+      <div
+        class="pointer-events-none absolute inset-x-0 top-0 h-[2px]"
+        style={`background: linear-gradient(90deg, transparent, ${c.color}, transparent);`}
+        aria-hidden="true"
+      ></div>
+      <!-- 라디얼 워시 -->
+      <div
+        class="pointer-events-none absolute inset-x-0 top-0 h-[640px]"
+        style={`background: radial-gradient(ellipse 80% 60% at 50% 0%, ${c.color}24 0%, ${c.color}0d 35%, transparent 75%);`}
+        aria-hidden="true"
+      ></div>
+      <!-- 사이드 앰비언트 -->
+      <div
+        class="pointer-events-none absolute -left-32 top-40 h-[420px] w-[420px] rounded-full blur-3xl"
+        style={`background: ${c.color}1a;`}
+        aria-hidden="true"
+      ></div>
+      <div
+        class="pointer-events-none absolute -right-32 top-80 h-[420px] w-[420px] rounded-full blur-3xl"
+        style={`background: ${c.color}12;`}
+        aria-hidden="true"
+      ></div>
 
-      <div class="grid grid-cols-1 gap-px overflow-hidden border border-ink-600 bg-ink-600 md:grid-cols-2 lg:grid-cols-4">
-        {CATEGORIES.map((c, i) => (
+      <div class="container-x relative py-24 md:py-32">
+        <!-- 섹션 헤더 -->
+        <header class="mx-auto mb-16 max-w-3xl text-center">
+          <p
+            class="mb-6 text-[10px] uppercase tracking-widest-3"
+            style={`color: ${c.color};`}
+          >
+            — Edition No. {String(idx + 1).padStart(2, '0')} —
+          </p>
+          <div class="mb-6 flex justify-center">
+            <CategoryIcon slug={c.slug} size={44} />
+          </div>
+          <h2
+            class="font-serif text-5xl font-normal leading-tight tracking-tight md:text-6xl"
+            style={`color: ${c.color};`}
+          >
+            {c.name}
+          </h2>
+          <div
+            class="mx-auto mt-8 h-px w-12"
+            style={`background: ${c.color};`}
+          ></div>
+          <p class="mx-auto mt-8 max-w-xl font-serif text-lg italic leading-relaxed text-ink-100">
+            {c.description}
+          </p>
+          <p class="mt-6 text-sm uppercase tracking-widest-2 text-ink-300 font-mono">
+            Latest {String(c.posts.length).padStart(2, '0')} Issues
+          </p>
+        </header>
+
+        <!-- 구분선 (카테고리 색 그라데이션) -->
+        <div
+          class="mx-auto mb-14 h-px max-w-3xl"
+          style={`background: linear-gradient(90deg, transparent, ${c.color}80, transparent);`}
+        ></div>
+
+        <!-- 최신 글 3편 -->
+        {c.posts.length === 0 ? (
+          <div class="border border-dashed border-ink-600 p-16 text-center text-ink-300">
+            이 에디션에는 아직 글이 없습니다.
+          </div>
+        ) : (
+          <div class="grid grid-cols-1 gap-x-12 gap-y-16 md:grid-cols-2 lg:grid-cols-3">
+            {c.posts.map((post, i) => <PostCard post={post} index={i} />)}
+          </div>
+        )}
+
+        <!-- 전체 보기 -->
+        <div class="mt-16 text-center">
           <a
             href={`/category/${c.slug}/`}
-            class="group relative flex flex-col overflow-hidden bg-ink-900 p-10 transition duration-300 hover:bg-ink-800"
-            style={`--cat-color: ${c.color};`}
+            class="inline-flex items-center gap-3 border px-7 py-3 text-[11px] font-medium uppercase tracking-widest-2 transition hover:opacity-75"
+            style={`color: ${c.color}; border-color: ${c.color};`}
           >
-            <!-- 카드 라디얼 워시 (카테고리 색) -->
-            <span
-              class="pointer-events-none absolute -bottom-32 -right-20 h-[280px] w-[280px] rounded-full opacity-50 blur-3xl transition-opacity duration-500 group-hover:opacity-80"
-              style={`background: ${c.color}33;`}
-              aria-hidden="true"
-            ></span>
-            <!-- top color bar (카테고리 시그니처) -->
-            <span
-              class="pointer-events-none absolute inset-x-0 top-0 h-[3px]"
-              style={`background: ${c.color};`}
-            ></span>
-
-            <div class="relative mb-8 flex items-center justify-between">
-              <span class="index-num">No. {String(i + 1).padStart(2, '0')}</span>
-              <CategoryIcon slug={c.slug} size={22} />
-            </div>
-            <h3
-              class="relative headline-sm text-ink-50 transition-colors"
-              style={`--cat-color: ${c.color};`}
-            >
-              {c.name}
-            </h3>
-            <p class="relative mt-4 flex-1 text-sm leading-relaxed text-ink-200">{c.description}</p>
-            <span
-              class="relative mt-8 text-[10px] uppercase tracking-widest-2 transition-all group-hover:translate-x-1"
-              style={`color: ${c.color};`}
-            >
-              Enter →
-            </span>
+            {c.name} 전체 보기 →
           </a>
-        ))}
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  ))}
 
   <!-- ════════════════════════════════════════════════════════
-       LATEST — Archive Grid
+       SUBSCRIBE — Members' Edition (기본 테마)
        ════════════════════════════════════════════════════════ -->
-  <section class="border-b border-ink-600 bg-ink-900">
-    <div class="container-x py-20 md:py-28">
-      <div class="mb-12 flex items-end justify-between">
-        <div>
-          <p class="eyebrow">— The Archive —</p>
-          <h2 class="headline-md mt-3 text-ink-50">최근 발행</h2>
-        </div>
-        <a href="/blog/" class="text-[11px] font-medium uppercase tracking-widest-2 text-gold-400 hover:text-gold-300">
-          View All →
-        </a>
-      </div>
-
-      <div class="rule-gold-thick mb-12"></div>
-
-      {latestPosts.length === 0 ? (
-        <div class="border border-dashed border-ink-600 p-16 text-center text-ink-300">
-          아직 발행된 글이 없습니다.
-        </div>
-      ) : (
-        <div class="grid grid-cols-1 gap-x-12 gap-y-16 md:grid-cols-2 lg:grid-cols-3">
-          {latestPosts.map((post, i) => <PostCard post={post} index={i} />)}
-        </div>
-      )}
-    </div>
-  </section>
-
-  <!-- ════════════════════════════════════════════════════════
-       SUBSCRIBE — Members' Edition
-       ════════════════════════════════════════════════════════ -->
-  <section id="subscribe" class="relative overflow-hidden bg-ink-950">
+  <section
+    id="subscribe"
+    class="relative overflow-hidden bg-ink-950"
+    data-theme=""
+    data-theme-color="#d8b878"
+  >
     <div class="pointer-events-none absolute left-1/2 top-1/2 h-96 w-96 -translate-x-1/2 -translate-y-1/2 rounded-full bg-gold-500/[0.08] blur-3xl"></div>
 
     <div class="container-x relative py-24 md:py-32">

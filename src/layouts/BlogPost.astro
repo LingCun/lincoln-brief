@@ -19,6 +19,8 @@ const catColor = CATEGORIES.find((c) => c.slug === category)?.color ?? '#d8b878'
     class="relative overflow-hidden bg-ink-900"
     data-pagefind-body
     data-pagefind-meta={`category:${category}`}
+    data-theme={category}
+    data-theme-color={catColor}
     style={`--cat-color: ${catColor};`}
   >
     <!-- HEADER — 카테고리 테마 라디얼 워시 -->

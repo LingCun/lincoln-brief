@@ -3,18 +3,38 @@
 @tailwind utilities;
 
 @layer base {
+  /* --------- Theme color (스크롤 락에 의해 갱신됨) --------- */
+  :root {
+    --theme-color: #d8b878;
+  }
+
   html {
     scroll-behavior: smooth;
     background-color: theme('colors.ink.900');
   }
   body {
-    @apply bg-ink-900 text-ink-100 antialiased;
+    @apply text-ink-100 antialiased;
     font-family: 'Pretendard', 'Inter', system-ui, sans-serif;
     font-feature-settings: "ss01", "ss02", "tnum";
     /* 한글 본문 가독성 — 1.7 줄간격 */
     line-height: 1.7;
     /* 한글 자간 살짝 좁힘 — 너무 헐거운 느낌 방지 */
     letter-spacing: -0.01em;
+    /* --------- 글로벌 테마 배경 워시 — 스크롤 따라 색 락 ---------
+       body 배경 자체를 사용해 sticky header 와 충돌 없음 */
+    background-color: theme('colors.ink.900');
+    background-image:
+      radial-gradient(ellipse 70% 45% at 50% 0%,
+        color-mix(in srgb, var(--theme-color) 14%, transparent) 0%,
+        color-mix(in srgb, var(--theme-color) 4%, transparent) 35%,
+        transparent 65%);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    transition: background-image 0.7s ease;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    body { transition: none; }
   }
 
   ::selection {
