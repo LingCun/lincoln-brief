@@ -44,7 +44,7 @@ if (!apiKey) {
 
     const t0 = Date.now();
     const msg = await client.messages.create({
-      model: 'claude-sonnet-4-5',  // 단가 가벼운 sonnet 으로 핑
+      model: 'claude-sonnet-4-6',  // 단가 가벼운 sonnet 으로 핑. PMO 비용 추정과 동일 모델.
       max_tokens: 32,
       messages: [{ role: 'user', content: 'Reply with exactly: "hi from runner"' }],
     });
@@ -57,6 +57,9 @@ if (!apiKey) {
   } catch (e) {
     fail(`SDK 호출 실패: ${e?.message ?? e}`);
     if (e?.status) info(`HTTP status: ${e.status}`);
+    if (e?.error?.error?.type) info(`API error type: ${e.error.error.type}`);
+    if (e?.error?.error?.message) info(`API error message: ${e.error.error.message}`);
+    if (e?.name) info(`Error name: ${e.name}`);
     d1Result = 'FAIL';
   }
 }
@@ -118,7 +121,7 @@ if (!playmcpToken) {
     });
     const t0 = Date.now();
     const msg = await client.messages.create({
-      model: 'claude-sonnet-4-5',
+      model: 'claude-sonnet-4-6',
       max_tokens: 256,
       messages: [{ role: 'user', content: 'AAPL 현재가 알려줘' }],
       // @ts-expect-error beta param
