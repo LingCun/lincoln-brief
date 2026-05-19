@@ -34,14 +34,24 @@ Content collection lives at `src/content/config.ts` (Astro 4 location), not `src
 
 ## The automation pipeline (the thing that's actually load-bearing)
 
-Two GitHub Actions cron the repo from the outside in:
+Three GitHub Actions cron the repo from the outside in:
 
-1. `.github/workflows/refresh-market.yml` — runs every 10 minutes, calls `npm run fetch:market`, commits `src/data/market-snapshot.json` only if it changed. This is what powers the live ticker / MarketSnapshot on the homepage.
-2. `.github/workflows/daily-brief.yml` — weekdays at 21:00 UTC (06:00 KST next day). Runs `fetch:market` then `generate:daily-brief`, commits `src/data/market-snapshot.json` + `src/content/blog/*.md` + `public/thumbnails/*.svg`.
+1. **`refresh-market.yml`** — 매 10분, `npm run fetch:market` → `src/data/market-snapshot.json` 변화 있을 때만 커밋. 홈 라이브 티커·MarketSnapshot 카드의 원천.
+2. **`daily-brief.yml`** (US) — 평일 **06:00 KST** (= 일~목 21:00 UTC). `MARKET=US` 로 `generate:daily-brief` 실행 → 미국 4개 카테고리 초안 (`daily-brief / stock-analysis / market-forecast / economy-issue` × 1) + 썸네일 4개 자동 생성·커밋. 슬러그 접두 없음.
+3. **`kr-daily-brief.yml`** (KR) — 평일 **16:00 KST** (= 월~금 07:00 UTC, 한국 마감 15:30 직후). `MARKET=KR` 로 같은 스크립트 실행 → 한국 4개 카테고리 초안 + 썸네일. 슬러그 접두 `kr-`.
 
-Both workflows use Node 22 in CI (CI is the only place Node 22 is guaranteed). They push directly to `main` as "Lincoln Brief Bot"; Vercel/Cloudflare picks up the push and rebuilds.
+세 워크플로우 모두 Node 22 in CI (CI 만이 Node 22 가 보장되는 곳). "Lincoln Brief Bot" 으로 main 에 직접 push → Vercel 이 픽업해 재빌드.
 
-`scripts/generate-daily-brief.mjs` writes posts with `[TODO: Lincoln 검토]` markers in the analysis sections. **Posts containing this marker must not be published as-is** — the human fills those sections before the marker is removed. The automation owns facts (price tables, thumbnail skeleton); the human owns insight. Don't blur that boundary by having Claude write the analysis sections programmatically.
+### `scripts/generate-daily-brief.mjs` 의 계약
+
+- **자동화 범위**: frontmatter, 가격표 (마켓별 지수·환율), 썸네일 SVG 뼈대 (카테고리 컬러), 섹션 헤더.
+- **자동화 안 함**: 분석·통찰·매수/매도 톤. 본문 거의 전부 `[TODO: Lincoln 검토]` 마커로 남음. **마커 있는 글은 미발행 상태로 취급** — 사람이 채워야 발행됨.
+- **분기**: `MARKET` 환경변수 ('US' | 'KR', 기본 US). 마켓별로 slug 접두·데이터 소스(`data.us` vs `data.kr`)·title·tags 분기.
+- **안전성**: 같은 슬러그가 이미 있으면 덮어쓰지 않음 (`fs.access` 체크 후 skip) → 수동 편집 후 같은 날 두 번째 cron 이 돌아도 손댄 글은 보존됨.
+- **날짜**: UTC + 9 시간 으로 KST 기준 stamp 사용. CI 가 UTC 21:00 (06:00 KST) 에 돌아도 슬러그 날짜는 올바른 KST 일자.
+- **자동 featured**: 스크립트가 `featured` frontmatter 를 안 씀. 대신 [`src/pages/index.astro`](src/pages/index.astro) 가 본문에 `[TODO: Lincoln 검토]` 있는 글을 메인 노출 후보에서 자동 제외 → 마커 지우면 그 글이 자동으로 featured 슬롯에 등장.
+
+automation owns facts (price tables, thumbnail skeleton); 통찰은 사람이 채운다. Claude 가 분석 단락을 프로그래밍으로 쓰지 말 것.
 
 ## CMS — Keystatic admin (`/keystatic`)
 

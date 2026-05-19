@@ -12,8 +12,17 @@ import { CATEGORIES, STIBEE } from '../consts';
 const allPosts = (await getCollection('blog'))
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
-const featuredPost = allPosts.find((p) => p.data.featured) ?? allPosts[0];
-const secondaryFeatured = allPosts.filter((p) => p.slug !== featuredPost?.slug).slice(0, 2);
+/* [TODO: Lincoln 검토] 마커가 본문에 남은 글은 자동 생성 초안 — 메인 노출 후보에서 제외.
+   마커 제거 = 검토 완료 = 자동으로 메인 등장. */
+const isReady = (p: { body: string }) => !p.body.includes('[TODO: Lincoln 검토]');
+
+const featuredPost =
+  allPosts.find((p) => p.data.featured && isReady(p)) ??
+  allPosts.find(isReady) ??
+  allPosts[0];
+const secondaryFeatured = allPosts
+  .filter((p) => p.slug !== featuredPost?.slug && isReady(p))
+  .slice(0, 2);
 
 /* 카테고리별 최신 3편 (테마 섹션용) */
 const postsByCategory = CATEGORIES.map((c) => ({
