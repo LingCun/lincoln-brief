@@ -51,14 +51,14 @@ jobs:
           fi
           echo "GROQ_API_KEY 존재 (길이=$(echo -n "$GROQ_API_KEY" | wc -c))"
 
-      - name: Install Groq SDK (테스트 전용, package.json 변경 없음)
-        run: npm install --no-save --no-package-lock groq-sdk@latest
+      - name: Install project deps (yahoo-finance2 포함, package.json 기반)
+        run: npm install --no-audit --no-fund --silent
 
       - name: Refresh market snapshot (yahoo-finance2)
-        run: |
-          # yahoo-finance2 는 package.json 에 이미 있음 → 일반 npm install
-          npm install --no-audit --no-fund --silent
-          node scripts/fetch-market.mjs
+        run: node scripts/fetch-market.mjs
+
+      - name: Install Groq SDK (--no-save; 위의 npm install 이후라 덮어쓰기 없음)
+        run: npm install --no-save --no-package-lock groq-sdk@latest
 
       - name: Generate US batch via Groq
         env:
