@@ -28,20 +28,20 @@ const { title, description, pubDate, updatedDate, thumbnail, category, tags, rea
           <p class="mx-auto mt-8 max-w-2xl font-serif text-lg italic leading-relaxed text-ink-100 md:text-xl">
             {description}
           </p>
-          <div class="mt-10 flex flex-wrap items-center justify-center gap-4 text-[10px] uppercase tracking-widest-2 text-ink-300">
-            <FormattedDate date={pubDate} />
-            <span class="text-gold-500">◆</span>
-            <span>By <span class="text-gold-400">Lincoln</span></span>
+          <div class="mt-10 flex flex-wrap items-center justify-center gap-4 text-ink-200">
+            <FormattedDate date={pubDate} class="text-base tracking-normal text-ink-100" />
+            <span class="text-gold-500 text-[10px]">◆</span>
+            <span class="text-[10px] uppercase tracking-widest-2 text-ink-300">By <span class="text-gold-400">Lincoln</span></span>
             {readMinutes && (
               <>
-                <span class="text-gold-500">◆</span>
-                <span class="font-mono">{readMinutes} min read</span>
+                <span class="text-gold-500 text-[10px]">◆</span>
+                <span class="font-mono text-[10px] uppercase tracking-widest-2 text-ink-300">{readMinutes} min read</span>
               </>
             )}
             {updatedDate && (
               <>
-                <span class="text-gold-500">◆</span>
-                <span>Updated <FormattedDate date={updatedDate} /></span>
+                <span class="text-gold-500 text-[10px]">◆</span>
+                <span class="text-[10px] uppercase tracking-widest-2 text-ink-300">Updated <FormattedDate date={updatedDate} class="text-[10px]" /></span>
               </>
             )}
           </div>

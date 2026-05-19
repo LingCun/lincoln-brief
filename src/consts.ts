@@ -18,25 +18,25 @@ export const CATEGORIES = [
     slug: 'daily-brief',
     name: '데일리 시황',
     description: '매일 아침 미국·한국 증시 핵심 요약',
-    accent: 'gold',
+    color: '#d8b878', // gold
   },
   {
     slug: 'stock-analysis',
     name: '종목 분석',
     description: '관심 종목 펀더멘털·기술적 분석',
-    accent: 'bull',
+    color: '#d96552', // bull (coral)
   },
   {
     slug: 'market-forecast',
     name: '시장 예측',
     description: '거시·섹터 흐름 기반 단·중기 전망',
-    accent: 'bear',
+    color: '#5677b0', // bear (blue)
   },
   {
     slug: 'economy-issue',
     name: '경제 이슈',
     description: '금리·환율·정책·글로벌 이벤트',
-    accent: 'navy',
+    color: '#7a8c5a', // sage
   },
 ] as const;
 

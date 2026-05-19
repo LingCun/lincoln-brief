@@ -11,6 +11,10 @@
     @apply bg-ink-900 text-ink-100 antialiased;
     font-family: 'Pretendard', 'Inter', system-ui, sans-serif;
     font-feature-settings: "ss01", "ss02", "tnum";
+    /* 한글 본문 가독성 — 1.7 줄간격 */
+    line-height: 1.7;
+    /* 한글 자간 살짝 좁힘 — 너무 헐거운 느낌 방지 */
+    letter-spacing: -0.01em;
   }
 
   ::selection {

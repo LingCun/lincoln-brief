@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import PostCard from '../components/PostCard.astro';
 import CategoryBadge from '../components/CategoryBadge.astro';
+import CategoryIcon from '../components/CategoryIcon.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import MarketSnapshot from '../components/MarketSnapshot.astro';
 import { CATEGORIES, STIBEE } from '../consts';
@@ -133,14 +134,14 @@ const latestPosts = allPosts.filter((p) => p.slug !== featuredPost?.slug).slice(
             <p class="mt-8 font-serif text-xl italic leading-relaxed text-ink-100">
               {featuredPost.data.description}
             </p>
-            <div class="mt-10 flex items-center gap-6 text-[10px] uppercase tracking-widest-2 text-ink-200">
-              <FormattedDate date={featuredPost.data.pubDate} />
-              <span class="text-gold-500">◆</span>
-              <span>By <span class="text-gold-400">Lincoln</span></span>
+            <div class="mt-10 flex flex-wrap items-baseline gap-x-6 gap-y-2 text-ink-200">
+              <FormattedDate date={featuredPost.data.pubDate} class="text-[15px] tracking-normal text-ink-100" />
+              <span class="text-gold-500 text-[10px]">◆</span>
+              <span class="text-[10px] uppercase tracking-widest-2">By <span class="text-gold-400">Lincoln</span></span>
               {featuredPost.data.readMinutes && (
                 <>
-                  <span class="text-gold-500">◆</span>
-                  <span class="font-mono">{featuredPost.data.readMinutes} min read</span>
+                  <span class="text-gold-500 text-[10px]">◆</span>
+                  <span class="font-mono text-[10px] uppercase tracking-widest-2">{featuredPost.data.readMinutes} min read</span>
                 </>
               )}
             </div>
@@ -198,13 +199,27 @@ const latestPosts = allPosts.filter((p) => p.slug !== featuredPost?.slug).slice(
             href={`/category/${c.slug}/`}
             class="group relative flex flex-col bg-ink-900 p-10 transition duration-300 hover:bg-ink-800"
           >
+            <!-- top color bar (카테고리 시그니처) -->
+            <span
+              class="pointer-events-none absolute inset-x-0 top-0 h-[3px]"
+              style={`background: ${c.color};`}
+            ></span>
+
             <div class="mb-8 flex items-center justify-between">
               <span class="index-num">No. {String(i + 1).padStart(2, '0')}</span>
-              <span class="h-px w-8 bg-gold-500 transition-all duration-500 group-hover:w-16"></span>
+              <CategoryIcon slug={c.slug} size={22} />
             </div>
-            <h3 class="headline-sm text-ink-50 transition-colors group-hover:text-gold-400">{c.name}</h3>
+            <h3
+              class="headline-sm text-ink-50 transition-colors"
+              style={`--cat-color: ${c.color};`}
+            >
+              {c.name}
+            </h3>
             <p class="mt-4 flex-1 text-sm leading-relaxed text-ink-200">{c.description}</p>
-            <span class="mt-8 text-[10px] uppercase tracking-widest-2 text-gold-400 transition-all group-hover:translate-x-1">
+            <span
+              class="mt-8 text-[10px] uppercase tracking-widest-2 transition-all group-hover:translate-x-1"
+              style={`color: ${c.color};`}
+            >
               Enter →
             </span>
           </a>

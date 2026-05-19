@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import PostCard from '../../components/PostCard.astro';
+import CategoryIcon from '../../components/CategoryIcon.astro';
 import { CATEGORIES } from '../../consts';
 
 export async function getStaticPaths() {
@@ -25,10 +26,19 @@ const { category, posts, idx } = Astro.props;
     <div class="container-x py-20 md:py-28">
       <header class="mx-auto mb-16 max-w-3xl text-center">
         <p class="eyebrow mb-6">— Edition No. {String(idx + 1).padStart(2, '0')} —</p>
-        <h1 class="font-serif text-5xl font-normal leading-tight tracking-tight text-ink-50 md:text-6xl">
+        <div class="mb-6 flex justify-center">
+          <CategoryIcon slug={category.slug} size={44} />
+        </div>
+        <h1
+          class="font-serif text-5xl font-normal leading-tight tracking-tight md:text-6xl"
+          style={`color: ${category.color};`}
+        >
           {category.name}
         </h1>
-        <div class="mx-auto mt-8 h-px w-12 bg-gold-500"></div>
+        <div
+          class="mx-auto mt-8 h-px w-12"
+          style={`background: ${category.color};`}
+        ></div>
         <p class="mx-auto mt-8 max-w-xl font-serif text-lg italic leading-relaxed text-ink-100">
           {category.description}
         </p>

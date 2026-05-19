@@ -46,17 +46,17 @@ const num = typeof index === 'number' ? String(index + 1).padStart(2, '0') : nul
       {description}
     </p>
 
-    <div class="flex items-center justify-between border-t border-ink-700 pt-4 text-[10px] uppercase tracking-widest-2 text-ink-300">
-      <span class="flex items-center gap-3">
-        <FormattedDate date={pubDate} />
+    <div class="flex items-center justify-between border-t border-ink-700 pt-4">
+      <span class="flex items-baseline gap-3">
+        <FormattedDate date={pubDate} class="text-[13px] tracking-normal text-ink-100" />
         {readMinutes && (
           <>
-            <span class="text-gold-500">◆</span>
-            <span class="font-mono">{readMinutes} min</span>
+            <span class="text-gold-500 text-[10px]">◆</span>
+            <span class="font-mono text-[10px] uppercase tracking-widest-2 text-ink-300">{readMinutes} min</span>
           </>
         )}
       </span>
-      <span class="text-gold-400 opacity-0 transition-opacity group-hover:opacity-100">
+      <span class="text-gold-400 text-[10px] uppercase tracking-widest-2 opacity-0 transition-opacity group-hover:opacity-100">
         Read →
       </span>
     </div>

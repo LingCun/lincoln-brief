@@ -38,7 +38,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site ?? SITE_URL);
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={new URL(image, canonicalURL)} />
 
-<!-- Fonts: Pretendard (Korean), Playfair Display (English serif), Italiana (display serif) -->
+<!-- Fonts: Pretendard (KR sans), Playfair Display (Latin serif), Noto Serif KR (KR serif), Italiana (display), JetBrains Mono -->
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link rel="preconnect" href="https://cdn.jsdelivr.net" />
@@ -48,5 +48,5 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site ?? SITE_URL);
 />
 <link
   rel="stylesheet"
-  href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&family=Italiana&family=JetBrains+Mono:wght@400;500&display=swap"
+  href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&family=Noto+Serif+KR:wght@300;400;500;600;700&family=Italiana&family=JetBrains+Mono:wght@400;500&display=swap"
 />

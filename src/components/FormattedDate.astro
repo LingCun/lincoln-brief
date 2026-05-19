@@ -1,12 +1,18 @@
 ---
 interface Props {
   date: Date;
-  format?: 'ko' | 'en';
+  format?: 'ko' | 'en' | 'iso';
+  class?: string;
 }
-const { date, format = 'en' } = Astro.props;
-const formatted = format === 'ko'
-  ? date.toLocaleDateString('ko-KR', { year: 'numeric', month: 'long', day: 'numeric' })
-  : date.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' }).toUpperCase();
+const { date, format = 'iso', class: className = '' } = Astro.props;
+
+const pad = (n: number) => String(n).padStart(2, '0');
+const formatted =
+  format === 'ko'
+    ? date.toLocaleDateString('ko-KR', { year: 'numeric', month: 'long', day: 'numeric' })
+    : format === 'en'
+      ? date.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' }).toUpperCase()
+      : `${date.getFullYear()}.${pad(date.getMonth() + 1)}.${pad(date.getDate())}`;
 ---
 
-<time datetime={date.toISOString()} class="font-mono">{formatted}</time>
+<time datetime={date.toISOString()} class={`font-mono ${className}`}>{formatted}</time>

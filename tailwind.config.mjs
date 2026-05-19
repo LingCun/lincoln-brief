@@ -36,10 +36,13 @@ export default {
         },
         bull: '#d96552',
         bear: '#5677b0',
+        sage: '#7a8c5a',
       },
       fontFamily: {
-        serif: ['"Playfair Display"', '"Cormorant Garamond"', 'Georgia', 'serif'],
-        display: ['"Italiana"', '"Playfair Display"', 'Georgia', 'serif'],
+        // 폰트 체인: 브라우저는 글리프가 있는 첫 폰트로 렌더 →
+        // Latin 은 Playfair / Italiana, 한글은 Noto Serif KR
+        serif: ['"Playfair Display"', '"Noto Serif KR"', '"Cormorant Garamond"', 'Georgia', 'serif'],
+        display: ['"Italiana"', '"Playfair Display"', '"Noto Serif KR"', 'Georgia', 'serif'],
         sans: ['"Pretendard"', '"Inter"', 'system-ui', 'sans-serif'],
         mono: ['"JetBrains Mono"', 'ui-monospace', 'monospace'],
       },

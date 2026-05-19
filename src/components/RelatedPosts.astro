@@ -53,12 +53,12 @@ const categoryName = CATEGORIES.find((c) => c.slug === currentCategory)?.name ??
               {post.data.title}
             </h4>
             <p class="mt-2 line-clamp-2 text-sm text-ink-200">{post.data.description}</p>
-            <div class="mt-4 flex items-center gap-3 text-[10px] uppercase tracking-widest-2 text-ink-300">
-              <FormattedDate date={post.data.pubDate} />
+            <div class="mt-4 flex items-baseline gap-3">
+              <FormattedDate date={post.data.pubDate} class="text-[13px] tracking-normal text-ink-100" />
               {post.data.readMinutes && (
                 <>
-                  <span class="text-gold-500">◆</span>
-                  <span class="font-mono">{post.data.readMinutes} min</span>
+                  <span class="text-gold-500 text-[10px]">◆</span>
+                  <span class="font-mono text-[10px] uppercase tracking-widest-2 text-ink-300">{post.data.readMinutes} min</span>
                 </>
               )}
             </div>

@@ -1,0 +1,54 @@
+---
+import { CATEGORIES, type CategorySlug } from '../consts';
+
+interface Props {
+  slug: CategorySlug;
+  size?: number;
+  class?: string;
+  color?: string; // 명시적 색 오버라이드 — 미지정 시 카테고리 기본색
+}
+const { slug, size = 18, class: className = '', color } = Astro.props;
+const category = CATEGORIES.find((c) => c.slug === slug);
+if (!category) throw new Error(`Unknown category: ${slug}`);
+const stroke = color ?? category.color;
+---
+
+<svg
+  width={size}
+  height={size}
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke={stroke}
+  stroke-width="1.5"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  class={className}
+  aria-hidden="true"
+>
+  {slug === 'daily-brief' && (
+    <>
+      <circle cx="12" cy="12" r="4" />
+      <path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M5 19l2-2M17 7l2-2" />
+    </>
+  )}
+  {slug === 'stock-analysis' && (
+    <>
+      <rect x="4" y="8" width="3" height="10" />
+      <rect x="10.5" y="5" width="3" height="14" />
+      <rect x="17" y="11" width="3" height="6" />
+      <path d="M2 21h20" />
+    </>
+  )}
+  {slug === 'market-forecast' && (
+    <>
+      <path d="M3 17l5-5 4 4 8-9" />
+      <path d="M14 7h6v6" />
+    </>
+  )}
+  {slug === 'economy-issue' && (
+    <>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M3 12h18M12 3a14 14 0 010 18M12 3a14 14 0 000 18" />
+    </>
+  )}
+</svg>

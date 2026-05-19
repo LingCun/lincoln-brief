@@ -1,8 +1,8 @@
 ---
 import { CATEGORIES, SITE_TITLE } from '../consts';
 import MarketTicker from './MarketTicker.astro';
+import CategoryIcon from './CategoryIcon.astro';
 
-const navItems = CATEGORIES.map((c) => ({ href: `/category/${c.slug}/`, label: c.name }));
 const currentPath = Astro.url.pathname;
 
 const today = new Date();
@@ -39,37 +39,7 @@ const isoDate = today.toLocaleDateString('en-US', {
         </span>
       </a>
 
-      <nav class="hidden lg:block">
-        <ul class="flex items-center gap-8">
-          {navItems.map((item) => {
-            const isActive = currentPath.startsWith(item.href);
-            return (
-              <li>
-                <a
-                  href={item.href}
-                  class:list={[
-                    'relative text-[11px] font-medium uppercase tracking-widest-2 transition-colors',
-                    'after:absolute after:-bottom-2 after:left-1/2 after:h-px after:w-0 after:-translate-x-1/2 after:bg-gold-400 after:transition-all after:duration-300',
-                    'hover:after:w-full',
-                    isActive ? 'text-gold-400 after:w-full' : 'text-ink-100 hover:text-gold-400',
-                  ]}
-                >
-                  {item.label}
-                </a>
-              </li>
-            );
-          })}
-        </ul>
-      </nav>
-
       <div class="flex items-center gap-3">
-        <!-- Desktop: About + Subscribe -->
-        <a
-          href="/about/"
-          class="hidden text-[11px] font-medium uppercase tracking-widest-2 text-ink-100 hover:text-gold-400 lg:inline"
-        >
-          About
-        </a>
         <!--
           Search button hidden until article count > 20.
           Re-enable by removing the `hidden` class below + uncomment search-related
@@ -86,12 +56,12 @@ const isoDate = today.toLocaleDateString('en-US', {
           Subscribe
         </a>
 
-        <!-- Mobile: Hamburger -->
+        <!-- Hamburger — 항상 노출 (카테고리 띠가 1차 네비, 햄버거는 About/Archive/RSS 보조) -->
         <button
           id="mobile-menu-toggle"
           aria-label="메뉴 열기"
           aria-expanded="false"
-          class="inline-flex flex-col items-center justify-center gap-1.5 p-2 lg:hidden"
+          class="inline-flex flex-col items-center justify-center gap-1.5 p-2"
         >
           <span class="block h-px w-6 bg-ink-50 transition-all duration-300"></span>
           <span class="block h-px w-6 bg-ink-50 transition-all duration-300"></span>
@@ -100,10 +70,68 @@ const isoDate = today.toLocaleDateString('en-US', {
       </div>
     </div>
   </div>
+
+  <!-- ============================================================
+       CATEGORY STRIP — 4개 카테고리 상시 노출 (색·아이콘)
+       ============================================================ -->
+  <nav class="border-b border-ink-600 bg-ink-900" aria-label="카테고리">
+    <div class="container-x">
+      <ul class="grid grid-cols-4">
+        {CATEGORIES.map((c, i) => {
+          const href = `/category/${c.slug}/`;
+          const isActive = currentPath.startsWith(href);
+          return (
+            <li class="relative">
+              <a
+                href={href}
+                class:list={[
+                  'group relative flex flex-col items-center gap-1.5 px-2 py-3 text-center transition-colors md:py-4',
+                  'border-r border-ink-700 last:border-r-0',
+                  isActive ? 'bg-ink-800/40' : 'hover:bg-ink-800/30',
+                ]}
+                style={isActive ? `--cat-color: ${c.color};` : `--cat-color: ${c.color};`}
+              >
+                <!-- top accent bar -->
+                <span
+                  class:list={[
+                    'pointer-events-none absolute inset-x-0 top-0 h-[3px] transition-opacity duration-300',
+                    isActive ? 'opacity-100' : 'opacity-30 group-hover:opacity-100',
+                  ]}
+                  style={`background: ${c.color};`}
+                ></span>
+
+                <CategoryIcon slug={c.slug} size={18} class="hidden sm:block" />
+
+                <span class="font-mono text-[9px] uppercase tracking-widest-2 text-ink-300">
+                  No.{String(i + 1).padStart(2, '0')}
+                </span>
+
+                <span
+                  class="font-serif text-sm italic md:text-[15px]"
+                  style={isActive ? `color: ${c.color};` : 'color: #f5edd9;'}
+                >
+                  {c.name}
+                </span>
+
+                <!-- bottom indicator on hover/active -->
+                <span
+                  class:list={[
+                    'pointer-events-none absolute bottom-0 left-1/2 h-[2px] -translate-x-1/2 transition-all duration-300',
+                    isActive ? 'w-8' : 'w-0 group-hover:w-8',
+                  ]}
+                  style={`background: ${c.color};`}
+                ></span>
+              </a>
+            </li>
+          );
+        })}
+      </ul>
+    </div>
+  </nav>
 </header>
 
 <!-- ============================================================
-     MOBILE DRAWER
+     MOBILE / DESKTOP DRAWER — 카테고리 색·아이콘 + 보조 메뉴
      ============================================================ -->
 <div
   id="mobile-drawer"
@@ -125,15 +153,21 @@ const isoDate = today.toLocaleDateString('en-US', {
 
   <nav class="relative flex-1 overflow-y-auto px-6 py-10">
     <p class="eyebrow mb-6">— Editions —</p>
-    <ul class="space-y-6">
-      {navItems.map((item, i) => (
+    <ul class="space-y-5">
+      {CATEGORIES.map((c, i) => (
         <li>
           <a
-            href={item.href}
-            class="group flex items-baseline gap-4 text-2xl font-serif text-ink-50 hover:text-gold-400 transition-colors"
+            href={`/category/${c.slug}/`}
+            class="group flex items-center gap-4 border-b border-ink-700/60 py-3 transition-colors hover:bg-ink-900/40"
           >
             <span class="font-mono text-xs text-gold-500">No. {String(i + 1).padStart(2, '0')}</span>
-            <span>{item.label}</span>
+            <CategoryIcon slug={c.slug} size={20} />
+            <span
+              class="font-serif text-2xl italic text-ink-50 transition-colors"
+              style={`--cat-color: ${c.color};`}
+            >
+              {c.name}
+            </span>
           </a>
         </li>
       ))}
