@@ -6,57 +6,98 @@ import CategoryIcon from './CategoryIcon.astro';
 const currentPath = Astro.url.pathname;
 
 const today = new Date();
-const isoDate = today.toLocaleDateString('en-US', {
-  weekday: 'long',
-  year: 'numeric',
-  month: 'long',
-  day: 'numeric',
-});
+const dayShort = today.toLocaleDateString('en-US', { weekday: 'short' }).toUpperCase();
+const monthShort = today.toLocaleDateString('en-US', { month: 'short' }).toUpperCase();
+const dateNum = today.getDate();
 ---
 
-<header class="sticky top-0 z-50 bg-ink-900/95 backdrop-blur">
+<header class="theme-header sticky top-0 z-50 bg-ink-900/95 backdrop-blur">
   <!-- LIVE MARKET TICKER -->
   <MarketTicker />
 
-  <!-- Date strip -->
-  <div class="hidden border-b border-ink-700 md:block">
-    <div class="container-x flex h-9 items-center justify-between text-[10px] uppercase tracking-widest-2 text-ink-200">
-      <span class="font-mono text-gold-400">A DAILY MARKET BRIEF</span>
-      <span class="font-mono">{isoDate}</span>
-      <span class="font-mono text-gold-400">SEOUL · 06:00 KST</span>
-    </div>
-  </div>
+  <!-- Top accent line — 카테고리 색 LOCK -->
+  <div class="theme-accent-line h-[2px] w-full"></div>
 
-  <!-- main bar -->
+  <!-- main bar — 3-column grid (date · logo · actions) -->
   <div class="border-b border-ink-600">
-    <div class="container-x flex h-20 items-center justify-between gap-6">
-      <a href="/" class="flex items-baseline gap-3">
-        <span class="font-display text-3xl leading-none tracking-tight text-ink-50 md:text-4xl">
-          Lincoln
-        </span>
-        <span class="hidden text-[11px] font-medium uppercase tracking-widest-3 text-gold-400 sm:inline">
-          Brief
-        </span>
+    <div class="container-x grid h-20 grid-cols-[1fr_auto_1fr] items-center md:h-24">
+      <!-- LEFT: date meta -->
+      <div class="hidden md:block">
+        <div class="flex items-baseline gap-3 font-mono text-[10px] uppercase tracking-widest-2 text-ink-300">
+          <span class="text-gold-400">{dayShort}</span>
+          <span class="text-ink-200">{monthShort} {dateNum}</span>
+          <span class="text-ink-400">·</span>
+          <span class="text-gold-400">06:00 KST</span>
+        </div>
+        <div class="mt-1 font-mono text-[9px] uppercase tracking-widest-3 text-ink-400">
+          A Daily Market Brief
+        </div>
+      </div>
+      <div class="md:hidden"></div>
+
+      <!-- CENTER: Logo (Option B — Monogram L + Rule + LINCOLN/BRIEF) -->
+      <a
+        href="/"
+        class="logo justify-self-center"
+        aria-label={SITE_TITLE}
+      >
+        <svg
+          width="172"
+          height="56"
+          viewBox="0 0 172 56"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="logo-svg block h-12 w-auto md:h-14"
+          aria-hidden="true"
+        >
+          <!-- Big L (italic serif) -->
+          <text
+            x="0"
+            y="46"
+            font-family="Italiana, Playfair Display, Georgia, serif"
+            font-size="56"
+            font-style="italic"
+            fill="currentColor"
+          >L</text>
+          <!-- Vertical rule -->
+          <line
+            x1="42"
+            y1="10"
+            x2="42"
+            y2="48"
+            stroke="currentColor"
+            stroke-width="0.8"
+            opacity="0.7"
+          />
+          <!-- LINCOLN -->
+          <text
+            x="54"
+            y="26"
+            font-family="Playfair Display, Georgia, serif"
+            font-size="14"
+            font-weight="500"
+            letter-spacing="3"
+            fill="currentColor"
+          >LINCOLN</text>
+          <!-- BRIEF (smaller, ornament style) -->
+          <text
+            x="54"
+            y="42"
+            font-family="JetBrains Mono, monospace"
+            font-size="9"
+            letter-spacing="6"
+            fill="currentColor"
+            opacity="0.7"
+          >— BRIEF —</text>
+        </svg>
       </a>
 
-      <div class="flex items-center gap-3">
-        <!--
-          Search button hidden until article count > 20.
-          Re-enable by removing the `hidden` class below + uncomment search-related
-          mobile drawer button + SearchModal import.
-        -->
-        <button
-          id="search-open"
-          aria-label="검색"
-          class="hidden p-2 text-ink-200 hover:text-gold-400 transition-colors"
-        >
-          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
-        </button>
+      <!-- RIGHT: subscribe + hamburger -->
+      <div class="flex items-center justify-end gap-3">
         <a href="#subscribe" class="btn-gold-solid hidden text-[10px] md:inline-flex">
           Subscribe
         </a>
 
-        <!-- Hamburger — 항상 노출 (카테고리 띠가 1차 네비, 햄버거는 About/Archive/RSS 보조) -->
         <button
           id="mobile-menu-toggle"
           aria-label="메뉴 열기"
@@ -84,17 +125,17 @@ const isoDate = today.toLocaleDateString('en-US', {
             <li class="relative">
               <a
                 href={href}
+                data-cat-slug={c.slug}
                 class:list={[
-                  'group relative flex flex-col items-center gap-1.5 px-2 py-3 text-center transition-colors md:py-4',
+                  'group cat-strip-link relative flex flex-col items-center gap-1.5 px-2 py-3 text-center transition-colors md:py-4',
                   'border-r border-ink-700 last:border-r-0',
                   isActive ? 'bg-ink-800/40' : 'hover:bg-ink-800/30',
                 ]}
-                style={isActive ? `--cat-color: ${c.color};` : `--cat-color: ${c.color};`}
+                style={`--cat-color: ${c.color};`}
               >
-                <!-- top accent bar -->
                 <span
                   class:list={[
-                    'pointer-events-none absolute inset-x-0 top-0 h-[3px] transition-opacity duration-300',
+                    'cat-top-bar pointer-events-none absolute inset-x-0 top-0 h-[3px] transition-opacity duration-300',
                     isActive ? 'opacity-100' : 'opacity-30 group-hover:opacity-100',
                   ]}
                   style={`background: ${c.color};`}
@@ -107,16 +148,15 @@ const isoDate = today.toLocaleDateString('en-US', {
                 </span>
 
                 <span
-                  class="font-serif text-sm italic md:text-[15px]"
+                  class="cat-strip-name font-serif text-sm italic md:text-[15px]"
                   style={isActive ? `color: ${c.color};` : 'color: #f5edd9;'}
                 >
                   {c.name}
                 </span>
 
-                <!-- bottom indicator on hover/active -->
                 <span
                   class:list={[
-                    'pointer-events-none absolute bottom-0 left-1/2 h-[2px] -translate-x-1/2 transition-all duration-300',
+                    'cat-bottom-indicator pointer-events-none absolute bottom-0 left-1/2 h-[2px] -translate-x-1/2 transition-all duration-300',
                     isActive ? 'w-8' : 'w-0 group-hover:w-8',
                   ]}
                   style={`background: ${c.color};`}
@@ -131,7 +171,7 @@ const isoDate = today.toLocaleDateString('en-US', {
 </header>
 
 <!-- ============================================================
-     MOBILE / DESKTOP DRAWER — 카테고리 색·아이콘 + 보조 메뉴
+     MOBILE / DESKTOP DRAWER
      ============================================================ -->
 <div
   id="mobile-drawer"
@@ -182,15 +222,6 @@ const isoDate = today.toLocaleDateString('en-US', {
       </ul>
     </div>
 
-    <!-- Mobile search hidden until article count > 20 -->
-    <button
-      id="mobile-search-open"
-      class="mt-12 hidden w-full items-center gap-3 border border-ink-600 px-4 py-3 text-left text-sm text-ink-200 hover:border-gold-500 hover:text-gold-400 transition"
-    >
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
-      검색…
-    </button>
-
     <a href="#subscribe" class="btn-gold-solid mt-8 w-full justify-center text-center" id="mobile-subscribe-link">
       Subscribe
     </a>
@@ -199,34 +230,125 @@ const isoDate = today.toLocaleDateString('en-US', {
 
 <script is:inline>
   (function () {
+    /* --------- Mobile Drawer --------- */
     const toggle = document.getElementById('mobile-menu-toggle');
     const close = document.getElementById('mobile-menu-close');
     const drawer = document.getElementById('mobile-drawer');
     const body = document.body;
-    if (!toggle || !drawer) return;
+    if (toggle && drawer) {
+      const open = () => {
+        drawer.classList.remove('hidden');
+        drawer.classList.add('flex');
+        drawer.setAttribute('aria-hidden', 'false');
+        toggle.setAttribute('aria-expanded', 'true');
+        body.style.overflow = 'hidden';
+      };
+      const shut = () => {
+        drawer.classList.add('hidden');
+        drawer.classList.remove('flex');
+        drawer.setAttribute('aria-hidden', 'true');
+        toggle.setAttribute('aria-expanded', 'false');
+        body.style.overflow = '';
+      };
+      toggle.addEventListener('click', open);
+      close?.addEventListener('click', shut);
+      drawer.querySelectorAll('a').forEach((a) => a.addEventListener('click', shut));
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && !drawer.classList.contains('hidden')) shut();
+      });
+    }
 
-    const open = () => {
-      drawer.classList.remove('hidden');
-      drawer.classList.add('flex');
-      drawer.setAttribute('aria-hidden', 'false');
-      toggle.setAttribute('aria-expanded', 'true');
-      body.style.overflow = 'hidden';
-    };
-    const shut = () => {
-      drawer.classList.add('hidden');
-      drawer.classList.remove('flex');
-      drawer.setAttribute('aria-hidden', 'true');
-      toggle.setAttribute('aria-expanded', 'false');
-      body.style.overflow = '';
-    };
+    /* --------- Theme Scroll-Lock (IntersectionObserver) ---------
+       각 [data-theme] 섹션이 뷰포트 중앙 20% 영역에 들어오면
+       --theme-color 갱신 → 헤더·배경 라디얼이 자동 반응.
+       LOCK 동작: 같은 섹션 안에서 스크롤 → 콜백 안 일어남 → 색 유지.
+    */
+    if ('IntersectionObserver' in window) {
+      const root = document.documentElement;
+      const DEFAULT_COLOR = '#d8b878';
+      const setTheme = (slug, color) => {
+        root.style.setProperty('--theme-color', color || DEFAULT_COLOR);
+        if (slug) root.dataset.activeTheme = slug;
+        else delete root.dataset.activeTheme;
+        /* 카테고리 띠 활성 시각화 — 현재 테마 슬러그와 일치하는 탭 강조 */
+        document.querySelectorAll('.cat-strip-link').forEach((el) => {
+          const isMatch = el.dataset.catSlug === slug;
+          el.classList.toggle('strip-active', isMatch);
+        });
+      };
 
-    toggle.addEventListener('click', open);
-    close?.addEventListener('click', shut);
-    // Close when navigating internally via link in drawer
-    drawer.querySelectorAll('a').forEach((a) => a.addEventListener('click', shut));
-    // ESC closes
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && !drawer.classList.contains('hidden')) shut();
-    });
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              const el = entry.target;
+              const slug = el.dataset.theme || '';
+              const color = el.dataset.themeColor || DEFAULT_COLOR;
+              setTheme(slug, color);
+            }
+          });
+        },
+        {
+          /* 뷰포트 중앙 20% 영역만 활성 존 — 한 섹션만 매칭됨 */
+          rootMargin: '-40% 0px -40% 0px',
+          threshold: 0,
+        }
+      );
+
+      const sections = document.querySelectorAll('[data-theme]');
+      sections.forEach((s) => observer.observe(s));
+
+      /* 초기값: 첫 로드 시 default */
+      setTheme('', DEFAULT_COLOR);
+    }
   })();
 </script>
+
+<style>
+  /* Default theme color */
+  :root {
+    --theme-color: #d8b878;
+  }
+
+  /* Top accent line — 카테고리 색 LOCK */
+  .theme-accent-line {
+    background: linear-gradient(90deg, transparent, var(--theme-color), transparent);
+    opacity: 0.55;
+    transition: background 0.7s ease, opacity 0.7s ease;
+  }
+
+  /* 로고 색 — 테마에 따라 변함 */
+  .logo {
+    color: var(--theme-color);
+    transition: color 0.7s ease;
+  }
+  /* default 상태일 땐 ivory 유지 (테마 진입 전) */
+  :root:not([data-active-theme]) .logo,
+  :root[data-active-theme=""] .logo {
+    color: #f5edd9;
+  }
+
+  /* 카테고리 띠 — 활성 (스크롤 락 매칭) */
+  .cat-strip-link.strip-active {
+    background-color: rgba(34, 27, 20, 0.6);
+  }
+  .cat-strip-link.strip-active .cat-top-bar {
+    opacity: 1 !important;
+    height: 4px !important;
+  }
+  .cat-strip-link.strip-active .cat-bottom-indicator {
+    width: 32px !important;
+  }
+  .cat-strip-link.strip-active .cat-strip-name {
+    color: var(--cat-color) !important;
+  }
+
+  /* Reduce-motion 사용자 */
+  @media (prefers-reduced-motion: reduce) {
+    .theme-accent-line,
+    .logo,
+    .cat-strip-link {
+      transition: none !important;
+    }
+  }
+</style>

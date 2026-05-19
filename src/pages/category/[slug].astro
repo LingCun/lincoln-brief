@@ -24,6 +24,8 @@ const { category, posts, idx } = Astro.props;
 <BaseLayout title={category.name} description={category.description}>
   <section
     class="relative overflow-hidden bg-ink-900"
+    data-theme={category.slug}
+    data-theme-color={category.color}
     style={`--cat-color: ${category.color};`}
   >
     <!-- Top theme wash — 챕터 진입감 -->
