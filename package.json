@@ -13,7 +13,9 @@
     "astro": "astro",
     "fetch:market": "node scripts/fetch-market.mjs",
     "generate:daily-brief": "node scripts/generate-daily-brief.mjs",
-    "inline:thumbnails": "node scripts/inline-thumbnail-photos.mjs"
+    "inline:thumbnails": "node scripts/inline-thumbnail-photos.mjs",
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
   "dependencies": {
     "@astrojs/mdx": "^3.1.9",
@@ -28,12 +30,15 @@
     "@types/react": "^18.3.28",
     "@types/react-dom": "^18.3.7",
     "astro": "^4.16.18",
+    "marked": "^18.0.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "tailwindcss": "^3.4.17",
     "yahoo-finance2": "^2.13.3"
   },
   "devDependencies": {
-    "pagefind": "^1.1.1"
+    "@vitest/ui": "^4.1.6",
+    "pagefind": "^1.1.1",
+    "vitest": "^4.1.6"
   }
 }
