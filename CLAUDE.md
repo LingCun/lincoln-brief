@@ -34,7 +34,7 @@ Content collection lives at `src/content/config.ts` (Astro 4 location), not `src
 
 ## The automation pipeline (the thing that's actually load-bearing)
 
-**전체 문서: [docs/AUTOMATION.md](docs/AUTOMATION.md)** — 데이터 흐름, 트러블슈팅, 매뉴얼 재실행 절차.
+**전체 문서**: 아키텍처는 [docs/AUTOMATION.md](docs/AUTOMATION.md), 트러블슈팅·모니터링·매뉴얼 재실행은 [docs/OPERATIONS.md](docs/OPERATIONS.md). 문서 인덱스 [docs/README.md](docs/README.md).
 
 운영 중인 GitHub Actions 워크플로 3종:
 
