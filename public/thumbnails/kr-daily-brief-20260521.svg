@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a1510"/>
+      <stop offset="100%" stop-color="#0a0907"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f0d88c"/>
+      <stop offset="50%" stop-color="#d8b878"/>
+      <stop offset="100%" stop-color="#b89a5a"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#d8b878" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#d8b878" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="redglow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#d96552" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#d96552" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1050" cy="200" r="300" fill="url(#redglow)"/>
+  <circle cx="200" cy="580" r="260" fill="url(#glow)"/>
+
+  <!-- Header -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#d8b878" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#f5edd9">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#d8b878">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#d8b878" text-anchor="end">2026.05.21 · KR DAILY</text>
+
+  <!-- Main content -->
+  <text x="80" y="180" font-family="monospace" font-size="13" letter-spacing="5" fill="#d8b878">— 5월 20일 한국 시장 —</text>
+  <text x="80" y="265" font-family="Playfair Display, Georgia, serif" font-size="56" font-weight="500" fill="#f5edd9">자동차·철강 쌍충격</text>
+  <text x="80" y="325" font-family="Playfair Display, Georgia, serif" font-size="48" font-style="italic" fill="url(#gold)">지수 뒤에 숨은 진짜 낙폭</text>
+  <text x="80" y="374" font-family="sans-serif" font-size="17" fill="#988e72">현대차 −10.7% · POSCO −9.9% · 기아 −8.1% — 섹터 쇼크</text>
+
+  <!-- Metrics row -->
+  <g transform="translate(80, 460)">
+    <!-- KOSPI -->
+    <g>
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#d8b878" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#988e72">KOSPI</text>
+      <text x="0" y="68" font-family="Playfair Display, Georgia, serif" font-size="34" fill="#f5edd9">7,208.95</text>
+      <polygon points="0,86 14,86 7,72" fill="#d96552"/>
+      <text x="22" y="93" font-family="monospace" font-size="14" fill="#d96552">−0.86%</text>
+    </g>
+    <!-- 현대차 -->
+    <g transform="translate(290, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#d8b878" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#988e72">현대차</text>
+      <text x="0" y="68" font-family="Playfair Display, Georgia, serif" font-size="34" fill="#f5edd9">592,000</text>
+      <polygon points="0,86 14,86 7,72" fill="#d96552"/>
+      <text x="22" y="93" font-family="monospace" font-size="14" fill="#d96552">−10.71%</text>
+    </g>
+    <!-- POSCO -->
+    <g transform="translate(580, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#d8b878" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#988e72">POSCO홀딩스</text>
+      <text x="0" y="68" font-family="Playfair Display, Georgia, serif" font-size="34" fill="#f5edd9">417,000</text>
+      <polygon points="0,86 14,86 7,72" fill="#d96552"/>
+      <text x="22" y="93" font-family="monospace" font-size="14" fill="#d96552">−9.94%</text>
+    </g>
+    <!-- NVDA upcoming -->
+    <g transform="translate(870, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#d8b878" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#988e72">NVDA 실적</text>
+      <text x="0" y="68" font-family="Playfair Display, Georgia, serif" font-size="28" fill="url(#gold)">오늘 밤</text>
+      <text x="0" y="93" font-family="monospace" font-size="13" fill="#988e72">05:30 KST 발표</text>
+    </g>
+  </g>
+
+  <!-- Bottom line -->
+  <line x1="80" y1="660" x2="1200" y2="660" stroke="#d8b878" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="80" y="690" font-family="monospace" font-size="11" letter-spacing="3" fill="#d8b878" opacity="0.8">MAY 20 · 2026 · TUE · POST-CLOSE</text>
+  <text x="1200" y="690" font-family="monospace" font-size="11" letter-spacing="3" fill="#d8b878" opacity="0.8" text-anchor="end">SOURCE · KRX · YAHOO</text>
+</svg>

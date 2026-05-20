@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d1218"/>
+      <stop offset="100%" stop-color="#070a0e"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f0d88c"/>
+      <stop offset="50%" stop-color="#d8b878"/>
+      <stop offset="100%" stop-color="#b89a5a"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#6caed8"/>
+      <stop offset="100%" stop-color="#4a8fbf"/>
+    </linearGradient>
+    <radialGradient id="blueglow" cx="60%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#4a8fbf" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#4a8fbf" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="960" cy="250" r="340" fill="url(#blueglow)"/>
+
+  <!-- Header -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#d8b878" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#f5edd9">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#d8b878">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#d8b878" text-anchor="end">2026.05.21 · KR FORECAST</text>
+
+  <!-- Category label -->
+  <rect x="80" y="120" width="100" height="28" rx="3" fill="#4a8fbf" fill-opacity="0.15" stroke="#6caed8" stroke-width="1" stroke-opacity="0.5"/>
+  <text x="130" y="139" font-family="monospace" font-size="12" letter-spacing="2" fill="#6caed8" text-anchor="middle">시장 예측</text>
+
+  <!-- Main title -->
+  <text x="80" y="230" font-family="Playfair Display, Georgia, serif" font-size="52" font-weight="500" fill="#f5edd9">KOSPI</text>
+  <text x="80" y="300" font-family="Playfair Display, Georgia, serif" font-size="64" font-style="italic" fill="url(#gold)">7,000 ~ 7,500</text>
+  <text x="80" y="346" font-family="Playfair Display, Georgia, serif" font-size="32" fill="#6caed8">박스 정착 시나리오</text>
+
+  <!-- Range visualization -->
+  <!-- Box range bar -->
+  <rect x="80" y="385" width="820" height="12" rx="6" fill="#1e2a38"/>
+  <!-- Current position marker -->
+  <rect x="80" y="385" width="495" height="12" rx="6" fill="#4a8fbf" fill-opacity="0.5"/>
+  <!-- 7,000 label -->
+  <text x="80" y="415" font-family="monospace" font-size="12" fill="#988e72">7,000</text>
+  <!-- 7,208 marker line -->
+  <line x1="575" y1="378" x2="575" y2="404" stroke="#d8b878" stroke-width="2"/>
+  <text x="560" y="425" font-family="monospace" font-size="12" fill="#d8b878" text-anchor="middle">현재 7,208</text>
+  <!-- 7,500 label -->
+  <text x="900" y="415" font-family="monospace" font-size="12" fill="#988e72" text-anchor="end">7,500</text>
+
+  <!-- Key catalysts -->
+  <g transform="translate(80, 460)">
+    <g>
+      <rect x="0" y="0" width="180" height="56" rx="4" fill="#d96552" fill-opacity="0.12" stroke="#d96552" stroke-width="1" stroke-opacity="0.4"/>
+      <text x="90" y="22" font-family="monospace" font-size="11" letter-spacing="2" fill="#d96552" text-anchor="middle">NVDA 실적</text>
+      <text x="90" y="44" font-family="monospace" font-size="14" fill="#f5edd9" text-anchor="middle">오늘 밤 05:30</text>
+    </g>
+    <g transform="translate(210, 0)">
+      <rect x="0" y="0" width="180" height="56" rx="4" fill="#6caed8" fill-opacity="0.12" stroke="#6caed8" stroke-width="1" stroke-opacity="0.4"/>
+      <text x="90" y="22" font-family="monospace" font-size="11" letter-spacing="2" fill="#6caed8" text-anchor="middle">한은 발표</text>
+      <text x="90" y="44" font-family="monospace" font-size="14" fill="#f5edd9" text-anchor="middle">5/22 10:00</text>
+    </g>
+    <g transform="translate(420, 0)">
+      <rect x="0" y="0" width="180" height="56" rx="4" fill="#d8b878" fill-opacity="0.12" stroke="#d8b878" stroke-width="1" stroke-opacity="0.4"/>
+      <text x="90" y="22" font-family="monospace" font-size="11" letter-spacing="2" fill="#d8b878" text-anchor="middle">美 CPI</text>
+      <text x="90" y="44" font-family="monospace" font-size="14" fill="#f5edd9" text-anchor="middle">6/11 21:30</text>
+    </g>
+  </g>
+
+  <!-- Scenario summary -->
+  <text x="80" y="570" font-family="sans-serif" font-size="16" fill="#988e72">베이스 45% 박스 · 불 20% V자 · 베어 30% 추가조정 · 블랙스완 5%</text>
+
+  <!-- Bottom line -->
+  <line x1="80" y1="660" x2="1200" y2="660" stroke="#d8b878" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="80" y="690" font-family="monospace" font-size="11" letter-spacing="3" fill="#d8b878" opacity="0.8">MAY 21 · 2026 · MARKET OUTLOOK</text>
+  <text x="1200" y="690" font-family="monospace" font-size="11" letter-spacing="3" fill="#d8b878" opacity="0.8" text-anchor="end">SOURCE · YAHOO FINANCE</text>
+</svg>

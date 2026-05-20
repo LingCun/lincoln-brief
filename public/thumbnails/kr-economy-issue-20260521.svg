@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0e1510"/>
+      <stop offset="100%" stop-color="#08100a"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f0d88c"/>
+      <stop offset="50%" stop-color="#d8b878"/>
+      <stop offset="100%" stop-color="#b89a5a"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7ec87e"/>
+      <stop offset="100%" stop-color="#4aa44a"/>
+    </linearGradient>
+    <radialGradient id="greenglow" cx="60%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#4aa44a" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#4aa44a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="950" cy="260" r="340" fill="url(#greenglow)"/>
+
+  <!-- Header -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#d8b878" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#f5edd9">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#d8b878">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#d8b878" text-anchor="end">2026.05.21 · KR ECONOMY</text>
+
+  <!-- Category label -->
+  <rect x="80" y="120" width="100" height="28" rx="3" fill="#4aa44a" fill-opacity="0.15" stroke="#7ec87e" stroke-width="1" stroke-opacity="0.5"/>
+  <text x="130" y="139" font-family="monospace" font-size="12" letter-spacing="2" fill="#7ec87e" text-anchor="middle">경제 이슈</text>
+
+  <!-- Main title -->
+  <text x="80" y="225" font-family="Playfair Display, Georgia, serif" font-size="50" font-weight="500" fill="#f5edd9">삼성전자 외국인 비중</text>
+  <text x="80" y="295" font-family="Playfair Display, Georgia, serif" font-size="64" font-style="italic" fill="url(#gold)">연내 최저</text>
+  <text x="80" y="343" font-family="sans-serif" font-size="20" fill="#988e72">한국 증시 수급 구조의 분기점</text>
+
+  <!-- Divider -->
+  <line x1="80" y1="375" x2="700" y2="375" stroke="#d8b878" stroke-opacity="0.2" stroke-width="1"/>
+
+  <!-- Key factors -->
+  <text x="80" y="410" font-family="monospace" font-size="14" letter-spacing="2" fill="#7ec87e">▶  외국인 4거래일 이상 연속 순매도</text>
+  <text x="80" y="445" font-family="monospace" font-size="14" letter-spacing="2" fill="#d8b878">▶  미국 30년물 금리 5.1% — 달러 자산 매력↑</text>
+  <text x="80" y="480" font-family="monospace" font-size="14" letter-spacing="2" fill="#d96552">▶  USD/KRW ~1,508 — 원화 환산 수익률 압박</text>
+
+  <!-- Bottom metrics -->
+  <g transform="translate(80, 540)">
+    <g>
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#d8b878" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#988e72">삼성전자</text>
+      <text x="0" y="60" font-family="Playfair Display, Georgia, serif" font-size="28" fill="#f5edd9">276,000원</text>
+      <polygon points="0,76 14,76 7,90" fill="#d96552"/>
+      <text x="22" y="97" font-family="monospace" font-size="14" fill="#d96552">−1.78%</text>
+    </g>
+    <g transform="translate(320, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#d8b878" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#988e72">복귀 조건</text>
+      <text x="0" y="60" font-family="Playfair Display, Georgia, serif" font-size="22" fill="#7ec87e">금리↓ 환율↓</text>
+      <text x="0" y="92" font-family="monospace" font-size="13" fill="#988e72">6/11 미국 CPI 주목</text>
+    </g>
+    <g transform="translate(640, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#d8b878" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#988e72">30일 저점 대비</text>
+      <text x="0" y="60" font-family="Playfair Display, Georgia, serif" font-size="28" fill="url(#gold)">+43%</text>
+      <text x="0" y="92" font-family="monospace" font-size="13" fill="#988e72">193,100 → 276,000</text>
+    </g>
+  </g>
+
+  <!-- Bottom line -->
+  <line x1="80" y1="660" x2="1200" y2="660" stroke="#d8b878" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="80" y="690" font-family="monospace" font-size="11" letter-spacing="3" fill="#d8b878" opacity="0.8">MAY 21 · 2026 · MACRO ISSUE</text>
+  <text x="1200" y="690" font-family="monospace" font-size="11" letter-spacing="3" fill="#d8b878" opacity="0.8" text-anchor="end">SOURCE · BUSINESS KOREA · YAHOO</text>
+</svg>

@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#160e0e"/>
+      <stop offset="100%" stop-color="#0a0707"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f0d88c"/>
+      <stop offset="50%" stop-color="#d8b878"/>
+      <stop offset="100%" stop-color="#b89a5a"/>
+    </linearGradient>
+    <linearGradient id="redgrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#e87060"/>
+      <stop offset="100%" stop-color="#c04030"/>
+    </linearGradient>
+    <radialGradient id="redglow" cx="70%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#d96552" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#d96552" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="900" cy="280" r="350" fill="url(#redglow)"/>
+
+  <!-- Header -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#d8b878" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#f5edd9">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#d8b878">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#d8b878" text-anchor="end">2026.05.21 · KR STOCKS</text>
+
+  <!-- Category label -->
+  <rect x="80" y="120" width="100" height="28" rx="3" fill="#d96552" fill-opacity="0.15" stroke="#d96552" stroke-width="1" stroke-opacity="0.5"/>
+  <text x="130" y="139" font-family="monospace" font-size="12" letter-spacing="2" fill="#d96552" text-anchor="middle">종목 분석</text>
+
+  <!-- Main headline -->
+  <text x="80" y="230" font-family="Playfair Display, Georgia, serif" font-size="62" font-weight="700" fill="#f5edd9">현대차</text>
+  <!-- Big negative number -->
+  <text x="80" y="318" font-family="monospace" font-size="80" font-weight="700" fill="url(#redgrad)">−10.71%</text>
+
+  <!-- Price -->
+  <text x="80" y="375" font-family="monospace" font-size="22" fill="#988e72">592,000원 / 전일 663,000원 대비 −71,000원</text>
+
+  <!-- Narrative bar -->
+  <line x1="80" y1="410" x2="80" y2="460" stroke="#d8b878" stroke-width="2"/>
+  <text x="100" y="430" font-family="sans-serif" font-size="18" fill="#f5edd9">30일 저점 469,000원 대비 아직 +26.2%</text>
+  <text x="100" y="458" font-family="sans-serif" font-size="18" fill="#988e72">신고점 712,000원 대비 −16.8% — 랠리 이후 첫 본격 조정</text>
+
+  <!-- Bottom metrics -->
+  <g transform="translate(80, 520)">
+    <g>
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#d8b878" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#988e72">기아 동반</text>
+      <text x="0" y="60" font-family="Playfair Display, Georgia, serif" font-size="28" fill="#d96552">−8.06%</text>
+    </g>
+    <g transform="translate(280, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#d8b878" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#988e72">30일 랠리</text>
+      <text x="0" y="60" font-family="Playfair Display, Georgia, serif" font-size="28" fill="url(#gold)">+51.8%</text>
+    </g>
+    <g transform="translate(560, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#d8b878" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#988e72">보스턴다이나믹스</text>
+      <text x="0" y="60" font-family="Playfair Display, Georgia, serif" font-size="20" fill="#f5edd9">테슬라와 로봇 경쟁</text>
+    </g>
+  </g>
+
+  <!-- Bottom line -->
+  <line x1="80" y1="660" x2="1200" y2="660" stroke="#d8b878" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="80" y="690" font-family="monospace" font-size="11" letter-spacing="3" fill="#d8b878" opacity="0.8">MAY 20 · 2026 · STOCK ANALYSIS</text>
+  <text x="1200" y="690" font-family="monospace" font-size="11" letter-spacing="3" fill="#d8b878" opacity="0.8" text-anchor="end">SOURCE · YAHOO FINANCE</text>
+</svg>
