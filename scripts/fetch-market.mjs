@@ -295,6 +295,78 @@ async function fetchKorea() {
 }
 
 // ============================================================
+// 병렬 데이터 소스 (Yahoo deny list 대비 1주차 검증용)
+//
+// 야후가 `host_not_allowed` 로 자주 차단당해서 무료/키 불필요 대안 API 를
+// 같은 워크플로에서 병렬로 호출, 결과를 snapshot.alt 에 따로 기록한다.
+// 사용자 화면엔 영향 없고, 며칠 모은 diff 로 값이 일치하는지 검증 후 본채널 교체.
+//
+// Frankfurter: ECB 기반 환율. 키 불필요, 무제한.
+// CoinGecko:   거래소 가중평균 코인 시세. 키 불필요, 분당 10–30 호출.
+// ============================================================
+
+const ALT_HEADERS = {
+  'User-Agent': 'lincoln-brief-bot/1.0 (+https://lincoln-brief.vercel.app)',
+  Accept: 'application/json',
+};
+
+async function fetchFrankfurterFx() {
+  try {
+    const res = await fetch('https://api.frankfurter.app/latest?from=USD&to=KRW', { headers: ALT_HEADERS });
+    if (!res.ok) {
+      console.warn(`[alt] frankfurter HTTP ${res.status}`);
+      return null;
+    }
+    const data = await res.json();
+    const rate = data?.rates?.KRW;
+    if (rate == null) return null;
+    return { source: 'frankfurter', usdKrw: rate, asOf: data.date ?? null };
+  } catch (e) {
+    console.warn('[alt] frankfurter failed:', e.message);
+    return null;
+  }
+}
+
+async function fetchCoinGeckoBtc() {
+  try {
+    const url = 'https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd&include_24hr_change=true&include_last_updated_at=true';
+    const res = await fetch(url, { headers: ALT_HEADERS });
+    if (!res.ok) {
+      console.warn(`[alt] coingecko HTTP ${res.status}`);
+      return null;
+    }
+    const data = await res.json();
+    const btc = data?.bitcoin;
+    if (!btc?.usd) return null;
+    return {
+      source: 'coingecko',
+      btcUsd: btc.usd,
+      change24hPct: btc.usd_24h_change ?? null,
+      asOf: btc.last_updated_at ? new Date(btc.last_updated_at * 1000).toISOString() : null,
+    };
+  } catch (e) {
+    console.warn('[alt] coingecko failed:', e.message);
+    return null;
+  }
+}
+
+/**
+ * Yahoo 와 alt API 값 나란히 로깅. CI 로그에서 며칠 관찰해 수치 일치 확인.
+ * 양쪽 다 있을 때만 delta 계산, 없으면 단순 표시.
+ */
+function logAltDiff(label, yahooVal, altVal, fmt = (v) => v) {
+  const y = yahooVal == null ? 'n/a' : fmt(yahooVal);
+  const a = altVal == null ? 'n/a' : fmt(altVal);
+  if (yahooVal != null && altVal != null) {
+    const delta = altVal - yahooVal;
+    const deltaPct = yahooVal ? (delta / yahooVal) * 100 : 0;
+    console.log(`[diff] ${label}: yahoo=${y}  alt=${a}  Δ=${delta.toFixed(2)} (${deltaPct.toFixed(3)}%)`);
+  } else {
+    console.log(`[diff] ${label}: yahoo=${y}  alt=${a}  (한쪽 누락)`);
+  }
+}
+
+// ============================================================
 // Main
 // ============================================================
 async function main() {
@@ -306,6 +378,19 @@ async function main() {
   const usSnapshot = await fetchUS();
   const ticker = await fetchTicker();
   const kr = await fetchKorea();
+
+  // 병렬 (alt) 소스 — 야후 차단 대비 검증용. 본채널 데이터엔 영향 없음.
+  const [yahooKrwForDiff, yahooBtcForDiff, altFx, altBtc] = await Promise.all([
+    quoteSafe('KRW=X'),
+    quoteSafe('BTC-USD'),
+    fetchFrankfurterFx(),
+    fetchCoinGeckoBtc(),
+  ]);
+
+  const yahooKrwVal = yahooKrwForDiff?.regularMarketPrice ?? yahooKrwForDiff?.regularMarketPreviousClose ?? null;
+  const yahooBtcVal = yahooBtcForDiff?.regularMarketPrice ?? yahooBtcForDiff?.regularMarketPreviousClose ?? null;
+  logAltDiff('FX USD/KRW', yahooKrwVal, altFx?.usdKrw ?? null, (v) => v.toFixed(2));
+  logAltDiff('BTC/USD   ', yahooBtcVal, altBtc?.btcUsd ?? null, (v) => v.toFixed(0));
 
   // 안전 가드: 모든 외부 호출 실패 시 기존 JSON 보존.
   const krOk = krTop12.some((c) => c.available);
@@ -337,6 +422,15 @@ async function main() {
     // Backwards compat (older components read top-level snapshot)
     snapshot: usSnapshot,
     ticker,
+    // 1주차 병렬 검증 데이터 — UI 미사용, 며칠 모아서 Yahoo 값과 일치성 확인용.
+    alt: {
+      fx: altFx,
+      crypto: altBtc,
+      yahoo: {
+        usdKrw: yahooKrwVal,
+        btcUsd: yahooBtcVal,
+      },
+    },
   };
 
   await fs.mkdir(path.dirname(OUTPUT), { recursive: true });
@@ -344,6 +438,9 @@ async function main() {
   console.log(`[fetch] wrote ${OUTPUT}`);
   console.log(
     `        US snapshot: ${usSnapshot.length} | ticker: ${ticker.length} | KR base: ${kr?.available ? 'on' : 'off'} | KR top12: ${krTop12.filter((c) => c.available).length}/${krTop12.length} | US top12: ${usTop12.filter((c) => c.available).length}/${usTop12.length}`,
+  );
+  console.log(
+    `        alt: frankfurter=${altFx ? 'ok' : 'fail'} coingecko=${altBtc ? 'ok' : 'fail'}`,
   );
 }
 
