@@ -34,22 +34,36 @@ Content collection lives at `src/content/config.ts` (Astro 4 location), not `src
 
 ## The automation pipeline (the thing that's actually load-bearing)
 
-Three GitHub Actions cron the repo from the outside in:
+**전체 문서: [docs/AUTOMATION.md](docs/AUTOMATION.md)** — 데이터 흐름, 트러블슈팅, 매뉴얼 재실행 절차.
 
-1. **`refresh-market.yml`** — 매 10분, `npm run fetch:market` → `src/data/market-snapshot.json` 변화 있을 때만 커밋. 홈 라이브 티커·MarketSnapshot 카드의 원천.
-2. **`daily-brief.yml`** (US) — 평일 **06:00 KST** (= 일~목 21:00 UTC). `MARKET=US` 로 `generate:daily-brief` 실행 → 미국 4개 카테고리 초안 (`daily-brief / stock-analysis / market-forecast / economy-issue` × 1) + 썸네일 4개 자동 생성·커밋. 슬러그 접두 없음.
-3. **`kr-daily-brief.yml`** (KR) — 평일 **16:00 KST** (= 월~금 07:00 UTC, 한국 마감 15:30 직후). `MARKET=KR` 로 같은 스크립트 실행 → 한국 4개 카테고리 초안 + 썸네일. 슬러그 접두 `kr-`.
+운영 중인 GitHub Actions 워크플로 3종:
+
+1. **`refresh-market.yml`** — 매 10분(`5,15,25,35,45,55 * * * *`), `node scripts/fetch-market.mjs` → `src/data/market-snapshot.json` 변화 있을 때만 커밋. 홈 라이브 티커·MarketSnapshot 카드의 원천.
+2. **`daily-brief.yml`** (US) — 평일 **06:00 KST** (= 일~목 21:00 UTC). Claude Code Action 이 미국 4개 카테고리 (`daily-brief / stock-analysis / market-forecast / economy-issue`) 본문 + 썸네일 4개를 인간 수준으로 완성·커밋. 슬러그 접두 없음.
+3. **`kr-daily-brief.yml`** (KR) — 평일 **16:00 KST** (= 월~금 07:00 UTC, 한국 마감 15:30 직후). 동일 패턴, KR 카테고리. 슬러그 접두 `kr-`.
 
 세 워크플로우 모두 Node 22 in CI (CI 만이 Node 22 가 보장되는 곳). "Lincoln Brief Bot" 으로 main 에 직접 push → Vercel 이 픽업해 재빌드.
 
-### `scripts/generate-daily-brief.mjs` 의 계약
+### Daily Brief 생성 방식
 
-- **자동화 범위**: frontmatter, 가격표 (마켓별 지수·환율), 썸네일 SVG 뼈대 (카테고리 컬러), 섹션 헤더.
-- **자동화 안 함**: 분석·통찰·매수/매도 톤. 본문 거의 전부 `[TODO: Lincoln 검토]` 마커로 남음. **마커 있는 글은 미발행 상태로 취급** — 사람이 채워야 발행됨.
-- **분기**: `MARKET` 환경변수 ('US' | 'KR', 기본 US). 마켓별로 slug 접두·데이터 소스(`data.us` vs `data.kr`)·title·tags 분기.
-- **안전성**: 같은 슬러그가 이미 있으면 덮어쓰지 않음 (`fs.access` 체크 후 skip) → 수동 편집 후 같은 날 두 번째 cron 이 돌아도 손댄 글은 보존됨.
-- **날짜**: UTC + 9 시간 으로 KST 기준 stamp 사용. CI 가 UTC 21:00 (06:00 KST) 에 돌아도 슬러그 날짜는 올바른 KST 일자.
-- **자동 featured**: 스크립트가 `featured` frontmatter 를 안 씀. 대신 [`src/pages/index.astro`](src/pages/index.astro) 가 본문에 `[TODO: Lincoln 검토]` 있는 글을 메인 노출 후보에서 자동 제외 → 마커 지우면 그 글이 자동으로 featured 슬롯에 등장.
+**메인 지시서**: `scripts/generation-prompt.md` (Claude Code Action 의 `prompt` 입력으로 step output 보간되어 전달).
+
+Prompt 가 Claude 한테 시키는 일:
+1. `STYLE.md` / `CLAUDE.md` / `src/data/market-snapshot.json` 읽기
+2. 동일 카테고리 최근 글 2편 톤 참조 (슬러그는 현재 prompt 에 하드코딩)
+3. `MARKET` env 따라 US/KR 분기
+4. WebFetch 로 뉴스 헤드라인 보강 (선택)
+5. 4편 .md (frontmatter zod 스키마 준수) + 4개 SVG 썸네일 작성
+6. Safety gate — 금지어, 사인오프, 분량 600자+, 출처 숫자 검증 → 미달 시 `draft: true`
+7. `npx astro build` 로 검증 후 commit & push
+
+`MARKET` 환경변수: `'US' | 'KR'`, 워크플로 step `env:` 블록에 박혀있음.
+
+**Action v1 인풋 함정**: `prompt_file` 은 v1 공식 인풋 아님 → step output 으로 보간해야 함. 자세히는 [AUTOMATION.md §3](docs/AUTOMATION.md).
+
+### 레거시: `scripts/generate-daily-brief.mjs`
+
+이전 반자동 생성기 — frontmatter·가격표·썸네일 뼈대만 만들고 본문은 `[TODO: Lincoln 검토]` 마커로 비웠다. 현재 워크플로는 이 스크립트를 호출하지 **않음** (Claude Code Action 으로 대체). 스크립트와 `npm run generate:daily-brief` 는 로컬 디버그·폴백용으로 남아있음. 홈 페이지 (`src/pages/index.astro`) 는 여전히 본문에 `[TODO: Lincoln 검토]` 있는 글을 메인 노출 후보에서 자동 제외 → 안전망.
 
 automation owns facts (price tables, thumbnail skeleton); 통찰은 사람이 채운다. Claude 가 분석 단락을 프로그래밍으로 쓰지 말 것.
 
