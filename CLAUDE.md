@@ -129,7 +129,10 @@ When adding a new photo to `public/thumbnails/photos/`, also append a row to `pu
 
 ## Where things live
 
-- `src/content/blog/*.md` — posts. Slug pattern: `<topic>-YYYYMMDD.md` (e.g. `kr-samsung-20260518.md`, `daily-brief-20260516.md`). KR posts are prefixed `kr-`.
+- `src/content/blog/*.md` — posts. Two slug policies coexist:
+  - **Batch-generated (daily Claude Code Action)**: fixed `{us|kr}-{category}-YYYYMMDD.md` (e.g., `us-daily-brief-20260521.md`, `kr-stock-analysis-20260521.md`). Category token must be one of `daily-brief / stock-analysis / market-forecast / economy-issue`.
+  - **Human-authored**: free-form `<topic>-YYYYMMDD.md` (e.g. `kr-samsung-20260518.md`, `nvda-pre-earnings-20260518.md`). KR posts always prefixed `kr-`.
+  - Pre-2026-05-20 batch articles use the old topic-based pattern without `us-` prefix (e.g., `daily-brief-20260520.md`) — preserved for URL stability.
 - `src/content/config.ts` — content collection schema (zod). `market` 필드는 `''` 도 허용 (Keystatic "자동 추정" 옵션 호환 위해 `z.preprocess` 로 undefined 변환).
 - `src/data/market-snapshot.json` — written by `fetch-market.mjs`, read by `MarketSnapshot.astro` and `generate-daily-brief.mjs`. Has `snapshot[]` (legacy ticker list) AND `kr.top12 / us.top12` (current homepage cards) — both shapes are still consumed.
 - `src/consts.ts` — site metadata + the `CATEGORIES` array + Stibee subscribe URL placeholder. Changes here ripple into content schema, category routes, AND Keystatic select options.

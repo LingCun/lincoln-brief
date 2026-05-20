@@ -50,6 +50,10 @@ export default config({
           label: '발행일',
           validation: { isRequired: true },
         }),
+        publishedAt: fields.text({
+          label: '게시 시각 (ISO KST, 선택)',
+          description: '예: 2026-05-21T06:32:15+09:00 — 비워두면 발행일만 표시',
+        }),
         updatedDate: fields.date({
           label: '수정일 (선택)',
         }),

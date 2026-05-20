@@ -2,17 +2,30 @@
 interface Props {
   date: Date;
   format?: 'ko' | 'en' | 'iso';
+  /** true 면 KST 시간(HH:MM)까지 표기. date 에 시각 정보가 있어야 의미 있음. */
+  withTime?: boolean;
   class?: string;
 }
-const { date, format = 'iso', class: className = '' } = Astro.props;
+const { date, format = 'iso', withTime = false, class: className = '' } = Astro.props;
 
 const pad = (n: number) => String(n).padStart(2, '0');
-const formatted =
+
+// KST(UTC+9) 기준으로 년/월/일/시/분 추출 — 서버·CI 가 어느 TZ 든 일관 결과.
+const kst = new Date(date.getTime() + 9 * 60 * 60 * 1000);
+const y = kst.getUTCFullYear();
+const m = pad(kst.getUTCMonth() + 1);
+const d = pad(kst.getUTCDate());
+const hh = pad(kst.getUTCHours());
+const mm = pad(kst.getUTCMinutes());
+
+const dateStr =
   format === 'ko'
     ? date.toLocaleDateString('ko-KR', { year: 'numeric', month: 'long', day: 'numeric' })
     : format === 'en'
       ? date.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' }).toUpperCase()
-      : `${date.getFullYear()}.${pad(date.getMonth() + 1)}.${pad(date.getDate())}`;
+      : `${y}.${m}.${d}`;
+
+const formatted = withTime ? `${dateStr} ${hh}:${mm} KST` : dateStr;
 ---
 
 <time datetime={date.toISOString()} class={`font-mono ${className}`}>{formatted}</time>

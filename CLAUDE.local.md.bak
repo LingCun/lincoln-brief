@@ -1,0 +1,30 @@
+# Lincoln Brief — 8 에이전트
+
+Astro 4 + Tailwind + MDX + Yahoo Finance + Pagefind + Stibee + Vercel. 일간 마켓 브리프 파이프라인.
+
+## 로스터
+
+| 에이전트 | 맡은 일 |
+|---|---|
+| **EDITOR** | 톤·큐레이션·발행 결정 |
+| **WRITER** | MDX 초안 (`src/content/briefs/`) |
+| **MARKET** | Yahoo Finance fetch (`scripts/`) |
+| **ASTRO** | 템플릿·컴포넌트·라우팅 |
+| **SEO** | sitemap·RSS·Pagefind |
+| **NEWSLETTER** | Stibee 초안 (`stibee-drafts/`) |
+| **QA** | 빌드·링크·썸네일 |
+| **DEPLOY** | Vercel |
+
+## 전체 규칙
+
+1. **MDX 프런트매터 필수**: `title, date, summary, tags, tickers`. 누락 = 빌드 실패.
+2. **데이터는 빌드 타임 fetch.** 런타임 외부 호출 금지.
+3. **마켓 데이터 7일 보존.** 날짜별 JSON.
+4. **Pagefind 색인 매 빌드 갱신** (`astro build && pagefind --site dist`).
+5. **이미지는 `inline:thumbnails` 경유.** 외부 핫링크 금지.
+6. **main 머지 → Vercel prod 자동.** 수동 promote는 비상시만.
+7. 시크릿은 `.env.local` + Vercel 환경변수.
+
+## 흐름
+
+`MARKET → WRITER → EDITOR → ASTRO → QA → DEPLOY` (SEO 병행, NEWSLETTER 별도)

@@ -9,7 +9,9 @@ interface Props {
   index?: number;
 }
 const { post, index } = Astro.props;
-const { title, description, pubDate, thumbnail, category, readMinutes } = post.data;
+const { title, description, pubDate, publishedAt, thumbnail, category, readMinutes } = post.data;
+const displayDate = publishedAt ?? pubDate;
+const hasTime = !!publishedAt;
 const num = typeof index === 'number' ? String(index + 1).padStart(2, '0') : null;
 ---
 
@@ -53,7 +55,7 @@ const num = typeof index === 'number' ? String(index + 1).padStart(2, '0') : nul
 
     <div class="flex items-center justify-between border-t border-ink-700 pt-4">
       <span class="flex items-baseline gap-3">
-        <FormattedDate date={pubDate} class="text-[13px] tracking-normal text-ink-100" />
+        <FormattedDate date={displayDate} withTime={hasTime} class="text-[13px] tracking-normal text-ink-100" />
         {readMinutes && (
           <>
             <span class="text-gold-500 text-[10px]">◆</span>

@@ -12,30 +12,50 @@ This is a **production publishing pipeline**. Your output is committed to `main`
    - `STYLE.md` — tone, structure, frontmatter schema, forbidden words
    - `CLAUDE.md` — project conventions, market detection, content collection schema
    - `src/data/market-snapshot.json` — today's prices (already refreshed by previous workflow step)
-   - **2 recent same-category articles** from `src/content/blog/` for tone reference. Examples:
+   - **2 recent same-category articles** from `src/content/blog/` for tone reference. Pick the most recent files matching the same `category:` value (glob `src/content/blog/*.md`, sort by date in frontmatter or in slug suffix `-YYYYMMDD`). Historical examples (pre-policy slugs):
      - US: `daily-brief-20260518.md`, `nvda-pre-earnings-20260518.md`, `sector-rotation-forecast-20260518.md`, `berkshire-unh-exit-20260518.md`
      - KR: `kr-daily-brief-20260519.md`, `kr-skhynix-cooling-20260519.md`, `kr-bok-may22-decision-20260519.md`, `kr-krw-1508-shock-20260519.md`
 
 2. **Determine today's date** (KST):
    - `TZ=Asia/Seoul date +%Y-%m-%d` → use this exact value for `pubDate`
-   - `TZ=Asia/Seoul date +%Y%m%d` → use for slug suffix
+   - `TZ=Asia/Seoul date +%Y%m%d` → use for slug suffix `YYYYMMDD`
 
-3. **Determine MARKET** from the `MARKET=...` line at the very top of this prompt (`US` or `KR`). If absent, refuse and exit — do NOT default silently. Slug prefix:
-   - US → no prefix (e.g., `daily-brief-20260520.md`)
-   - KR → `kr-` prefix (e.g., `kr-daily-brief-20260520.md`)
+3. **Determine MARKET** from the `MARKET=...` line at the very top of this prompt (`US` or `KR`). If absent, refuse and exit — do NOT default silently.
 
-4. **Pick subjects for each category** from market-snapshot:
-   - `daily-brief` — overall market summary, 4-sector view
-   - `stock-analysis` — biggest mover from `top12` (positive or negative)
-   - `market-forecast` — next 1-4 week scenario tied to upcoming events visible in data
-   - `economy-issue` — top macro story implied by data (FX, rates, geopolitics)
+**Slug pattern — FIXED for daily batch (no exceptions, no topic-based slugs):**
+
+```
+{us|kr}-{category}-{YYYYMMDD}.md
+```
+
+The 4 slugs the batch writes (exactly, derived from MARKET + today's KST date):
+
+- US batch (MARKET=US):
+  - `us-daily-brief-YYYYMMDD.md`
+  - `us-stock-analysis-YYYYMMDD.md`
+  - `us-market-forecast-YYYYMMDD.md`
+  - `us-economy-issue-YYYYMMDD.md`
+- KR batch (MARKET=KR):
+  - `kr-daily-brief-YYYYMMDD.md`
+  - `kr-stock-analysis-YYYYMMDD.md`
+  - `kr-market-forecast-YYYYMMDD.md`
+  - `kr-economy-issue-YYYYMMDD.md`
+
+Do NOT generate topic-based slugs (e.g., `lly-surge-20260520.md`, `kr-samsung-20260518.md`) — those belong to human-authored articles and the prior policy. The category enum lives in `src/consts.ts` and is the only allowed middle token.
+
+4. **Pick subjects for each category** from market-snapshot. Subject choice affects the `title`/`description`/`tags` of each fixed-slug article, NOT the slug itself:
+   - `daily-brief` (slug `{prefix}-daily-brief-{date}`) — overall market summary, 4-sector view
+   - `stock-analysis` (slug `{prefix}-stock-analysis-{date}`) — biggest mover from `top12` (positive or negative)
+   - `market-forecast` (slug `{prefix}-market-forecast-{date}`) — next 1-4 week scenario tied to upcoming events visible in data
+   - `economy-issue` (slug `{prefix}-economy-issue-{date}`) — top macro story implied by data (FX, rates, geopolitics)
 
 5. **Fetch news context (optional but recommended):**
    - For the stock you picked in #4 stock-analysis, use `WebFetch` on the Yahoo Finance news page (e.g., `https://finance.yahoo.com/quote/NVDA/news`) to get 3-5 headlines. Cite them in `sources:`.
    - If `WebFetch` is blocked, proceed with snapshot-only data.
 
 6. **Write 4 markdown files** at `src/content/blog/<slug>.md`. Each:
-   - Frontmatter matching `src/content/config.ts` schema (zod): `title`, `description`, `pubDate`, `thumbnail`, `category`, `tags` (3-8 items), `readMinutes` (5-7), `sources` (min 3 items with `label` + `url`).
+   - Frontmatter matching `src/content/config.ts` schema (zod): `title`, `description`, `pubDate`, `publishedAt`, `thumbnail`, `category`, `tags` (3-8 items), `readMinutes` (5-7), `sources` (min 3 items with `label` + `url`).
+   - `publishedAt`: current KST ISO datetime — compute with `TZ=Asia/Seoul date +"%Y-%m-%dT%H:%M:%S+09:00"` and embed verbatim. Required for batch articles (used to display upload time next to article on the site).
    - Body: 800-1500 Korean words, structure per STYLE.md (한 줄 요약 → 사실 → 분석 → 시나리오 → 한국 시사점 → 일반 투자자 의미 → 한 줄 정리 → Lincoln의 한 마디 → `— Lincoln` → disclaimer).
    - Featured: set `featured: true` ONLY on the `daily-brief` slug.
 

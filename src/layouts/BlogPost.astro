@@ -11,7 +11,9 @@ interface Props {
   post: CollectionEntry<'blog'>;
 }
 const { post } = Astro.props;
-const { title, description, pubDate, updatedDate, thumbnail, category, tags, readMinutes, sources } = post.data;
+const { title, description, pubDate, publishedAt, updatedDate, thumbnail, category, tags, readMinutes, sources } = post.data;
+const displayDate = publishedAt ?? pubDate;
+const hasTime = !!publishedAt;
 const catColor = CATEGORIES.find((c) => c.slug === category)?.color ?? '#d8b878';
 ---
 
@@ -55,7 +57,7 @@ const catColor = CATEGORIES.find((c) => c.slug === category)?.color ?? '#d8b878'
             {description}
           </p>
           <div class="mt-10 flex flex-wrap items-center justify-center gap-4 text-ink-200">
-            <FormattedDate date={pubDate} class="text-base tracking-normal text-ink-100" />
+            <FormattedDate date={displayDate} withTime={hasTime} class="text-base tracking-normal text-ink-100" />
             <span class="text-gold-500 text-[10px]">◆</span>
             <span class="text-[10px] uppercase tracking-widest-2 text-ink-300">By <span class="text-gold-400">Lincoln</span></span>
             {readMinutes && (

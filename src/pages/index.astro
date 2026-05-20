@@ -160,7 +160,7 @@ const postsByCategory = CATEGORIES.map((c) => ({
               {featuredPost.data.description}
             </p>
             <div class="mt-10 flex flex-wrap items-baseline gap-x-6 gap-y-2 text-ink-200">
-              <FormattedDate date={featuredPost.data.pubDate} class="text-[15px] tracking-normal text-ink-100" />
+              <FormattedDate date={featuredPost.data.publishedAt ?? featuredPost.data.pubDate} withTime={!!featuredPost.data.publishedAt} class="text-[15px] tracking-normal text-ink-100" />
               <span class="text-gold-500 text-[10px]">◆</span>
               <span class="text-[10px] uppercase tracking-widest-2">By <span class="text-gold-400">Lincoln</span></span>
               {featuredPost.data.readMinutes && (

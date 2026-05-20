@@ -9,6 +9,9 @@ const blog = defineCollection({
     title: z.string(),
     description: z.string(),
     pubDate: z.coerce.date(),
+    // 실제 게시 시각 (KST 기준 ISO datetime, e.g. "2026-05-21T06:32:15+09:00").
+    // 배치 자동 생성 글은 commit 시점에 자동 기록. 수동 글은 생략 가능.
+    publishedAt: z.coerce.date().optional(),
     updatedDate: z.coerce.date().optional(),
     // SVG thumbnail URL (e.g. /thumbnails/daily-brief-20260514.svg)
     thumbnail: z.string().optional(),
