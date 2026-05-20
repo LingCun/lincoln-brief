@@ -163,12 +163,6 @@ const postsByCategory = CATEGORIES.map((c) => ({
               <FormattedDate date={featuredPost.data.publishedAt ?? featuredPost.data.pubDate} withTime={!!featuredPost.data.publishedAt} class="text-[15px] tracking-normal text-ink-100" />
               <span class="text-gold-500 text-[10px]">◆</span>
               <span class="text-[10px] uppercase tracking-widest-2">By <span class="text-gold-400">Lincoln</span></span>
-              {featuredPost.data.readMinutes && (
-                <>
-                  <span class="text-gold-500 text-[10px]">◆</span>
-                  <span class="font-mono text-[10px] uppercase tracking-widest-2">{featuredPost.data.readMinutes} min read</span>
-                </>
-              )}
             </div>
             <a href={`/blog/${featuredPost.slug}/`} class="btn-gold-solid mt-10">
               Continue Reading →
