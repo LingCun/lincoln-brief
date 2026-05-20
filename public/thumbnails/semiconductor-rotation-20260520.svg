@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a1410"/>
+      <stop offset="100%" stop-color="#0a0807"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f0d88c"/>
+      <stop offset="50%" stop-color="#d8b878"/>
+      <stop offset="100%" stop-color="#b89a5a"/>
+    </linearGradient>
+    <linearGradient id="leftPanel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d96552" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#d96552" stop-opacity="0.04"/>
+    </linearGradient>
+    <linearGradient id="rightPanel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6ba368" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#6ba368" stop-opacity="0.04"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#d8b878" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#d8b878" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="640" cy="360" r="400" fill="url(#glow)"/>
+
+  <!-- 좌상단 브랜드 -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#d8b878" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#f5edd9">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#d8b878">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#d8b878" text-anchor="end">2026.05.20 · ECONOMY ISSUE</text>
+
+  <!-- 헤드라인 -->
+  <text x="80" y="175" font-family="monospace" font-size="13" letter-spacing="5" fill="#d8b878">— 경제 이슈 · 반도체 로테이션 —</text>
+  <text x="80" y="255" font-family="Playfair Display, Georgia, serif" font-size="56" font-weight="500" fill="#f5edd9">Intel +2.45%</text>
+  <text x="80" y="320" font-family="Playfair Display, Georgia, serif" font-size="56" font-style="italic" fill="url(#gold)">vs NVDA −0.77%</text>
+  <text x="80" y="362" font-family="Pretendard, sans-serif" font-size="17" fill="#988e72">같은 날, 같은 섹터, 반대 방향 — 자금이 말하는 것</text>
+
+  <!-- 좌 패널 (하락 AI칩) -->
+  <rect x="80" y="400" width="500" height="220" fill="url(#leftPanel)" rx="4"/>
+  <text x="100" y="435" font-family="monospace" font-size="11" letter-spacing="4" fill="#d96552">AI PREMIUM · 하락</text>
+  <line x1="100" y1="445" x2="560" y2="445" stroke="#d96552" stroke-width="1" stroke-opacity="0.4"/>
+
+  <g transform="translate(100, 465)">
+    <text x="0" y="0" font-family="monospace" font-size="13" letter-spacing="2" fill="#f5edd9">NVDA</text>
+    <text x="200" y="0" font-family="Playfair Display, Georgia, serif" font-size="22" fill="#f5edd9">$220.61</text>
+    <polygon points="400,4 414,4 407,18" fill="#d96552"/>
+    <text x="422" y="15" font-family="monospace" font-size="16" fill="#d96552">−0.77%</text>
+
+    <g transform="translate(0, 45)">
+      <text x="0" y="0" font-family="monospace" font-size="13" letter-spacing="2" fill="#f5edd9">AVGO</text>
+      <text x="200" y="0" font-family="Playfair Display, Georgia, serif" font-size="22" fill="#f5edd9">$411.07</text>
+      <polygon points="400,4 414,4 407,18" fill="#d96552"/>
+      <text x="422" y="15" font-family="monospace" font-size="16" fill="#d96552">−2.29%</text>
+    </g>
+
+    <g transform="translate(0, 90)">
+      <text x="0" y="0" font-family="monospace" font-size="13" letter-spacing="2" fill="#f5edd9">GOOGL</text>
+      <text x="200" y="0" font-family="Playfair Display, Georgia, serif" font-size="22" fill="#f5edd9">$387.66</text>
+      <polygon points="400,4 414,4 407,18" fill="#d96552"/>
+      <text x="422" y="15" font-family="monospace" font-size="16" fill="#d96552">−2.34%</text>
+    </g>
+  </g>
+
+  <!-- 중앙 화살표 -->
+  <text x="640" y="530" font-family="monospace" font-size="30" fill="#d8b878" text-anchor="middle">→</text>
+
+  <!-- 우 패널 (상승 레거시칩) -->
+  <rect x="700" y="400" width="500" height="220" fill="url(#rightPanel)" rx="4"/>
+  <text x="720" y="435" font-family="monospace" font-size="11" letter-spacing="4" fill="#6ba368">VALUE / LEGACY · 상승</text>
+  <line x1="720" y1="445" x2="1180" y2="445" stroke="#6ba368" stroke-width="1" stroke-opacity="0.4"/>
+
+  <g transform="translate(720, 465)">
+    <text x="0" y="0" font-family="monospace" font-size="13" letter-spacing="2" fill="#f5edd9">INTC</text>
+    <text x="160" y="0" font-family="Playfair Display, Georgia, serif" font-size="22" fill="#f5edd9">$110.82</text>
+    <polygon points="350,18 364,18 357,4" fill="#6ba368"/>
+    <text x="372" y="15" font-family="monospace" font-size="16" fill="#6ba368">+2.45%</text>
+
+    <g transform="translate(0, 45)">
+      <text x="0" y="0" font-family="monospace" font-size="13" letter-spacing="2" fill="#f5edd9">MU</text>
+      <text x="160" y="0" font-family="Playfair Display, Georgia, serif" font-size="22" fill="#f5edd9">$698.17</text>
+      <polygon points="350,18 364,18 357,4" fill="#6ba368"/>
+      <text x="372" y="15" font-family="monospace" font-size="16" fill="#6ba368">+2.44%</text>
+    </g>
+
+    <g transform="translate(0, 90)">
+      <text x="0" y="0" font-family="monospace" font-size="13" letter-spacing="2" fill="#988e72">KOSPI</text>
+      <text x="160" y="0" font-family="Playfair Display, Georgia, serif" font-size="22" fill="#988e72">선반영</text>
+      <polygon points="350,4 364,4 357,18" fill="#d96552"/>
+      <text x="372" y="15" font-family="monospace" font-size="15" fill="#d96552">−2.60%</text>
+    </g>
+  </g>
+
+  <!-- 하단 메타 -->
+  <line x1="80" y1="660" x2="1200" y2="660" stroke="#d8b878" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="80" y="690" font-family="monospace" font-size="11" letter-spacing="3" fill="#d8b878" opacity="0.8">MAY 19 · 2026 · SEMICONDUCTOR ROTATION SIGNAL</text>
+  <text x="1200" y="690" font-family="monospace" font-size="11" letter-spacing="3" fill="#d8b878" opacity="0.8" text-anchor="end">SOURCE · YAHOO FINANCE</text>
+</svg>
