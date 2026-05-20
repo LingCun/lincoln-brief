@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-05-20T23:37:35.128Z",
+  "asOf": "2026-05-20T23:56:06.841Z",
   "asOfLabel": "5/20 한국·미국 마감",
   "source": "Yahoo Finance",
   "us": {
@@ -1032,13 +1032,55 @@
     },
     "crypto": {
       "source": "coingecko",
-      "btcUsd": 77369,
-      "change24hPct": 0.6471935691827304,
-      "asOf": "2026-05-20T23:37:32.000Z"
+      "btcUsd": 77461,
+      "change24hPct": 0.9229434861789254,
+      "asOf": "2026-05-20T23:55:31.000Z"
     },
-    "yield": null,
-    "usStocks": null,
-    "commodities": null,
+    "yield": {
+      "source": "fred",
+      "series": "DGS10",
+      "us10yPct": 4.67,
+      "asOf": "2026-05-19"
+    },
+    "usStocks": {
+      "source": "finnhub",
+      "quotes": {
+        "AAPL": {
+          "price": 302.25,
+          "previousClose": 298.97,
+          "change": 3.28,
+          "changePct": 1.0971
+        },
+        "MSFT": {
+          "price": 421.06,
+          "previousClose": 417.42,
+          "change": 3.64,
+          "changePct": 0.872
+        },
+        "NVDA": {
+          "price": 223.47,
+          "previousClose": 220.61,
+          "change": 2.86,
+          "changePct": 1.2964
+        },
+        "TSLA": {
+          "price": 417.26,
+          "previousClose": 404.11,
+          "change": 13.15,
+          "changePct": 3.2541
+        }
+      }
+    },
+    "commodities": {
+      "source": "twelvedata",
+      "quotes": {
+        "XAU/USD": {
+          "price": 4545.40755,
+          "previousClose": 4544.05897,
+          "changePct": 0.029677872
+        }
+      }
+    },
     "yahoo": {
       "usdKrw": null,
       "btcUsd": null
