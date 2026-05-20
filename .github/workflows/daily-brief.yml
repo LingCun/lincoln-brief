@@ -54,6 +54,15 @@ jobs:
             git commit -m "data: refresh market snapshot ($(TZ=Asia/Seoul date +"%Y-%m-%d %H:%M KST"))"
           fi
 
+      - name: Load generation prompt
+        id: load_prompt
+        run: |
+          {
+            echo "PROMPT<<PROMPT_EOF"
+            cat scripts/generation-prompt.md
+            echo "PROMPT_EOF"
+          } >> "$GITHUB_OUTPUT"
+
       - name: Generate 4 daily-brief articles via Claude Code
         uses: anthropics/claude-code-action@v1
         env:
@@ -63,7 +72,7 @@ jobs:
           claude_args: |
             --max-turns 80
             --allowedTools "Bash(npm:*),Bash(npx:*),Bash(git:*),Bash(node:*),Bash(TZ=*:*),Read,Write,Edit,WebFetch"
-          prompt_file: scripts/generation-prompt.md
+          prompt: ${{ steps.load_prompt.outputs.PROMPT }}
 
       - name: Verify build (safety net)
         run: npx astro build
