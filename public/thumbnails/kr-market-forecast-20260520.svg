@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a100a"/>
+      <stop offset="100%" stop-color="#0a0705"/>
+    </linearGradient>
+    <linearGradient id="orange" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f0a860"/>
+      <stop offset="50%" stop-color="#d88040"/>
+      <stop offset="100%" stop-color="#b86030"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#d88040" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#d88040" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1080" cy="160" r="340" fill="url(#glow)"/>
+  <circle cx="160" cy="620" r="260" fill="url(#glow)"/>
+
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#d88040" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#f5e8d5">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#d88040">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#d88040" text-anchor="end">2026.05.20 · KR MARKET FORECAST</text>
+
+  <text x="80" y="175" font-family="monospace" font-size="13" letter-spacing="5" fill="#d88040">— 시장 예측 —</text>
+  <text x="80" y="255" font-family="Playfair Display, Georgia, serif" font-size="56" font-weight="500" fill="#f5e8d5">NVDA 실적 + 한은 5/22</text>
+  <text x="80" y="325" font-family="Playfair Display, Georgia, serif" font-size="54" font-style="italic" fill="url(#orange)">두 갈림길</text>
+  <text x="80" y="378" font-family="Pretendard, sans-serif" font-size="17" fill="#9a8070">NVDA 220.61달러 · 한은 5/22 소비자동향 · 환율 1,508원 기준</text>
+
+  <g transform="translate(80, 440)">
+    <rect x="0" y="0" width="260" height="120" rx="4" fill="#d88040" fill-opacity="0.12" stroke="#d88040" stroke-opacity="0.4" stroke-width="1"/>
+    <text x="130" y="30" font-family="monospace" font-size="11" letter-spacing="3" fill="#d88040" text-anchor="middle">베이스 (45%)</text>
+    <text x="130" y="68" font-family="Playfair Display, Georgia, serif" font-size="22" fill="#f5e8d5" text-anchor="middle">7,000~7,500</text>
+    <text x="130" y="95" font-family="monospace" font-size="11" fill="#9a8070" text-anchor="middle">박스 2~3주</text>
+  </g>
+  <g transform="translate(360, 440)">
+    <rect x="0" y="0" width="220" height="120" rx="4" fill="#6ba368" fill-opacity="0.12" stroke="#6ba368" stroke-opacity="0.4" stroke-width="1"/>
+    <text x="110" y="30" font-family="monospace" font-size="11" letter-spacing="3" fill="#6ba368" text-anchor="middle">불 (20%)</text>
+    <text x="110" y="68" font-family="Playfair Display, Georgia, serif" font-size="22" fill="#f5e8d5" text-anchor="middle">7,500~7,800</text>
+    <text x="110" y="95" font-family="monospace" font-size="11" fill="#9a8070" text-anchor="middle">NVDA 상향 서프라이즈</text>
+  </g>
+  <g transform="translate(600, 440)">
+    <rect x="0" y="0" width="220" height="120" rx="4" fill="#d96552" fill-opacity="0.12" stroke="#d96552" stroke-opacity="0.4" stroke-width="1"/>
+    <text x="110" y="30" font-family="monospace" font-size="11" letter-spacing="3" fill="#d96552" text-anchor="middle">베어 (28%)</text>
+    <text x="110" y="68" font-family="Playfair Display, Georgia, serif" font-size="22" fill="#f5e8d5" text-anchor="middle">6,800~7,000</text>
+    <text x="110" y="95" font-family="monospace" font-size="11" fill="#9a8070" text-anchor="middle">NVDA 보수적 + 환율 상승</text>
+  </g>
+  <g transform="translate(840, 440)">
+    <rect x="0" y="0" width="200" height="120" rx="4" fill="#8b5c5c" fill-opacity="0.12" stroke="#8b5c5c" stroke-opacity="0.4" stroke-width="1"/>
+    <text x="100" y="30" font-family="monospace" font-size="11" letter-spacing="3" fill="#8b5c5c" text-anchor="middle">블랙스완 (7%)</text>
+    <text x="100" y="68" font-family="Playfair Display, Georgia, serif" font-size="22" fill="#f5e8d5" text-anchor="middle">6,500~6,800</text>
+    <text x="100" y="95" font-family="monospace" font-size="11" fill="#9a8070" text-anchor="middle">美 금리 5.3%+ 쇼크</text>
+  </g>
+
+  <line x1="80" y1="660" x2="1200" y2="660" stroke="#d88040" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="80" y="690" font-family="monospace" font-size="11" letter-spacing="3" fill="#d88040" opacity="0.8">MAY 20 · 2026 · WED</text>
+  <text x="1200" y="690" font-family="monospace" font-size="11" letter-spacing="3" fill="#d88040" opacity="0.8" text-anchor="end">SOURCE · YAHOO FINANCE</text>
+</svg>
