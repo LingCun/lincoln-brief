@@ -41,7 +41,7 @@ jobs:
           echo "CLAUDE_CODE_OAUTH_TOKEN 존재 (길이=$(echo -n "$CLAUDE_CODE_OAUTH_TOKEN" | wc -c))"
 
       - name: Install project deps
-        run: npm install --no-audit --no-fund --silent
+        run: npm ci --no-audit --no-fund --silent
 
       - name: Refresh market snapshot (yahoo-finance2)
         run: node scripts/fetch-market.mjs
