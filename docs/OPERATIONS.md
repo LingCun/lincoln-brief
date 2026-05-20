@@ -80,9 +80,15 @@ gh run view <RUN_ID> --log-failed
 
 ## 4. 매일 모니터링 포인트
 
-1. **06:05 KST** (US 발화 +5 분): `gh run list --workflow="Daily Market Brief (US, Claude Code)" --limit 1` 상태 확인
-2. **16:05 KST** (KR 발화 +5 분): 동일 (KR 워크플로)
-3. 실패 시 즉시 `gh run view --log-failed`
+US 워크플로 (평일 01:00 + 06:00 KST, 하루 2회):
+1. **01:05 KST**: `gh run list --workflow="Daily Market Brief (US, Claude Code)" --limit 1`
+2. **06:05 KST**: 동일
+
+KR 워크플로 (평일 11:00 + 16:00 KST, 하루 2회):
+3. **11:05 KST**: `gh run list --workflow="Daily Market Brief (KR, Claude Code)" --limit 1`
+4. **16:05 KST**: 동일
+
+실패 시 즉시 `gh run view --log-failed`.
 
 ---
 

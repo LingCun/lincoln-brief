@@ -39,8 +39,8 @@ Content collection lives at `src/content/config.ts` (Astro 4 location), not `src
 운영 중인 GitHub Actions 워크플로 3종:
 
 1. **`refresh-market.yml`** — 매 10분(`5,15,25,35,45,55 * * * *`), `node scripts/fetch-market.mjs` → `src/data/market-snapshot.json` 변화 있을 때만 커밋. 홈 라이브 티커·MarketSnapshot 카드의 원천.
-2. **`daily-brief.yml`** (US) — 평일 **06:00 KST** (= 일~목 21:00 UTC). Claude Code Action 이 미국 4개 카테고리 (`daily-brief / stock-analysis / market-forecast / economy-issue`) 본문 + 썸네일 4개를 인간 수준으로 완성·커밋. 슬러그 접두 없음.
-3. **`kr-daily-brief.yml`** (KR) — 평일 **16:00 KST** (= 월~금 07:00 UTC, 한국 마감 15:30 직후). 동일 패턴, KR 카테고리. 슬러그 접두 `kr-`.
+2. **`daily-brief.yml`** (US) — 평일 **01:00 + 06:00 KST** (= 일~목 16:00 + 21:00 UTC, 하루 2회). Claude Code Action 이 미국 4개 카테고리 (`daily-brief / stock-analysis / market-forecast / economy-issue`) 본문 + 썸네일 4개를 인간 수준으로 완성·커밋. 슬러그 접두 없음.
+3. **`kr-daily-brief.yml`** (KR) — 평일 **11:00 + 16:00 KST** (= 월~금 02:00 + 07:00 UTC, 하루 2회). 동일 패턴, KR 카테고리. 슬러그 접두 `kr-`.
 
 세 워크플로우 모두 Node 22 in CI (CI 만이 Node 22 가 보장되는 곳). "Lincoln Brief Bot" 으로 main 에 직접 push → Vercel 이 픽업해 재빌드.
 

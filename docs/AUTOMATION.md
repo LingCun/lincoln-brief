@@ -11,8 +11,8 @@
 | 파일 | 이름 | 트리거 | 무슨 일 | 산출물 |
 |---|---|---|---|---|
 | `.github/workflows/refresh-market.yml` | Refresh market snapshot | cron `5,15,25,35,45,55 * * * *` + dispatch | yahoo-finance2 로 `src/data/market-snapshot.json` 갱신. 변화 있을 때만 커밋. | `data: refresh market snapshot (YYYY-MM-DD HH:MM KST)` 커밋 |
-| `.github/workflows/daily-brief.yml` | Daily Market Brief (US, Claude Code) | cron `0 21 * * 0-4` (= 월~금 06:00 KST) + dispatch | Claude Code Action 이 미국 4 카테고리 본문 + 썸네일 생성·커밋. | 글 4편 + SVG 4개, slug 접두 없음 |
-| `.github/workflows/kr-daily-brief.yml` | Daily Market Brief (KR, Claude Code) | cron `0 7 * * 1-5` (= 월~금 16:00 KST) + dispatch | 동일하되 KR 4 카테고리. | 글 4편 + SVG 4개, slug `kr-` 접두 |
+| `.github/workflows/daily-brief.yml` | Daily Market Brief (US, Claude Code) | cron `0 16 * * 0-4` + `0 21 * * 0-4` (= 월~금 01:00 + 06:00 KST) + dispatch | Claude Code Action 이 미국 4 카테고리 본문 + 썸네일 생성·커밋. | 글 4편 + SVG 4개, slug 접두 없음 |
+| `.github/workflows/kr-daily-brief.yml` | Daily Market Brief (KR, Claude Code) | cron `0 2 * * 1-5` + `0 7 * * 1-5` (= 월~금 11:00 + 16:00 KST) + dispatch | 동일하되 KR 4 카테고리. | 글 4편 + SVG 4개, slug `kr-` 접두 |
 | `.github/workflows/deploy.yml` | Build & Deploy | push to main | Astro build 검증만 (실제 배포는 Vercel GitHub 연동). | 빌드 성공/실패 |
 
 스케줄러 지연: GitHub Actions cron 은 5~15 분 지연이 흔함. 정각 회피 위해 refresh 는 `:05/:15/...` 로 박혀있음.
@@ -22,7 +22,7 @@
 ## 2. 데이터·생성 파이프라인 (Daily Brief)
 
 ```
-                          [cron 21:00 UTC (US) / 07:00 UTC (KR)]
+                  [cron US 16:00 / 21:00 UTC · KR 02:00 / 07:00 UTC]
                                        │
                                        ▼
 ┌──────────────────────────────────────────────────────────────────────────┐
