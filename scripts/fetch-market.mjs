@@ -313,8 +313,11 @@ async function main() {
   const allEmpty =
     usSnapshot.length === 0 && ticker.length === 0 && (!kr || !kr.available) && !krOk && !usOk;
   if (allEmpty) {
-    console.error('[fetch] all sources empty (likely Yahoo throttle / network). Preserving existing snapshot.');
-    process.exit(2);
+    // 외부 소스 전부 실패 — 기존 스냅샷이 그대로 남아 사이트는 정상 동작.
+    // 호출 측 (daily-brief 등) 이 이 단계 실패로 죽지 않도록 exit 0 으로 마무리.
+    // "::warning::" prefix 로 GitHub Actions UI 엔 노란 경고는 남긴다.
+    console.error('::warning::[fetch] all sources empty (likely Yahoo throttle / network). Preserving existing snapshot.');
+    return;
   }
 
   const now = new Date();
