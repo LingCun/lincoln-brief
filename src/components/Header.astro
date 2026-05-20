@@ -92,9 +92,16 @@ const dateNum = today.getDate();
         </svg>
       </a>
 
-      <!-- RIGHT: subscribe + hamburger -->
+      <!-- RIGHT: auth + subscribe + hamburger -->
       <div class="flex items-center justify-end gap-3">
-        <a href="#subscribe" class="btn-gold-solid hidden text-[10px] md:inline-flex">
+        <a
+          id="lb-auth-link"
+          href="/login"
+          class="hidden text-[10px] uppercase tracking-widest-2 text-ink-300 transition hover:text-gold-400 md:inline-flex"
+        >
+          로그인
+        </a>
+        <a href="/subscribe" class="btn-gold-solid hidden text-[10px] md:inline-flex">
           Subscribe
         </a>
 
@@ -310,6 +317,24 @@ const dateNum = today.getDate();
     } else {
       initThemeScrollLock();
     }
+
+    /* --------- Auth link toggle (client-side) --------- */
+    const initAuthLink = async () => {
+      const link = document.getElementById('lb-auth-link');
+      if (!link) return;
+      try {
+        const res = await fetch('/api/auth/me', { credentials: 'same-origin' });
+        if (!res.ok) return;
+        const data = await res.json();
+        if (data.user) {
+          link.setAttribute('href', '/account');
+          link.textContent = '계정';
+        }
+      } catch (err) {
+        /* leave default "로그인" */
+      }
+    };
+    initAuthLink();
   })();
 </script>
 
