@@ -1,0 +1,57 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+export const prerender = false;
+
+const user = Astro.locals.user;
+if (!user) {
+  return Astro.redirect('/login');
+}
+---
+
+<BaseLayout title="계정 — Lincoln Brief" description="계정 설정">
+  <article class="bg-ink-900">
+    <section class="py-20">
+      <div class="container-x">
+        <div class="mx-auto max-w-md">
+          <p class="eyebrow text-gold-400">계정</p>
+          <h1 class="mt-4 font-serif text-3xl text-ink-50">계정 설정</h1>
+
+          <div class="mt-10 border border-ink-600 bg-ink-950 p-6">
+            <p class="text-xs uppercase tracking-widest-2 text-ink-400">가입 이메일</p>
+            <p class="mt-2 font-mono text-base text-ink-50">{user.email}</p>
+          </div>
+
+          <form method="POST" action="/api/auth/logout" class="mt-6">
+            <button
+              type="submit"
+              class="w-full border border-ink-600 px-6 py-3 text-sm font-medium uppercase tracking-widest-2 text-ink-100 transition hover:border-gold-500 hover:text-gold-400"
+            >
+              로그아웃
+            </button>
+          </form>
+
+          <div class="mt-16 border-t border-ink-700 pt-8">
+            <h2 class="font-serif text-lg text-ink-50">계정 삭제</h2>
+            <p class="mt-3 text-sm text-ink-300">
+              계정을 삭제하면 즉시 모든 정보가 제거되고 잠긴 글에 다시 접근할 수 없게 됩니다.
+            </p>
+            <form
+              method="POST"
+              action="/api/auth/delete-account"
+              class="mt-6"
+              onsubmit="return confirm('정말 계정을 삭제하시겠습니까? 이 작업은 되돌릴 수 없습니다.');"
+            >
+              <button
+                type="submit"
+                class="text-sm text-red-400 underline hover:text-red-300"
+              >
+                계정 삭제하기
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </article>
+</BaseLayout>
