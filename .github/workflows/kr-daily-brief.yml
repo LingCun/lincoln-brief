@@ -12,6 +12,7 @@ permissions:
   contents: write
   pull-requests: write
   issues: write
+  id-token: write  # Claude Code Action OIDC 인증에 필수
 
 jobs:
   generate:
