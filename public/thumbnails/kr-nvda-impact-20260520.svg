@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f1a12"/>
+      <stop offset="100%" stop-color="#070d08"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#8fd48a"/>
+      <stop offset="50%" stop-color="#6ba368"/>
+      <stop offset="100%" stop-color="#4a7a48"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#6ba368" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#6ba368" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1080" cy="200" r="340" fill="url(#glow)"/>
+  <circle cx="200" cy="580" r="250" fill="url(#glow)"/>
+
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#6ba368" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#d0ecd0">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#6ba368">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#6ba368" text-anchor="end">2026.05.20 · KR MARKET FORECAST</text>
+
+  <text x="80" y="175" font-family="monospace" font-size="13" letter-spacing="5" fill="#6ba368">— 시장 예측 —</text>
+  <text x="80" y="258" font-family="Playfair Display, Georgia, serif" font-size="58" font-weight="500" fill="#d0ecd0">NVDA 실적 D-0</text>
+  <text x="80" y="328" font-family="Playfair Display, Georgia, serif" font-size="52" font-style="italic" fill="url(#green)">KOSPI 3주 시나리오</text>
+  <text x="80" y="378" font-family="Pretendard, sans-serif" font-size="18" fill="#8ab88a">오늘 밤 NVDA 가이던스 → 내일 KOSPI 가 답한다</text>
+
+  <g transform="translate(80, 455)">
+    <g>
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#6ba368" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#8ab88a">NVDA 종가</text>
+      <text x="0" y="66" font-family="Playfair Display, Georgia, serif" font-size="32" fill="#d0ecd0">$220.61</text>
+      <polygon points="0,84 14,84 7,70" fill="#d96552"/>
+      <text x="22" y="91" font-family="monospace" font-size="14" fill="#d96552">−0.77%</text>
+    </g>
+    <g transform="translate(280, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#6ba368" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#8ab88a">SK하이닉스</text>
+      <text x="0" y="66" font-family="Playfair Display, Georgia, serif" font-size="32" fill="#d0ecd0">1,713,000원</text>
+      <polygon points="0,84 14,84 7,70" fill="#d96552"/>
+      <text x="22" y="91" font-family="monospace" font-size="14" fill="#d96552">−1.83%</text>
+    </g>
+    <g transform="translate(600, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#6ba368" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#8ab88a">불 시나리오</text>
+      <text x="0" y="66" font-family="Playfair Display, Georgia, serif" font-size="28" fill="url(#green)">가이드 상회</text>
+      <text x="0" y="91" font-family="monospace" font-size="13" fill="#8ab88a">확률 25% · SKH +5~8%</text>
+    </g>
+    <g transform="translate(920, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#6ba368" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#8ab88a">한은 D-2</text>
+      <text x="0" y="66" font-family="Playfair Display, Georgia, serif" font-size="28" fill="url(#green)">5/22 발표</text>
+      <text x="0" y="91" font-family="monospace" font-size="13" fill="#8ab88a">환율 코멘트 주목</text>
+    </g>
+  </g>
+
+  <line x1="80" y1="660" x2="1200" y2="660" stroke="#6ba368" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="80" y="690" font-family="monospace" font-size="11" letter-spacing="3" fill="#6ba368" opacity="0.8">MAY 20 · 2026 · WED · MARKET FORECAST</text>
+  <text x="1200" y="690" font-family="monospace" font-size="11" letter-spacing="3" fill="#6ba368" opacity="0.8" text-anchor="end">SOURCE · YAHOO FINANCE</text>
+</svg>
