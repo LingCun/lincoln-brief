@@ -1,0 +1,42 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SubscribeForm from '../components/SubscribeForm.astro';
+
+const error = Astro.url.searchParams.get('error');
+const errorMessages: Record<string, string> = {
+  missing_token: '로그인 링크가 올바르지 않습니다.',
+  invalid_or_expired: '링크가 만료되었거나 이미 사용되었습니다. 다시 요청해주세요.',
+};
+const errorMessage = error ? errorMessages[error] ?? '오류가 발생했습니다.' : null;
+---
+
+<BaseLayout
+  title="로그인 — Lincoln Brief"
+  description="Magic Link 로 로그인합니다. 비밀번호 없음."
+>
+  <article class="bg-ink-900">
+    <section class="py-20">
+      <div class="container-x">
+        <div class="mx-auto max-w-md text-center">
+          <p class="eyebrow text-gold-400">로그인</p>
+          <h1 class="mt-4 font-serif text-3xl text-ink-50">이메일로 로그인</h1>
+          <p class="mt-6 text-sm text-ink-200">
+            가입하신 이메일을 입력하시면 로그인 링크를 보내드립니다.
+          </p>
+          {errorMessage && (
+            <div class="mt-6 border border-red-700 bg-red-950/40 p-4 text-sm text-red-200">
+              {errorMessage}
+            </div>
+          )}
+          <div class="mt-8">
+            <SubscribeForm />
+          </div>
+          <p class="mt-12 text-xs text-ink-400">
+            아직 구독 안 하셨나요?
+            <a href="/subscribe" class="ml-2 text-gold-400 hover:text-gold-300">구독 안내 보기 →</a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </article>
+</BaseLayout>
