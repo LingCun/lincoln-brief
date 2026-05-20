@@ -132,11 +132,13 @@ gh run view <RUN_ID> --log-failed
 ## 5. 트러블슈팅
 
 ### 증상: `Run completed: success` 인데 **글 0편 발행**
-- Job summary 에 `커밋할 변경 없음 — 모든 슬러그 skip 또는 모든 카테고리 실패`
+판단 기준: `git log --since="20 minutes ago" --oneline` 에 `data: ${MARKET} daily brief auto-generated for …` 커밋이 **없으면** 진짜 0편. Author 는 `claude[bot]`.
+
 - 원인 후보 (확인 순서):
   1. Action 단계 로그에 `Unexpected input(s) 'prompt_file'` → 본 가이드 §3의 step output 방식 누락. 해결: `prompt: ${{ steps.load_prompt.outputs.PROMPT }}` 로 수정.
-  2. 모든 4개 슬러그가 이미 존재 → prompt 의 "skip existing" 규칙대로 정상. 같은 날 두 번째 실행하면 흔함.
+  2. 모든 4개 슬러그가 이미 존재 → prompt 의 "skip existing" 규칙대로 정상. 같은 날 두 번째 실행하면 흔함. Action 의 Output report 단계 메시지 확인.
   3. Safety gate 가 4편 전부 `draft: true` 처리 → 본 가이드 §3의 prompt 8번 항목 확인. draft 만 푸시되거나 git diff 비어있을 수 있음.
+  4. Action 자체 실패 (네트워크·quota·OIDC) → Action step 의 stderr 로그 확인.
 
 ### 증상: Action step 자체 실패 (빨간 X)
 - `CLAUDE_CODE_OAUTH_TOKEN secret 미등록` → repo Settings → Secrets and variables → Actions 에 추가

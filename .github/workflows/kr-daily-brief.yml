@@ -77,18 +77,9 @@ jobs:
       - name: Verify build (safety net)
         run: npx astro build
 
-      - name: Commit & push generated content
-        run: |
-          git add src/content/blog/*.md public/thumbnails/*.svg || true
-          if git diff --staged --quiet; then
-            echo "::notice::커밋할 변경 없음 — 모든 슬러그 skip 또는 모든 카테고리 실패"
-            echo "**커밋 없음** — skip 또는 실패" >> "$GITHUB_STEP_SUMMARY"
-            exit 0
-          fi
-          DATE=$(TZ=Asia/Seoul date +"%Y-%m-%d")
-          git commit -m "data: KR daily brief auto-generated for $DATE"
-          git push
-          echo "**커밋 푸시 완료** — main 에 4편 반영됨." >> "$GITHUB_STEP_SUMMARY"
+      # Commit & push 는 Claude Code Action 이 내부적으로 처리 (Step 10 of generation-prompt.md).
+      # 이전엔 outer step 으로 한 번 더 시도했으나 Action 이 이미 푸시한 뒤라 항상 "변경 없음"
+      # false-alarm 노티스가 떴음 → 제거. 진짜 0편 발행 케이스 식별은 Action 의 Output report 로.
 
       - name: Job summary
         if: always()
