@@ -350,6 +350,112 @@ async function fetchCoinGeckoBtc() {
   }
 }
 
+// ============================================================
+// FRED — 미국 채권/거시지표
+// fred.stlouisfed.org 에서 무료 키 발급 (instant), 분당 120 호출까지 무료.
+// DGS10 = 10년 만기 국채 수익률 — Yahoo `^TNX` 대체.
+// ============================================================
+async function fetchFredYield() {
+  const key = process.env.FRED_API_KEY;
+  if (!key) {
+    console.log('[alt] FRED_API_KEY not set — skipping FRED yield');
+    return null;
+  }
+  try {
+    const url = `https://api.stlouisfed.org/fred/series/observations?series_id=DGS10&api_key=${key}&file_type=json&sort_order=desc&limit=2`;
+    const res = await fetch(url, { headers: ALT_HEADERS });
+    if (!res.ok) {
+      console.warn(`[alt] FRED HTTP ${res.status}`);
+      return null;
+    }
+    const data = await res.json();
+    // FRED 가 휴일엔 "." 값을 줘서 최근 두 점 중 숫자 있는 걸로 골라야 함.
+    const obs = (data?.observations ?? []).find((o) => o.value && o.value !== '.');
+    if (!obs) return null;
+    return {
+      source: 'fred',
+      series: 'DGS10',
+      us10yPct: parseFloat(obs.value),
+      asOf: obs.date,
+    };
+  } catch (e) {
+    console.warn('[alt] FRED failed:', e.message);
+    return null;
+  }
+}
+
+// ============================================================
+// Finnhub — 미국 주식 quote
+// finnhub.io 무료 가입, 60 호출/분. /quote 엔드포인트로 c=현재가, pc=전일종가.
+// 비교 대상: us.top12 의 chart 엔드포인트 가격.
+// ============================================================
+async function fetchFinnhubUs(symbols) {
+  const key = process.env.FINNHUB_API_KEY;
+  if (!key) {
+    console.log('[alt] FINNHUB_API_KEY not set — skipping Finnhub US stocks');
+    return null;
+  }
+  const out = {};
+  for (const sym of symbols) {
+    try {
+      const res = await fetch(`https://finnhub.io/api/v1/quote?symbol=${sym}&token=${key}`, { headers: ALT_HEADERS });
+      if (!res.ok) {
+        console.warn(`[alt] finnhub ${sym} HTTP ${res.status}`);
+        continue;
+      }
+      const q = await res.json();
+      if (q?.c == null || q.c === 0) continue;
+      out[sym] = { price: q.c, previousClose: q.pc, change: q.d, changePct: q.dp };
+    } catch (e) {
+      console.warn(`[alt] finnhub ${sym} failed:`, e.message);
+    }
+    await sleep(150);
+  }
+  return Object.keys(out).length ? { source: 'finnhub', quotes: out } : null;
+}
+
+// ============================================================
+// Twelve Data — 지수 + 원자재
+// twelvedata.com 무료 가입, 800 호출/일. 지수 (SPX/IXIC/DJI), 금/원유 현물 (XAU·WTI/USD).
+// ============================================================
+async function fetchTwelveData() {
+  const key = process.env.TWELVE_DATA_API_KEY;
+  if (!key) {
+    console.log('[alt] TWELVE_DATA_API_KEY not set — skipping Twelve Data');
+    return null;
+  }
+  // 단일 호출에 여러 심볼 — 무료 티어도 batch 지원.
+  const symbols = ['SPX', 'IXIC', 'DJI', 'XAU/USD', 'WTI/USD'].join(',');
+  try {
+    const res = await fetch(
+      `https://api.twelvedata.com/quote?symbol=${encodeURIComponent(symbols)}&apikey=${key}`,
+      { headers: ALT_HEADERS },
+    );
+    if (!res.ok) {
+      console.warn(`[alt] twelvedata HTTP ${res.status}`);
+      return null;
+    }
+    const data = await res.json();
+    // 단일 심볼이면 평탄, 다중이면 객체 안에 심볼별 entry — 표준화.
+    const quotes = {};
+    const entries = data?.symbol ? { [data.symbol]: data } : data;
+    for (const [sym, q] of Object.entries(entries ?? {})) {
+      if (q?.code === 429 || q?.status === 'error') continue;
+      const price = parseFloat(q?.close ?? q?.price ?? NaN);
+      if (!Number.isFinite(price)) continue;
+      quotes[sym] = {
+        price,
+        previousClose: parseFloat(q?.previous_close ?? NaN) || null,
+        changePct: parseFloat(q?.percent_change ?? NaN) || null,
+      };
+    }
+    return Object.keys(quotes).length ? { source: 'twelvedata', quotes } : null;
+  } catch (e) {
+    console.warn('[alt] twelvedata failed:', e.message);
+    return null;
+  }
+}
+
 /**
  * Yahoo 와 alt API 값 나란히 로깅. CI 로그에서 며칠 관찰해 수치 일치 확인.
  * 양쪽 다 있을 때만 delta 계산, 없으면 단순 표시.
@@ -380,17 +486,42 @@ async function main() {
   const kr = await fetchKorea();
 
   // 병렬 (alt) 소스 — 야후 차단 대비 검증용. 본채널 데이터엔 영향 없음.
-  const [yahooKrwForDiff, yahooBtcForDiff, altFx, altBtc] = await Promise.all([
+  // 키 불필요 소스 (Frankfurter, CoinGecko) + 키 게이팅 소스 (FRED, Finnhub, Twelve Data).
+  const FINNHUB_SAMPLE = ['AAPL', 'MSFT', 'NVDA', 'TSLA'];
+  const [yahooKrwForDiff, yahooBtcForDiff, altFx, altBtc, altYield, altUsStocks, altTd] = await Promise.all([
     quoteSafe('KRW=X'),
     quoteSafe('BTC-USD'),
     fetchFrankfurterFx(),
     fetchCoinGeckoBtc(),
+    fetchFredYield(),
+    fetchFinnhubUs(FINNHUB_SAMPLE),
+    fetchTwelveData(),
   ]);
 
   const yahooKrwVal = yahooKrwForDiff?.regularMarketPrice ?? yahooKrwForDiff?.regularMarketPreviousClose ?? null;
   const yahooBtcVal = yahooBtcForDiff?.regularMarketPrice ?? yahooBtcForDiff?.regularMarketPreviousClose ?? null;
   logAltDiff('FX USD/KRW', yahooKrwVal, altFx?.usdKrw ?? null, (v) => v.toFixed(2));
   logAltDiff('BTC/USD   ', yahooBtcVal, altBtc?.btcUsd ?? null, (v) => v.toFixed(0));
+
+  // FRED 10Y 는 Yahoo `^TNX` 가 % 단위 (예 4.25), FRED 도 % 단위라 직접 비교 가능.
+  // 단 Yahoo quote 가 죽어있는 환경에선 Yahoo 쪽이 n/a 라 알트만 기록됨.
+  if (altYield) logAltDiff('US10Y     ', null, altYield.us10yPct, (v) => v.toFixed(3) + '%');
+
+  // Finnhub 표본은 us.top12 와 가격 직접 비교 — Yahoo chart 엔드포인트가 살아있을 때 유의미.
+  if (altUsStocks) {
+    for (const sym of FINNHUB_SAMPLE) {
+      const yahooEntry = usTop12.find((c) => c.ticker === sym);
+      const finn = altUsStocks.quotes[sym];
+      if (finn) logAltDiff(`${sym.padEnd(10)}`, yahooEntry?.price ?? null, finn.price, (v) => v.toFixed(2));
+    }
+  }
+
+  // Twelve Data — 지수 + 원자재. Yahoo quote 가 죽어있으면 한쪽만 기록됨.
+  if (altTd) {
+    for (const sym of Object.keys(altTd.quotes)) {
+      logAltDiff(`TD ${sym.padEnd(7)}`, null, altTd.quotes[sym].price, (v) => v.toFixed(2));
+    }
+  }
 
   // 안전 가드: 모든 외부 호출 실패 시 기존 JSON 보존.
   const krOk = krTop12.some((c) => c.available);
@@ -423,9 +554,13 @@ async function main() {
     snapshot: usSnapshot,
     ticker,
     // 1주차 병렬 검증 데이터 — UI 미사용, 며칠 모아서 Yahoo 값과 일치성 확인용.
+    // 키 게이팅 소스 (yield/usStocks/commodities) 는 env var 없으면 null.
     alt: {
       fx: altFx,
       crypto: altBtc,
+      yield: altYield,
+      usStocks: altUsStocks,
+      commodities: altTd,
       yahoo: {
         usdKrw: yahooKrwVal,
         btcUsd: yahooBtcVal,
@@ -440,7 +575,10 @@ async function main() {
     `        US snapshot: ${usSnapshot.length} | ticker: ${ticker.length} | KR base: ${kr?.available ? 'on' : 'off'} | KR top12: ${krTop12.filter((c) => c.available).length}/${krTop12.length} | US top12: ${usTop12.filter((c) => c.available).length}/${usTop12.length}`,
   );
   console.log(
-    `        alt: frankfurter=${altFx ? 'ok' : 'fail'} coingecko=${altBtc ? 'ok' : 'fail'}`,
+    `        alt: frankfurter=${altFx ? 'ok' : 'fail'} coingecko=${altBtc ? 'ok' : 'fail'} ` +
+      `fred=${altYield ? 'ok' : (process.env.FRED_API_KEY ? 'fail' : 'skip')} ` +
+      `finnhub=${altUsStocks ? Object.keys(altUsStocks.quotes).length + '/4' : (process.env.FINNHUB_API_KEY ? 'fail' : 'skip')} ` +
+      `twelvedata=${altTd ? Object.keys(altTd.quotes).length : (process.env.TWELVE_DATA_API_KEY ? 'fail' : 'skip')}`,
   );
 }
 

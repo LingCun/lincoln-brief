@@ -38,6 +38,11 @@ jobs:
         # Yahoo 일시 차단 시 스냅샷이 빈 상태로 갱신되는 걸 막기 위해 스크립트가 warning + exit 0 으로 빠짐.
         # 이 워크플로 자체는 그 결과를 봐서 "변경 없음 → skip" 으로 자연스럽게 흘러가야 함.
         continue-on-error: true
+        env:
+          # 알트 소스 — secret 미등록이면 스크립트가 자동으로 skip.
+          FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
+          FINNHUB_API_KEY: ${{ secrets.FINNHUB_API_KEY }}
+          TWELVE_DATA_API_KEY: ${{ secrets.TWELVE_DATA_API_KEY }}
         run: npm run fetch:market
 
       - name: Commit & push if changed
