@@ -351,15 +351,9 @@ const dateNum = today.getDate();
     transition: background 0.7s ease, opacity 0.7s ease;
   }
 
-  /* 로고 색 — 테마에 따라 변함 */
+  /* 로고 색 — 항상 골드 고정. 카테고리 진입 시 색 바뀌면 산만하다는 피드백 반영. */
   .logo {
-    color: var(--theme-color);
-    transition: color 0.7s ease;
-  }
-  /* default 상태일 땐 ivory 유지 (테마 진입 전) */
-  :root:not([data-active-theme]) .logo,
-  :root[data-active-theme=""] .logo {
-    color: #f5edd9;
+    color: #d8b878;
   }
 
   /* 카테고리 띠 — 활성 (스크롤 락 매칭) */

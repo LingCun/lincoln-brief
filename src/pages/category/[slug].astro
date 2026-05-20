@@ -61,19 +61,18 @@ const { category, posts, idx } = Astro.props;
         <div class="mb-6 flex justify-center">
           <CategoryIcon slug={category.slug} size={44} />
         </div>
-        <h1
-          class="font-serif text-5xl font-normal leading-tight tracking-tight md:text-6xl"
+        {/* H1 은 카테고리 strip 에 이미 노출 — 페이지 안에서 중복 큰 글씨는 빼고 SEO 용으로만 유지. */}
+        <h1 class="sr-only">{category.name}</h1>
+        <p
+          class="mx-auto max-w-xl font-serif text-2xl italic leading-relaxed md:text-3xl"
           style={`color: ${category.color};`}
         >
-          {category.name}
-        </h1>
+          {category.description}
+        </p>
         <div
           class="mx-auto mt-8 h-px w-12"
           style={`background: ${category.color};`}
         ></div>
-        <p class="mx-auto mt-8 max-w-xl font-serif text-lg italic leading-relaxed text-ink-100">
-          {category.description}
-        </p>
         <p class="mt-6 text-sm uppercase tracking-widest-2 text-ink-300 font-mono">
           {String(posts.length).padStart(3, '0')} Issues
         </p>

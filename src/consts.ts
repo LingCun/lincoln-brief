@@ -16,7 +16,7 @@ export const STIBEE = {
 export const CATEGORIES = [
   {
     slug: 'daily-brief',
-    name: '데일리 시황',
+    name: '데일리시황',
     description: '매일 아침 미국·한국 증시 핵심 요약',
     color: '#d8b878', // 노랑 — gold
   },
