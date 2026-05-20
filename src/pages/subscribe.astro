@@ -1,0 +1,177 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { CATEGORIES, STIBEE } from '../consts';
+import { getCollection } from 'astro:content';
+
+const lockedCategorySlugs = ['market-forecast', 'stock-analysis'];
+const lockedCategories = CATEGORIES.filter((c) => lockedCategorySlugs.includes(c.slug));
+
+const fromSlug = Astro.url.searchParams.get('from') ?? '';
+const fromCategory = Astro.url.searchParams.get('category') ?? '';
+
+// 무료 카테고리 최근 글 3편 — "이런 깊이로 분석합니다" 샘플용
+const allPosts = await getCollection('blog');
+const sampleFreePosts = allPosts
+  .filter((p) => ['daily-brief', 'economy-issue'].includes(p.data.category))
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .slice(0, 3);
+
+const stibeeUrl = STIBEE.SUBSCRIBE_URL;
+---
+
+<BaseLayout
+  title="구독하기 — Lincoln Brief"
+  description="시장 예측·종목 분석 글을 메일로 받아보세요. 무료."
+>
+  <article class="bg-ink-900">
+    <!-- HERO -->
+    <header class="relative overflow-hidden border-b border-ink-600">
+      <div
+        class="pointer-events-none absolute inset-x-0 top-0 h-[2px]"
+        style="background: linear-gradient(90deg, transparent, #d8b878, transparent);"
+        aria-hidden="true"
+      ></div>
+      <div class="container-x py-20 md:py-28">
+        <div class="mx-auto max-w-2xl text-center">
+          <p class="text-[11px] uppercase tracking-widest-2 text-gold-400">Premium · 무료 구독</p>
+          <h1 class="mt-6 font-serif text-4xl font-normal leading-tight text-ink-50 md:text-5xl">
+            매주 받아보는<br/>4편의 시장 분석
+          </h1>
+          <p class="mx-auto mt-8 max-w-xl font-serif text-lg italic leading-relaxed text-ink-100">
+            거시·섹터 흐름과 개별 종목 펀더멘털을 Lincoln 이 직접 정리합니다.<br/>
+            매주 월·목 오전, 두 분야의 글이 메일로 도착합니다.
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <!-- 두 카테고리 소개 -->
+    <section class="border-b border-ink-600 py-16">
+      <div class="container-x">
+        <div class="mx-auto grid max-w-4xl gap-6 md:grid-cols-2">
+          {lockedCategories.map((cat) => (
+            <div class="border border-ink-600 bg-ink-950 p-8">
+              <div
+                class="mb-4 h-px w-12"
+                style={`background: ${cat.color};`}
+              ></div>
+              <h2 class="font-serif text-2xl text-ink-50">{cat.name}</h2>
+              <p class="mt-3 text-sm text-ink-200">{cat.description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- 무엇을 받는가 -->
+    <section class="border-b border-ink-600 py-16">
+      <div class="container-x">
+        <div class="mx-auto max-w-2xl">
+          <p class="eyebrow text-center text-gold-400">발송 일정</p>
+          <h2 class="mt-4 text-center font-serif text-3xl text-ink-50">매주 월·목 오전</h2>
+          <ul class="mx-auto mt-8 max-w-md space-y-3 text-ink-100">
+            <li class="flex items-start gap-3">
+              <span class="text-gold-400">●</span>
+              <span><strong class="text-gold-400">시장 예측</strong> — 거시·섹터 단·중기 전망</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-gold-400">●</span>
+              <span><strong class="text-gold-400">종목 분석</strong> — 관심 종목 펀더멘털·기술적 분석</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-gold-400">●</span>
+              <span>각 글은 5-10분 분량 · 데이터 표·차트 포함</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-gold-400">●</span>
+              <span>구독은 영구 무료 · 언제든 취소</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 샘플 보기 (무료 카테고리 글) -->
+    {sampleFreePosts.length > 0 && (
+      <section class="border-b border-ink-600 py-16">
+        <div class="container-x">
+          <div class="mx-auto max-w-4xl">
+            <p class="eyebrow text-center text-gold-400">샘플 보기</p>
+            <h2 class="mt-4 text-center font-serif text-3xl text-ink-50">이런 깊이로 분석합니다</h2>
+            <p class="mt-3 text-center text-sm text-ink-300">아래는 무료 공개 글입니다. 시장 예측·종목 분석도 동일한 기준으로 작성됩니다.</p>
+            <div class="mt-10 grid gap-4 md:grid-cols-3">
+              {sampleFreePosts.map((p) => (
+                <a
+                  href={`/blog/${p.slug}/`}
+                  class="block border border-ink-600 bg-ink-950 p-6 transition hover:border-gold-500"
+                >
+                  <p class="text-[10px] uppercase tracking-widest-2 text-gold-400">{p.data.category}</p>
+                  <p class="mt-2 font-serif text-base leading-snug text-ink-50">{p.data.title}</p>
+                  <p class="mt-2 text-xs text-ink-300">{p.data.description}</p>
+                </a>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+    )}
+
+    <!-- 구독 폼 -->
+    <section class="py-20">
+      <div class="container-x">
+        <div class="mx-auto max-w-md text-center">
+          <p class="eyebrow text-gold-400">지금 구독하기</p>
+          <h2 class="mt-4 font-serif text-3xl text-ink-50">이메일 하나로 시작</h2>
+          {stibeeUrl ? (
+            <>
+              <p class="mt-6 text-sm text-ink-200">
+                아래 버튼을 누르면 구독 페이지로 이동합니다. 이메일만 입력하시면 됩니다.
+              </p>
+              <a
+                href={stibeeUrl}
+                target="_blank"
+                rel="noopener"
+                class="mt-8 inline-block bg-gold-500 px-10 py-4 text-sm font-medium uppercase tracking-widest-2 text-ink-950 transition hover:bg-gold-400"
+              >
+                무료 구독 시작 →
+              </a>
+              <p class="mt-4 text-xs text-ink-400">언제든 취소 가능 · 스팸 없음</p>
+            </>
+          ) : (
+            <div class="mt-8 border border-gold-700 bg-ink-950 p-6">
+              <p class="font-serif text-lg italic text-ink-100">구독 폼 준비 중</p>
+              <p class="mt-2 text-xs text-ink-300">조금만 기다려주세요. 곧 구독 폼이 열립니다.</p>
+            </div>
+          )}
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="border-t border-ink-600 py-16">
+      <div class="container-x">
+        <div class="mx-auto max-w-2xl">
+          <p class="eyebrow text-center text-gold-400">자주 묻는 질문</p>
+          <dl class="mt-8 space-y-6 text-ink-100">
+            <div>
+              <dt class="font-serif text-lg text-ink-50">정말 무료인가요?</dt>
+              <dd class="mt-2 text-sm text-ink-200">네. 시장 예측·종목 분석 두 카테고리 모두 영구 무료입니다.</dd>
+            </div>
+            <div>
+              <dt class="font-serif text-lg text-ink-50">언제 메일이 오나요?</dt>
+              <dd class="mt-2 text-sm text-ink-200">매주 월요일·목요일 오전. 각 요일에 두 분야의 새 글이 발송됩니다.</dd>
+            </div>
+            <div>
+              <dt class="font-serif text-lg text-ink-50">메일이 안 와요</dt>
+              <dd class="mt-2 text-sm text-ink-200">스팸함을 확인해주세요. Lincoln Brief 발신 주소를 주소록에 추가하시면 도착률이 올라갑니다.</dd>
+            </div>
+            <div>
+              <dt class="font-serif text-lg text-ink-50">탈퇴하고 싶어요</dt>
+              <dd class="mt-2 text-sm text-ink-200">모든 메일 하단의 "구독 취소" 링크 한 번으로 즉시 처리됩니다.</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+  </article>
+</BaseLayout>
