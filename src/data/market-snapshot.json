@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-05-20T22:00:21.718Z",
+  "asOf": "2026-05-20T22:57:11.786Z",
   "asOfLabel": "5/20 한국·미국 마감",
   "source": "Yahoo Finance",
   "us": {
@@ -1023,5 +1023,22 @@
     ]
   },
   "snapshot": [],
-  "ticker": []
+  "ticker": [],
+  "alt": {
+    "fx": {
+      "source": "frankfurter",
+      "usdKrw": 1505.44,
+      "asOf": "2026-05-20"
+    },
+    "crypto": {
+      "source": "coingecko",
+      "btcUsd": 77387,
+      "change24hPct": 0.9510675177153713,
+      "asOf": "2026-05-20T22:56:11.000Z"
+    },
+    "yahoo": {
+      "usdKrw": null,
+      "btcUsd": null
+    }
+  }
 }
