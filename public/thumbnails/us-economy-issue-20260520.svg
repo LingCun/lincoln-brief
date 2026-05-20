@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0e1510"/>
+      <stop offset="100%" stop-color="#070c08"/>
+    </linearGradient>
+    <linearGradient id="sage" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#a8bb88"/>
+      <stop offset="50%" stop-color="#7a8c5a"/>
+      <stop offset="100%" stop-color="#4e5c3a"/>
+    </linearGradient>
+    <linearGradient id="barSage" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7a8c5a" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#3a4a28" stop-opacity="0.70"/>
+    </linearGradient>
+    <linearGradient id="barDim" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#3a4a28" stop-opacity="0.70"/>
+      <stop offset="100%" stop-color="#1a2214" stop-opacity="0.50"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#7a8c5a" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#7a8c5a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1050" cy="200" r="360" fill="url(#glow)"/>
+  <circle cx="180" cy="570" r="240" fill="url(#glow)"/>
+
+  <!-- 좌상단 브랜드 -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#7a8c5a" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#d8edd0">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#7a8c5a">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#7a8c5a" text-anchor="end">2026.05.20 · ECONOMY ISSUE</text>
+
+  <!-- 헤드라인 -->
+  <text x="80" y="175" font-family="monospace" font-size="13" letter-spacing="5" fill="#7a8c5a">— 경제 이슈 · GOLD &amp; DOLLAR —</text>
+  <text x="80" y="258" font-family="Playfair Display, Georgia, serif" font-size="68" font-weight="500" fill="#d8edd0">금 $4,480</text>
+  <text x="80" y="326" font-family="Playfair Display, Georgia, serif" font-size="50" font-style="italic" fill="url(#sage)">달러 신뢰에 균열</text>
+  <text x="80" y="374" font-family="Pretendard, sans-serif" font-size="17" fill="#7a9068">시장이 조용히, 그러나 확실하게 묻고 있다</text>
+
+  <!-- 세 지표 그리드 -->
+  <g transform="translate(80, 440)">
+    <!-- Gold -->
+    <g>
+      <line x1="0" y1="0" x2="40" y2="0" stroke="#7a8c5a" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#7a9068">GOLD FUTURES</text>
+      <text x="0" y="68" font-family="Playfair Display, Georgia, serif" font-size="34" fill="#d8edd0">$4,480.80</text>
+      <polygon points="0,86 14,86 7,72" fill="#d96552"/>
+      <text x="22" y="93" font-family="monospace" font-size="14" fill="#d96552">−0.67%</text>
+    </g>
+    <!-- WTI -->
+    <g transform="translate(370, 0)">
+      <line x1="0" y1="0" x2="40" y2="0" stroke="#7a8c5a" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#7a9068">WTI CRUDE</text>
+      <text x="0" y="68" font-family="Playfair Display, Georgia, serif" font-size="34" fill="#d8edd0">$103.94</text>
+      <polygon points="0,86 14,86 7,72" fill="#d96552"/>
+      <text x="22" y="93" font-family="monospace" font-size="14" fill="#d96552">−0.20%</text>
+    </g>
+    <!-- DXY -->
+    <g transform="translate(740, 0)">
+      <line x1="0" y1="0" x2="40" y2="0" stroke="#7a8c5a" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#7a9068">USD INDEX</text>
+      <text x="0" y="68" font-family="Playfair Display, Georgia, serif" font-size="34" fill="#d8edd0">99.36</text>
+      <text x="0" y="93" font-family="monospace" font-size="13" fill="#a8bb88">100 이하 · 달러 약세</text>
+    </g>
+  </g>
+
+  <!-- 하단 메타 -->
+  <line x1="80" y1="660" x2="1200" y2="660" stroke="#7a8c5a" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="80" y="690" font-family="monospace" font-size="11" letter-spacing="3" fill="#7a8c5a" opacity="0.8">MAY 20 · 2026 · MACRO SIGNALS</text>
+  <text x="1200" y="690" font-family="monospace" font-size="11" letter-spacing="3" fill="#7a8c5a" opacity="0.8" text-anchor="end">SOURCE · YAHOO FINANCE</text>
+</svg>
