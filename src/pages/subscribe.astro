@@ -1,18 +1,16 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { CATEGORIES, STIBEE } from '../consts';
+import { LOCKED_CATEGORIES } from '../lib/gating';
 import { getCollection } from 'astro:content';
 
-const lockedCategorySlugs = ['market-forecast', 'stock-analysis'];
-const lockedCategories = CATEGORIES.filter((c) => lockedCategorySlugs.includes(c.slug));
-
-const fromSlug = Astro.url.searchParams.get('from') ?? '';
-const fromCategory = Astro.url.searchParams.get('category') ?? '';
+const lockedSet = new Set<string>(LOCKED_CATEGORIES);
+const lockedCategories = CATEGORIES.filter((c) => lockedSet.has(c.slug));
 
 // 무료 카테고리 최근 글 3편 — "이런 깊이로 분석합니다" 샘플용
 const allPosts = await getCollection('blog');
 const sampleFreePosts = allPosts
-  .filter((p) => ['daily-brief', 'economy-issue'].includes(p.data.category))
+  .filter((p) => !lockedSet.has(p.data.category))
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
   .slice(0, 3);
 
