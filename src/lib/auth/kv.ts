@@ -1,4 +1,4 @@
-import { kv as vercelKV } from '@vercel/kv';
+import Redis from 'ioredis';
 
 export interface KVClient {
   get<T = unknown>(key: string): Promise<T | null>;
@@ -8,26 +8,45 @@ export interface KVClient {
   expire(key: string, seconds: number): Promise<void>;
 }
 
+let _redis: Redis | null = null;
+
+function getRedis(): Redis {
+  if (_redis) return _redis;
+  const url = process.env.REDIS_URL || process.env.KV_URL;
+  if (!url) {
+    throw new Error('REDIS_URL (or KV_URL) is not configured');
+  }
+  _redis = new Redis(url, { maxRetriesPerRequest: 1, lazyConnect: false });
+  return _redis;
+}
+
 export function createVercelKV(): KVClient {
   return {
-    async get(key) {
-      return (await vercelKV.get(key)) as any;
+    async get<T>(key: string): Promise<T | null> {
+      const raw = await getRedis().get(key);
+      if (raw === null) return null;
+      try {
+        return JSON.parse(raw) as T;
+      } catch {
+        return raw as unknown as T;
+      }
     },
-    async set(key, value, opts) {
+    async set<T>(key, value, opts) {
+      const serialized = typeof value === 'string' ? value : JSON.stringify(value);
       if (opts?.ex) {
-        await vercelKV.set(key, value as any, { ex: opts.ex });
+        await getRedis().set(key, serialized, 'EX', opts.ex);
       } else {
-        await vercelKV.set(key, value as any);
+        await getRedis().set(key, serialized);
       }
     },
     async del(key) {
-      await vercelKV.del(key);
+      await getRedis().del(key);
     },
     async incr(key) {
-      return await vercelKV.incr(key);
+      return await getRedis().incr(key);
     },
     async expire(key, seconds) {
-      await vercelKV.expire(key, seconds);
+      await getRedis().expire(key, seconds);
     },
   };
 }
