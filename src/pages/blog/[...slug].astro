@@ -19,7 +19,7 @@ const { Content } = await post.render();
 
 let teaserHtml = '';
 if (locked) {
-  const paragraphs = extractTeaserParagraphs(post.body, 3);
+  const paragraphs = extractTeaserParagraphs(post.body);
   teaserHtml = renderTeaserHtml(paragraphs);
 }
 ---

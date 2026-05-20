@@ -2,12 +2,11 @@ import { describe, it, expect } from 'vitest';
 import { extractTeaserParagraphs, renderTeaserHtml } from '../../src/lib/teaser';
 
 describe('extractTeaserParagraphs', () => {
-  it('첫 3개 단락 반환 (기본)', () => {
+  it('첫 2개 단락 반환 (기본)', () => {
     const md = '첫번째 단락.\n\n두번째 단락.\n\n세번째 단락.\n\n네번째 단락.';
     expect(extractTeaserParagraphs(md)).toEqual([
       '첫번째 단락.',
       '두번째 단락.',
-      '세번째 단락.',
     ]);
   });
 

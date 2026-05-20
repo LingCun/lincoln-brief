@@ -1,6 +1,6 @@
 import { marked } from 'marked';
 
-export function extractTeaserParagraphs(markdown: string, count = 3): string[] {
+export function extractTeaserParagraphs(markdown: string, count = 2): string[] {
   return markdown
     .split(/\n\s*\n/)
     .map((block) => block.trim())
