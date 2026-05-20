@@ -20,7 +20,7 @@ This is a **production publishing pipeline**. Your output is committed to `main`
    - `TZ=Asia/Seoul date +%Y-%m-%d` → use this exact value for `pubDate`
    - `TZ=Asia/Seoul date +%Y%m%d` → use for slug suffix
 
-3. **Determine MARKET** from env `MARKET` (`US` or `KR`). Default `US`. Slug prefix:
+3. **Determine MARKET** from the `MARKET=...` line at the very top of this prompt (`US` or `KR`). If absent, refuse and exit — do NOT default silently. Slug prefix:
    - US → no prefix (e.g., `daily-brief-20260520.md`)
    - KR → `kr-` prefix (e.g., `kr-daily-brief-20260520.md`)
 

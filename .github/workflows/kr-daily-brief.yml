@@ -56,9 +56,13 @@ jobs:
 
       - name: Load generation prompt
         id: load_prompt
+        env:
+          MARKET: KR
         run: |
           {
             echo "PROMPT<<PROMPT_EOF"
+            echo "MARKET=${MARKET}"
+            echo ""
             cat scripts/generation-prompt.md
             echo "PROMPT_EOF"
           } >> "$GITHUB_OUTPUT"
