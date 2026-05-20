@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#181214"/>
+      <stop offset="100%" stop-color="#0a0708"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f0d88c"/>
+      <stop offset="50%" stop-color="#d8b878"/>
+      <stop offset="100%" stop-color="#b89a5a"/>
+    </linearGradient>
+    <linearGradient id="barGold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#d8b878" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#7e6a3e" stop-opacity="0.7"/>
+    </linearGradient>
+    <linearGradient id="barDim" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#6b5f48" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#3d3526" stop-opacity="0.5"/>
+    </linearGradient>
+    <linearGradient id="barRed" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#d96552" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#8a3a28" stop-opacity="0.7"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#d8b878" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#d8b878" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1100" cy="180" r="300" fill="url(#glow)"/>
+  <circle cx="180" cy="560" r="250" fill="url(#glow)"/>
+
+  <!-- 좌상단 브랜드 -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#d8b878" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#f5edd9">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#d8b878">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#d8b878" text-anchor="end">2026.05.20 · MARKET FORECAST</text>
+
+  <!-- 헤드라인 -->
+  <text x="80" y="170" font-family="monospace" font-size="13" letter-spacing="5" fill="#d8b878">— 시장 예측 · POST-NVDA SCENARIOS —</text>
+  <text x="80" y="248" font-family="Playfair Display, Georgia, serif" font-size="58" font-weight="500" fill="#f5edd9">NVDA 이후 4주,</text>
+  <text x="80" y="316" font-family="Playfair Display, Georgia, serif" font-size="58" font-style="italic" fill="url(#gold)">세 갈림길</text>
+  <text x="80" y="358" font-family="Pretendard, sans-serif" font-size="17" fill="#988e72">가이드 한 줄이 다음 지도를 그린다 — VIX 18.06 · WTI $104.16</text>
+
+  <!-- 시나리오 바 차트 -->
+  <g transform="translate(80, 410)" font-family="monospace">
+    <!-- 베이스 50% -->
+    <text x="0" y="14" font-size="12" letter-spacing="2" fill="#f5edd9">베이스 — 컨센서스 상회</text>
+    <rect x="260" y="0" width="460" height="18" fill="url(#barGold)" rx="2"/>
+    <text x="735" y="14" font-size="14" fill="#f0d88c" font-weight="600">50%</text>
+    <text x="900" y="14" font-size="12" fill="#988e72">NVDA $225~$240</text>
+
+    <!-- 불 케이스 20% -->
+    <g transform="translate(0, 42)">
+      <text x="0" y="14" font-size="12" letter-spacing="2" fill="#f5edd9">불 케이스 — 가이드 강세</text>
+      <rect x="260" y="0" width="184" height="18" fill="url(#barGold)" rx="2"/>
+      <text x="459" y="14" font-size="14" fill="#f0d88c" font-weight="600">20%</text>
+      <text x="900" y="14" font-size="12" fill="#988e72">NVDA $240~$255</text>
+    </g>
+
+    <!-- 베어 케이스 30% -->
+    <g transform="translate(0, 84)">
+      <text x="0" y="14" font-size="12" letter-spacing="2" fill="#f5edd9">베어 케이스 — 가이드 약세</text>
+      <rect x="260" y="0" width="276" height="18" fill="url(#barRed)" rx="2"/>
+      <text x="551" y="14" font-size="14" fill="#d96552" font-weight="600">30%</text>
+      <text x="900" y="14" font-size="12" fill="#988e72">NVDA $195~$210</text>
+    </g>
+  </g>
+
+  <!-- 핵심 지표 -->
+  <g transform="translate(80, 588)">
+    <!-- VIX -->
+    <line x1="0" y1="0" x2="50" y2="0" stroke="#d8b878" stroke-width="1.5"/>
+    <text x="0" y="24" font-family="monospace" font-size="11" letter-spacing="2" fill="#988e72">VIX</text>
+    <text x="0" y="52" font-family="Playfair Display, Georgia, serif" font-size="28" fill="#f5edd9">18.06</text>
+
+    <!-- WTI -->
+    <g transform="translate(200, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#d8b878" stroke-width="1.5"/>
+      <text x="0" y="24" font-family="monospace" font-size="11" letter-spacing="2" fill="#988e72">WTI CRUDE</text>
+      <text x="0" y="52" font-family="Playfair Display, Georgia, serif" font-size="28" fill="#f5edd9">$104.16</text>
+    </g>
+
+    <!-- NVDA -->
+    <g transform="translate(460, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#d8b878" stroke-width="1.5"/>
+      <text x="0" y="24" font-family="monospace" font-size="11" letter-spacing="2" fill="#988e72">NVDA 종가</text>
+      <text x="0" y="52" font-family="Playfair Display, Georgia, serif" font-size="28" fill="#f5edd9">$220.61</text>
+    </g>
+
+    <!-- 고점 대비 -->
+    <g transform="translate(720, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#d8b878" stroke-width="1.5"/>
+      <text x="0" y="24" font-family="monospace" font-size="11" letter-spacing="2" fill="#988e72">고점 대비</text>
+      <text x="0" y="52" font-family="Playfair Display, Georgia, serif" font-size="28" fill="#d96552">−6.4%</text>
+    </g>
+  </g>
+
+  <!-- 하단 선 -->
+  <line x1="80" y1="685" x2="1200" y2="685" stroke="#d8b878" stroke-width="0.5" stroke-opacity="0.4"/>
+  <text x="80" y="703" font-family="monospace" font-size="10" letter-spacing="2" fill="#5a5040">lincoln-brief.vercel.app</text>
+  <text x="1200" y="703" font-family="monospace" font-size="10" letter-spacing="2" fill="#5a5040" text-anchor="end">— Lincoln</text>
+</svg>
