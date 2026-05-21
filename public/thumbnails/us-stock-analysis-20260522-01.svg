@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0e1520"/>
+      <stop offset="100%" stop-color="#080c14"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7a9bd4"/>
+      <stop offset="50%" stop-color="#5677b0"/>
+      <stop offset="100%" stop-color="#3a5590"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#5677b0" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#5677b0" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1100" cy="180" r="360" fill="url(#glow)"/>
+  <circle cx="180" cy="580" r="240" fill="url(#glow)"/>
+
+  <!-- 좌상단 브랜드 -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#5677b0" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#d8e4f5">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#5677b0">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#5677b0" text-anchor="end">2026.05.22 · STOCK ANALYSIS · SLOT 01</text>
+
+  <!-- 카테고리 라벨 -->
+  <text x="80" y="175" font-family="monospace" font-size="13" letter-spacing="5" fill="#5677b0">— 종목 분석 —</text>
+
+  <!-- 메인 헤드라인 -->
+  <text x="80" y="265" font-family="Playfair Display, Georgia, serif" font-size="72" font-weight="500" fill="#f0f4fc">WMT</text>
+  <text x="80" y="335" font-family="Playfair Display, Georgia, serif" font-size="52" font-style="italic" fill="url(#blue)">관세 역풍 −7.05%</text>
+  <text x="80" y="390" font-family="Pretendard, sans-serif" font-size="18" fill="#7a8faa">Q1 FY2027 실적 쇼크  ·  소비 공룡의 경고</text>
+
+  <!-- 데이터 그리드 -->
+  <g transform="translate(80, 455)">
+    <!-- 종가 -->
+    <g>
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#5677b0" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#7a8faa">5/21 종가</text>
+      <text x="0" y="68" font-family="Playfair Display, Georgia, serif" font-size="34" fill="#f0f4fc">$121.62</text>
+      <polygon points="0,86 14,86 7,72" fill="#d96552"/>
+      <text x="22" y="93" font-family="monospace" font-size="13" fill="#d96552">−$9.23</text>
+    </g>
+    <!-- 변동률 -->
+    <g transform="translate(290, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#5677b0" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#7a8faa">일변동</text>
+      <text x="0" y="68" font-family="Playfair Display, Georgia, serif" font-size="34" fill="#d96552">−7.05%</text>
+      <text x="0" y="93" font-family="monospace" font-size="12" fill="#7a8faa">30D HIGH $134.20</text>
+    </g>
+    <!-- 고점 대비 -->
+    <g transform="translate(580, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#5677b0" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#7a8faa">전일 종가</text>
+      <text x="0" y="68" font-family="Playfair Display, Georgia, serif" font-size="34" fill="#f0f4fc">$130.85</text>
+      <text x="0" y="93" font-family="monospace" font-size="12" fill="#7a8faa">30D LOW $121.62</text>
+    </g>
+    <!-- 카테고리 -->
+    <g transform="translate(870, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#5677b0" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#7a8faa">원인</text>
+      <text x="0" y="65" font-family="Pretendard, sans-serif" font-size="22" fill="#f0f4fc">관세 · 마진 압박</text>
+      <text x="0" y="93" font-family="monospace" font-size="12" fill="#7a8faa">Q2 가이던스 실망</text>
+    </g>
+  </g>
+
+  <!-- 하단 메타 -->
+  <line x1="80" y1="660" x2="1200" y2="660" stroke="#5677b0" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="80" y="690" font-family="monospace" font-size="11" letter-spacing="3" fill="#5677b0" opacity="0.8">MAY 22 · 2026 · FRI · WMT EARNINGS</text>
+  <text x="1200" y="690" font-family="monospace" font-size="11" letter-spacing="3" fill="#5677b0" opacity="0.8" text-anchor="end">SOURCE · YAHOO FINANCE · MOTLEY FOOL</text>
+</svg>
