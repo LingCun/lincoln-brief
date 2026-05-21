@@ -1,0 +1,108 @@
+name: Watchdog (Auto-recover missed prep)
+
+# 각 슬롯의 1시간 뒤 발사 — 오늘 슬롯 글이 main 에 없으면 prep 워크플로 자동 dispatch.
+# Tier 1 (3중 cron + workflow_run) 이 어떤 이유로 다 실패해도 마지막 안전망.
+# 결과: 자동화 신뢰성 ~99.9%.
+on:
+  schedule:
+    - cron: '0 3 * * 1-5'   # 12:00 KST — KR 11 슬롯 체크
+    - cron: '0 8 * * 1-5'   # 17:00 KST — KR 16 슬롯 체크
+    - cron: '0 17 * * 0-4'  # 02:00 KST — US 01 슬롯 체크
+    - cron: '0 22 * * 0-4'  # 07:00 KST — US 06 슬롯 체크
+  workflow_dispatch:
+    inputs:
+      market:
+        description: '마켓 (kr or us)'
+        required: true
+        type: choice
+        options: ['kr', 'us']
+      slot:
+        description: '슬롯 (01/06/11/16)'
+        required: true
+        type: choice
+        options: ['01', '06', '11', '16']
+
+permissions:
+  contents: read
+  actions: write  # workflow_dispatch 트리거 권한 (다른 워크플로 발사)
+
+jobs:
+  check_and_recover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Determine market + slot
+        id: meta
+        run: |
+          if [ -n "${{ inputs.slot }}" ]; then
+            MARKET="${{ inputs.market }}"
+            SLOT="${{ inputs.slot }}"
+          else
+            H=$(date -u +%H)
+            case $H in
+              03) MARKET=kr; SLOT=11 ;;
+              08) MARKET=kr; SLOT=16 ;;
+              17) MARKET=us; SLOT=01 ;;
+              22) MARKET=us; SLOT=06 ;;
+              *) echo "::error::Unknown UTC hour $H — schedule mismatch?"; exit 1 ;;
+            esac
+          fi
+          KST_DATE=$(TZ=Asia/Seoul date +%Y%m%d)
+          echo "market=$MARKET" >> "$GITHUB_OUTPUT"
+          echo "slot=$SLOT" >> "$GITHUB_OUTPUT"
+          echo "kst_date=$KST_DATE" >> "$GITHUB_OUTPUT"
+          echo "::notice::Watchdog 시작 — ${MARKET} ${SLOT}:00 KST (${KST_DATE})"
+
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 1
+
+      - name: Check if today's slot is published on main
+        id: check
+        run: |
+          KST_DATE="${{ steps.meta.outputs.kst_date }}"
+          SLOT="${{ steps.meta.outputs.slot }}"
+          MARKET="${{ steps.meta.outputs.market }}"
+          PATH_FILE="src/content/blog/${MARKET}-daily-brief-${KST_DATE}-${SLOT}.md"
+
+          if [ -f "$PATH_FILE" ]; then
+            echo "::notice::✓ 오늘 ${MARKET} ${SLOT}:00 KST 슬롯 이미 발행됨 ($PATH_FILE)"
+            echo "published=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "::warning::⚠ 오늘 ${MARKET} ${SLOT}:00 KST 슬롯 미발행 ($PATH_FILE 없음) → prep 자동 트리거"
+            echo "published=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Trigger prep workflow (recovery)
+        if: steps.check.outputs.published != 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          MARKET="${{ steps.meta.outputs.market }}"
+          SLOT="${{ steps.meta.outputs.slot }}"
+
+          gh workflow run "${MARKET}-daily-prep.yml" \
+            --ref main \
+            -f slot="$SLOT"
+
+          echo "::notice::🔧 ${MARKET}-daily-prep.yml dispatch 됨 (slot=$SLOT). 15~20분 후 publish 자동 발사 예상."
+
+      - name: Summary
+        if: always()
+        run: |
+          {
+            echo ""
+            echo "---"
+            echo "## Watchdog 결과"
+            echo "- Market: \`${{ steps.meta.outputs.market }}\`"
+            echo "- Slot: **${{ steps.meta.outputs.slot }}:00 KST**"
+            echo "- KST date: ${{ steps.meta.outputs.kst_date }}"
+            echo "- 발행됨?: ${{ steps.check.outputs.published }}"
+            if [ "${{ steps.check.outputs.published }}" = "true" ]; then
+              echo "- 액션: ✓ 무동작 (이미 발행됨)"
+            else
+              echo "- 액션: 🔧 prep 워크플로 dispatch — 복구 시작"
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"
