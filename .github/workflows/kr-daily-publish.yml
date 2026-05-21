@@ -22,6 +22,13 @@ on:
 permissions:
   contents: write
 
+# 동시 실행 차단 — prep 3중 cron 의 workflow_run 트리거가 동시에 발화해도 한 번에 하나만.
+# cancel-in-progress: false 로 큐잉 → 첫 publish 가 staging 머지·삭제 끝내면, 다음 publish 는
+# "staging 없음" 으로 즉시 종료.
+concurrency:
+  group: publish-kr
+  cancel-in-progress: false
+
 jobs:
   publish:
     runs-on: ubuntu-latest
@@ -57,11 +64,11 @@ jobs:
 
           if [ -z "$CANDIDATES" ]; then
             echo "::warning::오늘(${KST_DATE}) staging/${MARKET}-* 브랜치 없음. Skip."
-            echo "no_branch=true" >> "$GITHUB_ENV"
             exit 0
           fi
 
           MERGED_COUNT=0
+          FAILED_COUNT=0
           for STAGING in $CANDIDATES; do
             echo "::group::Processing $STAGING"
 
@@ -85,22 +92,46 @@ jobs:
               continue
             fi
 
-            git checkout main
-            git reset --hard origin/main
-            git merge --no-ff -X ours "refs/remotes/origin/staging_tmp" \
-              -m "publish: merge $STAGING to main"
-            git push origin main
+            # main push 가 non-fast-forward 로 실패할 수 있음 (refresh-market 동시 commit 등).
+            # → 최대 3회 재시도: 매번 origin/main 재패치 + reset + 재머지 + push.
+            PUSHED=false
+            for attempt in 1 2 3; do
+              git checkout main
+              git fetch origin main
+              git reset --hard origin/main
+              if ! git merge --no-ff -X ours "refs/remotes/origin/staging_tmp" \
+                  -m "publish: merge $STAGING to main"; then
+                echo "::warning::merge 실패 (attempt $attempt) for $STAGING"
+                git merge --abort 2>/dev/null || true
+                sleep 2
+                continue
+              fi
+              if git push origin main; then
+                PUSHED=true
+                break
+              fi
+              echo "::warning::push attempt $attempt 실패 — origin/main 갱신됨. 재시도."
+              sleep 2
+            done
 
-            git push origin --delete "$STAGING" || echo "::warning::Failed to delete $STAGING"
-            echo "::notice::Published $STAGING → main ($NEW_FILES new files)"
-            MERGED_COUNT=$((MERGED_COUNT+1))
+            if [ "$PUSHED" = "true" ]; then
+              git push origin --delete "$STAGING" || echo "::warning::Failed to delete $STAGING"
+              echo "::notice::Published $STAGING → main ($NEW_FILES new files)"
+              MERGED_COUNT=$((MERGED_COUNT+1))
+            else
+              echo "::error::$STAGING 머지 3회 시도 실패 — staging 보존, 다음 publish 가 재시도."
+              FAILED_COUNT=$((FAILED_COUNT+1))
+            fi
             echo "::endgroup::"
           done
 
-          if [ "$MERGED_COUNT" = "0" ]; then
+          if [ "$MERGED_COUNT" = "0" ] && [ "$FAILED_COUNT" = "0" ]; then
             echo "::notice::머지할 신규 staging 없음 (모두 처리됨 또는 빈 브랜치)."
           else
-            echo "::notice::총 ${MERGED_COUNT}개 staging 머지 완료."
+            echo "::notice::총 ${MERGED_COUNT}개 머지 완료, ${FAILED_COUNT}개 실패."
+          fi
+          if [ "$FAILED_COUNT" != "0" ]; then
+            exit 1
           fi
 
       - name: Summary

@@ -27,6 +27,13 @@ permissions:
   issues: write
   id-token: write
 
+# 같은 (market, slot) 조합의 동시 실행 차단. 30분 간격 백업 cron 이 첫 실행 끝나기 전에 발사돼도
+# 큐에 대기 → 첫 실행이 끝나면 skip_check 가 통과·즉시 종료. Claude 호출 중복 방지.
+# slot 은 cron 스케줄 패턴에서 추출 (UTC 시각으로 매핑).
+concurrency:
+  group: prep-kr-${{ inputs.slot || ((contains(github.event.schedule, ' 1 ') || contains(github.event.schedule, ' 2 ')) && '11' || '16') }}
+  cancel-in-progress: false
+
 jobs:
   prep:
     runs-on: ubuntu-latest
@@ -71,12 +78,15 @@ jobs:
           SLOT="${{ steps.meta.outputs.slot }}"
           BRANCH="${{ steps.meta.outputs.branch }}"
 
-          # main 에 이미 오늘 슬롯 글이 있으면 skip (중복 발사 방지)
-          if git ls-tree -r origin/main --name-only 2>/dev/null \
-              | grep -q "src/content/blog/kr-daily-brief-${KST_DATE}-${SLOT}\.md"; then
-            echo "::notice::main 에 이미 오늘 ${SLOT}:00 KST 글 발행됨. Prep skip."
+          # 4개 카테고리 다 main 에 있을 때만 skip — 1편만 있고 3편 누락된 부분 발행 상태는 skip 하지 않음.
+          EXISTING=$(git ls-tree -r origin/main --name-only 2>/dev/null \
+            | grep -cE "^src/content/blog/kr-(daily-brief|stock-analysis|market-forecast|economy-issue)-${KST_DATE}-${SLOT}\.md$" || true)
+          if [ "$EXISTING" = "4" ]; then
+            echo "::notice::main 에 오늘 ${SLOT}:00 KST 4편 모두 발행됨. Prep skip."
             echo "skip=true" >> "$GITHUB_OUTPUT"
             exit 0
+          elif [ "$EXISTING" != "0" ]; then
+            echo "::warning::main 에 ${SLOT}:00 KST 슬롯 ${EXISTING}/4편만 있음 — 누락분 보충하러 Prep 진행."
           fi
 
           # staging 에 이미 콘텐츠가 있으면 skip (다른 cron 백업이 먼저 끝낸 경우)
@@ -119,14 +129,9 @@ jobs:
           git checkout -b "${{ steps.meta.outputs.branch }}"
           git push -u origin "${{ steps.meta.outputs.branch }}" --force
 
-      - name: Refresh market snapshot (Yahoo + 알트 9종)
-        if: steps.skip_check.outputs.skip != 'true'
-        continue-on-error: true
-        env:
-          FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
-          FINNHUB_API_KEY: ${{ secrets.FINNHUB_API_KEY }}
-          TWELVE_DATA_API_KEY: ${{ secrets.TWELVE_DATA_API_KEY }}
-        run: node scripts/fetch-market.mjs
+      # market-snapshot refresh 는 `refresh-market.yml` 이 10분마다 main 에 commit 함.
+      # 여기서 따로 안 돌림 — staging 에 commit 안 하면 어차피 사이트엔 안 올라가고,
+      # main 의 snapshot 은 최대 10~15 분만 stale (일일 브리핑엔 충분).
 
       - name: Load generation prompt
         if: steps.skip_check.outputs.skip != 'true'
@@ -159,6 +164,16 @@ jobs:
       - name: Verify build (safety net)
         if: steps.skip_check.outputs.skip != 'true'
         run: npx astro build
+
+      # 빌드 실패 = staging 에 broken 콘텐츠가 push 된 상태.
+      # 그대로 두면 cron publish 안전망 (11·16·17 KST) 가 main 으로 머지 → 사이트 깨짐.
+      # → staging 강제 삭제. 다음 cron 백업 또는 watchdog 가 처음부터 다시 생성.
+      - name: Clean staging on failure
+        if: failure() && steps.skip_check.outputs.skip != 'true'
+        run: |
+          BRANCH="${{ steps.meta.outputs.branch }}"
+          echo "::warning::Prep 실패 → staging $BRANCH 강제 삭제 (broken 콘텐츠 main 유입 차단)"
+          git push origin --delete "$BRANCH" || echo "::warning::Failed to delete $BRANCH (이미 사라졌을 수 있음)"
 
       - name: Summary
         if: always()
