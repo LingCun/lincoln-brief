@@ -57,11 +57,13 @@ jobs:
           if [ -n "${{ inputs.slot }}" ]; then
             SLOT="${{ inputs.slot }}"
           else
-            H=$(date -u +%H)
-            case $H in
-              01|02) SLOT=11 ;;
-              06|07) SLOT=16 ;;
-              *) echo "::error::Unknown UTC hour $H — schedule mismatch?"; exit 1 ;;
+            # GitHub Actions schedule 트리거는 정시(:00)에 30분~수시간 지연 발사 가능 →
+            # 실제 실행 시각(date -u +%H)이 아니라 cron 표현식 자체(`github.event.schedule`)로 분기.
+            SCHED="${{ github.event.schedule }}"
+            case "$SCHED" in
+              *' 1 '*|*' 2 '*) SLOT=11 ;;
+              *' 6 '*|*' 7 '*) SLOT=16 ;;
+              *) echo "::error::Unknown schedule '$SCHED'"; exit 1 ;;
             esac
           fi
           KST_DATE=$(TZ=Asia/Seoul date +%Y%m%d)
