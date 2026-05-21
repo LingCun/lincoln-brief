@@ -1,19 +1,23 @@
 name: KR Daily Publish (Merge staging to main)
 
-# 평일 KST 11:00 + 16:00 — 정시 퍼블리시.
-# 30분 전 prep 워크플로가 push 해둔 staging/kr-{YYYYMMDD}-{slot} 브랜치를
-# main 으로 머지 → Vercel 재배포. Staging 미존재 시 무동작.
+# prep 워크플로 성공 → workflow_run 으로 즉시 자동 발사. 사용자 dispatch 불필요.
+# 백업: cron (11:00, 16:00, 17:00 KST) + workflow_dispatch.
+# 오늘 KST 날짜의 staging/kr-* 브랜치 전체를 자동 탐지·머지·삭제.
 on:
+  workflow_run:
+    workflows: ["KR Daily Prep (Generate to staging)"]
+    types: [completed]
   schedule:
-    - cron: '0 2 * * 1-5'  # 월~금 02:00 UTC = 월~금 11:00 KST
-    - cron: '0 7 * * 1-5'  # 월~금 07:00 UTC = 월~금 16:00 KST
+    - cron: '0 2 * * 1-5'   # 11:00 KST 안전망
+    - cron: '0 7 * * 1-5'   # 16:00 KST 안전망
+    - cron: '0 8 * * 1-5'   # 17:00 KST 최후 안전망 (prep 지연 흡수)
   workflow_dispatch:
     inputs:
       slot:
-        description: '발행 슬롯 (11 or 16)'
-        required: true
+        description: '발행 슬롯 (생략 시 오늘 모든 슬롯 자동 머지)'
+        required: false
         type: choice
-        options: ['11', '16']
+        options: ['', '11', '16']
 
 permissions:
   contents: write
@@ -21,7 +25,9 @@ permissions:
 jobs:
   publish:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 10
+    # workflow_run 으로 트리거 시 prep 가 success 인 경우만 진행
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
     steps:
       - name: Checkout main
         uses: actions/checkout@v4
@@ -30,51 +36,72 @@ jobs:
           ref: main
           fetch-depth: 0
 
-      - name: Derive staging branch
-        id: meta
-        run: |
-          if [ -n "${{ inputs.slot }}" ]; then
-            SLOT="${{ inputs.slot }}"
-          else
-            H=$(date -u +%H)
-            case $H in
-              02) SLOT=11 ;;
-              07) SLOT=16 ;;
-              *) echo "::error::Unknown UTC hour $H — schedule mismatch?"; exit 1 ;;
-            esac
-          fi
-          KST_DATE=$(TZ=Asia/Seoul date +%Y%m%d)
-          BRANCH="staging/kr-${KST_DATE}-${SLOT}"
-          echo "slot=$SLOT" >> "$GITHUB_OUTPUT"
-          echo "branch=$BRANCH" >> "$GITHUB_OUTPUT"
-
       - name: Configure git
         run: |
           git config user.name "Lincoln Brief Bot"
           git config user.email "bot@lincolnbrief.local"
 
-      - name: Merge staging into main
+      - name: Find and merge today's staging branches
         run: |
-          STAGING="${{ steps.meta.outputs.branch }}"
+          KST_DATE=$(TZ=Asia/Seoul date +%Y%m%d)
+          MARKET="kr"
+          PATTERN_PREFIX="staging/${MARKET}-${KST_DATE}-"
 
-          if ! git ls-remote --exit-code --heads origin "$STAGING" >/dev/null 2>&1; then
-            echo "::warning::Staging branch $STAGING 미존재. Prep 가 실패했거나 실행되지 않음. Publish skip."
+          # slot 입력이 명시되면 그것만, 아니면 오늘 KST 의 모든 staging/kr-* 자동 탐지
+          if [ -n "${{ inputs.slot }}" ]; then
+            CANDIDATES="${PATTERN_PREFIX}${{ inputs.slot }}"
+          else
+            CANDIDATES=$(git ls-remote --heads origin "${PATTERN_PREFIX}*" 2>/dev/null \
+              | awk '{print $2}' | sed 's|refs/heads/||' | sort)
+          fi
+
+          if [ -z "$CANDIDATES" ]; then
+            echo "::warning::오늘(${KST_DATE}) staging/${MARKET}-* 브랜치 없음. Skip."
+            echo "no_branch=true" >> "$GITHUB_ENV"
             exit 0
           fi
 
-          git fetch origin "$STAGING":"$STAGING"
-          git fetch origin main
-          git checkout main
-          git reset --hard origin/main
+          MERGED_COUNT=0
+          for STAGING in $CANDIDATES; do
+            echo "::group::Processing $STAGING"
 
-          git merge --no-ff -X ours "$STAGING" \
-            -m "publish: merge $STAGING to main"
+            if ! git ls-remote --exit-code --heads origin "$STAGING" >/dev/null 2>&1; then
+              echo "::notice::$STAGING 가 이미 사라짐 (다른 publish 가 처리). Skip."
+              echo "::endgroup::"
+              continue
+            fi
 
-          git push origin main
+            git fetch origin "$STAGING":"refs/remotes/origin/staging_tmp"
+            git fetch origin main
 
-          git push origin --delete "$STAGING" || echo "::warning::Failed to delete $STAGING (자동 정리 실패, 무시 가능)."
+            # staging 에 실제 새 콘텐츠 (.md / .svg) 가 있는지 확인 — 빈 staging 은 skip + 삭제
+            NEW_FILES=$(git diff --name-only origin/main...refs/remotes/origin/staging_tmp \
+              -- 'src/content/blog/*.md' 'public/thumbnails/*.svg' 2>/dev/null | wc -l | tr -d ' ')
 
-          echo "::notice::Published $STAGING → main"
+            if [ "$NEW_FILES" = "0" ]; then
+              echo "::warning::$STAGING 에 새 콘텐츠 없음. 정리만 하고 skip."
+              git push origin --delete "$STAGING" || echo "::warning::Failed to delete $STAGING"
+              echo "::endgroup::"
+              continue
+            fi
+
+            git checkout main
+            git reset --hard origin/main
+            git merge --no-ff -X ours "refs/remotes/origin/staging_tmp" \
+              -m "publish: merge $STAGING to main"
+            git push origin main
+
+            git push origin --delete "$STAGING" || echo "::warning::Failed to delete $STAGING"
+            echo "::notice::Published $STAGING → main ($NEW_FILES new files)"
+            MERGED_COUNT=$((MERGED_COUNT+1))
+            echo "::endgroup::"
+          done
+
+          if [ "$MERGED_COUNT" = "0" ]; then
+            echo "::notice::머지할 신규 staging 없음 (모두 처리됨 또는 빈 브랜치)."
+          else
+            echo "::notice::총 ${MERGED_COUNT}개 staging 머지 완료."
+          fi
 
       - name: Summary
         if: always()
@@ -83,6 +110,6 @@ jobs:
             echo ""
             echo "---"
             echo "- Phase: **PUBLISH** (merge → main)"
-            echo "- Slot: ${{ steps.meta.outputs.slot }}:00 KST"
-            echo "- Source branch: \`${{ steps.meta.outputs.branch }}\`"
+            echo "- Trigger: ${{ github.event_name }}"
+            echo "- KST date: $(TZ=Asia/Seoul date +%Y-%m-%d)"
           } >> "$GITHUB_STEP_SUMMARY"
