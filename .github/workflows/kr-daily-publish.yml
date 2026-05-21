@@ -1,0 +1,88 @@
+name: KR Daily Publish (Merge staging to main)
+
+# 평일 KST 11:00 + 16:00 — 정시 퍼블리시.
+# 30분 전 prep 워크플로가 push 해둔 staging/kr-{YYYYMMDD}-{slot} 브랜치를
+# main 으로 머지 → Vercel 재배포. Staging 미존재 시 무동작.
+on:
+  schedule:
+    - cron: '0 2 * * 1-5'  # 월~금 02:00 UTC = 월~금 11:00 KST
+    - cron: '0 7 * * 1-5'  # 월~금 07:00 UTC = 월~금 16:00 KST
+  workflow_dispatch:
+    inputs:
+      slot:
+        description: '발행 슬롯 (11 or 16)'
+        required: true
+        type: choice
+        options: ['11', '16']
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          ref: main
+          fetch-depth: 0
+
+      - name: Derive staging branch
+        id: meta
+        run: |
+          if [ -n "${{ inputs.slot }}" ]; then
+            SLOT="${{ inputs.slot }}"
+          else
+            H=$(date -u +%H)
+            case $H in
+              02) SLOT=11 ;;
+              07) SLOT=16 ;;
+              *) echo "::error::Unknown UTC hour $H — schedule mismatch?"; exit 1 ;;
+            esac
+          fi
+          KST_DATE=$(TZ=Asia/Seoul date +%Y%m%d)
+          BRANCH="staging/kr-${KST_DATE}-${SLOT}"
+          echo "slot=$SLOT" >> "$GITHUB_OUTPUT"
+          echo "branch=$BRANCH" >> "$GITHUB_OUTPUT"
+
+      - name: Configure git
+        run: |
+          git config user.name "Lincoln Brief Bot"
+          git config user.email "bot@lincolnbrief.local"
+
+      - name: Merge staging into main
+        run: |
+          STAGING="${{ steps.meta.outputs.branch }}"
+
+          if ! git ls-remote --exit-code --heads origin "$STAGING" >/dev/null 2>&1; then
+            echo "::warning::Staging branch $STAGING 미존재. Prep 가 실패했거나 실행되지 않음. Publish skip."
+            exit 0
+          fi
+
+          git fetch origin "$STAGING":"$STAGING"
+          git fetch origin main
+          git checkout main
+          git reset --hard origin/main
+
+          git merge --no-ff -X ours "$STAGING" \
+            -m "publish: merge $STAGING to main"
+
+          git push origin main
+
+          git push origin --delete "$STAGING" || echo "::warning::Failed to delete $STAGING (자동 정리 실패, 무시 가능)."
+
+          echo "::notice::Published $STAGING → main"
+
+      - name: Summary
+        if: always()
+        run: |
+          {
+            echo ""
+            echo "---"
+            echo "- Phase: **PUBLISH** (merge → main)"
+            echo "- Slot: ${{ steps.meta.outputs.slot }}:00 KST"
+            echo "- Source branch: \`${{ steps.meta.outputs.branch }}\`"
+          } >> "$GITHUB_STEP_SUMMARY"

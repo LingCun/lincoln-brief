@@ -1,0 +1,135 @@
+name: US Daily Prep (Generate to staging)
+
+# 평일 KST 00:30 + 05:30 — 발행 30분 전 prep.
+# fetch-market + Claude Code Action 으로 4편 + 썸네일 4개 작성 후
+# staging/us-{YYYYMMDD}-{slot} 브랜치에 push. main 은 아직 안 건드림.
+# 30분 뒤 us-daily-publish.yml 이 같은 브랜치를 main 으로 머지 → 정시 퍼블리시.
+on:
+  schedule:
+    - cron: '30 15 * * 0-4'  # 일~목 15:30 UTC = 월~금 00:30 KST → 01:00 KST publish 용
+    - cron: '30 20 * * 0-4'  # 일~목 20:30 UTC = 월~금 05:30 KST → 06:00 KST publish 용
+  workflow_dispatch:
+    inputs:
+      slot:
+        description: '발행 슬롯 (01 or 06)'
+        required: true
+        type: choice
+        options: ['01', '06']
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+  id-token: write
+
+jobs:
+  prep:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          ref: main
+          fetch-depth: 0
+
+      - name: Setup Node 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Derive staging branch
+        id: meta
+        run: |
+          if [ -n "${{ inputs.slot }}" ]; then
+            SLOT="${{ inputs.slot }}"
+          else
+            H=$(date -u +%H)
+            case $H in
+              15) SLOT=01 ;;
+              20) SLOT=06 ;;
+              *) echo "::error::Unknown UTC hour $H — schedule mismatch?"; exit 1 ;;
+            esac
+          fi
+          KST_DATE=$(TZ=Asia/Seoul date +%Y%m%d)
+          BRANCH="staging/us-${KST_DATE}-${SLOT}"
+          echo "slot=$SLOT" >> "$GITHUB_OUTPUT"
+          echo "branch=$BRANCH" >> "$GITHUB_OUTPUT"
+          echo "kst_date=$KST_DATE" >> "$GITHUB_OUTPUT"
+          echo "::notice::Prep for slot ${SLOT}:00 KST → branch $BRANCH"
+
+      - name: Secrets 가드
+        env:
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+        run: |
+          if [ -z "$CLAUDE_CODE_OAUTH_TOKEN" ]; then
+            echo "::error::CLAUDE_CODE_OAUTH_TOKEN secret 미등록."
+            exit 1
+          fi
+
+      - name: Install project deps
+        run: npm ci --no-audit --no-fund --silent
+
+      - name: Configure git
+        run: |
+          git config user.name "Lincoln Brief Bot"
+          git config user.email "bot@lincolnbrief.local"
+
+      - name: Create staging branch
+        # main 에서 분기 + 빈 staging push (Claude 가 이 브랜치에 commit/push 함).
+        # --force 는 같은 슬롯 재실행 시 이전 staging 덮어쓰려고 (아직 publish 전이면 안전).
+        run: |
+          git checkout -b "${{ steps.meta.outputs.branch }}"
+          git push -u origin "${{ steps.meta.outputs.branch }}" --force
+
+      - name: Refresh market snapshot (Yahoo + 알트 9종)
+        # Yahoo 차단되면 알트만 들어옴. 어느 쪽이든 exit 0.
+        # 스냅샷은 staging 에는 commit 하지 않음 (refresh-market.yml 이 main 에 따로 관리) —
+        # 단 Claude 가 본문 작성 시 워크스페이스의 최신 값을 읽도록 fetch 는 실행.
+        continue-on-error: true
+        env:
+          FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
+          FINNHUB_API_KEY: ${{ secrets.FINNHUB_API_KEY }}
+          TWELVE_DATA_API_KEY: ${{ secrets.TWELVE_DATA_API_KEY }}
+        run: node scripts/fetch-market.mjs
+
+      - name: Load generation prompt
+        id: load_prompt
+        env:
+          MARKET: US
+        run: |
+          {
+            echo "PROMPT<<PROMPT_EOF"
+            echo "MARKET=${MARKET}"
+            echo ""
+            cat scripts/generation-prompt.md
+            echo "PROMPT_EOF"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Generate 4 articles via Claude Code
+        # Claude 가 "current branch" (= staging) 에 commit & push. main 직접 push 아님.
+        uses: anthropics/claude-code-action@v1
+        env:
+          MARKET: US
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          claude_args: |
+            --max-turns 80
+            --allowedTools "Bash(npm:*),Bash(npx:*),Bash(git:*),Bash(node:*),Bash(TZ=*:*),Read,Write,Edit,WebFetch"
+          prompt: ${{ steps.load_prompt.outputs.PROMPT }}
+
+      - name: Verify build (safety net)
+        run: npx astro build
+
+      - name: Summary
+        if: always()
+        run: |
+          {
+            echo ""
+            echo "---"
+            echo "- Phase: **PREP** (generate → staging)"
+            echo "- Slot: ${{ steps.meta.outputs.slot }}:00 KST"
+            echo "- Staging branch: \`${{ steps.meta.outputs.branch }}\`"
+            echo "- 30분 뒤 \`us-daily-publish.yml\` 이 main 으로 머지 → 정시 퍼블리시."
+          } >> "$GITHUB_STEP_SUMMARY"
