@@ -162,6 +162,30 @@ jobs:
             --allowedTools "Bash(npm:*),Bash(npx:*),Bash(git:*),Bash(node:*),Bash(TZ=*:*),Read,Write,Edit,WebFetch"
           prompt: ${{ steps.load_prompt.outputs.PROMPT }}
 
+      # Claude Code Action 이 24초·5턴 만에 빈 손으로 정상 종료(`subtype:success`)하는 비결정성 관찰됨.
+      # 그대로 두면 prep 가 success → publish 가 빈 staging 머지 시도 → "정리만 하고 skip" → cron 백업/워치독은
+      # "이미 발행됨" 으로 오판 안 함(파일 0개니까) 하지만 prep success 가 다음 cron 백업 발사를 막을 수도 있음.
+      # → working tree 에 4개 카테고리 .md 가 다 있는지 검사. 없으면 exit 1 으로 prep 를 failure 로 마크
+      # → 후속 `Clean staging on failure` 가 staging 삭제 → 30분 뒤 cron 백업이 처음부터 재시도.
+      - name: Guard against empty Claude output
+        if: steps.skip_check.outputs.skip != 'true'
+        run: |
+          KST_DATE="${{ steps.meta.outputs.kst_date }}"
+          SLOT="${{ steps.meta.outputs.slot }}"
+          MISSING=()
+          for CAT in daily-brief stock-analysis market-forecast economy-issue; do
+            FILE="src/content/blog/us-${CAT}-${KST_DATE}-${SLOT}.md"
+            if [ ! -f "$FILE" ]; then
+              MISSING+=("$FILE")
+            fi
+          done
+          if [ ${#MISSING[@]} -ne 0 ]; then
+            echo "::error::Claude 가 ${#MISSING[@]}/4 파일 누락. 빈 손 종료로 판단 — prep failure 처리 → 다음 cron 백업 재시도."
+            printf '  - %s\n' "${MISSING[@]}"
+            exit 1
+          fi
+          echo "::notice::✓ 4편 모두 생성됨 (us-{daily-brief,stock-analysis,market-forecast,economy-issue}-${KST_DATE}-${SLOT}.md)"
+
       - name: Verify build (safety net)
         if: steps.skip_check.outputs.skip != 'true'
         run: npx astro build
