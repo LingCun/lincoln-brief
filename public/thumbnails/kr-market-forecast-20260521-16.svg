@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#101520"/>
+      <stop offset="100%" stop-color="#080c14"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f0d88c"/>
+      <stop offset="50%" stop-color="#d8b878"/>
+      <stop offset="100%" stop-color="#b89a5a"/>
+    </linearGradient>
+    <radialGradient id="blueglow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#4d78d8" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#4d78d8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="goldglow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#d8b878" stop-opacity="0.07"/>
+      <stop offset="100%" stop-color="#d8b878" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1100" cy="200" r="340" fill="url(#blueglow)"/>
+  <circle cx="180" cy="580" r="270" fill="url(#goldglow)"/>
+
+  <!-- Header -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#d8b878" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#f5edd9">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#d8b878">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#d8b878" text-anchor="end">2026.05.21 16:00 KST · KR 시장예측</text>
+
+  <!-- Category label -->
+  <text x="80" y="160" font-family="monospace" font-size="13" letter-spacing="5" fill="#7ea8d8">— 대반등 이후 시나리오 —</text>
+
+  <!-- Main title -->
+  <text x="80" y="248" font-family="Playfair Display, Georgia, serif" font-size="58" font-weight="500" fill="#f5edd9">KOSPI 반등 이후</text>
+  <text x="80" y="310" font-family="Playfair Display, Georgia, serif" font-size="46" font-style="italic" fill="url(#gold)">신고점 재탈환의 조건</text>
+  <text x="80" y="358" font-family="sans-serif" font-size="16" fill="#8aabcf">5/14 신고점 8,046.78 이후 6거래일 · 대반등 확인</text>
+
+  <!-- Scenario boxes -->
+  <g transform="translate(80, 400)">
+    <!-- Base -->
+    <rect width="240" height="80" rx="4" fill="#1a2035" stroke="#4d78d8" stroke-width="1"/>
+    <text x="12" y="24" font-family="monospace" font-size="10" letter-spacing="2" fill="#7ea8d8">베이스 케이스 45%</text>
+    <text x="12" y="56" font-family="Georgia, serif" font-size="18" fill="#f5edd9">7,500~7,800 박스</text>
+    <text x="12" y="74" font-family="monospace" font-size="10" fill="#5a7aad">CPI 대기 구간</text>
+  </g>
+  <g transform="translate(344, 400)">
+    <!-- Bull -->
+    <rect width="240" height="80" rx="4" fill="#1a3020" stroke="#4db86b" stroke-width="1"/>
+    <text x="12" y="24" font-family="monospace" font-size="10" letter-spacing="2" fill="#7eb89a">불 케이스 25%</text>
+    <text x="12" y="56" font-family="Georgia, serif" font-size="18" fill="#f5edd9">8,046+ 신고점</text>
+    <text x="12" y="74" font-family="monospace" font-size="10" fill="#4a8a5a">6/11 CPI 하락시</text>
+  </g>
+  <g transform="translate(608, 400)">
+    <!-- Bear -->
+    <rect width="240" height="80" rx="4" fill="#2a1515" stroke="#d96552" stroke-width="1"/>
+    <text x="12" y="24" font-family="monospace" font-size="10" letter-spacing="2" fill="#c87a6a">베어 케이스 25%</text>
+    <text x="12" y="56" font-family="Georgia, serif" font-size="18" fill="#f5edd9">7,000~7,200</text>
+    <text x="12" y="74" font-family="monospace" font-size="10" fill="#a06050">금리 4.8%+ 재진입</text>
+  </g>
+  <g transform="translate(872, 400)">
+    <!-- Black Swan -->
+    <rect width="240" height="80" rx="4" fill="#1a1a1a" stroke="#988e72" stroke-width="1" opacity="0.8"/>
+    <text x="12" y="24" font-family="monospace" font-size="10" letter-spacing="2" fill="#988e72">블랙 스완 5%</text>
+    <text x="12" y="56" font-family="Georgia, serif" font-size="18" fill="#f5edd9">6,500~6,800</text>
+    <text x="12" y="74" font-family="monospace" font-size="10" fill="#706a5a">외부 충격</text>
+  </g>
+
+  <!-- Key dates -->
+  <line x1="80" y1="520" x2="1200" y2="520" stroke="#1a2035" stroke-width="1"/>
+  <text x="80" y="553" font-family="monospace" font-size="13" fill="#7ea8d8">핵심 일정: 5/22 한은 소비자동향 · 6/6 NFP · 6/11 CPI · 6/18 FOMC</text>
+  <text x="80" y="580" font-family="monospace" font-size="13" fill="#988e72">현재 변수: 미국10년물 4.67% · USD/KRW 1,505원 · NVDA $223.47</text>
+
+  <!-- Footer -->
+  <line x1="80" y1="640" x2="1200" y2="640" stroke="#1a2035" stroke-width="1"/>
+  <text x="80" y="665" font-family="monospace" font-size="11" fill="#3a4a6a">S&amp;P500 7,432.97 · NASDAQ 26,270.36 · DJIA 50,009.35</text>
+  <text x="1200" y="665" font-family="monospace" font-size="10" fill="#3a4a6a" text-anchor="end">lincoln-brief.vercel.app</text>
+
+  <!-- Diamond accent -->
+  <polygon points="1210,340 1225,355 1210,370 1195,355" fill="none" stroke="#4d78d8" stroke-width="1.5" opacity="0.6"/>
+</svg>
