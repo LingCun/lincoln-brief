@@ -351,37 +351,45 @@ async function fetchCoinGeckoBtc() {
 }
 
 // ============================================================
-// FRED — 미국 채권/거시지표
-// fred.stlouisfed.org 에서 무료 키 발급 (instant), 분당 120 호출까지 무료.
-// DGS10 = 10년 만기 국채 수익률 — Yahoo `^TNX` 대체.
+// FRED — 미국 채권/거시지표/지수
+// fred.stlouisfed.org 무료 키, 분당 120 호출. 시리즈별로 한 번씩 호출.
+// 수집 시리즈:
+//   DGS10        US 10Y 국채 수익률 (% 단위)             — Yahoo ^TNX 대체
+//   SP500        S&P 500 종가 (포인트)                   — Yahoo ^GSPC 대체
+//   NASDAQCOM    NASDAQ Composite 종가                  — Yahoo ^IXIC 대체
+//   DJIA         Dow Jones Industrial Average 종가      — Yahoo ^DJI  대체
+//   DCOILWTICO   WTI 원유 ($/배럴, EIA 보고)            — Yahoo CL=F 대체
+// FRED 는 T+1 일 단위 (장 마감 후 다음날 갱신), 06:00 KST 브리핑엔 정상.
 // ============================================================
-async function fetchFredYield() {
+const FRED_SERIES = ['DGS10', 'SP500', 'NASDAQCOM', 'DJIA', 'DCOILWTICO'];
+
+async function fetchFred() {
   const key = process.env.FRED_API_KEY;
   if (!key) {
-    console.log('[alt] FRED_API_KEY not set — skipping FRED yield');
+    console.log('[alt] FRED_API_KEY not set — skipping FRED');
     return null;
   }
-  try {
-    const url = `https://api.stlouisfed.org/fred/series/observations?series_id=DGS10&api_key=${key}&file_type=json&sort_order=desc&limit=2`;
-    const res = await fetch(url, { headers: ALT_HEADERS });
-    if (!res.ok) {
-      console.warn(`[alt] FRED HTTP ${res.status}`);
-      return null;
+  const out = {};
+  for (const seriesId of FRED_SERIES) {
+    try {
+      const url = `https://api.stlouisfed.org/fred/series/observations?series_id=${seriesId}&api_key=${key}&file_type=json&sort_order=desc&limit=5`;
+      const res = await fetch(url, { headers: ALT_HEADERS });
+      if (!res.ok) {
+        console.warn(`[alt] FRED ${seriesId} HTTP ${res.status}`);
+        continue;
+      }
+      const data = await res.json();
+      // FRED 가 휴일엔 "." 을 줘서 최근 5점 중 숫자 있는 걸로 선택.
+      const obs = (data?.observations ?? []).find((o) => o.value && o.value !== '.');
+      if (obs) {
+        out[seriesId] = { value: parseFloat(obs.value), asOf: obs.date };
+      }
+    } catch (e) {
+      console.warn(`[alt] FRED ${seriesId} failed:`, e.message);
     }
-    const data = await res.json();
-    // FRED 가 휴일엔 "." 값을 줘서 최근 두 점 중 숫자 있는 걸로 골라야 함.
-    const obs = (data?.observations ?? []).find((o) => o.value && o.value !== '.');
-    if (!obs) return null;
-    return {
-      source: 'fred',
-      series: 'DGS10',
-      us10yPct: parseFloat(obs.value),
-      asOf: obs.date,
-    };
-  } catch (e) {
-    console.warn('[alt] FRED failed:', e.message);
-    return null;
+    await sleep(120);
   }
+  return Object.keys(out).length ? { source: 'fred', series: out } : null;
 }
 
 // ============================================================
@@ -486,14 +494,14 @@ async function main() {
   const kr = await fetchKorea();
 
   // 병렬 (alt) 소스 — 야후 차단 대비 검증용. 본채널 데이터엔 영향 없음.
-  // 키 불필요 소스 (Frankfurter, CoinGecko) + 키 게이팅 소스 (FRED, Finnhub, Twelve Data).
+  // 키 불필요 (Frankfurter, CoinGecko) + 키 게이팅 (FRED, Finnhub, Twelve Data).
   const FINNHUB_SAMPLE = ['AAPL', 'MSFT', 'NVDA', 'TSLA'];
-  const [yahooKrwForDiff, yahooBtcForDiff, altFx, altBtc, altYield, altUsStocks, altTd] = await Promise.all([
+  const [yahooKrwForDiff, yahooBtcForDiff, altFx, altBtc, altFred, altUsStocks, altTd] = await Promise.all([
     quoteSafe('KRW=X'),
     quoteSafe('BTC-USD'),
     fetchFrankfurterFx(),
     fetchCoinGeckoBtc(),
-    fetchFredYield(),
+    fetchFred(),
     fetchFinnhubUs(FINNHUB_SAMPLE),
     fetchTwelveData(),
   ]);
@@ -503,9 +511,15 @@ async function main() {
   logAltDiff('FX USD/KRW', yahooKrwVal, altFx?.usdKrw ?? null, (v) => v.toFixed(2));
   logAltDiff('BTC/USD   ', yahooBtcVal, altBtc?.btcUsd ?? null, (v) => v.toFixed(0));
 
-  // FRED 10Y 는 Yahoo `^TNX` 가 % 단위 (예 4.25), FRED 도 % 단위라 직접 비교 가능.
-  // 단 Yahoo quote 가 죽어있는 환경에선 Yahoo 쪽이 n/a 라 알트만 기록됨.
-  if (altYield) logAltDiff('US10Y     ', null, altYield.us10yPct, (v) => v.toFixed(3) + '%');
+  // FRED 시리즈 5종 모두 diff 로깅. Yahoo quote 가 죽어있어 yahoo 쪽 n/a 로 찍힘.
+  if (altFred) {
+    for (const sid of FRED_SERIES) {
+      const s = altFred.series[sid];
+      if (!s) continue;
+      const fmt = sid === 'DGS10' ? (v) => v.toFixed(3) + '%' : (v) => v.toFixed(2);
+      logAltDiff(`FRED ${sid.padEnd(10)}`, null, s.value, fmt);
+    }
+  }
 
   // Finnhub 표본은 us.top12 와 가격 직접 비교 — Yahoo chart 엔드포인트가 살아있을 때 유의미.
   if (altUsStocks) {
@@ -516,7 +530,7 @@ async function main() {
     }
   }
 
-  // Twelve Data — 지수 + 원자재. Yahoo quote 가 죽어있으면 한쪽만 기록됨.
+  // Twelve Data — 무료 티어 한계로 XAU/USD (금) 만 동작. SPX/IXIC/DJI/WTI 는 FRED 로 커버.
   if (altTd) {
     for (const sym of Object.keys(altTd.quotes)) {
       logAltDiff(`TD ${sym.padEnd(7)}`, null, altTd.quotes[sym].price, (v) => v.toFixed(2));
@@ -554,11 +568,11 @@ async function main() {
     snapshot: usSnapshot,
     ticker,
     // 1주차 병렬 검증 데이터 — UI 미사용, 며칠 모아서 Yahoo 값과 일치성 확인용.
-    // 키 게이팅 소스 (yield/usStocks/commodities) 는 env var 없으면 null.
+    // 키 게이팅 소스 (fred/usStocks/commodities) 는 env var 없으면 null.
     alt: {
       fx: altFx,
       crypto: altBtc,
-      yield: altYield,
+      fred: altFred,
       usStocks: altUsStocks,
       commodities: altTd,
       yahoo: {
@@ -576,7 +590,7 @@ async function main() {
   );
   console.log(
     `        alt: frankfurter=${altFx ? 'ok' : 'fail'} coingecko=${altBtc ? 'ok' : 'fail'} ` +
-      `fred=${altYield ? 'ok' : (process.env.FRED_API_KEY ? 'fail' : 'skip')} ` +
+      `fred=${altFred ? Object.keys(altFred.series).length + '/' + FRED_SERIES.length : (process.env.FRED_API_KEY ? 'fail' : 'skip')} ` +
       `finnhub=${altUsStocks ? Object.keys(altUsStocks.quotes).length + '/4' : (process.env.FINNHUB_API_KEY ? 'fail' : 'skip')} ` +
       `twelvedata=${altTd ? Object.keys(altTd.quotes).length : (process.env.TWELVE_DATA_API_KEY ? 'fail' : 'skip')}`,
   );
