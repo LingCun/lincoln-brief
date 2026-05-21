@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a0e0e"/>
+      <stop offset="100%" stop-color="#0a0808"/>
+    </linearGradient>
+    <linearGradient id="red" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#e88070"/>
+      <stop offset="50%" stop-color="#d96552"/>
+      <stop offset="100%" stop-color="#b84a38"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#d96552" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#d96552" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1050" cy="200" r="350" fill="url(#glow)"/>
+  <circle cx="220" cy="620" r="270" fill="url(#glow)"/>
+
+  <!-- 좌상단 브랜드 -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#d96552" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#f5e8e6">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#d96552">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#d96552" text-anchor="end">2026.05.22 · MARKET FORECAST · SLOT 01</text>
+
+  <!-- 카테고리 라벨 -->
+  <text x="80" y="175" font-family="monospace" font-size="13" letter-spacing="5" fill="#d96552">— 4주 시장 예측 —</text>
+
+  <!-- 헤드라인 -->
+  <text x="80" y="265" font-family="Playfair Display, Georgia, serif" font-size="58" font-weight="500" fill="#f5e8e6">DJIA 50K 이후</text>
+  <text x="80" y="335" font-family="Playfair Display, Georgia, serif" font-size="48" font-style="italic" fill="url(#red)">매크로가 시장을 잡는다</text>
+  <text x="80" y="388" font-family="Pretendard, sans-serif" font-size="18" fill="#aa8880">WMT 쇼크 + Fed 회의록(5/29) + PCE(5/30)</text>
+
+  <!-- 이벤트 캘린더 그리드 -->
+  <g transform="translate(80, 455)">
+    <!-- 5/22 BOK -->
+    <g>
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#d96552" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="2" fill="#aa8880">5/22 KST 10:00</text>
+      <text x="0" y="65" font-family="Pretendard, sans-serif" font-size="20" fill="#f5e8e6">BOK 금리 결정</text>
+      <text x="0" y="93" font-family="monospace" font-size="11" fill="#aa8880">원화·KOSPI</text>
+    </g>
+    <!-- 5/29 Fed -->
+    <g transform="translate(310, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#d96552" stroke-width="2"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="2" fill="#d96552">★ 5/29 KST 03:00</text>
+      <text x="0" y="65" font-family="Pretendard, sans-serif" font-size="20" fill="#f5e8e6">Fed 회의록</text>
+      <text x="0" y="93" font-family="monospace" font-size="11" fill="#d96552">7월 인하 단서</text>
+    </g>
+    <!-- 5/30 PCE -->
+    <g transform="translate(620, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#d96552" stroke-width="2"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="2" fill="#d96552">★ 5/30</text>
+      <text x="0" y="65" font-family="Pretendard, sans-serif" font-size="20" fill="#f5e8e6">美 4월 PCE</text>
+      <text x="0" y="93" font-family="monospace" font-size="11" fill="#d96552">인플레 체온계</text>
+    </g>
+    <!-- 10Y 금리 -->
+    <g transform="translate(900, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#d96552" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="2" fill="#aa8880">10년물 금리</text>
+      <text x="0" y="68" font-family="Playfair Display, Georgia, serif" font-size="34" fill="#f5e8e6">4.67%</text>
+      <text x="0" y="93" font-family="monospace" font-size="11" fill="#aa8880">5% 돌파 경계</text>
+    </g>
+  </g>
+
+  <!-- 하단 메타 -->
+  <line x1="80" y1="660" x2="1200" y2="660" stroke="#d96552" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="80" y="690" font-family="monospace" font-size="11" letter-spacing="3" fill="#d96552" opacity="0.8">MAY 22 · 2026 · FRI · POST-50K OUTLOOK</text>
+  <text x="1200" y="690" font-family="monospace" font-size="11" letter-spacing="3" fill="#d96552" opacity="0.8" text-anchor="end">SOURCE · FRED · FRANKFURTER</text>
+</svg>
