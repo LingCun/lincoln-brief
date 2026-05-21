@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a1008"/>
+      <stop offset="100%" stop-color="#0c0804"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f0d88c"/>
+      <stop offset="50%" stop-color="#d8b878"/>
+      <stop offset="100%" stop-color="#b89a5a"/>
+    </linearGradient>
+    <radialGradient id="orangeglow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#d8882a" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#d8882a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="goldglow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#d8b878" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#d8b878" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1080" cy="200" r="360" fill="url(#orangeglow)"/>
+  <circle cx="160" cy="580" r="270" fill="url(#goldglow)"/>
+
+  <!-- Header -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#d8b878" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#f5edd9">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#d8b878">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#d8b878" text-anchor="end">2026.05.21 16:00 KST · KR 경제이슈</text>
+
+  <!-- Category label -->
+  <text x="80" y="160" font-family="monospace" font-size="13" letter-spacing="5" fill="#d8882a">— 유가 충격 분석 —</text>
+
+  <!-- Main title -->
+  <text x="80" y="250" font-family="Playfair Display, Georgia, serif" font-size="70" font-weight="500" fill="#f5edd9">WTI $112</text>
+  <text x="80" y="316" font-family="Playfair Display, Georgia, serif" font-size="46" font-style="italic" fill="url(#gold)">한국 경제의 시한폭탄</text>
+  <text x="80" y="364" font-family="sans-serif" font-size="17" fill="#c8a878">에너지 수입 의존도 90%+ · 수입 물가 → 소비자물가 → 한은 딜레마</text>
+
+  <!-- Big price display -->
+  <g transform="translate(80, 410)">
+    <rect width="320" height="96" rx="6" fill="#1a1408" stroke="#d8882a" stroke-width="1.5"/>
+    <text x="160" y="30" font-family="monospace" font-size="12" letter-spacing="4" fill="#c8882a" text-anchor="middle">WTI 원유 (5/18 기준)</text>
+    <text x="160" y="74" font-family="Playfair Display, Georgia, serif" font-size="46" fill="#e8a840" text-anchor="middle">$112.25</text>
+  </g>
+
+  <!-- Impact chain -->
+  <g transform="translate(440, 420)">
+    <text x="0" y="20" font-family="monospace" font-size="13" fill="#988e72">유가 $112 → 수입비용 +$30억/월</text>
+    <text x="0" y="46" font-family="monospace" font-size="13" fill="#988e72">→ 수입 물가 +8~12% (3개월 후)</text>
+    <text x="0" y="72" font-family="monospace" font-size="13" fill="#988e72">→ 소비자물가 +2.5~3.5%p (6개월)</text>
+    <text x="0" y="98" font-family="monospace" font-size="13" fill="#d8882a">→ 한은 금리 인하 어려워짐</text>
+  </g>
+
+  <!-- Divider -->
+  <line x1="80" y1="555" x2="1200" y2="555" stroke="#2a1a08" stroke-width="1"/>
+
+  <!-- Bottom -->
+  <text x="80" y="590" font-family="monospace" font-size="13" fill="#988e72">금(XAU/USD) $4,521.73 · 미국10년물 4.67% · USD/KRW 1,505.44원</text>
+  <text x="80" y="616" font-family="monospace" font-size="13" fill="#c8882a">정유주 수혜 · 항공·화학·전력 비용 압박 · 한은 정책 제약</text>
+
+  <!-- Footer -->
+  <line x1="80" y1="643" x2="1200" y2="643" stroke="#2a1a08" stroke-width="1"/>
+  <text x="80" y="668" font-family="monospace" font-size="11" fill="#5a4030">FRED DCOILWTICO 기준 · 에너지 수입 의존 경제의 구조적 취약성</text>
+  <text x="1200" y="668" font-family="monospace" font-size="10" fill="#5a4030" text-anchor="end">lincoln-brief.vercel.app</text>
+
+  <!-- Diamond accent -->
+  <polygon points="1210,360 1225,375 1210,390 1195,375" fill="none" stroke="#d8882a" stroke-width="1.5" opacity="0.6"/>
+</svg>
