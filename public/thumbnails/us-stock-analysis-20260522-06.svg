@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#101820"/>
+      <stop offset="100%" stop-color="#070c12"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#8ab8e8"/>
+      <stop offset="50%" stop-color="#5a9ad8"/>
+      <stop offset="100%" stop-color="#3a7ab8"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#5a9ad8" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#5a9ad8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1100" cy="180" r="360" fill="url(#glow)"/>
+  <circle cx="160" cy="580" r="240" fill="url(#glow)"/>
+
+  <!-- 좌상단 브랜드 -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#5a9ad8" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#ddeeff">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#5a9ad8">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#5a9ad8" text-anchor="end">2026.05.22 · STOCK ANALYSIS · SLOT 06</text>
+
+  <!-- 에디션 라벨 -->
+  <text x="80" y="175" font-family="monospace" font-size="13" letter-spacing="5" fill="#5a9ad8">— 종목 분석 —</text>
+
+  <!-- 종목명 -->
+  <text x="80" y="258" font-family="Playfair Display, Georgia, serif" font-size="72" font-weight="700" fill="#ddeeff">LLY</text>
+  <text x="220" y="258" font-family="Playfair Display, Georgia, serif" font-size="42" font-style="italic" fill="url(#blue)">일라이 릴리</text>
+
+  <!-- 가격 -->
+  <text x="80" y="335" font-family="Playfair Display, Georgia, serif" font-size="56" fill="#ddeeff">$1,041.65</text>
+  <polygon points="420,310 444,310 432,296" fill="#6ba368"/>
+  <text x="452" y="335" font-family="monospace" font-size="34" fill="#6ba368">+2.24%</text>
+
+  <!-- 서브 라인 -->
+  <text x="80" y="385" font-family="Pretendard, sans-serif" font-size="18" fill="#7a9ab8">30일 저점 $851.21 → 오늘 $1,041.65  ·  저점 대비 +22.4%</text>
+
+  <!-- 3개 키팩트 -->
+  <g transform="translate(80, 450)">
+    <line x1="0" y1="0" x2="40" y2="0" stroke="#5a9ad8" stroke-width="1.5"/>
+    <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#7a9ab8">GLP-1 수요</text>
+    <text x="0" y="56" font-family="Playfair Display, Georgia, serif" font-size="24" fill="#ddeeff">구조적 성장</text>
+  </g>
+  <g transform="translate(370, 450)">
+    <line x1="0" y1="0" x2="40" y2="0" stroke="#5a9ad8" stroke-width="1.5"/>
+    <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#7a9ab8">관세 무관</text>
+    <text x="0" y="56" font-family="Playfair Display, Georgia, serif" font-size="24" fill="#ddeeff">방어적 섹터</text>
+  </g>
+  <g transform="translate(660, 450)">
+    <line x1="0" y1="0" x2="40" y2="0" stroke="#5a9ad8" stroke-width="1.5"/>
+    <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#7a9ab8">$1,000 → 지지선</text>
+    <text x="0" y="56" font-family="Playfair Display, Georgia, serif" font-size="24" fill="#ddeeff">저항→바닥 전환</text>
+  </g>
+
+  <!-- 30일 미니 스파크 (간략화) -->
+  <g transform="translate(80, 570)">
+    <text x="0" y="0" font-family="monospace" font-size="10" letter-spacing="3" fill="#5a9ad8">30-DAY SPARKLINE</text>
+    <polyline points="0,60 20,62 40,64 60,68 80,68 100,64 120,66 140,68 160,65 180,66 200,70 220,72 240,71 260,74 280,55 300,52 320,51 340,48 360,48 380,50 400,54 420,50 440,48 460,42 480,44 500,41 520,44 540,38 560,38 580,32" stroke="#6ba368" stroke-width="1.5" fill="none"/>
+    <line x1="0" y1="80" x2="580" y2="80" stroke="#3a5a78" stroke-width="0.5"/>
+    <text x="0" y="96" font-family="monospace" font-size="9" fill="#7a9ab8">$851</text>
+    <text x="540" y="96" font-family="monospace" font-size="9" fill="#6ba368">$1,041</text>
+  </g>
+
+  <!-- 하단 메타 -->
+  <line x1="80" y1="660" x2="1200" y2="660" stroke="#5a9ad8" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="80" y="690" font-family="monospace" font-size="11" letter-spacing="3" fill="#5a9ad8" opacity="0.8">MAY 22 · 2026 · LLY · GLP-1 SUPERCYCLE</text>
+  <text x="1200" y="690" font-family="monospace" font-size="11" letter-spacing="3" fill="#5a9ad8" opacity="0.8" text-anchor="end">SOURCE · YAHOO FINANCE</text>
+</svg>
