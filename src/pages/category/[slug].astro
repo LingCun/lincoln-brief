@@ -10,7 +10,12 @@ export async function getStaticPaths() {
   return CATEGORIES.map((category, idx) => {
     const posts = allPosts
       .filter((p) => p.data.category === category.slug)
-      .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+      .sort((a, b) => {
+        // 같은 날 2슬롯 발행 시 시간순 정렬 — publishedAt (시간 포함) 우선.
+        const aT = (a.data.publishedAt ?? a.data.pubDate).valueOf();
+        const bT = (b.data.publishedAt ?? b.data.pubDate).valueOf();
+        return bT - aT;
+      });
     return {
       params: { slug: category.slug },
       props: { category, posts, idx },

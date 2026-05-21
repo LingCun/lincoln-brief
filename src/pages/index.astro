@@ -7,7 +7,12 @@ import MarketSnapshot from '../components/MarketSnapshot.astro';
 import { CATEGORIES } from '../consts';
 
 const allPosts = (await getCollection('blog'))
-  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+  .sort((a, b) => {
+    // 같은 날 2슬롯 발행 시 시간순 정렬 — publishedAt (시간 포함) 우선, 없으면 pubDate.
+    const aT = (a.data.publishedAt ?? a.data.pubDate).valueOf();
+    const bT = (b.data.publishedAt ?? b.data.pubDate).valueOf();
+    return bT - aT;
+  });
 
 /* 카테고리별 최신 3편 (테마 섹션용) */
 const postsByCategory = CATEGORIES.map((c) => ({

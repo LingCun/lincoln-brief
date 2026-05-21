@@ -98,10 +98,12 @@ jobs:
         id: load_prompt
         env:
           MARKET: US
+          SLOT: ${{ steps.meta.outputs.slot }}
         run: |
           {
             echo "PROMPT<<PROMPT_EOF"
             echo "MARKET=${MARKET}"
+            echo "SLOT=${SLOT}"
             echo ""
             cat scripts/generation-prompt.md
             echo "PROMPT_EOF"
