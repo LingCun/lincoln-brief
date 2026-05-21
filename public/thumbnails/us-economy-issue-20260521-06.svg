@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0e1a10"/>
+      <stop offset="100%" stop-color="#080d09"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#78d898"/>
+      <stop offset="50%" stop-color="#48c878"/>
+      <stop offset="100%" stop-color="#28a858"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#48c878" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#48c878" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1080" cy="160" r="340" fill="url(#glow)"/>
+  <circle cx="200" cy="600" r="260" fill="url(#glow)"/>
+
+  <!-- 좌상단 브랜드 -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#48c878" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#eafafef">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#48c878">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#48c878" text-anchor="end">2026.05.21 · ECONOMY ISSUE · SLOT 06</text>
+
+  <!-- 에디션 라벨 -->
+  <text x="80" y="175" font-family="monospace" font-size="13" letter-spacing="5" fill="#48c878">— 경제 이슈 · 글로벌 매크로 —</text>
+
+  <!-- 헤드라인 -->
+  <text x="80" y="262" font-family="Playfair Display, Georgia, serif" font-size="56" font-weight="500" fill="#eafaf0">금 $4,534 · 10년물 4.67%</text>
+  <text x="80" y="330" font-family="Playfair Display, Georgia, serif" font-size="46" font-style="italic" fill="url(#green)">달러 신뢰 균열의 신호</text>
+  <text x="80" y="382" font-family="Pretendard, sans-serif" font-size="18" fill="#70b888">DJIA 50,009  ·  BTC $77,900  ·  USD/KRW 1,505</text>
+
+  <!-- 3가지 신호 박스 -->
+  <g transform="translate(80, 432)">
+    <!-- 신호 1 -->
+    <rect x="0" y="0" width="340" height="90" rx="4" fill="none" stroke="#48c878" stroke-width="1" stroke-opacity="0.5"/>
+    <text x="16" y="28" font-family="monospace" font-size="10" letter-spacing="3" fill="#48c878">SIGNAL 1 · GOLD</text>
+    <text x="16" y="56" font-family="Playfair Display, Georgia, serif" font-size="22" fill="#eafaf0">$4,534.35</text>
+    <text x="16" y="76" font-family="monospace" font-size="12" fill="#70b888">중앙은행 금 매입 확대</text>
+
+    <!-- 신호 2 -->
+    <rect x="365" y="0" width="340" height="90" rx="4" fill="none" stroke="#48c878" stroke-width="1" stroke-opacity="0.5"/>
+    <text x="381" y="28" font-family="monospace" font-size="10" letter-spacing="3" fill="#48c878">SIGNAL 2 · TREASURY</text>
+    <text x="381" y="56" font-family="Playfair Display, Georgia, serif" font-size="22" fill="#eafaf0">4.67%</text>
+    <text x="381" y="76" font-family="monospace" font-size="12" fill="#70b888">재정 신뢰 프리미엄 반영</text>
+
+    <!-- 신호 3 -->
+    <rect x="730" y="0" width="340" height="90" rx="4" fill="none" stroke="#48c878" stroke-width="1" stroke-opacity="0.5"/>
+    <text x="746" y="28" font-family="monospace" font-size="10" letter-spacing="3" fill="#48c878">SIGNAL 3 · BITCOIN</text>
+    <text x="746" y="56" font-family="Playfair Display, Georgia, serif" font-size="22" fill="#eafaf0">$77,900</text>
+    <text x="746" y="76" font-family="monospace" font-size="12" fill="#70b888">세대적 달러 대안 수요</text>
+  </g>
+
+  <!-- 핵심 메시지 -->
+  <text x="80" y="580" font-family="monospace" font-size="13" letter-spacing="2" fill="#48c878">KEY MESSAGE ▶</text>
+  <text x="270" y="580" font-family="Pretendard, sans-serif" font-size="14" fill="#eafaf0">주가 최고 + 금 최고 = 달러 가치 하락의 반영</text>
+
+  <!-- 하단 메타 -->
+  <line x1="80" y1="660" x2="1200" y2="660" stroke="#48c878" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="80" y="690" font-family="monospace" font-size="11" letter-spacing="3" fill="#48c878" opacity="0.8">MAY 21 · 2026 · THU · MACRO ANALYSIS</text>
+  <text x="1200" y="690" font-family="monospace" font-size="11" letter-spacing="3" fill="#48c878" opacity="0.8" text-anchor="end">SOURCE · FRED · TWELVE DATA · COINGECKO</text>
+</svg>
