@@ -14,10 +14,11 @@ on:
   workflow_dispatch:
     inputs:
       slot:
-        description: '발행 슬롯 (생략 시 오늘 모든 슬롯 자동 머지)'
-        required: false
+        description: '발행 슬롯 (auto = 오늘 모든 슬롯 자동 머지)'
+        required: true
+        default: 'auto'
         type: choice
-        options: ['', '11', '16']
+        options: ['auto', '11', '16']
 
 permissions:
   contents: write
@@ -54,9 +55,10 @@ jobs:
           MARKET="kr"
           PATTERN_PREFIX="staging/${MARKET}-${KST_DATE}-"
 
-          # slot 입력이 명시되면 그것만, 아니면 오늘 KST 의 모든 staging/kr-* 자동 탐지
-          if [ -n "${{ inputs.slot }}" ]; then
-            CANDIDATES="${PATTERN_PREFIX}${{ inputs.slot }}"
+          # slot 입력이 명시되면 (11/16) 그것만, auto 또는 cron 트리거면 오늘 KST 의 모든 staging/kr-* 자동 탐지
+          SLOT_INPUT="${{ inputs.slot }}"
+          if [ -n "$SLOT_INPUT" ] && [ "$SLOT_INPUT" != "auto" ]; then
+            CANDIDATES="${PATTERN_PREFIX}${SLOT_INPUT}"
           else
             CANDIDATES=$(git ls-remote --heads origin "${PATTERN_PREFIX}*" 2>/dev/null \
               | awk '{print $2}' | sed 's|refs/heads/||' | sort)
