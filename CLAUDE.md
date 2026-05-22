@@ -34,7 +34,9 @@ Content collection lives at `src/content/config.ts` (Astro 4 location), not `src
 
 ## The automation pipeline (the thing that's actually load-bearing)
 
-**전체 문서**: 아키텍처는 [docs/AUTOMATION.md](docs/AUTOMATION.md), 트러블슈팅·모니터링·매뉴얼 재실행은 [docs/OPERATIONS.md](docs/OPERATIONS.md). 문서 인덱스 [docs/README.md](docs/README.md).
+**전체 문서**: 아키텍처는 [docs/AUTOMATION.md](docs/AUTOMATION.md), 트러블슈팅·모니터링·매뉴얼 재실행은 [docs/OPERATIONS.md](docs/OPERATIONS.md), 외부 cron 셋업은 [docs/EXTERNAL_CRON_SETUP.md](docs/EXTERNAL_CRON_SETUP.md). 문서 인덱스 [docs/README.md](docs/README.md).
+
+**Schedule 트리거 신뢰성**: GHA `schedule:` cron 이 비신뢰적이라 (2026-05-22 KR 11 슬롯 7시간 트리거 0회 사고) **cron-job.org 외부 cron** 이 `/api/cron/dispatch` endpoint 를 hit → 우리 endpoint 가 GitHub `workflow_dispatch` API 발사 → 기존 워크플로 그대로 동작. GHA `schedule:` cron 은 belt-and-suspenders 로 유지 중 — 워크플로 concurrency group 이 중복 발사를 큐잉/스킵 처리. `src/lib/cron/dispatch.ts` 의 `ALLOWED_JOBS` 가 화이트리스트.
 
 운영 중인 GitHub Actions 워크플로 3종:
 
