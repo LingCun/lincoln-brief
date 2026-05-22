@@ -10,6 +10,7 @@
 | [OPERATIONS.md](OPERATIONS.md) | 트러블슈팅·매일 모니터링·정기 유지보수 |
 | [THUMBNAILS.md](THUMBNAILS.md) | 썸네일 작성 절차·base64 인라인·체크리스트 |
 | [API_KEYS.md](API_KEYS.md) | DART·KRX 키 발급·환경변수 배치 |
+| [EXTERNAL-CRON.md](EXTERNAL-CRON.md) | cron-job.org 외부 트리거 설정 (GitHub schedule 누락 우회) |
 
 ## 제품 (사업 계획)
 
