@@ -6,13 +6,13 @@ name: US Daily Prep (Generate to staging)
 on:
   schedule:
     # 01:00 KST 슬롯 — 00:00 / 00:30 / 01:00 KST (3중 백업)
-    - cron: '0 15 * * 0-4'   # 00:00 KST
-    - cron: '30 15 * * 0-4'  # 00:30 KST
-    - cron: '0 16 * * 0-4'   # 01:00 KST (최후 안전망)
+    - cron: '0 15 * * 0-5'   # 00:00 KST
+    - cron: '30 15 * * 0-5'  # 00:30 KST
+    - cron: '0 16 * * 0-5'   # 01:00 KST (최후 안전망)
     # 06:00 KST 슬롯 — 05:00 / 05:30 / 06:00 KST
-    - cron: '0 20 * * 0-4'   # 05:00 KST
-    - cron: '30 20 * * 0-4'  # 05:30 KST
-    - cron: '0 21 * * 0-4'   # 06:00 KST (최후 안전망)
+    - cron: '0 20 * * 0-5'   # 05:00 KST
+    - cron: '30 20 * * 0-5'  # 05:30 KST
+    - cron: '0 21 * * 0-5'   # 06:00 KST (최후 안전망)
   workflow_dispatch:
     inputs:
       slot:

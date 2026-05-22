@@ -7,8 +7,8 @@ on:
   schedule:
     - cron: '0 3 * * 1-5'   # 12:00 KST — KR 11 슬롯 체크
     - cron: '0 8 * * 1-5'   # 17:00 KST — KR 16 슬롯 체크
-    - cron: '0 17 * * 0-4'  # 02:00 KST — US 01 슬롯 체크
-    - cron: '0 22 * * 0-4'  # 07:00 KST — US 06 슬롯 체크
+    - cron: '0 17 * * 0-5'  # 02:00 KST — US 01 슬롯 체크
+    - cron: '0 22 * * 0-5'  # 07:00 KST — US 06 슬롯 체크
   workflow_dispatch:
     inputs:
       market:

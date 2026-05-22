@@ -8,9 +8,9 @@ on:
     workflows: ["US Daily Prep (Generate to staging)"]
     types: [completed]
   schedule:
-    - cron: '0 16 * * 0-4'  # 01:00 KST 안전망
-    - cron: '0 21 * * 0-4'  # 06:00 KST 안전망
-    - cron: '0 22 * * 0-4'  # 07:00 KST 최후 안전망 (prep 지연 흡수)
+    - cron: '0 16 * * 0-5'  # 01:00 KST 안전망
+    - cron: '0 21 * * 0-5'  # 06:00 KST 안전망
+    - cron: '0 22 * * 0-5'  # 07:00 KST 최후 안전망 (prep 지연 흡수)
   workflow_dispatch:
     inputs:
       slot:
