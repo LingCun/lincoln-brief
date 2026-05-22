@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a1010"/>
+      <stop offset="100%" stop-color="#0a0606"/>
+    </linearGradient>
+    <linearGradient id="red" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f09080"/>
+      <stop offset="50%" stop-color="#d96552"/>
+      <stop offset="100%" stop-color="#b84030"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#d96552" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#d96552" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f0d88c"/>
+      <stop offset="100%" stop-color="#d8b878"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1060" cy="200" r="340" fill="url(#glow)"/>
+  <circle cx="200" cy="580" r="240" fill="url(#glow)"/>
+
+  <!-- 좌상단 브랜드 -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#d96552" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#f0d8d8">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#d96552">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#d96552" text-anchor="end">2026.05.23 · ECONOMY ISSUE · SLOT 06</text>
+
+  <!-- 에디션 라벨 -->
+  <text x="80" y="175" font-family="monospace" font-size="13" letter-spacing="5" fill="#d96552">— 경제 이슈 · 에너지·인플레이션 —</text>
+
+  <!-- 헤드라인 -->
+  <text x="80" y="270" font-family="Playfair Display, Georgia, serif" font-size="80" font-weight="600" fill="#f0d8d8">WTI $112.25</text>
+  <text x="80" y="342" font-family="Playfair Display, Georgia, serif" font-size="42" font-style="italic" fill="url(#red)">고유가 → PCE → Fed 딜레마</text>
+  <text x="80" y="390" font-family="Pretendard, sans-serif" font-size="18" fill="#b87a7a">10Y 4.57%  ·  PCE 5/30 발표  ·  USD/KRW 1,517.55</text>
+
+  <!-- 데이터 그리드 -->
+  <g transform="translate(80, 455)">
+    <!-- WTI -->
+    <g>
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#d96552" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#b87a7a">ENERGY · WTI</text>
+      <text x="0" y="68" font-family="Playfair Display, Georgia, serif" font-size="30" fill="#f0d8d8">$112.25</text>
+      <polygon points="0,76 14,76 7,90" fill="#d96552"/>
+      <text x="22" y="93" font-family="monospace" font-size="13" fill="#d96552">고가 유지</text>
+    </g>
+    <!-- 금 -->
+    <g transform="translate(290, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#d8b878" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#b87a7a">GOLD · XAU/USD</text>
+      <text x="0" y="68" font-family="Playfair Display, Georgia, serif" font-size="30" fill="#f0d8d8">$4,508</text>
+      <polygon points="0,86 14,86 7,72" fill="#d96552"/>
+      <text x="22" y="93" font-family="monospace" font-size="13" fill="#d96552">−0.75%</text>
+    </g>
+    <!-- 10Y -->
+    <g transform="translate(580, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#d96552" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#b87a7a">US 10Y</text>
+      <text x="0" y="68" font-family="Playfair Display, Georgia, serif" font-size="30" fill="#f0d8d8">4.57%</text>
+      <polygon points="0,76 14,76 7,90" fill="#d96552"/>
+      <text x="22" y="93" font-family="monospace" font-size="13" fill="#d96552">고금리 유지</text>
+    </g>
+    <!-- PCE 이벤트 -->
+    <g transform="translate(870, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#d8b878" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#b87a7a">PCE · 5/30</text>
+      <text x="0" y="65" font-family="Playfair Display, Georgia, serif" font-size="26" fill="#f0d8d8">KEY EVENT</text>
+      <text x="0" y="93" font-family="monospace" font-size="12" fill="#b87a7a">에너지 구성 요소 주목</text>
+    </g>
+  </g>
+
+  <!-- 하단 메타 -->
+  <line x1="80" y1="660" x2="1200" y2="660" stroke="#d96552" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="80" y="690" font-family="monospace" font-size="11" letter-spacing="3" fill="#d96552" opacity="0.8">MAY 23 · 2026 · ENERGY × INFLATION × FED POLICY</text>
+  <text x="1200" y="690" font-family="monospace" font-size="11" letter-spacing="3" fill="#d96552" opacity="0.8" text-anchor="end">SOURCE · FRED · FRANKFURTER · COINGECKO</text>
+</svg>
