@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a1020"/>
+      <stop offset="100%" stop-color="#060810"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#8ca8d8"/>
+      <stop offset="50%" stop-color="#5677b0"/>
+      <stop offset="100%" stop-color="#3a5890"/>
+    </linearGradient>
+    <radialGradient id="blueglow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#5677b0" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#5677b0" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="greenglow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#4db86b" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#4db86b" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1100" cy="200" r="380" fill="url(#blueglow)"/>
+  <circle cx="160" cy="600" r="260" fill="url(#greenglow)"/>
+
+  <!-- Header -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#5677b0" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#dde8f8">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#5677b0">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#5677b0" text-anchor="end">2026.05.22 11:00 KST · 종목 분석</text>
+
+  <!-- Label -->
+  <text x="80" y="160" font-family="monospace" font-size="13" letter-spacing="5" fill="#5677b0">— top12 최대 상승률 —</text>
+
+  <!-- Main title -->
+  <text x="80" y="252" font-family="Playfair Display, Georgia, serif" font-size="72" font-weight="500" fill="#dde8f8">셀트리온</text>
+  <text x="80" y="316" font-family="Playfair Display, Georgia, serif" font-size="48" font-style="italic" fill="url(#blue)">200,000원 회복</text>
+  <text x="80" y="368" font-family="sans-serif" font-size="17" fill="#7a9abf">5/20 저점 179,400원 → 오늘 201,500원 · 이틀간 +12.3%</text>
+
+  <!-- Divider -->
+  <line x1="80" y1="412" x2="1200" y2="412" stroke="#1e2e4a" stroke-width="1"/>
+
+  <!-- Metrics -->
+  <g transform="translate(80, 452)">
+    <!-- 오늘 변동 -->
+    <g>
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#5677b0" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="3" fill="#506080">5/22 현재가</text>
+      <text x="0" y="66" font-family="Playfair Display, Georgia, serif" font-size="34" fill="#dde8f8">201,500원</text>
+      <polygon points="0,72 14,88 28,72" fill="#4db86b"/>
+      <text x="36" y="87" font-family="monospace" font-size="18" fill="#4db86b">+6.28%</text>
+    </g>
+    <!-- 2일 누적 -->
+    <g transform="translate(340, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#5677b0" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="3" fill="#506080">이틀 누적</text>
+      <text x="0" y="66" font-family="Playfair Display, Georgia, serif" font-size="34" fill="#dde8f8">+12.3%</text>
+      <text x="0" y="92" font-family="monospace" font-size="13" fill="#4db86b">179,400 → 201,500</text>
+    </g>
+    <!-- 30일 고점 대비 -->
+    <g transform="translate(660, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#5677b0" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="3" fill="#506080">30일 고점 대비</text>
+      <text x="0" y="66" font-family="Playfair Display, Georgia, serif" font-size="34" fill="#dde8f8">−3.6%</text>
+      <text x="0" y="92" font-family="monospace" font-size="13" fill="#8090b0">고점 209,000원</text>
+    </g>
+    <!-- 삼성바이오 비교 -->
+    <g transform="translate(940, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#5677b0" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="3" fill="#506080">삼성바이오</text>
+      <text x="0" y="66" font-family="Playfair Display, Georgia, serif" font-size="34" fill="#dde8f8">+3.08%</text>
+      <text x="0" y="92" font-family="monospace" font-size="13" fill="#8090b0">1,438,000원</text>
+    </g>
+  </g>
+
+  <!-- Footer -->
+  <line x1="80" y1="668" x2="1200" y2="668" stroke="#1e2e4a" stroke-width="1"/>
+  <text x="80" y="690" font-family="monospace" font-size="11" letter-spacing="2" fill="#40506a">lincoln-brief.vercel.app</text>
+  <text x="1200" y="690" font-family="monospace" font-size="11" letter-spacing="2" fill="#40506a" text-anchor="end">종목 분석 · 2026.05.22</text>
+</svg>
