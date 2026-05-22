@@ -1,9 +1,15 @@
 name: Refresh market snapshot
 
-# 10분마다 시장 데이터 새로고침. GitHub Actions cron 은 가끔 5~15분 지연되니
-# 사용자가 보는 실제 지연 = "cron 지연 + Vercel 빌드(~30s)" ≒ 5~20분 수준.
+# 10분마다 시장 데이터 새로고침.
+#
+# 발화 경로 — 이중화:
+#   1. **외부 cron 트리거 (주력)** — cron-job.org 가 workflow_dispatch API 를 1~10분 단위로 호출.
+#      GitHub Actions schedule trigger 가 free tier 에서 70~80% 누락되는 한계를 우회.
+#      설정 절차: docs/EXTERNAL-CRON.md
+#   2. **GitHub schedule (백업)** — 외부 트리거가 죽어도 시간당 1~2회는 통과.
 #
 # 변화가 있을 때만 커밋 → 사용자 push 알림과 Vercel 빌드 횟수를 절약.
+# concurrency 차단으로 외부+schedule 동시 발화돼도 한 번만 실행됨.
 on:
   schedule:
     # 매시 정각/30분은 GitHub Actions 부하 피크 → 5분씩 미뤄서 신뢰성 ↑

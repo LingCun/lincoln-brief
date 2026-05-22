@@ -27,6 +27,21 @@ gh run view <RUN_ID> --log-failed
 
 ---
 
+## 1.5. cron 발화 신뢰성
+
+GitHub Actions 의 schedule trigger 는 free tier 에서 **70~80% 누락**된다 (시간당 6회 의도 → 실제 1~2회). 의도된 빈도가 중요한 워크플로 (특히 `Refresh market snapshot`) 는 **cron-job.org 외부 트리거로 `workflow_dispatch` 를 호출**해 신뢰성 보강.
+
+- 설정 절차: [EXTERNAL-CRON.md](EXTERNAL-CRON.md)
+- GitHub schedule 은 백업으로 유지 — 외부 트리거 죽어도 시간당 1~2회는 통과
+- 누락 진단: `gh run list --workflow="Refresh market snapshot" --limit 100 --json createdAt,event` 으로 1시간당 실행 횟수 + `event` 분포 확인 (`workflow_dispatch` = 외부, `schedule` = GitHub)
+
+증상별 대응:
+- **외부 트리거 호출이 401** → PAT 만료. EXTERNAL-CRON.md §2-4 갱신 절차.
+- **외부 트리거 호출이 422** → 워크플로 파일에 `workflow_dispatch:` 누락 또는 `ref` 가 존재하지 않는 브랜치.
+- **외부+schedule 다 들어와도 실행이 없음** → 워크플로 자체 에러. `gh run list` 에 빨간 X 가 있는지 + `gh run view --log-failed`.
+
+---
+
 ## 2. 트러블슈팅 — 자동화 파이프라인
 
 ### 증상: `Run completed: success` 인데 **글 0편 발행**
