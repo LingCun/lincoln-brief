@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a1510"/>
+      <stop offset="100%" stop-color="#040a06"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#86efac"/>
+      <stop offset="50%" stop-color="#4ade80"/>
+      <stop offset="100%" stop-color="#22c55e"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#4ade80" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#4ade80" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1100" cy="180" r="360" fill="url(#glow)"/>
+  <circle cx="180" cy="580" r="280" fill="url(#glow)"/>
+
+  <!-- 좌상단 브랜드 -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#4ade80" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#e8fff0">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#4ade80">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#4ade80" text-anchor="end">2026.05.23 · ECONOMY ISSUE · SLOT 01</text>
+
+  <!-- 에디션 라벨 -->
+  <text x="80" y="175" font-family="monospace" font-size="13" letter-spacing="5" fill="#4ade80">— 재정 팽창과 시장의 분열된 심리 —</text>
+
+  <!-- 헤드라인 -->
+  <text x="80" y="260" font-family="Playfair Display, Georgia, serif" font-size="60" font-weight="500" fill="#e8fff0">금 $4,501 · 국채 4.57%</text>
+  <text x="80" y="330" font-family="Playfair Display, Georgia, serif" font-size="44" font-style="italic" fill="url(#green)">재정 팽창의 그림자</text>
+  <text x="80" y="385" font-family="Pretendard, sans-serif" font-size="18" fill="#6aaa82">S&amp;P 7,445 사상 최고  ·  BTC $76,700  ·  WTI $112.25</text>
+
+  <!-- 데이터 그리드 -->
+  <g transform="translate(80, 455)">
+    <!-- 금 -->
+    <g>
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#4ade80" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#6aaa82">GOLD · XAU/USD</text>
+      <text x="0" y="68" font-family="Playfair Display, Georgia, serif" font-size="30" fill="#e8fff0">$4,501.91</text>
+      <polygon points="0,86 14,86 7,72" fill="#d96552"/>
+      <text x="22" y="93" font-family="monospace" font-size="13" fill="#d96552">−0.91%</text>
+    </g>
+    <!-- 10년물 -->
+    <g transform="translate(290, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#4ade80" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#6aaa82">US 10Y YIELD</text>
+      <text x="0" y="68" font-family="Playfair Display, Georgia, serif" font-size="30" fill="#e8fff0">4.57%</text>
+      <text x="0" y="93" font-family="monospace" font-size="13" fill="#6aaa82">FRED 5/20</text>
+    </g>
+    <!-- BTC -->
+    <g transform="translate(580, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#4ade80" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#6aaa82">BTC / USD</text>
+      <text x="0" y="68" font-family="Playfair Display, Georgia, serif" font-size="30" fill="#e8fff0">$76,700</text>
+      <polygon points="0,86 14,86 7,72" fill="#d96552"/>
+      <text x="22" y="93" font-family="monospace" font-size="13" fill="#d96552">−0.29%</text>
+    </g>
+    <!-- USD/KRW -->
+    <g transform="translate(870, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#4ade80" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#6aaa82">USD / KRW</text>
+      <text x="0" y="68" font-family="Playfair Display, Georgia, serif" font-size="30" fill="#e8fff0">1,517.55</text>
+      <text x="0" y="93" font-family="monospace" font-size="13" fill="#6aaa82">달러 강세 지속</text>
+    </g>
+  </g>
+
+  <!-- 하단 메타 -->
+  <line x1="80" y1="660" x2="1200" y2="660" stroke="#4ade80" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="80" y="690" font-family="monospace" font-size="11" letter-spacing="3" fill="#4ade80" opacity="0.8">MAY 23 · 2026 · BIG BEAUTIFUL BILL WATCH</text>
+  <text x="1200" y="690" font-family="monospace" font-size="11" letter-spacing="3" fill="#4ade80" opacity="0.8" text-anchor="end">SOURCE · FRED · COINGECKO · FRANKFURTER</text>
+</svg>
