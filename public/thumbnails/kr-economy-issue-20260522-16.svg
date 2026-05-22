@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d1a16"/>
+      <stop offset="100%" stop-color="#070e0b"/>
+    </linearGradient>
+    <linearGradient id="teal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#5af0c8"/>
+      <stop offset="50%" stop-color="#2dd4a8"/>
+      <stop offset="100%" stop-color="#18b888"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#2dd4a8" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#2dd4a8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#e05555" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#e05555" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1080" cy="160" r="360" fill="url(#glow1)"/>
+  <circle cx="200" cy="580" r="280" fill="url(#glow2)"/>
+
+  <!-- Header -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#2dd4a8" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#f5edd9">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#2dd4a8">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#2dd4a8" text-anchor="end">2026.05.22 16:00 KST · 경제 이슈</text>
+
+  <!-- Edition label -->
+  <text x="80" y="160" font-family="monospace" font-size="13" letter-spacing="5" fill="#2dd4a8">— ECONOMY ISSUE —</text>
+
+  <!-- Main title -->
+  <text x="80" y="248" font-family="Playfair Display, Georgia, serif" font-size="66" font-weight="500" fill="#f5edd9">WMT −7.27%</text>
+  <text x="80" y="312" font-family="Playfair Display, Georgia, serif" font-size="40" font-style="italic" fill="url(#teal)">월마트가 보내는 소비 경고등</text>
+  <text x="80" y="360" font-family="sans-serif" font-size="17" fill="#7acab8">S&amp;P500 7,445 유지 속 미국 최대 유통주 급락</text>
+
+  <!-- Divider -->
+  <line x1="80" y1="408" x2="1200" y2="408" stroke="#1a3a30" stroke-width="1"/>
+
+  <!-- Metrics row -->
+  <g transform="translate(80, 448)">
+    <!-- WMT -->
+    <g>
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#2dd4a8" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="3" fill="#50a090">WMT (월마트)</text>
+      <text x="0" y="66" font-family="Playfair Display, Georgia, serif" font-size="32" fill="#f5edd9">$121.34</text>
+      <polygon points="0,88 14,72 28,88" fill="#e05555"/>
+      <text x="36" y="87" font-family="monospace" font-size="16" fill="#e05555">−7.27%</text>
+    </g>
+    <!-- WTI -->
+    <g transform="translate(300, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#2dd4a8" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="3" fill="#50a090">WTI 원유</text>
+      <text x="0" y="66" font-family="Playfair Display, Georgia, serif" font-size="32" fill="#f5edd9">$112.25</text>
+      <text x="0" y="92" font-family="monospace" font-size="12" fill="#e09070">소비 이중 압박</text>
+    </g>
+    <!-- S&P500 -->
+    <g transform="translate(600, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#2dd4a8" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="3" fill="#50a090">S&amp;P500</text>
+      <text x="0" y="66" font-family="Playfair Display, Georgia, serif" font-size="32" fill="#f5edd9">7,445.72</text>
+      <text x="0" y="92" font-family="monospace" font-size="12" fill="#50a090">지수는 유지</text>
+    </g>
+    <!-- 미국 10년물 -->
+    <g transform="translate(900, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#2dd4a8" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="3" fill="#50a090">미국 10년물</text>
+      <text x="0" y="66" font-family="Playfair Display, Georgia, serif" font-size="32" fill="#f5edd9">4.57%</text>
+      <text x="0" y="92" font-family="monospace" font-size="12" fill="#50a090">4.5% 경계</text>
+    </g>
+  </g>
+
+  <!-- Footer -->
+  <line x1="80" y1="668" x2="1200" y2="668" stroke="#1a3a30" stroke-width="1"/>
+  <text x="80" y="690" font-family="monospace" font-size="11" letter-spacing="2" fill="#3a7060">lincoln-brief.vercel.app</text>
+  <text x="1200" y="690" font-family="monospace" font-size="11" letter-spacing="2" fill="#3a7060" text-anchor="end">경제 이슈 · 2026.05.22</text>
+</svg>

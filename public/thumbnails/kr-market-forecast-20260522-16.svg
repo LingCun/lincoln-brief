@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a0d0d"/>
+      <stop offset="100%" stop-color="#0f0707"/>
+    </linearGradient>
+    <linearGradient id="amber" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f0a85c"/>
+      <stop offset="50%" stop-color="#d87840"/>
+      <stop offset="100%" stop-color="#b85a28"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#d87840" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#d87840" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#884422" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#884422" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1060" cy="180" r="360" fill="url(#glow1)"/>
+  <circle cx="180" cy="560" r="280" fill="url(#glow2)"/>
+
+  <!-- Header -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#d87840" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#f5edd9">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#d87840">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#d87840" text-anchor="end">2026.05.22 16:00 KST · 시장 예측</text>
+
+  <!-- Edition label -->
+  <text x="80" y="160" font-family="monospace" font-size="13" letter-spacing="5" fill="#d87840">— MARKET FORECAST —</text>
+
+  <!-- Main title -->
+  <text x="80" y="248" font-family="Playfair Display, Georgia, serif" font-size="56" font-weight="500" fill="#f5edd9">섹터 교체 완성</text>
+  <text x="80" y="312" font-family="Playfair Display, Georgia, serif" font-size="40" font-style="italic" fill="url(#amber)">다음은 6/11 CPI까지의 지도</text>
+  <text x="80" y="360" font-family="sans-serif" font-size="16" fill="#c89070">베이스 45% · 불 케이스 25% · 베어 케이스 25%</text>
+
+  <!-- Divider -->
+  <line x1="80" y1="408" x2="1200" y2="408" stroke="#3a1a0a" stroke-width="1"/>
+
+  <!-- Metrics row -->
+  <g transform="translate(80, 448)">
+    <!-- 미국 10년물 -->
+    <g>
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#d87840" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="3" fill="#906040">미국 10년물</text>
+      <text x="0" y="66" font-family="Playfair Display, Georgia, serif" font-size="32" fill="#f5edd9">4.57%</text>
+      <text x="0" y="92" font-family="monospace" font-size="12" fill="#906040">4.5% 경계 근접</text>
+    </g>
+    <!-- USD/KRW -->
+    <g transform="translate(280, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#d87840" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="3" fill="#906040">USD/KRW</text>
+      <text x="0" y="66" font-family="Playfair Display, Georgia, serif" font-size="32" fill="#f5edd9">1,508.74</text>
+      <text x="0" y="92" font-family="monospace" font-size="12" fill="#906040">관망 구간 유지</text>
+    </g>
+    <!-- 다음 이벤트 -->
+    <g transform="translate(560, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#d87840" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="3" fill="#906040">다음 분기점</text>
+      <text x="0" y="66" font-family="Playfair Display, Georgia, serif" font-size="32" fill="#f0a85c">6/11 CPI</text>
+      <text x="0" y="92" font-family="monospace" font-size="12" fill="#906040">방향 결정 이벤트</text>
+    </g>
+    <!-- 메모리얼 데이 -->
+    <g transform="translate(880, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#d87840" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="3" fill="#906040">다음 주 첫 날</text>
+      <text x="0" y="66" font-family="Playfair Display, Georgia, serif" font-size="30" fill="#f5edd9">5/25</text>
+      <text x="0" y="92" font-family="monospace" font-size="12" fill="#906040">미국 단독 장</text>
+    </g>
+  </g>
+
+  <!-- Footer -->
+  <line x1="80" y1="668" x2="1200" y2="668" stroke="#3a1a0a" stroke-width="1"/>
+  <text x="80" y="690" font-family="monospace" font-size="11" letter-spacing="2" fill="#604030">lincoln-brief.vercel.app</text>
+  <text x="1200" y="690" font-family="monospace" font-size="11" letter-spacing="2" fill="#604030" text-anchor="end">시장 예측 · 2026.05.22</text>
+</svg>
