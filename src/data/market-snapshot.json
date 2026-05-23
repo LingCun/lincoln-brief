@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-05-23T05:50:36.892Z",
+  "asOf": "2026-05-23T06:00:49.092Z",
   "asOfLabel": "5/23 한국·미국 마감",
   "source": "Yahoo Finance",
   "us": {
@@ -1025,16 +1025,12 @@
   "snapshot": [],
   "ticker": [],
   "alt": {
-    "fx": {
-      "source": "frankfurter",
-      "usdKrw": 1517.55,
-      "asOf": "2026-05-22"
-    },
+    "fx": null,
     "crypto": {
       "source": "coingecko",
-      "btcUsd": 75409,
-      "change24hPct": -2.7682483092797106,
-      "asOf": "2026-05-23T05:50:05.000Z"
+      "btcUsd": 75390,
+      "change24hPct": -2.639740256774984,
+      "asOf": "2026-05-23T05:59:54.000Z"
     },
     "fred": {
       "source": "fred",
@@ -1094,9 +1090,9 @@
       "source": "twelvedata",
       "quotes": {
         "XAU/USD": {
-          "price": 4505.65204,
+          "price": 4505.776,
           "previousClose": 4508.84161,
-          "changePct": -0.070740343
+          "changePct": -0.067991078
         }
       }
     },
