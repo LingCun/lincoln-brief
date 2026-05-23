@@ -2,9 +2,9 @@ name: Refresh market snapshot
 
 # 시장 데이터 새로고침. 실제 발사는 두 layer 로 들어옴:
 #   1) GitHub Actions schedule (아래 cron, 10분 간격) — 백업. 통과율 70~80% 누락.
-#   2) cron-job.org workflow_dispatch — 주 채널. 20분 간격 (= 일 72번).
-#      → cron-job.org 무료 한도 100회/일을 초과하지 않으려 20분으로 묶음. 자세히는 docs/EXTERNAL-CRON.md.
-# 사용자가 보는 실제 지연 = "cron 지연 + Vercel 빌드(~30s)" ≒ 5~25분 수준.
+#   2) cron-job.org workflow_dispatch — 주 채널. 30분 간격 (= 일 48번).
+#      → cron-job.org 무료 한도 100회/일을 초과하지 않으려 30분으로 묶음. 자세히는 docs/EXTERNAL-CRON.md.
+# 사용자가 보는 실제 지연 = "cron 지연 + Vercel 빌드(~30s)" ≒ 5~35분 수준.
 #
 # 변화가 있을 때만 커밋 → 사용자 push 알림과 Vercel 빌드 횟수를 절약.
 on:
