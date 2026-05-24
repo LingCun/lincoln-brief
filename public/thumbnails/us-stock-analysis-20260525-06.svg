@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f1a14"/>
+      <stop offset="100%" stop-color="#080d09"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#8dd88a"/>
+      <stop offset="50%" stop-color="#6ba368"/>
+      <stop offset="100%" stop-color="#4a7a48"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#6ba368" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#6ba368" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1100" cy="200" r="380" fill="url(#glow)"/>
+  <circle cx="200" cy="600" r="200" fill="url(#glow)"/>
+
+  <!-- 좌상단 브랜드 -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#6ba368" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#f5edd9">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#6ba368">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#6ba368" text-anchor="end">2026.05.25 · STOCK ANALYSIS · SLOT 06</text>
+
+  <!-- 에디션 라벨 -->
+  <text x="80" y="175" font-family="monospace" font-size="13" letter-spacing="5" fill="#6ba368">— 종목 분석 · Eli Lilly —</text>
+
+  <!-- 메인 헤드라인 -->
+  <text x="80" y="275" font-family="Playfair Display, Georgia, serif" font-size="72" font-weight="500" fill="#f5edd9">LLY $1,065</text>
+  <text x="80" y="345" font-family="Playfair Display, Georgia, serif" font-size="38" font-style="italic" fill="url(#green)">GLP-1이 헬스케어를 성장주로 만든다</text>
+  <text x="80" y="393" font-family="Pretendard, sans-serif" font-size="18" fill="#7a9e78">일변동 +2.24%  ·  30일 저점 $851.21  ·  저점 대비 +25.1%</text>
+
+  <!-- 주요 데이터 -->
+  <g transform="translate(80, 455)">
+    <!-- 종가 -->
+    <g>
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#6ba368" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#7a9e78">5/22 종가</text>
+      <text x="0" y="68" font-family="Playfair Display, Georgia, serif" font-size="30" fill="#f5edd9">$1,065.00</text>
+      <polygon points="0,76 14,76 7,90" fill="#6ba368"/>
+      <text x="22" y="93" font-family="monospace" font-size="13" fill="#6ba368">+$23.35</text>
+    </g>
+    <!-- 30일 시작가 -->
+    <g transform="translate(280, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#6ba368" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#7a9e78">30일 시작가</text>
+      <text x="0" y="68" font-family="Playfair Display, Georgia, serif" font-size="30" fill="#f5edd9">$929.55</text>
+      <text x="0" y="93" font-family="monospace" font-size="13" fill="#6ba368">+14.6%</text>
+    </g>
+    <!-- 30일 저점 -->
+    <g transform="translate(580, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#d96552" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#7a9e78">30일 저점</text>
+      <text x="0" y="68" font-family="Playfair Display, Georgia, serif" font-size="30" fill="#f5edd9">$851.21</text>
+      <text x="0" y="93" font-family="monospace" font-size="13" fill="#d96552">−8.4% from start</text>
+    </g>
+    <!-- 매크로 -->
+    <g transform="translate(880, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#6ba368" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="2" fill="#7a9e78">SECTOR</text>
+      <text x="0" y="68" font-family="Playfair Display, Georgia, serif" font-size="22" fill="#f5edd9">Healthcare</text>
+      <text x="0" y="93" font-family="monospace" font-size="13" fill="#6ba368">GLP-1 리더</text>
+    </g>
+  </g>
+
+  <!-- 하단 메타 -->
+  <line x1="80" y1="660" x2="1200" y2="660" stroke="#6ba368" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="80" y="690" font-family="monospace" font-size="11" letter-spacing="3" fill="#6ba368" opacity="0.8">MAY 25 · 2026 · ELI LILLY ANALYSIS</text>
+  <text x="1200" y="690" font-family="monospace" font-size="11" letter-spacing="3" fill="#6ba368" opacity="0.8" text-anchor="end">SOURCE · YAHOO FINANCE · FRED</text>
+</svg>
