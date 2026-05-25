@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a1208"/>
+      <stop offset="100%" stop-color="#060a05"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#9abf8e"/>
+      <stop offset="50%" stop-color="#7a9d6e"/>
+      <stop offset="100%" stop-color="#5a7a50"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#7a9d6e" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#7a9d6e" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#d8b878" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#d8b878" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1060" cy="170" r="360" fill="url(#glow1)"/>
+  <circle cx="180" cy="580" r="240" fill="url(#glow2)"/>
+
+  <!-- 좌상단 브랜드 -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#7a9d6e" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#d5edd0">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#7a9d6e">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#7a9d6e" text-anchor="end">2026.05.26 · ECONOMY ISSUE · SLOT 06</text>
+
+  <!-- 에디션 라벨 -->
+  <text x="80" y="175" font-family="monospace" font-size="13" letter-spacing="5" fill="#7a9d6e">— 대안 자산 분석 · 오전판 —</text>
+
+  <!-- 메인 헤드라인 -->
+  <text x="80" y="268" font-family="Playfair Display, Georgia, serif" font-size="56" font-weight="500" fill="#d5edd0">금 $4,523 · BTC $77,233</text>
+  <text x="80" y="340" font-family="Playfair Display, Georgia, serif" font-size="36" font-style="italic" fill="url(#green)">두 대안 자산이 보내는 서로 다른 경보</text>
+  <text x="80" y="388" font-family="Pretendard, sans-serif" font-size="18" fill="#6a8a60">달러 불신 · 인플레 헤지 · 위험선호 공존의 역설</text>
+
+  <!-- 4 데이터 -->
+  <g transform="translate(80, 455)">
+    <!-- Gold -->
+    <g>
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#d8b878" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#6a8a60">GOLD</text>
+      <text x="0" y="68" font-family="Playfair Display, Georgia, serif" font-size="28" fill="#d8b878">$4,523</text>
+      <polygon points="0,76 14,76 7,90" fill="#7a9d6e"/>
+      <text x="22" y="93" font-family="monospace" font-size="13" fill="#7a9d6e">+0.05%</text>
+    </g>
+    <!-- BTC -->
+    <g transform="translate(250, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#7a9d6e" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#6a8a60">BTC</text>
+      <text x="0" y="68" font-family="Playfair Display, Georgia, serif" font-size="28" fill="#d5edd0">$77,233</text>
+      <polygon points="0,76 14,76 7,90" fill="#7a9d6e"/>
+      <text x="22" y="93" font-family="monospace" font-size="13" fill="#7a9d6e">+0.33%</text>
+    </g>
+    <!-- 10년물 -->
+    <g transform="translate(530, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#7a9d6e" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#6a8a60">US10Y</text>
+      <text x="0" y="68" font-family="Playfair Display, Georgia, serif" font-size="28" fill="#d5edd0">4.558%</text>
+      <text x="0" y="93" font-family="monospace" font-size="12" fill="#6a8a60">고금리 공존</text>
+    </g>
+    <!-- USD/KRW -->
+    <g transform="translate(790, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#7a9d6e" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#6a8a60">USD/KRW</text>
+      <text x="0" y="68" font-family="Playfair Display, Georgia, serif" font-size="28" fill="#d5edd0">1,512</text>
+      <polygon points="0,90 14,90 7,76" fill="#d96552"/>
+      <text x="22" y="93" font-family="monospace" font-size="13" fill="#d96552">달러 강세</text>
+    </g>
+  </g>
+
+  <!-- 하단 -->
+  <line x1="80" y1="640" x2="1200" y2="640" stroke="#1a2a15" stroke-width="1"/>
+  <text x="80" y="668" font-family="Georgia, serif" font-style="italic" font-size="16" fill="#6a8a60">— Lincoln</text>
+  <text x="1200" y="668" font-family="monospace" font-size="12" fill="#3a5035" text-anchor="end">lincoln-brief.vercel.app</text>
+</svg>
