@@ -1,9 +1,42 @@
 {
-  "asOf": "2026-05-25T14:00:55.791Z",
+  "asOf": "2026-05-25T14:30:50.404Z",
   "asOfLabel": "5/25 한국·미국 마감",
-  "source": "Yahoo Finance",
+  "source": "Yahoo Finance · KRX",
   "us": {
-    "snapshot": [],
+    "snapshot": [
+      {
+        "symbol": "^GSPC",
+        "label": "S&P 500",
+        "close": 7473.47,
+        "change": 27.749785156250255,
+        "changePct": 0.3726944386243311,
+        "note": "보합"
+      },
+      {
+        "symbol": "^IXIC",
+        "label": "NASDAQ",
+        "close": 26343.97,
+        "change": 50.870390625001164,
+        "changePct": 0.19347430078902889,
+        "note": "보합"
+      },
+      {
+        "symbol": "^DJI",
+        "label": "DOW",
+        "close": 50579.7,
+        "change": 294.0398437499971,
+        "changePct": 0.5847389550745531,
+        "note": "상승"
+      },
+      {
+        "symbol": "NVDA",
+        "label": "NVDA",
+        "close": 215.33,
+        "change": -4.179994506835925,
+        "changePct": -1.9042388098213692,
+        "note": "큰 폭 하락"
+      }
+    ],
     "top12": [
       {
         "ticker": "NVDA",
@@ -512,9 +545,34 @@
     ]
   },
   "kr": {
-    "available": false,
+    "available": true,
     "note": "Yahoo Finance fallback. KRX OpenAPI 활성화 시 외국인 매매·거래대금 등 확장 가능.",
-    "snapshot": [],
+    "snapshot": [
+      {
+        "symbol": "KOSPI",
+        "label": "KOSPI",
+        "close": 7847.71,
+        "change": 32.120156250000036,
+        "changePct": 0.4109754592058846,
+        "note": "보합"
+      },
+      {
+        "symbol": "KOSDAQ",
+        "label": "KOSDAQ",
+        "close": 1161.13,
+        "change": 55.16002929687511,
+        "changePct": 4.987479837432375,
+        "note": "강한 상승"
+      },
+      {
+        "symbol": "USDKRW",
+        "label": "USD/KRW",
+        "close": 1512.68,
+        "change": 8.279975585937564,
+        "changePct": 0.5503839039860737,
+        "note": "상승"
+      }
+    ],
     "top12": [
       {
         "ticker": "005930.KS",
@@ -1022,8 +1080,119 @@
       }
     ]
   },
-  "snapshot": [],
-  "ticker": [],
+  "snapshot": [
+    {
+      "symbol": "^GSPC",
+      "label": "S&P 500",
+      "close": 7473.47,
+      "change": 27.749785156250255,
+      "changePct": 0.3726944386243311,
+      "note": "보합"
+    },
+    {
+      "symbol": "^IXIC",
+      "label": "NASDAQ",
+      "close": 26343.97,
+      "change": 50.870390625001164,
+      "changePct": 0.19347430078902889,
+      "note": "보합"
+    },
+    {
+      "symbol": "^DJI",
+      "label": "DOW",
+      "close": 50579.7,
+      "change": 294.0398437499971,
+      "changePct": 0.5847389550745531,
+      "note": "상승"
+    },
+    {
+      "symbol": "NVDA",
+      "label": "NVDA",
+      "close": 215.33,
+      "change": -4.179994506835925,
+      "changePct": -1.9042388098213692,
+      "note": "큰 폭 하락"
+    }
+  ],
+  "ticker": [
+    {
+      "symbol": "S&P 500",
+      "value": "7,473.47",
+      "change": "+0.37%",
+      "up": true,
+      "market": "us"
+    },
+    {
+      "symbol": "NASDAQ",
+      "value": "26,343.97",
+      "change": "+0.19%",
+      "up": true,
+      "market": "us"
+    },
+    {
+      "symbol": "DOW",
+      "value": "50,579.70",
+      "change": "+0.58%",
+      "up": true,
+      "market": "us"
+    },
+    {
+      "symbol": "NVDA",
+      "value": "$215.33",
+      "change": "-1.90%",
+      "up": false,
+      "market": "us"
+    },
+    {
+      "symbol": "TSLA",
+      "value": "$426.01",
+      "change": "+1.95%",
+      "up": true,
+      "market": "us"
+    },
+    {
+      "symbol": "AAPL",
+      "value": "$308.82",
+      "change": "+1.26%",
+      "up": true,
+      "market": "us"
+    },
+    {
+      "symbol": "USD/KRW",
+      "value": "1,512.68",
+      "change": "+0.55%",
+      "up": true,
+      "market": "fx"
+    },
+    {
+      "symbol": "BTC",
+      "value": "$77,498",
+      "change": "+0.67%",
+      "up": true,
+      "market": "crypto"
+    },
+    {
+      "symbol": "GOLD",
+      "value": "$4,523.20",
+      "change": "+0.05%",
+      "up": true,
+      "market": "commodity"
+    },
+    {
+      "symbol": "WTI",
+      "value": "$96.60",
+      "change": "+0.00%",
+      "up": true,
+      "market": "commodity"
+    },
+    {
+      "symbol": "US10Y",
+      "value": "4.558%",
+      "change": "-0.61%",
+      "up": false,
+      "market": "yield"
+    }
+  ],
   "alt": {
     "fx": {
       "source": "frankfurter",
@@ -1032,9 +1201,9 @@
     },
     "crypto": {
       "source": "coingecko",
-      "btcUsd": 77255,
-      "change24hPct": 0.7869128254056456,
-      "asOf": "2026-05-25T14:00:03.000Z"
+      "btcUsd": 77527,
+      "change24hPct": 1.4596462345703614,
+      "asOf": "2026-05-25T14:30:27.000Z"
     },
     "fred": {
       "source": "fred",
@@ -1094,15 +1263,15 @@
       "source": "twelvedata",
       "quotes": {
         "XAU/USD": {
-          "price": 4563.78865,
+          "price": 4568.23933,
           "previousClose": 4505.64909,
-          "changePct": 1.29037
+          "changePct": 1.38915
         }
       }
     },
     "yahoo": {
-      "usdKrw": null,
-      "btcUsd": null
+      "usdKrw": 1512.68,
+      "btcUsd": 77497.66
     }
   }
 }
