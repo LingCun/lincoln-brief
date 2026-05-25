@@ -122,6 +122,10 @@ const YAHOO_HEADERS = {
  * Yahoo Finance public chart endpoint — crumb 인증 불필요.
  * 단일 호출로 price/prevClose/currency + 일일 종가 배열 모두 받음.
  * 결과: { price, previousClose, currency, exchangeName, closes:[number] }  또는 null.
+ *
+ * yahoo-finance2 라이브러리의 .quote() 는 crumb 필요 → Yahoo 가 자동화 클라이언트 429 차단.
+ * v8 chart 엔드포인트는 crumb 불필요해 안 막힘. fetchUS/fetchTicker/fetchKorea 가
+ * 이 헬퍼(아래 fetchQuoteViaChart)를 통해 호출, 21건/run 429 폭격 회피.
  */
 async function fetchChartDirect(ticker, range = '2mo') {
   const url = `https://query1.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(ticker)}?interval=1d&range=${range}`;
@@ -147,6 +151,29 @@ async function fetchChartDirect(ticker, range = '2mo') {
     console.warn(`[warn] chart fetch failed for ${ticker}:`, e.message);
     return null;
   }
+}
+
+/**
+ * 단일 심볼 chart 조회 + 직전일 종가로 change/changePct 계산.
+ * fetchUS/fetchTicker/fetchKorea/diff 비교용 단순 quote 대체. yahoo-finance2 .quote() 미사용.
+ * 결과: { price, previousClose, change, changePct, currency, exchangeName, closes } 또는 null.
+ */
+async function fetchQuoteViaChart(symbol, range = '5d') {
+  const chart = await fetchChartDirect(symbol, range);
+  if (!chart || chart.price == null) return null;
+  const closes = chart.closes ?? [];
+  const prev = closes.length >= 2 ? closes[closes.length - 2] : (chart.previousClose ?? chart.price);
+  const change = chart.price - prev;
+  const changePct = prev ? (change / prev) * 100 : 0;
+  return {
+    price: chart.price,
+    previousClose: prev,
+    change,
+    changePct,
+    currency: chart.currency,
+    exchangeName: chart.exchangeName,
+    closes,
+  };
 }
 
 /**
@@ -188,16 +215,16 @@ async function fetchTop12(items, label) {
 async function fetchUS() {
   const snapshot = [];
   for (const s of US_SNAPSHOT) {
-    const q = await quoteSafe(s.symbol);
+    const q = await fetchQuoteViaChart(s.symbol);
+    await sleep(150);
     if (!q) continue;
-    const pct = q.regularMarketChangePercent ?? 0;
     snapshot.push({
       symbol: s.symbol,
       label: s.label,
-      close: q.regularMarketPreviousClose ?? q.regularMarketPrice ?? 0,
-      change: q.regularMarketChange ?? 0,
-      changePct: pct,
-      note: noteForChange(pct),
+      close: q.price,
+      change: q.change,
+      changePct: q.changePct,
+      note: noteForChange(q.changePct),
     });
   }
   return snapshot;
@@ -206,14 +233,14 @@ async function fetchUS() {
 async function fetchTicker() {
   const ticker = [];
   for (const t of TICKER) {
-    const q = await quoteSafe(t.symbol);
+    const q = await fetchQuoteViaChart(t.symbol);
+    await sleep(150);
     if (!q) continue;
-    const pct = q.regularMarketChangePercent ?? 0;
     ticker.push({
       symbol: t.label,
-      value: fmtValue(q.regularMarketPrice ?? q.regularMarketPreviousClose ?? 0, t.type),
-      change: fmtPct(pct),
-      up: pct >= 0,
+      value: fmtValue(q.price, t.type),
+      change: fmtPct(q.changePct),
+      up: q.changePct >= 0,
       market: t.market,
     });
   }
@@ -240,46 +267,44 @@ async function fetchKorea() {
   }
 
   try {
-    // TODO: hasKrx === true 일 때 KRX OpenAPI 직접 호출로 교체 (외국인 매매 등)
-    const [kospi, kosdaq, krw] = await Promise.all([
-      quoteSafe('^KS11'),
-      quoteSafe('^KQ11'),
-      quoteSafe('KRW=X'),
-    ]);
+    // TODO: hasKrx === true 일 때 KRX OpenAPI 직접 호출로 교체 (외국인 매매 등).
+    // 순차 호출 — Yahoo chart 엔드포인트도 동시 호출 다수면 일부 nil 반환 가능.
+    const kospi  = await fetchQuoteViaChart('^KS11');
+    await sleep(150);
+    const kosdaq = await fetchQuoteViaChart('^KQ11');
+    await sleep(150);
+    const krw    = await fetchQuoteViaChart('KRW=X');
 
     const snapshot = [];
 
     if (kospi) {
-      const pct = kospi.regularMarketChangePercent ?? 0;
       snapshot.push({
         symbol: 'KOSPI',
         label: 'KOSPI',
-        close: kospi.regularMarketPrice ?? kospi.regularMarketPreviousClose ?? 0,
-        change: kospi.regularMarketChange ?? 0,
-        changePct: pct,
-        note: noteForChange(pct),
+        close: kospi.price,
+        change: kospi.change,
+        changePct: kospi.changePct,
+        note: noteForChange(kospi.changePct),
       });
     }
     if (kosdaq) {
-      const pct = kosdaq.regularMarketChangePercent ?? 0;
       snapshot.push({
         symbol: 'KOSDAQ',
         label: 'KOSDAQ',
-        close: kosdaq.regularMarketPrice ?? kosdaq.regularMarketPreviousClose ?? 0,
-        change: kosdaq.regularMarketChange ?? 0,
-        changePct: pct,
-        note: noteForChange(pct),
+        close: kosdaq.price,
+        change: kosdaq.change,
+        changePct: kosdaq.changePct,
+        note: noteForChange(kosdaq.changePct),
       });
     }
     if (krw) {
-      const pct = krw.regularMarketChangePercent ?? 0;
       snapshot.push({
         symbol: 'USDKRW',
         label: 'USD/KRW',
-        close: krw.regularMarketPrice ?? krw.regularMarketPreviousClose ?? 0,
-        change: krw.regularMarketChange ?? 0,
-        changePct: pct,
-        note: noteForChange(pct),
+        close: krw.price,
+        change: krw.change,
+        changePct: krw.changePct,
+        note: noteForChange(krw.changePct),
       });
     }
 
@@ -497,8 +522,8 @@ async function main() {
   // 키 불필요 (Frankfurter, CoinGecko) + 키 게이팅 (FRED, Finnhub, Twelve Data).
   const FINNHUB_SAMPLE = ['AAPL', 'MSFT', 'NVDA', 'TSLA'];
   const [yahooKrwForDiff, yahooBtcForDiff, altFx, altBtc, altFred, altUsStocks, altTd] = await Promise.all([
-    quoteSafe('KRW=X'),
-    quoteSafe('BTC-USD'),
+    fetchQuoteViaChart('KRW=X'),
+    fetchQuoteViaChart('BTC-USD'),
     fetchFrankfurterFx(),
     fetchCoinGeckoBtc(),
     fetchFred(),
@@ -506,8 +531,8 @@ async function main() {
     fetchTwelveData(),
   ]);
 
-  const yahooKrwVal = yahooKrwForDiff?.regularMarketPrice ?? yahooKrwForDiff?.regularMarketPreviousClose ?? null;
-  const yahooBtcVal = yahooBtcForDiff?.regularMarketPrice ?? yahooBtcForDiff?.regularMarketPreviousClose ?? null;
+  const yahooKrwVal = yahooKrwForDiff?.price ?? null;
+  const yahooBtcVal = yahooBtcForDiff?.price ?? null;
   logAltDiff('FX USD/KRW', yahooKrwVal, altFx?.usdKrw ?? null, (v) => v.toFixed(2));
   logAltDiff('BTC/USD   ', yahooBtcVal, altBtc?.btcUsd ?? null, (v) => v.toFixed(0));
 
