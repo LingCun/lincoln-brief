@@ -38,7 +38,7 @@ Content collection lives at `src/content/config.ts` (Astro 4 location), not `src
 
 운영 중인 GitHub Actions 워크플로 3종:
 
-1. **`refresh-market.yml`** — 매 10분(`5,15,25,35,45,55 * * * *`), `node scripts/fetch-market.mjs` → `src/data/market-snapshot.json` 변화 있을 때만 커밋. 홈 라이브 티커·MarketSnapshot 카드의 원천.
+1. **`refresh-market.yml`** — 매시 1회(`5 * * * *` = GitHub backup) + cron-job.org 1시간 간격 외부 트리거(주 채널, 일 24회), `node scripts/fetch-market.mjs` → `src/data/market-snapshot.json` 변화 있을 때만 커밋. 홈 라이브 티커·MarketSnapshot 카드의 원천. 빈도 변경 이력: 10분(2026-05-24까지) → 30분(~05-25) → 1시간(05-26~). git/Vercel 빌드 노이즈 완화 목적.
 2. **`daily-brief.yml`** (US) — 평일 **01:00 + 06:00 KST** (= 일~목 16:00 + 21:00 UTC, 하루 2회). Claude Code Action 이 미국 4개 카테고리 (`daily-brief / stock-analysis / market-forecast / economy-issue`) 본문 + 썸네일 4개를 인간 수준으로 완성·커밋. 슬러그 접두 없음.
 3. **`kr-daily-brief.yml`** (KR) — 평일 **11:00 + 16:00 KST** (= 월~금 02:00 + 07:00 UTC, 하루 2회). 동일 패턴, KR 카테고리. 슬러그 접두 `kr-`.
 
