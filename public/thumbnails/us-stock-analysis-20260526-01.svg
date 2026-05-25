@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f1520"/>
+      <stop offset="100%" stop-color="#080c14"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7090d0"/>
+      <stop offset="50%" stop-color="#5677b0"/>
+      <stop offset="100%" stop-color="#3d5890"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#5677b0" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#5677b0" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#6ba368" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#6ba368" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1050" cy="180" r="380" fill="url(#glow1)"/>
+  <circle cx="180" cy="560" r="220" fill="url(#glow2)"/>
+
+  <!-- 좌상단 브랜드 -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#5677b0" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#d0e0f5">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#5677b0">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#5677b0" text-anchor="end">2026.05.26 · STOCK ANALYSIS · SLOT 01</text>
+
+  <!-- 에디션 라벨 -->
+  <text x="80" y="175" font-family="monospace" font-size="13" letter-spacing="5" fill="#5677b0">— TSLA 종목 분석 · 새벽판 —</text>
+
+  <!-- 메인 헤드라인 -->
+  <text x="80" y="270" font-family="Playfair Display, Georgia, serif" font-size="62" font-weight="500" fill="#d0e0f5">TSLA $426.01</text>
+  <text x="80" y="340" font-family="Playfair Display, Georgia, serif" font-size="38" font-style="italic" fill="url(#blue)">EV 반등인가, 자율주행 피벗의 서막인가</text>
+  <text x="80" y="390" font-family="Pretendard, sans-serif" font-size="18" fill="#7090a8">30일 +20.9%  ·  52주 저점 $273.21 대비 +56%  ·  PE 383.79</text>
+
+  <!-- 핵심 지표 -->
+  <g transform="translate(80, 455)">
+    <!-- 종가 -->
+    <g>
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#5677b0" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#7090a8">종가</text>
+      <text x="0" y="68" font-family="Playfair Display, Georgia, serif" font-size="30" fill="#d0e0f5">$426.01</text>
+      <polygon points="0,76 14,76 7,90" fill="#6ba368"/>
+      <text x="22" y="93" font-family="monospace" font-size="13" fill="#6ba368">+1.95%</text>
+    </g>
+    <!-- 30일 변화 -->
+    <g transform="translate(240, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#5677b0" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#7090a8">30일</text>
+      <text x="0" y="68" font-family="Playfair Display, Georgia, serif" font-size="30" fill="#d0e0f5">+20.9%</text>
+      <polygon points="0,76 14,76 7,90" fill="#6ba368"/>
+      <text x="22" y="93" font-family="monospace" font-size="13" fill="#6ba368">$352→$426</text>
+    </g>
+    <!-- PE -->
+    <g transform="translate(520, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#5677b0" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#7090a8">PE(TTM)</text>
+      <text x="0" y="68" font-family="Playfair Display, Georgia, serif" font-size="30" fill="#d0e0f5">383.79</text>
+      <text x="0" y="93" font-family="monospace" font-size="13" fill="#7090a8">EPS $1.11</text>
+    </g>
+    <!-- 52주 저점 -->
+    <g transform="translate(780, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#5677b0" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#7090a8">52주 저점</text>
+      <text x="0" y="68" font-family="Playfair Display, Georgia, serif" font-size="30" fill="#d0e0f5">$273.21</text>
+      <text x="0" y="93" font-family="monospace" font-size="13" fill="#6ba368">+56% 반등</text>
+    </g>
+  </g>
+
+  <!-- 하단 -->
+  <line x1="80" y1="640" x2="1200" y2="640" stroke="#1a2540" stroke-width="1"/>
+  <text x="80" y="668" font-family="Georgia, serif" font-style="italic" font-size="16" fill="#5080a0">— Lincoln</text>
+  <text x="1200" y="668" font-family="monospace" font-size="12" fill="#304060" text-anchor="end">lincoln-brief.vercel.app</text>
+</svg>
