@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a1510"/>
+      <stop offset="100%" stop-color="#0f0c08"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f0d88c"/>
+      <stop offset="50%" stop-color="#d8b878"/>
+      <stop offset="100%" stop-color="#b89a5a"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#d8b878" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#d8b878" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#d8a050" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#d8a050" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1080" cy="200" r="400" fill="url(#glow1)"/>
+  <circle cx="300" cy="550" r="300" fill="url(#glow2)"/>
+
+  <!-- Header -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#d8b878" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#f5edd9">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#d8b878">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#d8b878" text-anchor="end">2026.05.25 16:00 KST · KR FORECAST</text>
+
+  <!-- Edition label -->
+  <text x="80" y="160" font-family="monospace" font-size="13" letter-spacing="5" fill="#d8a050">— 시장 예측 —</text>
+
+  <!-- Badge -->
+  <rect x="80" y="176" width="260" height="30" rx="4" fill="#d8a050" fill-opacity="0.15" stroke="#d8a050" stroke-width="0.8"/>
+  <text x="92" y="196" font-family="monospace" font-size="12" letter-spacing="2" fill="#d8a050">5/26 뉴욕 복귀 · 이번 주 전망</text>
+
+  <!-- Main title -->
+  <text x="80" y="288" font-family="Playfair Display, Georgia, serif" font-size="52" font-weight="500" fill="#f5edd9">5/26 뉴욕 복귀 첫날</text>
+  <text x="80" y="346" font-family="Playfair Display, Georgia, serif" font-size="40" font-style="italic" fill="url(#gold)">KOSPI가 마주칠 3가지 분기점</text>
+  <text x="80" y="394" font-family="sans-serif" font-size="17" fill="#d8c898">외국인 수급 · USD/KRW · 미국 선물 방향</text>
+
+  <!-- Divider -->
+  <line x1="80" y1="430" x2="1200" y2="430" stroke="#4a3a20" stroke-width="1"/>
+
+  <!-- Event timeline -->
+  <g transform="translate(80, 466)">
+    <!-- 5/26 -->
+    <g>
+      <rect x="0" y="0" width="200" height="70" rx="6" fill="#d8a050" fill-opacity="0.15" stroke="#d8a050" stroke-width="1"/>
+      <text x="10" y="24" font-family="monospace" font-size="12" letter-spacing="2" fill="#d8a050">5/26 화</text>
+      <text x="10" y="46" font-family="sans-serif" font-size="14" fill="#f5edd9">뉴욕 재개장</text>
+      <text x="10" y="62" font-family="monospace" font-size="11" fill="#d8a050">★★★★</text>
+    </g>
+    <!-- Arrow -->
+    <text x="218" y="40" font-family="monospace" font-size="20" fill="#a89060">→</text>
+    <!-- 5/27 -->
+    <g transform="translate(250, 0)">
+      <rect x="0" y="0" width="200" height="70" rx="6" fill="#a89060" fill-opacity="0.12" stroke="#a89060" stroke-width="0.8"/>
+      <text x="10" y="24" font-family="monospace" font-size="12" letter-spacing="2" fill="#a89060">5/27 수</text>
+      <text x="10" y="46" font-family="sans-serif" font-size="14" fill="#f5edd9">경제 지표</text>
+      <text x="10" y="62" font-family="monospace" font-size="11" fill="#a89060">★★★</text>
+    </g>
+    <!-- Arrow -->
+    <text x="468" y="40" font-family="monospace" font-size="20" fill="#a89060">→</text>
+    <!-- 5/28 -->
+    <g transform="translate(500, 0)">
+      <rect x="0" y="0" width="220" height="70" rx="6" fill="#e07a45" fill-opacity="0.20" stroke="#e07a45" stroke-width="1.5"/>
+      <text x="10" y="24" font-family="monospace" font-size="12" letter-spacing="2" fill="#e07a45">5/28 목 ★ PEAK</text>
+      <text x="10" y="46" font-family="sans-serif" font-size="14" fill="#f5edd9">美 1Q GDP 2차 추정치</text>
+      <text x="10" y="62" font-family="monospace" font-size="11" fill="#e07a45">★★★★★</text>
+    </g>
+    <!-- 5/29 -->
+    <g transform="translate(760, 0)">
+      <text x="18" y="40" font-family="monospace" font-size="20" fill="#a89060">→</text>
+    </g>
+    <g transform="translate(800, 0)">
+      <rect x="0" y="0" width="200" height="70" rx="6" fill="#a89060" fill-opacity="0.12" stroke="#a89060" stroke-width="0.8"/>
+      <text x="10" y="24" font-family="monospace" font-size="12" letter-spacing="2" fill="#a89060">5/29 금</text>
+      <text x="10" y="46" font-family="sans-serif" font-size="14" fill="#f5edd9">미국 PCE 물가</text>
+      <text x="10" y="62" font-family="monospace" font-size="11" fill="#a89060">★★★</text>
+    </g>
+  </g>
+
+  <!-- Scenario summary -->
+  <text x="80" y="608" font-family="monospace" font-size="13" letter-spacing="2" fill="#d8a050">베이스(45%): 보합~소폭 상승  |  낙관(25%): 외국인 대복귀  |  조정(25%): GDP 하향</text>
+
+  <!-- Footer -->
+  <line x1="80" y1="660" x2="1200" y2="660" stroke="#4a3a20" stroke-width="0.5"/>
+  <text x="80" y="685" font-family="monospace" font-size="11" letter-spacing="2" fill="#8a7a5a">S&amp;P500 7,473.47 (5/22) · 10년물 4.57% · USD/KRW 1,517.55원</text>
+  <text x="1200" y="685" font-family="monospace" font-size="11" fill="#8a7a5a" text-anchor="end">lincoln-brief.vercel.app</text>
+</svg>
