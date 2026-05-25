@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a1a0e"/>
+      <stop offset="100%" stop-color="#060e08"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7ae89a"/>
+      <stop offset="50%" stop-color="#4db86b"/>
+      <stop offset="100%" stop-color="#2a8844"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f0d88c"/>
+      <stop offset="50%" stop-color="#d8b878"/>
+      <stop offset="100%" stop-color="#b89a5a"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#d8b878" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#d8b878" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#4db86b" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#4db86b" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1080" cy="200" r="360" fill="url(#glow1)"/>
+  <circle cx="200" cy="560" r="280" fill="url(#glow2)"/>
+
+  <!-- Header -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#4db86b" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#f5edd9">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#4db86b">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#4db86b" text-anchor="end">2026.05.25 · KR ECONOMY ISSUE</text>
+
+  <!-- Edition label -->
+  <text x="80" y="160" font-family="monospace" font-size="13" letter-spacing="5" fill="#4db86b">— 경제 이슈 —</text>
+
+  <!-- Main title -->
+  <text x="80" y="262" font-family="Playfair Display, Georgia, serif" font-size="66" font-weight="500" fill="#f5edd9">금 $4,564</text>
+  <text x="80" y="326" font-family="Playfair Display, Georgia, serif" font-size="42" font-style="italic" fill="url(#gold)">사상 최고권 안전자산 랠리</text>
+  <text x="80" y="374" font-family="sans-serif" font-size="17" fill="#6a9870">주식도 오르고 금도 오른다 — 시장의 이중 헤징</text>
+
+  <!-- Divider -->
+  <line x1="80" y1="412" x2="1200" y2="412" stroke="#1a3a1e" stroke-width="1"/>
+
+  <!-- Metrics row -->
+  <g transform="translate(80, 448)">
+    <!-- 금 가격 big -->
+    <g>
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#d8b878" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="3" fill="#a89060">XAU/USD</text>
+      <text x="0" y="76" font-family="Playfair Display, Georgia, serif" font-size="50" fill="#d8b878">$4,564.77</text>
+      <polygon points="0,82 18,100 36,82" fill="#4db86b"/>
+      <text x="44" y="99" font-family="monospace" font-size="22" fill="#4db86b">+1.31%</text>
+    </g>
+    <!-- WTI -->
+    <g transform="translate(620, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#4db86b" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="3" fill="#6a9870">WTI 원유</text>
+      <text x="0" y="66" font-family="Playfair Display, Georgia, serif" font-size="30" fill="#f5edd9">$112.25</text>
+      <text x="0" y="98" font-family="monospace" font-size="14" fill="#e8906a">인플레 압박 지속</text>
+    </g>
+    <!-- USD/KRW -->
+    <g transform="translate(920, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#4db86b" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="3" fill="#6a9870">USD/KRW</text>
+      <text x="0" y="66" font-family="Playfair Display, Georgia, serif" font-size="30" fill="#f5edd9">1,517.55원</text>
+      <text x="0" y="98" font-family="monospace" font-size="14" fill="#e05555">원화 약세 지속</text>
+    </g>
+  </g>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="680" width="1280" height="40" fill="#040a06" fill-opacity="0.9"/>
+  <text x="80" y="706" font-family="monospace" font-size="11" letter-spacing="2" fill="#4a6a4a">S&amp;P500 7,473 · BTC $77,295 · 미국 10년물 4.57% | 6/11 CPI 가 분기점</text>
+</svg>

@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a1220"/>
+      <stop offset="100%" stop-color="#060c18"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7ab8e8"/>
+      <stop offset="50%" stop-color="#4a9acc"/>
+      <stop offset="100%" stop-color="#2a6a9a"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#4a9acc" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#4a9acc" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#4db86b" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#4db86b" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1100" cy="200" r="400" fill="url(#glow1)"/>
+  <circle cx="180" cy="560" r="260" fill="url(#glow2)"/>
+
+  <!-- Header -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#4a9acc" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#f5edd9">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#4a9acc">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#4a9acc" text-anchor="end">2026.05.25 · KR STOCK ANALYSIS</text>
+
+  <!-- Edition label -->
+  <text x="80" y="160" font-family="monospace" font-size="13" letter-spacing="5" fill="#4a9acc">— 종목 분석 —</text>
+
+  <!-- Main title -->
+  <text x="80" y="262" font-family="Playfair Display, Georgia, serif" font-size="66" font-weight="500" fill="#f5edd9">셀트리온</text>
+  <text x="80" y="330" font-family="Playfair Display, Georgia, serif" font-size="44" font-style="italic" fill="url(#blue)">200,000원 문 앞에 서다</text>
+  <text x="80" y="378" font-family="sans-serif" font-size="17" fill="#6a9aac">30일 저점 179,400원 → 오늘 198,700원 (+10.8% 반등)</text>
+
+  <!-- Divider -->
+  <line x1="80" y1="416" x2="1200" y2="416" stroke="#1a3a5a" stroke-width="1"/>
+
+  <!-- Metrics -->
+  <g transform="translate(80, 452)">
+    <!-- Price big -->
+    <g>
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#4a9acc" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="3" fill="#6a9aac">오늘 가격</text>
+      <text x="0" y="76" font-family="Playfair Display, Georgia, serif" font-size="50" fill="#f5edd9">198,700원</text>
+      <polygon points="0,82 18,100 36,82" fill="#4db86b"/>
+      <text x="44" y="99" font-family="monospace" font-size="22" fill="#4db86b">+4.80%</text>
+    </g>
+    <!-- 30일 저점 -->
+    <g transform="translate(620, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#4a9acc" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="3" fill="#6a9aac">30일 저점</text>
+      <text x="0" y="66" font-family="Playfair Display, Georgia, serif" font-size="30" fill="#f5edd9">179,400원</text>
+      <text x="0" y="98" font-family="monospace" font-size="14" fill="#4db86b">저점 대비 +10.8%</text>
+    </g>
+    <!-- 목표 -->
+    <g transform="translate(920, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#4a9acc" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="3" fill="#6a9aac">심리적 분기점</text>
+      <text x="0" y="66" font-family="Playfair Display, Georgia, serif" font-size="30" fill="#d8b878">200,000원</text>
+      <text x="0" y="98" font-family="monospace" font-size="14" fill="#d8b878">+0.65% (+1,300원)</text>
+    </g>
+  </g>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="680" width="1280" height="40" fill="#060c18" fill-opacity="0.9"/>
+  <text x="80" y="706" font-family="monospace" font-size="11" letter-spacing="2" fill="#4a6a7a">삼성바이오로직스 1,415,000원 (+1.43%) · KOSPI 바이오 섹터 순환 지속</text>
+</svg>

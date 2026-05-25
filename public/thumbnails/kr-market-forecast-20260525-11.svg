@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a0e0a"/>
+      <stop offset="100%" stop-color="#100806"/>
+    </linearGradient>
+    <linearGradient id="red" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#e8906a"/>
+      <stop offset="50%" stop-color="#cc6644"/>
+      <stop offset="100%" stop-color="#aa4422"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#cc6644" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#cc6644" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1100" cy="180" r="380" fill="url(#glow1)"/>
+
+  <!-- Header -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#cc6644" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#f5edd9">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#cc6644">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#cc6644" text-anchor="end">2026.05.25 · KR MARKET FORECAST</text>
+
+  <!-- Edition label -->
+  <text x="80" y="160" font-family="monospace" font-size="13" letter-spacing="5" fill="#cc6644">— 시장 예측 —</text>
+
+  <!-- Main title -->
+  <text x="80" y="262" font-family="Playfair Display, Georgia, serif" font-size="56" font-weight="500" fill="#f5edd9">메모리얼 데이 관문 통과</text>
+  <text x="80" y="322" font-family="Playfair Display, Georgia, serif" font-size="42" font-style="italic" fill="url(#red)">다음은 GDP → NFP → CPI</text>
+  <text x="80" y="370" font-family="sans-serif" font-size="17" fill="#b08070">KOSPI 4주 시나리오 업데이트 · 베이스 7,500~7,900 (45%)</text>
+
+  <!-- Divider -->
+  <line x1="80" y1="406" x2="1200" y2="406" stroke="#3a1e14" stroke-width="1"/>
+
+  <!-- Event timeline -->
+  <g transform="translate(80, 438)">
+    <!-- 5/28 -->
+    <g>
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#cc6644" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="2" fill="#aa7060">5/28 (수)</text>
+      <text x="0" y="60" font-family="Playfair Display, Georgia, serif" font-size="22" fill="#f5edd9">미국 1Q GDP</text>
+      <text x="0" y="88" font-family="monospace" font-size="12" fill="#cc6644">2차 추정치</text>
+    </g>
+    <!-- 6/6 -->
+    <g transform="translate(280, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#cc6644" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="2" fill="#aa7060">6/6 (금)</text>
+      <text x="0" y="60" font-family="Playfair Display, Georgia, serif" font-size="22" fill="#f5edd9">미국 NFP</text>
+      <text x="0" y="88" font-family="monospace" font-size="12" fill="#cc6644">비농업 고용</text>
+    </g>
+    <!-- 6/11 -->
+    <g transform="translate(520, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#d8b878" stroke-width="2"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="2" fill="#d8b878">6/11 (수) ★</text>
+      <text x="0" y="60" font-family="Playfair Display, Georgia, serif" font-size="22" fill="#f5edd9">미국 CPI</text>
+      <text x="0" y="88" font-family="monospace" font-size="12" fill="#d8b878">최대 분기점</text>
+    </g>
+    <!-- 6/18 -->
+    <g transform="translate(780, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#cc6644" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="2" fill="#aa7060">6/18 (수)</text>
+      <text x="0" y="60" font-family="Playfair Display, Georgia, serif" font-size="22" fill="#f5edd9">FOMC</text>
+      <text x="0" y="88" font-family="monospace" font-size="12" fill="#cc6644">금리 결정</text>
+    </g>
+    <!-- USD/KRW -->
+    <g transform="translate(1020, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#cc6644" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="2" fill="#aa7060">USD/KRW</text>
+      <text x="0" y="60" font-family="Playfair Display, Georgia, serif" font-size="22" fill="#f5edd9">1,517원</text>
+      <text x="0" y="88" font-family="monospace" font-size="12" fill="#e05555">원화 약세 지속</text>
+    </g>
+  </g>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="680" width="1280" height="40" fill="#0a0604" fill-opacity="0.9"/>
+  <text x="80" y="706" font-family="monospace" font-size="11" letter-spacing="2" fill="#7a5040">베이스 45% · 불 25% · 베어 25% · 블랙 스완 5% | 미국 10년물 4.57%</text>
+</svg>
