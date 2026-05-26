@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a100d"/>
+      <stop offset="100%" stop-color="#0f0907"/>
+    </linearGradient>
+    <linearGradient id="orange" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f0c06a"/>
+      <stop offset="50%" stop-color="#e09944"/>
+      <stop offset="100%" stop-color="#c07828"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#e09944" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#e09944" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#e05555" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#e05555" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1050" cy="160" r="360" fill="url(#glow1)"/>
+  <circle cx="200" cy="600" r="300" fill="url(#glow2)"/>
+
+  <!-- Header -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#e09944" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#f5edd9">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#e09944">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#e09944" text-anchor="end">2026.05.26 16:00 KST · KR FORECAST</text>
+
+  <!-- Edition label -->
+  <text x="80" y="160" font-family="monospace" font-size="13" letter-spacing="5" fill="#e09944">— 시장 예측 —</text>
+
+  <!-- Badge -->
+  <rect x="80" y="176" width="300" height="30" rx="4" fill="#e09944" fill-opacity="0.18" stroke="#e09944" stroke-width="0.8"/>
+  <text x="92" y="196" font-family="monospace" font-size="12" letter-spacing="2" fill="#e09944">5/28 GDP 이틀 전 · 지지선 검증</text>
+
+  <!-- Main title -->
+  <text x="80" y="290" font-family="Playfair Display, Georgia, serif" font-size="58" font-weight="500" fill="#f5edd9">종가 8,047 확인</text>
+  <text x="80" y="350" font-family="Playfair Display, Georgia, serif" font-size="40" font-style="italic" fill="url(#orange)">8,000선 지지선 검증 구간</text>
+  <text x="80" y="398" font-family="sans-serif" font-size="17" fill="#b89070">5/27 숨 고르기 · 5/28 GDP · 6/11 CPI 로드맵</text>
+
+  <!-- Divider -->
+  <line x1="80" y1="432" x2="1200" y2="432" stroke="#3a2a1e" stroke-width="1"/>
+
+  <!-- Scenario boxes -->
+  <g transform="translate(80, 460)">
+    <!-- Base -->
+    <rect x="0" y="0" width="240" height="88" rx="4" fill="#e09944" fill-opacity="0.12" stroke="#e09944" stroke-width="0.6"/>
+    <text x="12" y="22" font-family="monospace" font-size="10" letter-spacing="2" fill="#e09944">베이스 40%</text>
+    <text x="12" y="48" font-family="Georgia, serif" font-size="20" fill="#f5edd9">8,000~8,400</text>
+    <text x="12" y="72" font-family="monospace" font-size="10" fill="#a08060">GDP 충격 없음</text>
+    <!-- Bull -->
+    <rect x="260" y="0" width="240" height="88" rx="4" fill="#4db86b" fill-opacity="0.12" stroke="#4db86b" stroke-width="0.6"/>
+    <text x="272" y="22" font-family="monospace" font-size="10" letter-spacing="2" fill="#4db86b">불 케이스 30%</text>
+    <text x="272" y="48" font-family="Georgia, serif" font-size="20" fill="#f5edd9">8,500~8,800</text>
+    <text x="272" y="72" font-family="monospace" font-size="10" fill="#6a9870">6/11 CPI 서프라이즈</text>
+    <!-- Bear -->
+    <rect x="520" y="0" width="240" height="88" rx="4" fill="#e05555" fill-opacity="0.12" stroke="#e05555" stroke-width="0.6"/>
+    <text x="532" y="22" font-family="monospace" font-size="10" letter-spacing="2" fill="#e05555">베어 25%</text>
+    <text x="532" y="48" font-family="Georgia, serif" font-size="20" fill="#f5edd9">7,500~7,800</text>
+    <text x="532" y="72" font-family="monospace" font-size="10" fill="#a06060">GDP 부진 + 원화 약세</text>
+    <!-- Black Swan -->
+    <rect x="780" y="0" width="180" height="88" rx="4" fill="#888888" fill-opacity="0.10" stroke="#888888" stroke-width="0.6"/>
+    <text x="792" y="22" font-family="monospace" font-size="10" letter-spacing="2" fill="#888888">블랙스완 5%</text>
+    <text x="792" y="48" font-family="Georgia, serif" font-size="20" fill="#f5edd9">7,000↓</text>
+    <text x="792" y="72" font-family="monospace" font-size="10" fill="#888888">글로벌 충격</text>
+  </g>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="680" width="1280" height="40" fill="#0a0806" fill-opacity="0.8"/>
+  <text x="80" y="706" font-family="monospace" font-size="11" letter-spacing="2" fill="#806040">KOSPI 8,047.51 +2.55% · WTI $92.80 · USD/KRW 1,503.88 · US10Y 4.558%</text>
+</svg>

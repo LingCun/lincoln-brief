@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d1a14"/>
+      <stop offset="100%" stop-color="#070f0a"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f0d88c"/>
+      <stop offset="50%" stop-color="#d8b878"/>
+      <stop offset="100%" stop-color="#b89a5a"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#d8b878" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#d8b878" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#4db86b" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#4db86b" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1100" cy="140" r="380" fill="url(#glow1)"/>
+  <circle cx="180" cy="600" r="300" fill="url(#glow2)"/>
+
+  <!-- Header -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#d8b878" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#f5edd9">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#d8b878">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#d8b878" text-anchor="end">2026.05.26 16:00 KST · KR DAILY</text>
+
+  <!-- Edition label -->
+  <text x="80" y="160" font-family="monospace" font-size="13" letter-spacing="5" fill="#d8b878">— 5월 26일 종가 정리 —</text>
+
+  <!-- KOSPI badge -->
+  <rect x="80" y="176" width="310" height="30" rx="4" fill="#4db86b" fill-opacity="0.20" stroke="#4db86b" stroke-width="0.8"/>
+  <text x="92" y="196" font-family="monospace" font-size="12" letter-spacing="2" fill="#4db86b">KOSPI +2.55% · 반도체·자동차 주도</text>
+
+  <!-- Main title -->
+  <text x="80" y="290" font-family="Playfair Display, Georgia, serif" font-size="60" font-weight="500" fill="#f5edd9">KOSPI 8,047</text>
+  <text x="80" y="350" font-family="Playfair Display, Georgia, serif" font-size="42" font-style="italic" fill="url(#gold)">종가 확정 · 하루 마무리</text>
+  <text x="80" y="398" font-family="sans-serif" font-size="17" fill="#8ab898">SK하이닉스 +5.72% · 현대차 +5.19% · 원화 1,503원</text>
+
+  <!-- Divider -->
+  <line x1="80" y1="432" x2="1200" y2="432" stroke="#2a4a38" stroke-width="1"/>
+
+  <!-- Metrics row -->
+  <g transform="translate(80, 468)">
+    <!-- SK하이닉스 -->
+    <g>
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#d8b878" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="3" fill="#a89060">SK하이닉스</text>
+      <text x="0" y="66" font-family="Playfair Display, Georgia, serif" font-size="28" fill="#f5edd9">205만</text>
+      <polygon points="0,72 14,88 28,72" fill="#4db86b"/>
+      <text x="36" y="87" font-family="monospace" font-size="16" fill="#4db86b">+5.72%</text>
+    </g>
+    <!-- 현대차 -->
+    <g transform="translate(280, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#d8b878" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="3" fill="#a89060">현대차</text>
+      <text x="0" y="66" font-family="Playfair Display, Georgia, serif" font-size="28" fill="#f5edd9">689,000</text>
+      <polygon points="0,72 14,88 28,72" fill="#4db86b"/>
+      <text x="36" y="87" font-family="monospace" font-size="16" fill="#4db86b">+5.19%</text>
+    </g>
+    <!-- 삼성전자 -->
+    <g transform="translate(540, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#d8b878" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="3" fill="#a89060">삼성전자</text>
+      <text x="0" y="66" font-family="Playfair Display, Georgia, serif" font-size="28" fill="#f5edd9">299,000</text>
+      <polygon points="0,72 14,88 28,72" fill="#4db86b"/>
+      <text x="36" y="87" font-family="monospace" font-size="16" fill="#4db86b">+2.22%</text>
+    </g>
+    <!-- 원화 -->
+    <g transform="translate(800, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#d8b878" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="3" fill="#a89060">USD/KRW</text>
+      <text x="0" y="66" font-family="Playfair Display, Georgia, serif" font-size="28" fill="#f5edd9">1,503.88</text>
+      <polygon points="0,88 14,72 28,88" fill="#4db86b"/>
+      <text x="36" y="87" font-family="monospace" font-size="16" fill="#4db86b">원화강세</text>
+    </g>
+  </g>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="680" width="1280" height="40" fill="#0a1208" fill-opacity="0.8"/>
+  <text x="80" y="706" font-family="monospace" font-size="11" letter-spacing="2" fill="#6a8870">WTI $92.80 · 금 $4,524.20 · BTC $76,669 · US10Y 4.558% · S&amp;P500 +0.37%</text>
+</svg>
