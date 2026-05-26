@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" fill="#0a0907"/>
+  <rect x="40" y="40" width="432" height="432" rx="8" fill="none" stroke="#c9a961" stroke-width="2.5" opacity="0.55"/>
+  <rect x="56" y="56" width="400" height="400" rx="4" fill="none" stroke="#c9a961" stroke-width="0.6" opacity="0.3"/>
+  <g fill="#c9a961">
+    <path d="M 180 138
+             L 246 138
+             L 246 360
+             L 372 360
+             L 372 384
+             L 248 384
+             L 248 384
+             L 180 384
+             Z
+             M 246 138
+             L 246 360
+             L 232 360
+             L 232 158
+             L 212 158
+             L 212 138
+             Z"
+          opacity="0.95"
+          transform="skewX(-10) translate(34,8)"/>
+  </g>
+  <g fill="#c9a961" opacity="0.85" font-family="Georgia, 'Times New Roman', serif">
+    <text x="256" y="438" text-anchor="middle" font-size="22" letter-spacing="6" font-weight="500">LINCOLN</text>
+    <text x="256" y="466" text-anchor="middle" font-size="12" letter-spacing="8" opacity="0.7">— BRIEF —</text>
+  </g>
+</svg>

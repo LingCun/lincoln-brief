@@ -12,6 +12,18 @@
     scroll-behavior: smooth;
     background-color: theme('colors.ink.900');
   }
+
+  /* PWA — when launched as installed app, respect device safe areas (iOS notch / Android gesture bar). */
+  @media (display-mode: standalone) {
+    body {
+      padding-top: env(safe-area-inset-top);
+      padding-bottom: env(safe-area-inset-bottom);
+      padding-left: env(safe-area-inset-left);
+      padding-right: env(safe-area-inset-right);
+    }
+    /* Hide the in-page "install app" CTA once already installed. */
+    .pwa-install-cta { display: none !important; }
+  }
   body {
     @apply text-ink-100 antialiased;
     font-family: 'Pretendard', 'Inter', system-ui, sans-serif;

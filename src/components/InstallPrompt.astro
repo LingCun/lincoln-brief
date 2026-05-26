@@ -1,0 +1,112 @@
+---
+/**
+ * PWA 설치 프롬프트 — Chrome/Edge/Samsung Internet은 `beforeinstallprompt` 이벤트로 트리거,
+ * iOS Safari 는 자체 이벤트가 없어 "공유 → 홈 화면에 추가" 안내 텍스트 표시.
+ * 한 번 닫거나 설치되면 localStorage 에 기록해 다시 보이지 않음.
+ */
+---
+
+<div
+  id="lb-install-prompt"
+  class="pwa-install-cta fixed inset-x-3 bottom-3 z-[70] hidden items-center gap-3 rounded border border-gold-500/40 bg-ink-900/95 px-4 py-3 shadow-xl backdrop-blur sm:left-auto sm:right-4 sm:max-w-sm"
+  role="dialog"
+  aria-label="앱으로 설치"
+>
+  <div class="flex-1 min-w-0">
+    <p class="font-mono text-[10px] uppercase tracking-widest-2 text-gold-400">— Install —</p>
+    <p id="lb-install-msg" class="mt-1 text-sm text-ink-100">
+      Lincoln Brief 를 앱으로 설치하시겠어요?
+    </p>
+    <p id="lb-install-ios-help" class="mt-1 hidden text-xs text-ink-300">
+      Safari 공유 메뉴 <span aria-hidden="true">⎙</span> 에서 <em class="not-italic font-medium">"홈 화면에 추가"</em> 를 눌러 주세요.
+    </p>
+  </div>
+  <button
+    id="lb-install-action"
+    type="button"
+    class="hidden whitespace-nowrap rounded-sm bg-gold-500 px-3 py-1.5 text-xs font-semibold uppercase tracking-widest-2 text-ink-900 transition hover:bg-gold-400"
+  >
+    설치
+  </button>
+  <button
+    id="lb-install-dismiss"
+    type="button"
+    aria-label="닫기"
+    class="rounded p-1 text-ink-300 transition hover:text-ink-50"
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 6 6 18M6 6l12 12"/></svg>
+  </button>
+</div>
+
+<script is:inline>
+  (function () {
+    var STORAGE_KEY = 'lb-pwa-install-dismissed';
+    var el = document.getElementById('lb-install-prompt');
+    var actionBtn = document.getElementById('lb-install-action');
+    var dismissBtn = document.getElementById('lb-install-dismiss');
+    var iosHelp = document.getElementById('lb-install-ios-help');
+    if (!el) return;
+
+    // Already installed? Don't show.
+    var isStandalone =
+      window.matchMedia('(display-mode: standalone)').matches ||
+      window.navigator.standalone === true;
+    if (isStandalone) return;
+
+    // Dismissed within the last 30 days? Don't show.
+    try {
+      var dismissedAt = Number(localStorage.getItem(STORAGE_KEY) || 0);
+      if (dismissedAt && Date.now() - dismissedAt < 30 * 24 * 60 * 60 * 1000) return;
+    } catch (e) { /* localStorage may be blocked */ }
+
+    var deferredPrompt = null;
+
+    function show() {
+      el.classList.remove('hidden');
+      el.classList.add('flex');
+    }
+    function hide(remember) {
+      el.classList.add('hidden');
+      el.classList.remove('flex');
+      if (remember) {
+        try { localStorage.setItem(STORAGE_KEY, String(Date.now())); } catch (e) {}
+      }
+    }
+
+    dismissBtn && dismissBtn.addEventListener('click', function () { hide(true); });
+
+    // Chrome / Edge / Samsung Internet — fires when site meets installability criteria.
+    window.addEventListener('beforeinstallprompt', function (e) {
+      e.preventDefault();
+      deferredPrompt = e;
+      actionBtn && actionBtn.classList.remove('hidden');
+      // Delay slightly so it doesn't pop on first render.
+      setTimeout(show, 1500);
+    });
+
+    actionBtn && actionBtn.addEventListener('click', async function () {
+      if (!deferredPrompt) return;
+      deferredPrompt.prompt();
+      try {
+        var choice = await deferredPrompt.userChoice;
+        if (choice && choice.outcome === 'accepted') hide(true);
+        else hide(true);
+      } catch (e) {
+        hide(true);
+      }
+      deferredPrompt = null;
+    });
+
+    window.addEventListener('appinstalled', function () { hide(true); });
+
+    // iOS Safari fallback — no beforeinstallprompt event there.
+    var ua = window.navigator.userAgent || '';
+    var isIOS = /iPad|iPhone|iPod/.test(ua) && !window.MSStream;
+    var isSafari = /^((?!chrome|android|crios|fxios).)*safari/i.test(ua);
+    if (isIOS && isSafari) {
+      iosHelp && iosHelp.classList.remove('hidden');
+      // Show after the user has had a moment to read the page.
+      setTimeout(show, 4000);
+    }
+  })();
+</script>
