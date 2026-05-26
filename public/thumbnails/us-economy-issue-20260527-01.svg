@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d1a10"/>
+      <stop offset="100%" stop-color="#070c08"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#8fba82"/>
+      <stop offset="50%" stop-color="#7a9d6e"/>
+      <stop offset="100%" stop-color="#5a7d50"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#7a9d6e" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#7a9d6e" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#d8b878" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#d8b878" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1080" cy="200" r="370" fill="url(#glow1)"/>
+  <circle cx="160" cy="580" r="220" fill="url(#glow2)"/>
+
+  <!-- 좌상단 브랜드 -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#7a9d6e" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#e4f0e0">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#7a9d6e">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#7a9d6e" text-anchor="end">2026.05.27 · ECONOMY ISSUE · SLOT 01</text>
+
+  <!-- 에디션 라벨 -->
+  <text x="80" y="175" font-family="monospace" font-size="13" letter-spacing="5" fill="#7a9d6e">— 경제 이슈 · 새벽판 —</text>
+
+  <!-- 메인 헤드라인 -->
+  <text x="80" y="268" font-family="Playfair Display, Georgia, serif" font-size="56" font-weight="500" fill="#e4f0e0">WTI $94 · 금리 4.50%</text>
+  <text x="80" y="345" font-family="Playfair Display, Georgia, serif" font-size="38" font-style="italic" fill="url(#green)">에너지·금리 동반 하락</text>
+  <text x="80" y="393" font-family="Pretendard, sans-serif" font-size="18" fill="#7a8a72">PCE 완화 경로가 열리는가  ·  5/30 PCE 분기점</text>
+
+  <!-- 지표 그리드 -->
+  <g transform="translate(80, 455)">
+    <!-- WTI -->
+    <g>
+      <line x1="0" y1="0" x2="40" y2="0" stroke="#d96552" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="2" fill="#7a8a72">WTI 원유</text>
+      <text x="0" y="62" font-family="Playfair Display, Georgia, serif" font-size="30" fill="#e4f0e0">$93.98</text>
+      <polygon points="0,70 16,70 8,84" fill="#d96552" transform="rotate(180,8,77)"/>
+      <text x="24" y="84" font-family="monospace" font-size="14" fill="#d96552">-2.71%</text>
+    </g>
+    <!-- 10Y -->
+    <g transform="translate(250, 0)">
+      <line x1="0" y1="0" x2="40" y2="0" stroke="#d96552" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="2" fill="#7a8a72">US 10Y</text>
+      <text x="0" y="62" font-family="Playfair Display, Georgia, serif" font-size="30" fill="#e4f0e0">4.504%</text>
+      <polygon points="0,70 16,70 8,84" fill="#d96552" transform="rotate(180,8,77)"/>
+      <text x="24" y="84" font-family="monospace" font-size="14" fill="#d96552">-1.18%</text>
+    </g>
+    <!-- USD/KRW -->
+    <g transform="translate(520, 0)">
+      <line x1="0" y1="0" x2="40" y2="0" stroke="#d96552" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="2" fill="#7a8a72">USD/KRW</text>
+      <text x="0" y="62" font-family="Playfair Display, Georgia, serif" font-size="30" fill="#e4f0e0">1,507</text>
+      <polygon points="0,70 16,70 8,84" fill="#d96552" transform="rotate(180,8,77)"/>
+      <text x="24" y="84" font-family="monospace" font-size="14" fill="#d96552">-0.37%</text>
+    </g>
+    <!-- PCE 목표 -->
+    <g transform="translate(790, 0)">
+      <line x1="0" y1="0" x2="40" y2="0" stroke="#7a9d6e" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="2" fill="#7a8a72">PCE 목표</text>
+      <text x="0" y="62" font-family="Playfair Display, Georgia, serif" font-size="30" fill="#e4f0e0">2.4%↓</text>
+      <text x="0" y="86" font-family="monospace" font-size="13" fill="#7a9d6e">7월 인하 조건</text>
+    </g>
+  </g>
+
+  <!-- 하단 구분선 + 서명 -->
+  <line x1="80" y1="640" x2="1200" y2="640" stroke="#1e3020" stroke-width="1"/>
+  <text x="80" y="668" font-family="Georgia, serif" font-style="italic" font-size="16" fill="#7a8a72">— Lincoln</text>
+  <text x="1200" y="668" font-family="monospace" font-size="12" fill="#3a5030" text-anchor="end">lincoln-brief.vercel.app</text>
+</svg>
