@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1e100c"/>
+      <stop offset="100%" stop-color="#0e0806"/>
+    </linearGradient>
+    <linearGradient id="red" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f09070"/>
+      <stop offset="50%" stop-color="#d96552"/>
+      <stop offset="100%" stop-color="#b84838"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#d96552" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#d96552" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#d8b878" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#d8b878" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1080" cy="180" r="340" fill="url(#glow1)"/>
+  <circle cx="160" cy="560" r="260" fill="url(#glow2)"/>
+
+  <!-- 좌상단 브랜드 -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#d96552" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#f5edd9">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#d96552">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#d96552" text-anchor="end">2026.05.28 · MARKET FORECAST · SLOT 06</text>
+
+  <!-- 에디션 라벨 -->
+  <text x="80" y="175" font-family="monospace" font-size="13" letter-spacing="5" fill="#d96552">— 시장 예측 · FOMC D-DAY —</text>
+
+  <!-- 메인 헤드라인 -->
+  <text x="80" y="265" font-family="Playfair Display, Georgia, serif" font-size="54" font-weight="500" fill="#f5edd9">FOMC 회의록 D-Day</text>
+  <text x="80" y="335" font-family="Playfair Display, Georgia, serif" font-size="38" font-style="italic" fill="url(#red)">오늘 밤 03:00 KST — 세 키워드가 방향을 가른다</text>
+  <text x="80" y="383" font-family="Pretendard, sans-serif" font-size="18" fill="#b07870">S&amp;P 7,520  ·  META +3.74%  ·  PCE 5/30 21:30 KST</text>
+
+  <!-- 4종목 데이터 그리드 -->
+  <g transform="translate(80, 455)">
+    <!-- 불 케이스 -->
+    <g>
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#6ba368" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#b07870">불 케이스</text>
+      <text x="0" y="68" font-family="Playfair Display, Georgia, serif" font-size="28" fill="#f5edd9">27%</text>
+      <polygon points="0,76 14,76 7,90" fill="#6ba368"/>
+      <text x="22" y="93" font-family="monospace" font-size="13" fill="#6ba368">7,750~7,900</text>
+    </g>
+    <!-- 베이스 -->
+    <g transform="translate(220, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#d8b878" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#b07870">베이스</text>
+      <text x="0" y="68" font-family="Playfair Display, Georgia, serif" font-size="28" fill="#f5edd9">38%</text>
+      <text x="0" y="93" font-family="monospace" font-size="13" fill="#d8b878">7,400~7,600</text>
+    </g>
+    <!-- 베어 케이스 -->
+    <g transform="translate(460, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#d96552" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#b07870">베어 케이스</text>
+      <text x="0" y="68" font-family="Playfair Display, Georgia, serif" font-size="28" fill="#f5edd9">25%</text>
+      <polygon points="0,90 14,90 7,76" fill="#d96552"/>
+      <text x="22" y="93" font-family="monospace" font-size="13" fill="#d96552">7,000~7,200</text>
+    </g>
+    <!-- 블랙스완 -->
+    <g transform="translate(700, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#888" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#b07870">블랙스완</text>
+      <text x="0" y="68" font-family="Playfair Display, Georgia, serif" font-size="28" fill="#f5edd9">10%</text>
+      <polygon points="0,90 14,90 7,76" fill="#888"/>
+      <text x="22" y="93" font-family="monospace" font-size="13" fill="#888">6,500 이하</text>
+    </g>
+  </g>
+
+  <!-- 하단 구분선 + 서명 -->
+  <line x1="80" y1="640" x2="1200" y2="640" stroke="#3a1810" stroke-width="1"/>
+  <text x="80" y="668" font-family="Georgia, serif" font-style="italic" font-size="16" fill="#b07870">— Lincoln</text>
+  <text x="1200" y="668" font-family="monospace" font-size="12" fill="#5a2a18" text-anchor="end">lincoln-brief.vercel.app</text>
+</svg>
