@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a1208"/>
+      <stop offset="100%" stop-color="#0f0a04"/>
+    </linearGradient>
+    <linearGradient id="amber" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffdc7a"/>
+      <stop offset="50%" stop-color="#f0b840"/>
+      <stop offset="100%" stop-color="#d89020"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#f0b840" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#f0b840" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#e05555" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#e05555" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1080" cy="180" r="340" fill="url(#glow1)"/>
+  <circle cx="160" cy="560" r="280" fill="url(#glow2)"/>
+
+  <!-- Header -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#f0b840" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#f5edd9">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#f0b840">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#f0b840" text-anchor="end">2026.05.27 11:00 KST · KR FORECAST</text>
+
+  <!-- Edition label -->
+  <text x="80" y="160" font-family="monospace" font-size="13" letter-spacing="5" fill="#f0b840">— 시장 예측 —</text>
+
+  <!-- Badge -->
+  <rect x="80" y="176" width="300" height="30" rx="4" fill="#e05555" fill-opacity="0.18" stroke="#e05555" stroke-width="0.8"/>
+  <text x="92" y="196" font-family="monospace" font-size="12" letter-spacing="2" fill="#e07070">5/28 GDP · 분기점 임박</text>
+
+  <!-- Main title -->
+  <text x="80" y="290" font-family="Playfair Display, Georgia, serif" font-size="60" font-weight="500" fill="#f5edd9">KOSPI 8,411 이후</text>
+  <text x="80" y="350" font-family="Playfair Display, Georgia, serif" font-size="40" font-style="italic" fill="url(#amber)">반도체 쏠림, GDP 관문</text>
+  <text x="80" y="398" font-family="sans-serif" font-size="17" fill="#c8a060">KOSDAQ −2.27% 역행 · 베어 케이스 35% · 불 케이스 15%</text>
+
+  <!-- Divider -->
+  <line x1="80" y1="432" x2="1200" y2="432" stroke="#3a2a10" stroke-width="1"/>
+
+  <!-- Scenario row -->
+  <g transform="translate(80, 468)">
+    <!-- 베이스 -->
+    <g>
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#f0b840" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="3" fill="#a08040">베이스 45%</text>
+      <text x="0" y="66" font-family="Playfair Display, Georgia, serif" font-size="22" fill="#f5edd9">8,200~8,600</text>
+      <text x="0" y="92" font-family="monospace" font-size="12" fill="#c8a060">횡보·소화</text>
+    </g>
+    <!-- 불 케이스 -->
+    <g transform="translate(260, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#f0b840" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="3" fill="#a08040">불 15%</text>
+      <text x="0" y="66" font-family="Playfair Display, Georgia, serif" font-size="22" fill="#4db86b">8,600~9,000</text>
+      <text x="0" y="92" font-family="monospace" font-size="12" fill="#4db86b">GDP 호전</text>
+    </g>
+    <!-- 베어 케이스 -->
+    <g transform="translate(520, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#f0b840" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="3" fill="#a08040">베어 35%</text>
+      <text x="0" y="66" font-family="Playfair Display, Georgia, serif" font-size="22" fill="#e05555">7,800~8,200</text>
+      <text x="0" y="92" font-family="monospace" font-size="12" fill="#e05555">GDP 실망</text>
+    </g>
+    <!-- 다음 이벤트 -->
+    <g transform="translate(800, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#f0b840" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="3" fill="#a08040">다음 관문</text>
+      <text x="0" y="56" font-family="Playfair Display, Georgia, serif" font-size="22" fill="#f5edd9">5/28 GDP</text>
+      <text x="0" y="80" font-family="Playfair Display, Georgia, serif" font-size="20" fill="#f5edd9">6/11 CPI</text>
+    </g>
+  </g>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="680" width="1280" height="40" fill="#0a0804" fill-opacity="0.8"/>
+  <text x="80" y="706" font-family="monospace" font-size="11" letter-spacing="2" fill="#806040">KOSPI 8,411 · KOSDAQ 1,145 · USD/KRW 1,499 · SK하이닉스 +13.40% · 삼성전자 +6.69%</text>
+</svg>
