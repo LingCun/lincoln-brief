@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0e1520"/>
+      <stop offset="100%" stop-color="#080d14"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7aa4e8"/>
+      <stop offset="50%" stop-color="#5677b0"/>
+      <stop offset="100%" stop-color="#3a5a90"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#5677b0" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#5677b0" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#d96552" stop-opacity="0.07"/>
+      <stop offset="100%" stop-color="#d96552" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1050" cy="200" r="380" fill="url(#glow1)"/>
+  <circle cx="180" cy="600" r="230" fill="url(#glow2)"/>
+
+  <!-- 좌상단 브랜드 -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#5677b0" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#e8f0fc">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#5677b0">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#5677b0" text-anchor="end">2026.05.28 · STOCK ANALYSIS · SLOT 01</text>
+
+  <!-- 에디션 라벨 -->
+  <text x="80" y="175" font-family="monospace" font-size="13" letter-spacing="5" fill="#5677b0">— 종목 분석 · 새벽판 —</text>
+
+  <!-- 종목 심볼 대형 -->
+  <text x="80" y="285" font-family="Playfair Display, Georgia, serif" font-size="68" font-weight="700" fill="url(#blue)">JPM</text>
+  <text x="320" y="285" font-family="Playfair Display, Georgia, serif" font-size="68" font-weight="300" fill="#8899cc">JPMorgan</text>
+
+  <!-- 가격 + 변동 -->
+  <text x="80" y="370" font-family="Playfair Display, Georgia, serif" font-size="52" fill="#e8f0fc">$297.69</text>
+  <polygon points="590,340 618,340 604,358" fill="#d96552"/>
+  <text x="628" y="368" font-family="monospace" font-size="36" fill="#d96552">−2.95%</text>
+
+  <!-- 서브 메시지 -->
+  <text x="80" y="430" font-family="Playfair Display, Georgia, serif" font-size="26" font-style="italic" fill="url(#blue)">5/27 12종목 최대 하락 · 고금리 장기화 압박</text>
+  <text x="80" y="470" font-family="Pretendard, sans-serif" font-size="18" fill="#6a7a9a">30일 고점 $316.99 대비 −6.1%  ·  저점 $295.70 근접</text>
+
+  <!-- 시나리오 간략 -->
+  <g transform="translate(80, 520)">
+    <rect x="0" y="0" width="220" height="60" rx="6" fill="#1a2540" stroke="#5677b0" stroke-width="1"/>
+    <text x="110" y="22" font-family="monospace" font-size="10" letter-spacing="2" fill="#5677b0" text-anchor="middle">베이스 40%</text>
+    <text x="110" y="46" font-family="monospace" font-size="13" fill="#e8f0fc" text-anchor="middle">$290~$305 박스</text>
+
+    <rect x="240" y="0" width="220" height="60" rx="6" fill="#1a2540" stroke="#d96552" stroke-width="1"/>
+    <text x="350" y="22" font-family="monospace" font-size="10" letter-spacing="2" fill="#d96552" text-anchor="middle">베어 30%</text>
+    <text x="350" y="46" font-family="monospace" font-size="13" fill="#e8f0fc" text-anchor="middle">$280~$290</text>
+
+    <rect x="480" y="0" width="220" height="60" rx="6" fill="#1a2540" stroke="#6ba368" stroke-width="1"/>
+    <text x="590" y="22" font-family="monospace" font-size="10" letter-spacing="2" fill="#6ba368" text-anchor="middle">불 20%</text>
+    <text x="590" y="46" font-family="monospace" font-size="13" fill="#e8f0fc" text-anchor="middle">$310+ 회복</text>
+  </g>
+
+  <!-- 하단 구분선 + 서명 -->
+  <line x1="80" y1="640" x2="1200" y2="640" stroke="#1e2a40" stroke-width="1"/>
+  <text x="80" y="668" font-family="Georgia, serif" font-style="italic" font-size="16" fill="#6a7a9a">— Lincoln</text>
+  <text x="1200" y="668" font-family="monospace" font-size="12" fill="#3a4a60" text-anchor="end">lincoln-brief.vercel.app</text>
+</svg>
