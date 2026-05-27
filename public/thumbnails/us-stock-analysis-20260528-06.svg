@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#101522"/>
+      <stop offset="100%" stop-color="#080e18"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7aa0d8"/>
+      <stop offset="50%" stop-color="#5677b0"/>
+      <stop offset="100%" stop-color="#3a5888"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#5677b0" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#5677b0" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#d8b878" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#d8b878" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1080" cy="180" r="340" fill="url(#glow1)"/>
+  <circle cx="160" cy="560" r="260" fill="url(#glow2)"/>
+
+  <!-- 좌상단 브랜드 -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#5677b0" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#f5edd9">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#5677b0">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#5677b0" text-anchor="end">2026.05.28 · STOCK ANALYSIS · SLOT 06</text>
+
+  <!-- 에디션 라벨 -->
+  <text x="80" y="175" font-family="monospace" font-size="13" letter-spacing="5" fill="#5677b0">— 종목 분석 · META —</text>
+
+  <!-- 메인 헤드라인 -->
+  <text x="80" y="265" font-family="Playfair Display, Georgia, serif" font-size="58" font-weight="500" fill="#f5edd9">META $635.26</text>
+  <text x="80" y="335" font-family="Playfair Display, Georgia, serif" font-size="38" font-style="italic" fill="url(#blue)">30일 저점 이후 최강 랠리 +3.74%</text>
+  <text x="80" y="385" font-family="Pretendard, sans-serif" font-size="18" fill="#7a92b0">30일 고점 $688.55  ·  저점 $598.86  ·  현재 $635.26</text>
+
+  <!-- 4종목 데이터 그리드 -->
+  <g transform="translate(80, 455)">
+    <!-- META price -->
+    <g>
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#5677b0" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#7a92b0">META</text>
+      <text x="0" y="68" font-family="Playfair Display, Georgia, serif" font-size="28" fill="#f5edd9">$635.26</text>
+      <polygon points="0,76 14,76 7,90" fill="#6ba368"/>
+      <text x="22" y="93" font-family="monospace" font-size="13" fill="#6ba368">+3.74%</text>
+    </g>
+    <!-- 30일 저점 -->
+    <g transform="translate(220, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#5677b0" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#7a92b0">30일 저점</text>
+      <text x="0" y="68" font-family="Playfair Display, Georgia, serif" font-size="28" fill="#f5edd9">$598.86</text>
+      <polygon points="0,76 14,76 7,90" fill="#6ba368"/>
+      <text x="22" y="93" font-family="monospace" font-size="13" fill="#6ba368">+6.1%↑</text>
+    </g>
+    <!-- AMZN 동반 -->
+    <g transform="translate(460, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#6ba368" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#7a92b0">AMZN</text>
+      <text x="0" y="68" font-family="Playfair Display, Georgia, serif" font-size="28" fill="#f5edd9">$271.85</text>
+      <polygon points="0,76 14,76 7,90" fill="#6ba368"/>
+      <text x="22" y="93" font-family="monospace" font-size="13" fill="#6ba368">+2.47%</text>
+    </g>
+    <!-- JPM 대비 -->
+    <g transform="translate(700, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#d96552" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#7a92b0">JPM</text>
+      <text x="0" y="68" font-family="Playfair Display, Georgia, serif" font-size="28" fill="#f5edd9">$299.28</text>
+      <polygon points="0,90 14,90 7,76" fill="#d96552"/>
+      <text x="22" y="93" font-family="monospace" font-size="13" fill="#d96552">−2.43%</text>
+    </g>
+  </g>
+
+  <!-- 하단 구분선 + 서명 -->
+  <line x1="80" y1="640" x2="1200" y2="640" stroke="#1e2a3a" stroke-width="1"/>
+  <text x="80" y="668" font-family="Georgia, serif" font-style="italic" font-size="16" fill="#7a92b0">— Lincoln</text>
+  <text x="1200" y="668" font-family="monospace" font-size="12" fill="#3a4a60" text-anchor="end">lincoln-brief.vercel.app</text>
+</svg>
