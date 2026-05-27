@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0e1a10"/>
+      <stop offset="100%" stop-color="#080d08"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#9ac490"/>
+      <stop offset="50%" stop-color="#7a9d6e"/>
+      <stop offset="100%" stop-color="#5a7d50"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#7a9d6e" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#7a9d6e" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#d8b878" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#d8b878" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1060" cy="180" r="380" fill="url(#glow1)"/>
+  <circle cx="160" cy="580" r="240" fill="url(#glow2)"/>
+
+  <!-- 좌상단 브랜드 -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#7a9d6e" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#e4f0e0">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#7a9d6e">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#7a9d6e" text-anchor="end">2026.05.28 · ECONOMY ISSUE · SLOT 01</text>
+
+  <!-- 에디션 라벨 -->
+  <text x="80" y="175" font-family="monospace" font-size="13" letter-spacing="5" fill="#7a9d6e">— 경제 이슈 · 새벽판 —</text>
+
+  <!-- 핵심 수치 대형 -->
+  <text x="80" y="290" font-family="Playfair Display, Georgia, serif" font-size="90" font-weight="700" fill="url(#green)">1,499</text>
+  <text x="550" y="290" font-family="Playfair Display, Georgia, serif" font-size="40" fill="#9ab090">USD/KRW</text>
+
+  <!-- 변동 표시 -->
+  <polygon points="80,310 108,310 94,328" fill="#6ba368"/>
+  <text x="120" y="328" font-family="monospace" font-size="26" fill="#6ba368">−1.01%  원화 강세</text>
+
+  <!-- 서브 헤드라인 -->
+  <text x="80" y="395" font-family="Playfair Display, Georgia, serif" font-size="32" font-style="italic" fill="url(#green)">1,500 심리선 하향 돌파</text>
+  <text x="80" y="435" font-family="Pretendard, sans-serif" font-size="18" fill="#6a8a62">KOSPI +4.85% · WTI −4.48% · 10년물 4.489%</text>
+
+  <!-- 배경 요인 3가지 -->
+  <g transform="translate(80, 490)">
+    <rect x="0" y="0" width="300" height="72" rx="6" fill="#1a2e1a" stroke="#7a9d6e" stroke-width="1"/>
+    <text x="150" y="24" font-family="monospace" font-size="10" letter-spacing="2" fill="#7a9d6e" text-anchor="middle">배경 1</text>
+    <text x="150" y="50" font-family="Pretendard, sans-serif" font-size="14" fill="#e4f0e0" text-anchor="middle">KOSPI 급등 · 원화 수요 폭발</text>
+
+    <rect x="320" y="0" width="300" height="72" rx="6" fill="#1a2e1a" stroke="#7a9d6e" stroke-width="1"/>
+    <text x="470" y="24" font-family="monospace" font-size="10" letter-spacing="2" fill="#7a9d6e" text-anchor="middle">배경 2</text>
+    <text x="470" y="50" font-family="Pretendard, sans-serif" font-size="14" fill="#e4f0e0" text-anchor="middle">WTI 급락 · 달러 수요 약화</text>
+
+    <rect x="640" y="0" width="300" height="72" rx="6" fill="#1a2e1a" stroke="#7a9d6e" stroke-width="1"/>
+    <text x="790" y="24" font-family="monospace" font-size="10" letter-spacing="2" fill="#7a9d6e" text-anchor="middle">배경 3</text>
+    <text x="790" y="50" font-family="Pretendard, sans-serif" font-size="14" fill="#e4f0e0" text-anchor="middle">달러 금리 매력 감소</text>
+  </g>
+
+  <!-- 하단 구분선 + 서명 -->
+  <line x1="80" y1="640" x2="1200" y2="640" stroke="#203020" stroke-width="1"/>
+  <text x="80" y="668" font-family="Georgia, serif" font-style="italic" font-size="16" fill="#6a8a62">— Lincoln</text>
+  <text x="1200" y="668" font-family="monospace" font-size="12" fill="#3a5030" text-anchor="end">lincoln-brief.vercel.app</text>
+</svg>

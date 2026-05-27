@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a0e0c"/>
+      <stop offset="100%" stop-color="#0d0806"/>
+    </linearGradient>
+    <linearGradient id="red" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#e88870"/>
+      <stop offset="50%" stop-color="#d96552"/>
+      <stop offset="100%" stop-color="#b84838"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#d96552" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#d96552" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#d8b878" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#d8b878" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1080" cy="180" r="360" fill="url(#glow1)"/>
+  <circle cx="160" cy="560" r="240" fill="url(#glow2)"/>
+
+  <!-- 좌상단 브랜드 -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#d96552" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#fce8e4">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#d96552">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#d96552" text-anchor="end">2026.05.28 · MARKET FORECAST · SLOT 01</text>
+
+  <!-- 에디션 라벨 -->
+  <text x="80" y="175" font-family="monospace" font-size="13" letter-spacing="5" fill="#d96552">— 시장 예측 · 새벽판 —</text>
+
+  <!-- 메인 헤드라인 -->
+  <text x="80" y="265" font-family="Playfair Display, Georgia, serif" font-size="52" font-weight="500" fill="#fce8e4">FOMC 회의록 D-1 · PCE D-2</text>
+  <text x="80" y="335" font-family="Playfair Display, Georgia, serif" font-size="36" font-style="italic" fill="url(#red)">4가지 선행 신호 · 향후 4주 시나리오</text>
+  <text x="80" y="383" font-family="Pretendard, sans-serif" font-size="18" fill="#9a7a72">WTI $89.68(−4.48%)  ·  JPM −2.95%  ·  금리 4.489%</text>
+
+  <!-- 시나리오 4행 -->
+  <g transform="translate(80, 440)">
+    <!-- 베이스 -->
+    <rect x="0" y="0" width="260" height="100" rx="8" fill="#2a1a16" stroke="#d96552" stroke-width="1.5"/>
+    <text x="130" y="28" font-family="monospace" font-size="11" letter-spacing="2" fill="#d96552" text-anchor="middle">베이스 40%</text>
+    <text x="130" y="58" font-family="Playfair Display, Georgia, serif" font-size="22" fill="#fce8e4" text-anchor="middle">7,400~7,600</text>
+    <text x="130" y="84" font-family="monospace" font-size="11" fill="#9a7a72" text-anchor="middle">박스권 유지</text>
+
+    <!-- 불 -->
+    <rect x="280" y="0" width="260" height="100" rx="8" fill="#1a2018" stroke="#6ba368" stroke-width="1.5"/>
+    <text x="410" y="28" font-family="monospace" font-size="11" letter-spacing="2" fill="#6ba368" text-anchor="middle">불 20%</text>
+    <text x="410" y="58" font-family="Playfair Display, Georgia, serif" font-size="22" fill="#fce8e4" text-anchor="middle">7,750~7,900</text>
+    <text x="410" y="84" font-family="monospace" font-size="11" fill="#9a7a72" text-anchor="middle">PCE 완화 시</text>
+
+    <!-- 베어 -->
+    <rect x="560" y="0" width="260" height="100" rx="8" fill="#2a1a16" stroke="#e89a50" stroke-width="1.5"/>
+    <text x="690" y="28" font-family="monospace" font-size="11" letter-spacing="2" fill="#e89a50" text-anchor="middle">베어 30%</text>
+    <text x="690" y="58" font-family="Playfair Display, Georgia, serif" font-size="22" fill="#fce8e4" text-anchor="middle">7,000~7,200</text>
+    <text x="690" y="84" font-family="monospace" font-size="11" fill="#9a7a72" text-anchor="middle">PCE 상회 시</text>
+
+    <!-- 블랙스완 -->
+    <rect x="840" y="0" width="260" height="100" rx="8" fill="#1a1218" stroke="#a060a0" stroke-width="1.5"/>
+    <text x="970" y="28" font-family="monospace" font-size="11" letter-spacing="2" fill="#a060a0" text-anchor="middle">블랙스완 10%</text>
+    <text x="970" y="58" font-family="Playfair Display, Georgia, serif" font-size="22" fill="#fce8e4" text-anchor="middle">6,500 이하</text>
+    <text x="970" y="84" font-family="monospace" font-size="11" fill="#9a7a72" text-anchor="middle">신용 이벤트</text>
+  </g>
+
+  <!-- 하단 구분선 + 서명 -->
+  <line x1="80" y1="640" x2="1200" y2="640" stroke="#3a2020" stroke-width="1"/>
+  <text x="80" y="668" font-family="Georgia, serif" font-style="italic" font-size="16" fill="#9a7a72">— Lincoln</text>
+  <text x="1200" y="668" font-family="monospace" font-size="12" fill="#5a3a30" text-anchor="end">lincoln-brief.vercel.app</text>
+</svg>
