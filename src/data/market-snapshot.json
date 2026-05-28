@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-05-28T22:30:57.887Z",
+  "asOf": "2026-05-28T23:19:57.740Z",
   "asOfLabel": "5/28 한국·미국 마감",
   "source": "Yahoo Finance · KRX",
   "us": {
@@ -568,8 +568,8 @@
         "symbol": "USDKRW",
         "label": "USD/KRW",
         "close": 1493.69,
-        "change": -9.419985351562445,
-        "changePct": -0.6266996722371719,
+        "change": -11.749941406249945,
+        "changePct": -0.7804988484146488,
         "note": "하락"
       }
     ],
@@ -1160,28 +1160,28 @@
     {
       "symbol": "USD/KRW",
       "value": "1,493.69",
-      "change": "-0.63%",
+      "change": "-0.78%",
       "up": false,
       "market": "fx"
     },
     {
       "symbol": "BTC",
-      "value": "$73,495",
+      "value": "$73,499",
       "change": "-1.14%",
       "up": false,
       "market": "crypto"
     },
     {
       "symbol": "GOLD",
-      "value": "$4,525.10",
-      "change": "+1.74%",
+      "value": "$4,525.20",
+      "change": "+1.75%",
       "up": true,
       "market": "commodity"
     },
     {
       "symbol": "WTI",
-      "value": "$88.57",
-      "change": "-0.12%",
+      "value": "$88.53",
+      "change": "-0.17%",
       "up": false,
       "market": "commodity"
     },
@@ -1201,35 +1201,11 @@
     },
     "crypto": {
       "source": "coingecko",
-      "btcUsd": 73516,
-      "change24hPct": -1.2888594699606695,
-      "asOf": "2026-05-28T22:30:33.000Z"
+      "btcUsd": 73491,
+      "change24hPct": -1.2447810374031292,
+      "asOf": "2026-05-28T23:17:59.000Z"
     },
-    "fred": {
-      "source": "fred",
-      "series": {
-        "DGS10": {
-          "value": 4.48,
-          "asOf": "2026-05-27"
-        },
-        "SP500": {
-          "value": 7520.36,
-          "asOf": "2026-05-27"
-        },
-        "NASDAQCOM": {
-          "value": 26674.73,
-          "asOf": "2026-05-27"
-        },
-        "DJIA": {
-          "value": 50644.28,
-          "asOf": "2026-05-27"
-        },
-        "DCOILWTICO": {
-          "value": 97.63,
-          "asOf": "2026-05-26"
-        }
-      }
-    },
+    "fred": null,
     "usStocks": {
       "source": "finnhub",
       "quotes": {
@@ -1263,15 +1239,15 @@
       "source": "twelvedata",
       "quotes": {
         "XAU/USD": {
-          "price": 4495.62186,
+          "price": 4496.03703,
           "previousClose": 4496.36988,
-          "changePct": -0.016636087
+          "changePct": -0.0074026383
         }
       }
     },
     "yahoo": {
       "usdKrw": 1493.69,
-      "btcUsd": 73495.3
+      "btcUsd": 73498.78
     }
   }
 }
