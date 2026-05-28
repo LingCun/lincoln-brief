@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d1a10"/>
+      <stop offset="100%" stop-color="#060d07"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#9ac090"/>
+      <stop offset="50%" stop-color="#7a9d6e"/>
+      <stop offset="100%" stop-color="#5a7a52"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#7a9d6e" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#7a9d6e" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#d8b878" stop-opacity="0.07"/>
+      <stop offset="100%" stop-color="#d8b878" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1060" cy="200" r="370" fill="url(#glow1)"/>
+  <circle cx="160" cy="560" r="230" fill="url(#glow2)"/>
+
+  <!-- 좌상단 브랜드 -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#7a9d6e" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#ddeedd">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#7a9d6e">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#7a9d6e" text-anchor="end">2026.05.29 · ECONOMY ISSUE · SLOT 06</text>
+
+  <!-- 에디션 라벨 -->
+  <text x="80" y="175" font-family="monospace" font-size="13" letter-spacing="5" fill="#7a9d6e">— 경제 이슈 · 금 구조 분석 —</text>
+
+  <!-- 메인 헤드라인 -->
+  <text x="80" y="265" font-family="Playfair Display, Georgia, serif" font-size="62" font-weight="500" fill="#ddeedd">금 $4,527(+1.79%)</text>
+  <text x="80" y="335" font-family="Playfair Display, Georgia, serif" font-size="38" font-style="italic" fill="url(#green)">연중 최고권 — 3중 구조적 배경</text>
+  <text x="80" y="385" font-family="Pretendard, sans-serif" font-size="18" fill="#7aab78">실질금리 하락·달러 약세·중앙은행 수요  ·  BTC −1.03% 대조</text>
+
+  <!-- 3중 배경 데이터 그리드 -->
+  <g transform="translate(80, 455)">
+    <!-- 금 -->
+    <g>
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#d8b878" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#7aab78">GOLD</text>
+      <text x="0" y="68" font-family="Playfair Display, Georgia, serif" font-size="28" fill="#ddeedd">$4,527</text>
+      <polygon points="0,76 14,76 7,90" fill="#6ba368"/>
+      <text x="22" y="93" font-family="monospace" font-size="13" fill="#6ba368">+1.79%</text>
+    </g>
+    <!-- 10년물 -->
+    <g transform="translate(240, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#7a9d6e" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#7aab78">10년물</text>
+      <text x="0" y="68" font-family="Playfair Display, Georgia, serif" font-size="28" fill="#ddeedd">4.455%</text>
+      <polygon points="7,76 14,90 0,90" fill="#6ba368"/>
+      <text x="22" y="90" font-family="monospace" font-size="13" fill="#6ba368">하락</text>
+    </g>
+    <!-- 달러 -->
+    <g transform="translate(490, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#7a9d6e" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#7aab78">USD/KRW</text>
+      <text x="0" y="68" font-family="Playfair Display, Georgia, serif" font-size="28" fill="#ddeedd">1,494</text>
+      <polygon points="7,76 14,90 0,90" fill="#6ba368"/>
+      <text x="22" y="90" font-family="monospace" font-size="13" fill="#6ba368">달러 약세</text>
+    </g>
+    <!-- BTC 대조 -->
+    <g transform="translate(750, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#d96552" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#7aab78">BTC (대조)</text>
+      <text x="0" y="68" font-family="Playfair Display, Georgia, serif" font-size="28" fill="#ddeedd">$73,582</text>
+      <polygon points="7,76 14,90 0,90" fill="#d96552"/>
+      <text x="22" y="90" font-family="monospace" font-size="13" fill="#d96552">−1.03%</text>
+    </g>
+  </g>
+
+  <!-- 하단 구분선 + 서명 -->
+  <line x1="80" y1="640" x2="1200" y2="640" stroke="#1a3020" stroke-width="1"/>
+  <text x="80" y="668" font-family="Georgia, serif" font-style="italic" font-size="16" fill="#507040">— Lincoln</text>
+  <text x="1200" y="668" font-family="monospace" font-size="12" fill="#305020" text-anchor="end">lincoln-brief.vercel.app</text>
+</svg>
