@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d1018"/>
+      <stop offset="100%" stop-color="#070810"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f0d88c"/>
+      <stop offset="50%" stop-color="#d8b878"/>
+      <stop offset="100%" stop-color="#b89a5a"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#d8b878" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#d8b878" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#4a7bcc" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#4a7bcc" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1100" cy="140" r="380" fill="url(#glow1)"/>
+  <circle cx="180" cy="600" r="300" fill="url(#glow2)"/>
+
+  <!-- Header -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#d8b878" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#f5edd9">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#d8b878">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#d8b878" text-anchor="end">2026.05.28 11:00 KST · KR FORECAST</text>
+
+  <!-- Edition label -->
+  <text x="80" y="160" font-family="monospace" font-size="13" letter-spacing="5" fill="#d8b878">— 시장 예측 —</text>
+
+  <!-- Badge -->
+  <rect x="80" y="176" width="360" height="30" rx="4" fill="#e05555" fill-opacity="0.20" stroke="#e05555" stroke-width="0.8"/>
+  <text x="92" y="196" font-family="monospace" font-size="12" letter-spacing="2" fill="#e05555">8,000선 붕괴 · 베어 케이스 진입</text>
+
+  <!-- Main title -->
+  <text x="80" y="290" font-family="Playfair Display, Georgia, serif" font-size="58" font-weight="500" fill="#f5edd9">KOSPI 7,939</text>
+  <text x="80" y="350" font-family="Playfair Display, Georgia, serif" font-size="40" font-style="italic" fill="url(#gold)">8,000선 붕괴 — 다음 방향은?</text>
+  <text x="80" y="398" font-family="sans-serif" font-size="17" fill="#8898a8">베이스 7,800~8,200 · 배터리 로테이션 변수 · 8,000 회복이 관건</text>
+
+  <!-- Divider -->
+  <line x1="80" y1="432" x2="1200" y2="432" stroke="#2a3a4a" stroke-width="1"/>
+
+  <!-- Scenario mini-table -->
+  <g transform="translate(80, 460)">
+    <text x="0" y="20" font-family="monospace" font-size="11" letter-spacing="3" fill="#a89060">시나리오 확률 분포</text>
+    <!-- Bars -->
+    <rect x="0" y="32" width="250" height="22" rx="3" fill="#4a7bcc" fill-opacity="0.30"/>
+    <rect x="0" y="32" width="250" height="22" rx="3" fill="#4a7bcc" fill-opacity="0.10" stroke="#4a7bcc" stroke-width="0.6"/>
+    <text x="8" y="47" font-family="monospace" font-size="12" fill="#8aaccc">베이스 50% · 7,800~8,200</text>
+
+    <rect x="0" y="62" width="100" height="22" rx="3" fill="#4db86b" fill-opacity="0.25" stroke="#4db86b" stroke-width="0.6"/>
+    <text x="8" y="77" font-family="monospace" font-size="12" fill="#6ab878">불 케이스 20% · 8,200+</text>
+
+    <rect x="0" y="92" width="125" height="22" rx="3" fill="#e05555" fill-opacity="0.25" stroke="#e05555" stroke-width="0.6"/>
+    <text x="8" y="107" font-family="monospace" font-size="12" fill="#cc7070">베어 케이스 25% · 7,500~7,800</text>
+
+    <rect x="0" y="122" width="25" height="22" rx="3" fill="#888888" fill-opacity="0.25" stroke="#888888" stroke-width="0.6"/>
+    <text x="8" y="137" font-family="monospace" font-size="12" fill="#888888">블랙 스완 5%</text>
+  </g>
+
+  <!-- Right side key metric -->
+  <g transform="translate(820, 468)">
+    <line x1="0" y1="0" x2="50" y2="0" stroke="#d8b878" stroke-width="1.5"/>
+    <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="3" fill="#a89060">SK하이닉스</text>
+    <text x="0" y="66" font-family="Playfair Display, Georgia, serif" font-size="28" fill="#f5edd9">2,194,000</text>
+    <polygon points="0,88 14,72 28,88" fill="#e05555"/>
+    <text x="36" y="87" font-family="monospace" font-size="16" fill="#e05555">−2.18%</text>
+
+    <line x1="0" y1="106" x2="50" y2="106" stroke="#d8b878" stroke-width="1.5"/>
+    <text x="0" y="130" font-family="monospace" font-size="11" letter-spacing="3" fill="#a89060">USD/KRW</text>
+    <text x="0" y="166" font-family="Playfair Display, Georgia, serif" font-size="28" fill="#f5edd9">1,507원</text>
+  </g>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="680" width="1280" height="40" fill="#080a10" fill-opacity="0.8"/>
+  <text x="80" y="706" font-family="monospace" font-size="11" letter-spacing="2" fill="#6a7880">1차 지지 7,800 · 2차 지지 7,600 · LG에너지솔루션 +11.47% 새 변수</text>
+</svg>
