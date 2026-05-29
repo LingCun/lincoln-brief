@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d1220"/>
+      <stop offset="100%" stop-color="#060a14"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7a9dd8"/>
+      <stop offset="50%" stop-color="#5677b0"/>
+      <stop offset="100%" stop-color="#3a5590"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#5677b0" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#5677b0" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#d8b878" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#d8b878" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1000" cy="200" r="380" fill="url(#glow1)"/>
+  <circle cx="180" cy="550" r="220" fill="url(#glow2)"/>
+
+  <!-- 좌상단 브랜드 -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#5677b0" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#d0dcf0">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#5677b0">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#5677b0" text-anchor="end">2026.05.30 · STOCK ANALYSIS · SLOT 06</text>
+
+  <!-- 에디션 라벨 -->
+  <text x="80" y="175" font-family="monospace" font-size="13" letter-spacing="5" fill="#5677b0">— 종목 분석 —</text>
+
+  <!-- 종목 이름 크게 -->
+  <text x="80" y="280" font-family="Playfair Display, Georgia, serif" font-size="80" font-weight="700" fill="url(#blue)">AVGO</text>
+  <text x="80" y="340" font-family="Playfair Display, Georgia, serif" font-size="32" font-style="italic" fill="#d0dcf0">Broadcom — AI 맞춤형 반도체</text>
+
+  <!-- 메인 수치 -->
+  <text x="80" y="415" font-family="monospace" font-size="48" font-weight="700" fill="#f5edd9">$446.77</text>
+  <g transform="translate(410, 390)">
+    <polygon points="0,38 22,38 11,20" fill="#6ba368"/>
+    <text x="30" y="38" font-family="monospace" font-size="38" fill="#6ba368">+4.73%</text>
+  </g>
+
+  <!-- 서브 텍스트 -->
+  <text x="80" y="475" font-family="Pretendard, sans-serif" font-size="17" fill="#788ea8">30일 저점 $399.63 대비 +11.8% 회복  ·  30일 신고가 경신</text>
+  <text x="80" y="510" font-family="Pretendard, sans-serif" font-size="17" fill="#788ea8">MSFT +5.44%와 AI 인프라 2레이어 동반 강세  ·  NVDA −1.45%와 대비</text>
+
+  <!-- 구분선 -->
+  <line x1="80" y1="550" x2="1200" y2="550" stroke="#1e2d4a" stroke-width="1"/>
+
+  <!-- 시나리오 간단 표 -->
+  <text x="80" y="582" font-family="monospace" font-size="12" letter-spacing="2" fill="#5677b0">SCENARIO</text>
+  <text x="250" y="582" font-family="monospace" font-size="12" fill="#788ea8">베이스 36%  ·  불 28%  ·  베어 26%  ·  블랙스완 10%</text>
+  <text x="80" y="610" font-family="monospace" font-size="12" letter-spacing="2" fill="#5677b0">PCE</text>
+  <text x="250" y="610" font-family="monospace" font-size="12" fill="#788ea8">오늘(5/30) 21:30 KST 발표 — 선반영된 기대 검증</text>
+
+  <!-- 하단 구분선 + 서명 -->
+  <line x1="80" y1="645" x2="1200" y2="645" stroke="#1e2d4a" stroke-width="1"/>
+  <text x="80" y="673" font-family="Georgia, serif" font-style="italic" font-size="16" fill="#788ea8">— Lincoln</text>
+  <text x="1200" y="673" font-family="monospace" font-size="12" fill="#304060" text-anchor="end">lincoln-brief.vercel.app</text>
+</svg>
