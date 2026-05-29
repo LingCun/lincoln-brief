@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a0e0a"/>
+      <stop offset="100%" stop-color="#100806"/>
+    </linearGradient>
+    <linearGradient id="coral" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f09080"/>
+      <stop offset="50%" stop-color="#d96552"/>
+      <stop offset="100%" stop-color="#b04a3a"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#d96552" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#d96552" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#d8b878" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#d8b878" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1080" cy="150" r="380" fill="url(#glow1)"/>
+  <circle cx="160" cy="600" r="300" fill="url(#glow2)"/>
+
+  <!-- Header -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#d96552" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#f5edd9">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#d96552">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#d96552" text-anchor="end">2026.05.29 11:00 KST · KR 시장예측</text>
+
+  <!-- Edition label -->
+  <text x="80" y="160" font-family="monospace" font-size="13" letter-spacing="5" fill="#d96552">— 시장 예측 업데이트 —</text>
+
+  <!-- Badge -->
+  <rect x="80" y="176" width="320" height="30" rx="4" fill="#d8b878" fill-opacity="0.15" stroke="#d8b878" stroke-width="0.8"/>
+  <text x="92" y="196" font-family="monospace" font-size="12" letter-spacing="2" fill="#d8b878">불 케이스 진입 · 다음 관문 8,600</text>
+
+  <!-- Main title -->
+  <text x="80" y="290" font-family="Playfair Display, Georgia, serif" font-size="68" font-weight="500" fill="#f5edd9">KOSPI 8,422</text>
+  <text x="80" y="355" font-family="Playfair Display, Georgia, serif" font-size="40" font-style="italic" fill="url(#coral)">불 케이스 레인지 진입</text>
+  <text x="80" y="406" font-family="sans-serif" font-size="17" fill="#8a9898">8,200~8,600 레인지 · KOSDAQ −2.72% 역방향 주의</text>
+
+  <!-- Divider -->
+  <line x1="80" y1="440" x2="1200" y2="440" stroke="#3a1810" stroke-width="1"/>
+
+  <!-- Scenario table -->
+  <g transform="translate(80, 474)">
+    <!-- Base -->
+    <g>
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#d96552" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="2" fill="#c08070">베이스 (45%)</text>
+      <text x="0" y="58" font-family="Playfair Display, Georgia, serif" font-size="22" fill="#f5edd9">8,200~8,600</text>
+    </g>
+    <!-- Bull -->
+    <g transform="translate(290, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#d96552" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="2" fill="#c08070">불 케이스 (20%)</text>
+      <text x="0" y="58" font-family="Playfair Display, Georgia, serif" font-size="22" fill="#4db86b">8,600~9,000</text>
+    </g>
+    <!-- Bear -->
+    <g transform="translate(580, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#d96552" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="2" fill="#c08070">베어 케이스 (30%)</text>
+      <text x="0" y="58" font-family="Playfair Display, Georgia, serif" font-size="22" fill="#e05555">7,800~8,200</text>
+    </g>
+    <!-- KOSDAQ -->
+    <g transform="translate(870, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#d96552" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="2" fill="#c08070">KOSDAQ</text>
+      <text x="0" y="58" font-family="Playfair Display, Georgia, serif" font-size="22" fill="#e05555">−2.72%</text>
+      <text x="0" y="80" font-family="monospace" font-size="12" fill="#8a7060">역방향 경고</text>
+    </g>
+  </g>
+
+  <!-- Bottom bar -->
+  <line x1="80" y1="670" x2="600" y2="670" stroke="#3a1810" stroke-width="0.5"/>
+  <text x="80" y="694" font-family="monospace" font-size="10" letter-spacing="2" fill="#6a3828">lincoln-brief.vercel.app</text>
+  <text x="1200" y="694" font-family="monospace" font-size="10" letter-spacing="2" fill="#6a3828" text-anchor="end">정보 제공 목적 · 투자 권유 아님</text>
+</svg>
