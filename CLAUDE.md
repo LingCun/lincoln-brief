@@ -8,7 +8,7 @@ Lincoln Brief is a Korean-language US/KR market briefing blog. It is half public
 
 ```powershell
 npm run dev                  # dev server at http://localhost:4321 (search NOT available in dev)
-npm run build                # astro build + pagefind --site .vercel/output/static
+npm run build                # astro build + fix-vercel-runtime (런타임 nodejs20.x 강제) + pagefind --site .vercel/output/static
 npm run preview              # preview built site, search works here
 
 npm run fetch:market         # refresh src/data/market-snapshot.json from Yahoo Finance (+ KRX if KRX_API_KEY)
@@ -28,6 +28,7 @@ Astro **4.16** (hybrid output) + Tailwind **3.4** + `@astrojs/mdx` 3.x + `@astro
 
 추가 핀:
 - `@astrojs/vercel@7` 는 Node 20 까지만 지원. `package.json` 의 `engines.node = "20.x"` 가 Vercel 빌드 환경을 Node 20 으로 묶음.
+  - **배포 안전망 (2026-05-30 추가)**: 어댑터 v7 의 런타임 매핑은 Node 18·20 만 안다 — 빌드가 Node 22 (CI 기본값·요즘 Vercel 빌드 이미지) 로 드리프트하면 함수 런타임을 **폐기된 `nodejs18.x` 로 조용히 폴백**하고, Vercel 이 배포를 거부한다 (`invalid Node.js Version "18.x"`, 2025-09-01 폐기). 어댑터 v8 은 `astro@^5` 요구라 4.16 핀과 충돌 → 업그레이드 대신 `scripts/fix-vercel-runtime.mjs` 가 `astro build` 직후 `.vercel/output/functions/**/.vc-config.json` 의 `runtime` 을 `nodejs20.x` 로 덮어쓴다 (build 스크립트에 포함, idempotent). 빌드 Node 가 20 이든 22 든 배포 가능한 런타임이 보장됨. Node 20 자체가 Vercel 에서 내려가면 그때는 Node 22 + `@astrojs/vercel@8` (= Astro 5 마이그레이션) 로 정식 전환 필요.
 - `output: 'hybrid'` — 페이지는 기본 정적, Keystatic 어드민 (`/keystatic`, `/api/keystatic/*`) 만 SSR 함수로 실행. 따라서 빌드 산출물이 `dist/` 가 아니라 `.vercel/output/static/` 으로 떨어지고, pagefind 도 그쪽을 가리킨다 (`npm run build` 스크립트 참고).
 
 Content collection lives at `src/content/config.ts` (Astro 4 location), not `src/content.config.ts` (Astro 6 location).
