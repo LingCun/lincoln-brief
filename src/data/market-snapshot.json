@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-05-30T12:30:53.057Z",
+  "asOf": "2026-05-30T13:30:44.551Z",
   "asOfLabel": "5/30 한국·미국 마감",
   "source": "Yahoo Finance · KRX",
   "us": {
@@ -1166,8 +1166,8 @@
     },
     {
       "symbol": "BTC",
-      "value": "$73,578",
-      "change": "+0.28%",
+      "value": "$73,669",
+      "change": "+0.40%",
       "up": true,
       "market": "crypto"
     },
@@ -1201,9 +1201,9 @@
     },
     "crypto": {
       "source": "coingecko",
-      "btcUsd": 73553,
-      "change24hPct": 0.46175786535200497,
-      "asOf": "2026-05-30T12:29:55.000Z"
+      "btcUsd": 73667,
+      "change24hPct": 1.1327189208104609,
+      "asOf": "2026-05-30T13:30:21.000Z"
     },
     "fred": {
       "source": "fred",
@@ -1234,28 +1234,28 @@
       "source": "finnhub",
       "quotes": {
         "AAPL": {
-          "price": 312.06,
+          "price": 312.08,
           "previousClose": 312.51,
-          "change": -0.45,
-          "changePct": -0.144
+          "change": -0.43,
+          "changePct": -0.1376
         },
         "MSFT": {
-          "price": 450.24,
+          "price": 450.26,
           "previousClose": 426.99,
-          "change": 23.25,
-          "changePct": 5.4451
+          "change": 23.27,
+          "changePct": 5.4498
         },
         "NVDA": {
-          "price": 211.14,
+          "price": 211.16,
           "previousClose": 214.25,
-          "change": -3.11,
-          "changePct": -1.4516
+          "change": -3.09,
+          "changePct": -1.4422
         },
         "TSLA": {
-          "price": 435.79,
+          "price": 435.81,
           "previousClose": 442.1,
-          "change": -6.31,
-          "changePct": -1.4273
+          "change": -6.29,
+          "changePct": -1.4228
         }
       }
     },
@@ -1263,15 +1263,15 @@
       "source": "twelvedata",
       "quotes": {
         "XAU/USD": {
-          "price": 4542.5674,
+          "price": 4542.57096,
           "previousClose": 4540.15778,
-          "changePct": 0.053073486
+          "changePct": 0.053151897
         }
       }
     },
     "yahoo": {
       "usdKrw": 1507.13,
-      "btcUsd": 73577.99
+      "btcUsd": 73669.3
     }
   }
 }
