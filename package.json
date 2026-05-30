@@ -8,7 +8,7 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build && pagefind --site .vercel/output/static",
+    "build": "astro build && node scripts/fix-vercel-runtime.mjs && pagefind --site .vercel/output/static",
     "preview": "astro preview",
     "astro": "astro",
     "fetch:market": "node scripts/fetch-market.mjs",
