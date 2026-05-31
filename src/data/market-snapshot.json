@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-05-31T20:30:52.550Z",
+  "asOf": "2026-05-31T21:01:36.419Z",
   "asOfLabel": "5/31 한국·미국 마감",
   "source": "Yahoo Finance · KRX",
   "us": {
@@ -567,9 +567,9 @@
       {
         "symbol": "USDKRW",
         "label": "USD/KRW",
-        "close": 1504.28,
-        "change": 8.989960937499973,
-        "changePct": 0.6012185397246675,
+        "close": 1506.46,
+        "change": 11.169960937500036,
+        "changePct": 0.7470096533581707,
         "note": "상승"
       }
     ],
@@ -1159,15 +1159,15 @@
     },
     {
       "symbol": "USD/KRW",
-      "value": "1,504.28",
-      "change": "+0.60%",
+      "value": "1,506.46",
+      "change": "+0.75%",
       "up": true,
       "market": "fx"
     },
     {
       "symbol": "BTC",
-      "value": "$73,583",
-      "change": "-0.23%",
+      "value": "$73,611",
+      "change": "-0.20%",
       "up": false,
       "market": "crypto"
     },
@@ -1201,9 +1201,9 @@
     },
     "crypto": {
       "source": "coingecko",
-      "btcUsd": 73594,
-      "change24hPct": -0.33792347575178294,
-      "asOf": "2026-05-31T20:30:00.000Z"
+      "btcUsd": 73638,
+      "change24hPct": -0.310060563825809,
+      "asOf": "2026-05-31T21:00:37.000Z"
     },
     "fred": {
       "source": "fred",
@@ -1215,14 +1215,6 @@
         "SP500": {
           "value": 7580.06,
           "asOf": "2026-05-29"
-        },
-        "DJIA": {
-          "value": 51032.46,
-          "asOf": "2026-05-29"
-        },
-        "DCOILWTICO": {
-          "value": 97.63,
-          "asOf": "2026-05-26"
         }
       }
     },
@@ -1259,15 +1251,15 @@
       "source": "twelvedata",
       "quotes": {
         "XAU/USD": {
-          "price": 4542.55925,
-          "previousClose": 4542.52645,
-          "changePct": 0.00072206514
+          "price": 4542.40701,
+          "previousClose": 4542.5767,
+          "changePct": -0.0037355451
         }
       }
     },
     "yahoo": {
-      "usdKrw": 1504.28,
-      "btcUsd": 73583.31
+      "usdKrw": 1506.46,
+      "btcUsd": 73611.01
     }
   }
 }
