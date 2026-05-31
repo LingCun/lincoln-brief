@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a0c08"/>
+      <stop offset="100%" stop-color="#0a0604"/>
+    </linearGradient>
+    <linearGradient id="red" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#e87060"/>
+      <stop offset="50%" stop-color="#d96552"/>
+      <stop offset="100%" stop-color="#b04535"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#d96552" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#d96552" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#d8b878" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#d8b878" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1100" cy="180" r="380" fill="url(#glow1)"/>
+  <circle cx="160" cy="580" r="230" fill="url(#glow2)"/>
+
+  <!-- 좌상단 브랜드 -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#d96552" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#f0d0c8">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#d96552">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#d96552" text-anchor="end">2026.06.01 · MARKET FORECAST · SLOT 06</text>
+
+  <!-- 에디션 라벨 -->
+  <text x="80" y="175" font-family="monospace" font-size="13" letter-spacing="5" fill="#d96552">— 섹터 예측 —</text>
+
+  <!-- 메인 헤드라인 -->
+  <text x="80" y="268" font-family="Playfair Display, Georgia, serif" font-size="58" font-weight="600" fill="#f0d0c8">AI 인프라 랠리의 지속 조건</text>
+  <text x="80" y="330" font-family="Playfair Display, Georgia, serif" font-size="36" font-style="italic" fill="url(#red)">고용 데이터가 바꿀 섹터 지도</text>
+  <text x="80" y="380" font-family="Pretendard, sans-serif" font-size="18" fill="#a07060">MSFT +5.44% · AVGO +4.73% vs GOOGL −2.51% · WMT −2.65%</text>
+
+  <!-- 데이터 그리드 -->
+  <g transform="translate(80, 445)">
+    <!-- 불케이스 -->
+    <g>
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#d96552" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#a07060">불 케이스</text>
+      <text x="0" y="68" font-family="Playfair Display, Georgia, serif" font-size="24" fill="#f0d0c8">26%</text>
+      <text x="0" y="95" font-family="monospace" font-size="12" fill="#6ba368">7,750~8,000</text>
+    </g>
+    <!-- 베이스 -->
+    <g transform="translate(200, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#d96552" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#a07060">베이스</text>
+      <text x="0" y="68" font-family="Playfair Display, Georgia, serif" font-size="24" fill="#f0d0c8">34%</text>
+      <text x="0" y="95" font-family="monospace" font-size="12" fill="#d8b878">7,400~7,750</text>
+    </g>
+    <!-- 베어 -->
+    <g transform="translate(400, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#d96552" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#a07060">베어 케이스</text>
+      <text x="0" y="68" font-family="Playfair Display, Georgia, serif" font-size="24" fill="#f0d0c8">29%</text>
+      <text x="0" y="95" font-family="monospace" font-size="12" fill="#c25e4a">7,000~7,300</text>
+    </g>
+    <!-- ADP -->
+    <g transform="translate(640, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#d96552" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#a07060">ADP</text>
+      <text x="0" y="68" font-family="Playfair Display, Georgia, serif" font-size="24" fill="#f0d0c8">6월 4일</text>
+      <text x="0" y="95" font-family="monospace" font-size="12" fill="#d0c0b0">21:30 KST</text>
+    </g>
+    <!-- NFP -->
+    <g transform="translate(850, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#d96552" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#a07060">NFP</text>
+      <text x="0" y="68" font-family="Playfair Display, Georgia, serif" font-size="24" fill="#f0d0c8">6월 6일</text>
+      <text x="0" y="95" font-family="monospace" font-size="12" fill="#d0c0b0">21:30 KST</text>
+    </g>
+  </g>
+
+  <!-- 하단 구분선 -->
+  <line x1="80" y1="608" x2="1200" y2="608" stroke="#3a1808" stroke-width="1"/>
+  <text x="80" y="640" font-family="monospace" font-size="11" letter-spacing="2" fill="#704030">불·베어 확률 26~29% 팽팽 — 데이터 확인 전 섣불리 베팅하기 어려운 구간</text>
+  <text x="1200" y="640" font-family="monospace" font-size="11" letter-spacing="2" fill="#704030" text-anchor="end">lincoln-brief.vercel.app</text>
+</svg>

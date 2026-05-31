@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a1208"/>
+      <stop offset="100%" stop-color="#060a04"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#9ac080"/>
+      <stop offset="50%" stop-color="#7a9d6e"/>
+      <stop offset="100%" stop-color="#567d4e"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#7a9d6e" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#7a9d6e" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#d8b878" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#d8b878" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1100" cy="180" r="380" fill="url(#glow1)"/>
+  <circle cx="160" cy="580" r="220" fill="url(#glow2)"/>
+
+  <!-- 좌상단 브랜드 -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#7a9d6e" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#c8e0c0">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#7a9d6e">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#7a9d6e" text-anchor="end">2026.06.01 · ECONOMY ISSUE · SLOT 06</text>
+
+  <!-- 에디션 라벨 -->
+  <text x="80" y="175" font-family="monospace" font-size="13" letter-spacing="5" fill="#7a9d6e">— USD/KRW · 달러 강세 —</text>
+
+  <!-- 메인 헤드라인 -->
+  <text x="80" y="268" font-family="Playfair Display, Georgia, serif" font-size="72" font-weight="600" fill="#c8e0c0">USD/KRW 1,504.28</text>
+  <text x="80" y="330" font-family="Playfair Display, Georgia, serif" font-size="38" font-style="italic" fill="url(#green)">달러 강세의 구조 — 세 가지 경로</text>
+  <text x="80" y="380" font-family="Pretendard, sans-serif" font-size="18" fill="#709060">미국 경제 상대적 강세  +  FOMC 불확실성 프리미엄</text>
+
+  <!-- 데이터 그리드 -->
+  <g transform="translate(80, 445)">
+    <!-- 경로 A -->
+    <g>
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#7a9d6e" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#709060">경로 A (인하)</text>
+      <text x="0" y="68" font-family="Playfair Display, Georgia, serif" font-size="26" fill="#c8e0c0">1,480↓</text>
+      <text x="0" y="95" font-family="monospace" font-size="11" fill="#6ba368">원화 강세</text>
+    </g>
+    <!-- 경로 B -->
+    <g transform="translate(220, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#7a9d6e" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#709060">경로 B (중립)</text>
+      <text x="0" y="68" font-family="Playfair Display, Georgia, serif" font-size="26" fill="#c8e0c0">1,500~10</text>
+      <text x="0" y="95" font-family="monospace" font-size="11" fill="#d8b878">현 수준 유지</text>
+    </g>
+    <!-- 경로 C -->
+    <g transform="translate(450, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#7a9d6e" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#709060">경로 C (매파)</text>
+      <text x="0" y="68" font-family="Playfair Display, Georgia, serif" font-size="26" fill="#c8e0c0">1,535↑</text>
+      <text x="0" y="95" font-family="monospace" font-size="11" fill="#c25e4a">달러 강세 확대</text>
+    </g>
+    <!-- 금 -->
+    <g transform="translate(700, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#7a9d6e" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#709060">GOLD</text>
+      <text x="0" y="68" font-family="Playfair Display, Georgia, serif" font-size="26" fill="#c8e0c0">$4,593</text>
+      <polygon points="0,76 14,76 7,90" fill="#6ba368"/>
+      <text x="22" y="93" font-family="monospace" font-size="13" fill="#6ba368">+2.08%</text>
+    </g>
+    <!-- BTC -->
+    <g transform="translate(920, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#7a9d6e" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#709060">BTC</text>
+      <text x="0" y="68" font-family="Playfair Display, Georgia, serif" font-size="26" fill="#c8e0c0">$73,583</text>
+      <polygon points="0,90 14,90 7,76" fill="#c25e4a"/>
+      <text x="22" y="93" font-family="monospace" font-size="13" fill="#c25e4a">−0.23%</text>
+    </g>
+  </g>
+
+  <!-- 하단 구분선 -->
+  <line x1="80" y1="608" x2="1200" y2="608" stroke="#1a3010" stroke-width="1"/>
+  <text x="80" y="640" font-family="monospace" font-size="11" letter-spacing="2" fill="#407030">달러 강세 + 금 강세 + BTC 약세 — FOMC 불확실성 헤지 수요의 삼각 구도</text>
+  <text x="1200" y="640" font-family="monospace" font-size="11" letter-spacing="2" fill="#407030" text-anchor="end">lincoln-brief.vercel.app</text>
+</svg>
