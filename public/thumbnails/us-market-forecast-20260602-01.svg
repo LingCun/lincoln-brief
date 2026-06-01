@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0814"/>
+      <stop offset="100%" stop-color="#060410"/>
+    </linearGradient>
+    <linearGradient id="purple" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#c8a8e8"/>
+      <stop offset="50%" stop-color="#a878d8"/>
+      <stop offset="100%" stop-color="#8858b8"/>
+    </linearGradient>
+    <linearGradient id="vsbar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#6ba368"/>
+      <stop offset="50%" stop-color="#d8d860"/>
+      <stop offset="100%" stop-color="#c87040"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#a878d8" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#a878d8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1050" cy="200" r="380" fill="url(#glow1)"/>
+
+  <!-- 좌상단 브랜드 -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#a878d8" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#c8a8e8">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#a878d8">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#a878d8" text-anchor="end">2026.06.02 · MARKET FORECAST · SLOT 01</text>
+
+  <!-- 에디션 라벨 -->
+  <text x="80" y="175" font-family="monospace" font-size="13" letter-spacing="5" fill="#a878d8">— 시장 예측 · 시나리오 분석 —</text>
+
+  <!-- 메인 헤드라인 -->
+  <text x="80" y="265" font-family="Playfair Display, Georgia, serif" font-size="54" font-weight="600" fill="#c8a8e8">NVDA 복귀 vs WTI 급등</text>
+  <text x="80" y="325" font-family="Playfair Display, Georgia, serif" font-size="34" font-style="italic" fill="url(#purple)">두 상충 신호 — 이번 주가 방향을 결정한다</text>
+  <text x="80" y="378" font-family="Pretendard, sans-serif" font-size="18" fill="#8868a8">ADP(6/4)  ·  NFP(6/6)  ·  FOMC(6/11)  —  3대 이벤트 앞 시나리오</text>
+
+  <!-- 시나리오 확률 시각화 -->
+  <g transform="translate(80, 430)">
+    <!-- 불 케이스 -->
+    <rect x="0" y="0" width="240" height="60" fill="#1a2810" rx="4"/>
+    <line x1="0" y1="0" x2="0" y2="60" stroke="#6ba368" stroke-width="3"/>
+    <text x="16" y="22" font-family="monospace" font-size="11" letter-spacing="2" fill="#6ba368">불 케이스</text>
+    <text x="16" y="48" font-family="Playfair Display, Georgia, serif" font-size="26" fill="#a8c8a0">22%</text>
+    <text x="180" y="48" font-family="monospace" font-size="13" fill="#6ba368">약한 고용</text>
+
+    <!-- 베이스 케이스 -->
+    <rect x="260" y="0" width="240" height="60" fill="#1a1820" rx="4"/>
+    <line x1="260" y1="0" x2="260" y2="60" stroke="#a878d8" stroke-width="3"/>
+    <text x="276" y="22" font-family="monospace" font-size="11" letter-spacing="2" fill="#a878d8">베이스 케이스</text>
+    <text x="276" y="48" font-family="Playfair Display, Georgia, serif" font-size="26" fill="#c8a8e8">33%</text>
+    <text x="410" y="48" font-family="monospace" font-size="13" fill="#a878d8">컨센서스</text>
+
+    <!-- 베어 케이스 -->
+    <rect x="520" y="0" width="240" height="60" fill="#241210" rx="4"/>
+    <line x1="520" y1="0" x2="520" y2="60" stroke="#c25e4a" stroke-width="3"/>
+    <text x="536" y="22" font-family="monospace" font-size="11" letter-spacing="2" fill="#c25e4a">베어 케이스</text>
+    <text x="536" y="48" font-family="Playfair Display, Georgia, serif" font-size="26" fill="#e8a898">32%</text>
+    <text x="680" y="48" font-family="monospace" font-size="13" fill="#c25e4a">강한 고용+WTI</text>
+
+    <!-- 블랙 스완 -->
+    <rect x="780" y="0" width="200" height="60" fill="#141010" rx="4"/>
+    <line x1="780" y1="0" x2="780" y2="60" stroke="#686060" stroke-width="3"/>
+    <text x="796" y="22" font-family="monospace" font-size="11" letter-spacing="2" fill="#686060">블랙 스완</text>
+    <text x="796" y="48" font-family="Playfair Display, Georgia, serif" font-size="26" fill="#888080">13%</text>
+  </g>
+
+  <!-- 핵심 지표 -->
+  <g transform="translate(80, 530)">
+    <text x="0" y="0" font-family="monospace" font-size="13" fill="#8868a8">S&amp;P 500</text>
+    <text x="0" y="24" font-family="Playfair Display, Georgia, serif" font-size="22" fill="#c8a8e8">7,612.99 (+0.43%)</text>
+    <text x="280" y="0" font-family="monospace" font-size="13" fill="#6ba368">NVDA</text>
+    <text x="280" y="24" font-family="Playfair Display, Georgia, serif" font-size="22" fill="#a8c8a0">$224.02 (+6.10%)</text>
+    <text x="580" y="0" font-family="monospace" font-size="13" fill="#c87040">WTI 유가</text>
+    <text x="580" y="24" font-family="Playfair Display, Georgia, serif" font-size="22" fill="#e8b080">$92.24 (+5.59%)</text>
+    <text x="880" y="0" font-family="monospace" font-size="13" fill="#8868a8">USD/KRW</text>
+    <text x="880" y="24" font-family="Playfair Display, Georgia, serif" font-size="22" fill="#c8a8e8">1,513.34 (+1.21%)</text>
+  </g>
+
+  <!-- 하단 구분선 -->
+  <line x1="80" y1="620" x2="1200" y2="620" stroke="#181428" stroke-width="1"/>
+  <text x="80" y="650" font-family="monospace" font-size="11" letter-spacing="2" fill="#404060">불(22%) vs 베어(32%) — WTI 방향이 FOMC 방향을 결정한다</text>
+  <text x="1200" y="650" font-family="monospace" font-size="11" letter-spacing="2" fill="#404060" text-anchor="end">lincoln-brief.vercel.app</text>
+</svg>
