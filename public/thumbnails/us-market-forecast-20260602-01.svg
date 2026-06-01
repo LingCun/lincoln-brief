@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#130808"/>
+      <stop offset="100%" stop-color="#08040a"/>
+    </linearGradient>
+    <linearGradient id="red" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#e88070"/>
+      <stop offset="50%" stop-color="#d96552"/>
+      <stop offset="100%" stop-color="#b94535"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#d96552" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#d96552" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1080" cy="180" r="350" fill="url(#glow1)"/>
+
+  <!-- 좌상단 브랜드 -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#d96552" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#f0d0c8">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#d96552">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#d96552" text-anchor="end">2026.06.02 · MARKET FORECAST · SLOT 01</text>
+
+  <!-- 에디션 라벨 -->
+  <text x="80" y="175" font-family="monospace" font-size="13" letter-spacing="5" fill="#d96552">— 시장 예측 —</text>
+
+  <!-- 메인 헤드라인 -->
+  <text x="80" y="260" font-family="Playfair Display, Georgia, serif" font-size="54" font-weight="600" fill="#f0d0c8">AI칩 랠리 + 유가 급등의 공존</text>
+  <text x="80" y="320" font-family="Playfair Display, Georgia, serif" font-size="34" font-style="italic" fill="url(#red)">이 모순은 오래 지속될 수 없다</text>
+  <text x="80" y="370" font-family="Pretendard, sans-serif" font-size="18" fill="#c09080">NVDA +6.10%  vs  WTI +5.59%  ·  ADP(6/4)·NFP(6/6)·FOMC(6/11)</text>
+
+  <!-- 시나리오 테이블 -->
+  <g transform="translate(80, 430)">
+    <!-- 불 케이스 -->
+    <rect x="0" y="0" width="260" height="90" fill="#1a2510" rx="4"/>
+    <text x="16" y="24" font-family="monospace" font-size="11" letter-spacing="2" fill="#6ba368">불 케이스 22%</text>
+    <text x="16" y="48" font-family="Pretendard, sans-serif" font-size="14" fill="#a8d0a0">약한 고용 + 유가 안정</text>
+    <text x="16" y="72" font-family="Playfair Display, Georgia, serif" font-size="18" fill="#6ba368">NVDA $240+ 탈환</text>
+
+    <!-- 베이스케이스 -->
+    <rect x="280" y="0" width="260" height="90" fill="#1a1510" rx="4"/>
+    <text x="296" y="24" font-family="monospace" font-size="11" letter-spacing="2" fill="#d8b878">베이스 30%</text>
+    <text x="296" y="48" font-family="Pretendard, sans-serif" font-size="14" fill="#d0c090">컨센서스 데이터 + 동결</text>
+    <text x="296" y="72" font-family="Playfair Display, Georgia, serif" font-size="18" fill="#d8b878">박스권 유지</text>
+
+    <!-- 베어 케이스 -->
+    <rect x="560" y="0" width="280" height="90" fill="#1a0808" rx="4"/>
+    <text x="576" y="24" font-family="monospace" font-size="11" letter-spacing="2" fill="#d96552">베어 케이스 35%</text>
+    <text x="576" y="48" font-family="Pretendard, sans-serif" font-size="14" fill="#d09080">강한 고용 + 유가 지속</text>
+    <text x="576" y="72" font-family="Playfair Display, Georgia, serif" font-size="18" fill="#d96552">NVDA $200↓ 재하락</text>
+
+    <!-- 블랙 스완 -->
+    <rect x="860" y="0" width="260" height="90" fill="#0d0d0d" rx="4"/>
+    <text x="876" y="24" font-family="monospace" font-size="11" letter-spacing="2" fill="#888">블랙 스완 13%</text>
+    <text x="876" y="48" font-family="Pretendard, sans-serif" font-size="14" fill="#888">WTI $100+ 에스컬레이션</text>
+    <text x="876" y="72" font-family="Playfair Display, Georgia, serif" font-size="18" fill="#888">전방위 하락</text>
+  </g>
+
+  <!-- 하단 -->
+  <line x1="80" y1="690" x2="1200" y2="690" stroke="#d96552" stroke-width="0.5" stroke-opacity="0.4"/>
+  <text x="80" y="710" font-family="monospace" font-size="11" fill="#c09080" letter-spacing="2">lincoln-brief.vercel.app</text>
+  <text x="1200" y="710" font-family="monospace" font-size="11" fill="#c09080" letter-spacing="2" text-anchor="end">※ 투자 권유 아님</text>
+</svg>
