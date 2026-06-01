@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#080e14"/>
+      <stop offset="100%" stop-color="#040810"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#88b8e8"/>
+      <stop offset="50%" stop-color="#6898d8"/>
+      <stop offset="100%" stop-color="#4878b8"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#6898d8" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#6898d8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#c25e4a" stop-opacity="0.07"/>
+      <stop offset="100%" stop-color="#c25e4a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1050" cy="180" r="380" fill="url(#glow1)"/>
+  <circle cx="200" cy="540" r="200" fill="url(#glow2)"/>
+
+  <!-- 좌상단 브랜드 -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#6898d8" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#a8c8e8">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#6898d8">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#6898d8" text-anchor="end">2026.06.02 · STOCK ANALYSIS · SLOT 06</text>
+
+  <!-- 에디션 라벨 -->
+  <text x="80" y="175" font-family="monospace" font-size="13" letter-spacing="5" fill="#6898d8">— META 종목 분석 —</text>
+
+  <!-- 메인 헤드라인 -->
+  <text x="80" y="268" font-family="Playfair Display, Georgia, serif" font-size="72" font-weight="600" fill="#a8c8e8">META $600.47</text>
+  <text x="80" y="330" font-family="Playfair Display, Georgia, serif" font-size="36" font-style="italic" fill="url(#blue)">12종목 최대 낙폭 · AI 소비주의 한계</text>
+  <text x="80" y="382" font-family="Pretendard, sans-serif" font-size="18" fill="#6888a8">30일 고점 $678.62 대비 −11.5% · 같은 날 NVDA +6.26%</text>
+
+  <!-- 데이터 그리드 -->
+  <g transform="translate(80, 450)">
+    <!-- META 종가 -->
+    <g>
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#6898d8" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#6888a8">META 종가</text>
+      <text x="0" y="68" font-family="Playfair Display, Georgia, serif" font-size="28" fill="#a8c8e8">$600.47</text>
+      <polygon points="0,90 14,90 7,76" fill="#c25e4a"/>
+      <text x="22" y="93" font-family="monospace" font-size="13" fill="#c25e4a">−5.07%</text>
+    </g>
+    <!-- 30일 고점 -->
+    <g transform="translate(210, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#6898d8" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#6888a8">30일 고점</text>
+      <text x="0" y="68" font-family="Playfair Display, Georgia, serif" font-size="28" fill="#a8c8e8">$678.62</text>
+      <polygon points="0,90 14,90 7,76" fill="#c25e4a"/>
+      <text x="22" y="93" font-family="monospace" font-size="13" fill="#c25e4a">−11.5% ↓</text>
+    </g>
+    <!-- NVDA 대비 -->
+    <g transform="translate(440, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#6898d8" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#6888a8">NVDA 동일날</text>
+      <text x="0" y="68" font-family="Playfair Display, Georgia, serif" font-size="28" fill="#a8c8e8">$224.36</text>
+      <polygon points="0,76 14,76 7,90" fill="#6ba368"/>
+      <text x="22" y="93" font-family="monospace" font-size="13" fill="#6ba368">+6.26%</text>
+    </g>
+    <!-- 격차 -->
+    <g transform="translate(680, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#6898d8" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#6888a8">META vs NVDA</text>
+      <text x="0" y="68" font-family="Playfair Display, Georgia, serif" font-size="28" fill="#c25e4a">−11.3%p</text>
+      <text x="0" y="100" font-family="monospace" font-size="12" fill="#6888a8">하루 격차</text>
+    </g>
+  </g>
+
+  <!-- 하단 구분선 -->
+  <line x1="80" y1="680" x2="1200" y2="680" stroke="#6898d8" stroke-width="0.5" stroke-opacity="0.4"/>
+  <text x="80" y="705" font-family="monospace" font-size="10" letter-spacing="2" fill="#405870">lincoln-brief.vercel.app · 정보 제공 목적, 투자 권유 아님</text>
+</svg>
