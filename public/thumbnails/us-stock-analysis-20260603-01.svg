@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#080c14"/>
+      <stop offset="100%" stop-color="#06080f"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7899cc"/>
+      <stop offset="50%" stop-color="#5677b0"/>
+      <stop offset="100%" stop-color="#3a5590"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#5677b0" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#5677b0" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#5677b0" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#5677b0" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1100" cy="180" r="380" fill="url(#glow1)"/>
+  <circle cx="140" cy="580" r="220" fill="url(#glow2)"/>
+
+  <!-- 좌상단 브랜드 -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#5677b0" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#a8c0e0">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#5677b0">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#5677b0" text-anchor="end">2026.06.03 · STOCK ANALYSIS · SLOT 01</text>
+
+  <!-- 에디션 라벨 -->
+  <text x="80" y="175" font-family="monospace" font-size="13" letter-spacing="5" fill="#5677b0">— 종목 분석 · MSFT —</text>
+
+  <!-- 메인 헤드라인 -->
+  <text x="80" y="268" font-family="Playfair Display, Georgia, serif" font-size="72" font-weight="600" fill="#c8d8f0">Microsoft</text>
+  <text x="80" y="330" font-family="Playfair Display, Georgia, serif" font-size="40" font-style="italic" fill="url(#blue)">$442.17  −3.98%  30일 신고가 직후 급락</text>
+  <text x="80" y="382" font-family="Pretendard, sans-serif" font-size="18" fill="#6888a8">30일 고점 $460.52 → 오늘 $442.17  ·  GOOGL −3.04% 동반  ·  AVGO +3.08%</text>
+
+  <!-- 데이터 그리드 -->
+  <g transform="translate(80, 445)">
+    <!-- 현재가 -->
+    <g>
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#5677b0" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#6888a8">MSFT 종가</text>
+      <text x="0" y="68" font-family="Playfair Display, Georgia, serif" font-size="28" fill="#c8d8f0">$442.17</text>
+      <polygon points="7,76 0,90 14,90" fill="#c06060"/>
+      <text x="22" y="93" font-family="monospace" font-size="13" fill="#c06060">−3.98%</text>
+    </g>
+    <!-- 30일 신고가 -->
+    <g transform="translate(210, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#5677b0" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#6888a8">30D HIGH</text>
+      <text x="0" y="68" font-family="Playfair Display, Georgia, serif" font-size="28" fill="#c8d8f0">$460.52</text>
+      <text x="0" y="93" font-family="monospace" font-size="12" fill="#8898b8">전일 기록</text>
+    </g>
+    <!-- 30일 저점 -->
+    <g transform="translate(430, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#5677b0" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#6888a8">30D LOW</text>
+      <text x="0" y="68" font-family="Playfair Display, Georgia, serif" font-size="28" fill="#c8d8f0">$405.21</text>
+      <text x="0" y="93" font-family="monospace" font-size="12" fill="#6ba368">저점 대비 +9.1%</text>
+    </g>
+    <!-- GOOGL -->
+    <g transform="translate(640, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#5677b0" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#6888a8">GOOGL</text>
+      <text x="0" y="68" font-family="Playfair Display, Georgia, serif" font-size="28" fill="#c8d8f0">$364.94</text>
+      <polygon points="7,76 0,90 14,90" fill="#c06060"/>
+      <text x="22" y="93" font-family="monospace" font-size="13" fill="#c06060">−3.04%</text>
+    </g>
+    <!-- AVGO -->
+    <g transform="translate(850, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#5677b0" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#6888a8">AVGO</text>
+      <text x="0" y="68" font-family="Playfair Display, Georgia, serif" font-size="28" fill="#c8d8f0">$474.14</text>
+      <polygon points="0,76 14,76 7,90" fill="#6ba368"/>
+      <text x="22" y="93" font-family="monospace" font-size="13" fill="#6ba368">+3.08%</text>
+    </g>
+    <!-- S&P -->
+    <g transform="translate(1060, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#5677b0" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#6888a8">S&amp;P 500</text>
+      <text x="0" y="68" font-family="Playfair Display, Georgia, serif" font-size="28" fill="#c8d8f0">7,607</text>
+      <polygon points="0,76 14,76 7,90" fill="#6ba368"/>
+      <text x="22" y="93" font-family="monospace" font-size="13" fill="#6ba368">+0.10%</text>
+    </g>
+  </g>
+
+  <!-- 하단 구분선 -->
+  <line x1="80" y1="625" x2="1200" y2="625" stroke="#5677b0" stroke-width="0.5" stroke-opacity="0.4"/>
+  <text x="80" y="650" font-family="monospace" font-size="10" letter-spacing="2" fill="#405870">Lincoln Brief · lincoln-brief.vercel.app · 본 자료는 정보 제공 목적이며 투자 권유가 아닙니다</text>
+</svg>
