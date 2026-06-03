@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#080d18"/>
+      <stop offset="100%" stop-color="#050810"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7a9fd8"/>
+      <stop offset="50%" stop-color="#5677b0"/>
+      <stop offset="100%" stop-color="#3a5890"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#5677b0" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#5677b0" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#d8b878" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#d8b878" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1050" cy="180" r="380" fill="url(#glow1)"/>
+  <circle cx="180" cy="560" r="200" fill="url(#glow2)"/>
+
+  <!-- 좌상단 브랜드 -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#5677b0" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#a0b8d8">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#5677b0">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#5677b0" text-anchor="end">2026.06.04 · STOCK ANALYSIS · SLOT 01</text>
+
+  <!-- 에디션 라벨 -->
+  <text x="80" y="175" font-family="monospace" font-size="13" letter-spacing="5" fill="#5677b0">— 종목 분석 —</text>
+
+  <!-- 티커 강조 -->
+  <text x="80" y="290" font-family="Playfair Display, Georgia, serif" font-size="96" font-weight="700" fill="url(#blue)" opacity="0.15">META</text>
+  <text x="80" y="280" font-family="Playfair Display, Georgia, serif" font-size="72" font-weight="700" fill="#e8f0ff">META</text>
+
+  <!-- 가격 데이터 -->
+  <text x="80" y="340" font-family="Playfair Display, Georgia, serif" font-size="44" font-weight="600" fill="#a0b8d8">$621.85</text>
+  <polygon points="510,310 530,310 520,330" fill="#6ba368"/>
+  <text x="540" y="338" font-family="monospace" font-size="38" font-weight="700" fill="#6ba368">+4.05%</text>
+
+  <!-- 서브 헤드라인 -->
+  <text x="80" y="395" font-family="Pretendard, sans-serif" font-size="20" fill="#7090b8">빅테크 역풍 속 나홀로 급등 · Wolfe 밸류에이션 재확인</text>
+  <text x="80" y="425" font-family="Pretendard, sans-serif" font-size="17" fill="#506890">NVDA −3.07% · MSFT −2.99% · AMZN −2.95% 동반 하락 날</text>
+
+  <!-- 비교 데이터 그리드 -->
+  <g transform="translate(80, 475)">
+    <g>
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#5677b0" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#506890">30일 고점</text>
+      <text x="0" y="62" font-family="Playfair Display, Georgia, serif" font-size="24" fill="#a0b8d8">$674.72</text>
+    </g>
+    <g transform="translate(220, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#5677b0" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#506890">30일 저점</text>
+      <text x="0" y="62" font-family="Playfair Display, Georgia, serif" font-size="24" fill="#a0b8d8">$597.63</text>
+    </g>
+    <g transform="translate(440, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#5677b0" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#506890">오늘 종가</text>
+      <text x="0" y="62" font-family="Playfair Display, Georgia, serif" font-size="24" fill="#e8f0ff">$621.85</text>
+    </g>
+    <g transform="translate(660, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#5677b0" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#506890">S&amp;P 500</text>
+      <text x="0" y="62" font-family="Playfair Display, Georgia, serif" font-size="24" fill="#a0b8d8">−0.44%</text>
+    </g>
+    <g transform="translate(880, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#5677b0" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#506890">1Y 목표가</text>
+      <text x="0" y="62" font-family="Playfair Display, Georgia, serif" font-size="24" fill="#a0b8d8">$826.75</text>
+    </g>
+  </g>
+
+  <!-- 하단 구분선 -->
+  <line x1="80" y1="625" x2="1200" y2="625" stroke="#5677b0" stroke-width="0.5" stroke-opacity="0.4"/>
+  <text x="80" y="650" font-family="monospace" font-size="10" letter-spacing="2" fill="#304860">Lincoln Brief · lincoln-brief.vercel.app · 본 자료는 정보 제공 목적이며 투자 권유가 아닙니다</text>
+</svg>

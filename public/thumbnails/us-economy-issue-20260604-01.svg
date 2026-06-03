@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#080f08"/>
+      <stop offset="100%" stop-color="#050a05"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#9abf8a"/>
+      <stop offset="50%" stop-color="#7a9d6e"/>
+      <stop offset="100%" stop-color="#4a7d4e"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#7a9d6e" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#7a9d6e" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#c06040" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#c06040" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1050" cy="180" r="360" fill="url(#glow1)"/>
+  <circle cx="200" cy="560" r="200" fill="url(#glow2)"/>
+
+  <!-- 좌상단 브랜드 -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#7a9d6e" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#a8c898">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#7a9d6e">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#7a9d6e" text-anchor="end">2026.06.04 · ECONOMY ISSUE · SLOT 01</text>
+
+  <!-- 에디션 라벨 -->
+  <text x="80" y="175" font-family="monospace" font-size="13" letter-spacing="5" fill="#7a9d6e">— 경제 이슈 —</text>
+
+  <!-- 메인 헤드라인 -->
+  <text x="80" y="265" font-family="Playfair Display, Georgia, serif" font-size="50" font-weight="600" fill="#e0ffe0">이란 미사일 · WTI $96.15 급등</text>
+  <text x="80" y="330" font-family="Playfair Display, Georgia, serif" font-size="34" font-style="italic" fill="url(#green)">USD/KRW 1,529.50 — 1,530 목전</text>
+  <text x="80" y="380" font-family="Pretendard, sans-serif" font-size="18" fill="#80a878">에너지·달러 이중 압박 · FOMC(6/11) 인하 여지 좁아져</text>
+
+  <!-- 데이터 그리드 -->
+  <g transform="translate(80, 440)">
+    <!-- WTI -->
+    <g>
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#7a9d6e" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#608060">WTI</text>
+      <text x="0" y="68" font-family="Playfair Display, Georgia, serif" font-size="28" fill="#e0ffe0">$96.15</text>
+      <polygon points="0,76 14,76 7,90" fill="#d96552"/>
+      <text x="22" y="93" font-family="monospace" font-size="13" fill="#d96552">+2.55%</text>
+    </g>
+    <!-- Brent -->
+    <g transform="translate(210, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#7a9d6e" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#608060">BRENT</text>
+      <text x="0" y="68" font-family="Playfair Display, Georgia, serif" font-size="28" fill="#e0ffe0">$97.94</text>
+      <polygon points="0,76 14,76 7,90" fill="#d96552"/>
+      <text x="22" y="93" font-family="monospace" font-size="13" fill="#d96552">+2.02%</text>
+    </g>
+    <!-- USD/KRW -->
+    <g transform="translate(430, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#7a9d6e" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#608060">USD/KRW</text>
+      <text x="0" y="68" font-family="Playfair Display, Georgia, serif" font-size="28" fill="#e0ffe0">1,529.50</text>
+      <polygon points="0,76 14,76 7,90" fill="#d96552"/>
+      <text x="22" y="93" font-family="monospace" font-size="13" fill="#d96552">+1.21%</text>
+    </g>
+    <!-- US10Y -->
+    <g transform="translate(680, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#7a9d6e" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#608060">US10Y</text>
+      <text x="0" y="68" font-family="Playfair Display, Georgia, serif" font-size="28" fill="#e0ffe0">4.491%</text>
+      <polygon points="0,76 14,76 7,90" fill="#d96552"/>
+      <text x="22" y="93" font-family="monospace" font-size="13" fill="#d96552">+0.81%</text>
+    </g>
+    <!-- Gold -->
+    <g transform="translate(920, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#7a9d6e" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#608060">GOLD</text>
+      <text x="0" y="68" font-family="Playfair Display, Georgia, serif" font-size="28" fill="#e0ffe0">$4,465</text>
+      <polygon points="7,76 0,90 14,90" fill="#c06060"/>
+      <text x="22" y="93" font-family="monospace" font-size="13" fill="#c06060">−0.53%</text>
+    </g>
+    <!-- FOMC -->
+    <g transform="translate(1100, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#7a9d6e" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#608060">FOMC</text>
+      <text x="0" y="68" font-family="Playfair Display, Georgia, serif" font-size="24" fill="#a8c898">6/11</text>
+      <text x="0" y="93" font-family="monospace" font-size="11" fill="#608060">D-7</text>
+    </g>
+  </g>
+
+  <!-- 하단 구분선 -->
+  <line x1="80" y1="625" x2="1200" y2="625" stroke="#7a9d6e" stroke-width="0.5" stroke-opacity="0.4"/>
+  <text x="80" y="650" font-family="monospace" font-size="10" letter-spacing="2" fill="#304830">Lincoln Brief · lincoln-brief.vercel.app · 본 자료는 정보 제공 목적이며 투자 권유가 아닙니다</text>
+</svg>
