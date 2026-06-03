@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a080a"/>
+      <stop offset="100%" stop-color="#100508"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f0d88c"/>
+      <stop offset="50%" stop-color="#d8b878"/>
+      <stop offset="100%" stop-color="#b89a5a"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#e05555" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#e05555" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#4db86b" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#4db86b" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1050" cy="200" r="400" fill="url(#glow1)"/>
+  <circle cx="200" cy="550" r="280" fill="url(#glow2)"/>
+
+  <!-- Header -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#d8b878" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#f5edd9">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#d8b878">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#d8b878" text-anchor="end">2026.06.03 · KR 경제 이슈</text>
+
+  <!-- Category badge -->
+  <rect x="80" y="112" width="200" height="26" rx="4" fill="#e05555" fill-opacity="0.12" stroke="#e05555" stroke-width="0.8"/>
+  <text x="92" y="130" font-family="monospace" font-size="11" letter-spacing="3" fill="#e05555">ECONOMY ISSUE</text>
+
+  <!-- Issue badge -->
+  <rect x="80" y="160" width="440" height="30" rx="4" fill="#e05555" fill-opacity="0.10" stroke="#e05555" stroke-width="0.8"/>
+  <text x="92" y="180" font-family="monospace" font-size="12" letter-spacing="2" fill="#e05555">대형주 쏠림 · KOSPI vs KOSDAQ 이분화 이틀째</text>
+
+  <!-- Main title -->
+  <text x="80" y="290" font-family="Playfair Display, Georgia, serif" font-size="64" font-weight="500" fill="#f5edd9">KOSDAQ −2.29%</text>
+  <text x="80" y="352" font-family="Playfair Display, Georgia, serif" font-size="40" font-style="italic" fill="url(#gold)">KOSPI +0.15%와의 이분화</text>
+  <text x="80" y="400" font-family="sans-serif" font-size="17" fill="#8a9898">원화 1,518원 · WTI $94.93 · 중소형 기업 이중 압박</text>
+
+  <!-- Divider -->
+  <line x1="80" y1="434" x2="1200" y2="434" stroke="#2a1010" stroke-width="1"/>
+
+  <!-- Divergence visual -->
+  <g transform="translate(80, 460)">
+    <!-- KOSPI block -->
+    <rect x="0" y="0" width="320" height="100" rx="6" fill="#4db86b" fill-opacity="0.10" stroke="#4db86b" stroke-width="0.8"/>
+    <text x="16" y="28" font-family="monospace" font-size="12" letter-spacing="3" fill="#4db86b">KOSPI</text>
+    <text x="16" y="66" font-family="Playfair Display, Georgia, serif" font-size="36" fill="#f5edd9">8,801.49</text>
+    <polygon points="16,84 30,100 44,84" fill="#4db86b"/>
+    <text x="52" y="96" font-family="monospace" font-size="18" fill="#4db86b">+0.15%</text>
+
+    <!-- Arrow divider -->
+    <text x="350" y="62" font-family="monospace" font-size="30" fill="#d8b878">VS</text>
+
+    <!-- KOSDAQ block -->
+    <rect x="418" y="0" width="340" height="100" rx="6" fill="#e05555" fill-opacity="0.10" stroke="#e05555" stroke-width="0.8"/>
+    <text x="434" y="28" font-family="monospace" font-size="12" letter-spacing="3" fill="#e05555">KOSDAQ</text>
+    <text x="434" y="66" font-family="Playfair Display, Georgia, serif" font-size="36" fill="#f5edd9">1,026.03</text>
+    <polygon points="434,100 448,84 462,100" fill="#e05555"/>
+    <text x="470" y="96" font-family="monospace" font-size="18" fill="#e05555">−2.29%</text>
+
+    <!-- Spread label -->
+    <text x="800" y="30" font-family="monospace" font-size="11" letter-spacing="2" fill="#a89060">스프레드</text>
+    <text x="800" y="66" font-family="Playfair Display, Georgia, serif" font-size="36" fill="#e05555">−2.44%p</text>
+    <text x="800" y="90" font-family="monospace" font-size="11" fill="#6a7a8a">이틀 연속 확대</text>
+  </g>
+
+  <!-- Footer -->
+  <line x1="80" y1="660" x2="1200" y2="660" stroke="#1a0808" stroke-width="1"/>
+  <text x="80" y="680" font-family="monospace" font-size="10" letter-spacing="2" fill="#5a3030">lincoln-brief.vercel.app · 정보 제공 목적, 투자 권유 아님</text>
+  <text x="1200" y="680" font-family="monospace" font-size="10" letter-spacing="1" fill="#5a3030" text-anchor="end">Yahoo Finance · KRX</text>
+</svg>
