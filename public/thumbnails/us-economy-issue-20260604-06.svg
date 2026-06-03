@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#081408"/>
+      <stop offset="100%" stop-color="#050a05"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#78c880"/>
+      <stop offset="50%" stop-color="#4a9060"/>
+      <stop offset="100%" stop-color="#2a6040"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#4a9060" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#4a9060" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#d8b878" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#d8b878" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1050" cy="200" r="380" fill="url(#glow1)"/>
+  <circle cx="180" cy="560" r="200" fill="url(#glow2)"/>
+
+  <!-- 좌상단 브랜드 -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#4a9060" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#a0c8a8">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#4a9060">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#4a9060" text-anchor="end">2026.06.04 · ECONOMY ISSUE · SLOT 06</text>
+
+  <!-- 에디션 라벨 -->
+  <text x="80" y="175" font-family="monospace" font-size="13" letter-spacing="5" fill="#4a9060">— 경제 이슈 —</text>
+
+  <!-- 메인 헤드라인 -->
+  <text x="80" y="268" font-family="Playfair Display, Georgia, serif" font-size="54" font-weight="600" fill="#c0e0c8">USD/KRW 1,532.87</text>
+  <text x="80" y="330" font-family="Playfair Display, Georgia, serif" font-size="32" font-style="italic" fill="url(#green)">달러 강세 구조화 — BOK·수출 새 방정식</text>
+  <text x="80" y="380" font-family="Pretendard, sans-serif" font-size="18" fill="#709070">WTI $96.20 · US10Y 4.491% · 이란 지정학 3중 달러 강세 요인</text>
+
+  <!-- 영향 데이터 -->
+  <g transform="translate(80, 440)">
+    <line x1="0" y1="0" x2="1100" y2="0" stroke="#4a9060" stroke-width="0.5" opacity="0.5"/>
+
+    <!-- 에너지 비용 -->
+    <g transform="translate(0, 20)">
+      <text x="0" y="22" font-family="monospace" font-size="11" letter-spacing="3" fill="#4a9060">에너지 비용 (배럴당)</text>
+      <text x="0" y="58" font-family="Playfair Display, Georgia, serif" font-size="28" fill="#c0e0c8">147,462원</text>
+      <polygon points="0,66 7,52 14,66" fill="#c06060"/>
+      <text x="22" y="69" font-family="monospace" font-size="12" fill="#c06060">+4.1% 하루</text>
+    </g>
+
+    <!-- 달러 강세 -->
+    <g transform="translate(300, 20)">
+      <text x="0" y="22" font-family="monospace" font-size="11" letter-spacing="3" fill="#4a9060">USD/KRW</text>
+      <text x="0" y="58" font-family="Playfair Display, Georgia, serif" font-size="28" fill="#c0e0c8">1,532.87</text>
+      <polygon points="0,66 7,52 14,66" fill="#c06060"/>
+      <text x="22" y="69" font-family="monospace" font-size="12" fill="#c06060">+16.71원</text>
+    </g>
+
+    <!-- WTI -->
+    <g transform="translate(590, 20)">
+      <text x="0" y="22" font-family="monospace" font-size="11" letter-spacing="3" fill="#4a9060">WTI</text>
+      <text x="0" y="58" font-family="Playfair Display, Georgia, serif" font-size="28" fill="#c0e0c8">$96.20</text>
+      <polygon points="0,66 7,52 14,66" fill="#c06060"/>
+      <text x="22" y="69" font-family="monospace" font-size="12" fill="#c06060">+2.60%</text>
+    </g>
+
+    <!-- US10Y -->
+    <g transform="translate(820, 20)">
+      <text x="0" y="22" font-family="monospace" font-size="11" letter-spacing="3" fill="#4a9060">US10Y</text>
+      <text x="0" y="58" font-family="Playfair Display, Georgia, serif" font-size="28" fill="#c0e0c8">4.491%</text>
+      <polygon points="0,66 7,52 14,66" fill="#c06060"/>
+      <text x="22" y="69" font-family="monospace" font-size="12" fill="#c06060">+0.81%</text>
+    </g>
+  </g>
+
+  <!-- 하단 구분선 -->
+  <line x1="80" y1="640" x2="1200" y2="640" stroke="#4a9060" stroke-width="0.5" opacity="0.4"/>
+  <text x="80" y="670" font-family="monospace" font-size="11" fill="#386050">FOMC 6/11 인하 여지 축소  ·  BOK 딜레마  ·  ADP 21:30 KST</text>
+  <text x="1200" y="670" font-family="monospace" font-size="11" fill="#386050" text-anchor="end">lincoln-brief.vercel.app</text>
+</svg>
