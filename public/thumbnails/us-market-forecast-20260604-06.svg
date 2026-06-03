@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#180808"/>
+      <stop offset="100%" stop-color="#0a0508"/>
+    </linearGradient>
+    <linearGradient id="red" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#e08870"/>
+      <stop offset="50%" stop-color="#c06040"/>
+      <stop offset="100%" stop-color="#903020"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#c06040" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#c06040" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#d8b878" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#d8b878" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1050" cy="200" r="380" fill="url(#glow1)"/>
+  <circle cx="180" cy="540" r="200" fill="url(#glow2)"/>
+
+  <!-- 좌상단 브랜드 -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#c06040" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#d8a888">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#c06040">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#c06040" text-anchor="end">2026.06.04 · MARKET FORECAST · SLOT 06</text>
+
+  <!-- 에디션 라벨 -->
+  <text x="80" y="175" font-family="monospace" font-size="13" letter-spacing="5" fill="#c06040">— 시장 예측 —</text>
+
+  <!-- 메인 헤드라인 -->
+  <text x="80" y="270" font-family="Playfair Display, Georgia, serif" font-size="52" font-weight="600" fill="#e8d0c0">ADP D-Day 최종 점검</text>
+  <text x="80" y="330" font-family="Playfair Display, Georgia, serif" font-size="32" font-style="italic" fill="url(#red)">21:30 KST — 4가지 시나리오</text>
+  <text x="80" y="378" font-family="Pretendard, sans-serif" font-size="18" fill="#a07860">S&amp;P 7,553.68 · WTI $96.20 · US10Y 4.491% · USD/KRW 1,532.87</text>
+
+  <!-- 시나리오 박스 -->
+  <g transform="translate(80, 430)">
+    <!-- 불 -->
+    <rect x="0" y="0" width="240" height="88" rx="4" fill="#6ba368" fill-opacity="0.10" stroke="#6ba368" stroke-width="0.8"/>
+    <text x="12" y="24" font-family="monospace" font-size="11" letter-spacing="2" fill="#6ba368">불 케이스  15%</text>
+    <text x="12" y="48" font-family="Playfair Display, Georgia, serif" font-size="16" fill="#c8e0c0">약한 ADP + WTI 안정화</text>
+    <text x="12" y="70" font-family="monospace" font-size="12" fill="#6ba368">S&amp;P → 7,650+</text>
+
+    <!-- 베이스 -->
+    <rect x="260" y="0" width="240" height="88" rx="4" fill="#d8b878" fill-opacity="0.10" stroke="#d8b878" stroke-width="0.8"/>
+    <text x="272" y="24" font-family="monospace" font-size="11" letter-spacing="2" fill="#d8b878">베이스  35%</text>
+    <text x="272" y="48" font-family="Playfair Display, Georgia, serif" font-size="16" fill="#e0d0a0">컨센서스 ADP + 혼재</text>
+    <text x="272" y="70" font-family="monospace" font-size="12" fill="#d8b878">S&amp;P → 7,500~7,650</text>
+
+    <!-- 베어 -->
+    <rect x="520" y="0" width="240" height="88" rx="4" fill="#c06040" fill-opacity="0.10" stroke="#c06040" stroke-width="0.8"/>
+    <text x="532" y="24" font-family="monospace" font-size="11" letter-spacing="2" fill="#c06040">베어  35%</text>
+    <text x="532" y="48" font-family="Playfair Display, Georgia, serif" font-size="16" fill="#e0c0b0">강한 ADP + WTI $97+</text>
+    <text x="532" y="70" font-family="monospace" font-size="12" fill="#c06040">S&amp;P → 7,400↓</text>
+
+    <!-- 블랙스완 -->
+    <rect x="780" y="0" width="240" height="88" rx="4" fill="#606060" fill-opacity="0.10" stroke="#606060" stroke-width="0.8"/>
+    <text x="792" y="24" font-family="monospace" font-size="11" letter-spacing="2" fill="#808080">블랙스완  15%</text>
+    <text x="792" y="48" font-family="Playfair Display, Georgia, serif" font-size="16" fill="#c0c0c0">이란 충돌 확대</text>
+    <text x="792" y="70" font-family="monospace" font-size="12" fill="#808080">S&amp;P → 7,200↓</text>
+  </g>
+
+  <!-- 하단 구분선 -->
+  <line x1="80" y1="640" x2="1200" y2="640" stroke="#c06040" stroke-width="0.5" opacity="0.4"/>
+  <text x="80" y="670" font-family="monospace" font-size="11" fill="#704030">ADP 21:30 KST  ·  NFP 6/6  ·  FOMC 6/11</text>
+  <text x="1200" y="670" font-family="monospace" font-size="11" fill="#704030" text-anchor="end">lincoln-brief.vercel.app</text>
+</svg>
