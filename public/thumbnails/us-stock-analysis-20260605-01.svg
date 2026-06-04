@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#100c14"/>
+      <stop offset="100%" stop-color="#0a080e"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#88aadd"/>
+      <stop offset="50%" stop-color="#6688cc"/>
+      <stop offset="100%" stop-color="#4466aa"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#6688cc" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#6688cc" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#c06060" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#c06060" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1050" cy="180" r="380" fill="url(#glow1)"/>
+  <circle cx="180" cy="560" r="240" fill="url(#glow2)"/>
+
+  <!-- 좌상단 브랜드 -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#6688cc" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#c8d8f0">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#6688cc">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#6688cc" text-anchor="end">2026.06.05 · STOCK ANALYSIS · SLOT 01</text>
+
+  <!-- 카테고리 라벨 -->
+  <text x="80" y="175" font-family="monospace" font-size="13" letter-spacing="5" fill="#6688cc">— 종목 분석 —</text>
+
+  <!-- 종목 티커 대형 표시 -->
+  <text x="80" y="290" font-family="Playfair Display, Georgia, serif" font-size="90" font-weight="700" fill="#88aadd" opacity="0.25">AVGO</text>
+  <text x="80" y="285" font-family="Playfair Display, Georgia, serif" font-size="64" font-weight="700" fill="#e0e8f8">AVGO $421.39</text>
+
+  <!-- 변동률 강조 -->
+  <rect x="80" y="305" width="260" height="56" rx="4" fill="#c06060" fill-opacity="0.18"/>
+  <polygon points="100,342 93,360 107,360" fill="#e07070"/>
+  <text x="118" y="356" font-family="monospace" font-size="28" font-weight="700" fill="#e07070">−12.07%</text>
+
+  <!-- 서브 헤드라인 -->
+  <text x="80" y="410" font-family="Playfair Display, Georgia, serif" font-size="26" font-style="italic" fill="url(#blue)">Q2 견고 · 2027 AI 가이던스 동결 쇼크</text>
+  <text x="80" y="450" font-family="Pretendard, sans-serif" font-size="17" fill="#8090a8">전일 $479.23 → 오늘 $421.39  ·  하루 −$57.84</text>
+
+  <!-- 비교 데이터 -->
+  <g transform="translate(80, 510)">
+    <text x="0" y="0" font-family="monospace" font-size="12" letter-spacing="3" fill="#6688cc">AI 칩 관련 비교</text>
+    <line x1="0" y1="12" x2="500" y2="12" stroke="#6688cc" stroke-width="0.5" stroke-opacity="0.4"/>
+
+    <!-- AVGO -->
+    <text x="0" y="40" font-family="monospace" font-size="14" fill="#e07070">AVGO  $421.39  −12.07%  ▼ 가이던스 동결</text>
+    <!-- NVDA -->
+    <text x="0" y="68" font-family="monospace" font-size="14" fill="#60c070">NVDA  $218.86  +1.91%   ▲ 매크로 수혜</text>
+    <!-- GOOGL -->
+    <text x="0" y="96" font-family="monospace" font-size="14" fill="#60c070">GOOGL $372.94  +3.89%   ▲ AI 수익화</text>
+  </g>
+
+  <!-- 하단 -->
+  <line x1="80" y1="650" x2="1200" y2="650" stroke="#6688cc" stroke-width="0.5" stroke-opacity="0.3"/>
+  <text x="80" y="678" font-family="monospace" font-size="11" fill="#506080">NFP (6/6)  ·  FOMC (6/11)가 회복 속도를 결정</text>
+  <text x="1200" y="678" font-family="monospace" font-size="11" fill="#506080" text-anchor="end">lincoln-brief.vercel.app</text>
+</svg>
