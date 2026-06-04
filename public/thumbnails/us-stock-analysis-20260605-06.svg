@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0e18"/>
+      <stop offset="100%" stop-color="#06080f"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7898d8"/>
+      <stop offset="50%" stop-color="#5677b0"/>
+      <stop offset="100%" stop-color="#3658a0"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#5677b0" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#5677b0" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#d8b878" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#d8b878" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1080" cy="200" r="380" fill="url(#glow1)"/>
+  <circle cx="160" cy="560" r="200" fill="url(#glow2)"/>
+
+  <!-- 좌상단 브랜드 -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#5677b0" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#a8bce0">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#5677b0">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#5677b0" text-anchor="end">2026.06.05 · STOCK ANALYSIS · SLOT 06</text>
+
+  <!-- 카테고리 라벨 -->
+  <text x="80" y="175" font-family="monospace" font-size="13" letter-spacing="5" fill="#5677b0">— 종목 분석 —</text>
+
+  <!-- 티커 빅 디스플레이 -->
+  <text x="80" y="250" font-family="monospace" font-size="22" letter-spacing="8" fill="#7898d8">LLY · ELI LILLY</text>
+
+  <!-- 메인 가격 -->
+  <text x="80" y="340" font-family="Playfair Display, Georgia, serif" font-size="80" font-weight="700" fill="#e8f0ff">$1,125</text>
+  <text x="80" y="395" font-family="Playfair Display, Georgia, serif" font-size="36" font-style="italic" fill="url(#blue)">.27  ▲ +4.31%  (+$46.49)</text>
+
+  <!-- 부제 -->
+  <text x="80" y="450" font-family="Pretendard, sans-serif" font-size="18" fill="#6888b0">30일 +22.6%  ·  저점 $851.21 대비 +32.2%  ·  6/4 12종목 최대 상승</text>
+
+  <!-- 스파크라인 영역 (단순화된 선형) -->
+  <g transform="translate(80, 490)">
+    <line x1="0" y1="60" x2="1100" y2="60" stroke="#2a3448" stroke-width="1"/>
+    <!-- 30일 추세선 (단순 상승 표현) -->
+    <polyline points="0,55 37,58 73,60 110,57 147,63 183,48 220,44 257,43 293,40 330,41 367,43 403,46 440,44 477,40 513,35 550,37 587,37 623,42 660,34 697,35 733,30 770,24 807,24 843,19 880,8 917,12 953,16 990,22 1027,17 1063,5" fill="none" stroke="#5677b0" stroke-width="2.5"/>
+    <!-- 현재 포인트 -->
+    <circle cx="1063" cy="5" r="5" fill="#7898d8"/>
+    <text x="0" y="78" font-family="monospace" font-size="10" fill="#3a4a6a">30일 전 $917</text>
+    <text x="500" y="78" font-family="monospace" font-size="10" fill="#3a4a6a" text-anchor="middle">저점 $851</text>
+    <text x="1063" y="78" font-family="monospace" font-size="10" fill="#7898d8" text-anchor="end">오늘 $1,125</text>
+  </g>
+
+  <!-- 하단 구분선 -->
+  <line x1="80" y1="620" x2="1200" y2="620" stroke="#5677b0" stroke-width="0.5" stroke-opacity="0.3"/>
+  <text x="80" y="648" font-family="monospace" font-size="11" fill="#3a4a6a">GLP-1 비만 치료 프랜차이즈  ·  AVGO −12.59% 반대 방향  ·  NFP(6/6) 주목</text>
+  <text x="1200" y="648" font-family="monospace" font-size="11" fill="#3a4a6a" text-anchor="end">lincoln-brief.vercel.app</text>
+</svg>

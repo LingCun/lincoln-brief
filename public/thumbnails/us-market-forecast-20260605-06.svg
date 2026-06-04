@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#180a08"/>
+      <stop offset="100%" stop-color="#0f0705"/>
+    </linearGradient>
+    <linearGradient id="red" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#e88070"/>
+      <stop offset="50%" stop-color="#d96552"/>
+      <stop offset="100%" stop-color="#b84538"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#d96552" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#d96552" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1060" cy="180" r="380" fill="url(#glow1)"/>
+
+  <!-- 좌상단 브랜드 -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#d96552" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#e0b0a0">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#d96552">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#d96552" text-anchor="end">2026.06.05 · MARKET FORECAST · SLOT 06</text>
+
+  <!-- 카테고리 라벨 -->
+  <text x="80" y="175" font-family="monospace" font-size="13" letter-spacing="5" fill="#d96552">— 시장 예측 —</text>
+
+  <!-- 메인 헤드라인 -->
+  <text x="80" y="265" font-family="Playfair Display, Georgia, serif" font-size="46" font-weight="600" fill="#f0e0d8">NFP 발표 당일 포지션 체크</text>
+  <text x="80" y="322" font-family="Playfair Display, Georgia, serif" font-size="30" font-style="italic" fill="url(#red)">섹터 로테이션 4가지 경로</text>
+  <text x="80" y="370" font-family="Pretendard, sans-serif" font-size="18" fill="#a07060">US10Y 4.477%  ·  Gold $4,503  ·  LLY +4.31% vs AVGO −12.59%</text>
+
+  <!-- 시나리오 테이블 -->
+  <g transform="translate(80, 420)">
+    <!-- A: 약한 고용 -->
+    <rect x="0" y="0" width="260" height="90" rx="4" fill="#2a1008" stroke="#d96552" stroke-width="1" stroke-opacity="0.4"/>
+    <text x="14" y="22" font-family="monospace" font-size="11" fill="#d96552">A. 약한 고용 (25%)</text>
+    <text x="14" y="45" font-family="Georgia, serif" font-size="14" fill="#f0d8c8">US10Y 4.35% 이하</text>
+    <text x="14" y="68" font-family="monospace" font-size="12" fill="#60a060">S&amp;P 7,650 ↑ · Gold $4,550 ↑</text>
+
+    <!-- B: 컨센서스 -->
+    <rect x="280" y="0" width="260" height="90" rx="4" fill="#200a08" stroke="#d8b878" stroke-width="1.5" stroke-opacity="0.6"/>
+    <text x="294" y="22" font-family="monospace" font-size="11" fill="#d8b878">B. 컨센서스 (40%) ← 유력</text>
+    <text x="294" y="45" font-family="Georgia, serif" font-size="14" fill="#f0d8c8">US10Y 4.40~4.50%</text>
+    <text x="294" y="68" font-family="monospace" font-size="12" fill="#d8b878">S&amp;P 박스권 · 분화 지속</text>
+
+    <!-- C: 강한 고용 -->
+    <rect x="560" y="0" width="260" height="90" rx="4" fill="#2a0808" stroke="#c06060" stroke-width="1" stroke-opacity="0.5"/>
+    <text x="574" y="22" font-family="monospace" font-size="11" fill="#c06060">C. 강한 고용 (25%)</text>
+    <text x="574" y="45" font-family="Georgia, serif" font-size="14" fill="#f0d8c8">US10Y 4.50% 이상</text>
+    <text x="574" y="68" font-family="monospace" font-size="12" fill="#c06060">NASDAQ 하락 · 방어주 강세</text>
+
+    <!-- D: 블랙 스완 -->
+    <rect x="840" y="0" width="260" height="90" rx="4" fill="#1a0808" stroke="#804040" stroke-width="1" stroke-opacity="0.4"/>
+    <text x="854" y="22" font-family="monospace" font-size="11" fill="#a06060">D. 블랙 스완 (10%)</text>
+    <text x="854" y="45" font-family="Georgia, serif" font-size="14" fill="#c09080">AI 투자 둔화 공식화</text>
+    <text x="854" y="68" font-family="monospace" font-size="12" fill="#a06060">AI 공급망 구조 재평가</text>
+  </g>
+
+  <!-- 핵심 분기점 표시 -->
+  <text x="80" y="562" font-family="monospace" font-size="14" letter-spacing="2" fill="#d96552">핵심 분기점</text>
+  <text x="80" y="585" font-family="Playfair Display, Georgia, serif" font-size="22" fill="#f0e0d8">US10Y 4.4% — 위냐 아래냐가 섹터 방향을 결정합니다</text>
+
+  <!-- 하단 구분선 -->
+  <line x1="80" y1="620" x2="1200" y2="620" stroke="#d96552" stroke-width="0.5" stroke-opacity="0.3"/>
+  <text x="80" y="648" font-family="monospace" font-size="11" fill="#704838">NFP(6/6 21:30 KST) · FOMC(6/11) · US10Y 4.4% 분기점</text>
+  <text x="1200" y="648" font-family="monospace" font-size="11" fill="#704838" text-anchor="end">lincoln-brief.vercel.app</text>
+</svg>

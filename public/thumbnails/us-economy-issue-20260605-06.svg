@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#080f0a"/>
+      <stop offset="100%" stop-color="#060a07"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#98c888"/>
+      <stop offset="50%" stop-color="#7a9d6e"/>
+      <stop offset="100%" stop-color="#5a7d4e"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#7a9d6e" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#7a9d6e" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="goldglow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#d8b878" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#d8b878" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1050" cy="200" r="360" fill="url(#glow1)"/>
+  <circle cx="300" cy="500" r="280" fill="url(#goldglow)"/>
+
+  <!-- 좌상단 브랜드 -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#7a9d6e" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#b0c8a8">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#7a9d6e">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#7a9d6e" text-anchor="end">2026.06.05 · ECONOMY ISSUE · SLOT 06</text>
+
+  <!-- 카테고리 라벨 -->
+  <text x="80" y="175" font-family="monospace" font-size="13" letter-spacing="5" fill="#7a9d6e">— 경제 이슈 —</text>
+
+  <!-- Gold 빅 디스플레이 -->
+  <text x="80" y="250" font-family="monospace" font-size="20" letter-spacing="6" fill="#98c888">GOLD  ·  SAFE HAVEN</text>
+
+  <!-- 메인 가격 -->
+  <text x="80" y="355" font-family="Playfair Display, Georgia, serif" font-size="88" font-weight="700" fill="#e8f0e8">$4,503</text>
+  <text x="80" y="405" font-family="Playfair Display, Georgia, serif" font-size="32" font-style="italic" fill="url(#green)">.00  ▲ +1.49%  · WTI $93.00 ▼ −3.15%</text>
+
+  <!-- 부제 -->
+  <text x="80" y="455" font-family="Pretendard, sans-serif" font-size="18" fill="#5a7a58">달러 약세 압력  ·  US10Y 4.477% 하락  ·  중앙은행 구조적 매수</text>
+
+  <!-- 핵심 메시지 -->
+  <rect x="80" y="490" width="900" height="60" rx="4" fill="#0a1a0c" stroke="#7a9d6e" stroke-width="1" stroke-opacity="0.5"/>
+  <text x="100" y="515" font-family="monospace" font-size="12" fill="#7a9d6e">핵심 질문</text>
+  <text x="100" y="538" font-family="Georgia, serif" font-size="17" fill="#c0d8b8">"금이 오르고 유가가 내린 날 — 시장은 무엇을 헤지하고 있는가?"</text>
+
+  <!-- NFP 예고 -->
+  <text x="80" y="580" font-family="monospace" font-size="14" fill="#5a7a58">NFP(6/6 21:30 KST) → US10Y → Gold 방향 결정</text>
+
+  <!-- 하단 구분선 -->
+  <line x1="80" y1="620" x2="1200" y2="620" stroke="#7a9d6e" stroke-width="0.5" stroke-opacity="0.3"/>
+  <text x="80" y="648" font-family="monospace" font-size="11" fill="#3a5a3a">Gold $4,503 · WTI $93 · USD/KRW 1,532 · BTC $63,501</text>
+  <text x="1200" y="648" font-family="monospace" font-size="11" fill="#3a5a3a" text-anchor="end">lincoln-brief.vercel.app</text>
+</svg>
