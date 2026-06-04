@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#120e0a"/>
+      <stop offset="100%" stop-color="#08090c"/>
+    </linearGradient>
+    <linearGradient id="red" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ee9966"/>
+      <stop offset="50%" stop-color="#dd7744"/>
+      <stop offset="100%" stop-color="#bb5522"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#dd7744" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#dd7744" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1000" cy="200" r="400" fill="url(#glow1)"/>
+
+  <!-- 좌상단 브랜드 -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#dd7744" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#f0c8a0">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#dd7744">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#dd7744" text-anchor="end">2026.06.05 · MARKET FORECAST · SLOT 01</text>
+
+  <!-- 카테고리 라벨 -->
+  <text x="80" y="175" font-family="monospace" font-size="13" letter-spacing="5" fill="#dd7744">— 시장 예측 —</text>
+
+  <!-- 메인 헤드라인 -->
+  <text x="80" y="270" font-family="Playfair Display, Georgia, serif" font-size="46" font-weight="600" fill="#f0d0b0">매크로 역풍 부분 완화</text>
+  <text x="80" y="328" font-family="Playfair Display, Georgia, serif" font-size="32" font-style="italic" fill="url(#red)">WTI −3.68% · US10Y 4.469% 동반 하락</text>
+  <text x="80" y="376" font-family="Pretendard, sans-serif" font-size="17" fill="#a08060">전일 WTI $96.20 → $92.49  ·  US10Y 4.491% → 4.469%</text>
+
+  <!-- 시나리오 테이블 -->
+  <g transform="translate(80, 425)">
+    <text x="0" y="0" font-family="monospace" font-size="12" letter-spacing="4" fill="#dd7744">이번 주 시나리오</text>
+    <line x1="0" y1="12" x2="680" y2="12" stroke="#dd7744" stroke-width="0.5" stroke-opacity="0.4"/>
+
+    <!-- 불 케이스 -->
+    <rect x="0" y="22" width="140" height="32" rx="3" fill="#60a060" fill-opacity="0.15"/>
+    <text x="10" y="44" font-family="monospace" font-size="13" fill="#70c070">불  25%</text>
+    <text x="155" y="44" font-family="monospace" font-size="13" fill="#c0c0a0">약한 NFP + WTI 안정 → S&amp;P 7,650+</text>
+
+    <!-- 베이스 케이스 -->
+    <rect x="0" y="62" width="140" height="32" rx="3" fill="#d8b878" fill-opacity="0.15"/>
+    <text x="10" y="84" font-family="monospace" font-size="13" fill="#d8b878">베이스 40%</text>
+    <text x="155" y="84" font-family="monospace" font-size="13" fill="#c0c0a0">컨센서스 NFP → 박스권 유지</text>
+
+    <!-- 베어 케이스 -->
+    <rect x="0" y="102" width="140" height="32" rx="3" fill="#c06060" fill-opacity="0.15"/>
+    <text x="10" y="124" font-family="monospace" font-size="13" fill="#e07070">베어 25%</text>
+    <text x="155" y="124" font-family="monospace" font-size="13" fill="#c0c0a0">강한 NFP + WTI 재상승</text>
+
+    <!-- 블랙스완 -->
+    <rect x="0" y="142" width="140" height="32" rx="3" fill="#8844aa" fill-opacity="0.15"/>
+    <text x="10" y="164" font-family="monospace" font-size="13" fill="#aa88cc">블랙스완 10%</text>
+    <text x="155" y="164" font-family="monospace" font-size="13" fill="#c0c0a0">AI 인프라 투자 둔화 공식화</text>
+  </g>
+
+  <!-- 하단 -->
+  <line x1="80" y1="640" x2="1200" y2="640" stroke="#dd7744" stroke-width="0.5" stroke-opacity="0.3"/>
+  <text x="80" y="668" font-family="monospace" font-size="11" fill="#706040">NFP (6/6 21:30 KST)  ·  FOMC 금리 결정 (6/11)</text>
+  <text x="1200" y="668" font-family="monospace" font-size="11" fill="#706040" text-anchor="end">lincoln-brief.vercel.app</text>
+</svg>
