@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#080d1a"/>
+      <stop offset="100%" stop-color="#050810"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f0d88c"/>
+      <stop offset="50%" stop-color="#d8b878"/>
+      <stop offset="100%" stop-color="#b89a5a"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#4b8eda" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#4b8eda" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#e05555" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#e05555" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1100" cy="180" r="400" fill="url(#glow1)"/>
+  <circle cx="200" cy="570" r="280" fill="url(#glow2)"/>
+
+  <!-- Header -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#d8b878" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#f5edd9">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#d8b878">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#d8b878" text-anchor="end">2026.06.04 · KR 시장 예측</text>
+
+  <!-- Edition label -->
+  <text x="80" y="160" font-family="monospace" font-size="13" letter-spacing="5" fill="#d8b878">— 향후 4주 시나리오 업데이트 —</text>
+
+  <!-- Status badge -->
+  <rect x="80" y="176" width="480" height="30" rx="4" fill="#4b8eda" fill-opacity="0.15" stroke="#4b8eda" stroke-width="0.8"/>
+  <text x="92" y="196" font-family="monospace" font-size="12" letter-spacing="2" fill="#4b8eda">베이스 하단(8,700) 이탈 · 8,600 지지 여부가 관건</text>
+
+  <!-- Main title -->
+  <text x="80" y="296" font-family="Playfair Display, Georgia, serif" font-size="68" font-weight="500" fill="#f5edd9">KOSPI 8,694</text>
+  <text x="80" y="358" font-family="Playfair Display, Georgia, serif" font-size="40" font-style="italic" fill="url(#gold)">ATH 후퇴 가속 · 베어케이스 40%</text>
+  <text x="80" y="406" font-family="sans-serif" font-size="17" fill="#8a9898">USD/KRW 1,528원 · 미국 10년물 4.491% · SK하이닉스 −2.58%</text>
+
+  <!-- Divider -->
+  <line x1="80" y1="440" x2="1200" y2="440" stroke="#0f1a2a" stroke-width="1"/>
+
+  <!-- Scenario bars -->
+  <g transform="translate(80, 470)">
+    <text x="0" y="18" font-family="monospace" font-size="11" letter-spacing="3" fill="#a89060">시나리오</text>
+    <!-- Base -->
+    <rect x="0" y="30" width="320" height="24" rx="3" fill="#4b8eda" fill-opacity="0.3"/>
+    <text x="8" y="47" font-family="monospace" font-size="12" fill="#4b8eda">베이스 8,500~8,800 · 40%</text>
+    <!-- Bull -->
+    <rect x="340" y="30" width="160" height="24" rx="3" fill="#4db86b" fill-opacity="0.3"/>
+    <text x="348" y="47" font-family="monospace" font-size="12" fill="#4db86b">불 8,800↑ · 15%</text>
+    <!-- Bear -->
+    <rect x="0" y="66" width="320" height="24" rx="3" fill="#e05555" fill-opacity="0.3"/>
+    <text x="8" y="83" font-family="monospace" font-size="12" fill="#e05555">베어 8,200~8,500 · 40%</text>
+    <!-- Black Swan -->
+    <rect x="340" y="66" width="160" height="24" rx="3" fill="#888" fill-opacity="0.2"/>
+    <text x="348" y="83" font-family="monospace" font-size="12" fill="#888">블랙스완 · 5%</text>
+  </g>
+
+  <!-- Metrics row -->
+  <g transform="translate(80, 600)">
+    <!-- KOSPI -->
+    <g>
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#d8b878" stroke-width="1.5"/>
+      <text x="0" y="18" font-family="monospace" font-size="10" letter-spacing="3" fill="#a89060">KOSPI</text>
+      <text x="0" y="46" font-family="Playfair Display, Georgia, serif" font-size="24" fill="#f5edd9">8,694</text>
+      <polygon points="0,52 10,40 20,52" fill="#e05555"/>
+      <text x="26" y="51" font-family="monospace" font-size="14" fill="#e05555">−1.22%</text>
+    </g>
+    <!-- USD/KRW -->
+    <g transform="translate(220, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#d8b878" stroke-width="1.5"/>
+      <text x="0" y="18" font-family="monospace" font-size="10" letter-spacing="3" fill="#a89060">USD/KRW</text>
+      <text x="0" y="46" font-family="Playfair Display, Georgia, serif" font-size="24" fill="#f5edd9">1,528</text>
+      <polygon points="0,52 10,40 20,52" fill="#e09040"/>
+      <text x="26" y="51" font-family="monospace" font-size="14" fill="#e09040">+0.79%</text>
+    </g>
+    <!-- 10Y -->
+    <g transform="translate(440, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#d8b878" stroke-width="1.5"/>
+      <text x="0" y="18" font-family="monospace" font-size="10" letter-spacing="3" fill="#a89060">미국 10년물</text>
+      <text x="0" y="46" font-family="Playfair Display, Georgia, serif" font-size="24" fill="#f5edd9">4.491%</text>
+      <polygon points="0,52 10,40 20,52" fill="#e09040"/>
+      <text x="26" y="51" font-family="monospace" font-size="14" fill="#e09040">+0.81%</text>
+    </g>
+  </g>
+
+  <!-- Footer -->
+  <line x1="80" y1="700" x2="1200" y2="700" stroke="#0f1a2a" stroke-width="1"/>
+  <text x="80" y="716" font-family="monospace" font-size="9" letter-spacing="2" fill="#2a3a4a">lincoln-brief.vercel.app · 정보 제공 목적, 투자 권유 아님</text>
+  <text x="1200" y="716" font-family="monospace" font-size="9" letter-spacing="1" fill="#2a3a4a" text-anchor="end">Yahoo Finance · FRED</text>
+</svg>
