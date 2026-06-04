@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f0c08"/>
+      <stop offset="100%" style="stop-color:#1a1510"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#d8b878;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#d8b878;stop-opacity:0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Gold accent bar top -->
+  <rect x="0" y="0" width="1280" height="4" fill="#d8b878"/>
+
+  <!-- Left gold stripe -->
+  <rect x="60" y="80" width="3" height="560" fill="#d8b878" opacity="0.6"/>
+
+  <!-- Lincoln Brief mark -->
+  <text x="80" y="60" font-family="Georgia, serif" font-size="18" fill="#d8b878" letter-spacing="4">LINCOLN BRIEF</text>
+  <text x="80" y="80" font-family="Georgia, serif" font-size="13" fill="#d8b878" opacity="0.6" letter-spacing="2">KR DAILY BRIEF</text>
+
+  <!-- Edition label top right -->
+  <text x="1200" y="55" font-family="Georgia, serif" font-size="14" fill="#d8b878" text-anchor="end" opacity="0.8">2026.06.04</text>
+  <text x="1200" y="75" font-family="Georgia, serif" font-size="12" fill="#d8b878" text-anchor="end" opacity="0.5">SLOT 16:00 KST</text>
+
+  <!-- Main headline -->
+  <text x="80" y="175" font-family="Georgia, serif" font-size="72" fill="#ffffff" font-weight="bold">KOSPI</text>
+  <text x="320" y="175" font-family="Georgia, serif" font-size="72" fill="#d8b878" font-weight="bold">8,639</text>
+
+  <!-- Down arrow polygon -->
+  <polygon points="690,140 730,140 710,175" fill="#e05555" opacity="0.9"/>
+
+  <!-- Change rate -->
+  <text x="740" y="175" font-family="Georgia, serif" font-size="60" fill="#e05555" font-weight="bold">-1.84%</text>
+
+  <!-- Divider line -->
+  <rect x="80" y="195" width="1120" height="1" fill="#d8b878" opacity="0.3"/>
+
+  <!-- Subtitle -->
+  <text x="80" y="235" font-family="Georgia, serif" font-size="26" fill="#cccccc">ATH(8,829) 이후 190포인트 후퇴</text>
+
+  <!-- Key data grid -->
+  <!-- Box 1: KOSDAQ -->
+  <rect x="80" y="270" width="250" height="100" fill="#ffffff" opacity="0.05" rx="4"/>
+  <text x="205" y="300" font-family="Georgia, serif" font-size="14" fill="#d8b878" text-anchor="middle" letter-spacing="1">KOSDAQ</text>
+  <text x="205" y="335" font-family="Georgia, serif" font-size="28" fill="#55a855" text-anchor="middle" font-weight="bold">1,049</text>
+  <text x="205" y="358" font-family="Georgia, serif" font-size="16" fill="#55a855" text-anchor="middle">+2.31%</text>
+
+  <!-- Box 2: USD/KRW -->
+  <rect x="350" y="270" width="280" height="100" fill="#ffffff" opacity="0.05" rx="4"/>
+  <text x="490" y="300" font-family="Georgia, serif" font-size="14" fill="#d8b878" text-anchor="middle" letter-spacing="1">USD/KRW</text>
+  <text x="490" y="335" font-family="Georgia, serif" font-size="28" fill="#e05555" text-anchor="middle" font-weight="bold">1,536원</text>
+  <text x="490" y="358" font-family="Georgia, serif" font-size="16" fill="#e05555" text-anchor="middle">1,530 돌파</text>
+
+  <!-- Box 3: US10Y -->
+  <rect x="650" y="270" width="250" height="100" fill="#ffffff" opacity="0.05" rx="4"/>
+  <text x="775" y="300" font-family="Georgia, serif" font-size="14" fill="#d8b878" text-anchor="middle" letter-spacing="1">미국 10년물</text>
+  <text x="775" y="335" font-family="Georgia, serif" font-size="28" fill="#e05555" text-anchor="middle" font-weight="bold">4.491%</text>
+  <text x="775" y="358" font-family="Georgia, serif" font-size="16" fill="#aaaaaa" text-anchor="middle">고착</text>
+
+  <!-- Box 4: GOLD -->
+  <rect x="920" y="270" width="250" height="100" fill="#ffffff" opacity="0.05" rx="4"/>
+  <text x="1045" y="300" font-family="Georgia, serif" font-size="14" fill="#d8b878" text-anchor="middle" letter-spacing="1">GOLD</text>
+  <text x="1045" y="335" font-family="Georgia, serif" font-size="28" fill="#55a855" text-anchor="middle" font-weight="bold">$4,492</text>
+  <text x="1045" y="358" font-family="Georgia, serif" font-size="16" fill="#55a855" text-anchor="middle">+1.25%</text>
+
+  <!-- Movers section -->
+  <text x="80" y="415" font-family="Georgia, serif" font-size="16" fill="#d8b878" letter-spacing="2" opacity="0.8">— 오늘의 움직임</text>
+
+  <!-- Up movers -->
+  <polygon points="90,430 100,430 95,422" fill="#55a855"/>
+  <text x="107" y="431" font-family="Georgia, serif" font-size="18" fill="#55a855">KB금융 +4.85%</text>
+  <polygon points="90,458 100,458 95,450" fill="#55a855"/>
+  <text x="107" y="459" font-family="Georgia, serif" font-size="18" fill="#55a855">신한지주 +3.84%</text>
+  <polygon points="90,486 100,486 95,478" fill="#55a855"/>
+  <text x="107" y="487" font-family="Georgia, serif" font-size="18" fill="#55a855">POSCO홀딩스 +0.75%</text>
+
+  <!-- Down movers -->
+  <polygon points="540,430 550,422 560,430" fill="#e05555"/>
+  <text x="567" y="431" font-family="Georgia, serif" font-size="18" fill="#e05555">NAVER -4.63%</text>
+  <polygon points="540,458 550,450 560,458" fill="#e05555"/>
+  <text x="567" y="459" font-family="Georgia, serif" font-size="18" fill="#e05555">LG에너지솔루션 -4.63%</text>
+  <polygon points="540,486 550,478 560,486" fill="#e05555"/>
+  <text x="567" y="487" font-family="Georgia, serif" font-size="18" fill="#e05555">현대차 -3.98%</text>
+  <polygon points="540,514 550,506 560,514" fill="#e05555"/>
+  <text x="567" y="515" font-family="Georgia, serif" font-size="18" fill="#e05555">삼성전자 -2.50%  SK하이닉스 -2.63%</text>
+
+  <!-- Bottom divider -->
+  <rect x="0" y="590" width="1280" height="1" fill="#d8b878" opacity="0.2"/>
+
+  <!-- Key insight -->
+  <text x="80" y="625" font-family="Georgia, serif" font-size="20" fill="#d8b878" font-style="italic">"오전 예측 관문이 오후에 현실이 됐다 — 1,530 돌파, 8,600까지 39포인트"</text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="716" width="1280" height="4" fill="#d8b878"/>
+
+  <!-- Small diamond -->
+  <polygon points="640,710 645,705 650,710 645,715" fill="#d8b878" opacity="0.6"/>
+</svg>

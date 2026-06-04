@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#080f08"/>
+      <stop offset="100%" style="stop-color:#101810"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Green accent bar top -->
+  <rect x="0" y="0" width="1280" height="4" fill="#55a855"/>
+
+  <!-- Left green stripe -->
+  <rect x="60" y="80" width="3" height="560" fill="#55a855" opacity="0.6"/>
+
+  <!-- Lincoln Brief mark -->
+  <text x="80" y="60" font-family="Georgia, serif" font-size="18" fill="#55a855" letter-spacing="4">LINCOLN BRIEF</text>
+  <text x="80" y="80" font-family="Georgia, serif" font-size="13" fill="#55a855" opacity="0.6" letter-spacing="2">KR ECONOMY ISSUE</text>
+
+  <!-- Edition label -->
+  <text x="1200" y="55" font-family="Georgia, serif" font-size="14" fill="#55a855" text-anchor="end" opacity="0.8">2026.06.04</text>
+  <text x="1200" y="75" font-family="Georgia, serif" font-size="12" fill="#55a855" text-anchor="end" opacity="0.5">SLOT 16:00 KST</text>
+
+  <!-- Main headline -->
+  <text x="80" y="155" font-family="Georgia, serif" font-size="38" fill="#aaaaaa">USD/KRW 최종 마감</text>
+
+  <!-- Rate -->
+  <text x="80" y="250" font-family="Georgia, serif" font-size="100" fill="#ffffff" font-weight="bold">1,536<tspan font-size="48" fill="#aaaaaa">원</tspan></text>
+
+  <!-- Up arrow -->
+  <polygon points="700,185 740,185 720,155" fill="#e05555"/>
+  <text x="750" y="245" font-family="Georgia, serif" font-size="72" fill="#e05555" font-weight="bold">+1.32%</text>
+
+  <!-- Divider -->
+  <rect x="80" y="270" width="1120" height="1" fill="#55a855" opacity="0.3"/>
+
+  <!-- Subtitle -->
+  <text x="80" y="308" font-family="Georgia, serif" font-size="24" fill="#cccccc">1,530원 관문 돌파 확인 · 5거래일 누적 +34.62원</text>
+
+  <!-- Data timeline -->
+  <text x="80" y="355" font-family="Georgia, serif" font-size="16" fill="#55a855" letter-spacing="2" opacity="0.8">— 5거래일 원화 약세 추이</text>
+
+  <!-- Timeline bars -->
+  <!-- 5/29 -->
+  <rect x="80" y="375" width="170" height="80" fill="#ffffff" opacity="0.04" rx="3"/>
+  <text x="165" y="400" font-family="Georgia, serif" font-size="12" fill="#aaaaaa" text-anchor="middle">5/29</text>
+  <text x="165" y="428" font-family="Georgia, serif" font-size="20" fill="#ffffff" text-anchor="middle" font-weight="bold">1,502원</text>
+  <text x="165" y="447" font-family="Georgia, serif" font-size="12" fill="#888888" text-anchor="middle">기준점</text>
+
+  <!-- Arrow -->
+  <text x="258" y="422" font-family="Georgia, serif" font-size="24" fill="#e05555">→</text>
+
+  <!-- 6/1 -->
+  <rect x="280" y="375" width="140" height="80" fill="#ffffff" opacity="0.04" rx="3"/>
+  <text x="350" y="400" font-family="Georgia, serif" font-size="12" fill="#aaaaaa" text-anchor="middle">6/1</text>
+  <text x="350" y="428" font-family="Georgia, serif" font-size="20" fill="#e05555" text-anchor="middle" font-weight="bold">1,512원</text>
+  <text x="350" y="447" font-family="Georgia, serif" font-size="12" fill="#e05555" text-anchor="middle">+10원</text>
+
+  <text x="428" y="422" font-family="Georgia, serif" font-size="24" fill="#e05555">→</text>
+
+  <!-- 6/3 -->
+  <rect x="450" y="375" width="140" height="80" fill="#ffffff" opacity="0.04" rx="3"/>
+  <text x="520" y="400" font-family="Georgia, serif" font-size="12" fill="#aaaaaa" text-anchor="middle">6/3</text>
+  <text x="520" y="428" font-family="Georgia, serif" font-size="20" fill="#e05555" text-anchor="middle" font-weight="bold">1,518원</text>
+  <text x="520" y="447" font-family="Georgia, serif" font-size="12" fill="#e05555" text-anchor="middle">+16원 누적</text>
+
+  <text x="598" y="422" font-family="Georgia, serif" font-size="24" fill="#e05555">→</text>
+
+  <!-- 6/4 오전 -->
+  <rect x="620" y="375" width="150" height="80" fill="#ffffff" opacity="0.04" rx="3"/>
+  <text x="695" y="400" font-family="Georgia, serif" font-size="12" fill="#aaaaaa" text-anchor="middle">6/4 오전</text>
+  <text x="695" y="428" font-family="Georgia, serif" font-size="20" fill="#e05555" text-anchor="middle" font-weight="bold">1,528원</text>
+  <text x="695" y="447" font-family="Georgia, serif" font-size="12" fill="#e05555" text-anchor="middle">+26원 누적</text>
+
+  <text x="778" y="422" font-family="Georgia, serif" font-size="24" fill="#e05555">→</text>
+
+  <!-- 6/4 마감 highlight -->
+  <rect x="800" y="365" width="180" height="100" fill="#e05555" opacity="0.15" rx="4"/>
+  <rect x="800" y="365" width="180" height="100" fill="none" stroke="#e05555" stroke-width="1.5" rx="4"/>
+  <text x="890" y="393" font-family="Georgia, serif" font-size="12" fill="#e05555" text-anchor="middle" font-weight="bold">6/4 최종</text>
+  <text x="890" y="425" font-family="Georgia, serif" font-size="24" fill="#ffffff" text-anchor="middle" font-weight="bold">1,536원</text>
+  <text x="890" y="450" font-family="Georgia, serif" font-size="14" fill="#e05555" text-anchor="middle">+34.62원 누적</text>
+
+  <!-- Next gate label -->
+  <text x="1010" y="422" font-family="Georgia, serif" font-size="14" fill="#aaaaaa">다음 관문</text>
+  <text x="1010" y="445" font-family="Georgia, serif" font-size="28" fill="#e05555" font-weight="bold">1,540원</text>
+
+  <!-- Bottom divider -->
+  <rect x="0" y="590" width="1280" height="1" fill="#55a855" opacity="0.2"/>
+
+  <!-- Bottom insight -->
+  <text x="80" y="625" font-family="Georgia, serif" font-size="19" fill="#55a855" font-style="italic">"오늘 하루에 20.02원 — 5거래일 전체의 58%가 단 하루에 집중됐다"</text>
+
+  <!-- Secondary data -->
+  <text x="80" y="660" font-family="Georgia, serif" font-size="16" fill="#888888">미국 10년물 4.491% · GOLD $4,492.30 (+1.25%) · 미국 10년물이 4.3% 이하로 내려와야 반전</text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="716" width="1280" height="4" fill="#55a855"/>
+
+  <!-- Small diamond -->
+  <polygon points="640,710 645,705 650,710 645,715" fill="#55a855" opacity="0.6"/>
+</svg>
