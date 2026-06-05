@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#080e0a"/>
+      <stop offset="100%" stop-color="#060a08"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#80c080"/>
+      <stop offset="50%" stop-color="#60a060"/>
+      <stop offset="100%" stop-color="#408040"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#60a060" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#60a060" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#d8b878" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#d8b878" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1100" cy="180" r="380" fill="url(#glow1)"/>
+  <circle cx="150" cy="580" r="240" fill="url(#glow2)"/>
+
+  <!-- 좌상단 브랜드 -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#60a060" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#a0d0a0">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#60a060">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#60a060" text-anchor="end">2026.06.06 · ECONOMY ISSUE · SLOT 01</text>
+
+  <!-- 카테고리 -->
+  <text x="80" y="175" font-family="monospace" font-size="13" letter-spacing="5" fill="#60a060">— 경제 이슈 —</text>
+
+  <!-- 메인 - USD/KRW -->
+  <text x="80" y="240" font-family="monospace" font-size="20" letter-spacing="6" fill="#a0d0a0">USD / KRW</text>
+  <text x="80" y="330" font-family="Playfair Display, Georgia, serif" font-size="80" font-weight="700" fill="#d0f0d0">1,560.23</text>
+  <polygon points="80,380 95,355 110,380" fill="#e87070"/>
+  <text x="120" y="380" font-family="monospace" font-size="32" fill="#e87070">+1.97%  달러 강세</text>
+
+  <!-- 서브 텍스트 -->
+  <text x="80" y="430" font-family="sans-serif" font-size="19" fill="#709070">US10Y 4.544% 상승이 달러 수익률 매력을 높임</text>
+  <text x="80" y="458" font-family="sans-serif" font-size="17" fill="#507050">Gold −2.77% · BTC −4.52% 동반 하락 — 달러 강세 전면화</text>
+
+  <!-- 환율 시나리오 -->
+  <g transform="translate(80, 500)">
+    <line x1="0" y1="0" x2="600" y2="0" stroke="#60a060" stroke-width="0.5" stroke-opacity="0.5"/>
+    <text x="0" y="30" font-family="monospace" font-size="13" fill="#a0d0a0">NFP 약세 → US10Y 4.40% ↓  ·  USD/KRW 1,530~1,545</text>
+    <text x="0" y="58" font-family="monospace" font-size="13" fill="#d8b878">NFP 컨센서스   ·   USD/KRW 1,545~1,570 유지</text>
+    <text x="0" y="86" font-family="monospace" font-size="13" fill="#e08080">NFP 강세 → US10Y 4.60% ↑  ·  USD/KRW 1,580+</text>
+    <line x1="0" y1="102" x2="600" y2="102" stroke="#60a060" stroke-width="0.5" stroke-opacity="0.5"/>
+  </g>
+
+  <!-- NFP 리마인더 -->
+  <text x="80" y="660" font-family="monospace" font-size="12" fill="#408040">오늘(6/6) 21:30 KST NFP 발표  ·  FOMC 6/11 점도표가 중기 환율 결정</text>
+
+  <!-- 우하단 -->
+  <text x="1200" y="690" font-family="monospace" font-size="10" letter-spacing="2" fill="#204020" text-anchor="end">lincoln-brief.vercel.app</text>
+</svg>

@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#140a08"/>
+      <stop offset="100%" stop-color="#0a0808"/>
+    </linearGradient>
+    <linearGradient id="red" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#e08080"/>
+      <stop offset="50%" stop-color="#c06060"/>
+      <stop offset="100%" stop-color="#a04040"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#c06060" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#c06060" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#d8b878" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#d8b878" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1100" cy="180" r="380" fill="url(#glow1)"/>
+  <circle cx="150" cy="580" r="240" fill="url(#glow2)"/>
+
+  <!-- 좌상단 브랜드 -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#c06060" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#e0a0a0">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#c06060">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#c06060" text-anchor="end">2026.06.06 · MARKET FORECAST · SLOT 01</text>
+
+  <!-- 카테고리 -->
+  <text x="80" y="175" font-family="monospace" font-size="13" letter-spacing="5" fill="#c06060">— 시장 예측 —</text>
+
+  <!-- 메인 헤드라인 -->
+  <text x="80" y="255" font-family="Playfair Display, Georgia, serif" font-size="50" font-weight="700" fill="#f0d0d0">NFP D-Day</text>
+  <text x="80" y="310" font-family="Playfair Display, Georgia, serif" font-size="32" font-style="italic" fill="#e08080">오늘 21:30 KST 발표</text>
+  <text x="80" y="360" font-family="sans-serif" font-size="20" fill="#a06060">US10Y 이미 4.544% · S&amp;P 이틀 하락 · USD/KRW 1,560 돌파</text>
+
+  <!-- 시나리오 테이블 -->
+  <g transform="translate(80, 410)">
+    <!-- 헤더 -->
+    <text x="0" y="20" font-family="monospace" font-size="11" letter-spacing="3" fill="#c06060">4가지 시나리오</text>
+    <line x1="0" y1="28" x2="580" y2="28" stroke="#c06060" stroke-width="0.5" stroke-opacity="0.5"/>
+
+    <!-- 시나리오 A -->
+    <text x="0" y="54" font-family="monospace" font-size="14" fill="#60a060">A. 약한 고용 (30%)</text>
+    <text x="320" y="54" font-family="monospace" font-size="13" fill="#80c080">→ US10Y 4.40% ↓  S&amp;P 7,550+</text>
+
+    <!-- 시나리오 B -->
+    <text x="0" y="84" font-family="monospace" font-size="14" fill="#d8b878">B. 컨센서스 (35%)</text>
+    <text x="320" y="84" font-family="monospace" font-size="13" fill="#c0a060">→ US10Y 4.44~4.55%  박스권</text>
+
+    <!-- 시나리오 C -->
+    <text x="0" y="114" font-family="monospace" font-size="14" fill="#e08080">C. 강한 고용 (25%)</text>
+    <text x="320" y="114" font-family="monospace" font-size="13" fill="#c06060">→ US10Y 4.60%+  NASDAQ ↓↓</text>
+
+    <!-- 시나리오 D -->
+    <text x="0" y="144" font-family="monospace" font-size="14" fill="#806080">D. 블랙 스완 (10%)</text>
+    <text x="320" y="144" font-family="monospace" font-size="13" fill="#604060">→ 경기 침체 우려 급부상</text>
+
+    <line x1="0" y1="160" x2="580" y2="160" stroke="#c06060" stroke-width="0.5" stroke-opacity="0.5"/>
+  </g>
+
+  <!-- FOMC -->
+  <rect x="80" y="620" width="440" height="48" rx="4" fill="#1a0c0c" stroke="#c06060" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="100" y="648" font-family="monospace" font-size="13" fill="#e08080">FOMC 6/11  ·  점도표·파월 기자회견 주목</text>
+
+  <!-- 우하단 -->
+  <text x="1200" y="690" font-family="monospace" font-size="10" letter-spacing="2" fill="#602020" text-anchor="end">lincoln-brief.vercel.app</text>
+</svg>
