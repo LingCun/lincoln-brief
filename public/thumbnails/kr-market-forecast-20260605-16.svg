@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#100808"/>
+      <stop offset="100%" stop-color="#180d0a"/>
+    </linearGradient>
+    <linearGradient id="red" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f09060"/>
+      <stop offset="50%" stop-color="#e07040"/>
+      <stop offset="100%" stop-color="#c05028"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#e06030" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#e06030" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#e07030" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#e07030" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1050" cy="160" r="440" fill="url(#glow1)"/>
+  <circle cx="200" cy="600" r="260" fill="url(#glow2)"/>
+
+  <!-- Header -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#e07040" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#f8f0e8">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#e07040">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#e07040" text-anchor="end">2026.06.05 16:00 KST · KR FORECAST</text>
+
+  <!-- Edition label -->
+  <text x="80" y="160" font-family="monospace" font-size="13" letter-spacing="5" fill="#e07040">— 시장 예측 —</text>
+
+  <!-- Badge -->
+  <rect x="80" y="176" width="580" height="30" rx="4" fill="#e06030" fill-opacity="0.16" stroke="#e07040" stroke-width="0.8"/>
+  <text x="92" y="196" font-family="monospace" font-size="12" letter-spacing="2" fill="#f08050">8,200 종가 기준 붕괴 확인 · 8,000 레벨 시험대 · 베어 35%</text>
+
+  <!-- Main title -->
+  <text x="80" y="296" font-family="Playfair Display, Georgia, serif" font-size="68" font-weight="500" fill="#f8f0e8">8,200 붕괴</text>
+  <text x="80" y="364" font-family="Playfair Display, Georgia, serif" font-size="38" font-style="italic" fill="url(#red)">다음 관문 8,000 · DOW +1.73% 변수</text>
+  <text x="80" y="412" font-family="sans-serif" font-size="17" fill="#a08870">KOSPI 8,160.59 종가 · 베이스 45% · 베어 35%</text>
+
+  <!-- Divider -->
+  <line x1="80" y1="444" x2="1200" y2="444" stroke="#201008" stroke-width="1"/>
+
+  <!-- Metrics row -->
+  <g transform="translate(80, 478)">
+    <!-- KOSPI -->
+    <g>
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#e07040" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="3" fill="#a08060">KOSPI 종가</text>
+      <text x="0" y="66" font-family="Playfair Display, Georgia, serif" font-size="28" fill="#f8f0e8">8,160.59</text>
+      <polygon points="0,88 14,72 28,88" fill="#e05555"/>
+      <text x="36" y="87" font-family="monospace" font-size="16" fill="#e05555">−5.54%</text>
+    </g>
+    <!-- 지지선 -->
+    <g transform="translate(280, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#e07040" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="3" fill="#a08060">다음 지지선</text>
+      <text x="0" y="66" font-family="Playfair Display, Georgia, serif" font-size="28" fill="#f8f0e8">8,000</text>
+      <text x="0" y="90" font-family="monospace" font-size="14" fill="#e07040">−160pt 거리</text>
+    </g>
+    <!-- DOW -->
+    <g transform="translate(540, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#e07040" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="3" fill="#a08060">DOW (미국)</text>
+      <text x="0" y="66" font-family="Playfair Display, Georgia, serif" font-size="28" fill="#f8f0e8">51,562</text>
+      <polygon points="0,74 14,88 28,74" fill="#50c878"/>
+      <text x="36" y="87" font-family="monospace" font-size="16" fill="#50c878">+1.73%</text>
+    </g>
+    <!-- NVDA -->
+    <g transform="translate(800, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#e07040" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="3" fill="#a08060">NVDA</text>
+      <text x="0" y="66" font-family="Playfair Display, Georgia, serif" font-size="28" fill="#f8f0e8">$218.66</text>
+      <polygon points="0,74 14,88 28,74" fill="#50c878"/>
+      <text x="36" y="87" font-family="monospace" font-size="16" fill="#50c878">+1.82%</text>
+    </g>
+  </g>
+
+  <!-- Footer -->
+  <line x1="80" y1="676" x2="1200" y2="676" stroke="#201008" stroke-width="1"/>
+  <text x="80" y="698" font-family="monospace" font-size="10" letter-spacing="2" fill="#5a3a20">lincoln-brief.vercel.app · 본 글은 정보 제공 목적이며 투자 권유가 아닙니다</text>
+</svg>

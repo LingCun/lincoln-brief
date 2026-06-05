@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#06100a"/>
+      <stop offset="100%" stop-color="#081510"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#80d890"/>
+      <stop offset="50%" stop-color="#58c070"/>
+      <stop offset="100%" stop-color="#38a050"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#30c060" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#30c060" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#58c070" stop-opacity="0.07"/>
+      <stop offset="100%" stop-color="#58c070" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1060" cy="200" r="400" fill="url(#glow1)"/>
+  <circle cx="180" cy="580" r="260" fill="url(#glow2)"/>
+
+  <!-- Header -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#58c070" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#eef8f0">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#58c070">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#58c070" text-anchor="end">2026.06.05 16:00 KST · KR ECONOMY</text>
+
+  <!-- Edition label -->
+  <text x="80" y="160" font-family="monospace" font-size="13" letter-spacing="5" fill="#58c070">— 경제 이슈 —</text>
+
+  <!-- Badge -->
+  <rect x="80" y="176" width="620" height="30" rx="4" fill="#30c060" fill-opacity="0.13" stroke="#58c070" stroke-width="0.8"/>
+  <text x="92" y="196" font-family="monospace" font-size="12" letter-spacing="2" fill="#70d880">DOW +1.73% vs. KOSPI −5.54% · 7.3%pt 괴리 · 기술 집중 리스크</text>
+
+  <!-- Main title -->
+  <text x="80" y="294" font-family="Playfair Display, Georgia, serif" font-size="62" font-weight="500" fill="#eef8f0">DOW +1.73%</text>
+  <text x="80" y="360" font-family="Playfair Display, Georgia, serif" font-size="38" font-style="italic" fill="url(#green)">vs. KOSPI −5.54% 같은 날</text>
+  <text x="80" y="408" font-family="sans-serif" font-size="17" fill="#7aaa88">한국 반도체 집중 구조 · AI 사이클 변동성 증폭</text>
+
+  <!-- Divider -->
+  <line x1="80" y1="444" x2="1200" y2="444" stroke="#0a2010" stroke-width="1"/>
+
+  <!-- Metrics row -->
+  <g transform="translate(80, 478)">
+    <!-- DOW -->
+    <g>
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#58c070" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="3" fill="#6a9870">DOW</text>
+      <text x="0" y="66" font-family="Playfair Display, Georgia, serif" font-size="28" fill="#eef8f0">51,562</text>
+      <polygon points="0,74 14,88 28,74" fill="#58c070"/>
+      <text x="36" y="87" font-family="monospace" font-size="16" fill="#58c070">+1.73%</text>
+    </g>
+    <!-- S&P 500 -->
+    <g transform="translate(240, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#58c070" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="3" fill="#6a9870">S&amp;P 500</text>
+      <text x="0" y="66" font-family="Playfair Display, Georgia, serif" font-size="28" fill="#eef8f0">7,584</text>
+      <polygon points="0,74 14,88 28,74" fill="#58c070"/>
+      <text x="36" y="87" font-family="monospace" font-size="16" fill="#58c070">+0.41%</text>
+    </g>
+    <!-- KOSPI -->
+    <g transform="translate(480, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#58c070" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="3" fill="#6a9870">KOSPI</text>
+      <text x="0" y="66" font-family="Playfair Display, Georgia, serif" font-size="28" fill="#eef8f0">8,161</text>
+      <polygon points="0,88 14,72 28,88" fill="#e05555"/>
+      <text x="36" y="87" font-family="monospace" font-size="16" fill="#e05555">−5.54%</text>
+    </g>
+    <!-- 괴리 -->
+    <g transform="translate(720, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#58c070" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="3" fill="#6a9870">일간 괴리</text>
+      <text x="0" y="66" font-family="Playfair Display, Georgia, serif" font-size="28" fill="#eef8f0">7.27%p</text>
+      <text x="0" y="92" font-family="monospace" font-size="13" fill="#a0c8a8">DOW vs KOSPI</text>
+    </g>
+  </g>
+
+  <!-- Footer -->
+  <line x1="80" y1="676" x2="1200" y2="676" stroke="#0a2010" stroke-width="1"/>
+  <text x="80" y="698" font-family="monospace" font-size="10" letter-spacing="2" fill="#3a6848">lincoln-brief.vercel.app · 본 글은 정보 제공 목적이며 투자 권유가 아닙니다</text>
+</svg>
