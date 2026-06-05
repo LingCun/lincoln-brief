@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#141008"/>
+      <stop offset="100%" stop-color="#08070a"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#e8cc88"/>
+      <stop offset="50%" stop-color="#d8b878"/>
+      <stop offset="100%" stop-color="#b89848"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#d8b878" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#d8b878" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#c06060" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#c06060" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1050" cy="160" r="360" fill="url(#glow1)"/>
+  <circle cx="200" cy="580" r="220" fill="url(#glow2)"/>
+
+  <!-- 좌상단 브랜드 -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#d8b878" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#e8d8a0">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#d8b878">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#d8b878" text-anchor="end">2026.06.06 · DAILY BRIEF · SLOT 06</text>
+
+  <!-- 에디션 라벨 -->
+  <text x="80" y="175" font-family="monospace" font-size="13" letter-spacing="5" fill="#d8b878">— 6/5 US 마감 최종 확정 —</text>
+
+  <!-- 메인 헤드라인 -->
+  <text x="80" y="265" font-family="Playfair Display, Georgia, serif" font-size="48" font-weight="600" fill="#e8d8a0">NASDAQ −4.18% · S&amp;P −2.64%</text>
+  <text x="80" y="322" font-family="Playfair Display, Georgia, serif" font-size="30" font-style="italic" fill="url(#gold)">AVGO −7.92% · TSLA −6.56% · NVDA −6.20%</text>
+  <text x="80" y="370" font-family="sans-serif" font-size="18" fill="#a09060">BRK-B +1.98% · WMT +0.97% 방어  |  USD/KRW 1,558</text>
+
+  <!-- 데이터 그리드 -->
+  <g transform="translate(80, 445)">
+    <!-- S&P -->
+    <g>
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#c06060" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#a09060">S&amp;P 500</text>
+      <text x="0" y="68" font-family="Georgia, serif" font-size="28" fill="#e8d8a0">7,383</text>
+      <polygon points="7,90 0,76 14,76" fill="#c06060"/>
+      <text x="22" y="90" font-family="monospace" font-size="13" fill="#c06060">−2.64%</text>
+    </g>
+    <!-- NASDAQ -->
+    <g transform="translate(210, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#c06060" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#a09060">NASDAQ</text>
+      <text x="0" y="68" font-family="Georgia, serif" font-size="28" fill="#e8d8a0">25,709</text>
+      <polygon points="7,90 0,76 14,76" fill="#c06060"/>
+      <text x="22" y="90" font-family="monospace" font-size="13" fill="#c06060">−4.18%</text>
+    </g>
+    <!-- DOW -->
+    <g transform="translate(430, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#c06060" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#a09060">DOW</text>
+      <text x="0" y="68" font-family="Georgia, serif" font-size="28" fill="#e8d8a0">50,866</text>
+      <polygon points="7,90 0,76 14,76" fill="#c06060"/>
+      <text x="22" y="90" font-family="monospace" font-size="13" fill="#c06060">−1.35%</text>
+    </g>
+    <!-- US10Y -->
+    <g transform="translate(640, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#d8b878" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#a09060">US10Y</text>
+      <text x="0" y="68" font-family="Georgia, serif" font-size="28" fill="#e8d8a0">4.536%</text>
+      <polygon points="0,90 7,76 14,90" fill="#d8b878"/>
+      <text x="22" y="90" font-family="monospace" font-size="13" fill="#d8b878">상승</text>
+    </g>
+    <!-- Gold -->
+    <g transform="translate(830, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#c06060" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#a09060">GOLD</text>
+      <text x="0" y="68" font-family="Georgia, serif" font-size="28" fill="#e8d8a0">$4,339</text>
+      <polygon points="7,90 0,76 14,76" fill="#c06060"/>
+      <text x="22" y="90" font-family="monospace" font-size="13" fill="#c06060">−3.04%</text>
+    </g>
+  </g>
+
+  <!-- 하단 구분선 + NFP 경보 -->
+  <line x1="80" y1="620" x2="1200" y2="620" stroke="#d8b878" stroke-width="0.5" stroke-opacity="0.4"/>
+  <text x="80" y="648" font-family="monospace" font-size="12" letter-spacing="2" fill="#d8b878">▶ 오늘 21:30 KST · NFP 발표</text>
+  <text x="80" y="672" font-family="monospace" font-size="11" fill="#806040">lincoln-brief.vercel.app</text>
+</svg>
