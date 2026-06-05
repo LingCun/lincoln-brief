@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-06-05T00:10:26.602Z",
+  "asOf": "2026-06-05T00:30:52.441Z",
   "asOfLabel": "6/5 한국·미국 마감",
   "source": "Yahoo Finance · KRX",
   "us": {
@@ -551,39 +551,38 @@
       {
         "symbol": "KOSPI",
         "label": "KOSPI",
-        "close": 8639.41,
-        "change": -148.96988281250015,
-        "changePct": -1.695077873270381,
+        "close": 8263.58,
+        "change": -537.9102343750001,
+        "changePct": -6.111581335103276,
         "note": "큰 폭 하락"
       },
       {
         "symbol": "KOSDAQ",
         "label": "KOSDAQ",
-        "close": 1049.73,
-        "change": -0.3000292968749818,
-        "changePct": -0.028573401569847345,
-        "note": "보합"
+        "close": 1018.78,
+        "change": -7.250029296875027,
+        "changePct": -0.7066098544740819,
+        "note": "하락"
       },
       {
         "symbol": "USDKRW",
         "label": "USD/KRW",
-        "close": 1533.01,
-        "change": 2.900014648437491,
-        "changePct": 0.1895298165622503,
-        "note": "보합"
+        "close": 1538.58,
+        "change": 8.470014648437427,
+        "changePct": 0.5535559358166878,
+        "note": "상승"
       }
     ],
     "top12": [
       {
         "ticker": "005930.KS",
         "name": "삼성전자",
-        "price": 351500,
-        "change": -9000,
-        "changePct": -2.496532593619972,
+        "price": 332000,
+        "change": -19500,
+        "changePct": -5.547652916073969,
         "currency": "KRW",
         "exchange": "KSC",
         "sparkline": [
-          214500,
           219000,
           217500,
           224500,
@@ -612,20 +611,20 @@
           317000,
           349000,
           360500,
-          351500
+          351500,
+          332000
         ],
         "available": true
       },
       {
         "ticker": "000660.KS",
         "name": "SK하이닉스",
-        "price": 2298000,
-        "change": -62000,
-        "changePct": -2.6271186440677963,
+        "price": 2126000,
+        "change": -172000,
+        "changePct": -7.484769364664926,
         "currency": "KRW",
         "exchange": "KSC",
         "sparkline": [
-          1166000,
           1224000,
           1223000,
           1225000,
@@ -654,20 +653,20 @@
           2333000,
           2363000,
           2360000,
-          2298000
+          2298000,
+          2126000
         ],
         "available": true
       },
       {
         "ticker": "373220.KS",
         "name": "LG에너지솔루션",
-        "price": 422000,
-        "change": -20500,
-        "changePct": -4.632768361581921,
+        "price": 417000,
+        "change": -5000,
+        "changePct": -1.1848341232227488,
         "currency": "KRW",
         "exchange": "KSC",
         "sparkline": [
-          429000,
           478000,
           484500,
           466500,
@@ -696,20 +695,20 @@
           458000,
           455000,
           442500,
-          422000
+          422000,
+          417000
         ],
         "available": true
       },
       {
         "ticker": "207940.KS",
         "name": "삼성바이오로직스",
-        "price": 1350000,
-        "change": -17000,
-        "changePct": -1.2435991221653255,
+        "price": 1387000,
+        "change": 37000,
+        "changePct": 2.740740740740741,
         "currency": "KRW",
         "exchange": "KSC",
         "sparkline": [
-          1605000,
           1588000,
           1561000,
           1514000,
@@ -738,20 +737,20 @@
           1363000,
           1377000,
           1367000,
-          1350000
+          1350000,
+          1387000
         ],
         "available": true
       },
       {
         "ticker": "005380.KS",
         "name": "현대차",
-        "price": 700000,
-        "change": -29000,
-        "changePct": -3.9780521262002746,
+        "price": 672000,
+        "change": -28000,
+        "changePct": -4,
         "currency": "KRW",
         "exchange": "KSC",
         "sparkline": [
-          527000,
           546000,
           541000,
           532000,
@@ -780,20 +779,20 @@
           723000,
           750000,
           729000,
-          700000
+          700000,
+          672000
         ],
         "available": true
       },
       {
         "ticker": "000270.KS",
         "name": "기아",
-        "price": 164300,
-        "change": -4500,
-        "changePct": -2.665876777251185,
+        "price": 159600,
+        "change": -4700,
+        "changePct": -2.8606208155812536,
         "currency": "KRW",
         "exchange": "KSC",
         "sparkline": [
-          157400,
           160000,
           160000,
           158400,
@@ -822,20 +821,20 @@
           169200,
           169900,
           168800,
-          164300
+          164300,
+          159600
         ],
         "available": true
       },
       {
         "ticker": "005490.KS",
         "name": "POSCO홀딩스",
-        "price": 402000,
-        "change": 3000,
-        "changePct": 0.7518796992481203,
+        "price": 391250,
+        "change": -10750,
+        "changePct": -2.674129353233831,
         "currency": "KRW",
         "exchange": "KSC",
         "sparkline": [
-          389500,
           421500,
           418500,
           410500,
@@ -864,20 +863,20 @@
           423500,
           413000,
           399000,
-          402000
+          402000,
+          391250
         ],
         "available": true
       },
       {
         "ticker": "105560.KS",
         "name": "KB금융",
-        "price": 164200,
-        "change": 7600,
-        "changePct": 4.853128991060025,
+        "price": 174700,
+        "change": 10500,
+        "changePct": 6.394640682095005,
         "currency": "KRW",
         "exchange": "KSC",
         "sparkline": [
-          160900,
           160400,
           157400,
           158000,
@@ -906,20 +905,20 @@
           150600,
           152100,
           156600,
-          164200
+          164200,
+          174700
         ],
         "available": true
       },
       {
         "ticker": "035420.KS",
         "name": "NAVER",
-        "price": 267500,
+        "price": 254500,
         "change": -13000,
-        "changePct": -4.634581105169341,
+        "changePct": -4.859813084112149,
         "currency": "KRW",
         "exchange": "KSC",
         "sparkline": [
-          213500,
           214000,
           214000,
           217500,
@@ -948,20 +947,20 @@
           234000,
           271500,
           280500,
-          267500
+          267500,
+          254500
         ],
         "available": true
       },
       {
         "ticker": "068270.KS",
         "name": "셀트리온",
-        "price": 176500,
-        "change": -2452.375,
-        "changePct": -1.370406511788402,
+        "price": 177000,
+        "change": 500,
+        "changePct": 0.28328611898017,
         "currency": "KRW",
         "exchange": "KSC",
         "sparkline": [
-          195714.28125,
           193333.328125,
           194285.71875,
           196190.46875,
@@ -990,20 +989,20 @@
           183714.28125,
           182571.421875,
           178952.375,
-          176500
+          176500,
+          177000
         ],
         "available": true
       },
       {
         "ticker": "055550.KS",
         "name": "신한지주",
-        "price": 100100,
-        "change": 3700,
-        "changePct": 3.8381742738589213,
+        "price": 106900,
+        "change": 6800,
+        "changePct": 6.793206793206793,
         "currency": "KRW",
         "exchange": "KSC",
         "sparkline": [
-          100000,
           99800,
           98600,
           99900,
@@ -1032,20 +1031,20 @@
           93600,
           92600,
           96400,
-          100100
+          100100,
+          106900
         ],
         "available": true
       },
       {
         "ticker": "035720.KS",
         "name": "카카오",
-        "price": 42000,
-        "change": -550,
-        "changePct": -1.2925969447708578,
+        "price": 41100,
+        "change": -900,
+        "changePct": -2.142857142857143,
         "currency": "KRW",
         "exchange": "KSC",
         "sparkline": [
-          48850,
           48950,
           48450,
           48400,
@@ -1074,7 +1073,8 @@
           41950,
           42700,
           42550,
-          42000
+          42000,
+          41100
         ],
         "available": true
       }
@@ -1159,29 +1159,29 @@
     },
     {
       "symbol": "USD/KRW",
-      "value": "1,533.01",
-      "change": "+0.19%",
+      "value": "1,538.58",
+      "change": "+0.55%",
       "up": true,
       "market": "fx"
     },
     {
       "symbol": "BTC",
-      "value": "$63,762",
-      "change": "-0.39%",
+      "value": "$63,861",
+      "change": "-0.24%",
       "up": false,
       "market": "crypto"
     },
     {
       "symbol": "GOLD",
-      "value": "$4,488.80",
-      "change": "+1.17%",
+      "value": "$4,477.80",
+      "change": "+0.93%",
       "up": true,
       "market": "commodity"
     },
     {
       "symbol": "WTI",
-      "value": "$92.97",
-      "change": "-3.18%",
+      "value": "$92.98",
+      "change": "-3.17%",
       "up": false,
       "market": "commodity"
     },
@@ -1201,28 +1201,28 @@
     },
     "crypto": {
       "source": "coingecko",
-      "btcUsd": 63711,
-      "change24hPct": -0.7641540503450436,
-      "asOf": "2026-06-05T00:09:20.000Z"
+      "btcUsd": 63808,
+      "change24hPct": 0.39628504413671567,
+      "asOf": "2026-06-05T00:30:31.000Z"
     },
     "fred": {
       "source": "fred",
       "series": {
         "DGS10": {
-          "value": 4.46,
-          "asOf": "2026-06-02"
+          "value": 4.49,
+          "asOf": "2026-06-03"
         },
         "SP500": {
-          "value": 7553.68,
-          "asOf": "2026-06-03"
+          "value": 7584.31,
+          "asOf": "2026-06-04"
         },
         "NASDAQCOM": {
           "value": 26853.98,
           "asOf": "2026-06-03"
         },
         "DJIA": {
-          "value": 50687.07,
-          "asOf": "2026-06-03"
+          "value": 51561.93,
+          "asOf": "2026-06-04"
         },
         "DCOILWTICO": {
           "value": 95.96,
@@ -1263,15 +1263,15 @@
       "source": "twelvedata",
       "quotes": {
         "XAU/USD": {
-          "price": 4461.17471,
+          "price": 4453.88265,
           "previousClose": 4475.96582,
-          "changePct": -0.33045628
+          "changePct": -0.49337218
         }
       }
     },
     "yahoo": {
-      "usdKrw": 1532.78,
-      "btcUsd": 63762.01
+      "usdKrw": 1538.58,
+      "btcUsd": 63861.13
     }
   }
 }
