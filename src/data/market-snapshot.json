@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-06-07T19:30:48.625Z",
+  "asOf": "2026-06-07T20:30:50.705Z",
   "asOfLabel": "6/7 한국·미국 마감",
   "source": "Yahoo Finance · KRX",
   "us": {
@@ -567,9 +567,9 @@
       {
         "symbol": "USDKRW",
         "label": "USD/KRW",
-        "close": 1559,
-        "change": 25.9300537109375,
-        "changePct": 1.691380994957444,
+        "close": 1559.06,
+        "change": 25.990053710937445,
+        "changePct": 1.6952947107109348,
         "note": "강한 상승"
       }
     ],
@@ -1159,15 +1159,15 @@
     },
     {
       "symbol": "USD/KRW",
-      "value": "1,559.00",
-      "change": "+1.69%",
+      "value": "1,559.06",
+      "change": "+1.70%",
       "up": true,
       "market": "fx"
     },
     {
       "symbol": "BTC",
-      "value": "$61,436",
-      "change": "+0.93%",
+      "value": "$61,749",
+      "change": "+1.45%",
       "up": true,
       "market": "crypto"
     },
@@ -1201,9 +1201,9 @@
     },
     "crypto": {
       "source": "coingecko",
-      "btcUsd": 61429,
-      "change24hPct": 1.3920296759225395,
-      "asOf": "2026-06-07T19:30:26.000Z"
+      "btcUsd": 61753,
+      "change24hPct": 1.9453695419303518,
+      "asOf": "2026-06-07T20:29:38.000Z"
     },
     "fred": {
       "source": "fred",
@@ -1234,28 +1234,28 @@
       "source": "finnhub",
       "quotes": {
         "AAPL": {
-          "price": 307.36,
+          "price": 307.34,
           "previousClose": 311.23,
-          "change": -3.87,
-          "changePct": -1.2435
+          "change": -3.89,
+          "changePct": -1.2499
         },
         "MSFT": {
-          "price": 416.69,
+          "price": 416.67,
           "previousClose": 428.05,
-          "change": -11.36,
-          "changePct": -2.6539
+          "change": -11.38,
+          "changePct": -2.6586
         },
         "NVDA": {
-          "price": 205.12,
+          "price": 205.1,
           "previousClose": 218.66,
-          "change": -13.54,
-          "changePct": -6.1923
+          "change": -13.56,
+          "changePct": -6.2014
         },
         "TSLA": {
-          "price": 391.02,
+          "price": 391,
           "previousClose": 418.45,
-          "change": -27.43,
-          "changePct": -6.5551
+          "change": -27.45,
+          "changePct": -6.5599
         }
       }
     },
@@ -1263,15 +1263,15 @@
       "source": "twelvedata",
       "quotes": {
         "XAU/USD": {
-          "price": 4330.17306,
+          "price": 4330.17552,
           "previousClose": 4330.15149,
-          "changePct": 0.000498135
+          "changePct": 0.00055494594
         }
       }
     },
     "yahoo": {
-      "usdKrw": 1559,
-      "btcUsd": 61436.01
+      "usdKrw": 1559.06,
+      "btcUsd": 61748.75
     }
   }
 }
