@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#060e0a"/>
+      <stop offset="100%" stop-color="#0a1610"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#60c890"/>
+      <stop offset="50%" stop-color="#40a870"/>
+      <stop offset="100%" stop-color="#208850"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f0d88c"/>
+      <stop offset="100%" stop-color="#d8b878"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#40a870" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#40a870" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#e03030" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#e03030" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1080" cy="220" r="400" fill="url(#glow1)"/>
+  <circle cx="180" cy="560" r="300" fill="url(#glow2)"/>
+
+  <!-- Header -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#40a870" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#f5edd9">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#40a870">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#40a870" text-anchor="end">2026.06.08 16:00 KST · ECONOMY ISSUE</text>
+
+  <!-- Edition label -->
+  <text x="80" y="160" font-family="monospace" font-size="13" letter-spacing="5" fill="#40a870">— 경제 이슈 —</text>
+
+  <!-- Alert badge -->
+  <rect x="80" y="176" width="660" height="30" rx="4" fill="#e03030" fill-opacity="0.16" stroke="#e03030" stroke-width="0.8"/>
+  <text x="92" y="196" font-family="monospace" font-size="12" letter-spacing="2" fill="#e05555">KB금융 −11.71% · 신한지주 −9.67% · JPMorgan +0.48% 한·미 역설</text>
+
+  <!-- Main title -->
+  <text x="80" y="304" font-family="Playfair Display, Georgia, serif" font-size="58" font-weight="500" fill="#f5edd9">한국 금융주, 미국보다</text>
+  <text x="80" y="368" font-family="Playfair Display, Georgia, serif" font-size="58" font-weight="500" fill="#f5edd9">더 무너진 이유</text>
+  <text x="80" y="418" font-family="Playfair Display, Georgia, serif" font-size="24" font-style="italic" fill="url(#green)">포트폴리오 손실 · 환헤지 언와인드 · 가계대출 우려</text>
+
+  <!-- Divider -->
+  <line x1="80" y1="446" x2="1200" y2="446" stroke="#0c1c14" stroke-width="1"/>
+
+  <!-- Comparison row -->
+  <g transform="translate(80, 474)">
+    <!-- KB금융 -->
+    <g>
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#e05555" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="3" fill="#a07060">KB금융 (KR)</text>
+      <text x="0" y="66" font-family="Playfair Display, Georgia, serif" font-size="28" fill="#f5edd9">151,500원</text>
+      <polygon points="0,90 14,74 28,90" fill="#e05555"/>
+      <text x="36" y="89" font-family="monospace" font-size="16" fill="#e05555">−11.71%</text>
+    </g>
+    <!-- 신한지주 -->
+    <g transform="translate(290, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#e05555" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="3" fill="#a07060">신한지주 (KR)</text>
+      <text x="0" y="66" font-family="Playfair Display, Georgia, serif" font-size="28" fill="#f5edd9">97,100원</text>
+      <polygon points="0,90 14,74 28,90" fill="#e05555"/>
+      <text x="36" y="89" font-family="monospace" font-size="16" fill="#e05555">−9.67%</text>
+    </g>
+    <!-- VS label -->
+    <g transform="translate(560, 22)">
+      <text x="0" y="26" font-family="Georgia, serif" font-size="28" font-style="italic" fill="#5a7060">vs</text>
+    </g>
+    <!-- JPMorgan -->
+    <g transform="translate(620, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#50c878" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="3" fill="#608878">JPMorgan (US)</text>
+      <text x="0" y="66" font-family="Playfair Display, Georgia, serif" font-size="28" fill="#f5edd9">$312.37</text>
+      <polygon points="0,74 14,90 28,74" fill="#50c878"/>
+      <text x="36" y="89" font-family="monospace" font-size="16" fill="#50c878">+0.48%</text>
+    </g>
+    <!-- KOSPI ref -->
+    <g transform="translate(900, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#40a870" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="3" fill="#608878">KOSPI</text>
+      <text x="0" y="66" font-family="Playfair Display, Georgia, serif" font-size="28" fill="#f5edd9">7,484</text>
+      <polygon points="0,90 14,74 28,90" fill="#e05555"/>
+      <text x="36" y="89" font-family="monospace" font-size="16" fill="#e05555">−8.29%</text>
+    </g>
+  </g>
+
+  <!-- Bottom brand line -->
+  <line x1="80" y1="700" x2="1200" y2="700" stroke="#0c1c14" stroke-width="0.8"/>
+  <text x="80" y="715" font-family="monospace" font-size="10" letter-spacing="2" fill="#305040">lincoln-brief.vercel.app</text>
+  <text x="1200" y="715" font-family="monospace" font-size="10" letter-spacing="2" fill="#305040" text-anchor="end">KR ECONOMY ISSUE</text>
+</svg>
