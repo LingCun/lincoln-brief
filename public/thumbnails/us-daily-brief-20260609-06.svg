@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#141008"/>
+      <stop offset="100%" stop-color="#08070a"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#e8cc88"/>
+      <stop offset="50%" stop-color="#d8b878"/>
+      <stop offset="100%" stop-color="#b89848"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#d8b878" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#d8b878" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#60a060" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#60a060" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1050" cy="160" r="360" fill="url(#glow1)"/>
+  <circle cx="200" cy="580" r="220" fill="url(#glow2)"/>
+
+  <!-- 좌상단 브랜드 -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#d8b878" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#e8d8a0">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#d8b878">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#d8b878" text-anchor="end">2026.06.09 · DAILY BRIEF · SLOT 06</text>
+
+  <!-- 에디션 라벨 -->
+  <text x="80" y="175" font-family="monospace" font-size="13" letter-spacing="5" fill="#d8b878">— 6/9 오전 정리 · TSLA +4.59% · FOMC(6/11) D-2 —</text>
+
+  <!-- 메인 헤드라인 -->
+  <text x="80" y="265" font-family="Playfair Display, Georgia, serif" font-size="46" font-weight="600" fill="#e8d8a0">S&amp;P +0.30% · NASDAQ +0.86%</text>
+  <text x="80" y="322" font-family="Playfair Display, Georgia, serif" font-size="28" font-style="italic" fill="url(#gold)">장 후반 상승 반납 · AAPL −1.89% · 원화 강세</text>
+  <text x="80" y="370" font-family="sans-serif" font-size="18" fill="#a09060">TSLA +4.59% · AVGO +2.82%  |  USD/KRW 1,526 (−1.79%)</text>
+
+  <!-- 데이터 그리드 -->
+  <g transform="translate(80, 445)">
+    <!-- S&P -->
+    <g>
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#60a060" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#a09060">S&amp;P 500</text>
+      <text x="0" y="68" font-family="Georgia, serif" font-size="28" fill="#e8d8a0">7,405</text>
+      <polygon points="0,90 14,90 7,76" fill="#60a060"/>
+      <text x="22" y="90" font-family="monospace" font-size="13" fill="#60a060">+0.30%</text>
+    </g>
+    <!-- NASDAQ -->
+    <g transform="translate(210, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#60a060" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#a09060">NASDAQ</text>
+      <text x="0" y="68" font-family="Georgia, serif" font-size="28" fill="#e8d8a0">25,929</text>
+      <polygon points="0,90 14,90 7,76" fill="#60a060"/>
+      <text x="22" y="90" font-family="monospace" font-size="13" fill="#60a060">+0.86%</text>
+    </g>
+    <!-- TSLA -->
+    <g transform="translate(430, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#60a060" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#a09060">TSLA</text>
+      <text x="0" y="68" font-family="Georgia, serif" font-size="28" fill="#e8d8a0">$408</text>
+      <polygon points="0,90 14,90 7,76" fill="#60a060"/>
+      <text x="22" y="90" font-family="monospace" font-size="13" fill="#60a060">+4.59%</text>
+    </g>
+    <!-- AAPL -->
+    <g transform="translate(640, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#d96552" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#a09060">AAPL</text>
+      <text x="0" y="68" font-family="Georgia, serif" font-size="28" fill="#e8d8a0">$301</text>
+      <polygon points="7,76 0,90 14,90" fill="#d96552"/>
+      <text x="22" y="90" font-family="monospace" font-size="13" fill="#d96552">−1.89%</text>
+    </g>
+    <!-- USD/KRW -->
+    <g transform="translate(870, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#60a060" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#a09060">USD/KRW</text>
+      <text x="0" y="68" font-family="Georgia, serif" font-size="28" fill="#e8d8a0">1,526</text>
+      <polygon points="7,90 0,76 14,76" fill="#60a060"/>
+      <text x="22" y="90" font-family="monospace" font-size="13" fill="#60a060">−1.79%</text>
+    </g>
+  </g>
+
+  <!-- 하단 구분선 -->
+  <line x1="80" y1="660" x2="1200" y2="660" stroke="#d8b878" stroke-width="0.5" stroke-dasharray="4,6"/>
+  <text x="80" y="690" font-family="monospace" font-size="10" letter-spacing="2" fill="#605840">CPI 6/10 · FOMC 6/11 · Gold $4,354 · WTI $91.28 · BTC $63,667</text>
+</svg>
