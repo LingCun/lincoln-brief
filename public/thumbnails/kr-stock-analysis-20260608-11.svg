@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#080d14"/>
+      <stop offset="100%" stop-color="#081420"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#8cc8f0"/>
+      <stop offset="50%" stop-color="#60a8d8"/>
+      <stop offset="100%" stop-color="#3a80b0"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#3080e0" stop-opacity="0.20"/>
+      <stop offset="100%" stop-color="#3080e0" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#5aaa80" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#5aaa80" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1100" cy="200" r="420" fill="url(#glow1)"/>
+  <circle cx="160" cy="560" r="300" fill="url(#glow2)"/>
+
+  <!-- Header -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#60a8d8" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#e8f0f8">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#60a8d8">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#60a8d8" text-anchor="end">2026.06.08 11:00 KST · KR 종목 분석</text>
+
+  <!-- Edition label -->
+  <text x="80" y="160" font-family="monospace" font-size="13" letter-spacing="5" fill="#60a8d8">— STOCK ANALYSIS —</text>
+
+  <!-- Alert badge — green for big gain -->
+  <rect x="80" y="176" width="540" height="30" rx="4" fill="#5aaa80" fill-opacity="0.18" stroke="#5aaa80" stroke-width="0.8"/>
+  <text x="92" y="196" font-family="monospace" font-size="12" letter-spacing="2" fill="#5aaa80">NAVER +12.33% · KOSPI −6.24% 급락일 · 30일 신고가 경신</text>
+
+  <!-- Main title -->
+  <text x="80" y="300" font-family="Playfair Display, Georgia, serif" font-size="72" font-weight="500" fill="#e8f0f8">NAVER 287,000</text>
+  <text x="80" y="362" font-family="Playfair Display, Georgia, serif" font-size="38" font-style="italic" fill="url(#blue)">전시장 급락 속 홀로 역주행</text>
+  <text x="80" y="410" font-family="sans-serif" font-size="17" fill="#7a9ab8">30일 저점 191,500원 대비 +49.9% · 카카오 −2.73%</text>
+
+  <!-- Divider -->
+  <line x1="80" y1="444" x2="1200" y2="444" stroke="#0a1828" stroke-width="1"/>
+
+  <!-- Metrics row -->
+  <g transform="translate(80, 478)">
+    <!-- NAVER price -->
+    <g>
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#5aaa80" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="3" fill="#5aaa80">NAVER</text>
+      <text x="0" y="66" font-family="Playfair Display, Georgia, serif" font-size="28" fill="#e8f0f8">287,000원</text>
+      <polygon points="0,72 14,88 28,72" fill="#5aaa80" transform="rotate(180,14,80)"/>
+      <text x="36" y="87" font-family="monospace" font-size="16" fill="#5aaa80">+12.33%</text>
+    </g>
+    <!-- 30d low -->
+    <g transform="translate(360, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#60a8d8" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="3" fill="#60a8d8">30일 저점</text>
+      <text x="0" y="66" font-family="Playfair Display, Georgia, serif" font-size="28" fill="#e8f0f8">191,500원</text>
+      <text x="0" y="87" font-family="monospace" font-size="13" fill="#60a8d8">저점 대비 +49.9%</text>
+    </g>
+    <!-- KOSPI context -->
+    <g transform="translate(720, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#e05555" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="3" fill="#e05555">KOSPI</text>
+      <text x="0" y="66" font-family="Playfair Display, Georgia, serif" font-size="28" fill="#e8f0f8">7,651</text>
+      <polygon points="0,88 14,72 28,88" fill="#e05555" transform="rotate(180,14,80)"/>
+      <text x="36" y="87" font-family="monospace" font-size="16" fill="#e05555">−6.24%</text>
+    </g>
+  </g>
+
+  <!-- Footer line -->
+  <line x1="80" y1="690" x2="1200" y2="690" stroke="#0a1828" stroke-width="0.5"/>
+  <text x="80" y="708" font-family="monospace" font-size="10" letter-spacing="2" fill="#406080">lincoln-brief.vercel.app · 정보 제공 목적, 투자 권유 아님</text>
+</svg>
