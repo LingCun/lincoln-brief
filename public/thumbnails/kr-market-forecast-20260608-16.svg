@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0e0a06"/>
+      <stop offset="100%" stop-color="#180e08"/>
+    </linearGradient>
+    <linearGradient id="amber" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f0a840"/>
+      <stop offset="50%" stop-color="#d88828"/>
+      <stop offset="100%" stop-color="#b86818"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f0d88c"/>
+      <stop offset="100%" stop-color="#d8b878"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#d88828" stop-opacity="0.20"/>
+      <stop offset="100%" stop-color="#d88828" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#e03030" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#e03030" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1060" cy="200" r="400" fill="url(#glow1)"/>
+  <circle cx="200" cy="580" r="320" fill="url(#glow2)"/>
+
+  <!-- Header -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#d88828" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#f5edd9">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#d88828">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#d88828" text-anchor="end">2026.06.08 16:00 KST · MARKET FORECAST</text>
+
+  <!-- Edition label -->
+  <text x="80" y="160" font-family="monospace" font-size="13" letter-spacing="5" fill="#d88828">— 시장 예측 업데이트 —</text>
+
+  <!-- Alert badge -->
+  <rect x="80" y="176" width="560" height="30" rx="4" fill="#d88828" fill-opacity="0.18" stroke="#d88828" stroke-width="0.8"/>
+  <text x="92" y="196" font-family="monospace" font-size="12" letter-spacing="2" fill="#f0a030">7,500 당일 이탈 확인 · 베어 케이스 확률 45% 상향</text>
+
+  <!-- Main title -->
+  <text x="80" y="306" font-family="Playfair Display, Georgia, serif" font-size="68" font-weight="500" fill="#f5edd9">7,500 이탈 확인</text>
+  <text x="80" y="366" font-family="Playfair Display, Georgia, serif" font-size="38" font-style="italic" fill="url(#amber)">다음 관문 7,200 — 시나리오 재설정</text>
+  <text x="80" y="414" font-family="sans-serif" font-size="17" fill="#8a9898">KOSPI 7,484 마감 · ATH 대비 −15.2% · USD/KRW 1,534 안정</text>
+
+  <!-- Divider -->
+  <line x1="80" y1="446" x2="1200" y2="446" stroke="#201408" stroke-width="1"/>
+
+  <!-- Scenario table -->
+  <g transform="translate(80, 476)">
+    <!-- 베이스 -->
+    <rect x="0" y="0" width="240" height="80" rx="4" fill="#d88828" fill-opacity="0.12" stroke="#d88828" stroke-width="0.6"/>
+    <text x="12" y="22" font-family="monospace" font-size="11" letter-spacing="2" fill="#d88828">베이스 35%</text>
+    <text x="12" y="46" font-family="Georgia, serif" font-size="18" fill="#f5edd9">7,200~7,600</text>
+    <text x="12" y="66" font-family="monospace" font-size="11" fill="#7a8888">NASDAQ 부분 반등</text>
+
+    <!-- 불 케이스 -->
+    <rect x="260" y="0" width="220" height="80" rx="4" fill="#50c878" fill-opacity="0.08" stroke="#50c878" stroke-width="0.6"/>
+    <text x="272" y="22" font-family="monospace" font-size="11" letter-spacing="2" fill="#50c878">불 케이스 10%</text>
+    <text x="272" y="46" font-family="Georgia, serif" font-size="18" fill="#f5edd9">7,600~8,000</text>
+    <text x="272" y="66" font-family="monospace" font-size="11" fill="#7a8888">NVDA 강한 반등</text>
+
+    <!-- 베어 케이스 -->
+    <rect x="500" y="0" width="240" height="80" rx="4" fill="#e03030" fill-opacity="0.16" stroke="#e03030" stroke-width="0.8"/>
+    <text x="512" y="22" font-family="monospace" font-size="11" letter-spacing="2" fill="#e05555">베어 케이스 45%</text>
+    <text x="512" y="46" font-family="Georgia, serif" font-size="18" fill="#f5edd9">6,900~7,200</text>
+    <text x="512" y="66" font-family="monospace" font-size="11" fill="#7a8888">NASDAQ 추가 하락</text>
+
+    <!-- 블랙 스완 -->
+    <rect x="760" y="0" width="220" height="80" rx="4" fill="#8838d8" fill-opacity="0.10" stroke="#8838d8" stroke-width="0.6"/>
+    <text x="772" y="22" font-family="monospace" font-size="11" letter-spacing="2" fill="#a858f8">블랙스완 10%</text>
+    <text x="772" y="46" font-family="Georgia, serif" font-size="18" fill="#f5edd9">6,500 이하</text>
+    <text x="772" y="66" font-family="monospace" font-size="11" fill="#7a8888">외부 충격 동시 발생</text>
+  </g>
+
+  <!-- Bottom brand line -->
+  <line x1="80" y1="700" x2="1200" y2="700" stroke="#201408" stroke-width="0.8"/>
+  <text x="80" y="715" font-family="monospace" font-size="10" letter-spacing="2" fill="#5a4020">lincoln-brief.vercel.app</text>
+  <text x="1200" y="715" font-family="monospace" font-size="10" letter-spacing="2" fill="#5a4020" text-anchor="end">KR FORECAST · 3WEEK</text>
+</svg>

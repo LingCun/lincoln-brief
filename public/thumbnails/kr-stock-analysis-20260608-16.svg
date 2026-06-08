@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#080d14"/>
+      <stop offset="100%" stop-color="#0c1420"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7ab8f0"/>
+      <stop offset="50%" stop-color="#5898d8"/>
+      <stop offset="100%" stop-color="#3878b8"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f0d88c"/>
+      <stop offset="100%" stop-color="#d8b878"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#e03030" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#e03030" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#5898d8" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#5898d8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1100" cy="200" r="420" fill="url(#glow1)"/>
+  <circle cx="160" cy="560" r="300" fill="url(#glow2)"/>
+
+  <!-- Header -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#5898d8" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#f5edd9">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#5898d8">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#5898d8" text-anchor="end">2026.06.08 16:00 KST · STOCK ANALYSIS</text>
+
+  <!-- Edition label -->
+  <text x="80" y="160" font-family="monospace" font-size="13" letter-spacing="5" fill="#5898d8">— 종목 분석 —</text>
+
+  <!-- Alert badge -->
+  <rect x="80" y="176" width="580" height="30" rx="4" fill="#e03030" fill-opacity="0.18" stroke="#e03030" stroke-width="0.8"/>
+  <text x="92" y="196" font-family="monospace" font-size="12" letter-spacing="2" fill="#e05555">삼성전자 −10.18% · 300,000원 심리선 붕괴 · 30일 고점 대비 −18%</text>
+
+  <!-- Main title -->
+  <text x="80" y="308" font-family="Playfair Display, Georgia, serif" font-size="66" font-weight="500" fill="#f5edd9">삼성전자 295,500원</text>
+  <text x="80" y="368" font-family="Playfair Display, Georgia, serif" font-size="38" font-style="italic" fill="url(#blue)">−10.18% · 30만 선 붕괴</text>
+  <text x="80" y="416" font-family="sans-serif" font-size="17" fill="#8a9898">NVDA −6.20% · AVGO −7.92% AI 셀오프 연쇄 · HBM 수요 우려</text>
+
+  <!-- Divider -->
+  <line x1="80" y1="448" x2="1200" y2="448" stroke="#0f1a28" stroke-width="1"/>
+
+  <!-- Metrics row -->
+  <g transform="translate(80, 482)">
+    <!-- 삼성전자 -->
+    <g>
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#5898d8" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="3" fill="#6090a8">삼성전자</text>
+      <text x="0" y="66" font-family="Playfair Display, Georgia, serif" font-size="26" fill="#f5edd9">295,500원</text>
+      <polygon points="0,90 14,74 28,90" fill="#e05555"/>
+      <text x="36" y="89" font-family="monospace" font-size="16" fill="#e05555">−10.18%</text>
+    </g>
+    <!-- 30일 고점 -->
+    <g transform="translate(300, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#5898d8" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="3" fill="#6090a8">30일 고점</text>
+      <text x="0" y="66" font-family="Playfair Display, Georgia, serif" font-size="26" fill="#f5edd9">360,500원</text>
+      <text x="0" y="89" font-family="monospace" font-size="14" fill="#e05555">고점 대비 −18.0%</text>
+    </g>
+    <!-- NVDA -->
+    <g transform="translate(600, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#5898d8" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="3" fill="#6090a8">NVDA (전일)</text>
+      <text x="0" y="66" font-family="Playfair Display, Georgia, serif" font-size="26" fill="#f5edd9">$205.10</text>
+      <polygon points="0,90 14,74 28,90" fill="#e05555"/>
+      <text x="36" y="89" font-family="monospace" font-size="16" fill="#e05555">−6.20%</text>
+    </g>
+    <!-- SK하이닉스 비교 -->
+    <g transform="translate(880, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#5898d8" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="3" fill="#6090a8">SK하이닉스</text>
+      <text x="0" y="66" font-family="Playfair Display, Georgia, serif" font-size="26" fill="#f5edd9">1,911,000</text>
+      <polygon points="0,90 14,74 28,90" fill="#e05555"/>
+      <text x="36" y="89" font-family="monospace" font-size="16" fill="#e05555">−7.68%</text>
+    </g>
+  </g>
+
+  <!-- Bottom brand line -->
+  <line x1="80" y1="700" x2="1200" y2="700" stroke="#0f1a28" stroke-width="0.8"/>
+  <text x="80" y="715" font-family="monospace" font-size="10" letter-spacing="2" fill="#3a5070">lincoln-brief.vercel.app</text>
+  <text x="1200" y="715" font-family="monospace" font-size="10" letter-spacing="2" fill="#3a5070" text-anchor="end">005930.KS · KR ANALYSIS</text>
+</svg>
