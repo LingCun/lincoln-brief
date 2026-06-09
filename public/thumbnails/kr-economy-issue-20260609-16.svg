@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#080a08"/>
+      <stop offset="100%" stop-color="#0a120a"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f0d88c"/>
+      <stop offset="50%" stop-color="#d8b878"/>
+      <stop offset="100%" stop-color="#b89a5a"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#30a060" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#30a060" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1060" cy="240" r="380" fill="url(#glow1)"/>
+
+  <!-- Header -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#d8b878" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#f5edd9">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#d8b878">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#d8b878" text-anchor="end">2026.06.09 16:00 KST · 경제 이슈</text>
+
+  <!-- Category badge -->
+  <rect x="80" y="118" width="200" height="28" rx="4" fill="#30a060" fill-opacity="0.20" stroke="#30a060" stroke-width="0.8"/>
+  <text x="92" y="136" font-family="monospace" font-size="12" letter-spacing="2" fill="#60c888">ECONOMY ISSUE</text>
+
+  <!-- Main headline -->
+  <text x="80" y="245" font-family="Playfair Display, Georgia, serif" font-size="68" font-weight="500" fill="#f5edd9">NAVER 역주행</text>
+  <text x="80" y="306" font-family="Playfair Display, Georgia, serif" font-size="36" font-style="italic" fill="url(#gold)">반등 장세의 유일한 낙오자</text>
+  <text x="80" y="350" font-family="sans-serif" font-size="17" fill="#8a9898">KOSPI +8.18%에 NAVER 홀로 −7.89% · AI 플랫폼 구조 분석</text>
+
+  <!-- Divider -->
+  <line x1="80" y1="384" x2="1200" y2="384" stroke="#1a2a1a" stroke-width="1"/>
+
+  <!-- Reversal pattern comparison -->
+  <g transform="translate(80, 416)">
+    <text x="0" y="18" font-family="monospace" font-size="13" letter-spacing="3" fill="#a89060">이틀의 역전 — 정확한 반전</text>
+
+    <!-- 6/8 row -->
+    <g transform="translate(0, 40)">
+      <rect x="0" y="0" width="540" height="50" rx="3" fill="#1a3020" stroke="#305040" stroke-width="0.5"/>
+      <text x="16" y="20" font-family="monospace" font-size="13" fill="#888">6/8</text>
+      <text x="70" y="20" font-family="monospace" font-size="14" fill="#ff5050">KOSPI 급락</text>
+      <text x="240" y="20" font-family="monospace" font-size="16" fill="#40d870" font-weight="bold">NAVER +9.20%</text>
+      <text x="16" y="40" font-family="monospace" font-size="12" fill="#6a8a6a">반도체 셀오프 → NAVER 방어주 매수</text>
+    </g>
+
+    <!-- 6/9 row -->
+    <g transform="translate(0, 102)">
+      <rect x="0" y="0" width="540" height="50" rx="3" fill="#301a1a" stroke="#504030" stroke-width="0.5"/>
+      <text x="16" y="20" font-family="monospace" font-size="13" fill="#888">6/9</text>
+      <text x="70" y="20" font-family="monospace" font-size="14" fill="#40d870">KOSPI +8.18%</text>
+      <text x="240" y="20" font-family="monospace" font-size="16" fill="#ff5050" font-weight="bold">NAVER −7.89%</text>
+      <text x="16" y="40" font-family="monospace" font-size="12" fill="#8a6a6a">반도체 반등 → NAVER 차익 실현 대상</text>
+    </g>
+  </g>
+
+  <!-- Right side: NAVER vs context -->
+  <g transform="translate(780, 420)">
+    <text x="0" y="-10" font-family="monospace" font-size="11" letter-spacing="2" fill="#a89060">NAVER 30일 최고점 대비</text>
+    <text x="0" y="20" font-family="Playfair Display, Georgia, serif" font-size="40" fill="#ff9090">257,000원</text>
+    <text x="0" y="58" font-family="monospace" font-size="20" fill="#ff5050">−7.89%</text>
+
+    <line x1="0" y1="76" x2="360" y2="76" stroke="#2a3020" stroke-width="0.5"/>
+
+    <text x="0" y="100" font-family="monospace" font-size="13" fill="#8a9898">30일 최고점 280,500원</text>
+    <text x="0" y="120" font-family="monospace" font-size="13" fill="#8a9898">최고 대비 −8.4%</text>
+    <text x="0" y="140" font-family="monospace" font-size="13" fill="#d8b878">키워드 — AI 플랫폼 구조 변화</text>
+  </g>
+
+  <!-- Footer line -->
+  <line x1="80" y1="690" x2="1200" y2="690" stroke="#1a2a1a" stroke-width="0.5"/>
+  <text x="80" y="708" font-family="monospace" font-size="10" letter-spacing="2" fill="#6a5a40">lincoln-brief.vercel.app · 정보 제공 목적, 투자 권유 아님</text>
+</svg>
