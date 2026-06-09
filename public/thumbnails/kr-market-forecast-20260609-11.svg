@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#120808"/>
+      <stop offset="100%" stop-color="#1a0d0a"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f0d88c"/>
+      <stop offset="50%" stop-color="#d8b878"/>
+      <stop offset="100%" stop-color="#b89a5a"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#d86030" stop-opacity="0.20"/>
+      <stop offset="100%" stop-color="#d86030" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#d8b878" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#d8b878" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1060" cy="200" r="400" fill="url(#glow1)"/>
+  <circle cx="180" cy="560" r="260" fill="url(#glow2)"/>
+
+  <!-- Header -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#d8b878" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#f5edd9">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#d8b878">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#d8b878" text-anchor="end">2026.06.09 11:00 KST · KR FORECAST</text>
+
+  <!-- Edition label -->
+  <text x="80" y="158" font-family="monospace" font-size="13" letter-spacing="5" fill="#d8b878">— 시장 예측 —</text>
+
+  <!-- Badge -->
+  <rect x="80" y="174" width="540" height="30" rx="4" fill="#d86030" fill-opacity="0.18" stroke="#d86030" stroke-width="0.8"/>
+  <text x="92" y="194" font-family="monospace" font-size="12" letter-spacing="2" fill="#f08050">추세 전환 vs 기술적 되돌림 — 판단 기준 3가지</text>
+
+  <!-- Main title -->
+  <text x="80" y="296" font-family="Playfair Display, Georgia, serif" font-size="66" font-weight="500" fill="#f5edd9">8,047 반등 이후</text>
+  <text x="80" y="366" font-family="Playfair Display, Georgia, serif" font-size="38" font-style="italic" fill="url(#gold)">추세 전환인가, 기술적 되돌림인가</text>
+  <text x="80" y="412" font-family="sans-serif" font-size="17" fill="#8a9898">외국인 수급 · USD/KRW 1,510원대 · NVDA $210 — 세 가지 확인</text>
+
+  <!-- Divider -->
+  <line x1="80" y1="446" x2="1200" y2="446" stroke="#2a1a14" stroke-width="1"/>
+
+  <!-- Scenario boxes -->
+  <g transform="translate(80, 476)">
+    <!-- 베이스 -->
+    <rect x="0" y="0" width="240" height="76" rx="4" fill="#d8b878" fill-opacity="0.08" stroke="#d8b878" stroke-width="0.6"/>
+    <text x="12" y="22" font-family="monospace" font-size="10" letter-spacing="2" fill="#d8b878">베이스 40%</text>
+    <text x="12" y="46" font-family="Playfair Display, Georgia, serif" font-size="20" fill="#f5edd9">7,800~8,300</text>
+    <text x="12" y="66" font-family="monospace" font-size="10" fill="#8a9898">NVDA 안정 · 외국인 지속</text>
+
+    <!-- 불 케이스 -->
+    <rect x="256" y="0" width="220" height="76" rx="4" fill="#40d870" fill-opacity="0.08" stroke="#40d870" stroke-width="0.6"/>
+    <text x="268" y="22" font-family="monospace" font-size="10" letter-spacing="2" fill="#40d870">불 케이스 20%</text>
+    <text x="268" y="46" font-family="Playfair Display, Georgia, serif" font-size="20" fill="#f5edd9">8,400~8,800</text>
+    <text x="268" y="66" font-family="monospace" font-size="10" fill="#8a9898">NVDA $215+ · ATH 재시험</text>
+
+    <!-- 베어 케이스 -->
+    <rect x="492" y="0" width="220" height="76" rx="4" fill="#e05555" fill-opacity="0.08" stroke="#e05555" stroke-width="0.6"/>
+    <text x="504" y="22" font-family="monospace" font-size="10" letter-spacing="2" fill="#e05555">베어 케이스 35%</text>
+    <text x="504" y="46" font-family="Playfair Display, Georgia, serif" font-size="20" fill="#f5edd9">7,300~7,800</text>
+    <text x="504" y="66" font-family="monospace" font-size="10" fill="#8a9898">NVDA 재하락 · 매도 재개</text>
+
+    <!-- 블랙스완 -->
+    <rect x="728" y="0" width="200" height="76" rx="4" fill="#8040a0" fill-opacity="0.08" stroke="#8040a0" stroke-width="0.6"/>
+    <text x="740" y="22" font-family="monospace" font-size="10" letter-spacing="2" fill="#a060c0">블랙 스완 5%</text>
+    <text x="740" y="46" font-family="Playfair Display, Georgia, serif" font-size="20" fill="#f5edd9">7,000 이하</text>
+    <text x="740" y="66" font-family="monospace" font-size="10" fill="#8a9898">글로벌 크레딧 이벤트</text>
+  </g>
+
+  <!-- Footer line -->
+  <line x1="80" y1="690" x2="1200" y2="690" stroke="#2a1a14" stroke-width="0.5"/>
+  <text x="80" y="708" font-family="monospace" font-size="10" letter-spacing="2" fill="#6a5a40">lincoln-brief.vercel.app · 정보 제공 목적, 투자 권유 아님</text>
+</svg>
