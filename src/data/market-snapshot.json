@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-06-09T22:30:54.167Z",
+  "asOf": "2026-06-09T23:30:53.540Z",
   "asOfLabel": "6/9 한국·미국 마감",
   "source": "Yahoo Finance · KRX",
   "us": {
@@ -568,9 +568,9 @@
         "symbol": "USDKRW",
         "label": "USD/KRW",
         "close": 1527.22,
-        "change": -1.6600048828124727,
-        "changePct": -0.10857653167749493,
-        "note": "보합"
+        "change": -27.259980468749973,
+        "changePct": -1.753639854566013,
+        "note": "큰 폭 하락"
       }
     ],
     "top12": [
@@ -1160,28 +1160,28 @@
     {
       "symbol": "USD/KRW",
       "value": "1,527.22",
-      "change": "-0.11%",
+      "change": "-1.75%",
       "up": false,
       "market": "fx"
     },
     {
       "symbol": "BTC",
-      "value": "$61,769",
-      "change": "-2.10%",
+      "value": "$61,636",
+      "change": "-2.31%",
       "up": false,
       "market": "crypto"
     },
     {
       "symbol": "GOLD",
-      "value": "$4,279.00",
-      "change": "-1.31%",
+      "value": "$4,256.80",
+      "change": "-1.82%",
       "up": false,
       "market": "commodity"
     },
     {
       "symbol": "WTI",
-      "value": "$88.79",
-      "change": "-2.75%",
+      "value": "$88.97",
+      "change": "-2.55%",
       "up": false,
       "market": "commodity"
     },
@@ -1201,9 +1201,9 @@
     },
     "crypto": {
       "source": "coingecko",
-      "btcUsd": 61765,
-      "change24hPct": -2.473549925479224,
-      "asOf": "2026-06-09T22:30:05.000Z"
+      "btcUsd": 61686,
+      "change24hPct": -2.14789349785559,
+      "asOf": "2026-06-09T23:30:06.000Z"
     },
     "fred": {
       "source": "fred",
@@ -1263,15 +1263,15 @@
       "source": "twelvedata",
       "quotes": {
         "XAU/USD": {
-          "price": 4255.99866,
+          "price": 4227.49421,
           "previousClose": 4260.08482,
-          "changePct": -0.095917339
+          "changePct": -0.76502256
         }
       }
     },
     "yahoo": {
       "usdKrw": 1527.22,
-      "btcUsd": 61768.8
+      "btcUsd": 61631.81
     }
   }
 }
