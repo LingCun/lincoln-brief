@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#080c14"/>
+      <stop offset="100%" stop-color="#08070a"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7090d0"/>
+      <stop offset="50%" stop-color="#5677b0"/>
+      <stop offset="100%" stop-color="#3a5890"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#5677b0" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#5677b0" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#c04040" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#c04040" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1050" cy="160" r="360" fill="url(#glow1)"/>
+  <circle cx="200" cy="580" r="220" fill="url(#glow2)"/>
+
+  <!-- 좌상단 브랜드 -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#5677b0" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#a0b8e0">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#5677b0">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#5677b0" text-anchor="end">2026.06.10 · STOCK ANALYSIS · SLOT 01</text>
+
+  <!-- 에디션 라벨 -->
+  <text x="80" y="175" font-family="monospace" font-size="13" letter-spacing="5" fill="#5677b0">— AAPL 종목 분석 · $300 지지선 이탈 —</text>
+
+  <!-- 티커 강조 -->
+  <text x="80" y="250" font-family="Georgia, serif" font-size="72" font-weight="700" fill="#e8e8f0">AAPL</text>
+
+  <!-- 가격 -->
+  <text x="80" y="330" font-family="Playfair Display, Georgia, serif" font-size="52" font-weight="600" fill="#c04040">$289.24</text>
+  <g transform="translate(370, 300)">
+    <polygon points="0,0 20,0 10,18" fill="#c04040"/>
+    <text x="28" y="14" font-family="monospace" font-size="24" fill="#c04040">−4.08%</text>
+  </g>
+
+  <!-- 서브 타이틀 -->
+  <text x="80" y="390" font-family="Playfair Display, Georgia, serif" font-size="26" font-style="italic" fill="url(#blue)">WWDC Siri 발표 후 $300 지지선 이탈</text>
+  <text x="80" y="428" font-family="sans-serif" font-size="17" fill="#8090a8">30일 고점 $315.20 대비 −8.2%  |  FOMC(6/11) D-1</text>
+
+  <!-- 데이터 그리드 -->
+  <g transform="translate(80, 490)">
+    <g>
+      <text x="0" y="20" font-family="monospace" font-size="11" letter-spacing="2" fill="#8090a8">6/8 종가</text>
+      <text x="0" y="52" font-family="Georgia, serif" font-size="24" fill="#d0d8e8">$301.54</text>
+      <text x="0" y="75" font-family="monospace" font-size="12" fill="#c04040">▼ $12.31 하락</text>
+    </g>
+    <g transform="translate(220, 0)">
+      <text x="0" y="20" font-family="monospace" font-size="11" letter-spacing="2" fill="#8090a8">30일 고점</text>
+      <text x="0" y="52" font-family="Georgia, serif" font-size="24" fill="#d0d8e8">$315.20</text>
+      <text x="0" y="75" font-family="monospace" font-size="12" fill="#c04040">현재 대비 −8.2%</text>
+    </g>
+    <g transform="translate(450, 0)">
+      <text x="0" y="20" font-family="monospace" font-size="11" letter-spacing="2" fill="#8090a8">30일 저점</text>
+      <text x="0" y="52" font-family="Georgia, serif" font-size="24" fill="#d0d8e8">$270.17</text>
+      <text x="0" y="75" font-family="monospace" font-size="12" fill="#8090a8">30일 기준점</text>
+    </g>
+    <g transform="translate(680, 0)">
+      <text x="0" y="20" font-family="monospace" font-size="11" letter-spacing="2" fill="#8090a8">US10Y</text>
+      <text x="0" y="52" font-family="Georgia, serif" font-size="24" fill="#d0d8e8">4.526%</text>
+      <text x="0" y="75" font-family="monospace" font-size="12" fill="#8090a8">금리 부담 유지</text>
+    </g>
+  </g>
+
+  <!-- 하단 구분선 -->
+  <line x1="80" y1="620" x2="1200" y2="620" stroke="#5677b0" stroke-width="0.5" stroke-opacity="0.4"/>
+  <text x="80" y="650" font-family="monospace" font-size="11" fill="#8090a8">WWDC 발표 중 +3% 일시 급등 → 최종 −4.08% 반전 · $290 이탈</text>
+  <text x="1200" y="650" font-family="monospace" font-size="11" fill="#5677b0" text-anchor="end">© Lincoln Brief</text>
+</svg>

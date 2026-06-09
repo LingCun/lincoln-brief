@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#08140a"/>
+      <stop offset="100%" stop-color="#08070a"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#90b880"/>
+      <stop offset="50%" stop-color="#7a9d6e"/>
+      <stop offset="100%" stop-color="#587a4c"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#7a9d6e" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#7a9d6e" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#c04040" stop-opacity="0.07"/>
+      <stop offset="100%" stop-color="#c04040" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1050" cy="160" r="360" fill="url(#glow1)"/>
+  <circle cx="200" cy="580" r="220" fill="url(#glow2)"/>
+
+  <!-- 좌상단 브랜드 -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#7a9d6e" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#a0c898">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#7a9d6e">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#7a9d6e" text-anchor="end">2026.06.10 · ECONOMY ISSUE · SLOT 01</text>
+
+  <!-- 에디션 라벨 -->
+  <text x="80" y="175" font-family="monospace" font-size="13" letter-spacing="5" fill="#7a9d6e">— WTI 원유 급락 분석 · 이중 독해 —</text>
+
+  <!-- 메인 헤드라인 -->
+  <text x="80" y="255" font-family="Playfair Display, Georgia, serif" font-size="62" font-weight="600" fill="#e0f0d8">WTI $86.54</text>
+  <g transform="translate(530, 215)">
+    <polygon points="0,0 28,0 14,24" fill="#c04040"/>
+    <text x="36" y="20" font-family="monospace" font-size="28" fill="#c04040">−5.21%</text>
+  </g>
+
+  <text x="80" y="316" font-family="Playfair Display, Georgia, serif" font-size="26" font-style="italic" fill="url(#green)">수요 둔화 경고 vs 인플레이션 완화 신호</text>
+  <text x="80" y="358" font-family="sans-serif" font-size="17" fill="#809878">6/1 $95.96 → 6/9 $86.54  |  8거래일 −9.4%</text>
+
+  <!-- 이중 독해 박스 -->
+  <g transform="translate(80, 400)">
+    <!-- 독해 1 -->
+    <rect x="0" y="0" width="490" height="90" rx="4" fill="#2a1414" fill-opacity="0.7"/>
+    <text x="16" y="28" font-family="monospace" font-size="13" fill="#e06060">독해 1 — 수요 둔화 경고</text>
+    <text x="16" y="52" font-family="sans-serif" font-size="14" fill="#c0a0a0">WTI 급락 = 경기 침체 선행 신호</text>
+    <text x="16" y="74" font-family="monospace" font-size="12" fill="#a08080">S&amp;P −1.74% · NASDAQ −2.97% 동반 하락</text>
+
+    <!-- 독해 2 -->
+    <rect x="520" y="0" width="490" height="90" rx="4" fill="#1a2a14" fill-opacity="0.7"/>
+    <text x="536" y="28" font-family="monospace" font-size="13" fill="#60c060">독해 2 — 인플레이션 완화</text>
+    <text x="536" y="52" font-family="sans-serif" font-size="14" fill="#a0c0a0">WTI 하락 = FOMC 비둘기 여지 확대</text>
+    <text x="536" y="74" font-family="monospace" font-size="12" fill="#80a080">에너지 CPI 기여분 감소 → 금리인하 명분</text>
+  </g>
+
+  <!-- 핵심 포인트 -->
+  <text x="80" y="560" font-family="sans-serif" font-size="16" fill="#c0d8b8">FOMC(6/11) 파월 발언이 어느 독해가 맞는지 결론을 준다</text>
+  <text x="80" y="585" font-family="monospace" font-size="13" fill="#809878">GOLD $4,281.40(−1.26%) · BTC $61,170(−3.04%) 동반 약세</text>
+
+  <!-- 하단 구분선 -->
+  <line x1="80" y1="620" x2="1200" y2="620" stroke="#7a9d6e" stroke-width="0.5" stroke-opacity="0.4"/>
+  <text x="80" y="650" font-family="monospace" font-size="11" fill="#809878">FRED DCOILWTICO 6/1: $95.96 → 현재 $86.54 (−9.8%)</text>
+  <text x="1200" y="650" font-family="monospace" font-size="11" fill="#7a9d6e" text-anchor="end">© Lincoln Brief</text>
+</svg>
