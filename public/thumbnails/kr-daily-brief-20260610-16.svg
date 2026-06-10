@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d0805"/>
+      <stop offset="100%" stop-color="#1a0e0a"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f0d88c"/>
+      <stop offset="50%" stop-color="#d8b878"/>
+      <stop offset="100%" stop-color="#b89a5a"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#e07030" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#e07030" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#d8b878" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#d8b878" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1100" cy="200" r="440" fill="url(#glow1)"/>
+  <circle cx="200" cy="580" r="280" fill="url(#glow2)"/>
+
+  <!-- Header -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#d8b878" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#f5edd9">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#d8b878">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#d8b878" text-anchor="end">2026.06.10 16:00 KST · KR DAILY</text>
+
+  <!-- Edition label -->
+  <text x="80" y="160" font-family="monospace" font-size="13" letter-spacing="5" fill="#d8b878">— 6월 10일 시황 (장 마감) —</text>
+
+  <!-- Recovery badge -->
+  <rect x="80" y="176" width="720" height="30" rx="4" fill="#e07030" fill-opacity="0.18" stroke="#e07030" stroke-width="0.8"/>
+  <text x="92" y="196" font-family="monospace" font-size="12" letter-spacing="2" fill="#ff9060">오후 낙폭 축소 · 삼성바이오로직스 +0.15% 홀로 플러스 · 원화 강세 이틀 연속</text>
+
+  <!-- Main title -->
+  <text x="80" y="300" font-family="Playfair Display, Georgia, serif" font-size="72" font-weight="500" fill="#f5edd9">KOSPI 7,730 마감</text>
+  <text x="80" y="362" font-family="Playfair Display, Georgia, serif" font-size="38" font-style="italic" fill="url(#gold)">오후 반등, 낙폭 일부 만회</text>
+  <text x="80" y="410" font-family="sans-serif" font-size="17" fill="#8a9898">NAVER −11.67% · SK하이닉스 −7.54% · USD/KRW 1,523원</text>
+
+  <!-- Divider -->
+  <line x1="80" y1="444" x2="1200" y2="444" stroke="#2a1a14" stroke-width="1"/>
+
+  <!-- Metrics row -->
+  <g transform="translate(80, 478)">
+    <!-- KOSPI -->
+    <g>
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#d8b878" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="3" fill="#a89060">KOSPI</text>
+      <text x="0" y="66" font-family="Playfair Display, Georgia, serif" font-size="28" fill="#f5edd9">7,730</text>
+      <polygon points="0,72 14,88 28,72" fill="#ff6050"/>
+      <text x="36" y="87" font-family="monospace" font-size="16" fill="#ff6050">−3.93%</text>
+    </g>
+    <!-- KOSDAQ -->
+    <g transform="translate(240, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#d8b878" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="3" fill="#a89060">KOSDAQ</text>
+      <text x="0" y="66" font-family="Playfair Display, Georgia, serif" font-size="28" fill="#f5edd9">951.63</text>
+      <polygon points="0,72 14,88 28,72" fill="#ff6050"/>
+      <text x="36" y="87" font-family="monospace" font-size="16" fill="#ff6050">−2.78%</text>
+    </g>
+    <!-- USD/KRW -->
+    <g transform="translate(480, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#d8b878" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="3" fill="#a89060">USD/KRW</text>
+      <text x="0" y="66" font-family="Playfair Display, Georgia, serif" font-size="28" fill="#f5edd9">1,523</text>
+      <polygon points="28,88 14,72 0,88" fill="#40c880"/>
+      <text x="36" y="87" font-family="monospace" font-size="16" fill="#40c880">−0.38%</text>
+    </g>
+    <!-- NVDA -->
+    <g transform="translate(740, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#d8b878" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="3" fill="#a89060">NVDA</text>
+      <text x="0" y="66" font-family="Playfair Display, Georgia, serif" font-size="28" fill="#f5edd9">$208.19</text>
+      <polygon points="28,88 14,72 0,88" fill="#40c880"/>
+      <text x="36" y="87" font-family="monospace" font-size="16" fill="#40c880">+1.51%</text>
+    </g>
+  </g>
+
+  <!-- Bottom signature -->
+  <line x1="80" y1="640" x2="1200" y2="640" stroke="#2a1a14" stroke-width="1"/>
+  <text x="80" y="664" font-family="Georgia, serif" font-style="italic" font-size="15" fill="#6a7878">— Lincoln</text>
+  <text x="1200" y="664" font-family="monospace" font-size="11" letter-spacing="2" fill="#4a5858" text-anchor="end">lincoln-brief.vercel.app</text>
+</svg>
