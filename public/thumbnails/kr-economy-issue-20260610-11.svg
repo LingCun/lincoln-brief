@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#070d08"/>
+      <stop offset="100%" stop-color="#0e1810"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#9ab88a"/>
+      <stop offset="50%" stop-color="#7a9d6e"/>
+      <stop offset="100%" stop-color="#5a7d50"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#7a9d6e" stop-opacity="0.20"/>
+      <stop offset="100%" stop-color="#7a9d6e" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#e04030" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#e04030" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1080" cy="180" r="400" fill="url(#glow1)"/>
+  <circle cx="200" cy="580" r="300" fill="url(#glow2)"/>
+
+  <!-- Header -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#7a9d6e" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#f5edd9">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#7a9d6e">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#7a9d6e" text-anchor="end">2026.06.10 11:00 KST · 경제 이슈</text>
+
+  <!-- Edition label -->
+  <text x="80" y="160" font-family="monospace" font-size="13" letter-spacing="5" fill="#7a9d6e">— 빅테크 분화 —</text>
+
+  <!-- Info badge -->
+  <rect x="80" y="176" width="680" height="30" rx="4" fill="#7a9d6e" fill-opacity="0.16" stroke="#7a9d6e" stroke-width="0.8"/>
+  <text x="92" y="196" font-family="monospace" font-size="12" letter-spacing="2" fill="#90c080">AI 인프라 ↑ NVDA +1.5% · AVGO +1.7% vs 플랫폼 ↓ AAPL −5.5% · MSFT −3.2%</text>
+
+  <!-- Main title -->
+  <text x="80" y="296" font-family="Playfair Display, Georgia, serif" font-size="64" font-weight="500" fill="#f5edd9">빅테크 분화</text>
+  <text x="80" y="358" font-family="Playfair Display, Georgia, serif" font-size="38" font-style="italic" fill="url(#green)">AI 인프라 vs 플랫폼, 한국 반도체 포지션</text>
+  <text x="80" y="408" font-family="sans-serif" font-size="17" fill="#8a9898">S&amp;P 500 보합(+0.04%) 속 자금 재배분 신호</text>
+
+  <!-- Divider -->
+  <line x1="80" y1="444" x2="1200" y2="444" stroke="#142014" stroke-width="1"/>
+
+  <!-- Metrics row -->
+  <g transform="translate(80, 478)">
+    <!-- NVDA -->
+    <g>
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#40d870" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="3" fill="#40d870">NVDA (AI인프라)</text>
+      <text x="0" y="66" font-family="Playfair Display, Georgia, serif" font-size="28" fill="#f5edd9">$208.19</text>
+      <polygon points="0,88 14,72 28,88" fill="#40d870" transform="rotate(180,14,80)"/>
+      <text x="36" y="87" font-family="monospace" font-size="16" fill="#40d870">+1.51%</text>
+    </g>
+    <!-- AVGO -->
+    <g transform="translate(280, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#40d870" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="3" fill="#40d870">AVGO (AI인프라)</text>
+      <text x="0" y="66" font-family="Playfair Display, Georgia, serif" font-size="28" fill="#f5edd9">$392.16</text>
+      <polygon points="0,88 14,72 28,88" fill="#40d870" transform="rotate(180,14,80)"/>
+      <text x="36" y="87" font-family="monospace" font-size="16" fill="#40d870">+1.67%</text>
+    </g>
+    <!-- AAPL -->
+    <g transform="translate(580, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#ff6050" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="3" fill="#ff6050">AAPL (플랫폼)</text>
+      <text x="0" y="66" font-family="Playfair Display, Georgia, serif" font-size="28" fill="#f5edd9">$290.55</text>
+      <polygon points="0,72 14,88 28,72" fill="#ff6050"/>
+      <text x="36" y="87" font-family="monospace" font-size="16" fill="#ff6050">−5.46%</text>
+    </g>
+    <!-- MSFT -->
+    <g transform="translate(880, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#ff6050" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="3" fill="#ff6050">MSFT (플랫폼)</text>
+      <text x="0" y="66" font-family="Playfair Display, Georgia, serif" font-size="28" fill="#f5edd9">$403.41</text>
+      <polygon points="0,72 14,88 28,72" fill="#ff6050"/>
+      <text x="36" y="87" font-family="monospace" font-size="16" fill="#ff6050">−3.18%</text>
+    </g>
+  </g>
+
+  <!-- Footer line -->
+  <line x1="80" y1="690" x2="1200" y2="690" stroke="#142014" stroke-width="0.5"/>
+  <text x="80" y="708" font-family="monospace" font-size="10" letter-spacing="2" fill="#6a5a40">lincoln-brief.vercel.app · 정보 제공 목적, 투자 권유 아님</text>
+</svg>
