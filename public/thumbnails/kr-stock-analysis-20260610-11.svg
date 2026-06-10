@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#070a12"/>
+      <stop offset="100%" stop-color="#0e1520"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7a9ad8"/>
+      <stop offset="50%" stop-color="#5677b0"/>
+      <stop offset="100%" stop-color="#3a559a"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#5677b0" stop-opacity="0.20"/>
+      <stop offset="100%" stop-color="#5677b0" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#e04030" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#e04030" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1080" cy="180" r="400" fill="url(#glow1)"/>
+  <circle cx="200" cy="560" r="320" fill="url(#glow2)"/>
+
+  <!-- Header -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#5677b0" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#f5edd9">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#5677b0">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#5677b0" text-anchor="end">2026.06.10 11:00 KST · 종목 분석</text>
+
+  <!-- Edition label -->
+  <text x="80" y="160" font-family="monospace" font-size="13" letter-spacing="5" fill="#5677b0">— NAVER 분석 —</text>
+
+  <!-- Alert badge -->
+  <rect x="80" y="176" width="620" height="30" rx="4" fill="#e04030" fill-opacity="0.16" stroke="#e04030" stroke-width="0.8"/>
+  <text x="92" y="196" font-family="monospace" font-size="12" letter-spacing="2" fill="#ff6050">이틀 연속 최대 낙폭 · 6/9 −8.06% → 6/10 −12.26%</text>
+
+  <!-- Main title -->
+  <text x="80" y="300" font-family="Playfair Display, Georgia, serif" font-size="72" font-weight="500" fill="#f5edd9">NAVER 225,500</text>
+  <text x="80" y="362" font-family="Playfair Display, Georgia, serif" font-size="38" font-style="italic" fill="url(#blue)">ATH 대비 −19.6%, 이틀 누적 −19.2%</text>
+  <text x="80" y="410" font-family="sans-serif" font-size="17" fill="#8a9898">6/2 ATH 280,500원 · 6/9 257,000원 · 6/10 225,500원</text>
+
+  <!-- Divider -->
+  <line x1="80" y1="444" x2="1200" y2="444" stroke="#14202a" stroke-width="1"/>
+
+  <!-- Metrics row -->
+  <g transform="translate(80, 478)">
+    <!-- 오늘 종가 -->
+    <g>
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#5677b0" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="3" fill="#7090c0">NAVER 종가</text>
+      <text x="0" y="66" font-family="Playfair Display, Georgia, serif" font-size="28" fill="#f5edd9">225,500원</text>
+      <polygon points="0,72 14,88 28,72" fill="#ff6050"/>
+      <text x="36" y="87" font-family="monospace" font-size="16" fill="#ff6050">−12.26%</text>
+    </g>
+    <!-- ATH 대비 -->
+    <g transform="translate(340, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#5677b0" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="3" fill="#7090c0">ATH 대비</text>
+      <text x="0" y="66" font-family="Playfair Display, Georgia, serif" font-size="28" fill="#f5edd9">−19.6%</text>
+      <text x="0" y="90" font-family="monospace" font-size="13" fill="#8a9898">6/2 ATH 280,500원</text>
+    </g>
+    <!-- NVDA (global signal) -->
+    <g transform="translate(680, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#5677b0" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="3" fill="#7090c0">NVDA (참고)</text>
+      <text x="0" y="66" font-family="Playfair Display, Georgia, serif" font-size="28" fill="#f5edd9">$208.19</text>
+      <polygon points="0,88 14,72 28,88" fill="#40d870" transform="rotate(180,14,80)"/>
+      <text x="36" y="87" font-family="monospace" font-size="16" fill="#40d870">+1.51%</text>
+    </g>
+    <!-- AAPL -->
+    <g transform="translate(980, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#5677b0" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="3" fill="#7090c0">AAPL (참고)</text>
+      <text x="0" y="66" font-family="Playfair Display, Georgia, serif" font-size="28" fill="#f5edd9">$290.55</text>
+      <polygon points="0,72 14,88 28,72" fill="#ff6050"/>
+      <text x="36" y="87" font-family="monospace" font-size="16" fill="#ff6050">−5.46%</text>
+    </g>
+  </g>
+
+  <!-- Footer line -->
+  <line x1="80" y1="690" x2="1200" y2="690" stroke="#14202a" stroke-width="0.5"/>
+  <text x="80" y="708" font-family="monospace" font-size="10" letter-spacing="2" fill="#6a5a40">lincoln-brief.vercel.app · 정보 제공 목적, 투자 권유 아님</text>
+</svg>
