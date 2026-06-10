@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0e0806"/>
+      <stop offset="100%" style="stop-color:#1a0e08"/>
+    </linearGradient>
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#d96552"/>
+      <stop offset="100%" style="stop-color:#f08070"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Left red accent bar -->
+  <rect x="0" y="0" width="6" height="720" fill="#d96552"/>
+
+  <!-- Top label bar -->
+  <rect x="0" y="0" width="1280" height="3" fill="#d96552" opacity="0.6"/>
+
+  <!-- LINCOLN BRIEF wordmark -->
+  <text x="48" y="56" font-family="'Georgia', serif" font-size="18" letter-spacing="6" fill="#d96552" opacity="0.9">LINCOLN BRIEF</text>
+
+  <!-- Edition label top-right -->
+  <rect x="1030" y="28" width="220" height="36" rx="4" fill="#d96552" opacity="0.15"/>
+  <rect x="1030" y="28" width="220" height="36" rx="4" fill="none" stroke="#d96552" stroke-width="1" opacity="0.5"/>
+  <text x="1140" y="52" font-family="'Arial', sans-serif" font-size="13" letter-spacing="2" fill="#d96552" text-anchor="middle">US MARKET FORECAST</text>
+
+  <!-- Date -->
+  <text x="48" y="92" font-family="'Arial', sans-serif" font-size="14" fill="#888" letter-spacing="1">2026.06.11  |  SLOT 06  |  KST 06:00</text>
+
+  <!-- Divider line -->
+  <line x1="48" y1="110" x2="640" y2="110" stroke="#d96552" stroke-width="1" opacity="0.3"/>
+
+  <!-- Main headline -->
+  <text x="48" y="186" font-family="'Georgia', serif" font-size="50" fill="#f5f0e8" font-weight="bold">S&amp;P 7,266 확정</text>
+  <text x="48" y="242" font-family="'Georgia', serif" font-size="32" fill="#d96552">7,200 지지선까지 −0.9%</text>
+
+  <!-- Current coords box -->
+  <rect x="48" y="270" width="690" height="100" rx="6" fill="#180e08" stroke="#d96552" stroke-width="1" opacity="0.7"/>
+
+  <text x="80" y="302" font-family="'Arial', sans-serif" font-size="13" fill="#888">S&amp;P 500 최종</text>
+  <text x="80" y="330" font-family="'Georgia', serif" font-size="28" fill="#f5f0e8" font-weight="bold">7,266.99</text>
+  <polygon points="76,342 96,342 86,354" fill="#ef4444"/>
+  <text x="101" y="354" font-family="'Arial', sans-serif" font-size="15" fill="#ef4444">−1.62%</text>
+
+  <line x1="260" y1="282" x2="260" y2="358" stroke="#444" stroke-width="1"/>
+
+  <text x="286" y="302" font-family="'Arial', sans-serif" font-size="13" fill="#888">DOW</text>
+  <text x="286" y="330" font-family="'Georgia', serif" font-size="28" fill="#ef4444" font-weight="bold">49,918</text>
+  <text x="286" y="354" font-family="'Arial', sans-serif" font-size="13" fill="#ef4444">50,000 이탈</text>
+
+  <line x1="460" y1="282" x2="460" y2="358" stroke="#444" stroke-width="1"/>
+
+  <text x="486" y="302" font-family="'Arial', sans-serif" font-size="13" fill="#888">WTI</text>
+  <text x="486" y="330" font-family="'Georgia', serif" font-size="28" fill="#f97316" font-weight="bold">$91.85</text>
+  <polygon points="483,342 503,330 523,342" fill="#f97316"/>
+  <text x="527" y="342" font-family="'Arial', sans-serif" font-size="15" fill="#f97316">+4.14%</text>
+
+  <line x1="600" y1="282" x2="600" y2="358" stroke="#444" stroke-width="1"/>
+
+  <text x="626" y="302" font-family="'Arial', sans-serif" font-size="13" fill="#888">US10Y</text>
+  <text x="626" y="330" font-family="'Georgia', serif" font-size="28" fill="#d8b878" font-weight="bold">4.542%</text>
+
+  <!-- Scenario table -->
+  <text x="48" y="406" font-family="'Arial', sans-serif" font-size="14" fill="#888" letter-spacing="1">4주 시나리오 (확률 재보정)</text>
+  <line x1="48" y1="414" x2="728" y2="414" stroke="#d96552" stroke-width="0.5" opacity="0.5"/>
+
+  <!-- Scenario rows -->
+  <rect x="48" y="424" width="680" height="46" rx="4" fill="#0c1a0c" opacity="0.8"/>
+  <text x="64" y="453" font-family="'Arial', sans-serif" font-size="15" fill="#22c55e">비둘기 반전</text>
+  <text x="220" y="453" font-family="'Arial', sans-serif" font-size="13" fill="#888">CPI 하락 + WTI $88 복귀 → 7,400~7,500</text>
+  <text x="720" y="453" font-family="'Georgia', serif" font-size="18" fill="#22c55e" text-anchor="end" font-weight="bold">20%</text>
+
+  <rect x="48" y="474" width="680" height="46" rx="4" fill="#1a180a" opacity="0.8"/>
+  <text x="64" y="503" font-family="'Arial', sans-serif" font-size="15" fill="#d8b878">중립 유지</text>
+  <text x="220" y="503" font-family="'Arial', sans-serif" font-size="13" fill="#888">데이터 혼재 + WTI 안정 → 7,100~7,300</text>
+  <text x="720" y="503" font-family="'Georgia', serif" font-size="18" fill="#d8b878" text-anchor="end" font-weight="bold">40%</text>
+
+  <rect x="48" y="524" width="680" height="46" rx="4" fill="#1a0e08" opacity="0.8"/>
+  <text x="64" y="553" font-family="'Arial', sans-serif" font-size="15" fill="#f97316">매파 고착</text>
+  <text x="220" y="553" font-family="'Arial', sans-serif" font-size="13" fill="#888">WTI $91 지속 + CPI 반등 → 7,000~7,100</text>
+  <text x="720" y="553" font-family="'Georgia', serif" font-size="18" fill="#f97316" text-anchor="end" font-weight="bold">28%</text>
+
+  <rect x="48" y="574" width="680" height="46" rx="4" fill="#1a0808" opacity="0.8"/>
+  <text x="64" y="603" font-family="'Arial', sans-serif" font-size="15" fill="#ef4444">블랙스완</text>
+  <text x="220" y="603" font-family="'Arial', sans-serif" font-size="13" fill="#888">이란 충격 확대 + 에너지 급등 → 6,800 이하</text>
+  <text x="720" y="603" font-family="'Georgia', serif" font-size="18" fill="#ef4444" text-anchor="end" font-weight="bold">12%</text>
+
+  <!-- Key levels right panel -->
+  <rect x="762" y="270" width="470" height="354" rx="8" fill="#130e0a" stroke="#d96552" stroke-width="1" opacity="0.8"/>
+  <text x="997" y="308" font-family="'Arial', sans-serif" font-size="14" fill="#d96552" text-anchor="middle" letter-spacing="2">KEY LEVELS</text>
+  <line x1="782" y1="322" x2="1212" y2="322" stroke="#d96552" stroke-width="0.5" opacity="0.4"/>
+
+  <text x="782" y="358" font-family="'Arial', sans-serif" font-size="13" fill="#888">상방 저항 (구 지지→저항)</text>
+  <text x="1212" y="358" font-family="'Georgia', serif" font-size="18" fill="#888" text-anchor="end">7,302</text>
+
+  <text x="782" y="398" font-family="'Arial', sans-serif" font-size="13" fill="#888">전고점 저항</text>
+  <text x="1212" y="398" font-family="'Georgia', serif" font-size="18" fill="#888" text-anchor="end">7,386</text>
+
+  <line x1="782" y1="415" x2="1212" y2="415" stroke="#d96552" stroke-width="1" opacity="0.6"/>
+
+  <text x="782" y="446" font-family="'Arial', sans-serif" font-size="14" fill="#f5f0e8" font-weight="bold">현재 수준</text>
+  <text x="1212" y="446" font-family="'Georgia', serif" font-size="22" fill="#f5f0e8" text-anchor="end" font-weight="bold">7,266</text>
+
+  <line x1="782" y1="462" x2="1212" y2="462" stroke="#d96552" stroke-width="1" opacity="0.6"/>
+
+  <rect x="782" y="474" width="410" height="50" rx="4" fill="#1a0808"/>
+  <text x="782" y="494" font-family="'Arial', sans-serif" font-size="14" fill="#ef4444" font-weight="bold">  ▼ 하방 지지 1 (−0.9%)</text>
+  <text x="1212" y="510" font-family="'Georgia', serif" font-size="22" fill="#ef4444" text-anchor="end" font-weight="bold">7,200</text>
+
+  <text x="782" y="560" font-family="'Arial', sans-serif" font-size="13" fill="#888">하방 지지 2</text>
+  <text x="1212" y="560" font-family="'Georgia', serif" font-size="18" fill="#ef4444" text-anchor="end">7,000</text>
+
+  <text x="782" y="596" font-family="'Arial', sans-serif" font-size="13" fill="#888">블랙스완</text>
+  <text x="1212" y="596" font-family="'Georgia', serif" font-size="18" fill="#888" text-anchor="end">6,800</text>
+
+  <!-- Bottom accent line -->
+  <rect x="0" y="717" width="1280" height="3" fill="#d96552" opacity="0.4"/>
+
+  <!-- Lincoln signature -->
+  <text x="1232" y="700" font-family="'Georgia', serif" font-size="16" fill="#d96552" text-anchor="end" opacity="0.7">— Lincoln</text>
+</svg>
