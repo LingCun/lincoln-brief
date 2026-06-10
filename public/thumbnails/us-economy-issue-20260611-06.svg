@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#060e08"/>
+      <stop offset="100%" style="stop-color:#0a1a0e"/>
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7a9d6e"/>
+      <stop offset="100%" style="stop-color:#96bc88"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Left green accent bar -->
+  <rect x="0" y="0" width="6" height="720" fill="#7a9d6e"/>
+
+  <!-- Top label bar -->
+  <rect x="0" y="0" width="1280" height="3" fill="#7a9d6e" opacity="0.6"/>
+
+  <!-- LINCOLN BRIEF wordmark -->
+  <text x="48" y="56" font-family="'Georgia', serif" font-size="18" letter-spacing="6" fill="#7a9d6e" opacity="0.9">LINCOLN BRIEF</text>
+
+  <!-- Edition label top-right -->
+  <rect x="1040" y="28" width="200" height="36" rx="4" fill="#7a9d6e" opacity="0.15"/>
+  <rect x="1040" y="28" width="200" height="36" rx="4" fill="none" stroke="#7a9d6e" stroke-width="1" opacity="0.5"/>
+  <text x="1140" y="52" font-family="'Arial', sans-serif" font-size="13" letter-spacing="2" fill="#7a9d6e" text-anchor="middle">ECONOMY ISSUE</text>
+
+  <!-- Date -->
+  <text x="48" y="92" font-family="'Arial', sans-serif" font-size="14" fill="#888" letter-spacing="1">2026.06.11  |  SLOT 06  |  KST 06:00</text>
+
+  <!-- Divider line -->
+  <line x1="48" y1="110" x2="640" y2="110" stroke="#7a9d6e" stroke-width="1" opacity="0.3"/>
+
+  <!-- Main headline -->
+  <text x="48" y="184" font-family="'Georgia', serif" font-size="44" fill="#f5f0e8" font-weight="bold">트럼프 이란 위협</text>
+  <text x="48" y="240" font-family="'Georgia', serif" font-size="32" fill="#7a9d6e">FOMC 위에 지정학이 덮쳤다</text>
+
+  <!-- WTI center piece -->
+  <rect x="48" y="270" width="350" height="140" rx="8" fill="#0a1a06" stroke="#f97316" stroke-width="2"/>
+  <text x="223" y="304" font-family="'Arial', sans-serif" font-size="14" fill="#f97316" text-anchor="middle" letter-spacing="2">WTI CRUDE OIL</text>
+  <text x="223" y="362" font-family="'Georgia', serif" font-size="58" fill="#f5f0e8" text-anchor="middle" font-weight="bold">$91.85</text>
+  <polygon points="175,382 195,370 215,382" fill="#f97316"/>
+  <text x="223" y="398" font-family="'Arial', sans-serif" font-size="22" fill="#f97316" text-anchor="middle" font-weight="bold">+4.14%  이틀 연속 $91↑</text>
+
+  <!-- Gold box -->
+  <rect x="418" y="270" width="320" height="140" rx="8" fill="#1a1206" stroke="#d8b878" stroke-width="1.5"/>
+  <text x="578" y="304" font-family="'Arial', sans-serif" font-size="14" fill="#d8b878" text-anchor="middle" letter-spacing="2">GOLD</text>
+  <text x="578" y="358" font-family="'Georgia', serif" font-size="46" fill="#f5f0e8" text-anchor="middle" font-weight="bold">$4,094</text>
+  <polygon points="545,374 565,374 555,386" fill="#ef4444"/>
+  <text x="578" y="392" font-family="'Arial', sans-serif" font-size="18" fill="#ef4444" text-anchor="middle">−3.89%  현금화 급락</text>
+
+  <!-- DOW alert box -->
+  <rect x="762" y="270" width="470" height="140" rx="8" fill="#1a0606" stroke="#ef4444" stroke-width="2"/>
+  <text x="997" y="304" font-family="'Arial', sans-serif" font-size="14" fill="#ef4444" text-anchor="middle" letter-spacing="2">DOW  50,000 이탈</text>
+  <text x="997" y="362" font-family="'Georgia', serif" font-size="52" fill="#f5f0e8" text-anchor="middle" font-weight="bold">49,918</text>
+  <polygon points="950,380 970,368 990,380" fill="#ef4444" transform="rotate(180 970 374)"/>
+  <text x="997" y="396" font-family="'Arial', sans-serif" font-size="18" fill="#ef4444" text-anchor="middle" font-weight="bold">−953포인트 하루 급락</text>
+
+  <!-- Analysis section -->
+  <text x="48" y="456" font-family="'Arial', sans-serif" font-size="14" fill="#888" letter-spacing="1">핵심 메커니즘</text>
+  <line x1="48" y1="464" x2="1232" y2="464" stroke="#7a9d6e" stroke-width="0.5" opacity="0.4"/>
+
+  <!-- Chain reaction -->
+  <rect x="48" y="480" width="218" height="80" rx="6" fill="#0a100c" stroke="#7a9d6e" stroke-width="1"/>
+  <text x="157" y="510" font-family="'Arial', sans-serif" font-size="13" fill="#7a9d6e" text-anchor="middle">FOMC 매파</text>
+  <text x="157" y="534" font-family="'Arial', sans-serif" font-size="12" fill="#888" text-anchor="middle">점도표 기대 미달</text>
+  <text x="157" y="552" font-family="'Arial', sans-serif" font-size="12" fill="#888" text-anchor="middle">US10Y 4.542% 고착</text>
+
+  <text x="282" y="525" font-family="'Arial', sans-serif" font-size="24" fill="#7a9d6e">+</text>
+
+  <rect x="306" y="480" width="218" height="80" rx="6" fill="#100a08" stroke="#f97316" stroke-width="1"/>
+  <text x="415" y="510" font-family="'Arial', sans-serif" font-size="13" fill="#f97316" text-anchor="middle">이란 위협</text>
+  <text x="415" y="534" font-family="'Arial', sans-serif" font-size="12" fill="#888" text-anchor="middle">호르무즈 공급 우려</text>
+  <text x="415" y="552" font-family="'Arial', sans-serif" font-size="12" fill="#888" text-anchor="middle">오후 추가 매도 촉발</text>
+
+  <text x="540" y="525" font-family="'Arial', sans-serif" font-size="24" fill="#ef4444">→</text>
+
+  <rect x="566" y="480" width="218" height="80" rx="6" fill="#100808" stroke="#ef4444" stroke-width="1"/>
+  <text x="675" y="510" font-family="'Arial', sans-serif" font-size="13" fill="#ef4444" text-anchor="middle">이중 충격</text>
+  <text x="675" y="534" font-family="'Arial', sans-serif" font-size="12" fill="#888" text-anchor="middle">고금리 + 에너지 인플레</text>
+  <text x="675" y="552" font-family="'Arial', sans-serif" font-size="12" fill="#888" text-anchor="middle">연준 딜레마 심화</text>
+
+  <!-- WTI observation levels -->
+  <rect x="810" y="480" width="422" height="80" rx="6" fill="#0a100c" stroke="#7a9d6e" stroke-width="1"/>
+  <text x="1021" y="506" font-family="'Arial', sans-serif" font-size="14" fill="#7a9d6e" text-anchor="middle">WTI 핵심 관찰선</text>
+  <text x="840" y="540" font-family="'Arial', sans-serif" font-size="14" fill="#22c55e">$89 이하 복귀</text>
+  <text x="840" y="556" font-family="'Arial', sans-serif" font-size="12" fill="#666">→ 비둘기 경로 재개</text>
+  <line x1="1021" y1="494" x2="1021" y2="556" stroke="#7a9d6e" stroke-width="0.5" opacity="0.5"/>
+  <text x="1040" y="540" font-family="'Arial', sans-serif" font-size="14" fill="#ef4444">$93 이상 고착</text>
+  <text x="1040" y="556" font-family="'Arial', sans-serif" font-size="12" fill="#666">→ 매파 시나리오 가속</text>
+
+  <!-- Key insight footer -->
+  <rect x="48" y="590" width="1184" height="48" rx="6" fill="#0a100c" stroke="#7a9d6e" stroke-width="1" opacity="0.6"/>
+  <text x="640" y="622" font-family="'Georgia', serif" font-size="17" fill="#f5f0e8" text-anchor="middle">지정학 프리미엄이 CPI에 반영되는 순간, 연준의 인하 명분은 더 좁아진다</text>
+
+  <!-- Bottom accent line -->
+  <rect x="0" y="717" width="1280" height="3" fill="#7a9d6e" opacity="0.4"/>
+
+  <!-- Lincoln signature -->
+  <text x="1232" y="700" font-family="'Georgia', serif" font-size="16" fill="#7a9d6e" text-anchor="end" opacity="0.7">— Lincoln</text>
+</svg>

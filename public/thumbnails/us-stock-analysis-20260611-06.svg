@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#06080e"/>
+      <stop offset="100%" style="stop-color:#0a0e1a"/>
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#5677b0"/>
+      <stop offset="100%" style="stop-color:#7090cc"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Left blue accent bar -->
+  <rect x="0" y="0" width="6" height="720" fill="#5677b0"/>
+
+  <!-- Top label bar -->
+  <rect x="0" y="0" width="1280" height="3" fill="#5677b0" opacity="0.6"/>
+
+  <!-- LINCOLN BRIEF wordmark -->
+  <text x="48" y="56" font-family="'Georgia', serif" font-size="18" letter-spacing="6" fill="#5677b0" opacity="0.9">LINCOLN BRIEF</text>
+
+  <!-- Edition label top-right -->
+  <rect x="1030" y="28" width="220" height="36" rx="4" fill="#5677b0" opacity="0.15"/>
+  <rect x="1030" y="28" width="220" height="36" rx="4" fill="none" stroke="#5677b0" stroke-width="1" opacity="0.5"/>
+  <text x="1140" y="52" font-family="'Arial', sans-serif" font-size="13" letter-spacing="2" fill="#5677b0" text-anchor="middle">US STOCK ANALYSIS</text>
+
+  <!-- Date -->
+  <text x="48" y="92" font-family="'Arial', sans-serif" font-size="14" fill="#888" letter-spacing="1">2026.06.11  |  SLOT 06  |  KST 06:00</text>
+
+  <!-- Divider line -->
+  <line x1="48" y1="110" x2="640" y2="110" stroke="#5677b0" stroke-width="1" opacity="0.3"/>
+
+  <!-- Ticker label -->
+  <rect x="48" y="128" width="140" height="40" rx="4" fill="#5677b0" opacity="0.25"/>
+  <text x="118" y="154" font-family="'Arial', sans-serif" font-size="22" fill="#7090cc" text-anchor="middle" font-weight="bold" letter-spacing="3">AVGO</text>
+
+  <!-- Company name -->
+  <text x="200" y="154" font-family="'Arial', sans-serif" font-size="16" fill="#666">Broadcom Inc.</text>
+
+  <!-- Main price -->
+  <text x="48" y="236" font-family="'Georgia', serif" font-size="86" fill="#f5f0e8" font-weight="bold">$372.10</text>
+
+  <!-- Change -->
+  <polygon points="48,258 80,258 64,276" fill="#ef4444"/>
+  <text x="88" y="276" font-family="'Arial', sans-serif" font-size="36" fill="#ef4444" font-weight="bold">−5.12%</text>
+
+  <!-- Support break alert -->
+  <rect x="48" y="298" width="440" height="44" rx="6" fill="#2a0808" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="268" y="326" font-family="'Arial', sans-serif" font-size="16" fill="#ef4444" text-anchor="middle" font-weight="bold">⚠  $374 지지선 최종 이탈 확인</text>
+
+  <!-- 30-day stats -->
+  <rect x="48" y="360" width="680" height="110" rx="6" fill="#0e1220" stroke="#5677b0" stroke-width="1" opacity="0.7"/>
+
+  <text x="80" y="392" font-family="'Arial', sans-serif" font-size="13" fill="#666" letter-spacing="1">30일 고점</text>
+  <text x="80" y="418" font-family="'Georgia', serif" font-size="22" fill="#f5f0e8" font-weight="bold">$481.57</text>
+
+  <line x1="220" y1="374" x2="220" y2="456" stroke="#333" stroke-width="1"/>
+
+  <text x="246" y="392" font-family="'Arial', sans-serif" font-size="13" fill="#666" letter-spacing="1">고점 대비</text>
+  <text x="246" y="418" font-family="'Georgia', serif" font-size="22" fill="#ef4444" font-weight="bold">−22.8%</text>
+
+  <line x1="390" y1="374" x2="390" y2="456" stroke="#333" stroke-width="1"/>
+
+  <text x="416" y="392" font-family="'Arial', sans-serif" font-size="13" fill="#666" letter-spacing="1">30일 신저점</text>
+  <text x="416" y="418" font-family="'Georgia', serif" font-size="22" fill="#ef4444" font-weight="bold">$372.10</text>
+
+  <line x1="568" y1="374" x2="568" y2="456" stroke="#333" stroke-width="1"/>
+
+  <text x="594" y="392" font-family="'Arial', sans-serif" font-size="13" fill="#666" letter-spacing="1">30일 시작</text>
+  <text x="594" y="418" font-family="'Georgia', serif" font-size="22" fill="#888" font-weight="bold">$405.45</text>
+
+  <!-- Price path visual -->
+  <text x="48" y="506" font-family="'Arial', sans-serif" font-size="14" fill="#888" letter-spacing="1">가격 경로</text>
+  <line x1="48" y1="514" x2="728" y2="514" stroke="#333" stroke-width="1"/>
+
+  <text x="48" y="544" font-family="'Arial', sans-serif" font-size="15" fill="#ccc">$405  →  $481 고점  →  $418  →  $446  →  $392  →</text>
+  <text x="48" y="572" font-family="'Arial', sans-serif" font-size="18" fill="#ef4444" font-weight="bold">$374 지지  →  $372.10 이탈 ↓</text>
+
+  <!-- Context tags -->
+  <rect x="48" y="608" width="160" height="32" rx="4" fill="#1a1a2e" stroke="#5677b0" stroke-width="1" opacity="0.8"/>
+  <text x="128" y="630" font-family="'Arial', sans-serif" font-size="13" fill="#5677b0" text-anchor="middle">FOMC 매파</text>
+
+  <rect x="220" y="608" width="160" height="32" rx="4" fill="#2a0a0a" stroke="#ef4444" stroke-width="1" opacity="0.8"/>
+  <text x="300" y="630" font-family="'Arial', sans-serif" font-size="13" fill="#ef4444" text-anchor="middle">이란 위협</text>
+
+  <rect x="392" y="608" width="160" height="32" rx="4" fill="#1a1a2e" stroke="#f97316" stroke-width="1" opacity="0.8"/>
+  <text x="472" y="630" font-family="'Arial', sans-serif" font-size="13" fill="#f97316" text-anchor="middle">WTI $91.85↑</text>
+
+  <rect x="564" y="608" width="160" height="32" rx="4" fill="#1a1a2e" stroke="#5677b0" stroke-width="1" opacity="0.8"/>
+  <text x="644" y="630" font-family="'Arial', sans-serif" font-size="13" fill="#5677b0" text-anchor="middle">Citi 최선호 유지</text>
+
+  <!-- Right panel: Context -->
+  <rect x="762" y="128" width="470" height="296" rx="8" fill="#0e1220" stroke="#5677b0" stroke-width="1" opacity="0.8"/>
+  <text x="997" y="166" font-family="'Arial', sans-serif" font-size="14" fill="#5677b0" text-anchor="middle" letter-spacing="2">SCENARIO MAP</text>
+  <line x1="782" y1="180" x2="1212" y2="180" stroke="#5677b0" stroke-width="0.5" opacity="0.5"/>
+
+  <text x="782" y="214" font-family="'Arial', sans-serif" font-size="13" fill="#888">$360~$370 탐색</text>
+  <text x="1212" y="214" font-family="'Arial', sans-serif" font-size="14" fill="#d8b878" text-anchor="end" font-weight="bold">40%</text>
+
+  <text x="782" y="252" font-family="'Arial', sans-serif" font-size="13" fill="#888">$372~$385 기술적 반등</text>
+  <text x="1212" y="252" font-family="'Arial', sans-serif" font-size="14" fill="#22c55e" text-anchor="end" font-weight="bold">30%</text>
+
+  <text x="782" y="290" font-family="'Arial', sans-serif" font-size="13" fill="#888">$340~$360 추가 하락</text>
+  <text x="1212" y="290" font-family="'Arial', sans-serif" font-size="14" fill="#ef4444" text-anchor="end" font-weight="bold">20%</text>
+
+  <text x="782" y="328" font-family="'Arial', sans-serif" font-size="13" fill="#888">블랙스완 급반등 $400+</text>
+  <text x="1212" y="328" font-family="'Arial', sans-serif" font-size="14" fill="#888" text-anchor="end">10%</text>
+
+  <line x1="782" y1="348" x2="1212" y2="348" stroke="#5677b0" stroke-width="0.5" opacity="0.4"/>
+  <text x="782" y="378" font-family="'Arial', sans-serif" font-size="13" fill="#888">다음 지지 임계선</text>
+  <text x="1212" y="378" font-family="'Georgia', serif" font-size="20" fill="#ef4444" text-anchor="end" font-weight="bold">$360</text>
+
+  <!-- Bottom accent line -->
+  <rect x="0" y="717" width="1280" height="3" fill="#5677b0" opacity="0.4"/>
+
+  <!-- Lincoln signature -->
+  <text x="1232" y="700" font-family="'Georgia', serif" font-size="16" fill="#5677b0" text-anchor="end" opacity="0.7">— Lincoln</text>
+</svg>
