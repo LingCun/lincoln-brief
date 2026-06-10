@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#140608"/>
+      <stop offset="100%" style="stop-color:#1e0c0e"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg3)"/>
+  <rect x="0" y="0" width="6" height="720" fill="#ef4444"/>
+  <rect x="0" y="0" width="1280" height="3" fill="#ef4444" opacity="0.5"/>
+
+  <!-- Header -->
+  <text x="48" y="56" font-family="'Georgia', serif" font-size="18" letter-spacing="6" fill="#ef4444" opacity="0.9">LINCOLN BRIEF</text>
+  <rect x="1040" y="28" width="200" height="36" rx="4" fill="#ef4444" opacity="0.12"/>
+  <rect x="1040" y="28" width="200" height="36" rx="4" fill="none" stroke="#ef4444" stroke-width="1" opacity="0.4"/>
+  <text x="1140" y="52" font-family="'Arial', sans-serif" font-size="12" letter-spacing="2" fill="#ef4444" text-anchor="middle">US MARKET FORECAST</text>
+  <text x="48" y="92" font-family="'Arial', sans-serif" font-size="14" fill="#888" letter-spacing="1">2026.06.11  |  SLOT 01  |  포스트-FOMC</text>
+  <line x1="48" y1="110" x2="500" y2="110" stroke="#ef4444" stroke-width="1" opacity="0.3"/>
+
+  <!-- Title -->
+  <text x="48" y="175" font-family="'Georgia', serif" font-size="46" fill="#f5f0e8" font-weight="bold">S&amp;P 500 포스트-FOMC</text>
+  <text x="48" y="235" font-family="'Georgia', serif" font-size="36" fill="#ef4444">4주 시나리오 분석</text>
+
+  <!-- Current level box -->
+  <rect x="48" y="270" width="300" height="120" rx="8" fill="#1e0c0e" stroke="#ef4444" stroke-width="2"/>
+  <text x="198" y="305" font-family="'Arial', sans-serif" font-size="14" fill="#888" text-anchor="middle" letter-spacing="1">CURRENT LEVEL</text>
+  <text x="198" y="352" font-family="'Georgia', serif" font-size="44" fill="#f5f0e8" text-anchor="middle" font-weight="bold">7,302</text>
+  <polygon points="168,364 188,364 178,376" fill="#ef4444"/>
+  <text x="192" y="376" font-family="'Arial', sans-serif" font-size="18" fill="#ef4444">−1.14%</text>
+
+  <!-- Scenario bars - visual representation -->
+  <!-- X axis at y=620, bars go up from there -->
+  <!-- Bull scenario -->
+  <rect x="400" y="400" width="120" height="180" rx="4" fill="#22c55e" opacity="0.2"/>
+  <rect x="400" y="400" width="120" height="180" rx="4" fill="none" stroke="#22c55e" stroke-width="1" opacity="0.6"/>
+  <text x="460" y="430" font-family="'Arial', sans-serif" font-size="11" fill="#22c55e" text-anchor="middle">비둘기</text>
+  <text x="460" y="455" font-family="'Arial', sans-serif" font-size="11" fill="#22c55e" text-anchor="middle">반전</text>
+  <text x="460" y="490" font-family="'Georgia', serif" font-size="18" fill="#22c55e" text-anchor="middle" font-weight="bold">7,450</text>
+  <text x="460" y="515" font-family="'Arial', sans-serif" font-size="11" fill="#22c55e" text-anchor="middle">~7,550</text>
+  <text x="460" y="548" font-family="'Georgia', serif" font-size="22" fill="#22c55e" text-anchor="middle" font-weight="bold">25%</text>
+  <text x="460" y="570" font-family="'Arial', sans-serif" font-size="10" fill="#22c55e" text-anchor="middle">CPI 하락 + 비둘기 발언</text>
+
+  <!-- Neutral scenario -->
+  <rect x="540" y="360" width="120" height="220" rx="4" fill="#d8b878" opacity="0.2"/>
+  <rect x="540" y="360" width="120" height="220" rx="4" fill="none" stroke="#d8b878" stroke-width="1.5" opacity="0.8"/>
+  <text x="600" y="395" font-family="'Arial', sans-serif" font-size="11" fill="#d8b878" text-anchor="middle">중립 유지</text>
+  <text x="600" y="425" font-family="'Arial', sans-serif" font-size="11" fill="#d8b878" text-anchor="middle">(베이스)</text>
+  <text x="600" y="465" font-family="'Georgia', serif" font-size="18" fill="#d8b878" text-anchor="middle" font-weight="bold">7,200</text>
+  <text x="600" y="490" font-family="'Arial', sans-serif" font-size="11" fill="#d8b878" text-anchor="middle">~7,400</text>
+  <text x="600" y="530" font-family="'Georgia', serif" font-size="28" fill="#d8b878" text-anchor="middle" font-weight="bold">40%</text>
+  <text x="600" y="555" font-family="'Arial', sans-serif" font-size="10" fill="#d8b878" text-anchor="middle">횡보 탐색</text>
+
+  <!-- Bear scenario -->
+  <rect x="680" y="400" width="120" height="180" rx="4" fill="#ef4444" opacity="0.15"/>
+  <rect x="680" y="400" width="120" height="180" rx="4" fill="none" stroke="#ef4444" stroke-width="1" opacity="0.6"/>
+  <text x="740" y="430" font-family="'Arial', sans-serif" font-size="11" fill="#ef4444" text-anchor="middle">매파 고착</text>
+  <text x="740" y="470" font-family="'Georgia', serif" font-size="18" fill="#ef4444" text-anchor="middle" font-weight="bold">7,000</text>
+  <text x="740" y="495" font-family="'Arial', sans-serif" font-size="11" fill="#ef4444" text-anchor="middle">~7,100</text>
+  <text x="740" y="535" font-family="'Georgia', serif" font-size="22" fill="#ef4444" text-anchor="middle" font-weight="bold">25%</text>
+  <text x="740" y="557" font-family="'Arial', sans-serif" font-size="10" fill="#ef4444" text-anchor="middle">WTI 상승 + CPI 반등</text>
+
+  <!-- Black swan -->
+  <rect x="820" y="430" width="120" height="150" rx="4" fill="#6b21a8" opacity="0.15"/>
+  <rect x="820" y="430" width="120" height="150" rx="4" fill="none" stroke="#a855f7" stroke-width="1" opacity="0.5"/>
+  <text x="880" y="460" font-family="'Arial', sans-serif" font-size="11" fill="#a855f7" text-anchor="middle">블랙스완</text>
+  <text x="880" y="495" font-family="'Georgia', serif" font-size="18" fill="#a855f7" text-anchor="middle" font-weight="bold">6,800</text>
+  <text x="880" y="518" font-family="'Arial', sans-serif" font-size="11" fill="#a855f7" text-anchor="middle">이하</text>
+  <text x="880" y="553" font-family="'Georgia', serif" font-size="22" fill="#a855f7" text-anchor="middle" font-weight="bold">10%</text>
+
+  <!-- Key variable -->
+  <rect x="48" y="430" width="320" height="170" rx="6" fill="#0a0204" stroke="#ef4444" stroke-width="1" opacity="0.7"/>
+  <text x="208" y="462" font-family="'Arial', sans-serif" font-size="13" fill="#ef4444" text-anchor="middle" letter-spacing="1">핵심 관찰 변수</text>
+  <line x1="68" y1="472" x2="348" y2="472" stroke="#ef4444" stroke-width="1" opacity="0.3"/>
+  <text x="68" y="498" font-family="'Arial', sans-serif" font-size="14" fill="#ccc">WTI</text>
+  <text x="348" y="498" font-family="'Arial', sans-serif" font-size="13" fill="#888" text-anchor="end">$88 ↓ 비둘기 / $93 ↑ 매파</text>
+  <text x="68" y="528" font-family="'Arial', sans-serif" font-size="14" fill="#ccc">US10Y</text>
+  <text x="348" y="528" font-family="'Arial', sans-serif" font-size="13" fill="#888" text-anchor="end">4.5% 안착 vs 4.6% 돌파</text>
+  <text x="68" y="558" font-family="'Arial', sans-serif" font-size="14" fill="#ccc">CPI (7월)</text>
+  <text x="348" y="558" font-family="'Arial', sans-serif" font-size="13" fill="#888" text-anchor="end">에너지 항목 반영 여부</text>
+  <text x="68" y="588" font-family="'Arial', sans-serif" font-size="14" fill="#ccc">파월 발언</text>
+  <text x="348" y="588" font-family="'Arial', sans-serif" font-size="13" fill="#888" text-anchor="end">추가 뉘앙스 주시</text>
+
+  <!-- Bottom -->
+  <rect x="0" y="717" width="1280" height="3" fill="#ef4444" opacity="0.4"/>
+  <text x="1232" y="700" font-family="'Georgia', serif" font-size="16" fill="#ef4444" text-anchor="end" opacity="0.7">— Lincoln</text>
+</svg>

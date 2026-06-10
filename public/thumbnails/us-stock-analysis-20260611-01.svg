@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#060d1a"/>
+      <stop offset="100%" style="stop-color:#0d1a2e"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg2)"/>
+
+  <!-- Left accent bar -->
+  <rect x="0" y="0" width="6" height="720" fill="#3b82f6"/>
+  <rect x="0" y="0" width="1280" height="3" fill="#3b82f6" opacity="0.5"/>
+
+  <!-- LINCOLN BRIEF -->
+  <text x="48" y="56" font-family="'Georgia', serif" font-size="18" letter-spacing="6" fill="#3b82f6" opacity="0.9">LINCOLN BRIEF</text>
+
+  <!-- Edition label -->
+  <rect x="1040" y="28" width="200" height="36" rx="4" fill="#3b82f6" opacity="0.15"/>
+  <rect x="1040" y="28" width="200" height="36" rx="4" fill="none" stroke="#3b82f6" stroke-width="1" opacity="0.5"/>
+  <text x="1140" y="52" font-family="'Arial', sans-serif" font-size="13" letter-spacing="2" fill="#3b82f6" text-anchor="middle">US STOCK ANALYSIS</text>
+
+  <!-- Date -->
+  <text x="48" y="92" font-family="'Arial', sans-serif" font-size="14" fill="#888" letter-spacing="1">2026.06.11  |  SLOT 01</text>
+
+  <!-- Divider -->
+  <line x1="48" y1="110" x2="500" y2="110" stroke="#3b82f6" stroke-width="1" opacity="0.3"/>
+
+  <!-- Ticker label -->
+  <text x="48" y="165" font-family="'Arial', sans-serif" font-size="22" letter-spacing="4" fill="#3b82f6">AVGO · BROADCOM</text>
+
+  <!-- Main price -->
+  <text x="48" y="260" font-family="'Georgia', serif" font-size="88" fill="#f5f0e8" font-weight="bold">$374.33</text>
+
+  <!-- Change indicator -->
+  <polygon points="48,280 80,280 64,300" fill="#ef4444"/>
+  <text x="88" y="299" font-family="'Georgia', serif" font-size="42" fill="#ef4444" font-weight="bold">−4.55%</text>
+
+  <!-- Subtitle -->
+  <text x="48" y="350" font-family="'Arial', sans-serif" font-size="18" fill="#888">12종목 최대 낙폭  ·  6/10 마감</text>
+
+  <!-- Stats boxes -->
+  <!-- 30일 고점 -->
+  <rect x="48" y="390" width="280" height="100" rx="6" fill="#0d1828" stroke="#3b82f6" stroke-width="1" opacity="0.8"/>
+  <text x="188" y="420" font-family="'Arial', sans-serif" font-size="12" fill="#888" text-anchor="middle" letter-spacing="1">30일 고점</text>
+  <text x="188" y="458" font-family="'Georgia', serif" font-size="30" fill="#f5f0e8" text-anchor="middle" font-weight="bold">$481.57</text>
+  <text x="188" y="480" font-family="'Arial', sans-serif" font-size="13" fill="#ef4444" text-anchor="middle">고점 대비 −22.3%</text>
+
+  <!-- 30일 시작 -->
+  <rect x="346" y="390" width="280" height="100" rx="6" fill="#0d1828" stroke="#3b82f6" stroke-width="1" opacity="0.8"/>
+  <text x="486" y="420" font-family="'Arial', sans-serif" font-size="12" fill="#888" text-anchor="middle" letter-spacing="1">30일 시작가</text>
+  <text x="486" y="458" font-family="'Georgia', serif" font-size="30" fill="#f5f0e8" text-anchor="middle" font-weight="bold">$405.45</text>
+  <text x="486" y="480" font-family="'Arial', sans-serif" font-size="13" fill="#ef4444" text-anchor="middle">시작가 대비 −7.7%</text>
+
+  <!-- NVDA companion -->
+  <rect x="644" y="390" width="280" height="100" rx="6" fill="#0d1828" stroke="#ef4444" stroke-width="1" opacity="0.6"/>
+  <text x="784" y="420" font-family="'Arial', sans-serif" font-size="12" fill="#888" text-anchor="middle" letter-spacing="1">동반 하락 · NVDA</text>
+  <text x="784" y="458" font-family="'Georgia', serif" font-size="30" fill="#f5f0e8" text-anchor="middle" font-weight="bold">$202.28</text>
+  <text x="784" y="480" font-family="'Arial', sans-serif" font-size="13" fill="#ef4444" text-anchor="middle">AI 반도체 −2.84%</text>
+
+  <!-- Sparkline trend visualization (simplified bar chart) -->
+  <text x="48" y="540" font-family="'Arial', sans-serif" font-size="13" fill="#888" letter-spacing="1">최근 5거래일</text>
+  <!-- Bars representing: 418.91, 385.73, 396.60, 392.16, 374.33 -->
+  <!-- Normalize: min=374, max=419, height=60 -->
+  <rect x="48" y="560" width="40" height="54" rx="2" fill="#3b82f6" opacity="0.7"/>
+  <text x="68" y="625" font-family="'Arial', sans-serif" font-size="10" fill="#666" text-anchor="middle">418</text>
+  <rect x="102" y="589" width="40" height="25" rx="2" fill="#ef4444" opacity="0.7"/>
+  <text x="122" y="625" font-family="'Arial', sans-serif" font-size="10" fill="#666" text-anchor="middle">385</text>
+  <rect x="156" y="577" width="40" height="37" rx="2" fill="#ef4444" opacity="0.5"/>
+  <text x="176" y="625" font-family="'Arial', sans-serif" font-size="10" fill="#666" text-anchor="middle">396</text>
+  <rect x="210" y="580" width="40" height="34" rx="2" fill="#ef4444" opacity="0.5"/>
+  <text x="230" y="625" font-family="'Arial', sans-serif" font-size="10" fill="#666" text-anchor="middle">392</text>
+  <rect x="264" y="614" width="40" height="0" rx="2" fill="#ef4444" opacity="0.9"/>
+  <rect x="264" y="614" width="40" height="1" rx="2" fill="#ef4444" opacity="0.9"/>
+  <text x="284" y="625" font-family="'Arial', sans-serif" font-size="10" fill="#ef4444" text-anchor="middle" font-weight="bold">374 ▼</text>
+
+  <!-- Right panel: macro context -->
+  <rect x="960" y="160" width="280" height="500" rx="8" fill="#080f1c" stroke="#3b82f6" stroke-width="1" opacity="0.6"/>
+  <text x="1100" y="195" font-family="'Arial', sans-serif" font-size="13" fill="#3b82f6" text-anchor="middle" letter-spacing="2">MACRO CONTEXT</text>
+  <line x1="980" y1="205" x2="1220" y2="205" stroke="#3b82f6" stroke-width="1" opacity="0.3"/>
+
+  <text x="980" y="235" font-family="'Arial', sans-serif" font-size="13" fill="#888">FOMC</text>
+  <text x="1220" y="235" font-family="'Arial', sans-serif" font-size="14" fill="#ef4444" text-anchor="end">매파 점도표</text>
+  <text x="980" y="270" font-family="'Arial', sans-serif" font-size="13" fill="#888">US10Y</text>
+  <text x="1220" y="270" font-family="'Arial', sans-serif" font-size="14" fill="#d8b878" text-anchor="end">4.542%</text>
+  <text x="980" y="305" font-family="'Arial', sans-serif" font-size="13" fill="#888">WTI</text>
+  <text x="1220" y="305" font-family="'Arial', sans-serif" font-size="14" fill="#f97316" text-anchor="end">$91.34 +3.56%</text>
+  <text x="980" y="340" font-family="'Arial', sans-serif" font-size="13" fill="#888">S&amp;P 500</text>
+  <text x="1220" y="340" font-family="'Arial', sans-serif" font-size="14" fill="#ef4444" text-anchor="end">7,302 −1.14%</text>
+
+  <line x1="980" y1="360" x2="1220" y2="360" stroke="#3b82f6" stroke-width="1" opacity="0.2"/>
+  <text x="980" y="390" font-family="'Arial', sans-serif" font-size="12" fill="#666">고PER 반도체 할인율 압박</text>
+  <text x="980" y="415" font-family="'Arial', sans-serif" font-size="12" fill="#666">AI 인프라 투자 사이클</text>
+  <text x="980" y="440" font-family="'Arial', sans-serif" font-size="12" fill="#666">경계감 고조</text>
+
+  <!-- Bottom -->
+  <rect x="0" y="717" width="1280" height="3" fill="#3b82f6" opacity="0.4"/>
+  <text x="1232" y="700" font-family="'Georgia', serif" font-size="16" fill="#3b82f6" text-anchor="end" opacity="0.7">— Lincoln</text>
+</svg>
