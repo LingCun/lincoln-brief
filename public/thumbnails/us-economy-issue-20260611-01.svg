@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#040d08"/>
+      <stop offset="100%" style="stop-color:#081a10"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg4)"/>
+  <rect x="0" y="0" width="6" height="720" fill="#22c55e"/>
+  <rect x="0" y="0" width="1280" height="3" fill="#22c55e" opacity="0.5"/>
+
+  <!-- Header -->
+  <text x="48" y="56" font-family="'Georgia', serif" font-size="18" letter-spacing="6" fill="#22c55e" opacity="0.9">LINCOLN BRIEF</text>
+  <rect x="1040" y="28" width="200" height="36" rx="4" fill="#22c55e" opacity="0.12"/>
+  <rect x="1040" y="28" width="200" height="36" rx="4" fill="none" stroke="#22c55e" stroke-width="1" opacity="0.4"/>
+  <text x="1140" y="52" font-family="'Arial', sans-serif" font-size="12" letter-spacing="2" fill="#22c55e" text-anchor="middle">US ECONOMY ISSUE</text>
+  <text x="48" y="92" font-family="'Arial', sans-serif" font-size="14" fill="#888" letter-spacing="1">2026.06.11  |  SLOT 01  |  거시 이슈</text>
+  <line x1="48" y1="110" x2="500" y2="110" stroke="#22c55e" stroke-width="1" opacity="0.3"/>
+
+  <!-- WTI headline -->
+  <text x="48" y="168" font-family="'Arial', sans-serif" font-size="20" letter-spacing="3" fill="#22c55e">WTI CRUDE OIL</text>
+  <text x="48" y="275" font-family="'Georgia', serif" font-size="96" fill="#f5f0e8" font-weight="bold">$91.34</text>
+
+  <!-- Up triangle + percentage -->
+  <polygon points="48,295 84,295 66,278" fill="#f97316"/>
+  <text x="92" y="295" font-family="'Georgia', serif" font-size="48" fill="#f97316" font-weight="bold">+3.56%</text>
+
+  <!-- Label -->
+  <text x="48" y="345" font-family="'Arial', sans-serif" font-size="18" fill="#888">FOMC 결과 발표일 급등 · 6/10 마감</text>
+
+  <!-- Divider -->
+  <line x1="48" y1="370" x2="800" y2="370" stroke="#22c55e" stroke-width="1" opacity="0.2"/>
+
+  <!-- Issue label -->
+  <rect x="48" y="390" width="480" height="60" rx="6" fill="#0a1a0e" stroke="#f97316" stroke-width="1.5"/>
+  <text x="288" y="427" font-family="'Georgia', serif" font-size="24" fill="#f97316" text-anchor="middle" font-weight="bold">스태그플레이션 리스크 재점화</text>
+
+  <!-- Dual signal boxes -->
+  <!-- Signal 1: FOMC -->
+  <rect x="48" y="475" width="370" height="110" rx="6" fill="#0a1a0e" stroke="#22c55e" stroke-width="1" opacity="0.7"/>
+  <text x="233" y="505" font-family="'Arial', sans-serif" font-size="14" fill="#22c55e" text-anchor="middle" letter-spacing="1">FOMC 신호</text>
+  <text x="233" y="538" font-family="'Arial', sans-serif" font-size="18" fill="#ef4444" text-anchor="middle" font-weight="bold">금리 동결 + 매파 점도표</text>
+  <text x="233" y="565" font-family="'Arial', sans-serif" font-size="13" fill="#888" text-anchor="middle">연내 인하 기대 후퇴</text>
+
+  <!-- Signal 2: WTI -->
+  <rect x="436" y="475" width="370" height="110" rx="6" fill="#0a1a0e" stroke="#f97316" stroke-width="1" opacity="0.7"/>
+  <text x="621" y="505" font-family="'Arial', sans-serif" font-size="14" fill="#f97316" text-anchor="middle" letter-spacing="1">에너지 신호</text>
+  <text x="621" y="538" font-family="'Arial', sans-serif" font-size="18" fill="#f97316" text-anchor="middle" font-weight="bold">WTI +3.56% 단일 세션 급등</text>
+  <text x="621" y="565" font-family="'Arial', sans-serif" font-size="13" fill="#888" text-anchor="middle">CPI 경로 불확실성 증가</text>
+
+  <!-- Right panel: data summary -->
+  <rect x="860" y="160" width="380" height="500" rx="8" fill="#040d08" stroke="#22c55e" stroke-width="1" opacity="0.5"/>
+  <text x="1050" y="198" font-family="'Arial', sans-serif" font-size="13" fill="#22c55e" text-anchor="middle" letter-spacing="2">거시 데이터</text>
+  <line x1="880" y1="210" x2="1220" y2="210" stroke="#22c55e" stroke-width="1" opacity="0.3"/>
+
+  <text x="880" y="244" font-family="'Arial', sans-serif" font-size="14" fill="#888">US10Y</text>
+  <text x="1220" y="244" font-family="'Georgia', serif" font-size="16" fill="#d8b878" text-anchor="end" font-weight="bold">4.542%</text>
+  <text x="880" y="278" font-family="'Arial', sans-serif" font-size="14" fill="#888">Gold</text>
+  <text x="1220" y="278" font-family="'Georgia', serif" font-size="16" fill="#ef4444" text-anchor="end">$4,137.90  −2.87%</text>
+  <text x="880" y="312" font-family="'Arial', sans-serif" font-size="14" fill="#888">USD/KRW</text>
+  <text x="1220" y="312" font-family="'Georgia', serif" font-size="16" fill="#22c55e" text-anchor="end">1,519.86  −0.59%</text>
+  <text x="880" y="346" font-family="'Arial', sans-serif" font-size="14" fill="#888">BTC</text>
+  <text x="1220" y="346" font-family="'Georgia', serif" font-size="16" fill="#d8b878" text-anchor="end">$61,805  +0.26%</text>
+  <text x="880" y="380" font-family="'Arial', sans-serif" font-size="14" fill="#888">S&amp;P 500</text>
+  <text x="1220" y="380" font-family="'Georgia', serif" font-size="16" fill="#ef4444" text-anchor="end">7,302.61  −1.14%</text>
+
+  <line x1="880" y1="400" x2="1220" y2="400" stroke="#22c55e" stroke-width="1" opacity="0.2"/>
+
+  <text x="880" y="432" font-family="'Arial', sans-serif" font-size="13" fill="#666">WTI $90 안착 여부</text>
+  <text x="880" y="458" font-family="'Arial', sans-serif" font-size="13" fill="#666">+ 7월 CPI 지표</text>
+  <text x="880" y="484" font-family="'Arial', sans-serif" font-size="13" fill="#666">= 시나리오 분기점</text>
+
+  <rect x="880" y="510" width="320" height="110" rx="6" fill="#0d1c10" stroke="#f97316" stroke-width="1" opacity="0.5"/>
+  <text x="1040" y="540" font-family="'Arial', sans-serif" font-size="12" fill="#f97316" text-anchor="middle">한국 시사점</text>
+  <text x="1040" y="562" font-family="'Arial', sans-serif" font-size="11" fill="#888" text-anchor="middle">에너지 수입 비용 ↑</text>
+  <text x="1040" y="582" font-family="'Arial', sans-serif" font-size="11" fill="#888" text-anchor="middle">항공 · 화학 · 해운 마진 압박</text>
+  <text x="1040" y="602" font-family="'Arial', sans-serif" font-size="11" fill="#888" text-anchor="middle">국내 CPI 에너지 항목 후행 반영</text>
+
+  <!-- Bottom -->
+  <rect x="0" y="717" width="1280" height="3" fill="#22c55e" opacity="0.4"/>
+  <text x="1232" y="700" font-family="'Georgia', serif" font-size="16" fill="#22c55e" text-anchor="end" opacity="0.7">— Lincoln</text>
+</svg>
