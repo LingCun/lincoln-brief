@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#060e08"/>
+      <stop offset="100%" style="stop-color:#0d1810"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Left green accent bar -->
+  <rect x="0" y="0" width="6" height="720" fill="#7a9d6e"/>
+
+  <!-- Top label bar -->
+  <rect x="0" y="0" width="1280" height="3" fill="#7a9d6e" opacity="0.6"/>
+
+  <!-- LINCOLN BRIEF wordmark -->
+  <text x="48" y="56" font-family="'Georgia', serif" font-size="18" letter-spacing="6" fill="#7a9d6e" opacity="0.9">LINCOLN BRIEF</text>
+
+  <!-- Edition label top-right -->
+  <rect x="1020" y="28" width="220" height="36" rx="4" fill="#7a9d6e" opacity="0.15"/>
+  <rect x="1020" y="28" width="220" height="36" rx="4" fill="none" stroke="#7a9d6e" stroke-width="1" opacity="0.5"/>
+  <text x="1130" y="52" font-family="'Arial', sans-serif" font-size="13" letter-spacing="2" fill="#7a9d6e" text-anchor="middle">US ECONOMY ISSUE</text>
+
+  <!-- Date -->
+  <text x="48" y="92" font-family="'Arial', sans-serif" font-size="14" fill="#888" letter-spacing="1">2026.06.12  |  SLOT 06  |  KST 07:00</text>
+
+  <!-- Divider line -->
+  <line x1="48" y1="110" x2="700" y2="110" stroke="#7a9d6e" stroke-width="1" opacity="0.3"/>
+
+  <!-- Main headline -->
+  <text x="48" y="180" font-family="'Georgia', serif" font-size="40" fill="#f5f0e8" font-weight="bold">세 가지가 하루 만에 동시에 바뀌었다</text>
+
+  <!-- Three boxes -->
+  <!-- WTI -->
+  <rect x="48" y="210" width="215" height="110" rx="8" fill="#0a1208" stroke="#ef4444" stroke-width="2" opacity="0.9"/>
+  <text x="155" y="240" font-family="'Arial', sans-serif" font-size="14" fill="#ef4444" text-anchor="middle" letter-spacing="2">WTI</text>
+  <text x="155" y="278" font-family="'Georgia', serif" font-size="30" fill="#f5f0e8" text-anchor="middle" font-weight="bold">$86.42</text>
+  <polygon points="135,295 145,283 155,295" fill="#ef4444" transform="rotate(180 145 289)"/>
+  <text x="165" y="298" font-family="'Arial', sans-serif" font-size="18" fill="#ef4444">−4.01%</text>
+  <text x="155" y="315" font-family="'Arial', sans-serif" font-size="12" fill="#888" text-anchor="middle">$91.85 → $86.42</text>
+
+  <!-- US10Y -->
+  <rect x="278" y="210" width="215" height="110" rx="8" fill="#0a1208" stroke="#22c55e" stroke-width="2" opacity="0.9"/>
+  <text x="386" y="240" font-family="'Arial', sans-serif" font-size="14" fill="#22c55e" text-anchor="middle" letter-spacing="2">US10Y</text>
+  <text x="386" y="278" font-family="'Georgia', serif" font-size="30" fill="#f5f0e8" text-anchor="middle" font-weight="bold">4.463%</text>
+  <polygon points="366,295 376,283 386,295" fill="#22c55e" transform="rotate(180 376 289)"/>
+  <text x="396" y="298" font-family="'Arial', sans-serif" font-size="18" fill="#22c55e">↓</text>
+  <text x="386" y="315" font-family="'Arial', sans-serif" font-size="12" fill="#888" text-anchor="middle">4.542% → 4.463%</text>
+
+  <!-- Gold -->
+  <rect x="508" y="210" width="215" height="110" rx="8" fill="#0a1208" stroke="#d8b878" stroke-width="2" opacity="0.9"/>
+  <text x="616" y="240" font-family="'Arial', sans-serif" font-size="14" fill="#d8b878" text-anchor="middle" letter-spacing="2">GOLD</text>
+  <text x="616" y="278" font-family="'Georgia', serif" font-size="30" fill="#f5f0e8" text-anchor="middle" font-weight="bold">$4,233</text>
+  <polygon points="596,292 606,280 616,292" fill="#d8b878"/>
+  <text x="626" y="298" font-family="'Arial', sans-serif" font-size="18" fill="#d8b878">+3.06%</text>
+  <text x="616" y="315" font-family="'Arial', sans-serif" font-size="12" fill="#888" text-anchor="middle">$4,094 → $4,233</text>
+
+  <!-- Divider -->
+  <line x1="48" y1="342" x2="740" y2="342" stroke="#7a9d6e" stroke-width="1" opacity="0.3"/>
+
+  <!-- Analysis text -->
+  <text x="48" y="374" font-family="'Arial', sans-serif" font-size="15" fill="#c8dcc4">WTI 하락 → CPI 에너지 완화 가능성 → 연준 인하 여지 형성 중</text>
+  <text x="48" y="406" font-family="'Arial', sans-serif" font-size="15" fill="#c8dcc4">US10Y 하락 → 채권 시장 인하 기대 일부 반영 시작</text>
+  <text x="48" y="438" font-family="'Arial', sans-serif" font-size="15" fill="#c8dcc4">Gold 급등 → 무이자 자산 기회비용 감소 = 금리 하락 기대 반영</text>
+
+  <!-- BTC -->
+  <line x1="48" y1="460" x2="740" y2="460" stroke="#7a9d6e" stroke-width="1" opacity="0.2"/>
+  <text x="48" y="490" font-family="'Arial', sans-serif" font-size="14" fill="#888">BTC</text>
+  <text x="180" y="490" font-family="'Georgia', serif" font-size="20" fill="#f5f0e8" font-weight="bold">$63,437</text>
+  <text x="360" y="490" font-family="'Arial', sans-serif" font-size="14" fill="#22c55e">+3.0% — 위험자산 동반 상승</text>
+
+  <!-- Key question -->
+  <line x1="48" y1="512" x2="740" y2="512" stroke="#7a9d6e" stroke-width="1" opacity="0.2"/>
+  <text x="48" y="545" font-family="'Georgia', serif" font-size="16" fill="#7a9d6e">핵심 질문 — 일시적 과매도 복귀인가, 추세 전환의 시작인가?</text>
+  <text x="48" y="575" font-family="'Arial', sans-serif" font-size="14" fill="#aaa">다음 CPI(7월 중순)가 이 방향을 확인 또는 부정합니다</text>
+  <text x="48" y="605" font-family="'Arial', sans-serif" font-size="14" fill="#aaa">WTI $86 유지 여부 + US10Y 4.4% 이하 진입 여부가 체크포인트</text>
+
+  <!-- Right decorative panel -->
+  <rect x="820" y="100" width="420" height="560" rx="8" fill="#080e0a" stroke="#7a9d6e" stroke-width="1" opacity="0.3"/>
+
+  <text x="1030" y="158" font-family="'Georgia', serif" font-size="18" fill="#7a9d6e" text-anchor="middle" opacity="0.8">연준 인하 조건</text>
+  <line x1="860" y1="175" x2="1200" y2="175" stroke="#7a9d6e" stroke-width="1" opacity="0.3"/>
+
+  <text x="860" y="218" font-family="'Arial', sans-serif" font-size="14" fill="#7a9d6e" font-weight="bold">✓ WTI $87 이하</text>
+  <text x="1195" y="218" font-family="'Arial', sans-serif" font-size="14" fill="#22c55e" text-anchor="end">충족</text>
+
+  <text x="860" y="258" font-family="'Arial', sans-serif" font-size="14" fill="#aaa">△ US10Y 4.4% 이하</text>
+  <text x="1195" y="258" font-family="'Arial', sans-serif" font-size="14" fill="#d8b878" text-anchor="end">근접</text>
+
+  <text x="860" y="298" font-family="'Arial', sans-serif" font-size="14" fill="#888">? CPI 에너지 완화</text>
+  <text x="1195" y="298" font-family="'Arial', sans-serif" font-size="14" fill="#888" text-anchor="end">미확인</text>
+
+  <text x="860" y="338" font-family="'Arial', sans-serif" font-size="14" fill="#888">? 파월 완화 발언</text>
+  <text x="1195" y="338" font-family="'Arial', sans-serif" font-size="14" fill="#888" text-anchor="end">미확인</text>
+
+  <line x1="860" y1="365" x2="1200" y2="365" stroke="#7a9d6e" stroke-width="1" opacity="0.3"/>
+
+  <text x="1030" y="415" font-family="'Arial', sans-serif" font-size="14" fill="#888" text-anchor="middle">비둘기 반전 확률</text>
+  <text x="1030" y="460" font-family="'Georgia', serif" font-size="48" fill="#22c55e" text-anchor="middle" font-weight="bold">32%</text>
+  <text x="1030" y="495" font-family="'Arial', sans-serif" font-size="14" fill="#22c55e" text-anchor="middle">↑ +12%p (이전 20%)</text>
+
+  <line x1="860" y1="520" x2="1200" y2="520" stroke="#7a9d6e" stroke-width="1" opacity="0.2"/>
+
+  <text x="1030" y="560" font-family="'Arial', sans-serif" font-size="13" fill="#888" text-anchor="middle">중립 시나리오</text>
+  <text x="1030" y="588" font-family="'Georgia', serif" font-size="24" fill="#d96552" text-anchor="middle" font-weight="bold">38%</text>
+  <text x="1030" y="610" font-family="'Arial', sans-serif" font-size="12" fill="#888" text-anchor="middle">여전히 베이스</text>
+
+  <line x1="860" y1="628" x2="1200" y2="628" stroke="#7a9d6e" stroke-width="1" opacity="0.2"/>
+  <text x="1030" y="655" font-family="'Georgia', serif" font-size="14" fill="#7a9d6e" text-anchor="middle" opacity="0.8">Lincoln Brief — 06:00 KST</text>
+</svg>

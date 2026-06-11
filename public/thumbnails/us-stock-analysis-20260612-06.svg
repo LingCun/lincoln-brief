@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#060c14"/>
+      <stop offset="100%" style="stop-color:#0d1820"/>
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#5677b0"/>
+      <stop offset="100%" style="stop-color:#7898d0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Left blue accent bar -->
+  <rect x="0" y="0" width="6" height="720" fill="#5677b0"/>
+
+  <!-- Top label bar -->
+  <rect x="0" y="0" width="1280" height="3" fill="#5677b0" opacity="0.6"/>
+
+  <!-- LINCOLN BRIEF wordmark -->
+  <text x="48" y="56" font-family="'Georgia', serif" font-size="18" letter-spacing="6" fill="#5677b0" opacity="0.9">LINCOLN BRIEF</text>
+
+  <!-- Edition label top-right -->
+  <rect x="1020" y="28" width="220" height="36" rx="4" fill="#5677b0" opacity="0.15"/>
+  <rect x="1020" y="28" width="220" height="36" rx="4" fill="none" stroke="#5677b0" stroke-width="1" opacity="0.5"/>
+  <text x="1130" y="52" font-family="'Arial', sans-serif" font-size="13" letter-spacing="2" fill="#5677b0" text-anchor="middle">US STOCK ANALYSIS</text>
+
+  <!-- Date -->
+  <text x="48" y="92" font-family="'Arial', sans-serif" font-size="14" fill="#888" letter-spacing="1">2026.06.12  |  SLOT 06  |  KST 07:00</text>
+
+  <!-- Divider line -->
+  <line x1="48" y1="110" x2="700" y2="110" stroke="#5677b0" stroke-width="1" opacity="0.3"/>
+
+  <!-- Main ticker -->
+  <text x="48" y="175" font-family="'Arial', sans-serif" font-size="20" letter-spacing="4" fill="#5677b0" opacity="0.8">TESLA  ·  TSLA</text>
+
+  <!-- Price headline -->
+  <text x="48" y="260" font-family="'Georgia', serif" font-size="72" fill="#f5f0e8" font-weight="bold">$399.15</text>
+  <polygon points="370,215 390,193 410,215" fill="#22c55e"/>
+  <text x="420" y="245" font-family="'Georgia', serif" font-size="42" fill="#22c55e" font-weight="bold">+4.60%</text>
+
+  <!-- Sub headline -->
+  <text x="48" y="308" font-family="'Georgia', serif" font-size="26" fill="#5677b0">SpaceX IPO $135 책정 — $400 심리선 앞</text>
+
+  <!-- Divider -->
+  <line x1="48" y1="330" x2="740" y2="330" stroke="#5677b0" stroke-width="1" opacity="0.3"/>
+
+  <!-- Stats row -->
+  <rect x="48" y="348" width="180" height="80" rx="6" fill="#0d1820" stroke="#5677b0" stroke-width="1" opacity="0.7"/>
+  <text x="138" y="375" font-family="'Arial', sans-serif" font-size="12" fill="#888" text-anchor="middle">당일 상승액</text>
+  <text x="138" y="405" font-family="'Georgia', serif" font-size="22" fill="#22c55e" text-anchor="middle" font-weight="bold">+$17.56</text>
+
+  <rect x="242" y="348" width="180" height="80" rx="6" fill="#0d1820" stroke="#5677b0" stroke-width="1" opacity="0.7"/>
+  <text x="332" y="375" font-family="'Arial', sans-serif" font-size="12" fill="#888" text-anchor="middle">30일 고점</text>
+  <text x="332" y="405" font-family="'Georgia', serif" font-size="22" fill="#f5f0e8" text-anchor="middle" font-weight="bold">$445.27</text>
+
+  <rect x="436" y="348" width="180" height="80" rx="6" fill="#0d1820" stroke="#5677b0" stroke-width="1" opacity="0.7"/>
+  <text x="526" y="375" font-family="'Arial', sans-serif" font-size="12" fill="#888" text-anchor="middle">$400까지</text>
+  <text x="526" y="405" font-family="'Georgia', serif" font-size="22" fill="#d8b878" text-anchor="middle" font-weight="bold">$0.85</text>
+
+  <!-- Scenario table -->
+  <text x="48" y="478" font-family="'Arial', sans-serif" font-size="13" fill="#888" letter-spacing="2">시나리오</text>
+  <line x1="48" y1="486" x2="740" y2="486" stroke="#5677b0" stroke-width="1" opacity="0.2"/>
+
+  <rect x="48" y="498" width="168" height="62" rx="4" fill="#0d1820" stroke="#22c55e" stroke-width="1" opacity="0.7"/>
+  <text x="132" y="522" font-family="'Arial', sans-serif" font-size="11" fill="#888" text-anchor="middle">$400 돌파 + 상승</text>
+  <text x="132" y="547" font-family="'Georgia', serif" font-size="18" fill="#22c55e" text-anchor="middle">30%</text>
+
+  <rect x="228" y="498" width="168" height="62" rx="4" fill="#0d1820" stroke="#5677b0" stroke-width="1" opacity="0.7"/>
+  <text x="312" y="522" font-family="'Arial', sans-serif" font-size="11" fill="#888" text-anchor="middle">$390~$415 박스</text>
+  <text x="312" y="547" font-family="'Georgia', serif" font-size="18" fill="#5677b0" text-anchor="middle">40%</text>
+
+  <rect x="408" y="498" width="168" height="62" rx="4" fill="#0d1820" stroke="#ef4444" stroke-width="1" opacity="0.7"/>
+  <text x="492" y="522" font-family="'Arial', sans-serif" font-size="11" fill="#888" text-anchor="middle">$400 실패 + 조정</text>
+  <text x="492" y="547" font-family="'Georgia', serif" font-size="18" fill="#ef4444" text-anchor="middle">20%</text>
+
+  <rect x="588" y="498" width="152" height="62" rx="4" fill="#0d1820" stroke="#666" stroke-width="1" opacity="0.7"/>
+  <text x="664" y="522" font-family="'Arial', sans-serif" font-size="11" fill="#888" text-anchor="middle">블랙스완</text>
+  <text x="664" y="547" font-family="'Georgia', serif" font-size="18" fill="#666" text-anchor="middle">10%</text>
+
+  <!-- Key note -->
+  <text x="48" y="608" font-family="'Arial', sans-serif" font-size="15" fill="#aaa">SpaceX IPO 상장 후 차익 실현 압박 주의 — $400 안착 여부가 핵심</text>
+
+  <!-- Right decorative panel -->
+  <rect x="820" y="100" width="420" height="560" rx="8" fill="#0a1018" stroke="#5677b0" stroke-width="1" opacity="0.3"/>
+
+  <text x="1030" y="160" font-family="'Georgia', serif" font-size="18" fill="#5677b0" text-anchor="middle" opacity="0.8">SpaceX IPO</text>
+  <text x="1030" y="220" font-family="'Georgia', serif" font-size="52" fill="#f5f0e8" text-anchor="middle" font-weight="bold">$135</text>
+  <text x="1030" y="255" font-family="'Arial', sans-serif" font-size="15" fill="#22c55e" text-anchor="middle">역대 최대 IPO 중 하나</text>
+
+  <line x1="860" y1="280" x2="1200" y2="280" stroke="#5677b0" stroke-width="1" opacity="0.3"/>
+
+  <text x="860" y="318" font-family="'Arial', sans-serif" font-size="14" fill="#aaa">Robotaxi 출시 내러티브</text>
+  <text x="860" y="352" font-family="'Arial', sans-serif" font-size="14" fill="#aaa">FSD 확장 내러티브</text>
+  <text x="860" y="386" font-family="'Arial', sans-serif" font-size="14" fill="#aaa">머스크 리더십 프리미엄</text>
+
+  <line x1="860" y1="410" x2="1200" y2="410" stroke="#5677b0" stroke-width="1" opacity="0.3"/>
+
+  <text x="1030" y="458" font-family="'Arial', sans-serif" font-size="14" fill="#888" text-anchor="middle">30일 이중 바닥</text>
+  <text x="1030" y="490" font-family="'Georgia', serif" font-size="28" fill="#f5f0e8" text-anchor="middle" font-weight="bold">$381 지지</text>
+
+  <line x1="860" y1="520" x2="1200" y2="520" stroke="#5677b0" stroke-width="1" opacity="0.2"/>
+  <text x="1030" y="560" font-family="'Arial', sans-serif" font-size="14" fill="#888" text-anchor="middle">12종목 중 최대 상승</text>
+  <text x="1030" y="590" font-family="'Arial', sans-serif" font-size="14" fill="#888" text-anchor="middle">WTI↓ US10Y↓ 성장주 우호</text>
+
+  <line x1="860" y1="615" x2="1200" y2="615" stroke="#5677b0" stroke-width="1" opacity="0.2"/>
+  <text x="1030" y="648" font-family="'Georgia', serif" font-size="16" fill="#5677b0" text-anchor="middle" opacity="0.8">Lincoln Brief — 06:00 KST</text>
+</svg>
