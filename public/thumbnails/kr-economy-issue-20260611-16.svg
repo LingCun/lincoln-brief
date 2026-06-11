@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#060d08"/>
+      <stop offset="100%" stop-color="#0a1810"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#90d8a8"/>
+      <stop offset="50%" stop-color="#78d8a8"/>
+      <stop offset="100%" stop-color="#50c888"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#78d8a8" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#78d8a8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#d8b878" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#d8b878" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1100" cy="180" r="420" fill="url(#glow1)"/>
+  <circle cx="180" cy="580" r="280" fill="url(#glow2)"/>
+
+  <!-- Header -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#78d8a8" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#e8f8f0">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#78d8a8">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#78d8a8" text-anchor="end">2026.06.11 16:00 KST · KR ECONOMY</text>
+
+  <!-- Edition label -->
+  <text x="80" y="160" font-family="monospace" font-size="13" letter-spacing="5" fill="#78d8a8">— 경제 이슈 —</text>
+
+  <!-- Badge -->
+  <rect x="80" y="176" width="720" height="30" rx="4" fill="#ff9860" fill-opacity="0.15" stroke="#ff9860" stroke-width="0.8"/>
+  <text x="92" y="196" font-family="monospace" font-size="12" letter-spacing="2" fill="#ff9860">원화 약세 지속 · 수출주 환차익 기대 vs 현대차·기아 하락 역설 · CPI D-1</text>
+
+  <!-- Main title -->
+  <text x="80" y="295" font-family="Playfair Display, Georgia, serif" font-size="64" font-weight="500" fill="#e8f8f0">USD/KRW 1,530.48</text>
+  <text x="80" y="357" font-family="Playfair Display, Georgia, serif" font-size="38" font-style="italic" fill="url(#green)">원화 약세 구조와 수출 기업의 역설</text>
+  <text x="80" y="405" font-family="sans-serif" font-size="17" fill="#6a9878">현대차 −0.83% · 기아 −2.32% · US10Y 4.542% · WTI $89.45</text>
+
+  <!-- Divider -->
+  <line x1="80" y1="440" x2="1200" y2="440" stroke="#101e14" stroke-width="1"/>
+
+  <!-- Metrics row -->
+  <g transform="translate(80, 475)">
+    <!-- USD/KRW -->
+    <g>
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#78d8a8" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="3" fill="#5a9878">USD/KRW</text>
+      <text x="0" y="66" font-family="Playfair Display, Georgia, serif" font-size="26" fill="#e8f8f0">1,530.48원</text>
+      <polygon points="0,72 14,88 28,72" fill="#ff6050"/>
+      <text x="36" y="87" font-family="monospace" font-size="15" fill="#ff6050">+0.31%</text>
+    </g>
+    <!-- 현대차 -->
+    <g transform="translate(280, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#78d8a8" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="3" fill="#5a9878">현대차</text>
+      <text x="0" y="66" font-family="Playfair Display, Georgia, serif" font-size="26" fill="#e8f8f0">597,000원</text>
+      <polygon points="0,72 14,88 28,72" fill="#ff6050"/>
+      <text x="36" y="87" font-family="monospace" font-size="15" fill="#ff6050">−0.83%</text>
+    </g>
+    <!-- 기아 -->
+    <g transform="translate(560, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#78d8a8" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="3" fill="#5a9878">기아</text>
+      <text x="0" y="66" font-family="Playfair Display, Georgia, serif" font-size="26" fill="#e8f8f0">156,000원</text>
+      <polygon points="0,72 14,88 28,72" fill="#ff6050"/>
+      <text x="36" y="87" font-family="monospace" font-size="15" fill="#ff6050">−2.32%</text>
+    </g>
+    <!-- US10Y -->
+    <g transform="translate(820, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#78d8a8" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="3" fill="#5a9878">US10Y</text>
+      <text x="0" y="66" font-family="Playfair Display, Georgia, serif" font-size="26" fill="#e8f8f0">4.542%</text>
+      <text x="0" y="90" font-family="monospace" font-size="12" fill="#5a6858">금리 압박 지속</text>
+    </g>
+  </g>
+
+  <!-- Footer -->
+  <line x1="80" y1="658" x2="1200" y2="658" stroke="#101e14" stroke-width="1"/>
+  <text x="80" y="680" font-family="monospace" font-size="10" letter-spacing="2" fill="#3a5848">lincoln-brief.vercel.app · 본 글은 정보 제공 목적이며 투자 권유가 아닙니다</text>
+</svg>
