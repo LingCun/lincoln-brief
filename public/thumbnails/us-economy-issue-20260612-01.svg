@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#060e08"/>
+      <stop offset="100%" style="stop-color:#0e1a10"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Left green accent bar -->
+  <rect x="0" y="0" width="6" height="720" fill="#7a9d6e"/>
+
+  <!-- Top label bar -->
+  <rect x="0" y="0" width="1280" height="3" fill="#7a9d6e" opacity="0.6"/>
+
+  <!-- LINCOLN BRIEF wordmark -->
+  <text x="48" y="56" font-family="'Georgia', serif" font-size="18" letter-spacing="6" fill="#7a9d6e" opacity="0.9">LINCOLN BRIEF</text>
+
+  <!-- Edition label top-right -->
+  <rect x="1040" y="28" width="200" height="36" rx="4" fill="#7a9d6e" opacity="0.15"/>
+  <rect x="1040" y="28" width="200" height="36" rx="4" fill="none" stroke="#7a9d6e" stroke-width="1" opacity="0.5"/>
+  <text x="1140" y="52" font-family="'Arial', sans-serif" font-size="13" letter-spacing="2" fill="#7a9d6e" text-anchor="middle">ECONOMY ISSUE</text>
+
+  <!-- Date -->
+  <text x="48" y="92" font-family="'Arial', sans-serif" font-size="14" fill="#6a8a6a" letter-spacing="1">2026.06.12  |  SLOT 01  |  KST 01:00</text>
+
+  <!-- Divider line -->
+  <line x1="48" y1="110" x2="640" y2="110" stroke="#7a9d6e" stroke-width="1" opacity="0.3"/>
+
+  <!-- Main headline -->
+  <text x="48" y="188" font-family="'Georgia', serif" font-size="52" fill="#e8f5e8" font-weight="bold">US10Y 4.53%</text>
+  <text x="48" y="252" font-family="'Georgia', serif" font-size="32" fill="#7a9d6e">주식 반등, 채권은 고착</text>
+
+  <!-- Key insight box -->
+  <rect x="48" y="282" width="760" height="72" rx="6" fill="#0e1a10" stroke="#7a9d6e" stroke-width="1" opacity="0.7"/>
+  <text x="428" y="314" font-family="'Arial', sans-serif" font-size="16" fill="#9abf9a" text-anchor="middle">"연준이 올해 안에 금리 인하하기 어렵다"는</text>
+  <text x="428" y="342" font-family="'Arial', sans-serif" font-size="16" fill="#9abf9a" text-anchor="middle">채권 시장의 집단적 판단이 4.53%에 담겨 있다</text>
+
+  <!-- 3 data cards -->
+  <!-- US10Y -->
+  <rect x="48" y="380" width="220" height="90" rx="6" fill="#0e1a10" stroke="#7a9d6e" stroke-width="1" opacity="0.7"/>
+  <text x="158" y="410" font-family="'Arial', sans-serif" font-size="13" fill="#6a8a6a" text-anchor="middle" letter-spacing="1">US 10Y 국채</text>
+  <text x="158" y="448" font-family="'Georgia', serif" font-size="28" fill="#e8f5e8" text-anchor="middle" font-weight="bold">4.530%</text>
+  <text x="158" y="465" font-family="'Arial', sans-serif" font-size="13" fill="#6a8a6a" text-anchor="middle">FOMC 이후 고착</text>
+
+  <!-- WTI -->
+  <rect x="286" y="380" width="220" height="90" rx="6" fill="#0e1a10" stroke="#7a9d6e" stroke-width="1" opacity="0.6"/>
+  <text x="396" y="410" font-family="'Arial', sans-serif" font-size="13" fill="#6a8a6a" text-anchor="middle" letter-spacing="1">WTI 원유</text>
+  <text x="396" y="448" font-family="'Georgia', serif" font-size="28" fill="#e8f5e8" text-anchor="middle" font-weight="bold">$90.21</text>
+  <text x="396" y="465" font-family="'Arial', sans-serif" font-size="13" fill="#6a8a6a" text-anchor="middle">$91.85에서 소폭 하락</text>
+
+  <!-- USD/KRW -->
+  <rect x="524" y="380" width="220" height="90" rx="6" fill="#0e1a10" stroke="#7a9d6e" stroke-width="1" opacity="0.5"/>
+  <text x="634" y="410" font-family="'Arial', sans-serif" font-size="13" fill="#6a8a6a" text-anchor="middle" letter-spacing="1">USD/KRW</text>
+  <text x="634" y="448" font-family="'Georgia', serif" font-size="28" fill="#e8f5e8" text-anchor="middle" font-weight="bold">1,526.91</text>
+  <text x="634" y="465" font-family="'Arial', sans-serif" font-size="13" fill="#6a8a6a" text-anchor="middle">달러 소폭 강세</text>
+
+  <!-- Key condition -->
+  <text x="48" y="510" font-family="'Arial', sans-serif" font-size="13" fill="#6a8a6a" letter-spacing="2">4.53% 변화의 두 조건</text>
+  <line x1="48" y1="518" x2="760" y2="518" stroke="#7a9d6e" stroke-width="1" opacity="0.2"/>
+
+  <rect x="48" y="530" width="340" height="60" rx="4" fill="#7a9d6e" opacity="0.10"/>
+  <rect x="48" y="530" width="340" height="60" rx="4" fill="none" stroke="#7a9d6e" stroke-width="1" opacity="0.3"/>
+  <text x="218" y="557" font-family="'Arial', sans-serif" font-size="15" fill="#9abf9a" text-anchor="middle">WTI $88 이하 복귀</text>
+  <text x="218" y="580" font-family="'Arial', sans-serif" font-size="13" fill="#6a8a6a" text-anchor="middle">CPI 에너지 부담 완화 → 금리 하락 가능</text>
+
+  <rect x="408" y="530" width="340" height="60" rx="4" fill="#d96552" opacity="0.08"/>
+  <rect x="408" y="530" width="340" height="60" rx="4" fill="none" stroke="#d96552" stroke-width="1" opacity="0.3"/>
+  <text x="578" y="557" font-family="'Arial', sans-serif" font-size="15" fill="#d88a7a" text-anchor="middle">다음 CPI 하락 확인</text>
+  <text x="578" y="580" font-family="'Arial', sans-serif" font-size="13" fill="#8a6a66" text-anchor="middle">연준 비둘기 전환 신호 → 인하 경로 재개</text>
+
+  <!-- Bottom tagline -->
+  <text x="48" y="652" font-family="'Georgia', serif" font-size="17" fill="#7a9d6e" opacity="0.7" font-style="italic">채권과 주식의 괴리 — 이 두 시장 중 하나가 틀릴 것이다</text>
+
+  <!-- Diamond accent -->
+  <polygon points="1232,400 1242,410 1232,420 1222,410" fill="#7a9d6e" opacity="0.4"/>
+</svg>

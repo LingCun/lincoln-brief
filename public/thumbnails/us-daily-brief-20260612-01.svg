@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d0a06"/>
+      <stop offset="100%" style="stop-color:#1a140a"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#d8b878"/>
+      <stop offset="100%" style="stop-color:#f0d090"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Left gold accent bar -->
+  <rect x="0" y="0" width="6" height="720" fill="#d8b878"/>
+
+  <!-- Top label bar -->
+  <rect x="0" y="0" width="1280" height="3" fill="#d8b878" opacity="0.6"/>
+
+  <!-- LINCOLN BRIEF wordmark -->
+  <text x="48" y="56" font-family="'Georgia', serif" font-size="18" letter-spacing="6" fill="#d8b878" opacity="0.9">LINCOLN BRIEF</text>
+
+  <!-- Edition label top-right -->
+  <rect x="1060" y="28" width="180" height="36" rx="4" fill="#d8b878" opacity="0.15"/>
+  <rect x="1060" y="28" width="180" height="36" rx="4" fill="none" stroke="#d8b878" stroke-width="1" opacity="0.5"/>
+  <text x="1150" y="52" font-family="'Arial', sans-serif" font-size="13" letter-spacing="2" fill="#d8b878" text-anchor="middle">US DAILY BRIEF</text>
+
+  <!-- Date -->
+  <text x="48" y="92" font-family="'Arial', sans-serif" font-size="14" fill="#888" letter-spacing="1">2026.06.12  |  SLOT 01  |  KST 01:00</text>
+
+  <!-- Divider line -->
+  <line x1="48" y1="110" x2="640" y2="110" stroke="#d8b878" stroke-width="1" opacity="0.3"/>
+
+  <!-- Main headline -->
+  <text x="48" y="188" font-family="'Georgia', serif" font-size="50" fill="#f5f0e8" font-weight="bold">6/11 반등 확인</text>
+  <text x="48" y="248" font-family="'Georgia', serif" font-size="36" fill="#d8b878">DOW 50K 재탈환</text>
+
+  <!-- Key stats row -->
+  <!-- S&P 500 -->
+  <rect x="48" y="296" width="220" height="90" rx="6" fill="#1e180e" stroke="#d8b878" stroke-width="1" opacity="0.7"/>
+  <text x="158" y="326" font-family="'Arial', sans-serif" font-size="13" fill="#888" text-anchor="middle" letter-spacing="1">S&amp;P 500</text>
+  <text x="158" y="358" font-family="'Georgia', serif" font-size="26" fill="#f5f0e8" text-anchor="middle" font-weight="bold">7,349.99</text>
+  <polygon points="145,370 155,358 165,370" fill="#22c55e"/>
+  <text x="170" y="381" font-family="'Arial', sans-serif" font-size="16" fill="#22c55e">+1.14%</text>
+
+  <!-- NASDAQ -->
+  <rect x="286" y="296" width="220" height="90" rx="6" fill="#1e180e" stroke="#d8b878" stroke-width="1" opacity="0.7"/>
+  <text x="396" y="326" font-family="'Arial', sans-serif" font-size="13" fill="#888" text-anchor="middle" letter-spacing="1">NASDAQ</text>
+  <text x="396" y="358" font-family="'Georgia', serif" font-size="26" fill="#f5f0e8" text-anchor="middle" font-weight="bold">25,579</text>
+  <polygon points="383,370 393,358 403,370" fill="#22c55e"/>
+  <text x="408" y="381" font-family="'Arial', sans-serif" font-size="16" fill="#22c55e">+1.63%</text>
+
+  <!-- DOW -->
+  <rect x="524" y="296" width="220" height="90" rx="6" fill="#1e180e" stroke="#d8b878" stroke-width="1" opacity="0.7"/>
+  <text x="634" y="326" font-family="'Arial', sans-serif" font-size="13" fill="#888" text-anchor="middle" letter-spacing="1">DOW</text>
+  <text x="634" y="358" font-family="'Georgia', serif" font-size="26" fill="#f5f0e8" text-anchor="middle" font-weight="bold">50,593</text>
+  <polygon points="621,370 631,358 641,370" fill="#22c55e"/>
+  <text x="646" y="381" font-family="'Arial', sans-serif" font-size="16" fill="#22c55e">+1.35%</text>
+
+  <!-- Movers row -->
+  <text x="48" y="430" font-family="'Arial', sans-serif" font-size="13" fill="#888" letter-spacing="2">TOP MOVERS</text>
+  <line x1="48" y1="438" x2="760" y2="438" stroke="#d8b878" stroke-width="1" opacity="0.2"/>
+
+  <!-- AVGO -->
+  <rect x="48" y="450" width="200" height="70" rx="4" fill="#1e180e" stroke="#22c55e" stroke-width="1" opacity="0.7"/>
+  <text x="148" y="475" font-family="'Arial', sans-serif" font-size="13" fill="#888" text-anchor="middle">AVGO</text>
+  <text x="148" y="500" font-family="'Georgia', serif" font-size="22" fill="#f5f0e8" text-anchor="middle" font-weight="bold">$383.10</text>
+  <text x="148" y="518" font-family="'Arial', sans-serif" font-size="14" fill="#22c55e" text-anchor="middle">+2.96%</text>
+
+  <!-- TSLA -->
+  <rect x="262" y="450" width="200" height="70" rx="4" fill="#1e180e" stroke="#22c55e" stroke-width="1" opacity="0.7"/>
+  <text x="362" y="475" font-family="'Arial', sans-serif" font-size="13" fill="#888" text-anchor="middle">TSLA</text>
+  <text x="362" y="500" font-family="'Georgia', serif" font-size="22" fill="#f5f0e8" text-anchor="middle" font-weight="bold">$392.40</text>
+  <text x="362" y="518" font-family="'Arial', sans-serif" font-size="14" fill="#22c55e" text-anchor="middle">+2.83%</text>
+
+  <!-- MSFT (red - outlier) -->
+  <rect x="476" y="450" width="200" height="70" rx="4" fill="#1e180e" stroke="#ef4444" stroke-width="1" opacity="0.7"/>
+  <text x="576" y="475" font-family="'Arial', sans-serif" font-size="13" fill="#888" text-anchor="middle">MSFT</text>
+  <text x="576" y="500" font-family="'Georgia', serif" font-size="22" fill="#f5f0e8" text-anchor="middle" font-weight="bold">$388.84</text>
+  <text x="576" y="518" font-family="'Arial', sans-serif" font-size="14" fill="#ef4444" text-anchor="middle">−2.14%</text>
+
+  <!-- WTI / US10Y -->
+  <rect x="690" y="450" width="200" height="70" rx="4" fill="#1e180e" stroke="#d8b878" stroke-width="1" opacity="0.5"/>
+  <text x="790" y="475" font-family="'Arial', sans-serif" font-size="13" fill="#888" text-anchor="middle">WTI  |  US10Y</text>
+  <text x="790" y="500" font-family="'Georgia', serif" font-size="18" fill="#f5f0e8" text-anchor="middle" font-weight="bold">$90.21  |  4.53%</text>
+  <text x="790" y="518" font-family="'Arial', sans-serif" font-size="13" fill="#888" text-anchor="middle">유가 소폭 안정</text>
+
+  <!-- Bottom tagline -->
+  <text x="48" y="640" font-family="'Georgia', serif" font-size="18" fill="#d8b878" opacity="0.7" font-style="italic">S&amp;P 7,386 돌파 여부가 다음 체크포인트</text>
+
+  <!-- Diamond accent -->
+  <polygon points="1232,360 1242,370 1232,380 1222,370" fill="#d8b878" opacity="0.4"/>
+  <polygon points="1232,395 1240,403 1232,411 1224,403" fill="#d8b878" opacity="0.25"/>
+</svg>
