@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#060f0a"/>
+      <stop offset="100%" style="stop-color:#0a1810"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Left green accent bar -->
+  <rect x="0" y="0" width="6" height="720" fill="#10b981"/>
+
+  <!-- Top label bar -->
+  <rect x="0" y="0" width="1280" height="3" fill="#10b981" opacity="0.6"/>
+
+  <!-- LINCOLN BRIEF wordmark -->
+  <text x="48" y="56" font-family="'Georgia', serif" font-size="18" letter-spacing="6" fill="#34d399" opacity="0.9">LINCOLN BRIEF</text>
+
+  <!-- Edition label top-right -->
+  <rect x="1030" y="28" width="210" height="36" rx="4" fill="#10b981" opacity="0.15"/>
+  <rect x="1030" y="28" width="210" height="36" rx="4" fill="none" stroke="#10b981" stroke-width="1" opacity="0.5"/>
+  <text x="1135" y="52" font-family="'Arial', sans-serif" font-size="12" letter-spacing="2" fill="#34d399" text-anchor="middle">ECONOMY ISSUE</text>
+
+  <!-- Date -->
+  <text x="48" y="92" font-family="'Arial', sans-serif" font-size="14" fill="#666" letter-spacing="1">2026.06.13  |  SLOT 06  |  KST 06:00</text>
+
+  <!-- Divider line -->
+  <line x1="48" y1="110" x2="700" y2="110" stroke="#10b981" stroke-width="1" opacity="0.3"/>
+
+  <!-- Main headline -->
+  <text x="48" y="183" font-family="'Georgia', serif" font-size="46" fill="#f5f0e8" font-weight="bold">Gold vs WTI</text>
+  <text x="48" y="238" font-family="'Georgia', serif" font-size="26" fill="#34d399">역방향 동시 급등락 — 실질 금리 하락 베팅</text>
+
+  <!-- The two big numbers -->
+  <!-- Gold box -->
+  <rect x="48" y="272" width="380" height="140" rx="8" fill="#0a1f12" stroke="#10b981" stroke-width="2"/>
+  <text x="228" y="305" font-family="'Arial', sans-serif" font-size="14" fill="#34d399" text-anchor="middle" letter-spacing="3">GOLD</text>
+  <text x="228" y="370" font-family="'Georgia', serif" font-size="56" fill="#f5f0e8" text-anchor="middle" font-weight="bold">$4,240</text>
+  <polygon points="148,392 163,375 178,392" fill="#22c55e"/>
+  <text x="250" y="400" font-family="'Georgia', serif" font-size="26" fill="#22c55e" font-weight="bold">+3.66%</text>
+
+  <!-- VS label -->
+  <text x="468" y="355" font-family="'Georgia', serif" font-size="32" fill="#555" text-anchor="middle" font-weight="bold">vs</text>
+
+  <!-- WTI box -->
+  <rect x="548" y="272" width="380" height="140" rx="8" fill="#1a0808" stroke="#ef4444" stroke-width="2"/>
+  <text x="738" y="305" font-family="'Arial', sans-serif" font-size="14" fill="#f87171" text-anchor="middle" letter-spacing="3">WTI CRUDE</text>
+  <text x="738" y="370" font-family="'Georgia', serif" font-size="56" fill="#f5f0e8" text-anchor="middle" font-weight="bold">$84.29</text>
+  <polygon points="690,375 705,392 720,375" fill="#ef4444"/>
+  <text x="760" y="400" font-family="'Georgia', serif" font-size="26" fill="#ef4444" font-weight="bold">−3.90%</text>
+
+  <!-- Mechanism row -->
+  <text x="48" y="456" font-family="'Arial', sans-serif" font-size="13" fill="#888" letter-spacing="2">메커니즘</text>
+  <line x1="48" y1="464" x2="900" y2="464" stroke="#10b981" stroke-width="1" opacity="0.2"/>
+
+  <!-- Step boxes -->
+  <rect x="48" y="476" width="155" height="56" rx="4" fill="#0a1208" stroke="#10b981" stroke-width="1"/>
+  <text x="126" y="499" font-family="'Arial', sans-serif" font-size="11" fill="#34d399" text-anchor="middle">WTI 하락</text>
+  <text x="126" y="522" font-family="'Arial', sans-serif" font-size="10" fill="#666" text-anchor="middle">에너지 비용↓</text>
+
+  <text x="218" y="510" font-family="'Arial', sans-serif" font-size="18" fill="#555" text-anchor="middle">→</text>
+
+  <rect x="240" y="476" width="155" height="56" rx="4" fill="#0a1208" stroke="#10b981" stroke-width="1"/>
+  <text x="318" y="499" font-family="'Arial', sans-serif" font-size="11" fill="#34d399" text-anchor="middle">CPI 개선 기대</text>
+  <text x="318" y="522" font-family="'Arial', sans-serif" font-size="10" fill="#666" text-anchor="middle">인플레이션↓</text>
+
+  <text x="410" y="510" font-family="'Arial', sans-serif" font-size="18" fill="#555" text-anchor="middle">→</text>
+
+  <rect x="432" y="476" width="155" height="56" rx="4" fill="#0a1208" stroke="#10b981" stroke-width="1"/>
+  <text x="510" y="499" font-family="'Arial', sans-serif" font-size="11" fill="#34d399" text-anchor="middle">연준 인하 기대</text>
+  <text x="510" y="522" font-family="'Arial', sans-serif" font-size="10" fill="#666" text-anchor="middle">달러 약세 기대</text>
+
+  <text x="602" y="510" font-family="'Arial', sans-serif" font-size="18" fill="#555" text-anchor="middle">→</text>
+
+  <rect x="624" y="476" width="155" height="56" rx="4" fill="#0a1208" stroke="#10b981" stroke-width="1"/>
+  <text x="702" y="499" font-family="'Arial', sans-serif" font-size="11" fill="#34d399" text-anchor="middle">실질 금리↓</text>
+  <text x="702" y="522" font-family="'Arial', sans-serif" font-size="10" fill="#666" text-anchor="middle">Gold 수혜</text>
+
+  <text x="794" y="510" font-family="'Arial', sans-serif" font-size="18" fill="#22c55e" text-anchor="middle">→</text>
+
+  <rect x="816" y="476" width="155" height="56" rx="4" fill="#0d2010" stroke="#22c55e" stroke-width="1.5"/>
+  <text x="894" y="499" font-family="'Arial', sans-serif" font-size="11" fill="#22c55e" text-anchor="middle" font-weight="bold">Gold +3.66%</text>
+  <text x="894" y="522" font-family="'Arial', sans-serif" font-size="10" fill="#666" text-anchor="middle">선행 반영</text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="630" width="1280" height="90" fill="#060f0a" opacity="0.9"/>
+  <line x1="0" y1="630" x2="1280" y2="630" stroke="#10b981" stroke-width="1" opacity="0.3"/>
+  <text x="48" y="668" font-family="'Arial', sans-serif" font-size="16" fill="#34d399">US10Y 4.487% 아직 유보 — 채권이 동조하는 날이 확정 시점</text>
+  <text x="48" y="702" font-family="'Arial', sans-serif" font-size="14" fill="#555">다음 CPI가 Gold 시장의 베팅을 검증한다</text>
+  <text x="1232" y="702" font-family="'Arial', sans-serif" font-size="12" fill="#444" text-anchor="end">lincoln-brief.vercel.app</text>
+</svg>
