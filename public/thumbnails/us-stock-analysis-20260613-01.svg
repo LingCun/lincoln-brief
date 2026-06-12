@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#060c14"/>
+      <stop offset="100%" style="stop-color:#0e1a2a"/>
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#5677b0"/>
+      <stop offset="100%" style="stop-color:#7090cc"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Left blue accent bar -->
+  <rect x="0" y="0" width="6" height="720" fill="#5677b0"/>
+
+  <!-- Top label bar -->
+  <rect x="0" y="0" width="1280" height="3" fill="#5677b0" opacity="0.6"/>
+
+  <!-- LINCOLN BRIEF wordmark -->
+  <text x="48" y="56" font-family="'Georgia', serif" font-size="18" letter-spacing="6" fill="#5677b0" opacity="0.9">LINCOLN BRIEF</text>
+
+  <!-- Edition label top-right -->
+  <rect x="1030" y="28" width="210" height="36" rx="4" fill="#5677b0" opacity="0.15"/>
+  <rect x="1030" y="28" width="210" height="36" rx="4" fill="none" stroke="#5677b0" stroke-width="1" opacity="0.5"/>
+  <text x="1135" y="52" font-family="'Arial', sans-serif" font-size="13" letter-spacing="2" fill="#5677b0" text-anchor="middle">US STOCK ANALYSIS</text>
+
+  <!-- Date -->
+  <text x="48" y="92" font-family="'Arial', sans-serif" font-size="14" fill="#888" letter-spacing="1">2026.06.13  |  SLOT 01  |  KST 01:00</text>
+
+  <!-- Divider -->
+  <line x1="48" y1="110" x2="700" y2="110" stroke="#5677b0" stroke-width="1" opacity="0.3"/>
+
+  <!-- Ticker badge -->
+  <rect x="48" y="132" width="120" height="38" rx="4" fill="#5677b0" opacity="0.25"/>
+  <text x="108" y="157" font-family="'Arial', sans-serif" font-size="18" fill="#7090cc" text-anchor="middle" font-weight="bold">JPM</text>
+
+  <!-- Main headline -->
+  <text x="48" y="218" font-family="'Georgia', serif" font-size="48" fill="#f5f0e8" font-weight="bold">$319.315</text>
+  <polygon points="350,195 368,173 386,195" fill="#22c55e"/>
+  <text x="395" y="218" font-family="'Georgia', serif" font-size="40" fill="#22c55e" font-weight="bold">+1.86%</text>
+
+  <!-- Sub headline -->
+  <text x="48" y="262" font-family="'Arial', sans-serif" font-size="22" fill="#5677b0">30일 신고가 · 금융 섹터 리드</text>
+
+  <!-- Stats table -->
+  <line x1="48" y1="288" x2="730" y2="288" stroke="#5677b0" stroke-width="1" opacity="0.3"/>
+
+  <!-- 전일 대비 -->
+  <rect x="48" y="304" width="200" height="80" rx="6" fill="#0e1a2a" stroke="#5677b0" stroke-width="1" opacity="0.6"/>
+  <text x="148" y="330" font-family="'Arial', sans-serif" font-size="12" fill="#666" text-anchor="middle" letter-spacing="1">전일 종가</text>
+  <text x="148" y="360" font-family="'Georgia', serif" font-size="22" fill="#f5f0e8" text-anchor="middle">$313.49</text>
+  <text x="148" y="378" font-family="'Arial', sans-serif" font-size="12" fill="#888" text-anchor="middle">6/11 마감</text>
+
+  <!-- 30일 저점 -->
+  <rect x="264" y="304" width="200" height="80" rx="6" fill="#0e1a2a" stroke="#5677b0" stroke-width="1" opacity="0.6"/>
+  <text x="364" y="330" font-family="'Arial', sans-serif" font-size="12" fill="#666" text-anchor="middle" letter-spacing="1">30일 저점</text>
+  <text x="364" y="360" font-family="'Georgia', serif" font-size="22" fill="#f5f0e8" text-anchor="middle">~$295.70</text>
+  <text x="364" y="378" font-family="'Arial', sans-serif" font-size="12" fill="#22c55e" text-anchor="middle">저점 대비 +8.0%</text>
+
+  <!-- 30일 고점 -->
+  <rect x="480" y="304" width="200" height="80" rx="6" fill="#0e1a2a" stroke="#22c55e" stroke-width="1.5" opacity="0.8"/>
+  <text x="580" y="330" font-family="'Arial', sans-serif" font-size="12" fill="#666" text-anchor="middle" letter-spacing="1">30일 고점 (신고가)</text>
+  <text x="580" y="360" font-family="'Georgia', serif" font-size="22" fill="#22c55e" text-anchor="middle">$319.315</text>
+  <text x="580" y="378" font-family="'Arial', sans-serif" font-size="12" fill="#22c55e" text-anchor="middle">오늘 경신</text>
+
+  <!-- Analysis section -->
+  <line x1="48" y1="406" x2="730" y2="406" stroke="#5677b0" stroke-width="1" opacity="0.2"/>
+  <text x="48" y="432" font-family="'Arial', sans-serif" font-size="13" fill="#888" letter-spacing="2">소프트 랜딩 기대 반영</text>
+
+  <text x="48" y="468" font-family="'Arial', sans-serif" font-size="17" fill="#aaa">WTI $84.68(−3.45%) 이틀 연속 급락</text>
+  <text x="48" y="500" font-family="'Arial', sans-serif" font-size="17" fill="#aaa">S&amp;P 7,430 · 7,400 저항선 돌파 환경</text>
+  <text x="48" y="532" font-family="'Arial', sans-serif" font-size="17" fill="#5677b0">인플레이션 완화 → 금융 섹터 수혜</text>
+
+  <!-- Scenario summary -->
+  <rect x="48" y="556" width="682" height="60" rx="6" fill="#0e1a2a" stroke="#5677b0" stroke-width="1" opacity="0.5"/>
+  <text x="389" y="582" font-family="'Arial', sans-serif" font-size="14" fill="#888" text-anchor="middle">베이스 시나리오 (45%)</text>
+  <text x="389" y="604" font-family="'Arial', sans-serif" font-size="15" fill="#5677b0" text-anchor="middle">$310~$325 박스 · US10Y 4.3% 하락 시 $330+ 목표</text>
+
+  <!-- Right side panel -->
+  <rect x="820" y="100" width="420" height="560" rx="8" fill="#080f18" stroke="#5677b0" stroke-width="1" opacity="0.3"/>
+  <text x="1030" y="155" font-family="'Georgia', serif" font-size="20" fill="#5677b0" text-anchor="middle" opacity="0.9">JPMorgan Chase</text>
+  <line x1="860" y1="172" x2="1200" y2="172" stroke="#5677b0" stroke-width="1" opacity="0.3"/>
+
+  <text x="1030" y="230" font-family="'Georgia', serif" font-size="48" fill="#f5f0e8" text-anchor="middle" font-weight="bold">+1.86%</text>
+  <text x="1030" y="268" font-family="'Arial', sans-serif" font-size="18" fill="#22c55e" text-anchor="middle">12종목 최대 상승</text>
+
+  <line x1="860" y1="292" x2="1200" y2="292" stroke="#5677b0" stroke-width="1" opacity="0.2"/>
+
+  <text x="860" y="332" font-family="'Arial', sans-serif" font-size="14" fill="#aaa">당일 상승폭</text>
+  <text x="1195" y="332" font-family="'Arial', sans-serif" font-size="14" fill="#22c55e" text-anchor="end">+$5.83</text>
+
+  <text x="860" y="372" font-family="'Arial', sans-serif" font-size="14" fill="#aaa">30일 저점 대비</text>
+  <text x="1195" y="372" font-family="'Arial', sans-serif" font-size="14" fill="#22c55e" text-anchor="end">+8.0%</text>
+
+  <text x="860" y="412" font-family="'Arial', sans-serif" font-size="14" fill="#aaa">30일 시작가 대비</text>
+  <text x="1195" y="412" font-family="'Arial', sans-serif" font-size="14" fill="#22c55e" text-anchor="end">+2.2%</text>
+
+  <line x1="860" y1="432" x2="1200" y2="432" stroke="#5677b0" stroke-width="1" opacity="0.2"/>
+
+  <text x="1030" y="490" font-family="'Arial', sans-serif" font-size="15" fill="#aaa" text-anchor="middle">US10Y 4.481%</text>
+  <text x="1030" y="524" font-family="'Arial', sans-serif" font-size="15" fill="#aaa" text-anchor="middle">금리 소폭 상승에도 금융주 강세</text>
+
+  <line x1="860" y1="548" x2="1200" y2="548" stroke="#5677b0" stroke-width="1" opacity="0.2"/>
+  <text x="1030" y="592" font-family="'Georgia', serif" font-size="16" fill="#5677b0" text-anchor="middle" opacity="0.8">Lincoln Brief — 01:00 KST</text>
+</svg>
