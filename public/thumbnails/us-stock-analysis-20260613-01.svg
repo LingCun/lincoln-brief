@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#060a10"/>
+      <stop offset="100%" style="stop-color:#0d1520"/>
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#5677b0"/>
+      <stop offset="100%" style="stop-color:#7099d8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Left blue accent bar -->
+  <rect x="0" y="0" width="6" height="720" fill="#5677b0"/>
+
+  <!-- Top label bar -->
+  <rect x="0" y="0" width="1280" height="3" fill="#5677b0" opacity="0.6"/>
+
+  <!-- LINCOLN BRIEF wordmark -->
+  <text x="48" y="56" font-family="'Georgia', serif" font-size="18" letter-spacing="6" fill="#5677b0" opacity="0.9">LINCOLN BRIEF</text>
+
+  <!-- Edition label top-right -->
+  <rect x="1040" y="28" width="210" height="36" rx="4" fill="#5677b0" opacity="0.15"/>
+  <rect x="1040" y="28" width="210" height="36" rx="4" fill="none" stroke="#5677b0" stroke-width="1" opacity="0.5"/>
+  <text x="1145" y="52" font-family="'Arial', sans-serif" font-size="13" letter-spacing="2" fill="#5677b0" text-anchor="middle">US STOCK ANALYSIS</text>
+
+  <!-- Date -->
+  <text x="48" y="92" font-family="'Arial', sans-serif" font-size="14" fill="#888" letter-spacing="1">2026.06.13  |  SLOT 01  |  KST 01:00</text>
+
+  <!-- Divider line -->
+  <line x1="48" y1="110" x2="640" y2="110" stroke="#5677b0" stroke-width="1" opacity="0.3"/>
+
+  <!-- Main headline -->
+  <text x="48" y="196" font-family="'Georgia', serif" font-size="72" fill="#f5f0e8" font-weight="bold">JPM</text>
+  <text x="240" y="196" font-family="'Georgia', serif" font-size="52" fill="#22c55e" font-weight="bold">+1.86%</text>
+
+  <!-- Price -->
+  <text x="48" y="258" font-family="'Georgia', serif" font-size="36" fill="#5677b0">$319.315 — 30일 고점 경신</text>
+
+  <!-- Key metrics box -->
+  <rect x="48" y="300" width="560" height="130" rx="8" fill="#0d1824" stroke="#5677b0" stroke-width="1" opacity="0.8"/>
+
+  <!-- Inside metrics -->
+  <text x="80" y="334" font-family="'Arial', sans-serif" font-size="13" fill="#888" letter-spacing="1">6/12 종가</text>
+  <text x="80" y="360" font-family="'Georgia', serif" font-size="28" fill="#f5f0e8" font-weight="bold">$319.315</text>
+  <text x="80" y="385" font-family="'Arial', sans-serif" font-size="14" fill="#22c55e">+$5.83 (+1.86%)</text>
+  <text x="80" y="412" font-family="'Arial', sans-serif" font-size="13" fill="#888">전일: ~$313.49</text>
+
+  <line x1="340" y1="316" x2="340" y2="416" stroke="#5677b0" stroke-width="1" opacity="0.3"/>
+
+  <text x="370" y="334" font-family="'Arial', sans-serif" font-size="13" fill="#888" letter-spacing="1">30일 저점 대비</text>
+  <text x="370" y="360" font-family="'Georgia', serif" font-size="28" fill="#f5f0e8" font-weight="bold">+8.0%</text>
+  <text x="370" y="385" font-family="'Arial', sans-serif" font-size="14" fill="#888">저점 $295.70 →</text>
+  <text x="370" y="412" font-family="'Arial', sans-serif" font-size="14" fill="#22c55e">$319.315 회복</text>
+
+  <!-- Context section -->
+  <text x="48" y="468" font-family="'Arial', sans-serif" font-size="13" fill="#888" letter-spacing="2">매크로 배경</text>
+  <line x1="48" y1="476" x2="760" y2="476" stroke="#5677b0" stroke-width="1" opacity="0.2"/>
+
+  <!-- WTI context -->
+  <rect x="48" y="488" width="220" height="70" rx="4" fill="#0d1824" stroke="#ef4444" stroke-width="1" opacity="0.7"/>
+  <text x="158" y="513" font-family="'Arial', sans-serif" font-size="13" fill="#888" text-anchor="middle">WTI 급락</text>
+  <text x="158" y="537" font-family="'Georgia', serif" font-size="20" fill="#f5f0e8" text-anchor="middle" font-weight="bold">$84.68</text>
+  <text x="158" y="555" font-family="'Arial', sans-serif" font-size="13" fill="#ef4444" text-anchor="middle">−3.45%  |  $85 이하</text>
+
+  <!-- US10Y context -->
+  <rect x="282" y="488" width="220" height="70" rx="4" fill="#0d1824" stroke="#5677b0" stroke-width="1" opacity="0.7"/>
+  <text x="392" y="513" font-family="'Arial', sans-serif" font-size="13" fill="#888" text-anchor="middle">US10Y</text>
+  <text x="392" y="537" font-family="'Georgia', serif" font-size="20" fill="#f5f0e8" text-anchor="middle" font-weight="bold">4.481%</text>
+  <text x="392" y="555" font-family="'Arial', sans-serif" font-size="13" fill="#22c55e" text-anchor="middle">NIM 우호적</text>
+
+  <!-- Bottom tagline -->
+  <text x="48" y="624" font-family="'Georgia', serif" font-size="18" fill="#5677b0" opacity="0.9" font-style="italic">WTI 급락 → FOMC 인하 기대 → 금융주 선도</text>
+
+  <!-- Q2 note -->
+  <text x="48" y="658" font-family="'Arial', sans-serif" font-size="14" fill="#888">다음 이벤트: Q2 어닝 시즌 (7월 중순)</text>
+
+  <!-- Diamond accents -->
+  <polygon points="1232,360 1242,370 1232,380 1222,370" fill="#5677b0" opacity="0.4"/>
+  <polygon points="1232,395 1240,403 1232,411 1224,403" fill="#5677b0" opacity="0.25"/>
+</svg>

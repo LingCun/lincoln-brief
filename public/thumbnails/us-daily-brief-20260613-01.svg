@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d0a06"/>
+      <stop offset="100%" style="stop-color:#1a140a"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#d8b878"/>
+      <stop offset="100%" style="stop-color:#f0d090"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Left gold accent bar -->
+  <rect x="0" y="0" width="6" height="720" fill="#d8b878"/>
+
+  <!-- Top label bar -->
+  <rect x="0" y="0" width="1280" height="3" fill="#d8b878" opacity="0.6"/>
+
+  <!-- LINCOLN BRIEF wordmark -->
+  <text x="48" y="56" font-family="'Georgia', serif" font-size="18" letter-spacing="6" fill="#d8b878" opacity="0.9">LINCOLN BRIEF</text>
+
+  <!-- Edition label top-right -->
+  <rect x="1060" y="28" width="180" height="36" rx="4" fill="#d8b878" opacity="0.15"/>
+  <rect x="1060" y="28" width="180" height="36" rx="4" fill="none" stroke="#d8b878" stroke-width="1" opacity="0.5"/>
+  <text x="1150" y="52" font-family="'Arial', sans-serif" font-size="13" letter-spacing="2" fill="#d8b878" text-anchor="middle">US DAILY BRIEF</text>
+
+  <!-- Date -->
+  <text x="48" y="92" font-family="'Arial', sans-serif" font-size="14" fill="#888" letter-spacing="1">2026.06.13  |  SLOT 01  |  KST 01:00</text>
+
+  <!-- Divider line -->
+  <line x1="48" y1="110" x2="640" y2="110" stroke="#d8b878" stroke-width="1" opacity="0.3"/>
+
+  <!-- Main headline -->
+  <text x="48" y="188" font-family="'Georgia', serif" font-size="48" fill="#f5f0e8" font-weight="bold">6/12 마감 신고점</text>
+  <text x="48" y="248" font-family="'Georgia', serif" font-size="34" fill="#d8b878">S&amp;P 7,430 · WTI $84.68 급락</text>
+
+  <!-- Key stats row -->
+  <!-- S&P 500 -->
+  <rect x="48" y="290" width="220" height="90" rx="6" fill="#1e180e" stroke="#d8b878" stroke-width="1" opacity="0.7"/>
+  <text x="158" y="320" font-family="'Arial', sans-serif" font-size="13" fill="#888" text-anchor="middle" letter-spacing="1">S&amp;P 500</text>
+  <text x="158" y="352" font-family="'Georgia', serif" font-size="26" fill="#f5f0e8" text-anchor="middle" font-weight="bold">7,430.58</text>
+  <polygon points="145,364 155,352 165,364" fill="#22c55e"/>
+  <text x="170" y="375" font-family="'Arial', sans-serif" font-size="16" fill="#22c55e">+0.49%</text>
+
+  <!-- NASDAQ -->
+  <rect x="286" y="290" width="220" height="90" rx="6" fill="#1e180e" stroke="#d8b878" stroke-width="1" opacity="0.7"/>
+  <text x="396" y="320" font-family="'Arial', sans-serif" font-size="13" fill="#888" text-anchor="middle" letter-spacing="1">NASDAQ</text>
+  <text x="396" y="352" font-family="'Georgia', serif" font-size="26" fill="#f5f0e8" text-anchor="middle" font-weight="bold">25,908</text>
+  <polygon points="383,364 393,352 403,364" fill="#22c55e"/>
+  <text x="408" y="375" font-family="'Arial', sans-serif" font-size="16" fill="#22c55e">+0.38%</text>
+
+  <!-- DOW -->
+  <rect x="524" y="290" width="220" height="90" rx="6" fill="#1e180e" stroke="#d8b878" stroke-width="1" opacity="0.7"/>
+  <text x="634" y="320" font-family="'Arial', sans-serif" font-size="13" fill="#888" text-anchor="middle" letter-spacing="1">DOW</text>
+  <text x="634" y="352" font-family="'Georgia', serif" font-size="26" fill="#f5f0e8" text-anchor="middle" font-weight="bold">51,221</text>
+  <polygon points="621,364 631,352 641,364" fill="#22c55e"/>
+  <text x="646" y="375" font-family="'Arial', sans-serif" font-size="16" fill="#22c55e">+0.73%</text>
+
+  <!-- Macro row label -->
+  <text x="48" y="424" font-family="'Arial', sans-serif" font-size="13" fill="#888" letter-spacing="2">MACRO</text>
+  <line x1="48" y1="432" x2="900" y2="432" stroke="#d8b878" stroke-width="1" opacity="0.2"/>
+
+  <!-- WTI (red — falling) -->
+  <rect x="48" y="444" width="200" height="70" rx="4" fill="#1e180e" stroke="#ef4444" stroke-width="1" opacity="0.8"/>
+  <text x="148" y="469" font-family="'Arial', sans-serif" font-size="13" fill="#888" text-anchor="middle">WTI</text>
+  <text x="148" y="494" font-family="'Georgia', serif" font-size="24" fill="#f5f0e8" text-anchor="middle" font-weight="bold">$84.68</text>
+  <polygon points="138,508 148,520 158,508" fill="#ef4444"/>
+  <text x="168" y="518" font-family="'Arial', sans-serif" font-size="14" fill="#ef4444">−3.45%</text>
+
+  <!-- Gold (green — rising) -->
+  <rect x="262" y="444" width="200" height="70" rx="4" fill="#1e180e" stroke="#22c55e" stroke-width="1" opacity="0.8"/>
+  <text x="362" y="469" font-family="'Arial', sans-serif" font-size="13" fill="#888" text-anchor="middle">GOLD</text>
+  <text x="362" y="494" font-family="'Georgia', serif" font-size="24" fill="#f5f0e8" text-anchor="middle" font-weight="bold">$4,242</text>
+  <polygon points="352,482 362,470 372,482" fill="#22c55e"/>
+  <text x="372" y="518" font-family="'Arial', sans-serif" font-size="14" fill="#22c55e">+3.71%</text>
+
+  <!-- JPM -->
+  <rect x="476" y="444" width="200" height="70" rx="4" fill="#1e180e" stroke="#22c55e" stroke-width="1" opacity="0.7"/>
+  <text x="576" y="469" font-family="'Arial', sans-serif" font-size="13" fill="#888" text-anchor="middle">JPM</text>
+  <text x="576" y="494" font-family="'Georgia', serif" font-size="24" fill="#f5f0e8" text-anchor="middle" font-weight="bold">$319.31</text>
+  <polygon points="563,482 573,470 583,482" fill="#22c55e"/>
+  <text x="590" y="518" font-family="'Arial', sans-serif" font-size="14" fill="#22c55e">+1.86%</text>
+
+  <!-- US10Y -->
+  <rect x="690" y="444" width="200" height="70" rx="4" fill="#1e180e" stroke="#d8b878" stroke-width="1" opacity="0.5"/>
+  <text x="790" y="469" font-family="'Arial', sans-serif" font-size="13" fill="#888" text-anchor="middle">US10Y</text>
+  <text x="790" y="494" font-family="'Georgia', serif" font-size="24" fill="#f5f0e8" text-anchor="middle" font-weight="bold">4.481%</text>
+  <polygon points="780,508 790,520 800,508" fill="#22c55e" opacity="0.7"/>
+  <text x="808" y="518" font-family="'Arial', sans-serif" font-size="13" fill="#888">완화 중</text>
+
+  <!-- Bottom tagline -->
+  <text x="48" y="598" font-family="'Georgia', serif" font-size="20" fill="#d8b878" opacity="0.9" font-style="italic">6/9 전고점 7,386 완전 돌파 — WTI $85 이하 첫 진입</text>
+
+  <!-- USD/KRW note -->
+  <text x="48" y="630" font-family="'Arial', sans-serif" font-size="14" fill="#888">USD/KRW 1,516.88  (−0.54%)  |  BTC $63,778  (+0.34%)</text>
+
+  <!-- Diamond accents -->
+  <polygon points="1232,360 1242,370 1232,380 1222,370" fill="#d8b878" opacity="0.4"/>
+  <polygon points="1232,395 1240,403 1232,411 1224,403" fill="#d8b878" opacity="0.25"/>
+  <polygon points="1232,420 1238,426 1232,432 1226,426" fill="#d8b878" opacity="0.15"/>
+</svg>

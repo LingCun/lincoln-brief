@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#100606"/>
+      <stop offset="100%" style="stop-color:#1e0e0c"/>
+    </linearGradient>
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#d96552"/>
+      <stop offset="100%" style="stop-color:#f08070"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Left red accent bar -->
+  <rect x="0" y="0" width="6" height="720" fill="#d96552"/>
+
+  <!-- Top label bar -->
+  <rect x="0" y="0" width="1280" height="3" fill="#d96552" opacity="0.6"/>
+
+  <!-- LINCOLN BRIEF wordmark -->
+  <text x="48" y="56" font-family="'Georgia', serif" font-size="18" letter-spacing="6" fill="#d96552" opacity="0.9">LINCOLN BRIEF</text>
+
+  <!-- Edition label top-right -->
+  <rect x="1040" y="28" width="210" height="36" rx="4" fill="#d96552" opacity="0.15"/>
+  <rect x="1040" y="28" width="210" height="36" rx="4" fill="none" stroke="#d96552" stroke-width="1" opacity="0.5"/>
+  <text x="1145" y="52" font-family="'Arial', sans-serif" font-size="13" letter-spacing="2" fill="#d96552" text-anchor="middle">US MARKET FORECAST</text>
+
+  <!-- Date -->
+  <text x="48" y="92" font-family="'Arial', sans-serif" font-size="14" fill="#888" letter-spacing="1">2026.06.13  |  SLOT 01  |  KST 01:00</text>
+
+  <!-- Divider line -->
+  <line x1="48" y1="110" x2="640" y2="110" stroke="#d96552" stroke-width="1" opacity="0.3"/>
+
+  <!-- Main headline -->
+  <text x="48" y="188" font-family="'Georgia', serif" font-size="48" fill="#f5f0e8" font-weight="bold">S&amp;P 7,430</text>
+  <text x="48" y="248" font-family="'Georgia', serif" font-size="32" fill="#d96552">7,386 저항선 돌파 — 시나리오 재보정</text>
+
+  <!-- Scenario table -->
+  <!-- Header -->
+  <rect x="48" y="278" width="840" height="36" rx="4" fill="#d96552" opacity="0.2"/>
+  <text x="100" y="302" font-family="'Arial', sans-serif" font-size="13" fill="#d96552" letter-spacing="1">시나리오</text>
+  <text x="380" y="302" font-family="'Arial', sans-serif" font-size="13" fill="#d96552" letter-spacing="1">S&amp;P 경로</text>
+  <text x="620" y="302" font-family="'Arial', sans-serif" font-size="13" fill="#d96552" letter-spacing="1">확률</text>
+  <text x="720" y="302" font-family="'Arial', sans-serif" font-size="13" fill="#d96552" letter-spacing="1">변화</text>
+
+  <!-- Dove row (highlight) -->
+  <rect x="48" y="318" width="840" height="46" rx="2" fill="#22c55e" opacity="0.08"/>
+  <rect x="48" y="318" width="4" height="46" fill="#22c55e"/>
+  <text x="70" y="346" font-family="'Arial', sans-serif" font-size="14" fill="#22c55e" font-weight="bold">비둘기 반전</text>
+  <text x="380" y="346" font-family="'Arial', sans-serif" font-size="13" fill="#f5f0e8">7,500~7,700 도전</text>
+  <text x="620" y="346" font-family="'Georgia', serif" font-size="18" fill="#22c55e" font-weight="bold">35%</text>
+  <text x="720" y="346" font-family="'Arial', sans-serif" font-size="13" fill="#22c55e">↑10%p</text>
+
+  <!-- Neutral row -->
+  <rect x="48" y="368" width="840" height="44" rx="2" fill="#1e1208" opacity="0.5"/>
+  <rect x="48" y="368" width="4" height="44" fill="#d8b878" opacity="0.6"/>
+  <text x="70" y="396" font-family="'Arial', sans-serif" font-size="14" fill="#d8b878">중립 회복</text>
+  <text x="380" y="396" font-family="'Arial', sans-serif" font-size="13" fill="#f5f0e8">7,400~7,550 박스권</text>
+  <text x="620" y="396" font-family="'Georgia', serif" font-size="18" fill="#d8b878" font-weight="bold">40%</text>
+  <text x="720" y="396" font-family="'Arial', sans-serif" font-size="13" fill="#888">유지</text>
+
+  <!-- Hawkish row -->
+  <rect x="48" y="416" width="840" height="44" rx="2" fill="#1e1208" opacity="0.5"/>
+  <rect x="48" y="416" width="4" height="44" fill="#ef4444" opacity="0.6"/>
+  <text x="70" y="444" font-family="'Arial', sans-serif" font-size="14" fill="#ef4444">매파 재압박</text>
+  <text x="380" y="444" font-family="'Arial', sans-serif" font-size="13" fill="#f5f0e8">7,100~7,200 재하락</text>
+  <text x="620" y="444" font-family="'Georgia', serif" font-size="18" fill="#ef4444" font-weight="bold">20%</text>
+  <text x="720" y="444" font-family="'Arial', sans-serif" font-size="13" fill="#ef4444">↓5%p</text>
+
+  <!-- Black swan row -->
+  <rect x="48" y="464" width="840" height="44" rx="2" fill="#1e1208" opacity="0.5"/>
+  <rect x="48" y="464" width="4" height="44" fill="#666" opacity="0.6"/>
+  <text x="70" y="492" font-family="'Arial', sans-serif" font-size="14" fill="#888">블랙스완</text>
+  <text x="380" y="492" font-family="'Arial', sans-serif" font-size="13" fill="#888">6,800 이하</text>
+  <text x="620" y="492" font-family="'Georgia', serif" font-size="18" fill="#888" font-weight="bold">5%</text>
+  <text x="720" y="492" font-family="'Arial', sans-serif" font-size="13" fill="#888">↓5%p</text>
+
+  <!-- Key levels -->
+  <text x="48" y="544" font-family="'Arial', sans-serif" font-size="13" fill="#888" letter-spacing="2">핵심 수준</text>
+  <line x1="48" y1="552" x2="760" y2="552" stroke="#d96552" stroke-width="1" opacity="0.2"/>
+
+  <text x="48" y="574" font-family="'Arial', sans-serif" font-size="14" fill="#d96552">▲ 7,500</text>
+  <text x="140" y="574" font-family="'Arial', sans-serif" font-size="13" fill="#888">다음 심리적 저항</text>
+  <text x="350" y="574" font-family="'Arial', sans-serif" font-size="14" fill="#22c55e">● 7,430</text>
+  <text x="430" y="574" font-family="'Arial', sans-serif" font-size="13" fill="#888">현재</text>
+  <text x="520" y="574" font-family="'Arial', sans-serif" font-size="14" fill="#d8b878">▽ 7,386</text>
+  <text x="610" y="574" font-family="'Arial', sans-serif" font-size="13" fill="#888">전고점→지지선 전환</text>
+
+  <!-- Bottom tagline -->
+  <text x="48" y="634" font-family="'Georgia', serif" font-size="17" fill="#d96552" opacity="0.9" font-style="italic">WTI $84.68 · US10Y 4.481% — 비둘기 경로 조건 충족 중</text>
+
+  <!-- Diamond accents -->
+  <polygon points="1232,360 1242,370 1232,380 1222,370" fill="#d96552" opacity="0.4"/>
+  <polygon points="1232,395 1240,403 1232,411 1224,403" fill="#d96552" opacity="0.25"/>
+</svg>

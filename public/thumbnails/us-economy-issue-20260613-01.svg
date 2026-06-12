@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#060d06"/>
+      <stop offset="100%" style="stop-color:#0c180c"/>
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7a9d6e"/>
+      <stop offset="100%" style="stop-color:#9dc088"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Left green accent bar -->
+  <rect x="0" y="0" width="6" height="720" fill="#7a9d6e"/>
+
+  <!-- Top label bar -->
+  <rect x="0" y="0" width="1280" height="3" fill="#7a9d6e" opacity="0.6"/>
+
+  <!-- LINCOLN BRIEF wordmark -->
+  <text x="48" y="56" font-family="'Georgia', serif" font-size="18" letter-spacing="6" fill="#7a9d6e" opacity="0.9">LINCOLN BRIEF</text>
+
+  <!-- Edition label top-right -->
+  <rect x="1040" y="28" width="210" height="36" rx="4" fill="#7a9d6e" opacity="0.15"/>
+  <rect x="1040" y="28" width="210" height="36" rx="4" fill="none" stroke="#7a9d6e" stroke-width="1" opacity="0.5"/>
+  <text x="1145" y="52" font-family="'Arial', sans-serif" font-size="13" letter-spacing="2" fill="#7a9d6e" text-anchor="middle">US ECONOMY ISSUE</text>
+
+  <!-- Date -->
+  <text x="48" y="92" font-family="'Arial', sans-serif" font-size="14" fill="#888" letter-spacing="1">2026.06.13  |  SLOT 01  |  KST 01:00</text>
+
+  <!-- Divider line -->
+  <line x1="48" y1="110" x2="640" y2="110" stroke="#7a9d6e" stroke-width="1" opacity="0.3"/>
+
+  <!-- Main headline -->
+  <text x="48" y="188" font-family="'Georgia', serif" font-size="42" fill="#f5f0e8" font-weight="bold">Gold vs WTI</text>
+  <text x="48" y="248" font-family="'Georgia', serif" font-size="30" fill="#7a9d6e">엇갈린 신호 — 달러 약세가 말하는 것</text>
+
+  <!-- Two big boxes side by side -->
+  <!-- Gold box -->
+  <rect x="48" y="278" width="370" height="180" rx="8" fill="#0c180c" stroke="#f0a020" stroke-width="2" opacity="0.9"/>
+  <text x="233" y="314" font-family="'Arial', sans-serif" font-size="14" fill="#f0a020" text-anchor="middle" letter-spacing="2">GOLD</text>
+  <text x="233" y="374" font-family="'Georgia', serif" font-size="52" fill="#f0a020" text-anchor="middle" font-weight="bold">$4,242</text>
+  <polygon points="213,322 233,296 253,322" fill="#22c55e"/>
+  <text x="233" y="420" font-family="'Arial', sans-serif" font-size="24" fill="#22c55e" text-anchor="middle" font-weight="bold">+3.71%</text>
+  <text x="233" y="448" font-family="'Arial', sans-serif" font-size="13" fill="#888" text-anchor="middle">달러 약세 · 실질금리 하락 기대</text>
+
+  <!-- VS divider -->
+  <text x="450" y="385" font-family="'Georgia', serif" font-size="36" fill="#888" text-anchor="middle" opacity="0.6">VS</text>
+
+  <!-- WTI box -->
+  <rect x="508" y="278" width="370" height="180" rx="8" fill="#0c180c" stroke="#6b9fb0" stroke-width="2" opacity="0.9"/>
+  <text x="693" y="314" font-family="'Arial', sans-serif" font-size="14" fill="#6b9fb0" text-anchor="middle" letter-spacing="2">WTI</text>
+  <text x="693" y="374" font-family="'Georgia', serif" font-size="52" fill="#6b9fb0" text-anchor="middle" font-weight="bold">$84.68</text>
+  <polygon points="673,348 693,374 713,348" fill="#ef4444"/>
+  <text x="693" y="420" font-family="'Arial', sans-serif" font-size="24" fill="#ef4444" text-anchor="middle" font-weight="bold">−3.45%</text>
+  <text x="693" y="448" font-family="'Arial', sans-serif" font-size="13" fill="#888" text-anchor="middle">공급 증가 · 이란 프리미엄 해소</text>
+
+  <!-- Analysis section -->
+  <text x="48" y="498" font-family="'Arial', sans-serif" font-size="13" fill="#888" letter-spacing="2">공통 원인</text>
+  <line x1="48" y1="506" x2="900" y2="506" stroke="#7a9d6e" stroke-width="1" opacity="0.2"/>
+
+  <!-- Common cause: dollar weakness -->
+  <rect x="48" y="518" width="840" height="60" rx="6" fill="#0c180c" stroke="#7a9d6e" stroke-width="1" opacity="0.6"/>
+  <text x="468" y="545" font-family="'Arial', sans-serif" font-size="15" fill="#7a9d6e" text-anchor="middle" font-weight="bold">달러 약세</text>
+  <text x="468" y="568" font-family="'Arial', sans-serif" font-size="13" fill="#888" text-anchor="middle">USD/KRW 1,516.88 (−0.54%)  |  달러 인덱스 하락 → Gold↑ · WTI↓ 동시 설명</text>
+
+  <!-- Bottom tagline -->
+  <text x="48" y="625" font-family="'Georgia', serif" font-size="17" fill="#7a9d6e" opacity="0.9" font-style="italic">연준 딜레마: WTI 하락(인하 허용) vs Gold 급등(달러 약세 우려)</text>
+
+  <!-- US10Y note -->
+  <text x="48" y="658" font-family="'Arial', sans-serif" font-size="14" fill="#888">US10Y 4.481%  |  USD/KRW 1,516.88</text>
+
+  <!-- Diamond accents -->
+  <polygon points="1232,360 1242,370 1232,380 1222,370" fill="#7a9d6e" opacity="0.4"/>
+  <polygon points="1232,395 1240,403 1232,411 1224,403" fill="#7a9d6e" opacity="0.25"/>
+</svg>
