@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d0a06"/>
+      <stop offset="100%" style="stop-color:#1a140a"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#d8b878"/>
+      <stop offset="100%" style="stop-color:#f0d090"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Left gold accent bar -->
+  <rect x="0" y="0" width="6" height="720" fill="#d8b878"/>
+
+  <!-- Top label bar -->
+  <rect x="0" y="0" width="1280" height="3" fill="#d8b878" opacity="0.6"/>
+
+  <!-- LINCOLN BRIEF wordmark -->
+  <text x="48" y="56" font-family="'Georgia', serif" font-size="18" letter-spacing="6" fill="#d8b878" opacity="0.9">LINCOLN BRIEF</text>
+
+  <!-- Edition label top-right -->
+  <rect x="1040" y="28" width="200" height="36" rx="4" fill="#d8b878" opacity="0.15"/>
+  <rect x="1040" y="28" width="200" height="36" rx="4" fill="none" stroke="#d8b878" stroke-width="1" opacity="0.5"/>
+  <text x="1140" y="52" font-family="'Arial', sans-serif" font-size="13" letter-spacing="2" fill="#d8b878" text-anchor="middle">US DAILY BRIEF</text>
+
+  <!-- Date -->
+  <text x="48" y="92" font-family="'Arial', sans-serif" font-size="14" fill="#888" letter-spacing="1">2026.06.13  |  SLOT 06  |  KST 06:00</text>
+
+  <!-- Divider line -->
+  <line x1="48" y1="110" x2="700" y2="110" stroke="#d8b878" stroke-width="1" opacity="0.3"/>
+
+  <!-- Main headline -->
+  <text x="48" y="183" font-family="'Georgia', serif" font-size="44" fill="#f5f0e8" font-weight="bold">6/12 종합 정리</text>
+  <text x="48" y="240" font-family="'Georgia', serif" font-size="28" fill="#d8b878">7,400 안착 · Gold +3.66% 서프라이즈</text>
+
+  <!-- Key stats row -->
+  <!-- S&amp;P 500 -->
+  <rect x="48" y="288" width="210" height="90" rx="6" fill="#1e180e" stroke="#d8b878" stroke-width="1" opacity="0.7"/>
+  <text x="153" y="316" font-family="'Arial', sans-serif" font-size="13" fill="#888" text-anchor="middle" letter-spacing="1">S&amp;P 500</text>
+  <text x="153" y="350" font-family="'Georgia', serif" font-size="25" fill="#f5f0e8" text-anchor="middle" font-weight="bold">7,431.46</text>
+  <polygon points="140,362 150,350 160,362" fill="#22c55e"/>
+  <text x="165" y="373" font-family="'Arial', sans-serif" font-size="15" fill="#22c55e">+0.50%</text>
+
+  <!-- NASDAQ -->
+  <rect x="272" y="288" width="210" height="90" rx="6" fill="#1e180e" stroke="#d8b878" stroke-width="1" opacity="0.7"/>
+  <text x="377" y="316" font-family="'Arial', sans-serif" font-size="13" fill="#888" text-anchor="middle" letter-spacing="1">NASDAQ</text>
+  <text x="377" y="350" font-family="'Georgia', serif" font-size="25" fill="#f5f0e8" text-anchor="middle" font-weight="bold">25,888</text>
+  <polygon points="364,362 374,350 384,362" fill="#22c55e"/>
+  <text x="389" y="373" font-family="'Arial', sans-serif" font-size="15" fill="#22c55e">+0.31%</text>
+
+  <!-- DOW -->
+  <rect x="496" y="288" width="210" height="90" rx="6" fill="#1e180e" stroke="#d8b878" stroke-width="1" opacity="0.7"/>
+  <text x="601" y="316" font-family="'Arial', sans-serif" font-size="13" fill="#888" text-anchor="middle" letter-spacing="1">DOW</text>
+  <text x="601" y="350" font-family="'Georgia', serif" font-size="25" fill="#f5f0e8" text-anchor="middle" font-weight="bold">51,202</text>
+  <polygon points="588,362 598,350 608,362" fill="#22c55e"/>
+  <text x="613" y="373" font-family="'Arial', sans-serif" font-size="15" fill="#22c55e">+0.70%</text>
+
+  <!-- Movers label -->
+  <text x="48" y="424" font-family="'Arial', sans-serif" font-size="13" fill="#888" letter-spacing="2">TOP MOVERS &amp; MACRO</text>
+  <line x1="48" y1="432" x2="800" y2="432" stroke="#d8b878" stroke-width="1" opacity="0.2"/>
+
+  <!-- JPM -->
+  <rect x="48" y="444" width="185" height="70" rx="4" fill="#1e180e" stroke="#22c55e" stroke-width="1" opacity="0.8"/>
+  <text x="140" y="469" font-family="'Arial', sans-serif" font-size="13" fill="#888" text-anchor="middle">JPM</text>
+  <text x="140" y="494" font-family="'Georgia', serif" font-size="22" fill="#f5f0e8" text-anchor="middle" font-weight="bold">$320.72</text>
+  <text x="140" y="512" font-family="'Arial', sans-serif" font-size="14" fill="#22c55e" text-anchor="middle">+2.31%</text>
+
+  <!-- TSLA -->
+  <rect x="246" y="444" width="185" height="70" rx="4" fill="#1e180e" stroke="#22c55e" stroke-width="1" opacity="0.8"/>
+  <text x="338" y="469" font-family="'Arial', sans-serif" font-size="13" fill="#888" text-anchor="middle">TSLA</text>
+  <text x="338" y="494" font-family="'Georgia', serif" font-size="22" fill="#f5f0e8" text-anchor="middle" font-weight="bold">$406.43</text>
+  <text x="338" y="512" font-family="'Arial', sans-serif" font-size="14" fill="#22c55e" text-anchor="middle">+1.82%</text>
+
+  <!-- LLY (red) -->
+  <rect x="444" y="444" width="185" height="70" rx="4" fill="#1e180e" stroke="#ef4444" stroke-width="1" opacity="0.8"/>
+  <text x="536" y="469" font-family="'Arial', sans-serif" font-size="13" fill="#888" text-anchor="middle">LLY</text>
+  <text x="536" y="494" font-family="'Georgia', serif" font-size="22" fill="#f5f0e8" text-anchor="middle" font-weight="bold">$1,133</text>
+  <text x="536" y="512" font-family="'Arial', sans-serif" font-size="14" fill="#ef4444" text-anchor="middle">−2.41%</text>
+
+  <!-- Gold highlight -->
+  <rect x="642" y="444" width="185" height="70" rx="4" fill="#1e180e" stroke="#f0d090" stroke-width="2" opacity="0.95"/>
+  <text x="734" y="469" font-family="'Arial', sans-serif" font-size="13" fill="#d8b878" text-anchor="middle" letter-spacing="1">GOLD ★</text>
+  <text x="734" y="494" font-family="'Georgia', serif" font-size="22" fill="#f5f0e8" text-anchor="middle" font-weight="bold">$4,239</text>
+  <text x="734" y="512" font-family="'Arial', sans-serif" font-size="14" fill="#22c55e" text-anchor="middle">+3.66%</text>
+
+  <!-- WTI -->
+  <rect x="840" y="444" width="185" height="70" rx="4" fill="#1e180e" stroke="#ef4444" stroke-width="1" opacity="0.8"/>
+  <text x="932" y="469" font-family="'Arial', sans-serif" font-size="13" fill="#888" text-anchor="middle">WTI</text>
+  <text x="932" y="494" font-family="'Georgia', serif" font-size="22" fill="#f5f0e8" text-anchor="middle" font-weight="bold">$84.29</text>
+  <text x="932" y="512" font-family="'Arial', sans-serif" font-size="14" fill="#ef4444" text-anchor="middle">−3.90%</text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="660" width="1280" height="60" fill="#0d0a06" opacity="0.8"/>
+  <line x1="0" y1="660" x2="1280" y2="660" stroke="#d8b878" stroke-width="1" opacity="0.3"/>
+  <text x="48" y="697" font-family="'Arial', sans-serif" font-size="14" fill="#888">US10Y 4.487% · USD/KRW 1,517.89 · BTC $63,504</text>
+  <text x="1232" y="697" font-family="'Arial', sans-serif" font-size="12" fill="#555" text-anchor="end">lincoln-brief.vercel.app</text>
+</svg>

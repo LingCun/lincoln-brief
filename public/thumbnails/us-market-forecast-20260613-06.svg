@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f080a"/>
+      <stop offset="100%" style="stop-color:#1a0e10"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Left red accent bar -->
+  <rect x="0" y="0" width="6" height="720" fill="#f59e0b"/>
+
+  <!-- Top label bar -->
+  <rect x="0" y="0" width="1280" height="3" fill="#f59e0b" opacity="0.6"/>
+
+  <!-- LINCOLN BRIEF wordmark -->
+  <text x="48" y="56" font-family="'Georgia', serif" font-size="18" letter-spacing="6" fill="#fbbf24" opacity="0.9">LINCOLN BRIEF</text>
+
+  <!-- Edition label top-right -->
+  <rect x="1020" y="28" width="220" height="36" rx="4" fill="#f59e0b" opacity="0.15"/>
+  <rect x="1020" y="28" width="220" height="36" rx="4" fill="none" stroke="#f59e0b" stroke-width="1" opacity="0.5"/>
+  <text x="1130" y="52" font-family="'Arial', sans-serif" font-size="12" letter-spacing="2" fill="#fbbf24" text-anchor="middle">MARKET FORECAST</text>
+
+  <!-- Date -->
+  <text x="48" y="92" font-family="'Arial', sans-serif" font-size="14" fill="#666" letter-spacing="1">2026.06.13  |  SLOT 06  |  KST 06:00</text>
+
+  <!-- Divider line -->
+  <line x1="48" y1="110" x2="700" y2="110" stroke="#f59e0b" stroke-width="1" opacity="0.3"/>
+
+  <!-- Main headline -->
+  <text x="48" y="183" font-family="'Georgia', serif" font-size="46" fill="#f5f0e8" font-weight="bold">S&amp;P 7,431 안착</text>
+  <text x="48" y="238" font-family="'Georgia', serif" font-size="27" fill="#fbbf24">비둘기 반전 확률 38%→41% 상향</text>
+
+  <!-- Scenario table visual -->
+  <!-- Bull scenario -->
+  <rect x="48" y="278" width="300" height="70" rx="6" fill="#0a1f0d" stroke="#22c55e" stroke-width="1.5"/>
+  <text x="80" y="304" font-family="'Arial', sans-serif" font-size="12" fill="#22c55e" letter-spacing="1">비둘기 반전</text>
+  <text x="80" y="330" font-family="'Georgia', serif" font-size="24" fill="#f5f0e8" font-weight="bold">7,500~7,600</text>
+  <rect x="280" y="288" width="52" height="28" rx="4" fill="#22c55e" opacity="0.2"/>
+  <text x="306" y="308" font-family="'Georgia', serif" font-size="18" fill="#22c55e" font-weight="bold" text-anchor="middle">41%</text>
+
+  <!-- Base scenario -->
+  <rect x="366" y="278" width="300" height="70" rx="6" fill="#1a1505" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="398" y="304" font-family="'Arial', sans-serif" font-size="12" fill="#f59e0b" letter-spacing="1">중립 유지</text>
+  <text x="398" y="330" font-family="'Georgia', serif" font-size="24" fill="#f5f0e8" font-weight="bold">7,300~7,500</text>
+  <rect x="600" y="288" width="52" height="28" rx="4" fill="#f59e0b" opacity="0.2"/>
+  <text x="626" y="308" font-family="'Georgia', serif" font-size="18" fill="#f59e0b" font-weight="bold" text-anchor="middle">34%</text>
+
+  <!-- Bear scenario -->
+  <rect x="684" y="278" width="300" height="70" rx="6" fill="#1a0808" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="716" y="304" font-family="'Arial', sans-serif" font-size="12" fill="#ef4444" letter-spacing="1">매파 고착</text>
+  <text x="716" y="330" font-family="'Georgia', serif" font-size="24" fill="#f5f0e8" font-weight="bold">7,000~7,200</text>
+  <rect x="918" y="288" width="52" height="28" rx="4" fill="#ef4444" opacity="0.2"/>
+  <text x="944" y="308" font-family="'Georgia', serif" font-size="18" fill="#ef4444" font-weight="bold" text-anchor="middle">19%</text>
+
+  <!-- Checkpoints -->
+  <text x="48" y="400" font-family="'Arial', sans-serif" font-size="13" fill="#888" letter-spacing="2">CHECKPOINTS</text>
+  <line x1="48" y1="408" x2="800" y2="408" stroke="#f59e0b" stroke-width="1" opacity="0.2"/>
+
+  <!-- Checkpoint items -->
+  <rect x="48" y="420" width="225" height="76" rx="4" fill="#0f0c04" stroke="#22c55e" stroke-width="1"/>
+  <text x="160" y="445" font-family="'Arial', sans-serif" font-size="12" fill="#22c55e" text-anchor="middle">WTI ✓</text>
+  <text x="160" y="470" font-family="'Georgia', serif" font-size="20" fill="#f5f0e8" text-anchor="middle" font-weight="bold">$84.29</text>
+  <text x="160" y="490" font-family="'Arial', sans-serif" font-size="11" fill="#22c55e" text-anchor="middle">−3.90% · 임계선 하회</text>
+
+  <rect x="288" y="420" width="225" height="76" rx="4" fill="#0f0c04" stroke="#22c55e" stroke-width="1"/>
+  <text x="400" y="445" font-family="'Arial', sans-serif" font-size="12" fill="#22c55e" text-anchor="middle">Gold ✓ 신규</text>
+  <text x="400" y="470" font-family="'Georgia', serif" font-size="20" fill="#f5f0e8" text-anchor="middle" font-weight="bold">$4,239</text>
+  <text x="400" y="490" font-family="'Arial', sans-serif" font-size="11" fill="#22c55e" text-anchor="middle">+3.66% · 피벗 선반영</text>
+
+  <rect x="528" y="420" width="225" height="76" rx="4" fill="#0f0c04" stroke="#f59e0b" stroke-width="1"/>
+  <text x="640" y="445" font-family="'Arial', sans-serif" font-size="12" fill="#f59e0b" text-anchor="middle">US10Y △</text>
+  <text x="640" y="470" font-family="'Georgia', serif" font-size="20" fill="#f5f0e8" text-anchor="middle" font-weight="bold">4.487%</text>
+  <text x="640" y="490" font-family="'Arial', sans-serif" font-size="11" fill="#f59e0b" text-anchor="middle">4.4% 이하 목표</text>
+
+  <rect x="768" y="420" width="225" height="76" rx="4" fill="#0f0c04" stroke="#888" stroke-width="1"/>
+  <text x="880" y="445" font-family="'Arial', sans-serif" font-size="12" fill="#888" text-anchor="middle">파월 신호 ✗</text>
+  <text x="880" y="470" font-family="'Georgia', serif" font-size="16" fill="#888" text-anchor="middle" font-weight="bold">미확인</text>
+  <text x="880" y="490" font-family="'Arial', sans-serif" font-size="11" fill="#555" text-anchor="middle">의회 증언 대기</text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="630" width="1280" height="90" fill="#0f080a" opacity="0.9"/>
+  <line x1="0" y1="630" x2="1280" y2="630" stroke="#f59e0b" stroke-width="1" opacity="0.3"/>
+  <text x="48" y="668" font-family="'Arial', sans-serif" font-size="16" fill="#fbbf24">5 중 3 충족 — WTI ✓ · S&amp;P ✓ · Gold ✓</text>
+  <text x="48" y="702" font-family="'Arial', sans-serif" font-size="14" fill="#666">다음 CPI 데이터가 심판 · 7,500 목표 진입 조건 형성 중</text>
+  <text x="1232" y="702" font-family="'Arial', sans-serif" font-size="12" fill="#444" text-anchor="end">lincoln-brief.vercel.app</text>
+</svg>
