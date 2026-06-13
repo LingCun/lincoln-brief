@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-06-13T19:31:02.814Z",
+  "asOf": "2026-06-13T20:17:31.996Z",
   "asOfLabel": "6/13 한국·미국 마감",
   "source": "Yahoo Finance · KRX",
   "us": {
@@ -1166,8 +1166,8 @@
     },
     {
       "symbol": "BTC",
-      "value": "$64,162",
-      "change": "+0.97%",
+      "value": "$64,254",
+      "change": "+1.12%",
       "up": true,
       "market": "crypto"
     },
@@ -1201,9 +1201,9 @@
     },
     "crypto": {
       "source": "coingecko",
-      "btcUsd": 64154,
-      "change24hPct": 0.8319158982066442,
-      "asOf": "2026-06-13T19:30:59.000Z"
+      "btcUsd": 64238,
+      "change24hPct": 1.1590979909944907,
+      "asOf": "2026-06-13T20:16:57.000Z"
     },
     "fred": {
       "source": "fred",
@@ -1234,28 +1234,28 @@
       "source": "finnhub",
       "quotes": {
         "AAPL": {
-          "price": 291.15,
+          "price": 291.13,
           "previousClose": 295.63,
-          "change": -4.48,
-          "changePct": -1.5154
+          "change": -4.5,
+          "changePct": -1.5222
         },
         "MSFT": {
-          "price": 390.76,
+          "price": 390.74,
           "previousClose": 390.34,
-          "change": 0.42,
-          "changePct": 0.1076
+          "change": 0.4,
+          "changePct": 0.1025
         },
         "NVDA": {
-          "price": 205.21,
+          "price": 205.19,
           "previousClose": 204.87,
-          "change": 0.34,
-          "changePct": 0.166
+          "change": 0.32,
+          "changePct": 0.1562
         },
         "TSLA": {
-          "price": 406.45,
+          "price": 406.43,
           "previousClose": 399.15,
-          "change": 7.3,
-          "changePct": 1.8289
+          "change": 7.28,
+          "changePct": 1.8239
         }
       }
     },
@@ -1263,15 +1263,15 @@
       "source": "twelvedata",
       "quotes": {
         "XAU/USD": {
-          "price": 4215.26379,
+          "price": 4215.3643,
           "previousClose": 4217.96336,
-          "changePct": -0.064001741
+          "changePct": -0.061618838
         }
       }
     },
     "yahoo": {
       "usdKrw": 1517.89,
-      "btcUsd": 64161.56
+      "btcUsd": 64254.39
     }
   }
 }
