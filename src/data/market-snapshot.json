@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-06-14T21:31:03.490Z",
+  "asOf": "2026-06-14T22:12:53.452Z",
   "asOfLabel": "6/14 한국·미국 마감",
   "source": "Yahoo Finance · KRX",
   "us": {
@@ -567,9 +567,9 @@
       {
         "symbol": "USDKRW",
         "label": "USD/KRW",
-        "close": 1518.36,
-        "change": 0.9799951171874,
-        "changePct": 0.06458468636952186,
+        "close": 1518.57,
+        "change": 1.1899951171874363,
+        "changePct": 0.07842433097563717,
         "note": "보합"
       }
     ],
@@ -1159,30 +1159,30 @@
     },
     {
       "symbol": "USD/KRW",
-      "value": "1,518.36",
-      "change": "+0.06%",
+      "value": "1,518.57",
+      "change": "+0.08%",
       "up": true,
       "market": "fx"
     },
     {
       "symbol": "BTC",
-      "value": "$64,703",
-      "change": "+0.44%",
+      "value": "$65,126",
+      "change": "+1.09%",
       "up": true,
       "market": "crypto"
     },
     {
       "symbol": "GOLD",
       "value": "$4,238.80",
-      "change": "+3.63%",
+      "change": "+0.56%",
       "up": true,
       "market": "commodity"
     },
     {
       "symbol": "WTI",
       "value": "$84.88",
-      "change": "-3.23%",
-      "up": false,
+      "change": "+0.00%",
+      "up": true,
       "market": "commodity"
     },
     {
@@ -1201,9 +1201,9 @@
     },
     "crypto": {
       "source": "coingecko",
-      "btcUsd": 64664,
-      "change24hPct": 0.6438471463132276,
-      "asOf": "2026-06-14T21:30:14.000Z"
+      "btcUsd": 65018,
+      "change24hPct": 0.9985050608667035,
+      "asOf": "2026-06-14T22:12:13.000Z"
     },
     "fred": {
       "source": "fred",
@@ -1263,15 +1263,15 @@
       "source": "twelvedata",
       "quotes": {
         "XAU/USD": {
-          "price": 4215.30059,
+          "price": 4301.97742,
           "previousClose": 4215.36946,
-          "changePct": -0.0016337832
+          "changePct": 2.054576
         }
       }
     },
     "yahoo": {
-      "usdKrw": 1518.46,
-      "btcUsd": 64703.02
+      "usdKrw": 1518.57,
+      "btcUsd": 65133.95
     }
   }
 }
