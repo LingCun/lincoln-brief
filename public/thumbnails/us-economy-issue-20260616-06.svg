@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#080f0c"/>
+      <stop offset="100%" stop-color="#0e1810"/>
+    </linearGradient>
+    <linearGradient id="green-glow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7a9d6e" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#7a9d6e" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg-grad)"/>
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="1280" height="4" fill="#7a9d6e"/>
+
+  <!-- Left green glow -->
+  <rect x="0" y="0" width="520" height="720" fill="url(#green-glow)"/>
+
+  <!-- Lincoln Brief logo -->
+  <text x="48" y="58" font-family="Georgia, serif" font-size="18" fill="#7a9d6e" font-weight="bold" letter-spacing="3">LINCOLN BRIEF</text>
+  <rect x="48" y="66" width="160" height="1.5" fill="#7a9d6e" opacity="0.5"/>
+
+  <!-- Edition label -->
+  <rect x="1100" y="28" width="132" height="36" rx="4" fill="#7a9d6e" fill-opacity="0.12" stroke="#7a9d6e" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="1166" y="52" font-family="Georgia, serif" font-size="13" fill="#7a9d6e" text-anchor="middle" letter-spacing="2">US 06:00</text>
+
+  <!-- Date -->
+  <text x="48" y="106" font-family="Georgia, serif" font-size="14" fill="#5a8a5a" letter-spacing="1">2026.06.16 — 6/15 세션</text>
+
+  <!-- Category label -->
+  <rect x="48" y="128" width="120" height="28" rx="3" fill="#7a9d6e" fill-opacity="0.2"/>
+  <text x="108" y="147" font-family="Georgia, serif" font-size="13" fill="#7a9d6e" text-anchor="middle" letter-spacing="1">경제 이슈</text>
+
+  <!-- Headline: Gold vs WTI contrast -->
+  <text x="48" y="210" font-family="Georgia, serif" font-size="28" fill="#7a9d6e" font-weight="bold" letter-spacing="1">GOLD</text>
+  <text x="48" y="260" font-family="Georgia, serif" font-size="56" fill="#ffffff" font-weight="bold">$4,331.00</text>
+  <rect x="48" y="278" width="200" height="44" rx="6" fill="#4adc7a" fill-opacity="0.12" stroke="#4adc7a" stroke-width="1.5" stroke-opacity="0.4"/>
+  <polygon points="68,299 80,299 74,287" fill="#4adc7a"/>
+  <text x="90" y="307" font-family="Georgia, serif" font-size="22" fill="#4adc7a" font-weight="bold">+2.75%</text>
+
+  <!-- VS divider -->
+  <rect x="48" y="340" width="460" height="1" fill="#7a9d6e" opacity="0.3"/>
+  <text x="48" y="380" font-family="Georgia, serif" font-size="16" fill="#5a8a5a" letter-spacing="2">같은 날</text>
+
+  <!-- WTI below -->
+  <text x="48" y="430" font-family="Georgia, serif" font-size="28" fill="#ff8060" font-weight="bold" letter-spacing="1">WTI</text>
+  <text x="175" y="430" font-family="Georgia, serif" font-size="42" fill="#ffffff" font-weight="bold">$81.16</text>
+  <rect x="48" y="448" width="200" height="44" rx="6" fill="#ff6040" fill-opacity="0.10" stroke="#ff6040" stroke-width="1.5" stroke-opacity="0.4"/>
+  <polygon points="68,464 80,464 74,476" fill="#ff6060"/>
+  <text x="90" y="482" font-family="Georgia, serif" font-size="22" fill="#ff8060" font-weight="bold">−4.38%</text>
+
+  <!-- 5-day context -->
+  <text x="48" y="534" font-family="Georgia, serif" font-size="14" fill="#5a8a5a" letter-spacing="1">5거래일 누적</text>
+  <text x="48" y="566" font-family="Georgia, serif" font-size="18" fill="#4adc7a">Gold +6.0%  ·  WTI −11.6%</text>
+
+  <!-- Right panel divider -->
+  <rect x="560" y="90" width="2" height="540" fill="#7a9d6e" opacity="0.2"/>
+
+  <!-- Right column: narrative -->
+  <text x="598" y="140" font-family="Georgia, serif" font-size="14" fill="#5a8a5a" letter-spacing="2">시장 내러티브</text>
+  <rect x="598" y="150" width="80" height="1" fill="#7a9d6e" opacity="0.4"/>
+
+  <!-- Flow diagram -->
+  <text x="598" y="196" font-family="Georgia, serif" font-size="16" fill="#7a9d6e" font-weight="bold">WTI $81.16 하락</text>
+  <text x="760" y="196" font-family="Georgia, serif" font-size="13" fill="#5a8a5a">→ 에너지 가격 하락</text>
+
+  <text x="618" y="228" font-family="Georgia, serif" font-size="13" fill="#5a8a5a">↓</text>
+  <text x="598" y="256" font-family="Georgia, serif" font-size="16" fill="#7a9d6e" font-weight="bold">CPI 에너지 완화 기대</text>
+
+  <text x="618" y="288" font-family="Georgia, serif" font-size="13" fill="#5a8a5a">↓</text>
+  <text x="598" y="316" font-family="Georgia, serif" font-size="16" fill="#7a9d6e" font-weight="bold">US10Y 4.469% 하락</text>
+  <text x="782" y="316" font-family="Georgia, serif" font-size="13" fill="#5a8a5a">→ 명목 금리 하락</text>
+
+  <text x="618" y="348" font-family="Georgia, serif" font-size="13" fill="#5a8a5a">↓</text>
+  <text x="598" y="376" font-family="Georgia, serif" font-size="16" fill="#d8b878" font-weight="bold">실질 금리 하락 기대</text>
+
+  <text x="618" y="408" font-family="Georgia, serif" font-size="13" fill="#5a8a5a">↓</text>
+  <text x="598" y="436" font-family="Georgia, serif" font-size="16" fill="#7a9d6e" font-weight="bold">Gold $4,331 +2.75%</text>
+  <text x="778" y="436" font-family="Georgia, serif" font-size="13" fill="#4adc7a">→ 실질 금리 역방향</text>
+
+  <rect x="598" y="458" width="638" height="1" fill="#7a9d6e" opacity="0.2"/>
+
+  <!-- Narrative label -->
+  <rect x="598" y="476" width="638" height="88" rx="6" fill="#7a9d6e" fill-opacity="0.1" stroke="#7a9d6e" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="624" y="510" font-family="Georgia, serif" font-size="14" fill="#5a8a5a" letter-spacing="1">시장 베팅</text>
+  <text x="624" y="548" font-family="Georgia, serif" font-size="24" fill="#7a9d6e" font-weight="bold">골디락스 내러티브</text>
+
+  <rect x="598" y="580" width="638" height="1" fill="#7a9d6e" opacity="0.2"/>
+
+  <!-- Risk note -->
+  <text x="598" y="620" font-family="Georgia, serif" font-size="14" fill="#5a8a5a">붕괴 신호: WTI $87+ 재반등 OR Gold $4,100↓</text>
+
+  <!-- US10Y label -->
+  <text x="598" y="658" font-family="Georgia, serif" font-size="15" fill="#c0d0b0">US10Y 4.4% 이하 = 연준 피벗 확정 신호</text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="694" width="1280" height="26" fill="#7a9d6e" fill-opacity="0.06"/>
+  <text x="640" y="712" font-family="Georgia, serif" font-size="12" fill="#5a8a5a" text-anchor="middle" letter-spacing="2">lincoln-brief.vercel.app — 본 자료는 정보 제공 목적이며 투자 권유가 아닙니다</text>
+</svg>
