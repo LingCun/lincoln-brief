@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f0c08"/>
+      <stop offset="100%" stop-color="#1a1510"/>
+    </linearGradient>
+    <linearGradient id="gold-glow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d8b878" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#d8b878" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg-grad)"/>
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="1280" height="4" fill="#d8b878"/>
+
+  <!-- Left side gold glow panel -->
+  <rect x="0" y="0" width="480" height="720" fill="url(#gold-glow)"/>
+
+  <!-- Lincoln Brief logo — top left -->
+  <text x="48" y="58" font-family="Georgia, serif" font-size="18" fill="#d8b878" font-weight="bold" letter-spacing="3">LINCOLN BRIEF</text>
+  <rect x="48" y="66" width="160" height="1.5" fill="#d8b878" opacity="0.5"/>
+
+  <!-- Edition label — top right -->
+  <rect x="1100" y="28" width="132" height="36" rx="4" fill="#d8b878" fill-opacity="0.12" stroke="#d8b878" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="1166" y="52" font-family="Georgia, serif" font-size="13" fill="#d8b878" text-anchor="middle" letter-spacing="2">US 01:00</text>
+
+  <!-- Date -->
+  <text x="48" y="106" font-family="Georgia, serif" font-size="14" fill="#8a7a5a" letter-spacing="1">2026.06.16 — 6/15 마감</text>
+
+  <!-- Category label -->
+  <rect x="48" y="128" width="130" height="28" rx="3" fill="#d8b878" fill-opacity="0.2"/>
+  <text x="113" y="147" font-family="Georgia, serif" font-size="13" fill="#d8b878" text-anchor="middle" letter-spacing="1">데일리 시황</text>
+
+  <!-- Main headline -->
+  <text x="48" y="220" font-family="Georgia, serif" font-size="52" fill="#ffffff" font-weight="bold">S&amp;P 7,557</text>
+  <text x="340" y="220" font-family="Georgia, serif" font-size="30" fill="#4adc7a" font-weight="bold">+1.70%</text>
+
+  <!-- Up triangle for S&P -->
+  <polygon points="390,193 406,193 398,178" fill="#4adc7a"/>
+
+  <!-- Sub-indices row -->
+  <text x="48" y="272" font-family="Georgia, serif" font-size="22" fill="#c0b090">NASDAQ</text>
+  <text x="185" y="272" font-family="Georgia, serif" font-size="22" fill="#ffffff" font-weight="bold">26,645</text>
+  <polygon points="332,253 344,253 338,242" fill="#4adc7a"/>
+  <text x="350" y="272" font-family="Georgia, serif" font-size="20" fill="#4adc7a">+2.92%</text>
+
+  <text x="48" y="312" font-family="Georgia, serif" font-size="22" fill="#c0b090">DOW</text>
+  <text x="130" y="312" font-family="Georgia, serif" font-size="22" fill="#ffffff" font-weight="bold">51,771</text>
+  <polygon points="275,294 287,294 281,283" fill="#4adc7a"/>
+  <text x="295" y="312" font-family="Georgia, serif" font-size="20" fill="#4adc7a">+1.11%</text>
+
+  <!-- Divider -->
+  <rect x="48" y="338" width="440" height="1" fill="#d8b878" opacity="0.3"/>
+
+  <!-- Key mover highlight -->
+  <rect x="48" y="356" width="440" height="72" rx="6" fill="#d8b878" fill-opacity="0.08" stroke="#d8b878" stroke-width="0.5" stroke-opacity="0.3"/>
+  <text x="68" y="384" font-family="Georgia, serif" font-size="16" fill="#8a7a5a" letter-spacing="1">최대 상승</text>
+  <text x="68" y="412" font-family="Georgia, serif" font-size="26" fill="#ffffff" font-weight="bold">META +4.99%</text>
+  <polygon points="278,393 292,393 285,380" fill="#4adc7a"/>
+
+  <!-- Secondary movers -->
+  <text x="48" y="462" font-family="Georgia, serif" font-size="15" fill="#8a7a5a">GOOGL +3.28%  ·  NVDA +3.28%  ·  AVGO +3.14%</text>
+
+  <!-- Right side — macro panel -->
+  <rect x="560" y="90" width="2" height="540" fill="#d8b878" opacity="0.2"/>
+
+  <!-- Macro data - right column -->
+  <text x="600" y="140" font-family="Georgia, serif" font-size="14" fill="#8a7a5a" letter-spacing="2">거시 지표</text>
+  <rect x="600" y="150" width="80" height="1" fill="#d8b878" opacity="0.4"/>
+
+  <!-- US10Y -->
+  <text x="600" y="198" font-family="Georgia, serif" font-size="16" fill="#c0b090">US10Y</text>
+  <text x="700" y="198" font-family="Georgia, serif" font-size="24" fill="#ffffff" font-weight="bold">4.471%</text>
+  <polygon points="870,183 882,183 876,172" fill="#4adc7a" transform="rotate(180 876 177.5)"/>
+  <text x="890" y="198" font-family="Georgia, serif" font-size="16" fill="#4adc7a">−0.016%p</text>
+
+  <!-- WTI -->
+  <text x="600" y="258" font-family="Georgia, serif" font-size="16" fill="#c0b090">WTI</text>
+  <text x="660" y="258" font-family="Georgia, serif" font-size="24" fill="#ffffff" font-weight="bold">$80.61</text>
+  <polygon points="800,243 812,243 806,232" fill="#ff6060" transform="rotate(180 806 237.5)"/>
+  <text x="820" y="258" font-family="Georgia, serif" font-size="16" fill="#ff6060">−5.03%</text>
+
+  <!-- Gold -->
+  <text x="600" y="318" font-family="Georgia, serif" font-size="16" fill="#c0b090">GOLD</text>
+  <text x="665" y="318" font-family="Georgia, serif" font-size="24" fill="#ffffff" font-weight="bold">$4,347.70</text>
+  <polygon points="850,301 864,301 857,288" fill="#4adc7a"/>
+  <text x="872" y="318" font-family="Georgia, serif" font-size="16" fill="#4adc7a">+3.15%</text>
+
+  <!-- BTC -->
+  <text x="600" y="378" font-family="Georgia, serif" font-size="16" fill="#c0b090">BTC</text>
+  <text x="650" y="378" font-family="Georgia, serif" font-size="24" fill="#ffffff" font-weight="bold">$66,757</text>
+  <polygon points="800,361 814,361 807,348" fill="#4adc7a"/>
+  <text x="822" y="378" font-family="Georgia, serif" font-size="16" fill="#4adc7a">+1.59%</text>
+
+  <!-- USD/KRW -->
+  <text x="600" y="438" font-family="Georgia, serif" font-size="16" fill="#c0b090">USD/KRW</text>
+  <text x="730" y="438" font-family="Georgia, serif" font-size="24" fill="#ffffff" font-weight="bold">1,514.47</text>
+  <polygon points="888,423 900,423 894,412" fill="#4adc7a" transform="rotate(180 894 417.5)"/>
+  <text x="908" y="438" font-family="Georgia, serif" font-size="16" fill="#4adc7a">−0.19%</text>
+
+  <!-- Divider -->
+  <rect x="600" y="462" width="620" height="1" fill="#d8b878" opacity="0.2"/>
+
+  <!-- Big highlight — 7500 breakthrough -->
+  <rect x="600" y="490" width="640" height="90" rx="6" fill="#d8b878" fill-opacity="0.1" stroke="#d8b878" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="630" y="526" font-family="Georgia, serif" font-size="16" fill="#8a7a5a" letter-spacing="1">핵심 이정표</text>
+  <text x="630" y="562" font-family="Georgia, serif" font-size="26" fill="#d8b878" font-weight="bold">S&amp;P 7,500 저항선 돌파 확정</text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="694" width="1280" height="26" fill="#d8b878" fill-opacity="0.06"/>
+  <text x="640" y="712" font-family="Georgia, serif" font-size="12" fill="#8a7a5a" text-anchor="middle" letter-spacing="2">lincoln-brief.vercel.app — 본 자료는 정보 제공 목적이며 투자 권유가 아닙니다</text>
+</svg>
