@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#080c14"/>
+      <stop offset="100%" stop-color="#0d1420"/>
+    </linearGradient>
+    <linearGradient id="blue-glow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5677b0" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#5677b0" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="spark-line" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#5677b0" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#5677b0" stop-opacity="0.4"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg-grad)"/>
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="1280" height="4" fill="#5677b0"/>
+
+  <!-- Left blue glow -->
+  <rect x="0" y="0" width="520" height="720" fill="url(#blue-glow)"/>
+
+  <!-- Lincoln Brief logo -->
+  <text x="48" y="58" font-family="Georgia, serif" font-size="18" fill="#5677b0" font-weight="bold" letter-spacing="3">LINCOLN BRIEF</text>
+  <rect x="48" y="66" width="160" height="1.5" fill="#5677b0" opacity="0.5"/>
+
+  <!-- Edition label -->
+  <rect x="1100" y="28" width="132" height="36" rx="4" fill="#5677b0" fill-opacity="0.12" stroke="#5677b0" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="1166" y="52" font-family="Georgia, serif" font-size="13" fill="#5677b0" text-anchor="middle" letter-spacing="2">US 01:00</text>
+
+  <!-- Date -->
+  <text x="48" y="106" font-family="Georgia, serif" font-size="14" fill="#5a6a8a" letter-spacing="1">2026.06.16 — 6/15 세션</text>
+
+  <!-- Category label -->
+  <rect x="48" y="128" width="120" height="28" rx="3" fill="#5677b0" fill-opacity="0.2"/>
+  <text x="108" y="147" font-family="Georgia, serif" font-size="13" fill="#5677b0" text-anchor="middle" letter-spacing="1">종목 분석</text>
+
+  <!-- Main ticker -->
+  <text x="48" y="205" font-family="Georgia, serif" font-size="42" fill="#7a9ec0" font-weight="bold" letter-spacing="4">META</text>
+  <text x="48" y="275" font-family="Georgia, serif" font-size="68" fill="#ffffff" font-weight="bold">$595.25</text>
+
+  <!-- Change badge -->
+  <rect x="48" y="294" width="190" height="46" rx="6" fill="#4adc7a" fill-opacity="0.15" stroke="#4adc7a" stroke-width="1.5" stroke-opacity="0.5"/>
+  <polygon points="68,316 80,316 74,304" fill="#4adc7a"/>
+  <text x="92" y="324" font-family="Georgia, serif" font-size="24" fill="#4adc7a" font-weight="bold">+4.99%</text>
+
+  <!-- Prev close note -->
+  <text x="48" y="368" font-family="Georgia, serif" font-size="16" fill="#5a6a8a">전일 $566.97 → +$28.28</text>
+
+  <!-- Divider line -->
+  <rect x="48" y="394" width="400" height="1" fill="#5677b0" opacity="0.3"/>
+
+  <!-- 30-day sparkline mini chart simulation -->
+  <!-- Area chart background -->
+  <text x="48" y="424" font-family="Georgia, serif" font-size="14" fill="#5a6a8a" letter-spacing="1">30일 궤적</text>
+
+  <!-- Simplified sparkline path — showing decline then recovery -->
+  <polyline
+    points="48,500 70,498 92,495 114,491 136,487 158,490 180,494 202,502 224,508 246,514 268,518 290,516 312,512 334,506 356,498 378,490 400,484 422,487 440,487"
+    fill="none"
+    stroke="#5677b0"
+    stroke-width="2.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <!-- Fill area under sparkline -->
+  <polygon
+    points="48,500 70,498 92,495 114,491 136,487 158,490 180,494 202,502 224,508 246,514 268,518 290,516 312,512 334,506 356,498 378,490 400,484 422,487 440,487 440,540 48,540"
+    fill="url(#spark-line)"
+  />
+  <!-- High point marker -->
+  <circle cx="136" cy="487" r="4" fill="#5677b0" opacity="0.8"/>
+  <text x="110" y="476" font-family="Georgia, serif" font-size="11" fill="#5677b0">$635 고점</text>
+  <!-- Low point marker -->
+  <circle cx="268" cy="518" r="4" fill="#ff6060" opacity="0.8"/>
+  <text x="248" y="534" font-family="Georgia, serif" font-size="11" fill="#ff6060">$567 저점</text>
+  <!-- Current point marker -->
+  <circle cx="440" cy="487" r="5" fill="#4adc7a"/>
+  <text x="418" y="476" font-family="Georgia, serif" font-size="11" fill="#4adc7a">$595</text>
+
+  <!-- X-axis line -->
+  <rect x="48" y="540" width="400" height="1" fill="#5677b0" opacity="0.2"/>
+
+  <!-- Right panel -->
+  <rect x="580" y="90" width="2" height="540" fill="#5677b0" opacity="0.2"/>
+
+  <text x="620" y="140" font-family="Georgia, serif" font-size="14" fill="#5a6a8a" letter-spacing="2">종목 현황</text>
+  <rect x="620" y="150" width="80" height="1" fill="#5677b0" opacity="0.4"/>
+
+  <!-- Key metrics -->
+  <text x="620" y="198" font-family="Georgia, serif" font-size="15" fill="#7a8aa0">12종목 순위</text>
+  <text x="620" y="234" font-family="Georgia, serif" font-size="30" fill="#d8b878" font-weight="bold">#1 최대 상승</text>
+
+  <rect x="620" y="256" width="600" height="1" fill="#5677b0" opacity="0.2"/>
+
+  <!-- Vs NASDAQ -->
+  <text x="620" y="296" font-family="Georgia, serif" font-size="15" fill="#7a8aa0">당일 NASDAQ 대비</text>
+  <text x="620" y="332" font-family="Georgia, serif" font-size="28" fill="#ffffff" font-weight="bold">META +4.99%</text>
+  <text x="820" y="332" font-family="Georgia, serif" font-size="20" fill="#5a6a8a">vs NASDAQ +2.92%</text>
+
+  <rect x="620" y="354" width="600" height="1" fill="#5677b0" opacity="0.2"/>
+
+  <!-- 30-day stats -->
+  <text x="620" y="394" font-family="Georgia, serif" font-size="15" fill="#7a8aa0">30일 고점 대비</text>
+  <text x="620" y="430" font-family="Georgia, serif" font-size="28" fill="#ff8888">−6.3%</text>
+  <text x="730" y="430" font-family="Georgia, serif" font-size="16" fill="#5a6a8a">($635.29 → $595.25)</text>
+
+  <rect x="620" y="452" width="600" height="1" fill="#5677b0" opacity="0.2"/>
+
+  <!-- US10Y context -->
+  <text x="620" y="492" font-family="Georgia, serif" font-size="15" fill="#7a8aa0">금리 환경 (US10Y)</text>
+  <text x="620" y="528" font-family="Georgia, serif" font-size="28" fill="#4adc7a">4.471%</text>
+  <text x="730" y="528" font-family="Georgia, serif" font-size="16" fill="#4adc7a">↓ 성장주 우호</text>
+
+  <!-- Bottom highlight box -->
+  <rect x="620" y="558" width="620" height="88" rx="6" fill="#5677b0" fill-opacity="0.1" stroke="#5677b0" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="648" y="592" font-family="Georgia, serif" font-size="15" fill="#7a8aa0">다음 목표</text>
+  <text x="648" y="628" font-family="Georgia, serif" font-size="24" fill="#ffffff" font-weight="bold">$635.29 고점 재돌파 (+6.7%)</text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="694" width="1280" height="26" fill="#5677b0" fill-opacity="0.06"/>
+  <text x="640" y="712" font-family="Georgia, serif" font-size="12" fill="#5a6a8a" text-anchor="middle" letter-spacing="2">lincoln-brief.vercel.app — 본 자료는 정보 제공 목적이며 투자 권유가 아닙니다</text>
+</svg>

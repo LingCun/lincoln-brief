@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#080f0a"/>
+      <stop offset="100%" stop-color="#101a12"/>
+    </linearGradient>
+    <linearGradient id="green-glow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7a9d6e" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#7a9d6e" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg-grad)"/>
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="1280" height="4" fill="#7a9d6e"/>
+
+  <!-- Left green glow -->
+  <rect x="0" y="0" width="520" height="720" fill="url(#green-glow)"/>
+
+  <!-- Lincoln Brief logo -->
+  <text x="48" y="58" font-family="Georgia, serif" font-size="18" fill="#7a9d6e" font-weight="bold" letter-spacing="3">LINCOLN BRIEF</text>
+  <rect x="48" y="66" width="160" height="1.5" fill="#7a9d6e" opacity="0.5"/>
+
+  <!-- Edition label -->
+  <rect x="1100" y="28" width="132" height="36" rx="4" fill="#7a9d6e" fill-opacity="0.12" stroke="#7a9d6e" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="1166" y="52" font-family="Georgia, serif" font-size="13" fill="#7a9d6e" text-anchor="middle" letter-spacing="2">US 01:00</text>
+
+  <!-- Date -->
+  <text x="48" y="106" font-family="Georgia, serif" font-size="14" fill="#5a8a5a" letter-spacing="1">2026.06.16 — 거시경제 이슈</text>
+
+  <!-- Category label -->
+  <rect x="48" y="128" width="120" height="28" rx="3" fill="#7a9d6e" fill-opacity="0.2"/>
+  <text x="108" y="147" font-family="Georgia, serif" font-size="13" fill="#7a9d6e" text-anchor="middle" letter-spacing="1">경제 이슈</text>
+
+  <!-- Main headline -->
+  <text x="48" y="218" font-family="Georgia, serif" font-size="22" fill="#8aaa7a" letter-spacing="1">세 시장이 보내는 연준 피벗 신호</text>
+
+  <!-- Three big numbers - vertical layout -->
+  <!-- US10Y -->
+  <rect x="48" y="242" width="460" height="84" rx="6" fill="#7a9d6e" fill-opacity="0.1" stroke="#7a9d6e" stroke-width="0.8" stroke-opacity="0.3"/>
+  <text x="68" y="274" font-family="Georgia, serif" font-size="15" fill="#8aaa7a" letter-spacing="1">채권 — US10Y</text>
+  <text x="68" y="314" font-family="Georgia, serif" font-size="36" fill="#ffffff" font-weight="bold">4.471%</text>
+  <polygon points="292,298 306,298 299,285" fill="#4adc7a" transform="rotate(180 299 291.5)"/>
+  <text x="316" y="314" font-family="Georgia, serif" font-size="22" fill="#4adc7a">−0.016%p ↓</text>
+  <text x="440" y="277" font-family="Georgia, serif" font-size="13" fill="#5a8a5a">4.4% 목전</text>
+
+  <!-- WTI -->
+  <rect x="48" y="342" width="460" height="84" rx="6" fill="#ff6060" fill-opacity="0.08" stroke="#ff6060" stroke-width="0.8" stroke-opacity="0.3"/>
+  <text x="68" y="374" font-family="Georgia, serif" font-size="15" fill="#cc8080" letter-spacing="1">원자재 — WTI</text>
+  <text x="68" y="414" font-family="Georgia, serif" font-size="36" fill="#ffffff" font-weight="bold">$80.61</text>
+  <polygon points="240,398 254,398 247,385" fill="#ff6060" transform="rotate(180 247 391.5)"/>
+  <text x="264" y="414" font-family="Georgia, serif" font-size="22" fill="#ff6060">−5.03% ↓</text>
+  <text x="420" y="377" font-family="Georgia, serif" font-size="13" fill="#8a5a5a">6/10 $91.85 대비 −12.2%</text>
+
+  <!-- Gold -->
+  <rect x="48" y="442" width="460" height="84" rx="6" fill="#d8b878" fill-opacity="0.08" stroke="#d8b878" stroke-width="0.8" stroke-opacity="0.3"/>
+  <text x="68" y="474" font-family="Georgia, serif" font-size="15" fill="#c0a060" letter-spacing="1">귀금속 — GOLD</text>
+  <text x="68" y="514" font-family="Georgia, serif" font-size="36" fill="#ffffff" font-weight="bold">$4,347.70</text>
+  <polygon points="320,498 336,498 328,483" fill="#d8b878"/>
+  <text x="344" y="514" font-family="Georgia, serif" font-size="22" fill="#d8b878">+3.15% ↑</text>
+
+  <!-- Arrow connecting the three -->
+  <text x="48" y="560" font-family="Georgia, serif" font-size="15" fill="#5a8a5a">← 5거래일 연속 동방향</text>
+
+  <!-- Right panel divider -->
+  <rect x="580" y="90" width="2" height="540" fill="#7a9d6e" opacity="0.2"/>
+
+  <!-- Right: Macro chain -->
+  <text x="620" y="140" font-family="Georgia, serif" font-size="14" fill="#5a8a5a" letter-spacing="2">연준 피벗 메커니즘</text>
+  <rect x="620" y="150" width="80" height="1" fill="#7a9d6e" opacity="0.4"/>
+
+  <!-- Chain visualization -->
+  <rect x="620" y="172" width="620" height="44" rx="4" fill="#ff6060" fill-opacity="0.15"/>
+  <text x="640" y="200" font-family="Georgia, serif" font-size="16" fill="#ffffff">WTI $80.61 하락</text>
+  <text x="900" y="200" font-family="Georgia, serif" font-size="14" fill="#ff6060">에너지 비용 완화</text>
+
+  <text x="900" y="236" font-family="Georgia, serif" font-size="20" fill="#7a9d6e">↓</text>
+
+  <rect x="620" y="248" width="620" height="44" rx="4" fill="#7a9d6e" fill-opacity="0.15"/>
+  <text x="640" y="276" font-family="Georgia, serif" font-size="16" fill="#ffffff">CPI 에너지 항목 완화 기대</text>
+  <text x="900" y="276" font-family="Georgia, serif" font-size="14" fill="#7a9d6e">인플레이션 기대↓</text>
+
+  <text x="900" y="312" font-family="Georgia, serif" font-size="20" fill="#7a9d6e">↓</text>
+
+  <rect x="620" y="324" width="620" height="44" rx="4" fill="#4adc7a" fill-opacity="0.1"/>
+  <text x="640" y="352" font-family="Georgia, serif" font-size="16" fill="#ffffff">US10Y 4.471% 하락</text>
+  <text x="900" y="352" font-family="Georgia, serif" font-size="14" fill="#4adc7a">채권 시장 피벗 반영 시작</text>
+
+  <text x="900" y="388" font-family="Georgia, serif" font-size="20" fill="#7a9d6e">↓</text>
+
+  <rect x="620" y="400" width="620" height="44" rx="4" fill="#d8b878" fill-opacity="0.1"/>
+  <text x="640" y="428" font-family="Georgia, serif" font-size="16" fill="#ffffff">Gold $4,347.70(+3.15%) 강세</text>
+  <text x="900" y="428" font-family="Georgia, serif" font-size="14" fill="#d8b878">실질 금리 하락 선행 반영</text>
+
+  <text x="900" y="464" font-family="Georgia, serif" font-size="20" fill="#7a9d6e">↓</text>
+
+  <!-- Final result box -->
+  <rect x="620" y="476" width="620" height="60" rx="6" fill="#7a9d6e" fill-opacity="0.15" stroke="#7a9d6e" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="930" y="504" font-family="Georgia, serif" font-size="14" fill="#7a9d6e" text-anchor="middle">연준 피벗 기대 형성</text>
+  <text x="930" y="526" font-family="Georgia, serif" font-size="20" fill="#ffffff" text-anchor="middle" font-weight="bold">S&amp;P 7,557 (+4.00% / 5일)</text>
+
+  <!-- Bottom key: US10Y threshold -->
+  <rect x="620" y="556" width="620" height="80" rx="6" fill="#4adc7a" fill-opacity="0.08" stroke="#4adc7a" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="648" y="586" font-family="Georgia, serif" font-size="15" fill="#4adc7a">마지막 열쇠</text>
+  <text x="648" y="620" font-family="Georgia, serif" font-size="22" fill="#ffffff" font-weight="bold">US10Y 4.4% 이하 진입 (현재 4.471%)</text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="694" width="1280" height="26" fill="#7a9d6e" fill-opacity="0.06"/>
+  <text x="640" y="712" font-family="Georgia, serif" font-size="12" fill="#5a8a5a" text-anchor="middle" letter-spacing="2">lincoln-brief.vercel.app — 본 자료는 정보 제공 목적이며 투자 권유가 아닙니다</text>
+</svg>
