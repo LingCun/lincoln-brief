@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#140808"/>
+      <stop offset="100%" stop-color="#1e100e"/>
+    </linearGradient>
+    <linearGradient id="red-glow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d96552" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#d96552" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg-grad)"/>
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="1280" height="4" fill="#d96552"/>
+
+  <!-- Left red glow -->
+  <rect x="0" y="0" width="520" height="720" fill="url(#red-glow)"/>
+
+  <!-- Lincoln Brief logo -->
+  <text x="48" y="58" font-family="Georgia, serif" font-size="18" fill="#d96552" font-weight="bold" letter-spacing="3">LINCOLN BRIEF</text>
+  <rect x="48" y="66" width="160" height="1.5" fill="#d96552" opacity="0.5"/>
+
+  <!-- Edition label -->
+  <rect x="1100" y="28" width="132" height="36" rx="4" fill="#d96552" fill-opacity="0.12" stroke="#d96552" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="1166" y="52" font-family="Georgia, serif" font-size="13" fill="#d96552" text-anchor="middle" letter-spacing="2">US 06:00</text>
+
+  <!-- Date -->
+  <text x="48" y="106" font-family="Georgia, serif" font-size="14" fill="#8a6a5a" letter-spacing="1">2026.06.16 — 6/15 세션</text>
+
+  <!-- Category label -->
+  <rect x="48" y="128" width="120" height="28" rx="3" fill="#d96552" fill-opacity="0.2"/>
+  <text x="108" y="147" font-family="Georgia, serif" font-size="13" fill="#d96552" text-anchor="middle" letter-spacing="1">시장 예측</text>
+
+  <!-- Main S&P figure -->
+  <text x="48" y="220" font-family="Georgia, serif" font-size="46" fill="#ffffff" font-weight="bold">S&amp;P 7,554.29</text>
+  <polygon points="420,198 436,198 428,182" fill="#4adc7a"/>
+  <text x="444" y="220" font-family="Georgia, serif" font-size="28" fill="#4adc7a" font-weight="bold">+1.65%</text>
+
+  <!-- Sub-headline -->
+  <text x="48" y="264" font-family="Georgia, serif" font-size="20" fill="#c09080">NASDAQ +3.07%  ·  DOW +0.92%</text>
+
+  <!-- Divider -->
+  <rect x="48" y="290" width="500" height="1" fill="#d96552" opacity="0.3"/>
+
+  <!-- Scenario boxes -->
+  <text x="48" y="322" font-family="Georgia, serif" font-size="14" fill="#8a6a5a" letter-spacing="2">다음 주 경로</text>
+
+  <!-- Scenario A -->
+  <rect x="48" y="338" width="220" height="72" rx="5" fill="#4adc7a" fill-opacity="0.1" stroke="#4adc7a" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="68" y="364" font-family="Georgia, serif" font-size="13" fill="#4adc7a" font-weight="bold">경로 A — 테크 지속</text>
+  <text x="68" y="386" font-family="Georgia, serif" font-size="12" fill="#5a8a6a">US10Y 4.4% ↓</text>
+  <text x="68" y="402" font-family="Georgia, serif" font-size="18" fill="#4adc7a" font-weight="bold">35%</text>
+
+  <!-- Scenario B -->
+  <rect x="282" y="338" width="220" height="72" rx="5" fill="#d96552" fill-opacity="0.1" stroke="#d96552" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="302" y="364" font-family="Georgia, serif" font-size="13" fill="#d96552" font-weight="bold">경로 B — 금리 역설</text>
+  <text x="302" y="386" font-family="Georgia, serif" font-size="12" fill="#8a5a4a">강한 소매판매 →</text>
+  <text x="302" y="402" font-family="Georgia, serif" font-size="18" fill="#d96552" font-weight="bold">30%</text>
+
+  <!-- Scenario C -->
+  <rect x="48" y="424" width="220" height="72" rx="5" fill="#d8b878" fill-opacity="0.1" stroke="#d8b878" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="68" y="450" font-family="Georgia, serif" font-size="13" fill="#d8b878" font-weight="bold">경로 C — 박스 횡보</text>
+  <text x="68" y="472" font-family="Georgia, serif" font-size="12" fill="#8a7a5a">7,400~7,600 유지</text>
+  <text x="68" y="488" font-family="Georgia, serif" font-size="18" fill="#d8b878" font-weight="bold">25%</text>
+
+  <!-- Scenario D -->
+  <rect x="282" y="424" width="220" height="72" rx="5" fill="#ff6060" fill-opacity="0.08" stroke="#ff6060" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="302" y="450" font-family="Georgia, serif" font-size="13" fill="#ff8080" font-weight="bold">경로 D — 지정학 재발화</text>
+  <text x="302" y="472" font-family="Georgia, serif" font-size="12" fill="#6a3a3a">WTI $87+ 재반등</text>
+  <text x="302" y="488" font-family="Georgia, serif" font-size="18" fill="#ff8080" font-weight="bold">10%</text>
+
+  <!-- Key watch -->
+  <rect x="48" y="516" width="454" height="72" rx="6" fill="#d96552" fill-opacity="0.1" stroke="#d96552" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="68" y="544" font-family="Georgia, serif" font-size="14" fill="#8a6a5a" letter-spacing="1">핵심 관찰</text>
+  <text x="68" y="572" font-family="Georgia, serif" font-size="20" fill="#ffffff" font-weight="bold">US10Y 4.4% 이하 vs 소매판매 강세</text>
+
+  <!-- Right panel divider -->
+  <rect x="580" y="90" width="2" height="540" fill="#d96552" opacity="0.2"/>
+
+  <!-- Right column: current data -->
+  <text x="618" y="140" font-family="Georgia, serif" font-size="14" fill="#8a6a5a" letter-spacing="2">핵심 지표</text>
+  <rect x="618" y="150" width="80" height="1" fill="#d96552" opacity="0.4"/>
+
+  <text x="618" y="198" font-family="Georgia, serif" font-size="16" fill="#c09080">US10Y</text>
+  <text x="718" y="198" font-family="Georgia, serif" font-size="24" fill="#ffffff" font-weight="bold">4.469%</text>
+  <text x="880" y="198" font-family="Georgia, serif" font-size="14" fill="#4adc7a">↓ 4.4% 근접</text>
+
+  <rect x="618" y="218" width="620" height="1" fill="#d96552" opacity="0.15"/>
+
+  <text x="618" y="258" font-family="Georgia, serif" font-size="16" fill="#c09080">WTI</text>
+  <text x="678" y="258" font-family="Georgia, serif" font-size="24" fill="#ffffff" font-weight="bold">$81.16</text>
+  <text x="810" y="258" font-family="Georgia, serif" font-size="14" fill="#ff8080">−4.38% 급락</text>
+
+  <rect x="618" y="278" width="620" height="1" fill="#d96552" opacity="0.15"/>
+
+  <text x="618" y="318" font-family="Georgia, serif" font-size="16" fill="#c09080">Gold</text>
+  <text x="682" y="318" font-family="Georgia, serif" font-size="24" fill="#ffffff" font-weight="bold">$4,331</text>
+  <text x="810" y="318" font-family="Georgia, serif" font-size="14" fill="#4adc7a">+2.75%</text>
+
+  <rect x="618" y="338" width="620" height="1" fill="#d96552" opacity="0.15"/>
+
+  <!-- Support/resistance levels -->
+  <text x="618" y="380" font-family="Georgia, serif" font-size="14" fill="#8a6a5a" letter-spacing="2">S&amp;P 지지·저항선</text>
+  <rect x="618" y="390" width="80" height="1" fill="#d96552" opacity="0.4"/>
+
+  <text x="618" y="428" font-family="Georgia, serif" font-size="15" fill="#8a6a5a">상방 목표</text>
+  <text x="730" y="428" font-family="Georgia, serif" font-size="22" fill="#4adc7a" font-weight="bold">7,600</text>
+
+  <text x="618" y="466" font-family="Georgia, serif" font-size="15" fill="#8a6a5a">현재</text>
+  <text x="680" y="466" font-family="Georgia, serif" font-size="22" fill="#ffffff" font-weight="bold">7,554.29</text>
+
+  <text x="618" y="504" font-family="Georgia, serif" font-size="15" fill="#8a6a5a">지지선 1</text>
+  <text x="718" y="504" font-family="Georgia, serif" font-size="22" fill="#d96552" font-weight="bold">7,500</text>
+  <text x="808" y="504" font-family="Georgia, serif" font-size="13" fill="#8a6a5a">(구 저항 → 신규 지지)</text>
+
+  <text x="618" y="542" font-family="Georgia, serif" font-size="15" fill="#8a6a5a">지지선 2</text>
+  <text x="718" y="542" font-family="Georgia, serif" font-size="22" fill="#ff8080">7,431</text>
+  <text x="808" y="542" font-family="Georgia, serif" font-size="13" fill="#8a6a5a">(6/12 마감)</text>
+
+  <!-- Dovish probability highlight -->
+  <rect x="618" y="568" width="622" height="72" rx="6" fill="#d96552" fill-opacity="0.08" stroke="#d96552" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="645" y="598" font-family="Georgia, serif" font-size="14" fill="#8a6a5a" letter-spacing="1">비둘기 반전 확률</text>
+  <text x="645" y="628" font-family="Georgia, serif" font-size="28" fill="#d96552" font-weight="bold">46%</text>
+  <text x="720" y="628" font-family="Georgia, serif" font-size="15" fill="#8a6a5a">  — US10Y 4.4% 이하가 50%+ 열쇠</text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="694" width="1280" height="26" fill="#d96552" fill-opacity="0.06"/>
+  <text x="640" y="712" font-family="Georgia, serif" font-size="12" fill="#8a6a5a" text-anchor="middle" letter-spacing="2">lincoln-brief.vercel.app — 본 자료는 정보 제공 목적이며 투자 권유가 아닙니다</text>
+</svg>
