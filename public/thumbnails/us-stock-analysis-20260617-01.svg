@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#080c14"/>
+      <stop offset="100%" stop-color="#0d1420"/>
+    </linearGradient>
+    <linearGradient id="blue-glow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5677b0" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#5677b0" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="spark-fill" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#5677b0" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#5677b0" stop-opacity="0.35"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg-grad)"/>
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="1280" height="4" fill="#5677b0"/>
+
+  <!-- Left blue glow -->
+  <rect x="0" y="0" width="520" height="720" fill="url(#blue-glow)"/>
+
+  <!-- Lincoln Brief logo -->
+  <text x="48" y="58" font-family="Georgia, serif" font-size="18" fill="#5677b0" font-weight="bold" letter-spacing="3">LINCOLN BRIEF</text>
+  <rect x="48" y="66" width="160" height="1.5" fill="#5677b0" opacity="0.5"/>
+
+  <!-- Edition label -->
+  <rect x="1100" y="28" width="132" height="36" rx="4" fill="#5677b0" fill-opacity="0.12" stroke="#5677b0" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="1166" y="52" font-family="Georgia, serif" font-size="13" fill="#5677b0" text-anchor="middle" letter-spacing="2">US 01:00</text>
+
+  <!-- Date -->
+  <text x="48" y="106" font-family="Georgia, serif" font-size="14" fill="#5a6a8a" letter-spacing="1">2026.06.17 — 6/16 세션</text>
+
+  <!-- Category label -->
+  <rect x="48" y="128" width="120" height="28" rx="3" fill="#5677b0" fill-opacity="0.2"/>
+  <text x="108" y="147" font-family="Georgia, serif" font-size="13" fill="#5677b0" text-anchor="middle" letter-spacing="1">종목 분석</text>
+
+  <!-- Ticker name -->
+  <text x="48" y="205" font-family="Georgia, serif" font-size="42" fill="#7a9ec0" font-weight="bold" letter-spacing="4">JPM</text>
+
+  <!-- Price -->
+  <text x="48" y="278" font-family="Georgia, serif" font-size="68" fill="#ffffff" font-weight="bold">$330.10</text>
+
+  <!-- Change badge -->
+  <rect x="48" y="296" width="190" height="46" rx="6" fill="#4adc7a" fill-opacity="0.15" stroke="#4adc7a" stroke-width="1.5" stroke-opacity="0.5"/>
+  <polygon points="68,316 80,316 74,304" fill="#4adc7a"/>
+  <text x="92" y="326" font-family="Georgia, serif" font-size="24" fill="#4adc7a" font-weight="bold">+3.35%</text>
+
+  <!-- Prev close note -->
+  <text x="48" y="372" font-family="Georgia, serif" font-size="16" fill="#5a6a8a">전일 $319.40 → +$10.70</text>
+
+  <!-- 30-day record badge -->
+  <rect x="48" y="390" width="240" height="36" rx="5" fill="#d8b878" fill-opacity="0.12" stroke="#d8b878" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="168" y="414" font-family="Georgia, serif" font-size="14" fill="#d8b878" text-anchor="middle" font-weight="bold">★ 30일 구간 신고점</text>
+
+  <!-- Divider -->
+  <rect x="48" y="444" width="420" height="1" fill="#5677b0" opacity="0.3"/>
+
+  <!-- 30-day journey stats -->
+  <text x="48" y="474" font-family="Georgia, serif" font-size="14" fill="#5a6a8a" letter-spacing="1">30일 궤적</text>
+
+  <!-- Stats row -->
+  <text x="48" y="510" font-family="Georgia, serif" font-size="14" fill="#5a6a8a">저점</text>
+  <text x="100" y="510" font-family="Georgia, serif" font-size="18" fill="#d96552" font-weight="bold">$295.70</text>
+  <text x="220" y="510" font-family="Georgia, serif" font-size="14" fill="#5a6a8a">→ 오늘</text>
+  <text x="278" y="510" font-family="Georgia, serif" font-size="18" fill="#4adc7a" font-weight="bold">$330.10</text>
+  <text x="400" y="510" font-family="Georgia, serif" font-size="16" fill="#4adc7a">+11.6%</text>
+
+  <!-- Simplified sparkline chart -->
+  <text x="48" y="546" font-family="Georgia, serif" font-size="13" fill="#5a6a8a" letter-spacing="1">가격 추이 (30일)</text>
+  <!-- Chart background area -->
+  <rect x="48" y="558" width="440" height="80" rx="4" fill="#5677b0" fill-opacity="0.05" stroke="#5677b0" stroke-width="0.5" stroke-opacity="0.2"/>
+  <!-- Simplified trend path: dip then rise to new high -->
+  <polyline points="48,590 88,596 128,606 168,610 208,608 248,605 288,602 328,591 368,584 408,578 448,572 488,558" fill="none" stroke="#5677b0" stroke-width="2" stroke-opacity="0.7"/>
+  <!-- Fill under line -->
+  <polygon points="48,638 48,590 88,596 128,606 168,610 208,608 248,605 288,602 328,591 368,584 408,578 448,572 488,558 488,638" fill="url(#spark-fill)"/>
+  <!-- Low marker -->
+  <circle cx="168" cy="610" r="4" fill="#d96552" fill-opacity="0.8"/>
+  <!-- Current marker -->
+  <circle cx="488" cy="558" r="5" fill="#4adc7a"/>
+
+  <!-- Right panel -->
+  <rect x="780" y="80" width="1" height="560" fill="#5677b0" opacity="0.1"/>
+
+  <!-- Right: Context -->
+  <text x="820" y="160" font-family="Georgia, serif" font-size="20" fill="#5677b0" font-weight="bold">12종목 비교</text>
+  <rect x="820" y="172" width="180" height="1.5" fill="#5677b0" opacity="0.3"/>
+
+  <!-- Comparative bars -->
+  <text x="820" y="208" font-family="Georgia, serif" font-size="14" fill="#8a9ab0">JPM</text>
+  <rect x="880" y="193" width="220" height="22" rx="3" fill="#4adc7a" fill-opacity="0.7"/>
+  <text x="1108" y="210" font-family="Georgia, serif" font-size="13" fill="#4adc7a" font-weight="bold">+3.35%</text>
+
+  <text x="820" y="248" font-family="Georgia, serif" font-size="14" fill="#8a9ab0">GOOGL</text>
+  <rect x="880" y="233" width="52" height="22" rx="3" fill="#4adc7a" fill-opacity="0.5"/>
+  <text x="940" y="250" font-family="Georgia, serif" font-size="13" fill="#4adc7a">+0.79%</text>
+
+  <text x="820" y="288" font-family="Georgia, serif" font-size="14" fill="#8a9ab0">AAPL</text>
+  <rect x="880" y="273" width="50" height="22" rx="3" fill="#4adc7a" fill-opacity="0.5"/>
+  <text x="938" y="290" font-family="Georgia, serif" font-size="13" fill="#4adc7a">+0.76%</text>
+
+  <text x="820" y="328" font-family="Georgia, serif" font-size="14" fill="#8a9ab0">NVDA</text>
+  <rect x="880" y="313" width="90" height="22" rx="3" fill="#d96552" fill-opacity="0.6"/>
+  <text x="978" y="330" font-family="Georgia, serif" font-size="13" fill="#d96552">−1.45%</text>
+
+  <text x="820" y="368" font-family="Georgia, serif" font-size="14" fill="#8a9ab0">MSFT</text>
+  <rect x="880" y="353" width="118" height="22" rx="3" fill="#d96552" fill-opacity="0.6"/>
+  <text x="1006" y="370" font-family="Georgia, serif" font-size="13" fill="#d96552">−1.91%</text>
+
+  <text x="820" y="408" font-family="Georgia, serif" font-size="14" fill="#8a9ab0">AVGO</text>
+  <rect x="880" y="393" width="202" height="22" rx="3" fill="#d96552" fill-opacity="0.8"/>
+  <text x="1090" y="410" font-family="Georgia, serif" font-size="13" fill="#d96552" font-weight="bold">−3.26%</text>
+
+  <!-- Context note -->
+  <rect x="820" y="444" width="390" height="56" rx="4" fill="#5677b0" fill-opacity="0.08" stroke="#5677b0" stroke-width="0.5" stroke-opacity="0.3"/>
+  <text x="836" y="466" font-family="Georgia, serif" font-size="13" fill="#8a9ab0">NASDAQ −0.57% 하락 속</text>
+  <text x="836" y="488" font-family="Georgia, serif" font-size="15" fill="#5677b0" font-weight="bold">금융주 JPM 단독 비대칭 강세</text>
+
+  <!-- Sector label -->
+  <text x="820" y="540" font-family="Georgia, serif" font-size="13" fill="#5a6a8a">DOW +0.78% 주도 세션</text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="648" width="1280" height="72" fill="#000000" fill-opacity="0.3"/>
+  <text x="640" y="690" font-family="Georgia, serif" font-size="16" fill="#5677b0" text-anchor="middle" letter-spacing="2">JPMorgan — 30일 신고점 · 섹터 로테이션 최대 수혜</text>
+</svg>

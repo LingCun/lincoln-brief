@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#060c08"/>
+      <stop offset="100%" stop-color="#0a1410"/>
+    </linearGradient>
+    <linearGradient id="green-glow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7a9d6e" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#7a9d6e" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="oil-drop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d96552" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#d96552" stop-opacity="0.1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg-grad)"/>
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="1280" height="4" fill="#7a9d6e"/>
+
+  <!-- Left green glow -->
+  <rect x="0" y="0" width="520" height="720" fill="url(#green-glow)"/>
+
+  <!-- Lincoln Brief logo -->
+  <text x="48" y="58" font-family="Georgia, serif" font-size="18" fill="#7a9d6e" font-weight="bold" letter-spacing="3">LINCOLN BRIEF</text>
+  <rect x="48" y="66" width="160" height="1.5" fill="#7a9d6e" opacity="0.5"/>
+
+  <!-- Edition label -->
+  <rect x="1100" y="28" width="132" height="36" rx="4" fill="#7a9d6e" fill-opacity="0.12" stroke="#7a9d6e" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="1166" y="52" font-family="Georgia, serif" font-size="13" fill="#7a9d6e" text-anchor="middle" letter-spacing="2">US 01:00</text>
+
+  <!-- Date -->
+  <text x="48" y="106" font-family="Georgia, serif" font-size="14" fill="#6a8a6a" letter-spacing="1">2026.06.17 — 경제 이슈</text>
+
+  <!-- Category label -->
+  <rect x="48" y="128" width="120" height="28" rx="3" fill="#7a9d6e" fill-opacity="0.2"/>
+  <text x="108" y="147" font-family="Georgia, serif" font-size="13" fill="#7a9d6e" text-anchor="middle" letter-spacing="1">경제 이슈</text>
+
+  <!-- Main headline: WTI -->
+  <text x="48" y="205" font-family="Georgia, serif" font-size="36" fill="#9ab090" letter-spacing="2">WTI 원유</text>
+  <text x="48" y="286" font-family="Georgia, serif" font-size="76" fill="#ffffff" font-weight="bold">$75.07</text>
+
+  <!-- Change badge — big red drop -->
+  <rect x="48" y="305" width="230" height="56" rx="6" fill="#d96552" fill-opacity="0.18" stroke="#d96552" stroke-width="2" stroke-opacity="0.6"/>
+  <polygon points="70,328 86,328 78,342" fill="#d96552"/>
+  <text x="96" y="342" font-family="Georgia, serif" font-size="32" fill="#d96552" font-weight="bold">−7.03%</text>
+
+  <!-- 4-day drop context -->
+  <text x="48" y="396" font-family="Georgia, serif" font-size="16" fill="#6a8a6a">전일 ~$80.75 → 하루 −$5.68</text>
+
+  <!-- 4-day cascade -->
+  <rect x="48" y="416" width="440" height="60" rx="5" fill="#d96552" fill-opacity="0.08" stroke="#d96552" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="64" y="438" font-family="Georgia, serif" font-size="14" fill="#9ab090">6/12</text>
+  <text x="100" y="438" font-family="Georgia, serif" font-size="16" fill="#d96552">$84.29</text>
+  <text x="175" y="438" font-family="Georgia, serif" font-size="16" fill="#6a8a6a">→</text>
+  <text x="200" y="438" font-family="Georgia, serif" font-size="14" fill="#9ab090">6/16</text>
+  <text x="236" y="438" font-family="Georgia, serif" font-size="16" fill="#d96552" font-weight="bold">$75.07</text>
+  <text x="360" y="438" font-family="Georgia, serif" font-size="15" fill="#d96552" font-weight="bold">−10.9%</text>
+  <text x="64" y="464" font-family="Georgia, serif" font-size="13" fill="#6a8a6a">4일 누적 하락 $9.22</text>
+
+  <!-- Interpretation split -->
+  <text x="48" y="516" font-family="Georgia, serif" font-size="14" fill="#6a8a6a" letter-spacing="1">해석</text>
+  <rect x="48" y="524" width="60" height="1" fill="#7a9d6e" opacity="0.4"/>
+
+  <rect x="48" y="536" width="200" height="56" rx="4" fill="#4adc7a" fill-opacity="0.08" stroke="#4adc7a" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="64" y="558" font-family="Georgia, serif" font-size="13" fill="#4adc7a">시나리오 A</text>
+  <text x="64" y="578" font-family="Georgia, serif" font-size="14" fill="#a0d0a0" font-weight="bold">공급 증가 → 인플레 완화</text>
+
+  <rect x="262" y="536" width="200" height="56" rx="4" fill="#d96552" fill-opacity="0.08" stroke="#d96552" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="278" y="558" font-family="Georgia, serif" font-size="13" fill="#d96552">시나리오 B</text>
+  <text x="278" y="578" font-family="Georgia, serif" font-size="14" fill="#d09090" font-weight="bold">수요 약화 → 경기 경고</text>
+
+  <!-- Current evidence note -->
+  <text x="48" y="628" font-family="Georgia, serif" font-size="13" fill="#7a9d6e">US10Y 완만한 하락(4.426%) → 시나리오 A 우세</text>
+
+  <!-- Right panel -->
+  <rect x="780" y="80" width="1" height="560" fill="#7a9d6e" opacity="0.1"/>
+
+  <!-- Right side content -->
+  <text x="820" y="155" font-family="Georgia, serif" font-size="19" fill="#7a9d6e" font-weight="bold">거시 지표 교차 확인</text>
+  <rect x="820" y="167" width="200" height="1.5" fill="#7a9d6e" opacity="0.3"/>
+
+  <!-- US10Y -->
+  <rect x="820" y="186" width="380" height="64" rx="4" fill="#4adc7a" fill-opacity="0.07" stroke="#4adc7a" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="836" y="210" font-family="Georgia, serif" font-size="14" fill="#6a8a6a">US10Y</text>
+  <text x="904" y="210" font-family="Georgia, serif" font-size="22" fill="#4adc7a" font-weight="bold">4.426%</text>
+  <text x="836" y="238" font-family="Georgia, serif" font-size="13" fill="#6a8a6a">완만한 하락 — 패닉 성격 아님</text>
+
+  <!-- Gold -->
+  <rect x="820" y="264" width="380" height="64" rx="4" fill="#d8b878" fill-opacity="0.07" stroke="#d8b878" stroke-width="1" stroke-opacity="0.25"/>
+  <text x="836" y="288" font-family="Georgia, serif" font-size="14" fill="#6a8a6a">Gold</text>
+  <text x="886" y="288" font-family="Georgia, serif" font-size="22" fill="#d8b878" font-weight="bold">$4,362.10</text>
+  <text x="836" y="316" font-family="Georgia, serif" font-size="13" fill="#d8b878">+0.79% — 침체 패닉 아님</text>
+
+  <!-- Korea impact -->
+  <rect x="820" y="354" width="380" height="120" rx="5" fill="#7a9d6e" fill-opacity="0.08" stroke="#7a9d6e" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="836" y="380" font-family="Georgia, serif" font-size="16" fill="#7a9d6e" font-weight="bold">한국 영향</text>
+  <text x="836" y="406" font-family="Georgia, serif" font-size="13" fill="#9ab090">★ 에너지 수입비용 추가 절감</text>
+  <text x="836" y="428" font-family="Georgia, serif" font-size="13" fill="#9ab090">★ 경상수지 흑자 확대 기대</text>
+  <text x="836" y="450" font-family="Georgia, serif" font-size="13" fill="#9ab090">★ 정유·항공·해운·화학 수혜</text>
+  <text x="836" y="464" font-family="Georgia, serif" font-size="11" fill="#6a8a6a">USD/KRW 1,508.67 원화 강세 잠재력</text>
+
+  <!-- CPI note -->
+  <rect x="820" y="494" width="380" height="56" rx="4" fill="#ffffff" fill-opacity="0.03" stroke="#7a9d6e" stroke-width="0.5" stroke-opacity="0.2"/>
+  <text x="836" y="518" font-family="Georgia, serif" font-size="13" fill="#6a8a6a">CPI 에너지 항목 영향</text>
+  <text x="836" y="538" font-family="Georgia, serif" font-size="14" fill="#7a9d6e">유가 −10% → CPI −0.4~0.5%p</text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="648" width="1280" height="72" fill="#000000" fill-opacity="0.3"/>
+  <text x="640" y="690" font-family="Georgia, serif" font-size="16" fill="#7a9d6e" text-anchor="middle" letter-spacing="2">WTI $75.07 — 4일 −10.9% · 인플레 완화 시나리오 강화</text>
+</svg>
