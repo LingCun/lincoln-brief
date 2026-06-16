@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#081408"/>
+      <stop offset="100%" stop-color="#0f200f"/>
+    </linearGradient>
+    <linearGradient id="greenLine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#5bd98a" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#5bd98a" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Left accent bar -->
+  <rect x="0" y="0" width="6" height="720" fill="#5bd98a"/>
+
+  <!-- Top line -->
+  <rect x="6" y="72" width="900" height="1" fill="url(#greenLine)"/>
+
+  <!-- Lincoln Brief mark -->
+  <text x="36" y="48" font-family="Georgia, serif" font-size="22" fill="#5bd98a" letter-spacing="3" font-weight="bold">LINCOLN BRIEF</text>
+
+  <!-- Edition -->
+  <text x="1244" y="40" font-family="Georgia, serif" font-size="18" fill="#5a8a6a" text-anchor="end">2026.06.17 — SLOT 06</text>
+  <text x="1244" y="62" font-family="Georgia, serif" font-size="14" fill="#4a7a5a" text-anchor="end">경제 이슈</text>
+
+  <!-- Category label -->
+  <rect x="36" y="90" width="200" height="32" rx="4" fill="#5bd98a" fill-opacity="0.12" stroke="#5bd98a" stroke-width="1"/>
+  <text x="136" y="111" font-family="Georgia, serif" font-size="14" fill="#5bd98a" text-anchor="middle" letter-spacing="2">ECONOMY ISSUE</text>
+
+  <!-- Headline -->
+  <text x="36" y="185" font-family="Georgia, serif" font-size="42" fill="#e0f0e0" font-weight="bold">Gold $4,353 vs WTI $75</text>
+  <text x="36" y="238" font-family="Georgia, serif" font-size="28" fill="#5a8a6a">두 원자재 역행 — 실질 금리 신호</text>
+
+  <!-- Diamond -->
+  <polygon points="36,262 44,270 36,278 28,270" fill="#5bd98a"/>
+
+  <!-- Gold data -->
+  <text x="36" y="340" font-family="Georgia, serif" font-size="22" fill="#5a8a6a">Gold (GC=F)</text>
+  <text x="36" y="395" font-family="Georgia, serif" font-size="68" fill="#e0f0e0" font-weight="bold">$4,353</text>
+  <polygon points="280,362 296,378 280,378" fill="#5bd98a"/>
+  <text x="302" y="380" font-family="Georgia, serif" font-size="32" fill="#5bd98a" font-weight="bold">+0.58%</text>
+
+  <!-- WTI data -->
+  <text x="36" y="448" font-family="Georgia, serif" font-size="22" fill="#5a8a6a">WTI (CL=F)</text>
+  <text x="36" y="503" font-family="Georgia, serif" font-size="68" fill="#e0f0e0" font-weight="bold">$75.83</text>
+  <polygon points="280,468 296,468 288,484" fill="#e05555"/>
+  <text x="302" y="484" font-family="Georgia, serif" font-size="32" fill="#e05555" font-weight="bold">−6.09%</text>
+
+  <!-- Insight bottom -->
+  <rect x="36" y="530" width="640" height="1" fill="#1a3a1a"/>
+  <text x="36" y="568" font-family="Georgia, serif" font-size="18" fill="#5a8a6a">Gold↑ WTI↓ US10Y↓ USD/KRW↓ — 골디락스 내러티브 수렴</text>
+  <text x="36" y="600" font-family="Georgia, serif" font-size="22" fill="#5bd98a" font-weight="bold">9월 FOMC 인하 기대 — 채권·금 선행 반영 중</text>
+
+  <!-- Right panel — macro convergence visual -->
+  <rect x="720" y="90" width="524" height="590" rx="8" fill="#081408" stroke="#1a3a1a" stroke-width="1"/>
+
+  <text x="982" y="140" font-family="Georgia, serif" font-size="20" fill="#5bd98a" text-anchor="middle" letter-spacing="2">내러티브 수렴</text>
+  <rect x="760" y="152" width="444" height="1" fill="#1a3a1a"/>
+
+  <!-- Center arrow diagram -->
+  <!-- Central concept box -->
+  <rect x="852" y="260" width="260" height="70" rx="8" fill="#0f2a0f" stroke="#5bd98a" stroke-width="1.5"/>
+  <text x="982" y="290" font-family="Georgia, serif" font-size="16" fill="#5bd98a" text-anchor="middle">인플레이션 완화</text>
+  <text x="982" y="315" font-family="Georgia, serif" font-size="16" fill="#5bd98a" text-anchor="middle">연준 피벗 기대</text>
+
+  <!-- Arrow from WTI -->
+  <line x1="800" y1="200" x2="900" y2="270" stroke="#e05555" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <text x="770" y="195" font-family="Georgia, serif" font-size="16" fill="#e05555" text-anchor="middle">WTI ↓</text>
+  <text x="770" y="215" font-family="Georgia, serif" font-size="14" fill="#6a4a4a" text-anchor="middle">에너지 인플레 완화</text>
+
+  <!-- Arrow from Gold -->
+  <line x1="1160" y1="200" x2="1062" y2="270" stroke="#5bd98a" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <text x="1178" y="195" font-family="Georgia, serif" font-size="16" fill="#5bd98a" text-anchor="middle">Gold ↑</text>
+  <text x="1178" y="215" font-family="Georgia, serif" font-size="14" fill="#4a6a4a" text-anchor="middle">실질금리 하락</text>
+
+  <!-- Arrow from US10Y -->
+  <line x1="800" y1="430" x2="900" y2="360" stroke="#4a90d9" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <text x="756" y="440" font-family="Georgia, serif" font-size="16" fill="#4a90d9" text-anchor="middle">US10Y ↓</text>
+  <text x="756" y="460" font-family="Georgia, serif" font-size="14" fill="#4a6a8a" text-anchor="middle">4.428%</text>
+
+  <!-- Arrow from USD/KRW -->
+  <line x1="1160" y1="430" x2="1062" y2="360" stroke="#d8b878" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <text x="1190" y="440" font-family="Georgia, serif" font-size="16" fill="#d8b878" text-anchor="middle">달러 ↓</text>
+  <text x="1190" y="460" font-family="Georgia, serif" font-size="14" fill="#8a7a50" text-anchor="middle">1,508.32</text>
+
+  <!-- Timeline section -->
+  <rect x="760" y="495" width="444" height="1" fill="#1a3a1a"/>
+  <text x="760" y="530" font-family="Georgia, serif" font-size="16" fill="#5a8a6a">CPI 타임라인</text>
+  <text x="760" y="558" font-family="Georgia, serif" font-size="20" fill="#e0f0e0" font-weight="bold">7월 초 6월 CPI → 에너지↓ 확인</text>
+  <text x="760" y="585" font-family="Georgia, serif" font-size="20" fill="#e0f0e0" font-weight="bold">9월 FOMC → 25bp 인하 가능성</text>
+  <text x="760" y="612" font-family="Georgia, serif" font-size="16" fill="#5a8a6a">임계점: WTI $70 이하 = 수요 붕괴 경고</text>
+  <text x="760" y="636" font-family="Georgia, serif" font-size="16" fill="#5a8a6a">임계점: US10Y 4.4% 이탈 = 선반영 신호</text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="700" width="1280" height="20" fill="#040a04"/>
+  <text x="640" y="714" font-family="Georgia, serif" font-size="11" fill="#2a4a2a" text-anchor="middle" letter-spacing="1">※ 본 글은 정보 제공 목적이며 투자 권유가 아닙니다 — LINCOLN BRIEF</text>
+</svg>
