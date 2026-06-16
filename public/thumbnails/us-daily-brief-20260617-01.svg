@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f0c08"/>
+      <stop offset="100%" stop-color="#1a1510"/>
+    </linearGradient>
+    <linearGradient id="gold-glow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d8b878" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#d8b878" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg-grad)"/>
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="1280" height="4" fill="#d8b878"/>
+
+  <!-- Left side gold glow panel -->
+  <rect x="0" y="0" width="500" height="720" fill="url(#gold-glow)"/>
+
+  <!-- Lincoln Brief logo -->
+  <text x="48" y="58" font-family="Georgia, serif" font-size="18" fill="#d8b878" font-weight="bold" letter-spacing="3">LINCOLN BRIEF</text>
+  <rect x="48" y="66" width="160" height="1.5" fill="#d8b878" opacity="0.5"/>
+
+  <!-- Edition label -->
+  <rect x="1092" y="28" width="140" height="36" rx="4" fill="#d8b878" fill-opacity="0.12" stroke="#d8b878" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="1162" y="52" font-family="Georgia, serif" font-size="13" fill="#d8b878" text-anchor="middle" letter-spacing="2">US 01:00</text>
+
+  <!-- Date -->
+  <text x="48" y="106" font-family="Georgia, serif" font-size="14" fill="#8a7a5a" letter-spacing="1">2026.06.17 — 6/16 마감</text>
+
+  <!-- Category label -->
+  <rect x="48" y="128" width="130" height="28" rx="3" fill="#d8b878" fill-opacity="0.2"/>
+  <text x="113" y="147" font-family="Georgia, serif" font-size="13" fill="#d8b878" text-anchor="middle" letter-spacing="1">데일리 시황</text>
+
+  <!-- Main headline — S&P -->
+  <text x="48" y="220" font-family="Georgia, serif" font-size="52" fill="#ffffff" font-weight="bold">S&amp;P 7,529</text>
+  <polygon points="390,193 406,193 398,178" fill="#e05c5c" transform="rotate(180 398 185.5)"/>
+  <text x="412" y="220" font-family="Georgia, serif" font-size="30" fill="#e05c5c" font-weight="bold">−0.32%</text>
+
+  <!-- Sub-indices row -->
+  <text x="48" y="272" font-family="Georgia, serif" font-size="22" fill="#c0b090">NASDAQ</text>
+  <text x="185" y="272" font-family="Georgia, serif" font-size="22" fill="#ffffff" font-weight="bold">26,530</text>
+  <polygon points="338,255 350,255 344,244" fill="#e05c5c" transform="rotate(180 344 249.5)"/>
+  <text x="358" y="272" font-family="Georgia, serif" font-size="20" fill="#e05c5c">−0.57%</text>
+
+  <text x="48" y="312" font-family="Georgia, serif" font-size="22" fill="#c0b090">DOW</text>
+  <text x="130" y="312" font-family="Georgia, serif" font-size="22" fill="#ffffff" font-weight="bold">52,075</text>
+  <polygon points="288,293 300,293 294,282" fill="#4adc7a"/>
+  <text x="308" y="312" font-family="Georgia, serif" font-size="20" fill="#4adc7a">+0.78%</text>
+
+  <!-- Divider -->
+  <rect x="48" y="338" width="460" height="1" fill="#d8b878" opacity="0.3"/>
+
+  <!-- Key movers -->
+  <rect x="48" y="356" width="460" height="80" rx="6" fill="#d8b878" fill-opacity="0.08" stroke="#d8b878" stroke-width="0.5" stroke-opacity="0.3"/>
+  <text x="68" y="384" font-family="Georgia, serif" font-size="15" fill="#8a7a5a" letter-spacing="1">섹터 로테이션</text>
+  <text x="68" y="414" font-family="Georgia, serif" font-size="24" fill="#ffffff" font-weight="bold">JPM +3.35%  ·  AVGO −3.26%</text>
+
+  <!-- WTI alert -->
+  <text x="48" y="470" font-family="Georgia, serif" font-size="15" fill="#8a7a5a">WTI</text>
+  <text x="90" y="470" font-family="Georgia, serif" font-size="22" fill="#ffffff" font-weight="bold">$75.07</text>
+  <polygon points="218,453 230,453 224,442" fill="#e05c5c" transform="rotate(180 224 447.5)"/>
+  <text x="238" y="470" font-family="Georgia, serif" font-size="20" fill="#e05c5c" font-weight="bold">−7.03%</text>
+
+  <!-- Right column divider -->
+  <rect x="570" y="90" width="2" height="540" fill="#d8b878" opacity="0.2"/>
+
+  <!-- Macro data -->
+  <text x="610" y="140" font-family="Georgia, serif" font-size="14" fill="#8a7a5a" letter-spacing="2">거시 지표</text>
+  <rect x="610" y="150" width="80" height="1" fill="#d8b878" opacity="0.4"/>
+
+  <!-- US10Y -->
+  <text x="610" y="198" font-family="Georgia, serif" font-size="16" fill="#c0b090">US10Y</text>
+  <text x="700" y="198" font-family="Georgia, serif" font-size="24" fill="#ffffff" font-weight="bold">4.426%</text>
+  <polygon points="880,182 892,182 886,171" fill="#4adc7a" transform="rotate(180 886 176.5)"/>
+  <text x="900" y="198" font-family="Georgia, serif" font-size="16" fill="#4adc7a">−0.043%p</text>
+
+  <!-- Gold -->
+  <text x="610" y="248" font-family="Georgia, serif" font-size="16" fill="#c0b090">Gold</text>
+  <text x="700" y="248" font-family="Georgia, serif" font-size="24" fill="#ffffff" font-weight="bold">$4,362</text>
+  <polygon points="842,232 854,232 848,221" fill="#4adc7a"/>
+  <text x="862" y="248" font-family="Georgia, serif" font-size="16" fill="#4adc7a">+0.79%</text>
+
+  <!-- WTI large -->
+  <text x="610" y="298" font-family="Georgia, serif" font-size="16" fill="#c0b090">WTI</text>
+  <text x="700" y="298" font-family="Georgia, serif" font-size="24" fill="#ffffff" font-weight="bold">$75.07</text>
+  <polygon points="842,282 854,282 848,271" fill="#e05c5c" transform="rotate(180 848 276.5)"/>
+  <text x="862" y="298" font-family="Georgia, serif" font-size="16" fill="#e05c5c" font-weight="bold">−7.03%</text>
+
+  <!-- USD/KRW -->
+  <text x="610" y="348" font-family="Georgia, serif" font-size="16" fill="#c0b090">USD/KRW</text>
+  <text x="740" y="348" font-family="Georgia, serif" font-size="24" fill="#ffffff" font-weight="bold">1,508.67</text>
+
+  <!-- Divider -->
+  <rect x="610" y="370" width="620" height="1" fill="#d8b878" opacity="0.25"/>
+
+  <!-- Story headline -->
+  <text x="610" y="420" font-family="Georgia, serif" font-size="17" fill="#d8b878" font-weight="bold">DOW vs NASDAQ 반전</text>
+  <text x="610" y="452" font-family="Georgia, serif" font-size="14" fill="#8a7a5a">테크 약세 · 금융주 강세</text>
+  <text x="610" y="480" font-family="Georgia, serif" font-size="14" fill="#8a7a5a">WTI 6거래일 누적 −18.3%</text>
+
+  <!-- Bottom signature -->
+  <text x="610" y="640" font-family="Georgia, serif" font-size="13" fill="#5a4a2a" letter-spacing="1">lincoln-brief.vercel.app</text>
+  <text x="48" y="680" font-family="Georgia, serif" font-size="12" fill="#3a3020">※ 정보 제공 목적이며 투자 권유가 아닙니다</text>
+</svg>

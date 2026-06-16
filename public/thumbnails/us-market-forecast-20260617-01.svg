@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#100808"/>
+      <stop offset="100%" stop-color="#1a1010"/>
+    </linearGradient>
+    <linearGradient id="red-glow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d96552" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#d96552" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg-grad)"/>
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="1280" height="4" fill="#d96552"/>
+
+  <!-- Left glow panel -->
+  <rect x="0" y="0" width="500" height="720" fill="url(#red-glow)"/>
+
+  <!-- Lincoln Brief logo -->
+  <text x="48" y="58" font-family="Georgia, serif" font-size="18" fill="#d96552" font-weight="bold" letter-spacing="3">LINCOLN BRIEF</text>
+  <rect x="48" y="66" width="160" height="1.5" fill="#d96552" opacity="0.5"/>
+
+  <!-- Edition label -->
+  <rect x="1092" y="28" width="140" height="36" rx="4" fill="#d96552" fill-opacity="0.15" stroke="#d96552" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="1162" y="52" font-family="Georgia, serif" font-size="13" fill="#d96552" text-anchor="middle" letter-spacing="2">US 01:00</text>
+
+  <!-- Date -->
+  <text x="48" y="106" font-family="Georgia, serif" font-size="14" fill="#8a5a50" letter-spacing="1">2026.06.17 — 주간 전망</text>
+
+  <!-- Category label -->
+  <rect x="48" y="128" width="130" height="28" rx="3" fill="#d96552" fill-opacity="0.2"/>
+  <text x="113" y="147" font-family="Georgia, serif" font-size="13" fill="#d96552" text-anchor="middle" letter-spacing="1">시장 예측</text>
+
+  <!-- Main headline -->
+  <text x="48" y="216" font-family="Georgia, serif" font-size="40" fill="#ffffff" font-weight="bold">섹터 로테이션</text>
+  <text x="48" y="264" font-family="Georgia, serif" font-size="40" fill="#ffffff" font-weight="bold">1일째</text>
+
+  <!-- Sub headline -->
+  <text x="48" y="308" font-family="Georgia, serif" font-size="20" fill="#b08080">DOW vs NASDAQ 반전이 추세로 굳는 조건</text>
+
+  <!-- Divider -->
+  <rect x="48" y="332" width="480" height="1" fill="#d96552" opacity="0.4"/>
+
+  <!-- Scenarios grid -->
+  <text x="48" y="370" font-family="Georgia, serif" font-size="15" fill="#8a5a50" letter-spacing="1">4주 시나리오</text>
+
+  <!-- A -->
+  <rect x="48" y="388" width="220" height="70" rx="4" fill="#d96552" fill-opacity="0.08" stroke="#d96552" stroke-width="0.5" stroke-opacity="0.3"/>
+  <text x="68" y="412" font-family="Georgia, serif" font-size="13" fill="#d96552">경로 A — 25%</text>
+  <text x="68" y="434" font-family="Georgia, serif" font-size="12" fill="#c0a090">가치주 선도 지속</text>
+  <text x="68" y="452" font-family="Georgia, serif" font-size="12" fill="#c0a090">WTI $72 이하</text>
+
+  <!-- B -->
+  <rect x="280" y="388" width="220" height="70" rx="4" fill="#4adc7a" fill-opacity="0.08" stroke="#4adc7a" stroke-width="0.5" stroke-opacity="0.3"/>
+  <text x="300" y="412" font-family="Georgia, serif" font-size="13" fill="#4adc7a">경로 B — 30%</text>
+  <text x="300" y="434" font-family="Georgia, serif" font-size="12" fill="#90c0a0">테크 회귀</text>
+  <text x="300" y="452" font-family="Georgia, serif" font-size="12" fill="#90c0a0">US10Y 4.4% 이하</text>
+
+  <!-- C -->
+  <rect x="48" y="470" width="220" height="70" rx="4" fill="#d8b878" fill-opacity="0.08" stroke="#d8b878" stroke-width="0.5" stroke-opacity="0.3"/>
+  <text x="68" y="494" font-family="Georgia, serif" font-size="13" fill="#d8b878">경로 C — 30%</text>
+  <text x="68" y="516" font-family="Georgia, serif" font-size="12" fill="#c0b090">횡보 소화</text>
+  <text x="68" y="534" font-family="Georgia, serif" font-size="12" fill="#c0b090">7,450~7,600 박스</text>
+
+  <!-- D -->
+  <rect x="280" y="470" width="220" height="70" rx="4" fill="#e05c5c" fill-opacity="0.08" stroke="#e05c5c" stroke-width="0.5" stroke-opacity="0.3"/>
+  <text x="300" y="494" font-family="Georgia, serif" font-size="13" fill="#e05c5c">경로 D — 15%</text>
+  <text x="300" y="516" font-family="Georgia, serif" font-size="12" fill="#c08080">거시 충격</text>
+  <text x="300" y="534" font-family="Georgia, serif" font-size="12" fill="#c08080">WTI $70 이하</text>
+
+  <!-- Right column -->
+  <rect x="570" y="90" width="2" height="540" fill="#d96552" opacity="0.2"/>
+
+  <!-- Right header -->
+  <text x="610" y="140" font-family="Georgia, serif" font-size="14" fill="#8a5a50" letter-spacing="2">현재 포지션</text>
+  <rect x="610" y="150" width="80" height="1" fill="#d96552" opacity="0.4"/>
+
+  <!-- S&P -->
+  <text x="610" y="200" font-family="Georgia, serif" font-size="16" fill="#b08080">S&amp;P 500</text>
+  <text x="730" y="200" font-family="Georgia, serif" font-size="22" fill="#ffffff" font-weight="bold">7,529.87</text>
+  <polygon points="908,185 920,185 914,174" fill="#e05c5c" transform="rotate(180 914 179.5)"/>
+  <text x="928" y="200" font-family="Georgia, serif" font-size="16" fill="#e05c5c">−0.32%</text>
+
+  <!-- NASDAQ -->
+  <text x="610" y="248" font-family="Georgia, serif" font-size="16" fill="#b08080">NASDAQ</text>
+  <text x="730" y="248" font-family="Georgia, serif" font-size="22" fill="#ffffff" font-weight="bold">26,530</text>
+  <polygon points="876,233 888,233 882,222" fill="#e05c5c" transform="rotate(180 882 227.5)"/>
+  <text x="896" y="248" font-family="Georgia, serif" font-size="16" fill="#e05c5c">−0.57%</text>
+
+  <!-- DOW -->
+  <text x="610" y="296" font-family="Georgia, serif" font-size="16" fill="#b08080">DOW</text>
+  <text x="730" y="296" font-family="Georgia, serif" font-size="22" fill="#ffffff" font-weight="bold">52,075</text>
+  <polygon points="876,280 888,280 882,269" fill="#4adc7a"/>
+  <text x="896" y="296" font-family="Georgia, serif" font-size="16" fill="#4adc7a">+0.78%</text>
+
+  <!-- Divider -->
+  <rect x="610" y="316" width="620" height="1" fill="#d96552" opacity="0.25"/>
+
+  <!-- Key indicators -->
+  <text x="610" y="356" font-family="Georgia, serif" font-size="14" fill="#8a5a50" letter-spacing="2">핵심 관찰 지표</text>
+
+  <text x="610" y="396" font-family="Georgia, serif" font-size="15" fill="#b08080">US10Y</text>
+  <text x="700" y="396" font-family="Georgia, serif" font-size="18" fill="#ffffff" font-weight="bold">4.426%</text>
+  <text x="840" y="396" font-family="Georgia, serif" font-size="13" fill="#4adc7a">→ 4.4% 이하 = 테크 회귀</text>
+
+  <text x="610" y="432" font-family="Georgia, serif" font-size="15" fill="#b08080">WTI</text>
+  <text x="700" y="432" font-family="Georgia, serif" font-size="18" fill="#ffffff" font-weight="bold">$75.07</text>
+  <text x="840" y="432" font-family="Georgia, serif" font-size="13" fill="#d96552">→ $70 이하 = 경기 침체 리스크</text>
+
+  <text x="610" y="468" font-family="Georgia, serif" font-size="15" fill="#b08080">S&amp;P 지지선</text>
+  <text x="720" y="468" font-family="Georgia, serif" font-size="18" fill="#ffffff" font-weight="bold">7,500</text>
+  <text x="840" y="468" font-family="Georgia, serif" font-size="13" fill="#d8b878">→ 이탈 여부 모니터링</text>
+
+  <!-- Q2 earnings note -->
+  <rect x="610" y="492" width="620" height="54" rx="4" fill="#d96552" fill-opacity="0.08" stroke="#d96552" stroke-width="0.5"/>
+  <text x="630" y="518" font-family="Georgia, serif" font-size="14" fill="#b08080">Q2 실적 시즌 전초전</text>
+  <text x="630" y="540" font-family="Georgia, serif" font-size="14" fill="#c0a090">JPM 7월 14일 발표 — 방향 결정</text>
+
+  <!-- Bottom signature -->
+  <text x="610" y="640" font-family="Georgia, serif" font-size="13" fill="#5a3a30" letter-spacing="1">lincoln-brief.vercel.app</text>
+  <text x="48" y="680" font-family="Georgia, serif" font-size="12" fill="#3a2020">※ 정보 제공 목적이며 투자 권유가 아닙니다</text>
+</svg>
