@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#080c10"/>
+      <stop offset="100%" stop-color="#101820"/>
+    </linearGradient>
+    <linearGradient id="blue-glow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5677b0" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#5677b0" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg-grad)"/>
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="1280" height="4" fill="#5677b0"/>
+
+  <!-- Left glow panel -->
+  <rect x="0" y="0" width="500" height="720" fill="url(#blue-glow)"/>
+
+  <!-- Lincoln Brief logo -->
+  <text x="48" y="58" font-family="Georgia, serif" font-size="18" fill="#5677b0" font-weight="bold" letter-spacing="3">LINCOLN BRIEF</text>
+  <rect x="48" y="66" width="160" height="1.5" fill="#5677b0" opacity="0.5"/>
+
+  <!-- Edition label -->
+  <rect x="1092" y="28" width="140" height="36" rx="4" fill="#5677b0" fill-opacity="0.15" stroke="#5677b0" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="1162" y="52" font-family="Georgia, serif" font-size="13" fill="#5677b0" text-anchor="middle" letter-spacing="2">US 01:00</text>
+
+  <!-- Date -->
+  <text x="48" y="106" font-family="Georgia, serif" font-size="14" fill="#6a7a9a" letter-spacing="1">2026.06.17 — 6/16 마감</text>
+
+  <!-- Category label -->
+  <rect x="48" y="128" width="130" height="28" rx="3" fill="#5677b0" fill-opacity="0.25"/>
+  <text x="113" y="147" font-family="Georgia, serif" font-size="13" fill="#8aa4d0" text-anchor="middle" letter-spacing="1">종목 분석</text>
+
+  <!-- Ticker -->
+  <text x="48" y="196" font-family="Georgia, serif" font-size="20" fill="#6a7a9a" letter-spacing="4">JPMorgan Chase</text>
+
+  <!-- Main price -->
+  <text x="48" y="270" font-family="Georgia, serif" font-size="68" fill="#ffffff" font-weight="bold">$330.10</text>
+
+  <!-- Change -->
+  <polygon points="48,295 66,295 57,280" fill="#4adc7a"/>
+  <text x="74" y="310" font-family="Georgia, serif" font-size="32" fill="#4adc7a" font-weight="bold">+3.35%</text>
+
+  <!-- Context -->
+  <text x="48" y="354" font-family="Georgia, serif" font-size="18" fill="#8090b0">NASDAQ −0.57% 세션에서 최대 상승</text>
+
+  <!-- Divider -->
+  <rect x="48" y="376" width="480" height="1" fill="#5677b0" opacity="0.4"/>
+
+  <!-- Key metrics row -->
+  <text x="48" y="416" font-family="Georgia, serif" font-size="15" fill="#6a7a9a">P/E</text>
+  <text x="100" y="416" font-family="Georgia, serif" font-size="18" fill="#ffffff" font-weight="bold">15.81</text>
+
+  <text x="220" y="416" font-family="Georgia, serif" font-size="15" fill="#6a7a9a">배당</text>
+  <text x="268" y="416" font-family="Georgia, serif" font-size="18" fill="#ffffff" font-weight="bold">1.88%</text>
+
+  <text x="380" y="416" font-family="Georgia, serif" font-size="15" fill="#6a7a9a">목표가</text>
+  <text x="436" y="416" font-family="Georgia, serif" font-size="18" fill="#ffffff" font-weight="bold">$342.19</text>
+
+  <!-- Earnings date highlight -->
+  <rect x="48" y="440" width="460" height="56" rx="6" fill="#5677b0" fill-opacity="0.12" stroke="#5677b0" stroke-width="0.8" stroke-opacity="0.4"/>
+  <text x="68" y="466" font-family="Georgia, serif" font-size="14" fill="#6a7a9a">Q2 실적 발표</text>
+  <text x="68" y="488" font-family="Georgia, serif" font-size="20" fill="#ffffff" font-weight="bold">2026년 7월 14일</text>
+
+  <!-- 52W range -->
+  <text x="48" y="530" font-family="Georgia, serif" font-size="14" fill="#6a7a9a">52주 최저  $267.80  ·  최고  $337.25  ·  현재  $330.10</text>
+  <text x="48" y="556" font-family="Georgia, serif" font-size="14" fill="#8aa4d0">최고점까지  +$7.15 (+2.2%)</text>
+
+  <!-- Right column divider -->
+  <rect x="570" y="90" width="2" height="540" fill="#5677b0" opacity="0.2"/>
+
+  <!-- Right column header -->
+  <text x="610" y="140" font-family="Georgia, serif" font-size="14" fill="#6a7a9a" letter-spacing="2">30일 수익률 추이</text>
+  <rect x="610" y="150" width="80" height="1" fill="#5677b0" opacity="0.4"/>
+
+  <!-- Sparkline simplified bars -->
+  <text x="610" y="200" font-family="Georgia, serif" font-size="14" fill="#6a7a9a">30일 전</text>
+  <text x="700" y="200" font-family="Georgia, serif" font-size="22" fill="#c0c8d8" font-weight="bold">$309.40</text>
+
+  <text x="610" y="250" font-family="Georgia, serif" font-size="14" fill="#6a7a9a">박스권</text>
+  <text x="700" y="250" font-family="Georgia, serif" font-size="22" fill="#c0c8d8" font-weight="bold">$296~$315</text>
+
+  <text x="610" y="300" font-family="Georgia, serif" font-size="14" fill="#6a7a9a">최근 상승</text>
+  <text x="700" y="300" font-family="Georgia, serif" font-size="22" fill="#c0c8d8" font-weight="bold">$313~$330</text>
+
+  <text x="610" y="350" font-family="Georgia, serif" font-size="14" fill="#6a7a9a">30일 수익</text>
+  <text x="700" y="350" font-family="Georgia, serif" font-size="22" fill="#4adc7a" font-weight="bold">+6.7%</text>
+
+  <!-- Divider -->
+  <rect x="610" y="372" width="620" height="1" fill="#5677b0" opacity="0.3"/>
+
+  <!-- Scenario box -->
+  <text x="610" y="420" font-family="Georgia, serif" font-size="16" fill="#8aa4d0" font-weight="bold">4주 베이스 시나리오</text>
+  <text x="610" y="450" font-family="Georgia, serif" font-size="14" fill="#6a7a9a">$320~$335 박스 횡보 (45%)</text>
+  <text x="610" y="478" font-family="Georgia, serif" font-size="14" fill="#4adc7a">고점 재돌파 $337+ (30%)</text>
+  <text x="610" y="506" font-family="Georgia, serif" font-size="14" fill="#e05c5c">이익 실현 조정 (20%)</text>
+
+  <!-- Sector rotation note -->
+  <rect x="610" y="530" width="620" height="54" rx="4" fill="#5677b0" fill-opacity="0.10" stroke="#5677b0" stroke-width="0.5"/>
+  <text x="630" y="556" font-family="Georgia, serif" font-size="14" fill="#8aa4d0">섹터 로테이션 수혜 — AVGO −3.26%·MSFT −1.91% 약세 속</text>
+  <text x="630" y="576" font-family="Georgia, serif" font-size="14" fill="#8aa4d0">금융주 홀로 역주행</text>
+
+  <!-- Bottom signature -->
+  <text x="610" y="640" font-family="Georgia, serif" font-size="13" fill="#3a4a6a" letter-spacing="1">lincoln-brief.vercel.app</text>
+  <text x="48" y="680" font-family="Georgia, serif" font-size="12" fill="#2a3040">※ 정보 제공 목적이며 투자 권유가 아닙니다</text>
+</svg>
