@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#080e1a"/>
+      <stop offset="100%" stop-color="#0a1220"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f0d88c"/>
+      <stop offset="50%" stop-color="#d8b878"/>
+      <stop offset="100%" stop-color="#b89a5a"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#d8b878" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#d8b878" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#4080ff" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#4080ff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1100" cy="200" r="480" fill="url(#glow1)"/>
+  <circle cx="200" cy="550" r="300" fill="url(#glow2)"/>
+
+  <!-- Header -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#d8b878" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#f5edd9">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#d8b878">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#d8b878" text-anchor="end">2026.06.16 16:00 KST · KR STOCK</text>
+
+  <!-- Edition label -->
+  <text x="80" y="160" font-family="monospace" font-size="13" letter-spacing="5" fill="#d8b878">— 종목 분석 (SLOT 16) —</text>
+
+  <!-- Badge -->
+  <rect x="80" y="176" width="840" height="30" rx="4" fill="#4080ff" fill-opacity="0.16" stroke="#4080ff" stroke-width="0.8"/>
+  <text x="92" y="196" font-family="monospace" font-size="12" letter-spacing="2" fill="#7ab0ff">30일 신고점 +19,000원 초과 · June 8 저점 대비 +24.65% · FOMC D-2</text>
+
+  <!-- Main title -->
+  <text x="80" y="300" font-family="Playfair Display, Georgia, serif" font-size="70" font-weight="500" fill="#f5edd9">SK하이닉스</text>
+  <text x="80" y="362" font-family="Playfair Display, Georgia, serif" font-size="44" font-style="italic" fill="url(#gold)">2,382,000원 (+4.11%)</text>
+  <text x="80" y="410" font-family="sans-serif" font-size="17" fill="#8898cc">30일 신고점 확정 · 전일 대비 +94,000원 · 이전 고점(2,363,000) 19,000원 초과</text>
+
+  <!-- Divider -->
+  <line x1="80" y1="448" x2="1200" y2="448" stroke="#141a28" stroke-width="1"/>
+
+  <!-- Metrics row -->
+  <g transform="translate(80, 482)">
+    <!-- 종가 -->
+    <g>
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#d8b878" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="3" fill="#a89060">종가 확정</text>
+      <text x="0" y="66" font-family="Playfair Display, Georgia, serif" font-size="26" fill="#f5edd9">2,382,000원</text>
+      <polygon points="28,88 14,72 0,88" fill="#40e880"/>
+      <text x="36" y="87" font-family="monospace" font-size="16" fill="#40e880">+4.11%</text>
+    </g>
+    <!-- 전일 -->
+    <g transform="translate(320, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#d8b878" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="3" fill="#a89060">June 8 저점</text>
+      <text x="0" y="66" font-family="Playfair Display, Georgia, serif" font-size="26" fill="#f5edd9">1,911,000원</text>
+      <text x="0" y="90" font-family="monospace" font-size="14" fill="#40e880">+24.65% 회복</text>
+    </g>
+    <!-- 30일 고점 -->
+    <g transform="translate(640, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#d8b878" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="3" fill="#a89060">이전 30일 고점</text>
+      <text x="0" y="66" font-family="Playfair Display, Georgia, serif" font-size="26" fill="#f5edd9">2,363,000원</text>
+      <text x="0" y="90" font-family="monospace" font-size="14" fill="#d8b878">+19,000원 초과</text>
+    </g>
+    <!-- NVDA -->
+    <g transform="translate(940, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#d8b878" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="3" fill="#a89060">NVDA</text>
+      <text x="0" y="66" font-family="Playfair Display, Georgia, serif" font-size="26" fill="#f5edd9">$212.45</text>
+      <polygon points="22,88 11,72 0,88" fill="#40e880"/>
+      <text x="28" y="87" font-family="monospace" font-size="14" fill="#40e880">+3.70%</text>
+    </g>
+  </g>
+
+  <!-- Footer -->
+  <line x1="80" y1="690" x2="1200" y2="690" stroke="#141a28" stroke-width="1"/>
+  <text x="80" y="710" font-family="monospace" font-size="10" fill="#485868">lincoln-brief.vercel.app · 정보 제공 목적, 투자 권유 아님</text>
+</svg>
