@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#120d00"/>
+      <stop offset="100%" stop-color="#1a1400"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f0d88c"/>
+      <stop offset="50%" stop-color="#d8b878"/>
+      <stop offset="100%" stop-color="#b89a5a"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#d8b878" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#d8b878" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#f0a040" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#f0a040" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1100" cy="200" r="480" fill="url(#glow1)"/>
+  <circle cx="180" cy="560" r="300" fill="url(#glow2)"/>
+
+  <!-- Header -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#d8b878" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#f5edd9">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#d8b878">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#d8b878" text-anchor="end">2026.06.16 16:00 KST · KR FORECAST</text>
+
+  <!-- Edition label -->
+  <text x="80" y="160" font-family="monospace" font-size="13" letter-spacing="5" fill="#d8b878">— 시장 예측 (SLOT 16) —</text>
+
+  <!-- Badge -->
+  <rect x="80" y="176" width="880" height="30" rx="4" fill="#f0a040" fill-opacity="0.16" stroke="#f0a040" stroke-width="0.8"/>
+  <text x="92" y="196" font-family="monospace" font-size="12" letter-spacing="2" fill="#f0c070">3가지 조건 모두 충족 — 불 시나리오 50% 상향 · FOMC D-2</text>
+
+  <!-- Main title -->
+  <text x="80" y="300" font-family="Playfair Display, Georgia, serif" font-size="70" font-weight="500" fill="#f5edd9">불 시나리오 50%</text>
+  <text x="80" y="362" font-family="Playfair Display, Georgia, serif" font-size="40" font-style="italic" fill="url(#gold)">ATH(8,829) 102.4포인트 전방</text>
+  <text x="80" y="408" font-family="sans-serif" font-size="17" fill="#c8a870">NVDA $210 ✓ · KOSPI 8,700 ✓ · USD/KRW 1,506 (1,510 조건 충족) ✓</text>
+
+  <!-- Divider -->
+  <line x1="80" y1="445" x2="1200" y2="445" stroke="#281e00" stroke-width="1"/>
+
+  <!-- Scenario boxes -->
+  <g transform="translate(80, 472)">
+    <!-- 불 -->
+    <rect x="0" y="0" width="260" height="90" rx="6" fill="#40e880" fill-opacity="0.12" stroke="#40e880" stroke-width="1"/>
+    <text x="14" y="22" font-family="monospace" font-size="11" letter-spacing="2" fill="#40e880">불 시나리오</text>
+    <text x="14" y="54" font-family="Playfair Display, Georgia, serif" font-size="34" fill="#f5edd9">50%</text>
+    <text x="14" y="76" font-family="monospace" font-size="10" fill="#8aaa88">ATH 8,829 재탈환·돌파</text>
+    <!-- 베이스 -->
+    <rect x="280" y="0" width="220" height="90" rx="6" fill="#d8b878" fill-opacity="0.10" stroke="#d8b878" stroke-width="0.8"/>
+    <text x="294" y="22" font-family="monospace" font-size="11" letter-spacing="2" fill="#d8b878">베이스</text>
+    <text x="294" y="54" font-family="Playfair Display, Georgia, serif" font-size="34" fill="#f5edd9">28%</text>
+    <text x="294" y="76" font-family="monospace" font-size="10" fill="#a89060">8,650~8,900 박스</text>
+    <!-- 베어 -->
+    <rect x="520" y="0" width="220" height="90" rx="6" fill="#e85050" fill-opacity="0.10" stroke="#e85050" stroke-width="0.8"/>
+    <text x="534" y="22" font-family="monospace" font-size="11" letter-spacing="2" fill="#e85050">베어</text>
+    <text x="534" y="54" font-family="Playfair Display, Georgia, serif" font-size="34" fill="#f5edd9">17%</text>
+    <text x="534" y="76" font-family="monospace" font-size="10" fill="#a05050">8,200~8,600 되돌림</text>
+    <!-- 블랙스완 -->
+    <rect x="760" y="0" width="180" height="90" rx="6" fill="#8050a0" fill-opacity="0.10" stroke="#8050a0" stroke-width="0.8"/>
+    <text x="774" y="22" font-family="monospace" font-size="11" letter-spacing="2" fill="#a070c0">블랙스완</text>
+    <text x="774" y="54" font-family="Playfair Display, Georgia, serif" font-size="34" fill="#f5edd9">5%</text>
+    <text x="774" y="76" font-family="monospace" font-size="10" fill="#7060a0">저점 재시험</text>
+  </g>
+
+  <!-- Footer -->
+  <line x1="80" y1="690" x2="1200" y2="690" stroke="#281e00" stroke-width="1"/>
+  <text x="80" y="710" font-family="monospace" font-size="10" fill="#6a5820">lincoln-brief.vercel.app · 정보 제공 목적, 투자 권유 아님</text>
+</svg>
