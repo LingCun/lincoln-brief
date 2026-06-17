@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#140808"/>
+      <stop offset="100%" stop-color="#1e1010"/>
+    </linearGradient>
+    <linearGradient id="red-glow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#d96552" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#d96552" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg-grad)"/>
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="1280" height="4" fill="#d96552"/>
+
+  <!-- Left glow panel -->
+  <rect x="0" y="0" width="560" height="720" fill="url(#red-glow)"/>
+
+  <!-- Lincoln Brief logo -->
+  <text x="48" y="58" font-family="Georgia, serif" font-size="18" fill="#d96552" font-weight="bold" letter-spacing="3">LINCOLN BRIEF</text>
+  <rect x="48" y="66" width="160" height="1.5" fill="#d96552" opacity="0.5"/>
+
+  <!-- Edition label -->
+  <rect x="1092" y="28" width="140" height="36" rx="4" fill="#d96552" fill-opacity="0.12" stroke="#d96552" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="1162" y="52" font-family="Georgia, serif" font-size="13" fill="#d96552" text-anchor="middle" letter-spacing="2">US 01:00</text>
+
+  <!-- Date -->
+  <text x="48" y="106" font-family="Georgia, serif" font-size="14" fill="#9a6a5a" letter-spacing="1">2026.06.18 — 시장 예측</text>
+
+  <!-- Category label -->
+  <rect x="48" y="128" width="130" height="28" rx="3" fill="#d96552" fill-opacity="0.2"/>
+  <text x="113" y="147" font-family="Georgia, serif" font-size="13" fill="#d96552" text-anchor="middle" letter-spacing="1">시장 예측</text>
+
+  <!-- Main number -->
+  <text x="48" y="230" font-family="Georgia, serif" font-size="54" fill="#ffffff" font-weight="bold">S&amp;P 7,504</text>
+  <text x="48" y="275" font-family="Georgia, serif" font-size="24" fill="#d96552">7,500 지지선 바로 위</text>
+
+  <!-- Support line visualization -->
+  <rect x="48" y="300" width="520" height="2" fill="#d96552" opacity="0.6"/>
+  <text x="576" y="304" font-family="Georgia, serif" font-size="14" fill="#d96552" opacity="0.8">← 7,500 지지선</text>
+
+  <!-- Scenario pills -->
+  <text x="48" y="356" font-family="Georgia, serif" font-size="15" fill="#9a6a5a" letter-spacing="1">4주 시나리오</text>
+
+  <rect x="48" y="372" width="510" height="52" rx="6" fill="#4adc7a" fill-opacity="0.1" stroke="#4adc7a" stroke-width="0.8" stroke-opacity="0.4"/>
+  <text x="68" y="394" font-family="Georgia, serif" font-size="13" fill="#4adc7a">▲ A 반도체 사이클 재가동 (25%)</text>
+  <text x="68" y="416" font-family="Georgia, serif" font-size="13" fill="#9aaa8a">AVGO $420+ 유지 → S&amp;P 7,550 재돌파</text>
+
+  <rect x="48" y="432" width="510" height="52" rx="6" fill="#d8b878" fill-opacity="0.1" stroke="#d8b878" stroke-width="0.8" stroke-opacity="0.4"/>
+  <text x="68" y="454" font-family="Georgia, serif" font-size="13" fill="#d8b878">→ B AI 플랫폼 조정, 박스권 (35%)</text>
+  <text x="68" y="476" font-family="Georgia, serif" font-size="13" fill="#9a8a6a">7,450~7,550 박스 유지 ← 베이스</text>
+
+  <rect x="48" y="492" width="510" height="52" rx="6" fill="#d96552" fill-opacity="0.1" stroke="#d96552" stroke-width="0.8" stroke-opacity="0.4"/>
+  <text x="68" y="514" font-family="Georgia, serif" font-size="13" fill="#d96552">→ C 가치주 선도 지속 (25%)</text>
+  <text x="68" y="536" font-family="Georgia, serif" font-size="13" fill="#9a6a5a">DOW 아웃퍼폼, 금융주 상대 강세</text>
+
+  <rect x="48" y="552" width="510" height="52" rx="6" fill="#e05c5c" fill-opacity="0.08" stroke="#e05c5c" stroke-width="0.8" stroke-opacity="0.3"/>
+  <text x="68" y="574" font-family="Georgia, serif" font-size="13" fill="#e05c5c">▽ D 7,500 이탈 조정 (15%)</text>
+  <text x="68" y="596" font-family="Georgia, serif" font-size="13" fill="#9a6a5a">FOMC 매파 서프라이즈 OR WTI $70↓</text>
+
+  <!-- Right panel -->
+  <rect x="620" y="100" width="1" height="540" fill="#d96552" opacity="0.2"/>
+
+  <text x="660" y="140" font-family="Georgia, serif" font-size="14" fill="#9a6a5a" letter-spacing="2">핵심 관찰 지표</text>
+
+  <text x="660" y="188" font-family="Georgia, serif" font-size="16" fill="#c0b0a0">AVGO</text>
+  <text x="750" y="188" font-family="Georgia, serif" font-size="22" fill="#ffffff" font-weight="bold">$396.72</text>
+  <text x="660" y="216" font-family="Georgia, serif" font-size="14" fill="#9a6a5a">관찰: $420 이상 유지 여부</text>
+
+  <rect x="660" y="232" width="560" height="1" fill="#d96552" opacity="0.2"/>
+
+  <text x="660" y="264" font-family="Georgia, serif" font-size="16" fill="#c0b0a0">META</text>
+  <text x="750" y="264" font-family="Georgia, serif" font-size="22" fill="#e05c5c" font-weight="bold">$579.30 (−3.48%)</text>
+  <text x="660" y="292" font-family="Georgia, serif" font-size="14" fill="#9a6a5a">관찰: $560 이하 추가 하락 여부</text>
+
+  <rect x="660" y="308" width="560" height="1" fill="#d96552" opacity="0.2"/>
+
+  <text x="660" y="340" font-family="Georgia, serif" font-size="16" fill="#c0b0a0">US10Y</text>
+  <text x="760" y="340" font-family="Georgia, serif" font-size="22" fill="#ffffff" font-weight="bold">4.434%</text>
+  <text x="660" y="368" font-family="Georgia, serif" font-size="14" fill="#9a6a5a">관찰: 4.30% 이하 하락 시 성장주 수혜</text>
+
+  <rect x="660" y="384" width="560" height="1" fill="#d96552" opacity="0.2"/>
+
+  <text x="660" y="416" font-family="Georgia, serif" font-size="16" fill="#c0b0a0">Gold</text>
+  <text x="740" y="416" font-family="Georgia, serif" font-size="22" fill="#d8b878" font-weight="bold">$4,382 (+1.19%)</text>
+  <text x="660" y="444" font-family="Georgia, serif" font-size="14" fill="#9a6a5a">FOMC 불확실성 헤지 — 결정 후 방향 전환</text>
+
+  <!-- FOMC box -->
+  <rect x="660" y="470" width="560" height="110" rx="6" fill="#1e1010" stroke="#d96552" stroke-width="0.8" stroke-opacity="0.4"/>
+  <text x="680" y="500" font-family="Georgia, serif" font-size="13" fill="#9a6a5a" letter-spacing="1">다음 최대 촉매</text>
+  <text x="680" y="530" font-family="Georgia, serif" font-size="22" fill="#d96552" font-weight="bold">FOMC 결정</text>
+  <text x="680" y="558" font-family="Georgia, serif" font-size="15" fill="#c0b0a0">비둘기 → S&amp;P 7,550 · 매파 → 7,450 테스트</text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="684" width="1280" height="36" fill="#d96552" fill-opacity="0.05"/>
+  <text x="48" y="707" font-family="Georgia, serif" font-size="12" fill="#9a6a5a">lincoln-brief.vercel.app — 정보 제공 목적. 투자 권유 아님.</text>
+</svg>

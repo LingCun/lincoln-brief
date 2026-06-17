@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#080c14"/>
+      <stop offset="100%" stop-color="#101820"/>
+    </linearGradient>
+    <linearGradient id="blue-glow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#5677b0" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#5677b0" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg-grad)"/>
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="1280" height="4" fill="#5677b0"/>
+
+  <!-- Left glow panel -->
+  <rect x="0" y="0" width="560" height="720" fill="url(#blue-glow)"/>
+
+  <!-- Lincoln Brief logo -->
+  <text x="48" y="58" font-family="Georgia, serif" font-size="18" fill="#5677b0" font-weight="bold" letter-spacing="3">LINCOLN BRIEF</text>
+  <rect x="48" y="66" width="160" height="1.5" fill="#5677b0" opacity="0.5"/>
+
+  <!-- Edition label -->
+  <rect x="1092" y="28" width="140" height="36" rx="4" fill="#5677b0" fill-opacity="0.15" stroke="#5677b0" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="1162" y="52" font-family="Georgia, serif" font-size="13" fill="#5677b0" text-anchor="middle" letter-spacing="2">US 01:00</text>
+
+  <!-- Date -->
+  <text x="48" y="106" font-family="Georgia, serif" font-size="14" fill="#6a7a9a" letter-spacing="1">2026.06.18 — 종목 분석</text>
+
+  <!-- Category label -->
+  <rect x="48" y="128" width="130" height="28" rx="3" fill="#5677b0" fill-opacity="0.2"/>
+  <text x="113" y="147" font-family="Georgia, serif" font-size="13" fill="#5677b0" text-anchor="middle" letter-spacing="1">종목 분석</text>
+
+  <!-- Ticker -->
+  <text x="48" y="210" font-family="Georgia, serif" font-size="72" fill="#5677b0" font-weight="bold">AVGO</text>
+
+  <!-- Price -->
+  <text x="48" y="278" font-family="Georgia, serif" font-size="52" fill="#ffffff" font-weight="bold">$396.72</text>
+  <polygon points="48,298 64,298 56,284" fill="#4adc7a"/>
+  <text x="72" y="318" font-family="Georgia, serif" font-size="36" fill="#4adc7a" font-weight="bold">+5.31%</text>
+
+  <!-- Subtitle -->
+  <text x="48" y="368" font-family="Georgia, serif" font-size="22" fill="#c0c8d8">6/16 −4.37% 충격 48시간 만에 반전</text>
+
+  <rect x="48" y="390" width="500" height="1" fill="#5677b0" opacity="0.3"/>
+
+  <!-- Key metrics -->
+  <rect x="48" y="408" width="500" height="120" rx="6" fill="#5677b0" fill-opacity="0.08" stroke="#5677b0" stroke-width="0.5" stroke-opacity="0.3"/>
+  <text x="68" y="436" font-family="Georgia, serif" font-size="14" fill="#6a7a9a" letter-spacing="1">주요 지표</text>
+  <text x="68" y="466" font-family="Georgia, serif" font-size="20" fill="#c0c8d8">시가총액  <tspan fill="#ffffff" font-weight="bold">$1.888 T</tspan></text>
+  <text x="68" y="494" font-family="Georgia, serif" font-size="20" fill="#c0c8d8">Forward P/E  <tspan fill="#ffffff" font-weight="bold">32.57</tspan></text>
+  <text x="68" y="522" font-family="Georgia, serif" font-size="20" fill="#c0c8d8">애널 목표가  <tspan fill="#4adc7a" font-weight="bold">$522.06 (+31.6%)</tspan></text>
+
+  <!-- Right panel -->
+  <rect x="620" y="100" width="1" height="540" fill="#5677b0" opacity="0.2"/>
+
+  <text x="660" y="140" font-family="Georgia, serif" font-size="14" fill="#6a7a9a" letter-spacing="2">30일 가격 궤적</text>
+
+  <!-- Sparkline chart (simplified bar visualization) -->
+  <!-- Points from sparkline: 425→481 peak→372 low→376→396 -->
+  <text x="660" y="180" font-family="Georgia, serif" font-size="14" fill="#6a7a9a">30일 고점</text>
+  <text x="800" y="180" font-family="Georgia, serif" font-size="22" fill="#ffffff" font-weight="bold">$481.57</text>
+  <text x="660" y="214" font-family="Georgia, serif" font-size="14" fill="#6a7a9a">30일 저점</text>
+  <text x="800" y="214" font-family="Georgia, serif" font-size="22" fill="#e05c5c" font-weight="bold">$372.10</text>
+  <text x="660" y="248" font-family="Georgia, serif" font-size="14" fill="#6a7a9a">6/16 종가</text>
+  <text x="800" y="248" font-family="Georgia, serif" font-size="22" fill="#e05c5c" font-weight="bold">$376.71 (−4.37%)</text>
+  <text x="660" y="282" font-family="Georgia, serif" font-size="14" fill="#6a7a9a">6/17 종가</text>
+  <text x="800" y="282" font-family="Georgia, serif" font-size="22" fill="#4adc7a" font-weight="bold">$396.72 (+5.31%)</text>
+  <text x="660" y="316" font-family="Georgia, serif" font-size="14" fill="#6a7a9a">52주 최고</text>
+  <text x="800" y="316" font-family="Georgia, serif" font-size="22" fill="#c0c8d8" font-weight="bold">$495.00</text>
+
+  <rect x="660" y="336" width="560" height="1" fill="#5677b0" opacity="0.3"/>
+
+  <!-- Simple price bar chart -->
+  <text x="660" y="368" font-family="Georgia, serif" font-size="13" fill="#6a7a9a" letter-spacing="1">고점 대비 현재 위치</text>
+  <!-- Bar background -->
+  <rect x="660" y="380" width="520" height="24" rx="4" fill="#1a1a2a"/>
+  <!-- Current position relative to 52w range ($244→$495, current $396) -->
+  <!-- ($396-$244)/($495-$244) = 152/251 = 60.6% -->
+  <rect x="660" y="380" width="315" height="24" rx="4" fill="#5677b0" fill-opacity="0.6"/>
+  <!-- High marker -->
+  <rect x="1172" y="378" width="2" height="28" fill="#d8b878" opacity="0.8"/>
+  <text x="660" y="424" font-family="Georgia, serif" font-size="13" fill="#6a7a9a">52주 최저 $244  ──────────────  $396(현재)  ── $495 최고</text>
+
+  <!-- JPM note -->
+  <rect x="660" y="450" width="560" height="100" rx="6" fill="#1a1a2a" stroke="#5677b0" stroke-width="0.8" stroke-opacity="0.4"/>
+  <text x="680" y="480" font-family="Georgia, serif" font-size="13" fill="#6a7a9a" letter-spacing="1">ANALYST VIEW</text>
+  <text x="680" y="510" font-family="Georgia, serif" font-size="17" fill="#e0e8f0">JPMorgan — "Aggressive Buyers"</text>
+  <text x="680" y="536" font-family="Georgia, serif" font-size="15" fill="#6a7a9a">고점 대비 −17.6% 구간 관찰 가치</text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="684" width="1280" height="36" fill="#5677b0" fill-opacity="0.06"/>
+  <text x="48" y="707" font-family="Georgia, serif" font-size="12" fill="#6a7a9a">lincoln-brief.vercel.app — 정보 제공 목적. 투자 권유 아님.</text>
+</svg>

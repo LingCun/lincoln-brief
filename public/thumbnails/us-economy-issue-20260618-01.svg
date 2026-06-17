@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#080f08"/>
+      <stop offset="100%" stop-color="#101810"/>
+    </linearGradient>
+    <linearGradient id="green-glow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7a9d6e" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#7a9d6e" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg-grad)"/>
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="1280" height="4" fill="#7a9d6e"/>
+
+  <!-- Left glow panel -->
+  <rect x="0" y="0" width="560" height="720" fill="url(#green-glow)"/>
+
+  <!-- Lincoln Brief logo -->
+  <text x="48" y="58" font-family="Georgia, serif" font-size="18" fill="#7a9d6e" font-weight="bold" letter-spacing="3">LINCOLN BRIEF</text>
+  <rect x="48" y="66" width="160" height="1.5" fill="#7a9d6e" opacity="0.5"/>
+
+  <!-- Edition label -->
+  <rect x="1092" y="28" width="140" height="36" rx="4" fill="#7a9d6e" fill-opacity="0.12" stroke="#7a9d6e" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="1162" y="52" font-family="Georgia, serif" font-size="13" fill="#7a9d6e" text-anchor="middle" letter-spacing="2">US 01:00</text>
+
+  <!-- Date -->
+  <text x="48" y="106" font-family="Georgia, serif" font-size="14" fill="#6a8a6a" letter-spacing="1">2026.06.18 — 경제 이슈</text>
+
+  <!-- Category label -->
+  <rect x="48" y="128" width="130" height="28" rx="3" fill="#7a9d6e" fill-opacity="0.2"/>
+  <text x="113" y="147" font-family="Georgia, serif" font-size="13" fill="#7a9d6e" text-anchor="middle" letter-spacing="1">경제 이슈</text>
+
+  <!-- Main - Gold price -->
+  <text x="48" y="198" font-family="Georgia, serif" font-size="20" fill="#c0d0b0">Gold (GC=F)</text>
+  <text x="48" y="272" font-family="Georgia, serif" font-size="72" fill="#d8b878" font-weight="bold">$4,382</text>
+  <polygon points="48,294 68,294 58,278" fill="#4adc7a"/>
+  <text x="76" y="316" font-family="Georgia, serif" font-size="38" fill="#4adc7a" font-weight="bold">+1.19%</text>
+
+  <!-- Subtitle -->
+  <text x="48" y="362" font-family="Georgia, serif" font-size="20" fill="#c0d0b0">연초 대비 <tspan fill="#4adc7a" font-weight="bold">+29.73%</tspan>  /  한 달 <tspan fill="#4adc7a" font-weight="bold">+6.94%</tspan></text>
+
+  <rect x="48" y="384" width="520" height="1" fill="#7a9d6e" opacity="0.3"/>
+
+  <!-- Paradox label -->
+  <text x="48" y="418" font-family="Georgia, serif" font-size="17" fill="#c0d0b0">역설 — US10Y <tspan fill="#ffffff" font-weight="bold">4.434%</tspan> 고금리와 공존</text>
+
+  <!-- Three drivers -->
+  <text x="48" y="460" font-family="Georgia, serif" font-size="14" fill="#6a8a6a" letter-spacing="1">상승 동력</text>
+  <text x="48" y="490" font-family="Georgia, serif" font-size="16" fill="#c0d0b0">① 이란 딜 협상 불확실성 — 지정학 프리미엄</text>
+  <text x="48" y="520" font-family="Georgia, serif" font-size="16" fill="#c0d0b0">② FOMC 결정 대기 — 불확실성 헤지 수요</text>
+  <text x="48" y="550" font-family="Georgia, serif" font-size="16" fill="#c0d0b0">③ 중앙은행 구조적 매수 — 달러 분산 전략</text>
+
+  <!-- Right panel -->
+  <rect x="620" y="100" width="1" height="540" fill="#7a9d6e" opacity="0.2"/>
+
+  <text x="660" y="140" font-family="Georgia, serif" font-size="14" fill="#6a8a6a" letter-spacing="2">동반 자산 신호</text>
+
+  <!-- WTI vs Gold -->
+  <text x="660" y="188" font-family="Georgia, serif" font-size="16" fill="#c0d0b0">WTI (원유)</text>
+  <text x="800" y="188" font-family="Georgia, serif" font-size="22" fill="#e05c5c" font-weight="bold">$75.58 (−0.33%)</text>
+  <text x="660" y="214" font-family="Georgia, serif" font-size="13" fill="#6a8a6a">6/10 이란 쇼크($91.85) 이후 −17.7%</text>
+
+  <rect x="660" y="230" width="560" height="1" fill="#7a9d6e" opacity="0.2"/>
+
+  <text x="660" y="262" font-family="Georgia, serif" font-size="16" fill="#c0d0b0">US10Y</text>
+  <text x="760" y="262" font-family="Georgia, serif" font-size="22" fill="#ffffff" font-weight="bold">4.434%</text>
+  <text x="660" y="288" font-family="Georgia, serif" font-size="13" fill="#6a8a6a">고금리 지속 → 전통 모델: 금 하락 예측</text>
+  <text x="660" y="310" font-family="Georgia, serif" font-size="13" fill="#4adc7a">현실: Gold +29.73% — 모델 불일치</text>
+
+  <rect x="660" y="326" width="560" height="1" fill="#7a9d6e" opacity="0.2"/>
+
+  <text x="660" y="358" font-family="Georgia, serif" font-size="16" fill="#c0d0b0">USD/KRW</text>
+  <text x="790" y="358" font-family="Georgia, serif" font-size="22" fill="#ffffff" font-weight="bold">1,514.94 (+0.44%)</text>
+  <text x="660" y="384" font-family="Georgia, serif" font-size="13" fill="#6a8a6a">달러 소폭 강세 — FOMC 전 포지션 조정</text>
+
+  <!-- Key level box -->
+  <rect x="660" y="410" width="560" height="120" rx="6" fill="#101810" stroke="#7a9d6e" stroke-width="0.8" stroke-opacity="0.4"/>
+  <text x="680" y="440" font-family="Georgia, serif" font-size="13" fill="#6a8a6a" letter-spacing="1">다음 분기점</text>
+  <text x="680" y="474" font-family="Georgia, serif" font-size="20" fill="#d8b878" font-weight="bold">FOMC 결정 후 방향</text>
+  <text x="680" y="502" font-family="Georgia, serif" font-size="15" fill="#c0d0b0">비둘기 발언 → Gold 추가 상승 가능</text>
+  <text x="680" y="524" font-family="Georgia, serif" font-size="15" fill="#c0d0b0">매파 서프라이즈 → 헤지 프리미엄 소화</text>
+
+  <!-- YTD performance bar -->
+  <text x="660" y="558" font-family="Georgia, serif" font-size="13" fill="#6a8a6a" letter-spacing="1">YTD 성과 비교</text>
+  <text x="660" y="588" font-family="Georgia, serif" font-size="15" fill="#d8b878">Gold  <tspan font-weight="bold">+29.73%</tspan></text>
+  <rect x="780" y="576" width="298" height="16" rx="3" fill="#d8b878" fill-opacity="0.7"/>
+  <text x="660" y="618" font-family="Georgia, serif" font-size="15" fill="#c0c8d8">S&amp;P  <tspan font-weight="bold">~+14%</tspan></text>
+  <rect x="780" y="606" width="145" height="16" rx="3" fill="#5677b0" fill-opacity="0.7"/>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="684" width="1280" height="36" fill="#7a9d6e" fill-opacity="0.05"/>
+  <text x="48" y="707" font-family="Georgia, serif" font-size="12" fill="#6a8a6a">lincoln-brief.vercel.app — 정보 제공 목적. 투자 권유 아님.</text>
+</svg>

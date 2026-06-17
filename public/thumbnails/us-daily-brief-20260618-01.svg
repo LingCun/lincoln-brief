@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f0c08"/>
+      <stop offset="100%" stop-color="#1a1510"/>
+    </linearGradient>
+    <linearGradient id="gold-glow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#d8b878" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#d8b878" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg-grad)"/>
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="1280" height="4" fill="#d8b878"/>
+
+  <!-- Left side glow panel -->
+  <rect x="0" y="0" width="560" height="720" fill="url(#gold-glow)"/>
+
+  <!-- Lincoln Brief logo -->
+  <text x="48" y="58" font-family="Georgia, serif" font-size="18" fill="#d8b878" font-weight="bold" letter-spacing="3">LINCOLN BRIEF</text>
+  <rect x="48" y="66" width="160" height="1.5" fill="#d8b878" opacity="0.5"/>
+
+  <!-- Edition label -->
+  <rect x="1092" y="28" width="140" height="36" rx="4" fill="#d8b878" fill-opacity="0.12" stroke="#d8b878" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="1162" y="52" font-family="Georgia, serif" font-size="13" fill="#d8b878" text-anchor="middle" letter-spacing="2">US 01:00</text>
+
+  <!-- Date -->
+  <text x="48" y="106" font-family="Georgia, serif" font-size="14" fill="#8a7a5a" letter-spacing="1">2026.06.18 — 6/17 마감</text>
+
+  <!-- Category label -->
+  <rect x="48" y="128" width="130" height="28" rx="3" fill="#d8b878" fill-opacity="0.2"/>
+  <text x="113" y="147" font-family="Georgia, serif" font-size="13" fill="#d8b878" text-anchor="middle" letter-spacing="1">데일리 시황</text>
+
+  <!-- Main headline — S&P -->
+  <text x="48" y="230" font-family="Georgia, serif" font-size="54" fill="#ffffff" font-weight="bold">S&amp;P 7,504</text>
+  <polygon points="400,202 416,202 408,188" fill="#e05c5c" transform="rotate(180 408 195)"/>
+  <text x="424" y="230" font-family="Georgia, serif" font-size="30" fill="#e05c5c" font-weight="bold">−0.09%</text>
+
+  <!-- Sub-indices row -->
+  <text x="48" y="278" font-family="Georgia, serif" font-size="22" fill="#c0b090">NASDAQ</text>
+  <text x="190" y="278" font-family="Georgia, serif" font-size="22" fill="#ffffff" font-weight="bold">26,373</text>
+  <polygon points="348,260 360,260 354,249" fill="#e05c5c" transform="rotate(180 354 254.5)"/>
+  <text x="368" y="278" font-family="Georgia, serif" font-size="20" fill="#e05c5c">−0.01%</text>
+
+  <text x="48" y="318" font-family="Georgia, serif" font-size="22" fill="#c0b090">DOW</text>
+  <text x="130" y="318" font-family="Georgia, serif" font-size="22" fill="#ffffff" font-weight="bold">52,104</text>
+  <polygon points="290,299 302,299 296,288" fill="#4adc7a"/>
+  <text x="310" y="318" font-family="Georgia, serif" font-size="20" fill="#4adc7a">+0.20%</text>
+
+  <!-- Divider -->
+  <rect x="48" y="344" width="500" height="1" fill="#d8b878" opacity="0.3"/>
+
+  <!-- Key divergence box -->
+  <rect x="48" y="362" width="500" height="100" rx="6" fill="#d8b878" fill-opacity="0.07" stroke="#d8b878" stroke-width="0.5" stroke-opacity="0.3"/>
+  <text x="68" y="390" font-family="Georgia, serif" font-size="14" fill="#8a7a5a" letter-spacing="1">오늘의 분화</text>
+  <text x="68" y="422" font-family="Georgia, serif" font-size="28" fill="#4adc7a" font-weight="bold">AVGO +5.31%</text>
+  <text x="68" y="452" font-family="Georgia, serif" font-size="22" fill="#e05c5c">META −3.48% · MSFT −2.29% · AMZN −2.52%</text>
+
+  <!-- Right panel — macro data -->
+  <rect x="620" y="100" width="1" height="540" fill="#d8b878" opacity="0.2"/>
+
+  <text x="660" y="130" font-family="Georgia, serif" font-size="14" fill="#8a7a5a" letter-spacing="2">MACRO</text>
+
+  <!-- Gold -->
+  <text x="660" y="200" font-family="Georgia, serif" font-size="18" fill="#c0b090">Gold</text>
+  <text x="660" y="238" font-family="Georgia, serif" font-size="42" fill="#d8b878" font-weight="bold">$4,382</text>
+  <polygon points="808,212 820,212 814,200" fill="#4adc7a"/>
+  <text x="828" y="238" font-family="Georgia, serif" font-size="24" fill="#4adc7a">+1.19%</text>
+  <text x="660" y="264" font-family="Georgia, serif" font-size="14" fill="#8a7a5a">연초 대비 +29.73%</text>
+
+  <rect x="660" y="284" width="560" height="1" fill="#d8b878" opacity="0.2"/>
+
+  <!-- WTI -->
+  <text x="660" y="316" font-family="Georgia, serif" font-size="16" fill="#c0b090">WTI</text>
+  <text x="720" y="316" font-family="Georgia, serif" font-size="24" fill="#ffffff" font-weight="bold">$75.58</text>
+  <polygon points="808,302 820,302 814,291" fill="#e05c5c" transform="rotate(180 814 296.5)"/>
+  <text x="828" y="316" font-family="Georgia, serif" font-size="20" fill="#e05c5c">−0.33%</text>
+
+  <!-- US10Y -->
+  <text x="660" y="356" font-family="Georgia, serif" font-size="16" fill="#c0b090">US10Y</text>
+  <text x="750" y="356" font-family="Georgia, serif" font-size="24" fill="#ffffff" font-weight="bold">4.434%</text>
+
+  <!-- USD/KRW -->
+  <text x="660" y="396" font-family="Georgia, serif" font-size="16" fill="#c0b090">USD/KRW</text>
+  <text x="788" y="396" font-family="Georgia, serif" font-size="24" fill="#ffffff" font-weight="bold">1,514.94</text>
+
+  <rect x="660" y="416" width="560" height="1" fill="#d8b878" opacity="0.2"/>
+
+  <!-- Insight box -->
+  <rect x="660" y="436" width="560" height="130" rx="6" fill="#1a1a0f" stroke="#d8b878" stroke-width="0.8" stroke-opacity="0.3"/>
+  <text x="680" y="466" font-family="Georgia, serif" font-size="13" fill="#8a7a5a" letter-spacing="1">KEY INSIGHT</text>
+  <text x="680" y="496" font-family="Georgia, serif" font-size="16" fill="#e8dfc0">AI 반도체 공급자 vs AI 서비스 소비자</text>
+  <text x="680" y="520" font-family="Georgia, serif" font-size="16" fill="#e8dfc0">내러티브 분화 심화 — 7,500선 지지 유지</text>
+  <text x="680" y="552" font-family="Georgia, serif" font-size="14" fill="#8a7a5a">FOMC 결정이 다음 방향의 핵심 촉매</text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="684" width="1280" height="36" fill="#d8b878" fill-opacity="0.06"/>
+  <text x="48" y="707" font-family="Georgia, serif" font-size="12" fill="#8a7a5a">lincoln-brief.vercel.app — 정보 제공 목적. 투자 권유 아님.</text>
+  <text x="1232" y="707" font-family="Georgia, serif" font-size="12" fill="#8a7a5a" text-anchor="end">lincoln-brief.vercel.app</text>
+</svg>
