@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#080f08"/>
+      <stop offset="100%" stop-color="#0a150a"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#9aba8e"/>
+      <stop offset="50%" stop-color="#7a9d6e"/>
+      <stop offset="100%" stop-color="#5a7d4e"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#7a9d6e" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#7a9d6e" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#d8b878" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#d8b878" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1100" cy="200" r="500" fill="url(#glow1)"/>
+  <circle cx="180" cy="580" r="300" fill="url(#glow2)"/>
+
+  <!-- Header -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#7a9d6e" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#d8f0d0">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#7a9d6e">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#7a9d6e" text-anchor="end">2026.06.17 11:00 KST · 경제 이슈</text>
+
+  <!-- Edition label -->
+  <text x="80" y="160" font-family="monospace" font-size="13" letter-spacing="5" fill="#7a9d6e">— FOMC D-1 (SLOT 11) —</text>
+
+  <!-- Badge -->
+  <rect x="80" y="176" width="900" height="30" rx="4" fill="#d8b878" fill-opacity="0.10" stroke="#d8b878" stroke-width="0.8"/>
+  <text x="92" y="196" font-family="monospace" font-size="12" letter-spacing="2" fill="#d8b878">US10Y 4.428%(−0.78%) · JPM +3.68% · USD/KRW 1,509.68원 1,510 돌파</text>
+
+  <!-- Main title -->
+  <text x="80" y="300" font-family="Playfair Display, Georgia, serif" font-size="72" font-weight="500" fill="#d8f0d0">FOMC D-1</text>
+  <text x="80" y="366" font-family="Playfair Display, Georgia, serif" font-size="42" font-style="italic" fill="url(#green)">금리 동결 기정사실화 — 원/달러 공방</text>
+  <text x="80" y="412" font-family="sans-serif" font-size="17" fill="#7aaa6a">채권·외환 시장이 비둘기 선반영 · 내일 새벽 FOMC 발표</text>
+
+  <!-- Divider -->
+  <line x1="80" y1="448" x2="1200" y2="448" stroke="#0a1e0a" stroke-width="1"/>
+
+  <!-- Metrics row -->
+  <g transform="translate(80, 482)">
+    <!-- US10Y -->
+    <g>
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#7a9d6e" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="3" fill="#7a9d6e">US10Y</text>
+      <text x="0" y="60" font-family="Playfair Display, Georgia, serif" font-size="28" fill="#d8f0d0">4.428%</text>
+      <polygon points="14,72 28,88 0,88" fill="#40e880"/>
+      <text x="36" y="87" font-family="monospace" font-size="14" fill="#40e880">−0.78%</text>
+    </g>
+    <!-- USD/KRW -->
+    <g transform="translate(280, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#7a9d6e" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="3" fill="#7a9d6e">USD/KRW</text>
+      <text x="0" y="60" font-family="Playfair Display, Georgia, serif" font-size="28" fill="#d8f0d0">1,509.68원</text>
+      <polygon points="14,72 28,88 0,88" fill="#40e880"/>
+      <text x="36" y="87" font-family="monospace" font-size="14" fill="#40e880">−0.24%</text>
+    </g>
+    <!-- JPM -->
+    <g transform="translate(620, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#7a9d6e" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="3" fill="#7a9d6e">JPM</text>
+      <text x="0" y="60" font-family="Playfair Display, Georgia, serif" font-size="28" fill="#d8f0d0">$331.14</text>
+      <polygon points="28,88 14,72 0,88" fill="#40e880"/>
+      <text x="36" y="87" font-family="monospace" font-size="14" fill="#40e880">+3.68%</text>
+    </g>
+    <!-- GOLD -->
+    <g transform="translate(940, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#7a9d6e" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="3" fill="#7a9d6e">GOLD</text>
+      <text x="0" y="60" font-family="Playfair Display, Georgia, serif" font-size="28" fill="#d8f0d0">$4,345.40</text>
+      <polygon points="28,88 14,72 0,88" fill="#40e880"/>
+      <text x="36" y="87" font-family="monospace" font-size="14" fill="#40e880">+0.33%</text>
+    </g>
+  </g>
+</svg>
