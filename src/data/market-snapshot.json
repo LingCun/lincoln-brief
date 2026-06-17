@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-06-17T07:31:07.531Z",
+  "asOf": "2026-06-17T08:31:04.364Z",
   "asOfLabel": "6/17 한국·미국 마감",
   "source": "Yahoo Finance · KRX",
   "us": {
@@ -252,11 +252,12 @@
         "ticker": "META",
         "name": "Meta",
         "price": 600.21,
-        "change": 6.730019531250036,
-        "changePct": 1.1339926792365338,
+        "change": 33.230019531250036,
+        "changePct": 5.860880573556964,
         "currency": "USD",
         "exchange": "NMS",
         "sparkline": [
+          610.4099731445312,
           604.9600219726562,
           612.8800048828125,
           616.8099975585938,
@@ -285,8 +286,7 @@
           570.97998046875,
           568.4299926757812,
           566.97998046875,
-          593.47998046875,
-          600.2100219726562
+          593.47998046875
         ],
         "available": true
       },
@@ -560,16 +560,16 @@
         "symbol": "KOSDAQ",
         "label": "KOSDAQ",
         "close": 1031.96,
-        "change": 13.280007324218786,
-        "changePct": 1.3036485863765717,
-        "note": "상승"
+        "change": -2.0700292968749636,
+        "changePct": -0.20019044304569691,
+        "note": "보합"
       },
       {
         "symbol": "USDKRW",
         "label": "USD/KRW",
-        "close": 1512.18,
-        "change": -1.1300585937499363,
-        "changePct": -0.07467462383750018,
+        "close": 1513.85,
+        "change": 0.539941406249909,
+        "changePct": 0.03567949629249488,
         "note": "보합"
       }
     ],
@@ -1159,29 +1159,29 @@
     },
     {
       "symbol": "USD/KRW",
-      "value": "1,512.18",
-      "change": "-0.07%",
-      "up": false,
+      "value": "1,513.85",
+      "change": "+0.04%",
+      "up": true,
       "market": "fx"
     },
     {
       "symbol": "BTC",
-      "value": "$65,470",
-      "change": "-0.20%",
+      "value": "$65,277",
+      "change": "-0.49%",
       "up": false,
       "market": "crypto"
     },
     {
       "symbol": "GOLD",
-      "value": "$4,347.80",
-      "change": "+0.39%",
+      "value": "$4,342.40",
+      "change": "+0.27%",
       "up": true,
       "market": "commodity"
     },
     {
       "symbol": "WTI",
-      "value": "$74.73",
-      "change": "-1.74%",
+      "value": "$75.42",
+      "change": "-0.83%",
       "up": false,
       "market": "commodity"
     },
@@ -1201,9 +1201,9 @@
     },
     "crypto": {
       "source": "coingecko",
-      "btcUsd": 65478,
-      "change24hPct": -1.3021470410198883,
-      "asOf": "2026-06-17T07:30:45.000Z"
+      "btcUsd": 65258,
+      "change24hPct": -1.9418106713804544,
+      "asOf": "2026-06-17T08:30:58.000Z"
     },
     "fred": {
       "source": "fred",
@@ -1263,15 +1263,15 @@
       "source": "twelvedata",
       "quotes": {
         "XAU/USD": {
-          "price": 4328.37911,
+          "price": 4324.45332,
           "previousClose": 4331.36946,
-          "changePct": -0.069039366
+          "changePct": -0.1596756
         }
       }
     },
     "yahoo": {
-      "usdKrw": 1512.08,
-      "btcUsd": 65469.65
+      "usdKrw": 1513.85,
+      "btcUsd": 65276.92
     }
   }
 }
