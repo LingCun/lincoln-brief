@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#080f0a"/>
+      <stop offset="100%" stop-color="#101a12"/>
+    </linearGradient>
+    <linearGradient id="green-glow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7a9d6e" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#7a9d6e" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg-grad)"/>
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="1280" height="4" fill="#7a9d6e"/>
+
+  <!-- Left side glow panel -->
+  <rect x="0" y="0" width="560" height="720" fill="url(#green-glow)"/>
+
+  <!-- Lincoln Brief logo -->
+  <text x="48" y="58" font-family="Georgia, serif" font-size="18" fill="#7a9d6e" font-weight="bold" letter-spacing="3">LINCOLN BRIEF</text>
+  <rect x="48" y="66" width="160" height="1.5" fill="#7a9d6e" opacity="0.5"/>
+
+  <!-- Edition label -->
+  <rect x="1092" y="28" width="140" height="36" rx="4" fill="#7a9d6e" fill-opacity="0.15" stroke="#7a9d6e" stroke-width="1" stroke-opacity="0.5"/>
+  <text x="1162" y="52" font-family="Georgia, serif" font-size="13" fill="#9abf8e" text-anchor="middle" letter-spacing="2">US 06:00</text>
+
+  <!-- Date -->
+  <text x="48" y="106" font-family="Georgia, serif" font-size="14" fill="#5a7a5a" letter-spacing="1">2026.06.18 — 경제 이슈</text>
+
+  <!-- Category label -->
+  <rect x="48" y="128" width="110" height="28" rx="3" fill="#7a9d6e" fill-opacity="0.22"/>
+  <text x="103" y="147" font-family="Georgia, serif" font-size="13" fill="#9abf8e" text-anchor="middle" letter-spacing="1">경제 이슈</text>
+
+  <!-- Company -->
+  <text x="48" y="196" font-family="Georgia, serif" font-size="22" fill="#9abf8e" letter-spacing="2">MICROSOFT · MSFT</text>
+
+  <!-- Main price -->
+  <text x="48" y="282" font-family="Georgia, serif" font-size="68" fill="#ffffff" font-weight="bold">$378.91</text>
+  <polygon points="48,300 64,300 56,316" fill="#e05c5c"/>
+  <text x="72" y="316" font-family="Georgia, serif" font-size="34" fill="#e05c5c" font-weight="bold">−3.79%</text>
+
+  <!-- 30일 drop -->
+  <rect x="48" y="334" width="320" height="44" rx="4" fill="#e05c5c" fill-opacity="0.12" stroke="#e05c5c" stroke-width="0.5" stroke-opacity="0.4"/>
+  <text x="68" y="354" font-family="Georgia, serif" font-size="13" fill="#e05c5c">30일 고점 대비</text>
+  <text x="68" y="372" font-family="Georgia, serif" font-size="20" fill="#e05c5c" font-weight="bold">$460.52 → $378.91 (−17.8%)</text>
+
+  <!-- AI paradox label -->
+  <text x="48" y="420" font-family="Georgia, serif" font-size="20" fill="#9abf8e" font-weight="bold">AI 전환 비용의 역설</text>
+  <text x="48" y="450" font-family="Georgia, serif" font-size="15" fill="#6a8a6a">Copilot · OpenAI · Azure AI — 투자 많을수록</text>
+  <text x="48" y="474" font-family="Georgia, serif" font-size="15" fill="#6a8a6a">단기 FCF 감소 + 수익 인식 지연</text>
+
+  <!-- Platform comparison -->
+  <rect x="48" y="500" width="520" height="160" rx="6" fill="#7a9d6e" fill-opacity="0.07" stroke="#7a9d6e" stroke-width="0.5" stroke-opacity="0.3"/>
+  <text x="68" y="526" font-family="Georgia, serif" font-size="13" fill="#5a7a5a" letter-spacing="1">AI 소비자 — 6/17 동반 하락</text>
+  <text x="68" y="554" font-family="Georgia, serif" font-size="17" fill="#e05c5c">MSFT −3.79% · META −5.44%</text>
+  <text x="68" y="580" font-family="Georgia, serif" font-size="17" fill="#e05c5c">AMZN −3.46% · GOOGL −2.53%</text>
+  <rect x="68" y="594" width="480" height="0.5" fill="#7a9d6e" opacity="0.3"/>
+  <text x="68" y="622" font-family="Georgia, serif" font-size="17" fill="#4adc7a">AVGO +4.30% — AI 칩 공급자는 역행</text>
+  <text x="68" y="645" font-family="Georgia, serif" font-size="14" fill="#5a7a5a">파는 쪽 vs 사는 쪽 — 수익 인식 시점이 다르다</text>
+
+  <!-- Right panel -->
+  <rect x="620" y="100" width="1" height="540" fill="#7a9d6e" opacity="0.2"/>
+
+  <text x="660" y="130" font-family="Georgia, serif" font-size="14" fill="#5a7a5a" letter-spacing="2">핵심 구조</text>
+
+  <!-- Structure diagram -->
+  <rect x="660" y="152" width="570" height="260" rx="6" fill="#7a9d6e" fill-opacity="0.06" stroke="#7a9d6e" stroke-width="0.5" stroke-opacity="0.25"/>
+
+  <text x="945" y="186" font-family="Georgia, serif" font-size="17" fill="#9abf8e" text-anchor="middle" font-weight="bold">MSFT AI 전략</text>
+
+  <text x="680" y="222" font-family="Georgia, serif" font-size="14" fill="#7a9d6e">●</text>
+  <text x="700" y="222" font-family="Georgia, serif" font-size="14" fill="#b0c8b0">OpenAI 수십억 달러 파트너십</text>
+
+  <text x="680" y="250" font-family="Georgia, serif" font-size="14" fill="#7a9d6e">●</text>
+  <text x="700" y="250" font-family="Georgia, serif" font-size="14" fill="#b0c8b0">Copilot 전 제품군 통합</text>
+
+  <text x="680" y="278" font-family="Georgia, serif" font-size="14" fill="#7a9d6e">●</text>
+  <text x="700" y="278" font-family="Georgia, serif" font-size="14" fill="#b0c8b0">Azure AI 데이터센터 capex 최고</text>
+
+  <text x="680" y="306" font-family="Georgia, serif" font-size="14" fill="#7a9d6e">●</text>
+  <text x="700" y="306" font-family="Georgia, serif" font-size="14" fill="#b0c8b0">먼저 비용 → 나중에 수익</text>
+
+  <rect x="680" y="320" width="530" height="0.5" fill="#7a9d6e" opacity="0.3"/>
+
+  <text x="680" y="348" font-family="Georgia, serif" font-size="14" fill="#e05c5c">시장 질문: 언제 수익으로 돌아오나?</text>
+  <text x="680" y="372" font-family="Georgia, serif" font-size="14" fill="#e05c5c">US10Y 4.463% — 기다릴수록 할인율 올라간다</text>
+  <text x="680" y="396" font-family="Georgia, serif" font-size="14" fill="#e05c5c">→ 고성장 기대주 밸류에이션 압박 가중</text>
+
+  <!-- Macro box -->
+  <rect x="660" y="436" width="570" height="80" rx="6" fill="#7a9d6e" fill-opacity="0.08" stroke="#7a9d6e" stroke-width="0.5" stroke-opacity="0.3"/>
+  <text x="945" y="468" font-family="Georgia, serif" font-size="16" fill="#9abf8e" text-anchor="middle" font-weight="bold">US10Y 4.463% · USD/KRW 1,527</text>
+  <text x="945" y="496" font-family="Georgia, serif" font-size="14" fill="#5a7a5a" text-anchor="middle">고금리 + 달러 강세 = 미래 수익의 현재가치 하락</text>
+
+  <!-- Bottom -->
+  <rect x="48" y="580" width="1184" height="2" fill="#7a9d6e" opacity="0.3"/>
+
+  <!-- Diamond decorations -->
+  <polygon points="1232,690 1240,682 1248,690 1240,698" fill="#7a9d6e" opacity="0.4"/>
+  <polygon points="1208,690 1216,682 1224,690 1216,698" fill="#7a9d6e" opacity="0.2"/>
+</svg>

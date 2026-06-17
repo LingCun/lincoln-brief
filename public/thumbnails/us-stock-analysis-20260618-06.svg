@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0c12"/>
+      <stop offset="100%" stop-color="#101520"/>
+    </linearGradient>
+    <linearGradient id="blue-glow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#5677b0" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#5677b0" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg-grad)"/>
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="1280" height="4" fill="#5677b0"/>
+
+  <!-- Left side glow panel -->
+  <rect x="0" y="0" width="560" height="720" fill="url(#blue-glow)"/>
+
+  <!-- Lincoln Brief logo -->
+  <text x="48" y="58" font-family="Georgia, serif" font-size="18" fill="#5677b0" font-weight="bold" letter-spacing="3">LINCOLN BRIEF</text>
+  <rect x="48" y="66" width="160" height="1.5" fill="#5677b0" opacity="0.5"/>
+
+  <!-- Edition label -->
+  <rect x="1092" y="28" width="140" height="36" rx="4" fill="#5677b0" fill-opacity="0.15" stroke="#5677b0" stroke-width="1" stroke-opacity="0.5"/>
+  <text x="1162" y="52" font-family="Georgia, serif" font-size="13" fill="#8aaddc" text-anchor="middle" letter-spacing="2">US 06:00</text>
+
+  <!-- Date -->
+  <text x="48" y="106" font-family="Georgia, serif" font-size="14" fill="#6a7a9a" letter-spacing="1">2026.06.18 — 6/17 마감</text>
+
+  <!-- Category label -->
+  <rect x="48" y="128" width="110" height="28" rx="3" fill="#5677b0" fill-opacity="0.25"/>
+  <text x="103" y="147" font-family="Georgia, serif" font-size="13" fill="#8aaddc" text-anchor="middle" letter-spacing="1">종목 분석</text>
+
+  <!-- Ticker -->
+  <text x="48" y="192" font-family="Georgia, serif" font-size="22" fill="#8aaddc" letter-spacing="2">META PLATFORMS</text>
+
+  <!-- Main price -->
+  <text x="48" y="280" font-family="Georgia, serif" font-size="72" fill="#ffffff" font-weight="bold">$567.58</text>
+  <polygon points="48,298 64,298 56,314" fill="#e05c5c"/>
+  <text x="72" y="314" font-family="Georgia, serif" font-size="34" fill="#e05c5c" font-weight="bold">−5.44%</text>
+
+  <!-- Session badge -->
+  <rect x="48" y="332" width="220" height="36" rx="4" fill="#e05c5c" fill-opacity="0.15" stroke="#e05c5c" stroke-width="1" stroke-opacity="0.5"/>
+  <text x="158" y="356" font-family="Georgia, serif" font-size="14" fill="#e05c5c" text-anchor="middle" letter-spacing="1">세션 최대 낙폭</text>
+
+  <!-- Key metrics -->
+  <rect x="48" y="392" width="500" height="160" rx="6" fill="#5677b0" fill-opacity="0.07" stroke="#5677b0" stroke-width="0.5" stroke-opacity="0.3"/>
+
+  <text x="68" y="420" font-family="Georgia, serif" font-size="13" fill="#6a7a9a" letter-spacing="1">30일 고점</text>
+  <text x="260" y="420" font-family="Georgia, serif" font-size="18" fill="#ffffff" font-weight="bold">$635.29</text>
+  <text x="400" y="420" font-family="Georgia, serif" font-size="16" fill="#e05c5c">−10.7%</text>
+
+  <rect x="68" y="430" width="460" height="0.5" fill="#5677b0" opacity="0.3"/>
+
+  <text x="68" y="456" font-family="Georgia, serif" font-size="13" fill="#6a7a9a" letter-spacing="1">30일 저점</text>
+  <text x="260" y="456" font-family="Georgia, serif" font-size="18" fill="#ffffff" font-weight="bold">$566.98</text>
+  <text x="400" y="456" font-family="Georgia, serif" font-size="14" fill="#e8d070">사실상 재방문</text>
+
+  <rect x="68" y="466" width="460" height="0.5" fill="#5677b0" opacity="0.3"/>
+
+  <text x="68" y="492" font-family="Georgia, serif" font-size="13" fill="#6a7a9a" letter-spacing="1">AI 플랫폼 동반</text>
+  <text x="260" y="492" font-family="Georgia, serif" font-size="16" fill="#e05c5c">MSFT −3.79% · AMZN −3.46% · GOOGL −2.53%</text>
+
+  <rect x="68" y="502" width="460" height="0.5" fill="#5677b0" opacity="0.3"/>
+
+  <text x="68" y="530" font-family="Georgia, serif" font-size="13" fill="#6a7a9a" letter-spacing="1">AI 칩 공급자</text>
+  <text x="260" y="530" font-family="Georgia, serif" font-size="18" fill="#4adc7a" font-weight="bold">AVGO +4.30% 역행</text>
+
+  <!-- Right panel -->
+  <rect x="620" y="100" width="1" height="540" fill="#5677b0" opacity="0.2"/>
+
+  <text x="660" y="130" font-family="Georgia, serif" font-size="14" fill="#6a7a9a" letter-spacing="2">핵심 논점</text>
+
+  <text x="660" y="186" font-family="Georgia, serif" font-size="20" fill="#8aaddc" font-weight="bold">AI capex 역설</text>
+  <text x="660" y="220" font-family="Georgia, serif" font-size="16" fill="#b0c0d8">AI에 더 많이 투자할수록</text>
+  <text x="660" y="248" font-family="Georgia, serif" font-size="16" fill="#b0c0d8">단기 잉여현금흐름 감소</text>
+  <text x="660" y="276" font-family="Georgia, serif" font-size="16" fill="#b0c0d8">수익 인식까지 시차 발생</text>
+
+  <rect x="660" y="300" width="560" height="1" fill="#5677b0" opacity="0.2"/>
+
+  <text x="660" y="340" font-family="Georgia, serif" font-size="20" fill="#8aaddc" font-weight="bold">4주 시나리오</text>
+
+  <rect x="660" y="360" width="560" height="44" rx="4" fill="#4adc7a" fill-opacity="0.08" stroke="#4adc7a" stroke-width="0.5" stroke-opacity="0.4"/>
+  <text x="680" y="387" font-family="Georgia, serif" font-size="15" fill="#4adc7a">반등 30% — $590~$620 회복 (FOMC 비둘기)</text>
+
+  <rect x="660" y="412" width="560" height="44" rx="4" fill="#e8d070" fill-opacity="0.08" stroke="#e8d070" stroke-width="0.5" stroke-opacity="0.4"/>
+  <text x="680" y="439" font-family="Georgia, serif" font-size="15" fill="#e8d070">박스 40% — $560~$590 횡보 (촉매 부재)</text>
+
+  <rect x="660" y="464" width="560" height="44" rx="4" fill="#e05c5c" fill-opacity="0.08" stroke="#e05c5c" stroke-width="0.5" stroke-opacity="0.4"/>
+  <text x="680" y="491" font-family="Georgia, serif" font-size="15" fill="#e05c5c">추가 하락 20% — $530~$560 (capex 확대)</text>
+
+  <!-- Divider line -->
+  <rect x="660" y="524" width="560" height="1" fill="#5677b0" opacity="0.2"/>
+
+  <text x="660" y="560" font-family="Georgia, serif" font-size="14" fill="#6a7a9a">핵심 지지선: $566.98 (30일 저점)</text>
+  <text x="660" y="588" font-family="Georgia, serif" font-size="14" fill="#6a7a9a">회복 기준선: $600 이상 복귀</text>
+
+  <!-- Bottom -->
+  <rect x="48" y="590" width="1184" height="2" fill="#5677b0" opacity="0.3"/>
+  <text x="48" y="626" font-family="Georgia, serif" font-size="14" fill="#6a7a9a">AI 공급자(AVGO +4.30%) vs AI 소비자(META −5.44%) — 시장은 이미 가격으로 답하고 있다</text>
+
+  <!-- Diamond decorations -->
+  <polygon points="1232,680 1240,672 1248,680 1240,688" fill="#5677b0" opacity="0.4"/>
+  <polygon points="1208,680 1216,672 1224,680 1216,688" fill="#5677b0" opacity="0.2"/>
+</svg>
