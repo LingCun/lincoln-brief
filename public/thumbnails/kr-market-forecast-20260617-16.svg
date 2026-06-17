@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#140808"/>
+      <stop offset="100%" stop-color="#1a0c0a"/>
+    </linearGradient>
+    <linearGradient id="red" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f08070"/>
+      <stop offset="50%" stop-color="#d96552"/>
+      <stop offset="100%" stop-color="#b84a38"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#d96552" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#d96552" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#d8b878" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#d8b878" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1100" cy="200" r="480" fill="url(#glow1)"/>
+  <circle cx="200" cy="560" r="320" fill="url(#glow2)"/>
+
+  <!-- Header -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#d96552" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#f8e0d8">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#d96552">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#d96552" text-anchor="end">2026.06.17 16:00 KST · 시장 예측</text>
+
+  <!-- Edition label -->
+  <text x="80" y="160" font-family="monospace" font-size="13" letter-spacing="5" fill="#d96552">— FOMC 당일 시나리오 최종 (SLOT 16) —</text>
+
+  <!-- Badge -->
+  <rect x="80" y="176" width="900" height="30" rx="4" fill="#d8b878" fill-opacity="0.12" stroke="#d8b878" stroke-width="0.8"/>
+  <text x="92" y="196" font-family="monospace" font-size="12" letter-spacing="2" fill="#d8b878">종가 8,864 ATH 확정 · 불 50% 유지 · USD/KRW 반전 新변수</text>
+
+  <!-- Main title -->
+  <text x="80" y="300" font-family="Playfair Display, Georgia, serif" font-size="68" font-weight="500" fill="#f8e0d8">FOMC 당일 종가</text>
+  <text x="80" y="366" font-family="Playfair Display, Georgia, serif" font-size="44" font-style="italic" fill="url(#red)">9,000 최종 조건 점검</text>
+  <text x="80" y="414" font-family="sans-serif" font-size="17" fill="#c07060">불 50% · 베이스 27% · 베어 18% · 블랙스완 5%</text>
+
+  <!-- Divider -->
+  <line x1="80" y1="452" x2="1200" y2="452" stroke="#2a1208" stroke-width="1"/>
+
+  <!-- Scenario row -->
+  <g transform="translate(80, 486)">
+    <!-- 불 -->
+    <g>
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#40e880" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="3" fill="#40e880">불</text>
+      <text x="0" y="58" font-family="Playfair Display, Georgia, serif" font-size="24" fill="#f8e0d8">9,000 탐색</text>
+      <text x="0" y="82" font-family="monospace" font-size="16" fill="#40e880">50%</text>
+    </g>
+    <!-- 베이스 -->
+    <g transform="translate(280, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#d8b878" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="3" fill="#d8b878">베이스</text>
+      <text x="0" y="58" font-family="Playfair Display, Georgia, serif" font-size="24" fill="#f8e0d8">8,700~8,900 박스</text>
+      <text x="0" y="82" font-family="monospace" font-size="16" fill="#d8b878">27%</text>
+    </g>
+    <!-- 베어 -->
+    <g transform="translate(640, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#e05050" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="3" fill="#e05050">베어</text>
+      <text x="0" y="58" font-family="Playfair Display, Georgia, serif" font-size="24" fill="#f8e0d8">8,500 되돌림</text>
+      <text x="0" y="82" font-family="monospace" font-size="16" fill="#e05050">18%</text>
+    </g>
+    <!-- FOMC -->
+    <g transform="translate(940, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#d96552" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="3" fill="#d96552">FOMC</text>
+      <text x="0" y="58" font-family="Playfair Display, Georgia, serif" font-size="24" fill="#f8e0d8">오늘 밤 발표</text>
+      <text x="0" y="82" font-family="monospace" font-size="14" fill="#d96552">D-DAY</text>
+    </g>
+  </g>
+</svg>
