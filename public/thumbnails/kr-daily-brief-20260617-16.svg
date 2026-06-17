@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f0c08"/>
+      <stop offset="100%" style="stop-color:#1a1510"/>
+    </linearGradient>
+    <linearGradient id="goldLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#d8b878;stop-opacity:0"/>
+      <stop offset="30%" style="stop-color:#d8b878;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#d8b878;stop-opacity:0.3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Subtle grid lines -->
+  <line x1="0" y1="240" x2="1280" y2="240" stroke="#d8b878" stroke-opacity="0.06" stroke-width="1"/>
+  <line x1="0" y1="480" x2="1280" y2="480" stroke="#d8b878" stroke-opacity="0.06" stroke-width="1"/>
+  <line x1="427" y1="0" x2="427" y2="720" stroke="#d8b878" stroke-opacity="0.06" stroke-width="1"/>
+  <line x1="853" y1="0" x2="853" y2="720" stroke="#d8b878" stroke-opacity="0.06" stroke-width="1"/>
+
+  <!-- Top gold accent bar -->
+  <rect x="0" y="0" width="1280" height="4" fill="url(#goldLine)"/>
+
+  <!-- Lincoln Brief mark (top left) -->
+  <text x="48" y="54" font-family="Georgia, serif" font-size="18" fill="#d8b878" font-weight="bold" letter-spacing="3">LINCOLN BRIEF</text>
+  <text x="48" y="76" font-family="Georgia, serif" font-size="13" fill="#8a7050" letter-spacing="2">KR MARKET · DAILY</text>
+
+  <!-- Edition label (top right) -->
+  <rect x="1060" y="28" width="180" height="36" rx="3" fill="#d8b878" fill-opacity="0.12" stroke="#d8b878" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="1150" y="51" font-family="Georgia, serif" font-size="14" fill="#d8b878" text-anchor="middle" letter-spacing="1">2026.06.17 · 16:00</text>
+
+  <!-- Diamond decorative element -->
+  <polygon points="640,110 648,118 640,126 632,118" fill="#d8b878" fill-opacity="0.6"/>
+
+  <!-- Main KOSPI number -->
+  <text x="640" y="210" font-family="Georgia, serif" font-size="108" fill="#ffffff" text-anchor="middle" font-weight="bold" letter-spacing="-2">8,864.24</text>
+
+  <!-- KOSPI label -->
+  <text x="640" y="258" font-family="Georgia, serif" font-size="22" fill="#d8b878" text-anchor="middle" letter-spacing="4">KOSPI</text>
+
+  <!-- Change indicator -->
+  <polygon points="590,282 602,266 614,282" fill="#4ade80"/>
+  <text x="624" y="283" font-family="Georgia, serif" font-size="26" fill="#4ade80" font-weight="bold">+1.58%   +137.64pt</text>
+
+  <!-- ATH badge -->
+  <rect x="490" y="300" width="300" height="40" rx="4" fill="#d8b878" fill-opacity="0.15" stroke="#d8b878" stroke-opacity="0.5" stroke-width="1"/>
+  <text x="640" y="326" font-family="Georgia, serif" font-size="17" fill="#d8b878" text-anchor="middle" letter-spacing="2">★ 사상 최고가 2회 경신</text>
+
+  <!-- Gold separator line -->
+  <line x1="160" y1="370" x2="1120" y2="370" stroke="#d8b878" stroke-opacity="0.25" stroke-width="1"/>
+
+  <!-- Three key metrics bottom -->
+  <!-- SK하이닉스 -->
+  <text x="213" y="430" font-family="Georgia, serif" font-size="15" fill="#8a7050" text-anchor="middle" letter-spacing="1">SK하이닉스</text>
+  <text x="213" y="470" font-family="Georgia, serif" font-size="30" fill="#ffffff" text-anchor="middle" font-weight="bold">252만원</text>
+  <polygon points="188,490 200,476 212,490" fill="#4ade80"/>
+  <text x="222" y="492" font-family="Georgia, serif" font-size="18" fill="#4ade80">+5.84%</text>
+
+  <!-- Divider -->
+  <line x1="427" y1="400" x2="427" y2="520" stroke="#d8b878" stroke-opacity="0.2" stroke-width="1"/>
+
+  <!-- KOSDAQ -->
+  <text x="640" y="430" font-family="Georgia, serif" font-size="15" fill="#8a7050" text-anchor="middle" letter-spacing="1">KOSDAQ</text>
+  <text x="640" y="470" font-family="Georgia, serif" font-size="30" fill="#ffffff" text-anchor="middle" font-weight="bold">1,031.96</text>
+  <polygon points="616,492 628,506 640,492" fill="#f87171"/>
+  <text x="650" y="492" font-family="Georgia, serif" font-size="18" fill="#f87171">−0.20%</text>
+
+  <!-- Divider -->
+  <line x1="853" y1="400" x2="853" y2="520" stroke="#d8b878" stroke-opacity="0.2" stroke-width="1"/>
+
+  <!-- USD/KRW -->
+  <text x="1067" y="430" font-family="Georgia, serif" font-size="15" fill="#8a7050" text-anchor="middle" letter-spacing="1">USD/KRW</text>
+  <text x="1067" y="470" font-family="Georgia, serif" font-size="30" fill="#ffffff" text-anchor="middle" font-weight="bold">1,515.98</text>
+  <polygon points="1043,490 1055,476 1067,490" fill="#4ade80"/>
+  <text x="1077" y="492" font-family="Georgia, serif" font-size="18" fill="#f87171">+0.18%</text>
+
+  <!-- Gold separator line -->
+  <line x1="160" y1="548" x2="1120" y2="548" stroke="#d8b878" stroke-opacity="0.25" stroke-width="1"/>
+
+  <!-- FOMC callout -->
+  <text x="640" y="598" font-family="Georgia, serif" font-size="20" fill="#d8b878" text-anchor="middle" letter-spacing="2">FOMC 내일 새벽 발표 예정 — 9,000 방향의 조건</text>
+
+  <!-- Bottom disclaimer -->
+  <text x="640" y="690" font-family="Georgia, serif" font-size="12" fill="#4a3f30" text-anchor="middle">lincoln-brief.vercel.app  ·  정보 제공 목적, 투자 권유 아님</text>
+
+  <!-- Bottom gold accent -->
+  <rect x="0" y="716" width="1280" height="4" fill="url(#goldLine)"/>
+</svg>

@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f0808"/>
+      <stop offset="100%" style="stop-color:#1a0f0f"/>
+    </linearGradient>
+    <linearGradient id="redLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f87171;stop-opacity:0"/>
+      <stop offset="30%" style="stop-color:#f87171;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#f87171;stop-opacity:0.3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Top accent -->
+  <rect x="0" y="0" width="1280" height="4" fill="url(#redLine)"/>
+
+  <!-- Lincoln Brief mark -->
+  <text x="48" y="54" font-family="Georgia, serif" font-size="18" fill="#f87171" font-weight="bold" letter-spacing="3">LINCOLN BRIEF</text>
+  <text x="48" y="76" font-family="Georgia, serif" font-size="13" fill="#7a2d2d" letter-spacing="2">KR MARKET · ECONOMY ISSUE</text>
+
+  <!-- Edition label -->
+  <rect x="1060" y="28" width="180" height="36" rx="3" fill="#f87171" fill-opacity="0.1" stroke="#f87171" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="1150" y="51" font-family="Georgia, serif" font-size="14" fill="#f87171" text-anchor="middle" letter-spacing="1">2026.06.17 · 16:00</text>
+
+  <!-- Diamond -->
+  <polygon points="640,110 648,118 640,126 632,118" fill="#f87171" fill-opacity="0.7"/>
+
+  <!-- Headline -->
+  <text x="640" y="175" font-family="Georgia, serif" font-size="26" fill="#f87171" text-anchor="middle" letter-spacing="2" font-weight="bold">국내 금융주 역행 구조</text>
+  <text x="640" y="213" font-family="Georgia, serif" font-size="20" fill="#8a5a5a" text-anchor="middle" letter-spacing="1">FOMC 비둘기 기대 → JPM ↑ / KB금융·신한 ↓</text>
+
+  <!-- Main comparison -->
+  <line x1="160" y1="248" x2="1120" y2="248" stroke="#f87171" stroke-opacity="0.2" stroke-width="1"/>
+
+  <!-- Left: KB금융 -->
+  <text x="320" y="300" font-family="Georgia, serif" font-size="18" fill="#8a5a5a" text-anchor="middle" letter-spacing="2">KB금융</text>
+  <text x="320" y="370" font-family="Georgia, serif" font-size="58" fill="#f87171" text-anchor="middle" font-weight="bold">−4.65%</text>
+  <text x="320" y="410" font-family="Georgia, serif" font-size="20" fill="#7a4040" text-anchor="middle">164,000원</text>
+  <text x="320" y="440" font-family="Georgia, serif" font-size="14" fill="#5a3030" text-anchor="middle">−8,000원</text>
+
+  <!-- Center divider -->
+  <line x1="640" y1="265" x2="640" y2="480" stroke="#f87171" stroke-opacity="0.15" stroke-width="1"/>
+
+  <!-- Right: 신한지주 -->
+  <text x="960" y="300" font-family="Georgia, serif" font-size="18" fill="#8a5a5a" text-anchor="middle" letter-spacing="2">신한지주</text>
+  <text x="960" y="370" font-family="Georgia, serif" font-size="58" fill="#f87171" text-anchor="middle" font-weight="bold">−3.37%</text>
+  <text x="960" y="410" font-family="Georgia, serif" font-size="20" fill="#7a4040" text-anchor="middle">103,100원</text>
+  <text x="960" y="440" font-family="Georgia, serif" font-size="14" fill="#5a3030" text-anchor="middle">−3,600원</text>
+
+  <!-- Separator -->
+  <line x1="160" y1="498" x2="1120" y2="498" stroke="#f87171" stroke-opacity="0.2" stroke-width="1"/>
+
+  <!-- Contrast: JPM -->
+  <text x="480" y="545" font-family="Georgia, serif" font-size="17" fill="#4a5a4a" text-anchor="middle">전일 JPM (미국 은행)</text>
+  <text x="480" y="585" font-family="Georgia, serif" font-size="38" fill="#4ade80" text-anchor="middle" font-weight="bold">+3.68%</text>
+
+  <!-- Vertical divider -->
+  <line x1="720" y1="520" x2="720" y2="600" stroke="#f87171" stroke-opacity="0.1" stroke-width="1"/>
+
+  <!-- USD/KRW -->
+  <text x="960" y="545" font-family="Georgia, serif" font-size="17" fill="#4a5a4a" text-anchor="middle">USD/KRW</text>
+  <text x="960" y="585" font-family="Georgia, serif" font-size="38" fill="#fbbf24" text-anchor="middle" font-weight="bold">1,515.98원</text>
+
+  <!-- Separator -->
+  <line x1="160" y1="614" x2="1120" y2="614" stroke="#f87171" stroke-opacity="0.15" stroke-width="1"/>
+
+  <!-- Callout -->
+  <text x="640" y="657" font-family="Georgia, serif" font-size="18" fill="#f87171" text-anchor="middle" letter-spacing="1">NIM 축소 우려 — FOMC 결과가 반등 조건</text>
+
+  <!-- Bottom -->
+  <text x="640" y="700" font-family="Georgia, serif" font-size="12" fill="#4a2d2d" text-anchor="middle">lincoln-brief.vercel.app  ·  정보 제공 목적, 투자 권유 아님</text>
+
+  <!-- Bottom accent -->
+  <rect x="0" y="716" width="1280" height="4" fill="url(#redLine)"/>
+</svg>

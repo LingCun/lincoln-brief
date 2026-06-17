@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0f0a"/>
+      <stop offset="100%" style="stop-color:#0f1a0f"/>
+    </linearGradient>
+    <linearGradient id="greenLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4ade80;stop-opacity:0"/>
+      <stop offset="30%" style="stop-color:#4ade80;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#4ade80;stop-opacity:0.3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Top accent -->
+  <rect x="0" y="0" width="1280" height="4" fill="url(#greenLine)"/>
+
+  <!-- Lincoln Brief mark -->
+  <text x="48" y="54" font-family="Georgia, serif" font-size="18" fill="#4ade80" font-weight="bold" letter-spacing="3">LINCOLN BRIEF</text>
+  <text x="48" y="76" font-family="Georgia, serif" font-size="13" fill="#2d6a3f" letter-spacing="2">KR MARKET · STOCK ANALYSIS</text>
+
+  <!-- Edition label -->
+  <rect x="1060" y="28" width="180" height="36" rx="3" fill="#4ade80" fill-opacity="0.1" stroke="#4ade80" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="1150" y="51" font-family="Georgia, serif" font-size="14" fill="#4ade80" text-anchor="middle" letter-spacing="1">2026.06.17 · 16:00</text>
+
+  <!-- Diamond -->
+  <polygon points="640,110 648,118 640,126 632,118" fill="#4ade80" fill-opacity="0.7"/>
+
+  <!-- Company name -->
+  <text x="640" y="175" font-family="Georgia, serif" font-size="36" fill="#4ade80" text-anchor="middle" letter-spacing="4" font-weight="bold">SK하이닉스  000660</text>
+
+  <!-- Main price -->
+  <text x="640" y="290" font-family="Georgia, serif" font-size="110" fill="#ffffff" text-anchor="middle" font-weight="bold" letter-spacing="-2">2,521,000</text>
+  <text x="640" y="335" font-family="Georgia, serif" font-size="22" fill="#8a9a8a" text-anchor="middle" letter-spacing="2">원 KRW</text>
+
+  <!-- Change -->
+  <polygon points="570,365 588,342 606,365" fill="#4ade80"/>
+  <text x="622" y="368" font-family="Georgia, serif" font-size="32" fill="#4ade80" font-weight="bold">+5.84%   +139,000원</text>
+
+  <!-- Gold separator -->
+  <line x1="160" y1="405" x2="1120" y2="405" stroke="#4ade80" stroke-opacity="0.2" stroke-width="1"/>
+
+  <!-- Stats row -->
+  <!-- June 8 저점 대비 -->
+  <text x="240" y="455" font-family="Georgia, serif" font-size="14" fill="#2d6a3f" text-anchor="middle" letter-spacing="1">June 8 저점 대비</text>
+  <text x="240" y="490" font-family="Georgia, serif" font-size="28" fill="#4ade80" text-anchor="middle" font-weight="bold">+31.9%</text>
+  <text x="240" y="516" font-family="Georgia, serif" font-size="13" fill="#4a5a4a" text-anchor="middle">1,911,000원 → 2,521,000원</text>
+
+  <line x1="480" y1="430" x2="480" y2="530" stroke="#4ade80" stroke-opacity="0.15" stroke-width="1"/>
+
+  <!-- 이틀 연속 신고점 -->
+  <text x="640" y="455" font-family="Georgia, serif" font-size="14" fill="#2d6a3f" text-anchor="middle" letter-spacing="1">연속 ATH</text>
+  <text x="640" y="490" font-family="Georgia, serif" font-size="28" fill="#ffffff" text-anchor="middle" font-weight="bold">이틀 연속</text>
+  <text x="640" y="516" font-family="Georgia, serif" font-size="13" fill="#4a5a4a" text-anchor="middle">250만원 돌파 → 252만원</text>
+
+  <line x1="800" y1="430" x2="800" y2="530" stroke="#4ade80" stroke-opacity="0.15" stroke-width="1"/>
+
+  <!-- vs NVDA -->
+  <text x="1000" y="455" font-family="Georgia, serif" font-size="14" fill="#2d6a3f" text-anchor="middle" letter-spacing="1">vs NVDA</text>
+  <text x="1000" y="490" font-family="Georgia, serif" font-size="28" fill="#f87171" text-anchor="middle" font-weight="bold">역행 이틀째</text>
+  <text x="1000" y="516" font-family="Georgia, serif" font-size="13" fill="#4a5a4a" text-anchor="middle">NVDA −2.37% 환경</text>
+
+  <!-- Separator -->
+  <line x1="160" y1="548" x2="1120" y2="548" stroke="#4ade80" stroke-opacity="0.2" stroke-width="1"/>
+
+  <!-- 30일 절대 저점 대비 -->
+  <text x="640" y="600" font-family="Georgia, serif" font-size="18" fill="#4ade80" text-anchor="middle" letter-spacing="1">30일 절대 저점(1,286,000원) 대비  +96.0%</text>
+
+  <!-- Bottom -->
+  <text x="640" y="690" font-family="Georgia, serif" font-size="12" fill="#2d4030" text-anchor="middle">lincoln-brief.vercel.app  ·  정보 제공 목적, 투자 권유 아님</text>
+
+  <!-- Bottom accent -->
+  <rect x="0" y="716" width="1280" height="4" fill="url(#greenLine)"/>
+</svg>
