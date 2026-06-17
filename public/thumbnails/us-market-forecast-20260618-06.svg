@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#120808"/>
+      <stop offset="100%" stop-color="#1e1010"/>
+    </linearGradient>
+    <linearGradient id="red-glow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#d96552" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#d96552" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg-grad)"/>
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="1280" height="4" fill="#d96552"/>
+
+  <!-- Left side glow panel -->
+  <rect x="0" y="0" width="560" height="720" fill="url(#red-glow)"/>
+
+  <!-- Lincoln Brief logo -->
+  <text x="48" y="58" font-family="Georgia, serif" font-size="18" fill="#d96552" font-weight="bold" letter-spacing="3">LINCOLN BRIEF</text>
+  <rect x="48" y="66" width="160" height="1.5" fill="#d96552" opacity="0.5"/>
+
+  <!-- Edition label -->
+  <rect x="1092" y="28" width="140" height="36" rx="4" fill="#d96552" fill-opacity="0.15" stroke="#d96552" stroke-width="1" stroke-opacity="0.5"/>
+  <text x="1162" y="52" font-family="Georgia, serif" font-size="13" fill="#e8856a" text-anchor="middle" letter-spacing="2">US 06:00</text>
+
+  <!-- Date -->
+  <text x="48" y="106" font-family="Georgia, serif" font-size="14" fill="#7a5a52" letter-spacing="1">2026.06.18 — 6/17 마감</text>
+
+  <!-- Category label -->
+  <rect x="48" y="128" width="110" height="28" rx="3" fill="#d96552" fill-opacity="0.2"/>
+  <text x="103" y="147" font-family="Georgia, serif" font-size="13" fill="#e8856a" text-anchor="middle" letter-spacing="1">시장 예측</text>
+
+  <!-- Main headline -->
+  <text x="48" y="210" font-family="Georgia, serif" font-size="52" fill="#ffffff" font-weight="bold">S&amp;P 7,420</text>
+  <polygon points="420,186 436,186 428,202" fill="#e05c5c"/>
+  <text x="444" y="210" font-family="Georgia, serif" font-size="30" fill="#e05c5c" font-weight="bold">−1.21%</text>
+
+  <!-- 7,450 이탈 badge -->
+  <rect x="48" y="226" width="260" height="36" rx="4" fill="#e05c5c" fill-opacity="0.18" stroke="#e05c5c" stroke-width="1" stroke-opacity="0.5"/>
+  <text x="178" y="250" font-family="Georgia, serif" font-size="15" fill="#e05c5c" text-anchor="middle" letter-spacing="1">7,450 지지선 이탈</text>
+
+  <!-- Scenario table -->
+  <text x="48" y="308" font-family="Georgia, serif" font-size="16" fill="#8a6a62" letter-spacing="2">다음 4주 시나리오</text>
+
+  <rect x="48" y="324" width="520" height="52" rx="4" fill="#4adc7a" fill-opacity="0.1" stroke="#4adc7a" stroke-width="0.5" stroke-opacity="0.4"/>
+  <text x="68" y="352" font-family="Georgia, serif" font-size="16" fill="#4adc7a">A 25% — FOMC 비둘기 + 7,400 지지 → S&amp;P 7,500 재탈환</text>
+
+  <rect x="48" y="382" width="520" height="52" rx="4" fill="#e8d070" fill-opacity="0.1" stroke="#e8d070" stroke-width="0.5" stroke-opacity="0.4"/>
+  <text x="68" y="410" font-family="Georgia, serif" font-size="16" fill="#e8d070">B 35% — 7,400~7,500 박스 소화 (베이스)</text>
+
+  <rect x="48" y="440" width="520" height="52" rx="4" fill="#e08050" fill-opacity="0.1" stroke="#e08050" stroke-width="0.5" stroke-opacity="0.4"/>
+  <text x="68" y="468" font-family="Georgia, serif" font-size="16" fill="#e08050">C 25% — AI 플랫폼 하락 지속, 7,350 테스트</text>
+
+  <rect x="48" y="498" width="520" height="52" rx="4" fill="#e05c5c" fill-opacity="0.1" stroke="#e05c5c" stroke-width="0.5" stroke-opacity="0.4"/>
+  <text x="68" y="526" font-family="Georgia, serif" font-size="16" fill="#e05c5c">D 15% — 매크로 충격, 7,200~7,300 급락</text>
+
+  <!-- Right panel -->
+  <rect x="620" y="100" width="1" height="540" fill="#d96552" opacity="0.2"/>
+
+  <text x="660" y="130" font-family="Georgia, serif" font-size="14" fill="#7a5a52" letter-spacing="2">핵심 관찰 지표</text>
+
+  <!-- Watch levels -->
+  <text x="660" y="180" font-family="Georgia, serif" font-size="16" fill="#c0a090">S&amp;P 500</text>
+  <text x="800" y="180" font-family="Georgia, serif" font-size="18" fill="#ffffff" font-weight="bold">7,420.10</text>
+  <text x="970" y="180" font-family="Georgia, serif" font-size="14" fill="#e05c5c">▼ 7,400 관찰</text>
+
+  <rect x="660" y="194" width="570" height="0.5" fill="#d96552" opacity="0.2"/>
+
+  <text x="660" y="224" font-family="Georgia, serif" font-size="16" fill="#c0a090">META</text>
+  <text x="800" y="224" font-family="Georgia, serif" font-size="18" fill="#ffffff" font-weight="bold">$567.58</text>
+  <text x="970" y="224" font-family="Georgia, serif" font-size="14" fill="#e05c5c">▼ $560 이탈 주의</text>
+
+  <rect x="660" y="238" width="570" height="0.5" fill="#d96552" opacity="0.2"/>
+
+  <text x="660" y="268" font-family="Georgia, serif" font-size="16" fill="#c0a090">AVGO</text>
+  <text x="800" y="268" font-family="Georgia, serif" font-size="18" fill="#ffffff" font-weight="bold">$392.90</text>
+  <text x="970" y="268" font-family="Georgia, serif" font-size="14" fill="#4adc7a">▲ $420 돌파 시 상방</text>
+
+  <rect x="660" y="282" width="570" height="0.5" fill="#d96552" opacity="0.2"/>
+
+  <text x="660" y="312" font-family="Georgia, serif" font-size="16" fill="#c0a090">US10Y</text>
+  <text x="800" y="312" font-family="Georgia, serif" font-size="18" fill="#ffffff" font-weight="bold">4.463%</text>
+  <text x="970" y="312" font-family="Georgia, serif" font-size="14" fill="#e05c5c">▲ 상승 압박</text>
+
+  <rect x="660" y="326" width="570" height="0.5" fill="#d96552" opacity="0.2"/>
+
+  <text x="660" y="356" font-family="Georgia, serif" font-size="16" fill="#c0a090">USD/KRW</text>
+  <text x="800" y="356" font-family="Georgia, serif" font-size="18" fill="#ffffff" font-weight="bold">1,527</text>
+  <text x="970" y="356" font-family="Georgia, serif" font-size="14" fill="#e05c5c">달러 강세 전환</text>
+
+  <rect x="660" y="370" width="570" height="0.5" fill="#d96552" opacity="0.2"/>
+
+  <text x="660" y="400" font-family="Georgia, serif" font-size="16" fill="#c0a090">Gold</text>
+  <text x="800" y="400" font-family="Georgia, serif" font-size="18" fill="#ffffff" font-weight="bold">$4,276</text>
+  <text x="970" y="400" font-family="Georgia, serif" font-size="14" fill="#e05c5c">반락 −1.26%</text>
+
+  <!-- FOMC box -->
+  <rect x="660" y="430" width="570" height="80" rx="6" fill="#d96552" fill-opacity="0.08" stroke="#d96552" stroke-width="0.5" stroke-opacity="0.4"/>
+  <text x="945" y="462" font-family="Georgia, serif" font-size="16" fill="#d96552" text-anchor="middle" font-weight="bold">FOMC 결정</text>
+  <text x="945" y="488" font-family="Georgia, serif" font-size="14" fill="#8a6a62" text-anchor="middle">다음 방향의 최대 촉매</text>
+
+  <!-- Bottom -->
+  <rect x="48" y="580" width="1184" height="2" fill="#d96552" opacity="0.3"/>
+  <text x="48" y="620" font-family="Georgia, serif" font-size="14" fill="#7a5a52">전일 예측 박스권(7,450~7,550) 하방 이탈 — 7,400 지지선이 다음 분기점</text>
+  <text x="48" y="650" font-family="Georgia, serif" font-size="14" fill="#7a5a52">FOMC 결정 전 달러 강세·위험자산 정리 구도 지속 가능성</text>
+
+  <!-- Diamond decorations -->
+  <polygon points="1232,690 1240,682 1248,690 1240,698" fill="#d96552" opacity="0.4"/>
+  <polygon points="1208,690 1216,682 1224,690 1216,698" fill="#d96552" opacity="0.2"/>
+</svg>
