@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#08080f"/>
+      <stop offset="100%" style="stop-color:#0f0f1a"/>
+    </linearGradient>
+    <linearGradient id="blueLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#60a5fa;stop-opacity:0"/>
+      <stop offset="30%" style="stop-color:#60a5fa;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#60a5fa;stop-opacity:0.3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Top accent -->
+  <rect x="0" y="0" width="1280" height="4" fill="url(#blueLine)"/>
+
+  <!-- Lincoln Brief mark -->
+  <text x="48" y="54" font-family="Georgia, serif" font-size="18" fill="#60a5fa" font-weight="bold" letter-spacing="3">LINCOLN BRIEF</text>
+  <text x="48" y="76" font-family="Georgia, serif" font-size="13" fill="#2d4a7a" letter-spacing="2">KR MARKET · FORECAST</text>
+
+  <!-- Edition label -->
+  <rect x="1060" y="28" width="180" height="36" rx="3" fill="#60a5fa" fill-opacity="0.1" stroke="#60a5fa" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="1150" y="51" font-family="Georgia, serif" font-size="14" fill="#60a5fa" text-anchor="middle" letter-spacing="1">2026.06.17 · 16:00</text>
+
+  <!-- Diamond -->
+  <polygon points="640,110 648,118 640,126 632,118" fill="#60a5fa" fill-opacity="0.7"/>
+
+  <!-- Headline -->
+  <text x="640" y="176" font-family="Georgia, serif" font-size="30" fill="#60a5fa" text-anchor="middle" letter-spacing="3" font-weight="bold">FOMC 전야 최종 시나리오</text>
+
+  <!-- KOSPI ATH display -->
+  <text x="640" y="282" font-family="Georgia, serif" font-size="96" fill="#ffffff" text-anchor="middle" font-weight="bold" letter-spacing="-2">8,864.24</text>
+  <text x="640" y="326" font-family="Georgia, serif" font-size="20" fill="#8a8aaa" text-anchor="middle" letter-spacing="4">KOSPI · ATH × 2</text>
+
+  <!-- Gold separator -->
+  <line x1="160" y1="358" x2="1120" y2="358" stroke="#60a5fa" stroke-opacity="0.2" stroke-width="1"/>
+
+  <!-- Scenario table header -->
+  <text x="640" y="400" font-family="Georgia, serif" font-size="16" fill="#60a5fa" text-anchor="middle" letter-spacing="3">시나리오 확률</text>
+
+  <!-- Scenario bars -->
+  <!-- 불 52% -->
+  <rect x="160" y="420" width="664" height="36" rx="3" fill="#4ade80" fill-opacity="0.22"/>
+  <text x="176" y="444" font-family="Georgia, serif" font-size="17" fill="#4ade80" font-weight="bold">불  9,000 탐색</text>
+  <text x="830" y="444" font-family="Georgia, serif" font-size="22" fill="#4ade80" font-weight="bold" text-anchor="end">52%</text>
+
+  <!-- 베이스 27% -->
+  <rect x="160" y="466" width="346" height="36" rx="3" fill="#60a5fa" fill-opacity="0.15"/>
+  <text x="176" y="490" font-family="Georgia, serif" font-size="17" fill="#60a5fa">베이스  박스 소화</text>
+  <text x="510" y="490" font-family="Georgia, serif" font-size="22" fill="#60a5fa" font-weight="bold" text-anchor="end">27%</text>
+
+  <!-- 베어 16% -->
+  <rect x="160" y="512" width="205" height="36" rx="3" fill="#f87171" fill-opacity="0.12"/>
+  <text x="176" y="536" font-family="Georgia, serif" font-size="17" fill="#f87171">베어  되돌림</text>
+  <text x="365" y="536" font-family="Georgia, serif" font-size="22" fill="#f87171" font-weight="bold" text-anchor="end">16%</text>
+
+  <!-- 블랙스완 5% -->
+  <rect x="160" y="558" width="64" height="36" rx="3" fill="#a78bfa" fill-opacity="0.12"/>
+  <text x="176" y="582" font-family="Georgia, serif" font-size="17" fill="#a78bfa">블랙스완</text>
+  <text x="228" y="582" font-family="Georgia, serif" font-size="22" fill="#a78bfa" font-weight="bold" text-anchor="end">5%</text>
+
+  <!-- Separator -->
+  <line x1="160" y1="612" x2="1120" y2="612" stroke="#60a5fa" stroke-opacity="0.15" stroke-width="1"/>
+
+  <!-- FOMC callout -->
+  <text x="640" y="654" font-family="Georgia, serif" font-size="19" fill="#60a5fa" text-anchor="middle" letter-spacing="1">FOMC 내일 새벽 — 비둘기 시 9,000 탐색 시작</text>
+
+  <!-- Bottom -->
+  <text x="640" y="700" font-family="Georgia, serif" font-size="12" fill="#2d304a" text-anchor="middle">lincoln-brief.vercel.app  ·  정보 제공 목적, 투자 권유 아님</text>
+
+  <!-- Bottom accent -->
+  <rect x="0" y="716" width="1280" height="4" fill="url(#blueLine)"/>
+</svg>
