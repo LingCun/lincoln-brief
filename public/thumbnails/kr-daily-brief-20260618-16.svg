@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f0c08"/>
+      <stop offset="100%" style="stop-color:#1a1510"/>
+    </linearGradient>
+    <linearGradient id="goldLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#d8b878;stop-opacity:0"/>
+      <stop offset="30%" style="stop-color:#d8b878;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#d8b878;stop-opacity:0.3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Subtle grid lines -->
+  <line x1="0" y1="240" x2="1280" y2="240" stroke="#d8b878" stroke-opacity="0.06" stroke-width="1"/>
+  <line x1="0" y1="480" x2="1280" y2="480" stroke="#d8b878" stroke-opacity="0.06" stroke-width="1"/>
+  <line x1="427" y1="0" x2="427" y2="720" stroke="#d8b878" stroke-opacity="0.06" stroke-width="1"/>
+  <line x1="853" y1="0" x2="853" y2="720" stroke="#d8b878" stroke-opacity="0.06" stroke-width="1"/>
+
+  <!-- Top gold accent bar -->
+  <rect x="0" y="0" width="1280" height="4" fill="url(#goldLine)"/>
+
+  <!-- Lincoln Brief mark (top left) -->
+  <text x="48" y="54" font-family="Georgia, serif" font-size="18" fill="#d8b878" font-weight="bold" letter-spacing="3">LINCOLN BRIEF</text>
+  <text x="48" y="76" font-family="Georgia, serif" font-size="13" fill="#8a7050" letter-spacing="2">KR MARKET · DAILY</text>
+
+  <!-- Edition label (top right) -->
+  <rect x="1060" y="28" width="180" height="36" rx="3" fill="#d8b878" fill-opacity="0.12" stroke="#d8b878" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="1150" y="51" font-family="Georgia, serif" font-size="14" fill="#d8b878" text-anchor="middle" letter-spacing="1">2026.06.18 · 16:00</text>
+
+  <!-- Diamond decorative element -->
+  <polygon points="640,108 648,116 640,124 632,116" fill="#d8b878" fill-opacity="0.6"/>
+
+  <!-- 9,000 돌파 badge -->
+  <rect x="430" y="130" width="420" height="42" rx="4" fill="#4ade80" fill-opacity="0.18" stroke="#4ade80" stroke-opacity="0.7" stroke-width="1.5"/>
+  <text x="640" y="157" font-family="Georgia, serif" font-size="18" fill="#4ade80" text-anchor="middle" letter-spacing="3" font-weight="bold">★ KOSPI 9,000 돌파 확인</text>
+
+  <!-- Main KOSPI number -->
+  <text x="640" y="255" font-family="Georgia, serif" font-size="108" fill="#ffffff" text-anchor="middle" font-weight="bold" letter-spacing="-2">9,063.84</text>
+
+  <!-- KOSPI label -->
+  <text x="640" y="300" font-family="Georgia, serif" font-size="22" fill="#d8b878" text-anchor="middle" letter-spacing="4">KOSPI</text>
+
+  <!-- Change indicator -->
+  <polygon points="546,324 558,308 570,324" fill="#4ade80"/>
+  <text x="580" y="325" font-family="Georgia, serif" font-size="26" fill="#4ade80" font-weight="bold">+2.25%   +199.60pt</text>
+
+  <!-- Gold separator line -->
+  <line x1="160" y1="365" x2="1120" y2="365" stroke="#d8b878" stroke-opacity="0.25" stroke-width="1"/>
+
+  <!-- Three key metrics bottom -->
+  <!-- SK하이닉스 -->
+  <text x="213" y="420" font-family="Georgia, serif" font-size="15" fill="#8a7050" text-anchor="middle" letter-spacing="1">SK하이닉스</text>
+  <text x="213" y="462" font-family="Georgia, serif" font-size="30" fill="#ffffff" text-anchor="middle" font-weight="bold">268.5만원</text>
+  <polygon points="188,482 200,468 212,482" fill="#4ade80"/>
+  <text x="222" y="484" font-family="Georgia, serif" font-size="18" fill="#4ade80">+6.51%</text>
+
+  <!-- Divider -->
+  <line x1="427" y1="392" x2="427" y2="510" stroke="#d8b878" stroke-opacity="0.2" stroke-width="1"/>
+
+  <!-- KOSDAQ -->
+  <text x="640" y="420" font-family="Georgia, serif" font-size="15" fill="#8a7050" text-anchor="middle" letter-spacing="1">KOSDAQ</text>
+  <text x="640" y="462" font-family="Georgia, serif" font-size="30" fill="#ffffff" text-anchor="middle" font-weight="bold">1,000.93</text>
+  <polygon points="616,484 628,498 640,484" fill="#f87171"/>
+  <text x="650" y="484" font-family="Georgia, serif" font-size="18" fill="#f87171">−3.01%</text>
+
+  <!-- Divider -->
+  <line x1="853" y1="392" x2="853" y2="510" stroke="#d8b878" stroke-opacity="0.2" stroke-width="1"/>
+
+  <!-- USD/KRW -->
+  <text x="1067" y="420" font-family="Georgia, serif" font-size="15" fill="#8a7050" text-anchor="middle" letter-spacing="1">USD/KRW</text>
+  <text x="1067" y="462" font-family="Georgia, serif" font-size="30" fill="#ffffff" text-anchor="middle" font-weight="bold">1,537.19</text>
+  <polygon points="1043,484 1055,470 1067,484" fill="#f87171"/>
+  <text x="1077" y="484" font-family="Georgia, serif" font-size="18" fill="#f87171">+1.74%</text>
+
+  <!-- Gold separator line -->
+  <line x1="160" y1="538" x2="1120" y2="538" stroke="#d8b878" stroke-opacity="0.25" stroke-width="1"/>
+
+  <!-- Bottom row — Samsung Electronics -->
+  <text x="427" y="582" font-family="Georgia, serif" font-size="15" fill="#8a7050" text-anchor="middle" letter-spacing="1">삼성전자</text>
+  <text x="427" y="618" font-family="Georgia, serif" font-size="26" fill="#ffffff" text-anchor="middle" font-weight="bold">362,500원</text>
+  <polygon points="405,636 417,622 429,636" fill="#4ade80"/>
+  <text x="439" y="638" font-family="Georgia, serif" font-size="16" fill="#4ade80">+4.62%</text>
+
+  <!-- Bottom row divider -->
+  <line x1="640" y1="555" x2="640" y2="660" stroke="#d8b878" stroke-opacity="0.15" stroke-width="1"/>
+
+  <!-- Samsung Bio -->
+  <text x="853" y="582" font-family="Georgia, serif" font-size="15" fill="#8a7050" text-anchor="middle" letter-spacing="1">삼성바이오로직스</text>
+  <text x="853" y="618" font-family="Georgia, serif" font-size="26" fill="#ffffff" text-anchor="middle" font-weight="bold">143만원</text>
+  <polygon points="831,636 843,622 855,636" fill="#4ade80"/>
+  <text x="865" y="638" font-family="Georgia, serif" font-size="16" fill="#4ade80">+4.38%</text>
+
+  <!-- Bottom tagline -->
+  <text x="640" y="700" font-family="Georgia, serif" font-size="13" fill="#8a7050" text-anchor="middle" letter-spacing="2">lincoln-brief.vercel.app</text>
+</svg>

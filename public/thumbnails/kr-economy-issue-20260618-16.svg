@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0e0a0a"/>
+      <stop offset="100%" style="stop-color:#18100f"/>
+    </linearGradient>
+    <linearGradient id="goldLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#d8b878;stop-opacity:0"/>
+      <stop offset="30%" style="stop-color:#d8b878;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#d8b878;stop-opacity:0.3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Grid lines -->
+  <line x1="0" y1="240" x2="1280" y2="240" stroke="#d8b878" stroke-opacity="0.05" stroke-width="1"/>
+  <line x1="0" y1="480" x2="1280" y2="480" stroke="#d8b878" stroke-opacity="0.05" stroke-width="1"/>
+  <line x1="427" y1="0" x2="427" y2="720" stroke="#d8b878" stroke-opacity="0.05" stroke-width="1"/>
+  <line x1="853" y1="0" x2="853" y2="720" stroke="#d8b878" stroke-opacity="0.05" stroke-width="1"/>
+
+  <!-- Top accent bar — red for economy/macro alert -->
+  <rect x="0" y="0" width="1280" height="4" fill="#ef4444"/>
+
+  <!-- Lincoln Brief mark -->
+  <text x="48" y="54" font-family="Georgia, serif" font-size="18" fill="#d8b878" font-weight="bold" letter-spacing="3">LINCOLN BRIEF</text>
+  <text x="48" y="76" font-family="Georgia, serif" font-size="13" fill="#8a7050" letter-spacing="2">KR ECONOMY ISSUE</text>
+
+  <!-- Edition label -->
+  <rect x="1060" y="28" width="180" height="36" rx="3" fill="#d8b878" fill-opacity="0.12" stroke="#d8b878" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="1150" y="51" font-family="Georgia, serif" font-size="14" fill="#d8b878" text-anchor="middle" letter-spacing="1">2026.06.18 · 16:00</text>
+
+  <!-- Diamond -->
+  <polygon points="640,108 648,116 640,124 632,116" fill="#d8b878" fill-opacity="0.6"/>
+
+  <!-- Eyebrow -->
+  <text x="640" y="156" font-family="Georgia, serif" font-size="19" fill="#f87171" text-anchor="middle" letter-spacing="2">원화 급락의 역설</text>
+
+  <!-- Main FX number -->
+  <text x="640" y="268" font-family="Georgia, serif" font-size="104" fill="#ffffff" text-anchor="middle" font-weight="bold" letter-spacing="-2">1,537.19</text>
+
+  <!-- USD/KRW label -->
+  <text x="640" y="310" font-family="Georgia, serif" font-size="22" fill="#d8b878" text-anchor="middle" letter-spacing="4">USD/KRW</text>
+
+  <!-- Change indicator — red arrow (won weakened) -->
+  <polygon points="564,334 576,350 588,334" fill="#f87171"/>
+  <text x="598" y="349" font-family="Georgia, serif" font-size="26" fill="#f87171" font-weight="bold">+1.74%   원화 약세</text>
+
+  <!-- Gold separator -->
+  <line x1="160" y1="378" x2="1120" y2="378" stroke="#d8b878" stroke-opacity="0.25" stroke-width="1"/>
+
+  <!-- Paradox row -->
+  <!-- KOSPI up -->
+  <text x="213" y="424" font-family="Georgia, serif" font-size="14" fill="#8a7050" text-anchor="middle" letter-spacing="1">KOSPI</text>
+  <text x="213" y="464" font-family="Georgia, serif" font-size="30" fill="#4ade80" text-anchor="middle" font-weight="bold">9,063.84</text>
+  <polygon points="188,484 200,470 212,484" fill="#4ade80"/>
+  <text x="222" y="486" font-family="Georgia, serif" font-size="18" fill="#4ade80">+2.25%</text>
+
+  <!-- VS divider -->
+  <text x="427" y="460" font-family="Georgia, serif" font-size="28" fill="#d8b878" text-anchor="middle" fill-opacity="0.5">↔</text>
+
+  <!-- FX down -->
+  <text x="640" y="424" font-family="Georgia, serif" font-size="14" fill="#8a7050" text-anchor="middle" letter-spacing="1">달러 기준 KOSPI 수익률</text>
+  <text x="640" y="464" font-family="Georgia, serif" font-size="30" fill="#f87171" text-anchor="middle" font-weight="bold">+0.85%</text>
+  <text x="640" y="488" font-family="Georgia, serif" font-size="15" fill="#6b7280" text-anchor="middle">원화 기준 +2.25% → 환차손 희석</text>
+
+  <!-- Divider -->
+  <line x1="853" y1="396" x2="853" y2="500" stroke="#d8b878" stroke-opacity="0.2" stroke-width="1"/>
+
+  <!-- KOSDAQ near 1000 -->
+  <text x="1067" y="424" font-family="Georgia, serif" font-size="14" fill="#8a7050" text-anchor="middle" letter-spacing="1">KOSDAQ</text>
+  <text x="1067" y="464" font-family="Georgia, serif" font-size="30" fill="#f87171" text-anchor="middle" font-weight="bold">1,000.93</text>
+  <polygon points="1043,486 1055,500 1067,486" fill="#f87171"/>
+  <text x="1077" y="488" font-family="Georgia, serif" font-size="18" fill="#f87171">−3.01%</text>
+  <text x="1067" y="508" font-family="Georgia, serif" font-size="13" fill="#6b7280" text-anchor="middle">1,000선 0.93pt 위</text>
+
+  <!-- Gold separator -->
+  <line x1="160" y1="530" x2="1120" y2="530" stroke="#d8b878" stroke-opacity="0.25" stroke-width="1"/>
+
+  <!-- Impact channels -->
+  <text x="160" y="565" font-family="Georgia, serif" font-size="14" fill="#8a7050" letter-spacing="1">원화 약세 파급 효과</text>
+
+  <rect x="160" y="578" width="250" height="30" rx="3" fill="#f87171" fill-opacity="0.08" stroke="#f87171" stroke-opacity="0.25" stroke-width="1"/>
+  <text x="285" y="598" font-family="Georgia, serif" font-size="13" fill="#f87171" text-anchor="middle">수입 물가 상승</text>
+
+  <rect x="430" y="578" width="250" height="30" rx="3" fill="#f87171" fill-opacity="0.08" stroke="#f87171" stroke-opacity="0.25" stroke-width="1"/>
+  <text x="555" y="598" font-family="Georgia, serif" font-size="13" fill="#f87171" text-anchor="middle">외국인 수익률 희석</text>
+
+  <rect x="700" y="578" width="250" height="30" rx="3" fill="#d8b878" fill-opacity="0.08" stroke="#d8b878" stroke-opacity="0.25" stroke-width="1"/>
+  <text x="825" y="598" font-family="Georgia, serif" font-size="13" fill="#d8b878" text-anchor="middle">반도체 수출 원화환산↑</text>
+
+  <!-- Key threshold -->
+  <rect x="400" y="626" width="480" height="36" rx="4" fill="#ef4444" fill-opacity="0.1" stroke="#ef4444" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="640" y="649" font-family="Georgia, serif" font-size="16" fill="#f87171" text-anchor="middle" letter-spacing="1">임계선: USD/KRW 1,540원 → 외국인 이탈 압력</text>
+
+  <!-- Bottom tagline -->
+  <text x="640" y="700" font-family="Georgia, serif" font-size="13" fill="#8a7050" text-anchor="middle" letter-spacing="2">lincoln-brief.vercel.app</text>
+</svg>
