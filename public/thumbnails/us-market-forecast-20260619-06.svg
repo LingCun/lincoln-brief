@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1e0e0b"/>
+      <stop offset="100%" stop-color="#120807"/>
+    </linearGradient>
+    <linearGradient id="red" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#e8806a"/>
+      <stop offset="50%" stop-color="#d96552"/>
+      <stop offset="100%" stop-color="#b84a38"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#d96552" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#d96552" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1080" cy="160" r="360" fill="url(#glow)"/>
+  <circle cx="200" cy="620" r="240" fill="url(#glow)"/>
+
+  <!-- 좌상단 브랜드 -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#d96552" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#f5e2de">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#d96552">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#d96552" text-anchor="end">2026.06.19 · MARKET FORECAST · 06:00</text>
+
+  <!-- 헤드라인 -->
+  <text x="80" y="175" font-family="monospace" font-size="13" letter-spacing="5" fill="#d96552">— 4주 시나리오 재설정 —</text>
+  <text x="80" y="260" font-family="Georgia, serif" font-size="58" font-weight="500" fill="#f5e2de">US10Y 4.451%</text>
+  <text x="80" y="330" font-family="Georgia, serif" font-size="52" font-style="italic" fill="url(#red)">하락 신호 · FOMC 대기</text>
+  <text x="80" y="385" font-family="sans-serif" font-size="18" fill="#c09080">S&amp;P 7,500 지지 확인 · 베이스(35%) 박스 횡보 · JPM −2.47% 위험 신호</text>
+
+  <!-- 4 시나리오 -->
+  <g transform="translate(80, 450)">
+    <!-- 경로 A -->
+    <g>
+      <line x1="0" y1="0" x2="40" y2="0" stroke="#d96552" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="10" letter-spacing="2" fill="#c09080">경로 A · 20%</text>
+      <text x="0" y="58" font-family="Georgia, serif" font-size="28" fill="#6ba368">7,600+</text>
+      <text x="0" y="84" font-family="monospace" font-size="10" fill="#6ba368">비둘기 · US10Y 4.3%</text>
+    </g>
+    <!-- 경로 B -->
+    <g transform="translate(260, 0)">
+      <line x1="0" y1="0" x2="40" y2="0" stroke="#d96552" stroke-width="2"/>
+      <text x="0" y="26" font-family="monospace" font-size="10" letter-spacing="2" fill="#c09080">경로 B · 35% ★</text>
+      <text x="0" y="58" font-family="Georgia, serif" font-size="28" fill="#f5e2de">박스 횡보</text>
+      <text x="0" y="84" font-family="monospace" font-size="10" fill="#f5e2de">7,450~7,550</text>
+    </g>
+    <!-- 경로 C -->
+    <g transform="translate(560, 0)">
+      <line x1="0" y1="0" x2="40" y2="0" stroke="#d96552" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="10" letter-spacing="2" fill="#c09080">경로 C · 30%</text>
+      <text x="0" y="58" font-family="Georgia, serif" font-size="28" fill="#d96552">7,400 테스트</text>
+      <text x="0" y="84" font-family="monospace" font-size="10" fill="#d96552">매파 · JPM 심화</text>
+    </g>
+    <!-- 경로 D -->
+    <g transform="translate(880, 0)">
+      <line x1="0" y1="0" x2="40" y2="0" stroke="#d96552" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="10" letter-spacing="2" fill="#c09080">경로 D · 15%</text>
+      <text x="0" y="58" font-family="Georgia, serif" font-size="28" fill="#e05050">급락</text>
+      <text x="0" y="84" font-family="monospace" font-size="10" fill="#e05050">매크로 충격</text>
+    </g>
+  </g>
+
+  <!-- 하단 -->
+  <line x1="80" y1="680" x2="1200" y2="680" stroke="#d96552" stroke-width="0.5" stroke-opacity="0.4"/>
+  <text x="80" y="705" font-family="monospace" font-size="10" letter-spacing="2" fill="#c09080">핵심 촉매: FOMC 결정 · 관찰 레벨: S&amp;P 7,450/7,550 · US10Y 4.3%/4.6%</text>
+</svg>
