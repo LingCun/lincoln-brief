@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#140806"/>
+      <stop offset="100%" style="stop-color:#1e1008"/>
+    </linearGradient>
+    <linearGradient id="redLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#d96552;stop-opacity:0"/>
+      <stop offset="30%" style="stop-color:#d96552;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#d96552;stop-opacity:0.3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Subtle grid lines -->
+  <line x1="0" y1="240" x2="1280" y2="240" stroke="#d96552" stroke-opacity="0.08" stroke-width="1"/>
+  <line x1="0" y1="480" x2="1280" y2="480" stroke="#d96552" stroke-opacity="0.08" stroke-width="1"/>
+  <line x1="427" y1="0" x2="427" y2="720" stroke="#d96552" stroke-opacity="0.08" stroke-width="1"/>
+  <line x1="853" y1="0" x2="853" y2="720" stroke="#d96552" stroke-opacity="0.08" stroke-width="1"/>
+
+  <!-- Top red accent bar -->
+  <rect x="0" y="0" width="1280" height="4" fill="url(#redLine)"/>
+
+  <!-- Lincoln Brief mark (top left) -->
+  <text x="48" y="54" font-family="Georgia, serif" font-size="18" fill="#d96552" font-weight="bold" letter-spacing="3">LINCOLN BRIEF</text>
+  <text x="48" y="76" font-family="Georgia, serif" font-size="13" fill="#803830" letter-spacing="2">KR MARKET · FORECAST</text>
+
+  <!-- Edition label (top right) -->
+  <rect x="1060" y="28" width="180" height="36" rx="3" fill="#d96552" fill-opacity="0.12" stroke="#d96552" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="1150" y="51" font-family="Georgia, serif" font-size="14" fill="#d96552" text-anchor="middle" letter-spacing="1">2026.06.18 · 11:00</text>
+
+  <!-- Diamond decorative element -->
+  <polygon points="640,110 648,118 640,126 632,118" fill="#d96552" fill-opacity="0.8"/>
+
+  <!-- Category label -->
+  <text x="640" y="168" font-family="Georgia, serif" font-size="22" fill="#d96552" text-anchor="middle" letter-spacing="4">시장 예측 FORECAST</text>
+
+  <!-- Main headline -->
+  <text x="640" y="255" font-family="Georgia, serif" font-size="82" fill="#ffffff" text-anchor="middle" font-weight="bold" letter-spacing="-1">KOSPI 9,000</text>
+
+  <!-- Subhead -->
+  <text x="640" y="305" font-family="Georgia, serif" font-size="28" fill="#d96552" text-anchor="middle" letter-spacing="2">3.31포인트 앞</text>
+
+  <!-- Gold separator line -->
+  <line x1="160" y1="340" x2="1120" y2="340" stroke="#d96552" stroke-opacity="0.25" stroke-width="1"/>
+
+  <!-- Scenario table header -->
+  <text x="640" y="378" font-family="Georgia, serif" font-size="16" fill="#803830" text-anchor="middle" letter-spacing="3">SCENARIO TABLE</text>
+
+  <!-- Scenario boxes -->
+  <!-- Bull -->
+  <rect x="80" y="390" width="260" height="100" rx="4" fill="#4ade80" fill-opacity="0.08" stroke="#4ade80" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="210" y="418" font-family="Georgia, serif" font-size="13" fill="#4ade80" text-anchor="middle" letter-spacing="1">불 · BULL</text>
+  <text x="210" y="448" font-family="Georgia, serif" font-size="28" fill="#4ade80" text-anchor="middle" font-weight="bold">55%</text>
+  <text x="210" y="474" font-family="Georgia, serif" font-size="12" fill="#4ade80" text-anchor="middle">9,000 돌파 + 안착</text>
+
+  <!-- Base -->
+  <rect x="360" y="390" width="260" height="100" rx="4" fill="#d8b878" fill-opacity="0.08" stroke="#d8b878" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="490" y="418" font-family="Georgia, serif" font-size="13" fill="#d8b878" text-anchor="middle" letter-spacing="1">베이스 · BASE</text>
+  <text x="490" y="448" font-family="Georgia, serif" font-size="28" fill="#d8b878" text-anchor="middle" font-weight="bold">25%</text>
+  <text x="490" y="474" font-family="Georgia, serif" font-size="12" fill="#d8b878" text-anchor="middle">8,900~9,050 박스</text>
+
+  <!-- Bear -->
+  <rect x="640" y="390" width="260" height="100" rx="4" fill="#f87171" fill-opacity="0.08" stroke="#f87171" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="770" y="418" font-family="Georgia, serif" font-size="13" fill="#f87171" text-anchor="middle" letter-spacing="1">베어 · BEAR</text>
+  <text x="770" y="448" font-family="Georgia, serif" font-size="28" fill="#f87171" text-anchor="middle" font-weight="bold">15%</text>
+  <text x="770" y="474" font-family="Georgia, serif" font-size="12" fill="#f87171" text-anchor="middle">8,700~8,900 되돌림</text>
+
+  <!-- Black Swan -->
+  <rect x="920" y="390" width="260" height="100" rx="4" fill="#888888" fill-opacity="0.08" stroke="#888888" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="1050" y="418" font-family="Georgia, serif" font-size="13" fill="#888888" text-anchor="middle" letter-spacing="1">블랙 스완</text>
+  <text x="1050" y="448" font-family="Georgia, serif" font-size="28" fill="#888888" text-anchor="middle" font-weight="bold">5%</text>
+  <text x="1050" y="474" font-family="Georgia, serif" font-size="12" fill="#888888" text-anchor="middle">8,000 이탈</text>
+
+  <!-- Gold separator line -->
+  <line x1="160" y1="510" x2="1120" y2="510" stroke="#d96552" stroke-opacity="0.25" stroke-width="1"/>
+
+  <!-- Key conditions -->
+  <text x="640" y="555" font-family="Georgia, serif" font-size="18" fill="#d96552" text-anchor="middle" letter-spacing="2">핵심 조건 — USD/KRW 1,510원 이하 복귀 · NVDA $205+</text>
+
+  <!-- FOMC callout -->
+  <text x="640" y="600" font-family="Georgia, serif" font-size="17" fill="#c08070" text-anchor="middle">FOMC 이후 US10Y 4.463% · 돌파보다 안착이 진짜 문제</text>
+
+  <!-- Bottom disclaimer -->
+  <text x="640" y="690" font-family="Georgia, serif" font-size="12" fill="#4a2820" text-anchor="middle">lincoln-brief.vercel.app  ·  정보 제공 목적, 투자 권유 아님</text>
+
+  <!-- Bottom red accent -->
+  <rect x="0" y="716" width="1280" height="4" fill="url(#redLine)"/>
+</svg>
