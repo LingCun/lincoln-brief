@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#080f0a"/>
+      <stop offset="100%" style="stop-color:#101a10"/>
+    </linearGradient>
+    <linearGradient id="greenLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7a9d6e;stop-opacity:0"/>
+      <stop offset="30%" style="stop-color:#7a9d6e;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#7a9d6e;stop-opacity:0.3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Subtle grid lines -->
+  <line x1="0" y1="240" x2="1280" y2="240" stroke="#7a9d6e" stroke-opacity="0.08" stroke-width="1"/>
+  <line x1="0" y1="480" x2="1280" y2="480" stroke="#7a9d6e" stroke-opacity="0.08" stroke-width="1"/>
+  <line x1="427" y1="0" x2="427" y2="720" stroke="#7a9d6e" stroke-opacity="0.08" stroke-width="1"/>
+  <line x1="853" y1="0" x2="853" y2="720" stroke="#7a9d6e" stroke-opacity="0.08" stroke-width="1"/>
+
+  <!-- Top green accent bar -->
+  <rect x="0" y="0" width="1280" height="4" fill="url(#greenLine)"/>
+
+  <!-- Lincoln Brief mark (top left) -->
+  <text x="48" y="54" font-family="Georgia, serif" font-size="18" fill="#7a9d6e" font-weight="bold" letter-spacing="3">LINCOLN BRIEF</text>
+  <text x="48" y="76" font-family="Georgia, serif" font-size="13" fill="#3a6030" letter-spacing="2">KR MARKET · ECONOMY ISSUE</text>
+
+  <!-- Edition label (top right) -->
+  <rect x="1060" y="28" width="180" height="36" rx="3" fill="#7a9d6e" fill-opacity="0.12" stroke="#7a9d6e" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="1150" y="51" font-family="Georgia, serif" font-size="14" fill="#7a9d6e" text-anchor="middle" letter-spacing="1">2026.06.18 · 11:00</text>
+
+  <!-- Diamond decorative element -->
+  <polygon points="640,110 648,118 640,126 632,118" fill="#7a9d6e" fill-opacity="0.8"/>
+
+  <!-- Category label -->
+  <text x="640" y="168" font-family="Georgia, serif" font-size="20" fill="#7a9d6e" text-anchor="middle" letter-spacing="3">경제 이슈 · STRUCTURAL DIVERGENCE</text>
+
+  <!-- Main headline — two-row comparison -->
+  <!-- KOSPI side -->
+  <rect x="80" y="192" width="500" height="160" rx="6" fill="#4ade80" fill-opacity="0.06" stroke="#4ade80" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="330" y="232" font-family="Georgia, serif" font-size="20" fill="#4ade80" text-anchor="middle" letter-spacing="3">KOSPI</text>
+  <text x="330" y="310" font-family="Georgia, serif" font-size="72" fill="#4ade80" text-anchor="middle" font-weight="bold">+1.49%</text>
+  <text x="330" y="342" font-family="Georgia, serif" font-size="16" fill="#4ade80" text-anchor="middle">8,996.69</text>
+
+  <!-- VS center -->
+  <text x="640" y="290" font-family="Georgia, serif" font-size="42" fill="#7a9d6e" text-anchor="middle" font-weight="bold">VS</text>
+
+  <!-- KOSDAQ side -->
+  <rect x="700" y="192" width="500" height="160" rx="6" fill="#f87171" fill-opacity="0.06" stroke="#f87171" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="950" y="232" font-family="Georgia, serif" font-size="20" fill="#f87171" text-anchor="middle" letter-spacing="3">KOSDAQ</text>
+  <text x="950" y="310" font-family="Georgia, serif" font-size="72" fill="#f87171" text-anchor="middle" font-weight="bold">−2.77%</text>
+  <text x="950" y="342" font-family="Georgia, serif" font-size="16" fill="#f87171" text-anchor="middle">1,003.38</text>
+
+  <!-- Gap badge -->
+  <rect x="518" y="370" width="244" height="38" rx="4" fill="#7a9d6e" fill-opacity="0.15" stroke="#7a9d6e" stroke-opacity="0.5" stroke-width="1"/>
+  <text x="640" y="395" font-family="Georgia, serif" font-size="17" fill="#aaccaa" text-anchor="middle" letter-spacing="2">격차 4.26%포인트</text>
+
+  <!-- Gold separator line -->
+  <line x1="160" y1="430" x2="1120" y2="430" stroke="#7a9d6e" stroke-opacity="0.25" stroke-width="1"/>
+
+  <!-- Cause analysis bullets -->
+  <text x="160" y="470" font-family="Georgia, serif" font-size="15" fill="#7a9d6e" letter-spacing="1">① FOMC 이후 US10Y 4.463% — 성장주 할인율 상승</text>
+  <text x="160" y="500" font-family="Georgia, serif" font-size="15" fill="#7a9d6e" letter-spacing="1">② USD/KRW 1,520.78원 달러 강세 — 외국인 중소형주 이탈</text>
+  <text x="160" y="530" font-family="Georgia, serif" font-size="15" fill="#7a9d6e" letter-spacing="1">③ SK하이닉스(+6.11%) 모멘텀 — 대형주로 자금 집중</text>
+  <text x="160" y="560" font-family="Georgia, serif" font-size="15" fill="#7a9d6e" letter-spacing="1">④ WTI $74.02(−3.61%) — 소재·에너지 KOSDAQ 종목 타격</text>
+
+  <!-- Gold separator line -->
+  <line x1="160" y1="590" x2="1120" y2="590" stroke="#7a9d6e" stroke-opacity="0.25" stroke-width="1"/>
+
+  <!-- Key insight -->
+  <text x="640" y="630" font-family="Georgia, serif" font-size="17" fill="#aaccaa" text-anchor="middle">KOSPI 지수 상승 ≠ 내 포트폴리오 상승</text>
+
+  <!-- Bottom disclaimer -->
+  <text x="640" y="690" font-family="Georgia, serif" font-size="12" fill="#2a402a" text-anchor="middle">lincoln-brief.vercel.app  ·  정보 제공 목적, 투자 권유 아님</text>
+
+  <!-- Bottom green accent -->
+  <rect x="0" y="716" width="1280" height="4" fill="url(#greenLine)"/>
+</svg>
