@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-06-18T12:31:07.824Z",
+  "asOf": "2026-06-18T12:54:43.408Z",
   "asOfLabel": "6/18 한국·미국 마감",
   "source": "Yahoo Finance · KRX",
   "us": {
@@ -567,9 +567,9 @@
       {
         "symbol": "USDKRW",
         "label": "USD/KRW",
-        "close": 1535.28,
-        "change": 24.320039062499973,
-        "changePct": 1.6095753488669682,
+        "close": 1537.74,
+        "change": 26.78003906250001,
+        "changePct": 1.772385751762998,
         "note": "강한 상승"
       }
     ],
@@ -1159,36 +1159,36 @@
     },
     {
       "symbol": "USD/KRW",
-      "value": "1,535.28",
-      "change": "+1.61%",
+      "value": "1,537.74",
+      "change": "+1.77%",
       "up": true,
       "market": "fx"
     },
     {
       "symbol": "BTC",
-      "value": "$64,118",
-      "change": "-2.26%",
+      "value": "$64,268",
+      "change": "-2.03%",
       "up": false,
       "market": "crypto"
     },
     {
       "symbol": "GOLD",
-      "value": "$4,281.40",
-      "change": "-1.78%",
+      "value": "$4,263.70",
+      "change": "-2.18%",
       "up": false,
       "market": "commodity"
     },
     {
       "symbol": "WTI",
-      "value": "$74.47",
-      "change": "-3.02%",
+      "value": "$74.57",
+      "change": "-2.89%",
       "up": false,
       "market": "commodity"
     },
     {
       "symbol": "US10Y",
-      "value": "4.463%",
-      "change": "-0.53%",
+      "value": "4.441%",
+      "change": "-1.03%",
       "up": false,
       "market": "yield"
     }
@@ -1201,9 +1201,9 @@
     },
     "crypto": {
       "source": "coingecko",
-      "btcUsd": 64110,
-      "change24hPct": -0.9207900576209728,
-      "asOf": "2026-06-18T12:30:33.000Z"
+      "btcUsd": 64238,
+      "change24hPct": -1.0267800335984414,
+      "asOf": "2026-06-18T12:54:35.000Z"
     },
     "fred": {
       "source": "fred",
@@ -1230,20 +1230,48 @@
         }
       }
     },
-    "usStocks": null,
+    "usStocks": {
+      "source": "finnhub",
+      "quotes": {
+        "AAPL": {
+          "price": 295.95,
+          "previousClose": 299.24,
+          "change": -3.29,
+          "changePct": -1.0995
+        },
+        "MSFT": {
+          "price": 378.91,
+          "previousClose": 393.83,
+          "change": -14.92,
+          "changePct": -3.7884
+        },
+        "NVDA": {
+          "price": 204.65,
+          "previousClose": 207.41,
+          "change": -2.76,
+          "changePct": -1.3307
+        },
+        "TSLA": {
+          "price": 396.38,
+          "previousClose": 404.66,
+          "change": -8.28,
+          "changePct": -2.0462
+        }
+      }
+    },
     "commodities": {
       "source": "twelvedata",
       "quotes": {
         "XAU/USD": {
-          "price": 4255.43855,
+          "price": 4242.99495,
           "previousClose": 4258.07298,
-          "changePct": -0.061869066
+          "changePct": -0.35410455
         }
       }
     },
     "yahoo": {
-      "usdKrw": 1535.28,
-      "btcUsd": 64119
+      "usdKrw": 1537.74,
+      "btcUsd": 64267.64
     }
   }
 }
