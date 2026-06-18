@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0c160e"/>
+      <stop offset="100%" stop-color="#070e09"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#9fc98a"/>
+      <stop offset="50%" stop-color="#7a9d6e"/>
+      <stop offset="100%" stop-color="#587850"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#7a9d6e" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#7a9d6e" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1060" cy="190" r="350" fill="url(#glow)"/>
+  <circle cx="200" cy="600" r="250" fill="url(#glow)"/>
+
+  <!-- 좌상단 브랜드 -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#7a9d6e" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#d8ecd2">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#7a9d6e">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#7a9d6e" text-anchor="end">2026.06.19 · ECONOMY ISSUE · 06:00</text>
+
+  <!-- 헤드라인 -->
+  <text x="80" y="175" font-family="monospace" font-size="13" letter-spacing="5" fill="#7a9d6e">— 안전·위험·에너지 동시 이탈 —</text>
+  <text x="80" y="260" font-family="Georgia, serif" font-size="58" font-weight="500" fill="#d8ecd2">Gold · BTC · WTI</text>
+  <text x="80" y="330" font-family="Georgia, serif" font-size="54" font-style="italic" fill="url(#green)">달러만 독주</text>
+  <text x="80" y="385" font-family="sans-serif" font-size="18" fill="#90b488">FOMC 앞 달러 집중 포지셔닝 — 세 자산군 전부 하락</text>
+
+  <!-- 3자산 데이터 -->
+  <g transform="translate(80, 450)">
+    <!-- Gold -->
+    <g>
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#7a9d6e" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="3" fill="#90b488">SAFE · GOLD</text>
+      <text x="0" y="66" font-family="Georgia, serif" font-size="34" fill="#d8ecd2">$4,227.90</text>
+      <polygon points="0,82 14,82 7,96" fill="#d96552"/>
+      <text x="22" y="89" font-family="monospace" font-size="15" fill="#d96552">−3.01%</text>
+    </g>
+    <!-- BTC -->
+    <g transform="translate(340, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#7a9d6e" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="3" fill="#90b488">CRYPTO · BTC</text>
+      <text x="0" y="66" font-family="Georgia, serif" font-size="34" fill="#d8ecd2">$62,885</text>
+      <polygon points="0,82 14,82 7,96" fill="#d96552"/>
+      <text x="22" y="89" font-family="monospace" font-size="15" fill="#d96552">−4.14%</text>
+    </g>
+    <!-- WTI -->
+    <g transform="translate(680, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#7a9d6e" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="3" fill="#90b488">ENERGY · WTI</text>
+      <text x="0" y="66" font-family="Georgia, serif" font-size="34" fill="#d8ecd2">$75.52</text>
+      <polygon points="0,82 14,82 7,96" fill="#d96552"/>
+      <text x="22" y="89" font-family="monospace" font-size="15" fill="#d96552">−1.65%</text>
+    </g>
+    <!-- USD/KRW -->
+    <g transform="translate(960, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#7a9d6e" stroke-width="1.5"/>
+      <text x="0" y="26" font-family="monospace" font-size="11" letter-spacing="3" fill="#90b488">FX · USD/KRW</text>
+      <text x="0" y="66" font-family="Georgia, serif" font-size="34" fill="#d8ecd2">1,535.16</text>
+      <polygon points="0,72 14,72 7,58" fill="#6ba368"/>
+      <text x="22" y="79" font-family="monospace" font-size="15" fill="#6ba368">+0.64%</text>
+    </g>
+  </g>
+
+  <!-- 하단 -->
+  <line x1="80" y1="680" x2="1200" y2="680" stroke="#7a9d6e" stroke-width="0.5" stroke-opacity="0.4"/>
+  <text x="80" y="705" font-family="monospace" font-size="10" letter-spacing="2" fill="#90b488">공통 촉매: FOMC 결정 · 비둘기면 세 자산 반등 · 매파면 추가 하락</text>
+</svg>

@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a1510"/>
+      <stop offset="100%" stop-color="#0a0907"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f0d88c"/>
+      <stop offset="50%" stop-color="#d8b878"/>
+      <stop offset="100%" stop-color="#b89a5a"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#d8b878" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#d8b878" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1050" cy="180" r="320" fill="url(#glow)"/>
+  <circle cx="220" cy="600" r="260" fill="url(#glow)"/>
+
+  <!-- 좌상단 브랜드 -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#d8b878" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#f5edd9">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#d8b878">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#d8b878" text-anchor="end">2026.06.19 · DAILY BRIEF · 06:00</text>
+
+  <!-- 헤드라인 -->
+  <text x="80" y="180" font-family="monospace" font-size="13" letter-spacing="5" fill="#d8b878">— 6월 18일 미국 최종 종가 —</text>
+  <text x="80" y="265" font-family="Georgia, serif" font-size="62" font-weight="500" fill="#f5edd9">S&amp;P 7,500.58</text>
+  <text x="80" y="335" font-family="Georgia, serif" font-size="62" font-style="italic" fill="url(#gold)">7,500 지지 확인</text>
+  <text x="80" y="385" font-family="sans-serif" font-size="18" fill="#988e72">AVGO +4.70% · NVDA +2.95% · NASDAQ +1.91% 테크 선도 · JPM −2.47%</text>
+
+  <!-- 4섹터 데이터 그리드 -->
+  <g transform="translate(80, 460)">
+    <!-- S&P 500 -->
+    <g>
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#d8b878" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#988e72">INDEX · S&amp;P 500</text>
+      <text x="0" y="68" font-family="Georgia, serif" font-size="32" fill="#f5edd9">7,500.58</text>
+      <polygon points="0,72 14,72 7,58" fill="#6ba368"/>
+      <text x="22" y="79" font-family="monospace" font-size="14" fill="#6ba368">+1.08%</text>
+    </g>
+    <!-- NASDAQ -->
+    <g transform="translate(290, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#d8b878" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#988e72">INDEX · NASDAQ</text>
+      <text x="0" y="68" font-family="Georgia, serif" font-size="32" fill="#f5edd9">26,517.93</text>
+      <polygon points="0,72 14,72 7,58" fill="#6ba368"/>
+      <text x="22" y="79" font-family="monospace" font-size="14" fill="#6ba368">+1.91%</text>
+    </g>
+    <!-- AVGO -->
+    <g transform="translate(580, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#d8b878" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#988e72">AI CHIP · AVGO</text>
+      <text x="0" y="68" font-family="Georgia, serif" font-size="32" fill="#f5edd9">$411.35</text>
+      <polygon points="0,72 14,72 7,58" fill="#6ba368"/>
+      <text x="22" y="79" font-family="monospace" font-size="14" fill="#6ba368">+4.70%</text>
+    </g>
+    <!-- JPM -->
+    <g transform="translate(870, 0)">
+      <line x1="0" y1="0" x2="50" y2="0" stroke="#d8b878" stroke-width="1.5"/>
+      <text x="0" y="28" font-family="monospace" font-size="11" letter-spacing="3" fill="#988e72">FINANCE · JPM</text>
+      <text x="0" y="68" font-family="Georgia, serif" font-size="32" fill="#f5edd9">$325.22</text>
+      <polygon points="0,82 14,82 7,96" fill="#d96552"/>
+      <text x="22" y="89" font-family="monospace" font-size="14" fill="#d96552">−2.47%</text>
+    </g>
+  </g>
+
+  <!-- 하단 라인 -->
+  <line x1="80" y1="680" x2="1200" y2="680" stroke="#d8b878" stroke-width="0.5" stroke-opacity="0.4"/>
+  <text x="80" y="705" font-family="monospace" font-size="10" letter-spacing="2" fill="#988e72">Gold −3.01% · WTI $75.52(−1.65%) · BTC −4.14% · USD/KRW 1,535.16 · US10Y 4.451%</text>
+</svg>
