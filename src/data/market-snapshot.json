@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-06-19T21:31:04.564Z",
+  "asOf": "2026-06-19T22:31:09.967Z",
   "asOfLabel": "6/19 한국·미국 마감",
   "source": "Yahoo Finance · KRX",
   "us": {
@@ -16,17 +16,17 @@
         "symbol": "^IXIC",
         "label": "NASDAQ",
         "close": 26517.932,
-        "change": 496.2718437500007,
-        "changePct": 1.9071490472555568,
-        "note": "강한 상승"
+        "change": 141.5921562500007,
+        "changePct": 0.5368150285019612,
+        "note": "상승"
       },
       {
         "symbol": "^DJI",
         "label": "DOW",
         "close": 51564.7,
-        "change": 72.14921874999709,
-        "changePct": 0.14011583744705225,
-        "note": "보합"
+        "change": -434.9718750000029,
+        "changePct": -0.8364896533301499,
+        "note": "하락"
       },
       {
         "symbol": "NVDA",
@@ -552,16 +552,16 @@
         "symbol": "KOSPI",
         "label": "KOSPI",
         "close": 9052.42,
-        "change": 188.17976562500007,
-        "changePct": 2.1229091343356203,
+        "change": 325.8203906250001,
+        "changePct": 3.7336466116191547,
         "note": "강한 상승"
       },
       {
         "symbol": "KOSDAQ",
         "label": "KOSDAQ",
         "close": 966.59,
-        "change": -65.36996093749997,
-        "changePct": -6.334544305198975,
+        "change": -52.08999267578122,
+        "changePct": -5.113479507824208,
         "note": "큰 폭 하락"
       },
       {
@@ -1093,17 +1093,17 @@
       "symbol": "^IXIC",
       "label": "NASDAQ",
       "close": 26517.932,
-      "change": 496.2718437500007,
-      "changePct": 1.9071490472555568,
-      "note": "강한 상승"
+      "change": 141.5921562500007,
+      "changePct": 0.5368150285019612,
+      "note": "상승"
     },
     {
       "symbol": "^DJI",
       "label": "DOW",
       "close": 51564.7,
-      "change": 72.14921874999709,
-      "changePct": 0.14011583744705225,
-      "note": "보합"
+      "change": -434.9718750000029,
+      "changePct": -0.8364896533301499,
+      "note": "하락"
     },
     {
       "symbol": "NVDA",
@@ -1125,15 +1125,15 @@
     {
       "symbol": "NASDAQ",
       "value": "26,517.93",
-      "change": "+1.91%",
+      "change": "+0.54%",
       "up": true,
       "market": "us"
     },
     {
       "symbol": "DOW",
       "value": "51,564.70",
-      "change": "+0.14%",
-      "up": true,
+      "change": "-0.84%",
+      "up": false,
       "market": "us"
     },
     {
@@ -1166,9 +1166,9 @@
     },
     {
       "symbol": "BTC",
-      "value": "$63,098",
-      "change": "+0.32%",
-      "up": true,
+      "value": "$63,200",
+      "change": "-1.89%",
+      "up": false,
       "market": "crypto"
     },
     {
@@ -1201,9 +1201,9 @@
     },
     "crypto": {
       "source": "coingecko",
-      "btcUsd": 63106,
-      "change24hPct": 0.3023752854225212,
-      "asOf": "2026-06-19T21:30:38.000Z"
+      "btcUsd": 63216,
+      "change24hPct": 0.823794217663832,
+      "asOf": "2026-06-19T22:31:00.000Z"
     },
     "fred": {
       "source": "fred",
@@ -1263,15 +1263,15 @@
       "source": "twelvedata",
       "quotes": {
         "XAU/USD": {
-          "price": 4156.65451,
+          "price": 4156.64487,
           "previousClose": 4156.6112,
-          "changePct": 0.0010419546
+          "changePct": 0.00081003487
         }
       }
     },
     "yahoo": {
       "usdKrw": 1529.89,
-      "btcUsd": 63098
+      "btcUsd": 63200.01
     }
   }
 }
