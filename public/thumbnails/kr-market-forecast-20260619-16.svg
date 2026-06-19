@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#140808"/>
+      <stop offset="100%" style="stop-color:#1e1010"/>
+    </linearGradient>
+    <linearGradient id="redLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#d96552;stop-opacity:0"/>
+      <stop offset="30%" style="stop-color:#d96552;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#d96552;stop-opacity:0.3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Subtle grid lines -->
+  <line x1="0" y1="240" x2="1280" y2="240" stroke="#d96552" stroke-opacity="0.06" stroke-width="1"/>
+  <line x1="0" y1="480" x2="1280" y2="480" stroke="#d96552" stroke-opacity="0.06" stroke-width="1"/>
+  <line x1="427" y1="0" x2="427" y2="720" stroke="#d96552" stroke-opacity="0.06" stroke-width="1"/>
+  <line x1="853" y1="0" x2="853" y2="720" stroke="#d96552" stroke-opacity="0.06" stroke-width="1"/>
+
+  <!-- Top red accent bar -->
+  <rect x="0" y="0" width="1280" height="4" fill="url(#redLine)"/>
+
+  <!-- Lincoln Brief mark (top left) -->
+  <text x="48" y="54" font-family="Georgia, serif" font-size="18" fill="#d96552" font-weight="bold" letter-spacing="3">LINCOLN BRIEF</text>
+  <text x="48" y="76" font-family="Georgia, serif" font-size="13" fill="#8a4035" letter-spacing="2">KR MARKET · FORECAST UPDATE</text>
+
+  <!-- Edition label (top right) -->
+  <rect x="1040" y="28" width="200" height="36" rx="3" fill="#d96552" fill-opacity="0.12" stroke="#d96552" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="1140" y="51" font-family="Georgia, serif" font-size="14" fill="#d96552" text-anchor="middle" letter-spacing="1">2026.06.19 · 16:00</text>
+
+  <!-- Title -->
+  <text x="640" y="140" font-family="Georgia, serif" font-size="26" fill="#e0c0b8" text-anchor="middle" letter-spacing="2">KOSPI 9,052 마감 — 시나리오 최종 업데이트</text>
+
+  <!-- Scenario probability center display -->
+  <text x="640" y="250" font-family="Georgia, serif" font-size="22" fill="#d96552" text-anchor="middle" letter-spacing="3">불 시나리오</text>
+  <text x="640" y="340" font-family="Georgia, serif" font-size="110" fill="#ffffff" text-anchor="middle" font-weight="bold">57%</text>
+  <text x="640" y="388" font-family="Georgia, serif" font-size="20" fill="#c09080" text-anchor="middle" letter-spacing="2">오전 60% → 마감 57% (USD/KRW 1,530 반영)</text>
+
+  <!-- Gold separator -->
+  <line x1="160" y1="420" x2="1120" y2="420" stroke="#d96552" stroke-opacity="0.25" stroke-width="1"/>
+
+  <!-- Three scenario cards -->
+  <!-- Bull -->
+  <rect x="80" y="444" width="280" height="130" rx="4" fill="#4ade80" fill-opacity="0.08" stroke="#4ade80" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="220" y="476" font-family="Georgia, serif" font-size="14" fill="#4ade80" text-anchor="middle" letter-spacing="1">불 — 9,200 탐색</text>
+  <text x="220" y="510" font-family="Georgia, serif" font-size="38" fill="#4ade80" text-anchor="middle" font-weight="bold">57%</text>
+  <text x="220" y="540" font-family="Georgia, serif" font-size="12" fill="#4ade80" text-anchor="middle">USD/KRW 1,510원대</text>
+  <text x="220" y="556" font-family="Georgia, serif" font-size="12" fill="#4ade80" text-anchor="middle">US10Y 4.3% 이하</text>
+
+  <!-- Base -->
+  <rect x="500" y="444" width="280" height="130" rx="4" fill="#d8b878" fill-opacity="0.08" stroke="#d8b878" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="640" y="476" font-family="Georgia, serif" font-size="14" fill="#d8b878" text-anchor="middle" letter-spacing="1">베이스 — 박스 소화</text>
+  <text x="640" y="510" font-family="Georgia, serif" font-size="38" fill="#d8b878" text-anchor="middle" font-weight="bold">27%</text>
+  <text x="640" y="540" font-family="Georgia, serif" font-size="12" fill="#d8b878" text-anchor="middle">9,000~9,100pt</text>
+  <text x="640" y="556" font-family="Georgia, serif" font-size="12" fill="#d8b878" text-anchor="middle">환율 현 수준 유지</text>
+
+  <!-- Bear -->
+  <rect x="920" y="444" width="280" height="130" rx="4" fill="#f87171" fill-opacity="0.08" stroke="#f87171" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="1060" y="476" font-family="Georgia, serif" font-size="14" fill="#f87171" text-anchor="middle" letter-spacing="1">베어 — 되돌림</text>
+  <text x="1060" y="510" font-family="Georgia, serif" font-size="38" fill="#f87171" text-anchor="middle" font-weight="bold">11%</text>
+  <text x="1060" y="540" font-family="Georgia, serif" font-size="12" fill="#f87171" text-anchor="middle">US10Y 4.6% 상향</text>
+  <text x="1060" y="556" font-family="Georgia, serif" font-size="12" fill="#f87171" text-anchor="middle">8,800 방향</text>
+
+  <!-- Bottom note -->
+  <line x1="160" y1="616" x2="1120" y2="616" stroke="#d96552" stroke-opacity="0.15" stroke-width="1"/>
+  <text x="640" y="645" font-family="Georgia, serif" font-size="14" fill="#d96552" text-anchor="middle" letter-spacing="1">핵심 변수: USD/KRW 1,520원대 복귀 · 외국인 순매수 확인 · KOSDAQ 1,000 회복</text>
+  <text x="640" y="668" font-family="Georgia, serif" font-size="13" fill="#8a4035" text-anchor="middle" letter-spacing="1">KOSPI 9,052.42(+2.12%) 마감 · 9,000 안착 첫 날</text>
+
+  <!-- Bottom accent bar -->
+  <rect x="0" y="716" width="1280" height="4" fill="#d96552" fill-opacity="0.4"/>
+</svg>
