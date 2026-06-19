@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f0c08"/>
+      <stop offset="100%" style="stop-color:#1a1510"/>
+    </linearGradient>
+    <linearGradient id="goldLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#d8b878;stop-opacity:0"/>
+      <stop offset="30%" style="stop-color:#d8b878;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#d8b878;stop-opacity:0.3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Subtle grid lines -->
+  <line x1="0" y1="240" x2="1280" y2="240" stroke="#d8b878" stroke-opacity="0.06" stroke-width="1"/>
+  <line x1="0" y1="480" x2="1280" y2="480" stroke="#d8b878" stroke-opacity="0.06" stroke-width="1"/>
+  <line x1="427" y1="0" x2="427" y2="720" stroke="#d8b878" stroke-opacity="0.06" stroke-width="1"/>
+  <line x1="853" y1="0" x2="853" y2="720" stroke="#d8b878" stroke-opacity="0.06" stroke-width="1"/>
+
+  <!-- Top gold accent bar -->
+  <rect x="0" y="0" width="1280" height="4" fill="url(#goldLine)"/>
+
+  <!-- Lincoln Brief mark (top left) -->
+  <text x="48" y="54" font-family="Georgia, serif" font-size="18" fill="#d8b878" font-weight="bold" letter-spacing="3">LINCOLN BRIEF</text>
+  <text x="48" y="76" font-family="Georgia, serif" font-size="13" fill="#8a7050" letter-spacing="2">KR MARKET · DAILY</text>
+
+  <!-- Edition label (top right) -->
+  <rect x="1060" y="28" width="180" height="36" rx="3" fill="#d8b878" fill-opacity="0.12" stroke="#d8b878" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="1150" y="51" font-family="Georgia, serif" font-size="14" fill="#d8b878" text-anchor="middle" letter-spacing="1">2026.06.19 · 11:00</text>
+
+  <!-- Diamond decorative element -->
+  <polygon points="640,110 648,118 640,126 632,118" fill="#d8b878" fill-opacity="0.6"/>
+
+  <!-- 9,000 BROKE badge -->
+  <rect x="380" y="126" width="500" height="38" rx="4" fill="#4ade80" fill-opacity="0.18" stroke="#4ade80" stroke-opacity="0.7" stroke-width="1"/>
+  <text x="630" y="151" font-family="Georgia, serif" font-size="18" fill="#4ade80" text-anchor="middle" letter-spacing="3" font-weight="bold">★ KOSPI 9,000선 돌파 ★</text>
+
+  <!-- Main KOSPI number -->
+  <text x="640" y="252" font-family="Georgia, serif" font-size="108" fill="#ffffff" text-anchor="middle" font-weight="bold" letter-spacing="-2">9,069.17</text>
+
+  <!-- KOSPI label -->
+  <text x="640" y="296" font-family="Georgia, serif" font-size="22" fill="#d8b878" text-anchor="middle" letter-spacing="4">KOSPI</text>
+
+  <!-- Change indicator -->
+  <polygon points="572,320 584,304 596,320" fill="#4ade80"/>
+  <text x="606" y="322" font-family="Georgia, serif" font-size="26" fill="#4ade80" font-weight="bold">+2.31%   +204.93pt</text>
+
+  <!-- Gold separator line -->
+  <line x1="160" y1="370" x2="1120" y2="370" stroke="#d8b878" stroke-opacity="0.25" stroke-width="1"/>
+
+  <!-- Three key metrics bottom -->
+  <!-- SK하이닉스 -->
+  <text x="213" y="430" font-family="Georgia, serif" font-size="15" fill="#8a7050" text-anchor="middle" letter-spacing="1">SK하이닉스</text>
+  <text x="213" y="470" font-family="Georgia, serif" font-size="30" fill="#ffffff" text-anchor="middle" font-weight="bold">278만원</text>
+  <polygon points="188,490 200,476 212,490" fill="#4ade80"/>
+  <text x="222" y="492" font-family="Georgia, serif" font-size="18" fill="#4ade80">+3.58%</text>
+
+  <!-- Divider -->
+  <line x1="427" y1="400" x2="427" y2="520" stroke="#d8b878" stroke-opacity="0.2" stroke-width="1"/>
+
+  <!-- KOSDAQ -->
+  <text x="640" y="430" font-family="Georgia, serif" font-size="15" fill="#8a7050" text-anchor="middle" letter-spacing="1">KOSDAQ</text>
+  <text x="640" y="470" font-family="Georgia, serif" font-size="30" fill="#ffffff" text-anchor="middle" font-weight="bold">961.54</text>
+  <polygon points="616,492 628,506 640,492" fill="#f87171"/>
+  <text x="650" y="492" font-family="Georgia, serif" font-size="18" fill="#f87171">−6.82%</text>
+  <!-- 1000선 붕괴 label -->
+  <rect x="546" y="504" width="192" height="22" rx="2" fill="#f87171" fill-opacity="0.18"/>
+  <text x="642" y="519" font-family="Georgia, serif" font-size="12" fill="#f87171" text-anchor="middle" letter-spacing="1">1,000선 붕괴</text>
+
+  <!-- Divider -->
+  <line x1="853" y1="400" x2="853" y2="520" stroke="#d8b878" stroke-opacity="0.2" stroke-width="1"/>
+
+  <!-- USD/KRW -->
+  <text x="1067" y="430" font-family="Georgia, serif" font-size="15" fill="#8a7050" text-anchor="middle" letter-spacing="1">USD/KRW</text>
+  <text x="1067" y="470" font-family="Georgia, serif" font-size="30" fill="#ffffff" text-anchor="middle" font-weight="bold">1,525.78</text>
+  <text x="1067" y="492" font-family="Georgia, serif" font-size="18" fill="#a0a0a0" text-anchor="middle">보합</text>
+
+  <!-- Gold separator line -->
+  <line x1="160" y1="548" x2="1120" y2="548" stroke="#d8b878" stroke-opacity="0.25" stroke-width="1"/>
+
+  <!-- Bottom row: US context -->
+  <text x="320" y="588" font-family="Georgia, serif" font-size="14" fill="#8a7050" text-anchor="middle">AVGO</text>
+  <text x="320" y="612" font-family="Georgia, serif" font-size="20" fill="#4ade80" text-anchor="middle" font-weight="bold">+9.20%</text>
+
+  <line x1="490" y1="570" x2="490" y2="628" stroke="#d8b878" stroke-opacity="0.2" stroke-width="1"/>
+
+  <text x="640" y="588" font-family="Georgia, serif" font-size="14" fill="#8a7050" text-anchor="middle">NVDA</text>
+  <text x="640" y="612" font-family="Georgia, serif" font-size="20" fill="#4ade80" text-anchor="middle" font-weight="bold">$210.69</text>
+
+  <line x1="790" y1="570" x2="790" y2="628" stroke="#d8b878" stroke-opacity="0.2" stroke-width="1"/>
+
+  <text x="960" y="588" font-family="Georgia, serif" font-size="14" fill="#8a7050" text-anchor="middle">US10Y</text>
+  <text x="960" y="612" font-family="Georgia, serif" font-size="20" fill="#ffffff" text-anchor="middle" font-weight="bold">4.451%</text>
+
+  <!-- Bottom Lincoln mark -->
+  <text x="640" y="680" font-family="Georgia, serif" font-size="13" fill="#8a7050" text-anchor="middle" letter-spacing="2">— Lincoln Brief · 정보 제공 목적, 투자 권유 아님 —</text>
+</svg>
