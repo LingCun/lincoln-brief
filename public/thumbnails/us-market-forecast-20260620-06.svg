@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#120808;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e1010;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="red-line" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#d86c6c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d86c6c;stop-opacity:0" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)" />
+
+  <!-- Red accent bar top -->
+  <rect x="0" y="0" width="1280" height="4" fill="url(#red-line)" />
+
+  <!-- Lincoln Brief logo -->
+  <text x="60" y="65" font-family="Georgia, serif" font-size="20" fill="#d86c6c" letter-spacing="4" opacity="0.9">LINCOLN BRIEF</text>
+  <polygon points="52,58 57,48 62,58" fill="#d86c6c" opacity="0.9"/>
+
+  <!-- Edition label -->
+  <rect x="1050" y="32" width="200" height="36" rx="4" fill="#d86c6c" fill-opacity="0.15" stroke="#d86c6c" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="1150" y="55" font-family="Arial, sans-serif" font-size="14" fill="#d86c6c" text-anchor="middle" letter-spacing="2">6/20 · 06:00 KST</text>
+
+  <!-- Category label -->
+  <text x="60" y="120" font-family="Arial, sans-serif" font-size="13" fill="#d86c6c" letter-spacing="3" opacity="0.7">MARKET FORECAST · 시장 예측</text>
+
+  <!-- Main headline -->
+  <text x="60" y="200" font-family="Georgia, serif" font-size="58" fill="#ffffff" font-weight="bold">S&amp;P 7,500.58</text>
+  <text x="60" y="260" font-family="Georgia, serif" font-size="38" fill="#d8b878">FOMC 분기점 4주 시나리오</text>
+
+  <!-- Divider -->
+  <rect x="60" y="290" width="580" height="2" fill="#d86c6c" opacity="0.5"/>
+
+  <!-- Scenario grid -->
+  <text x="60" y="338" font-family="Arial, sans-serif" font-size="13" fill="#d86c6c" letter-spacing="2" opacity="0.8">4-WEEK SCENARIOS</text>
+
+  <!-- Scenario A -->
+  <rect x="60" y="354" width="560" height="64" rx="4" fill="#4dcc88" fill-opacity="0.08" stroke="#4dcc88" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="80" y="380" font-family="Arial, sans-serif" font-size="14" fill="#a0c8b0" letter-spacing="1">경로 A — 7,550 돌파 (FOMC 비둘기)</text>
+  <text x="80" y="405" font-family="Arial, sans-serif" font-size="22" fill="#4dcc88" font-weight="bold">25%</text>
+  <rect x="130" y="394" width="110" height="8" rx="4" fill="#4dcc88" opacity="0.4"/>
+  <text x="540" y="405" font-family="Arial, sans-serif" font-size="18" fill="#4dcc88" text-anchor="end">↑ 소폭 상향</text>
+
+  <!-- Scenario B -->
+  <rect x="60" y="428" width="560" height="64" rx="4" fill="#d8b878" fill-opacity="0.08" stroke="#d8b878" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="80" y="454" font-family="Arial, sans-serif" font-size="14" fill="#c8b888" letter-spacing="1">경로 B — 7,450~7,550 박스 (FOMC 중립)</text>
+  <text x="80" y="479" font-family="Arial, sans-serif" font-size="22" fill="#d8b878" font-weight="bold">35%</text>
+  <rect x="130" y="468" width="98" height="8" rx="4" fill="#d8b878" opacity="0.4"/>
+
+  <!-- Scenario C -->
+  <rect x="60" y="502" width="560" height="64" rx="4" fill="#d86c6c" fill-opacity="0.1" stroke="#d86c6c" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="80" y="528" font-family="Arial, sans-serif" font-size="14" fill="#e09090" letter-spacing="1">경로 C — 7,450 이탈 (FOMC 매파)</text>
+  <text x="80" y="553" font-family="Arial, sans-serif" font-size="22" fill="#d86c6c" font-weight="bold">30%</text>
+  <rect x="130" y="542" width="84" height="8" rx="4" fill="#d86c6c" opacity="0.4"/>
+
+  <!-- Scenario D -->
+  <rect x="60" y="576" width="560" height="64" rx="4" fill="#ffffff" fill-opacity="0.03"/>
+  <text x="80" y="602" font-family="Arial, sans-serif" font-size="14" fill="#a09080" letter-spacing="1">경로 D — 급락 (예상치 못한 충격)</text>
+  <text x="80" y="627" font-family="Arial, sans-serif" font-size="22" fill="#a09080" font-weight="bold">10%</text>
+  <rect x="130" y="616" width="28" height="8" rx="4" fill="#a09080" opacity="0.4"/>
+
+  <!-- Right panel: key signals -->
+  <rect x="660" y="140" width="570" height="440" rx="8" fill="#ffffff" fill-opacity="0.03" stroke="#d86c6c" stroke-width="1" stroke-opacity="0.2"/>
+  <text x="685" y="180" font-family="Arial, sans-serif" font-size="13" fill="#d86c6c" letter-spacing="2" opacity="0.8">핵심 신호 업데이트</text>
+
+  <!-- Signal 1: Dollar retreat -->
+  <rect x="675" y="192" width="540" height="90" rx="4" fill="#4dcc88" fill-opacity="0.07"/>
+  <text x="695" y="220" font-family="Arial, sans-serif" font-size="14" fill="#4dcc88" letter-spacing="1">신호 1 — 달러 후퇴 (USD/KRW)</text>
+  <text x="695" y="252" font-family="Arial, sans-serif" font-size="32" fill="#ffffff" font-weight="bold">1,530.20</text>
+  <text x="695" y="272" font-family="Arial, sans-serif" font-size="16" fill="#4dcc88">−0.48% · 전일 1,537대 고점 이탈</text>
+
+  <!-- Signal 2: AI consumer join -->
+  <rect x="675" y="290" width="540" height="90" rx="4" fill="#4dcc88" fill-opacity="0.07"/>
+  <text x="695" y="318" font-family="Arial, sans-serif" font-size="14" fill="#4dcc88" letter-spacing="1">신호 2 — AI 소비자 합류 (AMZN)</text>
+  <text x="695" y="350" font-family="Arial, sans-serif" font-size="32" fill="#ffffff" font-weight="bold">+2.90%</text>
+  <text x="695" y="370" font-family="Arial, sans-serif" font-size="16" fill="#4dcc88">공급자(AVGO +4.70%) + 소비자 동반</text>
+
+  <!-- Signal 3: US10Y -->
+  <rect x="675" y="388" width="540" height="90" rx="4" fill="#ffffff" fill-opacity="0.03"/>
+  <text x="695" y="416" font-family="Arial, sans-serif" font-size="14" fill="#a09080" letter-spacing="1">US 10년물 국채금리</text>
+  <text x="695" y="448" font-family="Arial, sans-serif" font-size="32" fill="#ffffff" font-weight="bold">4.451%</text>
+  <text x="695" y="468" font-family="Arial, sans-serif" font-size="16" fill="#4dcc88">↓ 소폭 하락 · FRED 4.49%에서 하락</text>
+
+  <!-- Key level labels -->
+  <text x="675" y="520" font-family="Arial, sans-serif" font-size="13" fill="#d86c6c" letter-spacing="2" opacity="0.8">관찰 레벨</text>
+  <text x="675" y="548" font-family="Arial, sans-serif" font-size="16" fill="#a09080">S&amp;P 상방</text>
+  <text x="695" y="572" font-family="Arial, sans-serif" font-size="20" fill="#4dcc88" font-weight="bold">7,550 돌파</text>
+  <text x="900" y="548" font-family="Arial, sans-serif" font-size="16" fill="#a09080">하방</text>
+  <text x="895" y="572" font-family="Arial, sans-serif" font-size="20" fill="#d86c6c" font-weight="bold">7,450 이탈</text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="680" width="1280" height="40" fill="#000000" fill-opacity="0.3"/>
+  <text x="60" y="705" font-family="Arial, sans-serif" font-size="13" fill="#a09080">데이터: Yahoo Finance · FRED · 6/19 확정 종가 기준</text>
+  <text x="1220" y="705" font-family="Arial, sans-serif" font-size="13" fill="#d86c6c" text-anchor="end">lincoln-brief.vercel.app</text>
+</svg>
