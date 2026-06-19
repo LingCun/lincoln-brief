@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#101520"/>
+      <stop offset="100%" stop-color="#070a0f"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f0d88c"/>
+      <stop offset="50%" stop-color="#d8b878"/>
+      <stop offset="100%" stop-color="#b89a5a"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#5a7ab8" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#5a7ab8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1050" cy="200" r="300" fill="url(#glow)"/>
+  <circle cx="200" cy="580" r="240" fill="url(#glow)"/>
+
+  <!-- 좌상단 브랜드 -->
+  <line x1="80" y1="80" x2="200" y2="80" stroke="#d8b878" stroke-width="1"/>
+  <text x="220" y="84" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#f5edd9">Lincoln</text>
+  <text x="310" y="84" font-family="Georgia, serif" font-size="12" letter-spacing="6" fill="#d8b878">BRIEF</text>
+  <text x="1200" y="84" font-family="monospace" font-size="11" letter-spacing="3" fill="#d8b878" text-anchor="end">2026.06.20 · MARKET FORECAST · 01:00</text>
+
+  <!-- 헤드라인 -->
+  <text x="80" y="175" font-family="monospace" font-size="13" letter-spacing="5" fill="#5a9adf">— 4주 시나리오 —</text>
+  <text x="80" y="255" font-family="Georgia, serif" font-size="66" font-weight="500" fill="#f5edd9">S&amp;P 7,500</text>
+  <text x="80" y="325" font-family="Georgia, serif" font-size="48" font-style="italic" fill="url(#gold)">AI 테크 분화 랠리</text>
+  <text x="80" y="378" font-family="sans-serif" font-size="17" fill="#988e72">NASDAQ +1.91% vs DOW +0.14% · 격차 1.77%p · US10Y 4.451%</text>
+
+  <!-- 시나리오 블록 4개 -->
+  <g transform="translate(80, 430)">
+    <!-- 시나리오 A -->
+    <rect x="0" y="0" width="255" height="220" rx="4" fill="#1e2a1a" stroke="#6ba368" stroke-width="1" stroke-opacity="0.6"/>
+    <text x="16" y="30" font-family="monospace" font-size="11" letter-spacing="2" fill="#6ba368">경로 A · 20%</text>
+    <text x="16" y="58" font-family="Georgia, serif" font-size="20" fill="#f5edd9">7,550 돌파</text>
+    <text x="16" y="80" font-family="sans-serif" font-size="13" fill="#988e72">FOMC 비둘기</text>
+    <text x="16" y="98" font-family="sans-serif" font-size="13" fill="#988e72">US10Y 4.3% 이하</text>
+
+    <!-- 시나리오 B -->
+    <g transform="translate(270, 0)">
+      <rect x="0" y="0" width="255" height="220" rx="4" fill="#1e1e10" stroke="#d8b878" stroke-width="2" stroke-opacity="0.8"/>
+      <text x="16" y="30" font-family="monospace" font-size="11" letter-spacing="2" fill="#d8b878">경로 B · 40% ★</text>
+      <text x="16" y="58" font-family="Georgia, serif" font-size="20" fill="#f5edd9">7,450~7,550</text>
+      <text x="16" y="80" font-family="sans-serif" font-size="13" fill="#988e72">박스 횡보</text>
+      <text x="16" y="98" font-family="sans-serif" font-size="13" fill="#988e72">FOMC 중립 신호</text>
+    </g>
+
+    <!-- 시나리오 C -->
+    <g transform="translate(540, 0)">
+      <rect x="0" y="0" width="255" height="220" rx="4" fill="#1a1010" stroke="#c05a5a" stroke-width="1" stroke-opacity="0.6"/>
+      <text x="16" y="30" font-family="monospace" font-size="11" letter-spacing="2" fill="#c05a5a">경로 C · 30%</text>
+      <text x="16" y="58" font-family="Georgia, serif" font-size="20" fill="#f5edd9">7,450 이탈</text>
+      <text x="16" y="80" font-family="sans-serif" font-size="13" fill="#988e72">재조정</text>
+      <text x="16" y="98" font-family="sans-serif" font-size="13" fill="#988e72">FOMC 매파 + 달러 ↑</text>
+    </g>
+
+    <!-- 시나리오 D -->
+    <g transform="translate(810, 0)">
+      <rect x="0" y="0" width="255" height="220" rx="4" fill="#150f0a" stroke="#8a5a3a" stroke-width="1" stroke-opacity="0.5"/>
+      <text x="16" y="30" font-family="monospace" font-size="11" letter-spacing="2" fill="#8a5a3a">경로 D · 10%</text>
+      <text x="16" y="58" font-family="Georgia, serif" font-size="20" fill="#f5edd9">급락</text>
+      <text x="16" y="80" font-family="sans-serif" font-size="13" fill="#988e72">매크로 충격</text>
+      <text x="16" y="98" font-family="sans-serif" font-size="13" fill="#988e72">7,350 이하</text>
+    </g>
+  </g>
+
+  <line x1="80" y1="700" x2="1200" y2="700" stroke="#d8b878" stroke-width="0.5" stroke-opacity="0.4"/>
+</svg>
