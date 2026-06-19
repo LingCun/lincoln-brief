@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f0c08"/>
+      <stop offset="100%" style="stop-color:#1a1510"/>
+    </linearGradient>
+    <linearGradient id="goldLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#d8b878;stop-opacity:0"/>
+      <stop offset="30%" style="stop-color:#d8b878;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#d8b878;stop-opacity:0.3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Subtle grid lines -->
+  <line x1="0" y1="240" x2="1280" y2="240" stroke="#d8b878" stroke-opacity="0.06" stroke-width="1"/>
+  <line x1="0" y1="480" x2="1280" y2="480" stroke="#d8b878" stroke-opacity="0.06" stroke-width="1"/>
+  <line x1="427" y1="0" x2="427" y2="720" stroke="#d8b878" stroke-opacity="0.06" stroke-width="1"/>
+  <line x1="853" y1="0" x2="853" y2="720" stroke="#d8b878" stroke-opacity="0.06" stroke-width="1"/>
+
+  <!-- Top gold accent bar -->
+  <rect x="0" y="0" width="1280" height="4" fill="url(#goldLine)"/>
+
+  <!-- Lincoln Brief mark (top left) -->
+  <text x="48" y="54" font-family="Georgia, serif" font-size="18" fill="#d8b878" font-weight="bold" letter-spacing="3">LINCOLN BRIEF</text>
+  <text x="48" y="76" font-family="Georgia, serif" font-size="13" fill="#8a7050" letter-spacing="2">KR MARKET · CLOSING BRIEF</text>
+
+  <!-- Edition label (top right) -->
+  <rect x="1040" y="28" width="200" height="36" rx="3" fill="#d8b878" fill-opacity="0.12" stroke="#d8b878" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="1140" y="51" font-family="Georgia, serif" font-size="14" fill="#d8b878" text-anchor="middle" letter-spacing="1">2026.06.19 · 16:00</text>
+
+  <!-- Diamond decorative element -->
+  <polygon points="640,110 648,118 640,126 632,118" fill="#d8b878" fill-opacity="0.6"/>
+
+  <!-- 9,000 안착 badge -->
+  <rect x="360" y="126" width="520" height="38" rx="4" fill="#4ade80" fill-opacity="0.15" stroke="#4ade80" stroke-opacity="0.6" stroke-width="1"/>
+  <text x="620" y="151" font-family="Georgia, serif" font-size="17" fill="#4ade80" text-anchor="middle" letter-spacing="2" font-weight="bold">★ KOSPI 9,000선 안착 첫 날 ★</text>
+
+  <!-- Main KOSPI number -->
+  <text x="640" y="254" font-family="Georgia, serif" font-size="108" fill="#ffffff" text-anchor="middle" font-weight="bold" letter-spacing="-2">9,052.42</text>
+
+  <!-- KOSPI label -->
+  <text x="640" y="298" font-family="Georgia, serif" font-size="22" fill="#d8b878" text-anchor="middle" letter-spacing="4">KOSPI · 마감</text>
+
+  <!-- Change indicator -->
+  <polygon points="560,322 572,306 584,322" fill="#4ade80"/>
+  <text x="594" y="324" font-family="Georgia, serif" font-size="26" fill="#4ade80" font-weight="bold">+2.12%   +188.18pt</text>
+
+  <!-- Gold separator line -->
+  <line x1="160" y1="374" x2="1120" y2="374" stroke="#d8b878" stroke-opacity="0.25" stroke-width="1"/>
+
+  <!-- Three key metrics bottom -->
+  <!-- SK하이닉스 -->
+  <text x="213" y="432" font-family="Georgia, serif" font-size="15" fill="#8a7050" text-anchor="middle" letter-spacing="1">SK하이닉스</text>
+  <text x="213" y="472" font-family="Georgia, serif" font-size="30" fill="#ffffff" text-anchor="middle" font-weight="bold">276만원</text>
+  <polygon points="188,492 200,478 212,492" fill="#4ade80"/>
+  <text x="222" y="494" font-family="Georgia, serif" font-size="18" fill="#4ade80">+2.94%</text>
+
+  <!-- Divider -->
+  <line x1="427" y1="404" x2="427" y2="524" stroke="#d8b878" stroke-opacity="0.2" stroke-width="1"/>
+
+  <!-- KOSDAQ -->
+  <text x="640" y="432" font-family="Georgia, serif" font-size="15" fill="#8a7050" text-anchor="middle" letter-spacing="1">KOSDAQ</text>
+  <text x="640" y="472" font-family="Georgia, serif" font-size="30" fill="#ffffff" text-anchor="middle" font-weight="bold">966.59</text>
+  <polygon points="616,494 628,508 640,494" fill="#f87171"/>
+  <text x="650" y="494" font-family="Georgia, serif" font-size="18" fill="#f87171">−6.33%</text>
+  <rect x="546" y="506" width="192" height="22" rx="2" fill="#f87171" fill-opacity="0.15"/>
+  <text x="642" y="521" font-family="Georgia, serif" font-size="12" fill="#f87171" text-anchor="middle" letter-spacing="1">1,000선 아래 유지</text>
+
+  <!-- Divider -->
+  <line x1="853" y1="404" x2="853" y2="524" stroke="#d8b878" stroke-opacity="0.2" stroke-width="1"/>
+
+  <!-- USD/KRW -->
+  <text x="1067" y="432" font-family="Georgia, serif" font-size="15" fill="#8a7050" text-anchor="middle" letter-spacing="1">USD/KRW</text>
+  <text x="1067" y="472" font-family="Georgia, serif" font-size="30" fill="#ffffff" text-anchor="middle" font-weight="bold">1,530.28</text>
+  <polygon points="1042,494 1054,508 1066,494" fill="#f87171"/>
+  <text x="1076" y="494" font-family="Georgia, serif" font-size="18" fill="#f87171">+0.32%</text>
+  <rect x="980" y="506" width="178" height="22" rx="2" fill="#f87171" fill-opacity="0.15"/>
+  <text x="1069" y="521" font-family="Georgia, serif" font-size="12" fill="#f87171" text-anchor="middle" letter-spacing="1">장 중 추가 약세</text>
+
+  <!-- Bottom note -->
+  <line x1="160" y1="580" x2="1120" y2="580" stroke="#d8b878" stroke-opacity="0.15" stroke-width="1"/>
+  <text x="640" y="610" font-family="Georgia, serif" font-size="14" fill="#8a7050" text-anchor="middle" letter-spacing="1">top12 4종목 상승 · 현대차 +2.00% · LG에너지솔루션 +1.13%</text>
+  <text x="640" y="636" font-family="Georgia, serif" font-size="13" fill="#6a5035" text-anchor="middle" letter-spacing="1">전일 미국 AVGO +9.20% · NVDA +1.58% · US10Y 4.451%</text>
+
+  <!-- Bottom gold bar -->
+  <rect x="0" y="716" width="1280" height="4" fill="#d8b878" fill-opacity="0.3"/>
+</svg>

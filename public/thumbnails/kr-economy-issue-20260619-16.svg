@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#080f08"/>
+      <stop offset="100%" style="stop-color:#101a10"/>
+    </linearGradient>
+    <linearGradient id="greenLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7a9d6e;stop-opacity:0"/>
+      <stop offset="30%" style="stop-color:#7a9d6e;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#7a9d6e;stop-opacity:0.3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Subtle grid lines -->
+  <line x1="0" y1="240" x2="1280" y2="240" stroke="#7a9d6e" stroke-opacity="0.06" stroke-width="1"/>
+  <line x1="0" y1="480" x2="1280" y2="480" stroke="#7a9d6e" stroke-opacity="0.06" stroke-width="1"/>
+  <line x1="427" y1="0" x2="427" y2="720" stroke="#7a9d6e" stroke-opacity="0.06" stroke-width="1"/>
+  <line x1="853" y1="0" x2="853" y2="720" stroke="#7a9d6e" stroke-opacity="0.06" stroke-width="1"/>
+
+  <!-- Top green accent bar -->
+  <rect x="0" y="0" width="1280" height="4" fill="url(#greenLine)"/>
+
+  <!-- Lincoln Brief mark (top left) -->
+  <text x="48" y="54" font-family="Georgia, serif" font-size="18" fill="#7a9d6e" font-weight="bold" letter-spacing="3">LINCOLN BRIEF</text>
+  <text x="48" y="76" font-family="Georgia, serif" font-size="13" fill="#4a6040" letter-spacing="2">KR ECONOMY · FX ISSUE</text>
+
+  <!-- Edition label (top right) -->
+  <rect x="1040" y="28" width="200" height="36" rx="3" fill="#7a9d6e" fill-opacity="0.12" stroke="#7a9d6e" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="1140" y="51" font-family="Georgia, serif" font-size="14" fill="#7a9d6e" text-anchor="middle" letter-spacing="1">2026.06.19 · 16:00</text>
+
+  <!-- Diamond decorative element -->
+  <polygon points="640,110 648,118 640,126 632,118" fill="#7a9d6e" fill-opacity="0.6"/>
+
+  <!-- Subtitle -->
+  <text x="640" y="158" font-family="Georgia, serif" font-size="20" fill="#a0c090" text-anchor="middle" letter-spacing="2">원달러 환율 · 구조적 약세 점검</text>
+
+  <!-- Main USD/KRW number -->
+  <text x="640" y="270" font-family="Georgia, serif" font-size="96" fill="#ffffff" text-anchor="middle" font-weight="bold" letter-spacing="-2">1,530.28</text>
+
+  <!-- Label -->
+  <text x="640" y="316" font-family="Georgia, serif" font-size="22" fill="#7a9d6e" text-anchor="middle" letter-spacing="4">USD / KRW · 마감</text>
+
+  <!-- Up indicator (weakening won) -->
+  <polygon points="556,340 568,324 580,340" fill="#f87171"/>
+  <text x="590" y="342" font-family="Georgia, serif" font-size="24" fill="#f87171" font-weight="bold">+0.32%  원화 약세</text>
+
+  <!-- Gold separator -->
+  <line x1="160" y1="388" x2="1120" y2="388" stroke="#7a9d6e" stroke-opacity="0.25" stroke-width="1"/>
+
+  <!-- Three key metrics bottom -->
+  <!-- KOSPI -->
+  <text x="213" y="440" font-family="Georgia, serif" font-size="15" fill="#4a6040" text-anchor="middle" letter-spacing="1">KOSPI 상승에도</text>
+  <text x="213" y="478" font-family="Georgia, serif" font-size="28" fill="#ffffff" text-anchor="middle" font-weight="bold">+2.12%</text>
+  <text x="213" y="510" font-family="Georgia, serif" font-size="14" fill="#a0c090" text-anchor="middle">지수 상승</text>
+  <text x="213" y="534" font-family="Georgia, serif" font-size="14" fill="#f87171" text-anchor="middle">원화는 약세</text>
+
+  <!-- Divider -->
+  <line x1="427" y1="418" x2="427" y2="554" stroke="#7a9d6e" stroke-opacity="0.2" stroke-width="1"/>
+
+  <!-- 실질 수익률 -->
+  <text x="640" y="440" font-family="Georgia, serif" font-size="15" fill="#4a6040" text-anchor="middle" letter-spacing="1">외국인 달러 기준</text>
+  <text x="640" y="478" font-family="Georgia, serif" font-size="28" fill="#ffffff" text-anchor="middle" font-weight="bold">약 1.80%</text>
+  <text x="640" y="510" font-family="Georgia, serif" font-size="14" fill="#a0c090" text-anchor="middle">KOSPI 2.12%</text>
+  <text x="640" y="534" font-family="Georgia, serif" font-size="14" fill="#f87171" text-anchor="middle">환율 손실 −0.32%</text>
+
+  <!-- Divider -->
+  <line x1="853" y1="418" x2="853" y2="554" stroke="#7a9d6e" stroke-opacity="0.2" stroke-width="1"/>
+
+  <!-- US10Y -->
+  <text x="1067" y="440" font-family="Georgia, serif" font-size="15" fill="#4a6040" text-anchor="middle" letter-spacing="1">US10Y 금리</text>
+  <text x="1067" y="478" font-family="Georgia, serif" font-size="28" fill="#ffffff" text-anchor="middle" font-weight="bold">4.451%</text>
+  <text x="1067" y="510" font-family="Georgia, serif" font-size="14" fill="#f87171" text-anchor="middle">달러 강세 지지</text>
+  <rect x="980" y="520" width="178" height="22" rx="2" fill="#f87171" fill-opacity="0.12"/>
+  <text x="1069" y="535" font-family="Georgia, serif" font-size="12" fill="#f87171" text-anchor="middle" letter-spacing="1">다음 경계선 1,540원</text>
+
+  <!-- Bottom note -->
+  <line x1="160" y1="592" x2="1120" y2="592" stroke="#7a9d6e" stroke-opacity="0.15" stroke-width="1"/>
+  <text x="640" y="622" font-family="Georgia, serif" font-size="14" fill="#7a9d6e" text-anchor="middle" letter-spacing="1">오전 1,525.78원 → 마감 1,530.28원 · 장 중 4.5원 추가 약세</text>
+  <text x="640" y="648" font-family="Georgia, serif" font-size="13" fill="#4a6040" text-anchor="middle" letter-spacing="1">DOW −0.84% · WTI −1.11% · BTC −3.17% 리스크오프 배경</text>
+
+  <!-- Bottom accent bar -->
+  <rect x="0" y="716" width="1280" height="4" fill="#7a9d6e" fill-opacity="0.4"/>
+</svg>
