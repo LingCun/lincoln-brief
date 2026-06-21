@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#140808;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#201010;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="red-line" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#d96552;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d96552;stop-opacity:0" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)" />
+
+  <!-- Grid lines -->
+  <line x1="0" y1="240" x2="1280" y2="240" stroke="#ffffff" stroke-opacity="0.04" stroke-width="1"/>
+  <line x1="0" y1="480" x2="1280" y2="480" stroke="#ffffff" stroke-opacity="0.04" stroke-width="1"/>
+  <line x1="640" y1="0" x2="640" y2="720" stroke="#ffffff" stroke-opacity="0.04" stroke-width="1"/>
+
+  <!-- Red accent bar top -->
+  <rect x="0" y="0" width="1280" height="4" fill="url(#red-line)" />
+
+  <!-- Lincoln Brief logo -->
+  <text x="60" y="65" font-family="Georgia, serif" font-size="20" fill="#d96552" letter-spacing="4" opacity="0.9">LINCOLN BRIEF</text>
+  <polygon points="52,58 57,48 62,58" fill="#d96552" opacity="0.9"/>
+
+  <!-- Edition label -->
+  <rect x="1030" y="32" width="220" height="36" rx="4" fill="#d96552" fill-opacity="0.15" stroke="#d96552" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="1140" y="55" font-family="Arial, sans-serif" font-size="14" fill="#d96552" text-anchor="middle" letter-spacing="2">6/22 · 06:00 KST</text>
+
+  <!-- Category label -->
+  <text x="60" y="120" font-family="Arial, sans-serif" font-size="13" fill="#d96552" letter-spacing="3" opacity="0.7">MARKET FORECAST · 시장 예측</text>
+
+  <!-- Main headline -->
+  <text x="60" y="205" font-family="Georgia, serif" font-size="52" fill="#ffffff" font-weight="bold">NASDAQ 26,517</text>
+  <text x="60" y="268" font-family="Georgia, serif" font-size="34" fill="#d96552">AI 랠리 지속의 3가지 조건</text>
+
+  <!-- Divider -->
+  <rect x="60" y="295" width="560" height="2" fill="#d96552" opacity="0.5"/>
+
+  <!-- 3 conditions -->
+  <!-- Condition 1 -->
+  <circle cx="76" cy="348" r="14" fill="#d96552" opacity="0.8"/>
+  <text x="76" y="354" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" text-anchor="middle" font-weight="bold">1</text>
+  <text x="102" y="345" font-family="Arial, sans-serif" font-size="16" fill="#ffffff">US10Y 4.3% 이하 유지</text>
+  <text x="102" y="366" font-family="Arial, sans-serif" font-size="13" fill="#a08080">현재 4.451% → 하락 방향 확인 필요</text>
+
+  <!-- Condition 2 -->
+  <circle cx="76" cy="418" r="14" fill="#d96552" opacity="0.8"/>
+  <text x="76" y="424" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" text-anchor="middle" font-weight="bold">2</text>
+  <text x="102" y="415" font-family="Arial, sans-serif" font-size="16" fill="#ffffff">MSFT AI 소비자 합류</text>
+  <text x="102" y="436" font-family="Arial, sans-serif" font-size="13" fill="#a08080">오늘 +0.13% 보합 → $395 회복 여부</text>
+
+  <!-- Condition 3 -->
+  <circle cx="76" cy="488" r="14" fill="#d96552" opacity="0.8"/>
+  <text x="76" y="494" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" text-anchor="middle" font-weight="bold">3</text>
+  <text x="102" y="485" font-family="Arial, sans-serif" font-size="16" fill="#ffffff">비테크 섹터 안정</text>
+  <text x="102" y="506" font-family="Arial, sans-serif" font-size="13" fill="#a08080">JPM $325.22 → $335 회복 여부</text>
+
+  <!-- NASDAQ current -->
+  <text x="60" y="570" font-family="Arial, sans-serif" font-size="14" fill="#a08080" letter-spacing="1">NASDAQ 마감</text>
+  <text x="60" y="610" font-family="Arial, sans-serif" font-size="42" fill="#ffffff" font-weight="bold">26,517.93</text>
+  <polygon points="280,595 292,575 304,595" fill="#4dcc88"/>
+  <text x="312" y="610" font-family="Arial, sans-serif" font-size="32" fill="#4dcc88" font-weight="bold">+1.91%</text>
+
+  <!-- Divider -->
+  <line x1="60" y1="640" x2="600" y2="640" stroke="#ffffff" stroke-opacity="0.08" stroke-width="1"/>
+  <text x="60" y="670" font-family="Arial, sans-serif" font-size="13" fill="#805040">AVGO +4.70% · NVDA +2.95% · AMZN +2.90% AI 공급자·소비자 동반</text>
+
+  <!-- Right panel - Scenarios -->
+  <rect x="660" y="140" width="580" height="540" rx="8" fill="#ffffff" fill-opacity="0.03" stroke="#d96552" stroke-width="1" stroke-opacity="0.2"/>
+  <text x="680" y="178" font-family="Arial, sans-serif" font-size="13" fill="#d96552" letter-spacing="2" opacity="0.8">4주 시나리오</text>
+
+  <!-- Scenario A -->
+  <rect x="680" y="198" width="12" height="36" rx="2" fill="#4dcc88"/>
+  <text x="704" y="212" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" font-weight="bold">경로 A — NASDAQ 27,000+</text>
+  <text x="704" y="230" font-family="Arial, sans-serif" font-size="13" fill="#8aaa88">US10Y 4.3%↓ + MSFT 합류 + JPM 안정</text>
+  <text x="1190" y="220" font-family="Arial, sans-serif" font-size="22" fill="#4dcc88" text-anchor="end" font-weight="bold">20%</text>
+
+  <!-- Scenario B -->
+  <rect x="680" y="262" width="12" height="36" rx="2" fill="#d8b878"/>
+  <text x="704" y="276" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" font-weight="bold">경로 B — 26,200~27,000 박스</text>
+  <text x="704" y="294" font-family="Arial, sans-serif" font-size="13" fill="#aaa888">AI 공급자 강세 유지, MSFT 보합</text>
+  <text x="1190" y="284" font-family="Arial, sans-serif" font-size="22" fill="#d8b878" text-anchor="end" font-weight="bold">40%</text>
+
+  <!-- Scenario C -->
+  <rect x="680" y="326" width="12" height="36" rx="2" fill="#ff9944"/>
+  <text x="704" y="340" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" font-weight="bold">경로 C — 26,000 이탈, 재조정</text>
+  <text x="704" y="358" font-family="Arial, sans-serif" font-size="13" fill="#aa8866">US10Y 4.6%+ + JPM·LLY 추가 약세</text>
+  <text x="1190" y="348" font-family="Arial, sans-serif" font-size="22" fill="#ff9944" text-anchor="end" font-weight="bold">30%</text>
+
+  <!-- Scenario D -->
+  <rect x="680" y="390" width="12" height="36" rx="2" fill="#ff4444"/>
+  <text x="704" y="404" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" font-weight="bold">경로 D — 급락</text>
+  <text x="704" y="422" font-family="Arial, sans-serif" font-size="13" fill="#aa6666">예상치 못한 매크로·지정학 충격</text>
+  <text x="1190" y="412" font-family="Arial, sans-serif" font-size="22" fill="#ff4444" text-anchor="end" font-weight="bold">10%</text>
+
+  <!-- Divider -->
+  <line x1="680" y1="455" x2="1220" y2="455" stroke="#ffffff" stroke-opacity="0.08" stroke-width="1"/>
+
+  <!-- Key watch levels -->
+  <text x="680" y="490" font-family="Arial, sans-serif" font-size="13" fill="#d96552" letter-spacing="1">핵심 분기 레벨</text>
+
+  <text x="680" y="524" font-family="Arial, sans-serif" font-size="15" fill="#a09080">NASDAQ</text>
+  <text x="780" y="524" font-family="Arial, sans-serif" font-size="15" fill="#4dcc88">27,000↑</text>
+  <text x="880" y="524" font-family="Arial, sans-serif" font-size="15" fill="#a09080">vs</text>
+  <text x="910" y="524" font-family="Arial, sans-serif" font-size="15" fill="#ff7777">26,000↓</text>
+
+  <text x="680" y="558" font-family="Arial, sans-serif" font-size="15" fill="#a09080">US10Y</text>
+  <text x="780" y="558" font-family="Arial, sans-serif" font-size="15" fill="#4dcc88">4.3%↓</text>
+  <text x="840" y="558" font-family="Arial, sans-serif" font-size="15" fill="#a09080">vs</text>
+  <text x="870" y="558" font-family="Arial, sans-serif" font-size="15" fill="#ff7777">4.6%↑</text>
+
+  <text x="680" y="592" font-family="Arial, sans-serif" font-size="15" fill="#a09080">MSFT</text>
+  <text x="760" y="592" font-family="Arial, sans-serif" font-size="15" fill="#4dcc88">$395 복귀↑</text>
+  <text x="880" y="592" font-family="Arial, sans-serif" font-size="15" fill="#a09080">vs</text>
+  <text x="910" y="592" font-family="Arial, sans-serif" font-size="15" fill="#ff7777">$360 이탈↓</text>
+
+  <!-- Bottom disclaimer -->
+  <text x="680" y="680" font-family="Arial, sans-serif" font-size="11" fill="#604040" opacity="0.6">lincoln-brief.vercel.app · 정보 제공 목적 · 투자 권유 아님</text>
+</svg>
