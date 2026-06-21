@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#080c10;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#101820;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="blue-line" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#5677b0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#5677b0;stop-opacity:0" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)" />
+
+  <line x1="0" y1="240" x2="1280" y2="240" stroke="#ffffff" stroke-opacity="0.03" stroke-width="1"/>
+  <line x1="0" y1="480" x2="1280" y2="480" stroke="#ffffff" stroke-opacity="0.03" stroke-width="1"/>
+  <line x1="640" y1="0" x2="640" y2="720" stroke="#ffffff" stroke-opacity="0.03" stroke-width="1"/>
+
+  <!-- Blue accent bar top -->
+  <rect x="0" y="0" width="1280" height="4" fill="url(#blue-line)" />
+
+  <!-- Lincoln Brief logo -->
+  <text x="60" y="65" font-family="Georgia, serif" font-size="20" fill="#5677b0" letter-spacing="4" opacity="0.9">LINCOLN BRIEF</text>
+  <polygon points="52,58 57,48 62,58" fill="#5677b0" opacity="0.9"/>
+
+  <!-- Edition label -->
+  <rect x="1040" y="32" width="210" height="36" rx="4" fill="#5677b0" fill-opacity="0.15" stroke="#5677b0" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="1145" y="55" font-family="Arial, sans-serif" font-size="14" fill="#5677b0" text-anchor="middle" letter-spacing="2">6/22 · 01:00 KST</text>
+
+  <!-- Category label -->
+  <text x="60" y="120" font-family="Arial, sans-serif" font-size="13" fill="#5677b0" letter-spacing="3" opacity="0.8">STOCK ANALYSIS · 종목 분석</text>
+
+  <!-- Main ticker -->
+  <text x="60" y="185" font-family="Arial, sans-serif" font-size="18" fill="#7090c0" letter-spacing="3">AVGO · BROADCOM</text>
+
+  <!-- Price headline -->
+  <text x="60" y="260" font-family="Georgia, serif" font-size="72" fill="#ffffff" font-weight="bold">$411.35</text>
+  <polygon points="390,238 410,212 430,238" fill="#4dcc88"/>
+  <text x="440" y="260" font-family="Arial, sans-serif" font-size="42" fill="#4dcc88" font-weight="bold">+4.70%</text>
+
+  <!-- Subtitle -->
+  <text x="60" y="310" font-family="Arial, sans-serif" font-size="22" fill="#8090a0">12종목 최대 상승 · AI ASIC 수요 재확인</text>
+
+  <!-- Divider -->
+  <rect x="60" y="338" width="540" height="2" fill="#5677b0" opacity="0.5"/>
+
+  <!-- 30-day stats -->
+  <text x="60" y="395" font-family="Arial, sans-serif" font-size="13" fill="#7090c0" letter-spacing="2">30일 가격 레인지</text>
+
+  <!-- Low -->
+  <text x="60" y="440" font-family="Arial, sans-serif" font-size="14" fill="#8090a0">30일 저점</text>
+  <text x="60" y="470" font-family="Arial, sans-serif" font-size="32" fill="#ff7777" font-weight="bold">$372.10</text>
+
+  <!-- Arrow -->
+  <line x1="220" y1="455" x2="300" y2="455" stroke="#4dcc88" stroke-width="2"/>
+  <polygon points="296,450 310,455 296,460" fill="#4dcc88"/>
+
+  <!-- Current -->
+  <text x="320" y="440" font-family="Arial, sans-serif" font-size="14" fill="#8090a0">현재</text>
+  <text x="320" y="470" font-family="Arial, sans-serif" font-size="32" fill="#4dcc88" font-weight="bold">$411.35</text>
+
+  <!-- Recovery -->
+  <text x="500" y="440" font-family="Arial, sans-serif" font-size="13" fill="#5677b0">저점 대비</text>
+  <text x="500" y="468" font-family="Arial, sans-serif" font-size="26" fill="#4dcc88" font-weight="bold">+10.5%</text>
+
+  <!-- High reference -->
+  <text x="60" y="530" font-family="Arial, sans-serif" font-size="14" fill="#8090a0">30일 고점 $481.57 대비</text>
+  <text x="60" y="558" font-family="Arial, sans-serif" font-size="26" fill="#ff7777" font-weight="bold">−14.6%</text>
+  <text x="200" y="558" font-family="Arial, sans-serif" font-size="20" fill="#8090a0">  회복 여력</text>
+
+  <!-- Right panel -->
+  <rect x="660" y="140" width="580" height="540" rx="8" fill="#ffffff" fill-opacity="0.03" stroke="#5677b0" stroke-width="1" stroke-opacity="0.25"/>
+  <text x="680" y="180" font-family="Arial, sans-serif" font-size="13" fill="#5677b0" letter-spacing="2">AI 공급자 비교</text>
+
+  <!-- AVGO vs NVDA comparison -->
+  <text x="680" y="230" font-family="Arial, sans-serif" font-size="14" fill="#a0b0c0">AVGO (AI ASIC)</text>
+  <rect x="680" y="245" width="480" height="48" rx="4" fill="#5677b0" fill-opacity="0.15"/>
+  <text x="695" y="275" font-family="Arial, sans-serif" font-size="28" fill="#ffffff" font-weight="bold">$411.35</text>
+  <text x="880" y="275" font-family="Arial, sans-serif" font-size="24" fill="#4dcc88" font-weight="bold">+4.70%</text>
+
+  <text x="680" y="328" font-family="Arial, sans-serif" font-size="14" fill="#a0b0c0">NVDA (GPU)</text>
+  <rect x="680" y="343" width="480" height="48" rx="4" fill="#404868" fill-opacity="0.3"/>
+  <text x="695" y="373" font-family="Arial, sans-serif" font-size="28" fill="#ffffff" font-weight="bold">$210.69</text>
+  <text x="880" y="373" font-family="Arial, sans-serif" font-size="24" fill="#4dcc88" font-weight="bold">+2.95%</text>
+
+  <text x="680" y="426" font-family="Arial, sans-serif" font-size="14" fill="#a0b0c0">AMZN (AI 소비자)</text>
+  <rect x="680" y="441" width="480" height="48" rx="4" fill="#304848" fill-opacity="0.3"/>
+  <text x="695" y="471" font-family="Arial, sans-serif" font-size="28" fill="#ffffff" font-weight="bold">$244.39</text>
+  <text x="880" y="471" font-family="Arial, sans-serif" font-size="24" fill="#4dcc88" font-weight="bold">+2.90%</text>
+
+  <!-- 4-week scenario -->
+  <line x1="680" y1="518" x2="1220" y2="518" stroke="#5677b0" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="680" y="548" font-family="Arial, sans-serif" font-size="13" fill="#5677b0" letter-spacing="1">4주 베이스 시나리오 (45%)</text>
+  <text x="680" y="580" font-family="Arial, sans-serif" font-size="20" fill="#ffffff">$400 ~ $430 박스권 소화</text>
+  <text x="680" y="610" font-family="Arial, sans-serif" font-size="14" fill="#8090a0">관찰 포인트: $420 돌파 여부</text>
+
+  <text x="680" y="658" font-family="Arial, sans-serif" font-size="11" fill="#405060" opacity="0.6">lincoln-brief.vercel.app · 정보 제공 목적 · 투자 권유 아님</text>
+</svg>

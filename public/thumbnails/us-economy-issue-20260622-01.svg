@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#080f08;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#101810;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="green-line" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7a9d6e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7a9d6e;stop-opacity:0" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)" />
+
+  <line x1="0" y1="240" x2="1280" y2="240" stroke="#ffffff" stroke-opacity="0.03" stroke-width="1"/>
+  <line x1="0" y1="480" x2="1280" y2="480" stroke="#ffffff" stroke-opacity="0.03" stroke-width="1"/>
+  <line x1="640" y1="0" x2="640" y2="720" stroke="#ffffff" stroke-opacity="0.03" stroke-width="1"/>
+
+  <!-- Green accent bar top -->
+  <rect x="0" y="0" width="1280" height="4" fill="url(#green-line)" />
+
+  <!-- Lincoln Brief logo -->
+  <text x="60" y="65" font-family="Georgia, serif" font-size="20" fill="#7a9d6e" letter-spacing="4" opacity="0.9">LINCOLN BRIEF</text>
+  <polygon points="52,58 57,48 62,58" fill="#7a9d6e" opacity="0.9"/>
+
+  <!-- Edition label -->
+  <rect x="1040" y="32" width="210" height="36" rx="4" fill="#7a9d6e" fill-opacity="0.15" stroke="#7a9d6e" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="1145" y="55" font-family="Arial, sans-serif" font-size="14" fill="#7a9d6e" text-anchor="middle" letter-spacing="2">6/22 · 01:00 KST</text>
+
+  <!-- Category label -->
+  <text x="60" y="120" font-family="Arial, sans-serif" font-size="13" fill="#7a9d6e" letter-spacing="3" opacity="0.8">ECONOMY ISSUE · 경제 이슈</text>
+
+  <!-- Main ticker / headline -->
+  <text x="60" y="190" font-family="Arial, sans-serif" font-size="18" fill="#7a9d6e" letter-spacing="3">JPM · JPMORGAN CHASE</text>
+
+  <!-- Price headline -->
+  <text x="60" y="268" font-family="Georgia, serif" font-size="72" fill="#ffffff" font-weight="bold">$325.22</text>
+  <polygon points="390,248 410,272 430,248" fill="#ff7777"/>
+  <text x="440" y="268" font-family="Arial, sans-serif" font-size="42" fill="#ff7777" font-weight="bold">−2.47%</text>
+
+  <!-- Subtitle -->
+  <text x="60" y="315" font-family="Arial, sans-serif" font-size="20" fill="#809880">12종목 최대 낙폭 · AI 랠리서 소외</text>
+
+  <!-- Divider -->
+  <rect x="60" y="345" width="540" height="2" fill="#7a9d6e" opacity="0.4"/>
+
+  <!-- 3 reasons quick summary -->
+  <text x="60" y="390" font-family="Arial, sans-serif" font-size="13" fill="#7a9d6e" letter-spacing="2">소외 구조적 이유</text>
+
+  <rect x="60" y="405" width="20" height="20" rx="2" fill="#7a9d6e" fill-opacity="0.3"/>
+  <text x="68" y="420" font-family="Arial, sans-serif" font-size="11" fill="#7a9d6e" text-anchor="middle">1</text>
+  <text x="90" y="420" font-family="Arial, sans-serif" font-size="16" fill="#c0d0c0">US10Y 4.451% 하락 → NIM 압박</text>
+
+  <rect x="60" y="432" width="20" height="20" rx="2" fill="#7a9d6e" fill-opacity="0.3"/>
+  <text x="68" y="447" font-family="Arial, sans-serif" font-size="11" fill="#7a9d6e" text-anchor="middle">2</text>
+  <text x="90" y="447" font-family="Arial, sans-serif" font-size="16" fill="#c0d0c0">AI 섹터 자금 이동의 기회비용</text>
+
+  <rect x="60" y="459" width="20" height="20" rx="2" fill="#7a9d6e" fill-opacity="0.3"/>
+  <text x="68" y="474" font-family="Arial, sans-serif" font-size="11" fill="#7a9d6e" text-anchor="middle">3</text>
+  <text x="90" y="474" font-family="Arial, sans-serif" font-size="16" fill="#c0d0c0">Gold −1.21% 낙세와 공통 경기 신호</text>
+
+  <!-- 30-day range -->
+  <text x="60" y="530" font-family="Arial, sans-serif" font-size="13" fill="#7a9d6e" letter-spacing="1">30일 레인지 $295.70 ~ $333.46</text>
+  <text x="60" y="560" font-family="Arial, sans-serif" font-size="18" fill="#a0b0a0">현재 $325.22 — 고점 부근서 재하락 패턴</text>
+
+  <!-- Key level -->
+  <text x="60" y="620" font-family="Arial, sans-serif" font-size="13" fill="#a09090">관찰: $335 복귀(섹터 로테이션) vs $310 이탈(추가 약세)</text>
+
+  <!-- Right panel: contrast comparison -->
+  <rect x="660" y="140" width="580" height="540" rx="8" fill="#ffffff" fill-opacity="0.02" stroke="#7a9d6e" stroke-width="1" stroke-opacity="0.2"/>
+  <text x="680" y="180" font-family="Arial, sans-serif" font-size="13" fill="#7a9d6e" letter-spacing="2">AI 강세 vs 금융 역행</text>
+
+  <!-- AI sector UP -->
+  <text x="680" y="228" font-family="Arial, sans-serif" font-size="13" fill="#4dcc88" letter-spacing="1">↑ AI 섹터 (당일 강세)</text>
+  <rect x="680" y="240" width="500" height="44" rx="4" fill="#4dcc88" fill-opacity="0.08" stroke="#4dcc88" stroke-width="1" stroke-opacity="0.2"/>
+  <text x="696" y="268" font-family="Arial, sans-serif" font-size="22" fill="#ffffff">AVGO</text>
+  <text x="810" y="268" font-family="Arial, sans-serif" font-size="22" fill="#4dcc88" font-weight="bold">+4.70%</text>
+  <text x="960" y="268" font-family="Arial, sans-serif" font-size="22" fill="#4dcc88">NVDA +2.95%</text>
+
+  <rect x="680" y="296" width="500" height="44" rx="4" fill="#4dcc88" fill-opacity="0.06" stroke="#4dcc88" stroke-width="1" stroke-opacity="0.12"/>
+  <text x="696" y="324" font-family="Arial, sans-serif" font-size="22" fill="#ffffff">AMZN</text>
+  <text x="810" y="324" font-family="Arial, sans-serif" font-size="22" fill="#4dcc88" font-weight="bold">+2.90%</text>
+  <text x="960" y="324" font-family="Arial, sans-serif" font-size="22" fill="#4dcc88">META +1.70%</text>
+
+  <!-- Divider arrow -->
+  <line x1="680" y1="360" x2="1160" y2="360" stroke="#7a9d6e" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="900" y="390" font-family="Arial, sans-serif" font-size="14" fill="#7a9d6e" text-anchor="middle" letter-spacing="1">선택적 AI 낙관론</text>
+  <line x1="680" y1="405" x2="1160" y2="405" stroke="#7a9d6e" stroke-opacity="0.2" stroke-width="1"/>
+
+  <!-- Finance sector DOWN -->
+  <text x="680" y="438" font-family="Arial, sans-serif" font-size="13" fill="#ff7777" letter-spacing="1">↓ 전통 섹터 (당일 약세)</text>
+  <rect x="680" y="450" width="500" height="44" rx="4" fill="#ff7777" fill-opacity="0.08" stroke="#ff7777" stroke-width="1" stroke-opacity="0.2"/>
+  <text x="696" y="478" font-family="Arial, sans-serif" font-size="22" fill="#ffffff">JPM</text>
+  <text x="810" y="478" font-family="Arial, sans-serif" font-size="22" fill="#ff7777" font-weight="bold">−2.47%</text>
+  <text x="960" y="478" font-family="Arial, sans-serif" font-size="22" fill="#ff7777">LLY −1.21%</text>
+
+  <rect x="680" y="506" width="500" height="44" rx="4" fill="#ff7777" fill-opacity="0.06" stroke="#ff7777" stroke-width="1" stroke-opacity="0.12"/>
+  <text x="696" y="534" font-family="Arial, sans-serif" font-size="22" fill="#ffffff">Gold</text>
+  <text x="810" y="534" font-family="Arial, sans-serif" font-size="22" fill="#ff7777" font-weight="bold">−1.21%</text>
+  <text x="960" y="534" font-family="Arial, sans-serif" font-size="22" fill="#ff7777">WMT −0.80%</text>
+
+  <!-- US10Y note -->
+  <text x="680" y="590" font-family="Arial, sans-serif" font-size="14" fill="#a0a080">US10Y 4.451%  USD/KRW 1,529.89</text>
+  <text x="680" y="614" font-family="Arial, sans-serif" font-size="14" fill="#ff7777">금리·달러 동반 소폭 하락 → NIM 우려</text>
+
+  <text x="680" y="658" font-family="Arial, sans-serif" font-size="11" fill="#405040" opacity="0.6">lincoln-brief.vercel.app · 정보 제공 목적 · 투자 권유 아님</text>
+</svg>
