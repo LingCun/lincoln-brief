@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#080c14;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#101828;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="blue-line" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#5677b0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#5677b0;stop-opacity:0" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)" />
+
+  <!-- Grid lines -->
+  <line x1="0" y1="240" x2="1280" y2="240" stroke="#ffffff" stroke-opacity="0.04" stroke-width="1"/>
+  <line x1="0" y1="480" x2="1280" y2="480" stroke="#ffffff" stroke-opacity="0.04" stroke-width="1"/>
+  <line x1="640" y1="0" x2="640" y2="720" stroke="#ffffff" stroke-opacity="0.04" stroke-width="1"/>
+
+  <!-- Blue accent bar top -->
+  <rect x="0" y="0" width="1280" height="4" fill="url(#blue-line)" />
+
+  <!-- Lincoln Brief logo -->
+  <text x="60" y="65" font-family="Georgia, serif" font-size="20" fill="#5677b0" letter-spacing="4" opacity="0.9">LINCOLN BRIEF</text>
+  <polygon points="52,58 57,48 62,58" fill="#5677b0" opacity="0.9"/>
+
+  <!-- Edition label -->
+  <rect x="1030" y="32" width="220" height="36" rx="4" fill="#5677b0" fill-opacity="0.15" stroke="#5677b0" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="1140" y="55" font-family="Arial, sans-serif" font-size="14" fill="#5677b0" text-anchor="middle" letter-spacing="2">6/22 · 06:00 KST</text>
+
+  <!-- Category label -->
+  <text x="60" y="120" font-family="Arial, sans-serif" font-size="13" fill="#5677b0" letter-spacing="3" opacity="0.7">STOCK ANALYSIS · 종목 분석</text>
+
+  <!-- Main headline -->
+  <text x="60" y="210" font-family="Georgia, serif" font-size="60" fill="#ffffff" font-weight="bold">NVDA</text>
+  <text x="220" y="210" font-family="Georgia, serif" font-size="44" fill="#4dcc88">$210.69</text>
+  <polygon points="430,194 442,172 454,194" fill="#4dcc88"/>
+  <text x="462" y="210" font-family="Arial, sans-serif" font-size="36" fill="#4dcc88" font-weight="bold">+2.95%</text>
+
+  <!-- Subtitle -->
+  <text x="60" y="260" font-family="Arial, sans-serif" font-size="22" fill="#8090a8">30일 고점 $235.74 대비 −10.6%</text>
+
+  <!-- Divider -->
+  <rect x="60" y="285" width="560" height="2" fill="#5677b0" opacity="0.5"/>
+
+  <!-- 30-day range visual -->
+  <text x="60" y="330" font-family="Arial, sans-serif" font-size="13" fill="#6080a0" letter-spacing="2">30일 범위</text>
+
+  <!-- Range bar background -->
+  <rect x="60" y="345" width="540" height="16" rx="8" fill="#1a2030"/>
+  <!-- Range bar fill: from low $200.42 to current $210.69 within $200-$235.74 range -->
+  <!-- Total range: 235.74-200.42 = 35.32, current position: 210.69-200.42 = 10.27, ratio = 10.27/35.32 = 29% -->
+  <rect x="60" y="345" width="157" height="16" rx="8" fill="#4dcc88" opacity="0.7"/>
+  <!-- Current marker -->
+  <rect x="213" y="340" width="3" height="26" rx="1" fill="#ffffff"/>
+
+  <!-- Range labels -->
+  <text x="60" y="382" font-family="Arial, sans-serif" font-size="13" fill="#6080a0">$200.42 저점</text>
+  <text x="430" y="382" font-family="Arial, sans-serif" font-size="13" fill="#a09080" text-anchor="end">$235.74 고점</text>
+  <text x="210" y="395" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle">현재</text>
+
+  <!-- Stats grid -->
+  <text x="60" y="450" font-family="Arial, sans-serif" font-size="14" fill="#6080a0" letter-spacing="1">저점 대비 회복</text>
+  <text x="60" y="480" font-family="Arial, sans-serif" font-size="30" fill="#4dcc88" font-weight="bold">+5.1%</text>
+
+  <text x="260" y="450" font-family="Arial, sans-serif" font-size="14" fill="#6080a0" letter-spacing="1">고점 대비 위치</text>
+  <text x="260" y="480" font-family="Arial, sans-serif" font-size="30" fill="#ff7777" font-weight="bold">−10.6%</text>
+
+  <text x="460" y="450" font-family="Arial, sans-serif" font-size="14" fill="#6080a0" letter-spacing="1">30일 시작 대비</text>
+  <text x="460" y="480" font-family="Arial, sans-serif" font-size="30" fill="#ff7777" font-weight="bold">−0.38%</text>
+
+  <!-- Divider -->
+  <line x1="60" y1="510" x2="600" y2="510" stroke="#ffffff" stroke-opacity="0.08" stroke-width="1"/>
+
+  <!-- Key level -->
+  <text x="60" y="550" font-family="Arial, sans-serif" font-size="14" fill="#6080a0">1차 회복 관찰 레벨</text>
+  <text x="60" y="582" font-family="Arial, sans-serif" font-size="32" fill="#d8b878" font-weight="bold">$220 돌파 여부</text>
+
+  <!-- AVGO comparison -->
+  <text x="60" y="640" font-family="Arial, sans-serif" font-size="13" fill="#6080a0">AI 공급자 동반 강세</text>
+  <text x="60" y="666" font-family="Arial, sans-serif" font-size="18" fill="#a09080">AVGO $411.35</text>
+  <text x="220" y="666" font-family="Arial, sans-serif" font-size="18" fill="#4dcc88">+4.70%</text>
+
+  <!-- Right panel -->
+  <rect x="660" y="140" width="580" height="540" rx="8" fill="#ffffff" fill-opacity="0.03" stroke="#5677b0" stroke-width="1" stroke-opacity="0.2"/>
+  <text x="680" y="175" font-family="Arial, sans-serif" font-size="13" fill="#5677b0" letter-spacing="2" opacity="0.8">4주 시나리오</text>
+
+  <!-- Scenario A -->
+  <rect x="680" y="195" width="12" height="12" rx="2" fill="#4dcc88"/>
+  <text x="702" y="206" font-family="Arial, sans-serif" font-size="14" fill="#ffffff">$220+ 회복</text>
+  <text x="1190" y="206" font-family="Arial, sans-serif" font-size="14" fill="#4dcc88" text-anchor="end">25%</text>
+  <rect x="680" y="216" width="129" height="4" rx="2" fill="#4dcc88" opacity="0.5"/>
+
+  <!-- Scenario B -->
+  <rect x="680" y="260" width="12" height="12" rx="2" fill="#d8b878"/>
+  <text x="702" y="271" font-family="Arial, sans-serif" font-size="14" fill="#ffffff">$205~$220 박스</text>
+  <text x="1190" y="271" font-family="Arial, sans-serif" font-size="14" fill="#d8b878" text-anchor="end">45%</text>
+  <rect x="680" y="281" width="220" height="4" rx="2" fill="#d8b878" opacity="0.5"/>
+
+  <!-- Scenario C -->
+  <rect x="680" y="325" width="12" height="12" rx="2" fill="#ff9944"/>
+  <text x="702" y="336" font-family="Arial, sans-serif" font-size="14" fill="#ffffff">$200 재테스트</text>
+  <text x="1190" y="336" font-family="Arial, sans-serif" font-size="14" fill="#ff9944" text-anchor="end">22%</text>
+  <rect x="680" y="346" width="108" height="4" rx="2" fill="#ff9944" opacity="0.5"/>
+
+  <!-- Scenario D -->
+  <rect x="680" y="390" width="12" height="12" rx="2" fill="#ff4444"/>
+  <text x="702" y="401" font-family="Arial, sans-serif" font-size="14" fill="#ffffff">$190 이하 하락</text>
+  <text x="1190" y="401" font-family="Arial, sans-serif" font-size="14" fill="#ff4444" text-anchor="end">8%</text>
+  <rect x="680" y="411" width="40" height="4" rx="2" fill="#ff4444" opacity="0.5"/>
+
+  <!-- Divider -->
+  <line x1="680" y1="440" x2="1220" y2="440" stroke="#ffffff" stroke-opacity="0.08" stroke-width="1"/>
+
+  <!-- Key watch -->
+  <text x="680" y="478" font-family="Arial, sans-serif" font-size="13" fill="#5677b0" letter-spacing="1">핵심 관찰</text>
+  <text x="680" y="512" font-family="Arial, sans-serif" font-size="20" fill="#ffffff">$220 돌파 + US10Y 4.3% 이하</text>
+  <text x="680" y="542" font-family="Arial, sans-serif" font-size="16" fill="#8090a8">CUDA 생태계 해자 재확인 조건</text>
+
+  <!-- NVDA vs AVGO -->
+  <text x="680" y="600" font-family="Arial, sans-serif" font-size="13" fill="#6080a0">공급자 비교 (저점 대비 회복)</text>
+  <text x="680" y="630" font-family="Arial, sans-serif" font-size="18" fill="#ffffff">NVDA</text>
+  <text x="750" y="630" font-family="Arial, sans-serif" font-size="18" fill="#4dcc88">+5.1%</text>
+  <text x="850" y="630" font-family="Arial, sans-serif" font-size="18" fill="#ffffff">AVGO</text>
+  <text x="920" y="630" font-family="Arial, sans-serif" font-size="18" fill="#4dcc88">+10.5%</text>
+
+  <!-- Bottom disclaimer -->
+  <text x="680" y="680" font-family="Arial, sans-serif" font-size="11" fill="#405060" opacity="0.6">lincoln-brief.vercel.app · 정보 제공 목적 · 투자 권유 아님</text>
+</svg>
