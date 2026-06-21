@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#100808;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1010;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="red-line" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#d96552;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d96552;stop-opacity:0" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)" />
+
+  <line x1="0" y1="240" x2="1280" y2="240" stroke="#ffffff" stroke-opacity="0.03" stroke-width="1"/>
+  <line x1="0" y1="480" x2="1280" y2="480" stroke="#ffffff" stroke-opacity="0.03" stroke-width="1"/>
+  <line x1="640" y1="0" x2="640" y2="720" stroke="#ffffff" stroke-opacity="0.03" stroke-width="1"/>
+
+  <!-- Red accent bar top -->
+  <rect x="0" y="0" width="1280" height="4" fill="url(#red-line)" />
+
+  <!-- Lincoln Brief logo -->
+  <text x="60" y="65" font-family="Georgia, serif" font-size="20" fill="#d96552" letter-spacing="4" opacity="0.9">LINCOLN BRIEF</text>
+  <polygon points="52,58 57,48 62,58" fill="#d96552" opacity="0.9"/>
+
+  <!-- Edition label -->
+  <rect x="1040" y="32" width="210" height="36" rx="4" fill="#d96552" fill-opacity="0.15" stroke="#d96552" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="1145" y="55" font-family="Arial, sans-serif" font-size="14" fill="#d96552" text-anchor="middle" letter-spacing="2">6/22 · 01:00 KST</text>
+
+  <!-- Category label -->
+  <text x="60" y="120" font-family="Arial, sans-serif" font-size="13" fill="#d96552" letter-spacing="3" opacity="0.8">MARKET FORECAST · 시장 예측</text>
+
+  <!-- Main headline -->
+  <text x="60" y="200" font-family="Georgia, serif" font-size="52" fill="#ffffff" font-weight="bold">이번 주 S&amp;P 500</text>
+  <text x="60" y="262" font-family="Georgia, serif" font-size="36" fill="#d96552">7,500 지지 vs 7,550 돌파</text>
+
+  <!-- S&P baseline -->
+  <text x="60" y="320" font-family="Arial, sans-serif" font-size="14" fill="#a08080" letter-spacing="1">주간 출발 기준</text>
+  <text x="60" y="360" font-family="Arial, sans-serif" font-size="50" fill="#ffffff" font-weight="bold">7,500.58</text>
+  <text x="60" y="396" font-family="Arial, sans-serif" font-size="18" fill="#4dcc88">S&amp;P 500  +1.08%  ↑</text>
+
+  <!-- Divider -->
+  <rect x="60" y="418" width="520" height="2" fill="#d96552" opacity="0.4"/>
+
+  <!-- Scenario table -->
+  <text x="60" y="460" font-family="Arial, sans-serif" font-size="13" fill="#d96552" letter-spacing="2">4주 시나리오</text>
+
+  <!-- Path A -->
+  <rect x="60" y="475" width="24" height="24" rx="3" fill="#4dcc88" fill-opacity="0.3"/>
+  <text x="68" y="492" font-family="Arial, sans-serif" font-size="12" fill="#4dcc88" text-anchor="middle">A</text>
+  <text x="96" y="492" font-family="Arial, sans-serif" font-size="16" fill="#ffffff">7,550 돌파</text>
+  <text x="290" y="492" font-family="Arial, sans-serif" font-size="16" fill="#4dcc88" font-weight="bold">25%</text>
+
+  <!-- Path B -->
+  <rect x="60" y="508" width="24" height="24" rx="3" fill="#d8b878" fill-opacity="0.3"/>
+  <text x="68" y="525" font-family="Arial, sans-serif" font-size="12" fill="#d8b878" text-anchor="middle">B</text>
+  <text x="96" y="525" font-family="Arial, sans-serif" font-size="16" fill="#ffffff">7,450~7,550 박스</text>
+  <text x="290" y="525" font-family="Arial, sans-serif" font-size="16" fill="#d8b878" font-weight="bold">35%</text>
+
+  <!-- Path C -->
+  <rect x="60" y="541" width="24" height="24" rx="3" fill="#d96552" fill-opacity="0.3"/>
+  <text x="68" y="558" font-family="Arial, sans-serif" font-size="12" fill="#d96552" text-anchor="middle">C</text>
+  <text x="96" y="558" font-family="Arial, sans-serif" font-size="16" fill="#ffffff">7,450 이탈 재조정</text>
+  <text x="290" y="558" font-family="Arial, sans-serif" font-size="16" fill="#d96552" font-weight="bold">30%</text>
+
+  <!-- Path D -->
+  <rect x="60" y="574" width="24" height="24" rx="3" fill="#884444" fill-opacity="0.3"/>
+  <text x="68" y="591" font-family="Arial, sans-serif" font-size="12" fill="#cc5555" text-anchor="middle">D</text>
+  <text x="96" y="591" font-family="Arial, sans-serif" font-size="16" fill="#888888">급락</text>
+  <text x="290" y="591" font-family="Arial, sans-serif" font-size="16" fill="#888888" font-weight="bold">10%</text>
+
+  <!-- Key watch -->
+  <text x="60" y="648" font-family="Arial, sans-serif" font-size="13" fill="#a08080">관찰: US10Y 4.3%/4.6% · AVGO $420 돌파 · JPM $335 복귀</text>
+
+  <!-- Right panel -->
+  <rect x="660" y="140" width="580" height="540" rx="8" fill="#ffffff" fill-opacity="0.02" stroke="#d96552" stroke-width="1" stroke-opacity="0.2"/>
+  <text x="680" y="180" font-family="Arial, sans-serif" font-size="13" fill="#d96552" letter-spacing="2">핵심 분기 레벨</text>
+
+  <!-- Level table header -->
+  <text x="680" y="220" font-family="Arial, sans-serif" font-size="13" fill="#806060" letter-spacing="1">지표</text>
+  <text x="880" y="220" font-family="Arial, sans-serif" font-size="13" fill="#4dcc88" letter-spacing="1">상방</text>
+  <text x="1010" y="220" font-family="Arial, sans-serif" font-size="13" fill="#ff7777" letter-spacing="1">하방</text>
+  <line x1="680" y1="230" x2="1220" y2="230" stroke="#d96552" stroke-opacity="0.2" stroke-width="1"/>
+
+  <!-- S&P -->
+  <text x="680" y="260" font-family="Arial, sans-serif" font-size="15" fill="#ffffff">S&amp;P 500</text>
+  <text x="880" y="260" font-family="Arial, sans-serif" font-size="15" fill="#4dcc88">7,550+</text>
+  <text x="1010" y="260" font-family="Arial, sans-serif" font-size="15" fill="#ff7777">7,450−</text>
+
+  <!-- NASDAQ -->
+  <text x="680" y="300" font-family="Arial, sans-serif" font-size="15" fill="#ffffff">NASDAQ</text>
+  <text x="880" y="300" font-family="Arial, sans-serif" font-size="15" fill="#4dcc88">26,700+</text>
+  <text x="1010" y="300" font-family="Arial, sans-serif" font-size="15" fill="#ff7777">26,000−</text>
+
+  <!-- US10Y -->
+  <text x="680" y="340" font-family="Arial, sans-serif" font-size="15" fill="#ffffff">US10Y</text>
+  <text x="880" y="340" font-family="Arial, sans-serif" font-size="15" fill="#4dcc88">4.3% 이하</text>
+  <text x="1010" y="340" font-family="Arial, sans-serif" font-size="15" fill="#ff7777">4.6% 이상</text>
+
+  <!-- USD/KRW -->
+  <text x="680" y="380" font-family="Arial, sans-serif" font-size="15" fill="#ffffff">USD/KRW</text>
+  <text x="880" y="380" font-family="Arial, sans-serif" font-size="15" fill="#4dcc88">1,510 이하</text>
+  <text x="1010" y="380" font-family="Arial, sans-serif" font-size="15" fill="#ff7777">1,550 이상</text>
+
+  <!-- AVGO -->
+  <text x="680" y="420" font-family="Arial, sans-serif" font-size="15" fill="#ffffff">AVGO</text>
+  <text x="880" y="420" font-family="Arial, sans-serif" font-size="15" fill="#4dcc88">$420 돌파</text>
+  <text x="1010" y="420" font-family="Arial, sans-serif" font-size="15" fill="#ff7777">$390 이하</text>
+
+  <!-- JPM -->
+  <text x="680" y="460" font-family="Arial, sans-serif" font-size="15" fill="#ffffff">JPM</text>
+  <text x="880" y="460" font-family="Arial, sans-serif" font-size="15" fill="#4dcc88">$335 복귀</text>
+  <text x="1010" y="460" font-family="Arial, sans-serif" font-size="15" fill="#ff7777">$310 이하</text>
+
+  <!-- Gold -->
+  <text x="680" y="500" font-family="Arial, sans-serif" font-size="15" fill="#ffffff">Gold</text>
+  <text x="880" y="500" font-family="Arial, sans-serif" font-size="15" fill="#4dcc88">$4,250 복귀</text>
+  <text x="1010" y="500" font-family="Arial, sans-serif" font-size="15" fill="#ff7777">$4,100 이하</text>
+
+  <line x1="680" y1="540" x2="1220" y2="540" stroke="#d96552" stroke-opacity="0.15" stroke-width="1"/>
+
+  <!-- Current signals -->
+  <text x="680" y="575" font-family="Arial, sans-serif" font-size="13" fill="#d96552" letter-spacing="1">현재 신호</text>
+  <text x="680" y="605" font-family="Arial, sans-serif" font-size="14" fill="#4dcc88">↑ AVGO+4.70% · NVDA+2.95% · US10Y 하락</text>
+  <text x="680" y="630" font-family="Arial, sans-serif" font-size="14" fill="#ff7777">↓ JPM−2.47% · Gold−1.21% · DOW+0.14%</text>
+
+  <text x="680" y="668" font-family="Arial, sans-serif" font-size="11" fill="#604040" opacity="0.6">lincoln-brief.vercel.app · 정보 제공 목적 · 투자 권유 아님</text>
+</svg>
