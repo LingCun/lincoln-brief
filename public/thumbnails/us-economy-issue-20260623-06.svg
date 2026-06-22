@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#060c08"/>
+      <stop offset="100%" style="stop-color:#0f1810"/>
+    </linearGradient>
+    <linearGradient id="greenLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#50c878;stop-opacity:0"/>
+      <stop offset="30%" style="stop-color:#50c878;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#50c878;stop-opacity:0.3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Subtle grid -->
+  <line x1="0" y1="240" x2="1280" y2="240" stroke="#50c878" stroke-opacity="0.05" stroke-width="1"/>
+  <line x1="0" y1="480" x2="1280" y2="480" stroke="#50c878" stroke-opacity="0.05" stroke-width="1"/>
+  <line x1="640" y1="0" x2="640" y2="720" stroke="#50c878" stroke-opacity="0.05" stroke-width="1"/>
+
+  <!-- Top green accent bar -->
+  <rect x="0" y="0" width="1280" height="4" fill="url(#greenLine)"/>
+
+  <!-- Lincoln Brief mark -->
+  <text x="48" y="54" font-family="Georgia, serif" font-size="18" fill="#50c878" font-weight="bold" letter-spacing="3">LINCOLN BRIEF</text>
+  <text x="48" y="76" font-family="Georgia, serif" font-size="13" fill="#308050" letter-spacing="2">US MARKET · ECONOMY ISSUE</text>
+
+  <!-- Edition label -->
+  <rect x="1030" y="28" width="210" height="36" rx="3" fill="#50c878" fill-opacity="0.1" stroke="#50c878" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="1135" y="51" font-family="Georgia, serif" font-size="14" fill="#50c878" text-anchor="middle" letter-spacing="1">2026.06.23 · 06:00 KST</text>
+
+  <!-- Diamond decorative -->
+  <polygon points="640,108 649,117 640,126 631,117" fill="#50c878" fill-opacity="0.5"/>
+
+  <!-- Main headline -->
+  <text x="640" y="164" font-family="Georgia, serif" font-size="19" fill="#80d8a0" text-anchor="middle" letter-spacing="3">AI 데이터센터 전력 수요</text>
+  <text x="640" y="224" font-family="Georgia, serif" font-size="52" fill="#ffffff" text-anchor="middle" font-weight="bold">MS · Chevron</text>
+  <text x="640" y="286" font-family="Georgia, serif" font-size="28" fill="#a0e0b8" text-anchor="middle">가스 발전 데이터센터 파트너십</text>
+  <text x="640" y="340" font-family="Georgia, serif" font-size="16" fill="#408060" text-anchor="middle">미국 최대 규모 · AI 인프라 전력 공급 · 에너지 패러다임 전환</text>
+
+  <!-- Divider -->
+  <line x1="160" y1="368" x2="1120" y2="368" stroke="#50c878" stroke-opacity="0.2" stroke-width="1"/>
+
+  <!-- Left panel: AI energy context -->
+  <rect x="80" y="388" width="480" height="206" rx="4" fill="#50c878" fill-opacity="0.04" stroke="#50c878" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="320" y="422" font-family="Georgia, serif" font-size="15" fill="#80d8a0" text-anchor="middle" letter-spacing="2">AI vs 기존 IT 전력 수요</text>
+  <text x="140" y="456" font-family="Georgia, serif" font-size="13" fill="#888888">일반 검색 1회</text>
+  <text x="530" y="456" font-family="Georgia, serif" font-size="13" fill="#a0c0a8" text-anchor="end">0.3 watt-hour</text>
+  <text x="140" y="482" font-family="Georgia, serif" font-size="13" fill="#d8b878">AI 쿼리 1회</text>
+  <text x="530" y="482" font-family="Georgia, serif" font-size="13" fill="#d8b878" text-anchor="end">3~10 watt-hour</text>
+  <text x="140" y="508" font-family="Georgia, serif" font-size="13" fill="#ffffff" font-weight="bold">AI 데이터센터</text>
+  <text x="530" y="508" font-family="Georgia, serif" font-size="13" fill="#ffffff" text-anchor="end" font-weight="bold">수백 MW ~ 수 GW</text>
+  <line x1="120" y1="520" x2="540" y2="520" stroke="#50c878" stroke-opacity="0.15" stroke-width="1"/>
+  <text x="320" y="548" font-family="Georgia, serif" font-size="14" fill="#50c878" text-anchor="middle" font-weight="bold">→ 천연가스가 단기 최현실적 대안</text>
+  <text x="320" y="574" font-family="Georgia, serif" font-size="12" fill="#408060" text-anchor="middle">AI 성장 → 천연가스 수요 구조적 증가</text>
+
+  <!-- Right panel: macro data -->
+  <rect x="600" y="388" width="600" height="206" rx="4" fill="#50c878" fill-opacity="0.02" stroke="#50c878" stroke-opacity="0.12" stroke-width="1"/>
+  <text x="900" y="422" font-family="Georgia, serif" font-size="15" fill="#80d8a0" text-anchor="middle" letter-spacing="2">거시 지표</text>
+  <text x="680" y="456" font-family="Georgia, serif" font-size="14" fill="#888888">Gold</text>
+  <text x="1150" y="456" font-family="Georgia, serif" font-size="14" fill="#f87171" text-anchor="end">$4,172.90 (−1.21%)</text>
+  <text x="680" y="484" font-family="Georgia, serif" font-size="14" fill="#888888">WTI</text>
+  <text x="1150" y="484" font-family="Georgia, serif" font-size="14" fill="#a0c0a8" text-anchor="end">$76.54 (−0.08%)</text>
+  <text x="680" y="512" font-family="Georgia, serif" font-size="14" fill="#888888">US10Y</text>
+  <text x="1150" y="512" font-family="Georgia, serif" font-size="14" fill="#f87171" text-anchor="end">4.509% 고공</text>
+  <text x="680" y="540" font-family="Georgia, serif" font-size="14" fill="#888888">BTC</text>
+  <text x="1150" y="540" font-family="Georgia, serif" font-size="14" fill="#4ade80" text-anchor="end">$64,230 (+0.83%)</text>
+  <text x="680" y="574" font-family="Georgia, serif" font-size="12" fill="#408060">AI 장기 비전 vs 단기 금리 할인율 충돌</text>
+
+  <!-- Bottom stats bar -->
+  <line x1="160" y1="614" x2="1120" y2="614" stroke="#50c878" stroke-opacity="0.15" stroke-width="1"/>
+  <text x="260" y="644" font-family="Georgia, serif" font-size="14" fill="#80d8a0" text-anchor="middle">MSFT 오늘</text>
+  <text x="260" y="666" font-family="Georgia, serif" font-size="14" fill="#f87171" text-anchor="middle">$367.34 (−3.18%)</text>
+  <text x="640" y="644" font-family="Georgia, serif" font-size="14" fill="#80d8a0" text-anchor="middle">USD/KRW</text>
+  <text x="640" y="666" font-family="Georgia, serif" font-size="14" fill="#ffffff" text-anchor="middle">1,534.13</text>
+  <text x="1020" y="644" font-family="Georgia, serif" font-size="14" fill="#80d8a0" text-anchor="middle">S&amp;P 500</text>
+  <text x="1020" y="666" font-family="Georgia, serif" font-size="14" fill="#ffffff" text-anchor="middle">7,472.79 (−0.37%)</text>
+
+  <!-- Bottom accent bar -->
+  <rect x="0" y="716" width="1280" height="4" fill="#50c878" fill-opacity="0.35"/>
+</svg>
