@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#060e08"/>
+      <stop offset="100%" style="stop-color:#0e1a10"/>
+    </linearGradient>
+    <linearGradient id="greenLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7a9d6e;stop-opacity:0"/>
+      <stop offset="30%" style="stop-color:#7a9d6e;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#7a9d6e;stop-opacity:0.3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Grid -->
+  <line x1="0" y1="240" x2="1280" y2="240" stroke="#7a9d6e" stroke-opacity="0.06" stroke-width="1"/>
+  <line x1="0" y1="480" x2="1280" y2="480" stroke="#7a9d6e" stroke-opacity="0.06" stroke-width="1"/>
+  <line x1="640" y1="0" x2="640" y2="720" stroke="#7a9d6e" stroke-opacity="0.06" stroke-width="1"/>
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="1280" height="4" fill="url(#greenLine)"/>
+
+  <!-- Lincoln Brief mark -->
+  <text x="48" y="54" font-family="Georgia, serif" font-size="18" fill="#7a9d6e" font-weight="bold" letter-spacing="3">LINCOLN BRIEF</text>
+  <text x="48" y="76" font-family="Georgia, serif" font-size="13" fill="#3a6030" letter-spacing="2">KR MARKET · ECONOMY ISSUE</text>
+
+  <!-- Edition label -->
+  <rect x="1040" y="28" width="200" height="36" rx="3" fill="#7a9d6e" fill-opacity="0.15" stroke="#7a9d6e" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="1140" y="51" font-family="Georgia, serif" font-size="14" fill="#9abd8e" text-anchor="middle" letter-spacing="1">2026.06.22 · 11:00</text>
+
+  <!-- Diamond -->
+  <polygon points="640,108 649,117 640,126 631,117" fill="#7a9d6e" fill-opacity="0.6"/>
+
+  <!-- Title -->
+  <text x="640" y="162" font-family="Georgia, serif" font-size="20" fill="#9abd8e" text-anchor="middle" letter-spacing="3">원자재 약세 · 달러 강세 구조</text>
+
+  <!-- Main three indicators -->
+  <!-- WTI panel -->
+  <rect x="80" y="186" width="340" height="220" rx="4" fill="#f87171" fill-opacity="0.05" stroke="#f87171" stroke-opacity="0.25" stroke-width="1"/>
+  <text x="250" y="222" font-family="Georgia, serif" font-size="16" fill="#d06060" text-anchor="middle" letter-spacing="2">WTI 원유</text>
+  <text x="250" y="292" font-family="Georgia, serif" font-size="52" fill="#ffffff" text-anchor="middle" font-weight="bold">$75.22</text>
+  <polygon points="202,316 218,332 234,316" fill="#f87171"/>
+  <text x="246" y="336" font-family="Georgia, serif" font-size="30" fill="#f87171" font-weight="bold">−1.80%</text>
+  <text x="250" y="376" font-family="Georgia, serif" font-size="13" fill="#705050" text-anchor="middle">글로벌 성장 둔화 신호</text>
+  <text x="250" y="396" font-family="Georgia, serif" font-size="13" fill="#705050" text-anchor="middle">달러 강세 압력 동반</text>
+
+  <!-- USD/KRW panel -->
+  <rect x="470" y="186" width="340" height="220" rx="4" fill="#d8b878" fill-opacity="0.07" stroke="#d8b878" stroke-opacity="0.25" stroke-width="1"/>
+  <text x="640" y="222" font-family="Georgia, serif" font-size="16" fill="#c0a060" text-anchor="middle" letter-spacing="2">USD/KRW</text>
+  <text x="640" y="292" font-family="Georgia, serif" font-size="52" fill="#ffffff" text-anchor="middle" font-weight="bold">1,537.18</text>
+  <text x="640" y="318" font-family="Georgia, serif" font-size="16" fill="#a08040" text-anchor="middle">원 (−0.02%)</text>
+  <rect x="530" y="344" width="220" height="30" rx="3" fill="#f87171" fill-opacity="0.15"/>
+  <text x="640" y="364" font-family="Georgia, serif" font-size="14" fill="#e08060" text-anchor="middle">1,540원 경계 −3원</text>
+  <text x="640" y="396" font-family="Georgia, serif" font-size="13" fill="#806030" text-anchor="middle">KOSPI +0.81%에도 보합</text>
+
+  <!-- US10Y panel -->
+  <rect x="860" y="186" width="340" height="220" rx="4" fill="#7a9d6e" fill-opacity="0.07" stroke="#7a9d6e" stroke-opacity="0.25" stroke-width="1"/>
+  <text x="1030" y="222" font-family="Georgia, serif" font-size="16" fill="#9abd8e" text-anchor="middle" letter-spacing="2">US10Y</text>
+  <text x="1030" y="292" font-family="Georgia, serif" font-size="62" fill="#ffffff" text-anchor="middle" font-weight="bold">4.451%</text>
+  <text x="1030" y="326" font-family="Georgia, serif" font-size="15" fill="#7abd8e" text-anchor="middle">하락 방향</text>
+  <text x="1030" y="362" font-family="Georgia, serif" font-size="13" fill="#3a6030" text-anchor="middle">달러 강세 구조의 핵심</text>
+  <text x="1030" y="382" font-family="Georgia, serif" font-size="13" fill="#3a6030" text-anchor="middle">4.4% 이하 = 조건 변화</text>
+  <text x="1030" y="400" font-family="Georgia, serif" font-size="12" fill="#2a5020" text-anchor="middle">FRED 6/17: 4.49% → 4.451%</text>
+
+  <!-- Divider -->
+  <line x1="160" y1="428" x2="1120" y2="428" stroke="#7a9d6e" stroke-opacity="0.2" stroke-width="1"/>
+
+  <!-- Bottom analysis row -->
+  <text x="640" y="464" font-family="Georgia, serif" font-size="15" fill="#7a9d6e" text-anchor="middle" letter-spacing="2">원자재 vs 달러 구조</text>
+
+  <rect x="80" y="480" width="520" height="100" rx="4" fill="#7a9d6e" fill-opacity="0.07" stroke="#7a9d6e" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="120" y="514" font-family="Georgia, serif" font-size="14" fill="#9abd8e">▲ 원유 하락 → 한국 수입 비용 절감</text>
+  <text x="120" y="540" font-family="Georgia, serif" font-size="14" fill="#9abd8e">▲ 무역수지 단기 긍정 요인</text>
+  <text x="120" y="566" font-family="Georgia, serif" font-size="14" fill="#7a9d6e">▼ 글로벌 성장 둔화 신호 병존</text>
+
+  <rect x="640" y="480" width="560" height="100" rx="4" fill="#d8b878" fill-opacity="0.07" stroke="#d8b878" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="680" y="514" font-family="Georgia, serif" font-size="14" fill="#c0a060">GOLD $4,216.00 (−0.19%)</text>
+  <text x="680" y="540" font-family="Georgia, serif" font-size="14" fill="#c0a060">BTC $63,987 (−0.39%)</text>
+  <text x="680" y="566" font-family="Georgia, serif" font-size="14" fill="#806030">전통 헤지·위험 자산 동반 소외</text>
+
+  <!-- Bottom note -->
+  <line x1="160" y1="608" x2="1120" y2="608" stroke="#7a9d6e" stroke-opacity="0.15" stroke-width="1"/>
+  <text x="640" y="640" font-family="Georgia, serif" font-size="14" fill="#7a9d6e" text-anchor="middle" letter-spacing="1">달러 강세 구조 — US10Y 4.4% 이하 복귀가 원화 강세 열쇠</text>
+  <text x="640" y="664" font-family="Georgia, serif" font-size="13" fill="#3a6030" text-anchor="middle">연준 금리 인하 신호 전까지 USD/KRW 1,520원대 복귀 어려움</text>
+
+  <!-- Bottom accent bar -->
+  <rect x="0" y="716" width="1280" height="4" fill="#7a9d6e" fill-opacity="0.4"/>
+</svg>
