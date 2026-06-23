@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#060d08"/>
+      <stop offset="100%" style="stop-color:#0c1810"/>
+    </linearGradient>
+    <linearGradient id="greenLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7a9d6e;stop-opacity:0"/>
+      <stop offset="30%" style="stop-color:#7a9d6e;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#7a9d6e;stop-opacity:0.3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Grid -->
+  <line x1="0" y1="240" x2="1280" y2="240" stroke="#7a9d6e" stroke-opacity="0.05" stroke-width="1"/>
+  <line x1="0" y1="480" x2="1280" y2="480" stroke="#7a9d6e" stroke-opacity="0.05" stroke-width="1"/>
+  <line x1="640" y1="0" x2="640" y2="720" stroke="#7a9d6e" stroke-opacity="0.05" stroke-width="1"/>
+
+  <!-- Top green accent bar -->
+  <rect x="0" y="0" width="1280" height="4" fill="url(#greenLine)"/>
+
+  <!-- Lincoln Brief mark -->
+  <text x="48" y="54" font-family="Georgia, serif" font-size="18" fill="#7a9d6e" font-weight="bold" letter-spacing="3">LINCOLN BRIEF</text>
+  <text x="48" y="76" font-family="Georgia, serif" font-size="13" fill="#406040" letter-spacing="2">KR MARKET · ECONOMY ISSUE</text>
+
+  <!-- Edition label -->
+  <rect x="1040" y="28" width="200" height="36" rx="3" fill="#7a9d6e" fill-opacity="0.1" stroke="#7a9d6e" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="1140" y="51" font-family="Georgia, serif" font-size="14" fill="#8ab080" text-anchor="middle" letter-spacing="1">2026.06.23 · 16:00</text>
+
+  <!-- Diamond -->
+  <polygon points="640,108 649,117 640,126 631,117" fill="#7a9d6e" fill-opacity="0.7"/>
+
+  <!-- Main: USD/KRW focus -->
+  <text x="640" y="166" font-family="Georgia, serif" font-size="20" fill="#8ab080" text-anchor="middle" letter-spacing="3">USD / KRW · 원화 방어선</text>
+  <text x="640" y="262" font-family="Georgia, serif" font-size="88" fill="#ffffff" text-anchor="middle" font-weight="bold">1,537.18</text>
+  <polygon points="620,276 632,290 644,276" fill="#6ee7b7" transform="rotate(180, 632, 283)"/>
+  <text x="652" y="294" font-family="Georgia, serif" font-size="30" fill="#6ee7b7">+0.38%</text>
+  <text x="640" y="340" font-family="Georgia, serif" font-size="17" fill="#406040" text-anchor="middle">KOSPI −9.99% 하루에도 환율 방어 — 이 비대칭이 오늘의 핵심</text>
+
+  <!-- Divider -->
+  <line x1="160" y1="370" x2="1120" y2="370" stroke="#7a9d6e" stroke-opacity="0.2" stroke-width="1"/>
+
+  <!-- Left: 비대칭 비교 -->
+  <rect x="80" y="392" width="480" height="200" rx="4" fill="#7a9d6e" fill-opacity="0.05" stroke="#7a9d6e" stroke-opacity="0.25" stroke-width="1"/>
+  <text x="320" y="426" font-family="Georgia, serif" font-size="15" fill="#8ab080" text-anchor="middle" letter-spacing="2">주가 vs 환율 비대칭</text>
+  <text x="120" y="462" font-family="Georgia, serif" font-size="14" fill="#888888">KOSPI 낙폭</text>
+  <text x="540" y="462" font-family="Georgia, serif" font-size="22" fill="#f87171" text-anchor="end" font-weight="bold">−9.99%</text>
+  <text x="120" y="496" font-family="Georgia, serif" font-size="14" fill="#888888">USD/KRW 상승</text>
+  <text x="540" y="496" font-family="Georgia, serif" font-size="22" fill="#6ee7b7" text-anchor="end" font-weight="bold">+0.38%</text>
+  <line x1="120" y1="510" x2="540" y2="510" stroke="#7a9d6e" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="120" y="534" font-family="Georgia, serif" font-size="13" fill="#888888">비율 (주가/환율)</text>
+  <text x="540" y="534" font-family="Georgia, serif" font-size="20" fill="#fbbf24" text-anchor="end" font-weight="bold">26:1</text>
+  <text x="320" y="572" font-family="Georgia, serif" font-size="12" fill="#406040" text-anchor="middle">외국인 패닉 이탈 전면화 아직 없음</text>
+
+  <!-- Right: 환율 경계선 -->
+  <rect x="600" y="392" width="600" height="200" rx="4" fill="#f87171" fill-opacity="0.04" stroke="#f87171" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="900" y="426" font-family="Georgia, serif" font-size="15" fill="#d06060" text-anchor="middle" letter-spacing="2">환율 경계선</text>
+  <text x="630" y="462" font-family="Georgia, serif" font-size="14" fill="#888888">현재 (오늘 종가)</text>
+  <text x="1170" y="462" font-family="Georgia, serif" font-size="18" fill="#ffffff" text-anchor="end" font-weight="bold">1,537원</text>
+  <text x="630" y="494" font-family="Georgia, serif" font-size="14" fill="#888888">외국인 이탈 가속 경계</text>
+  <text x="1170" y="494" font-family="Georgia, serif" font-size="18" fill="#fb923c" text-anchor="end" font-weight="bold">1,550원</text>
+  <text x="630" y="526" font-family="Georgia, serif" font-size="14" fill="#888888">한국은행 개입 가능성</text>
+  <text x="1170" y="526" font-family="Georgia, serif" font-size="18" fill="#f87171" text-anchor="end" font-weight="bold">1,580원</text>
+  <text x="900" y="572" font-family="Georgia, serif" font-size="12" fill="#705050" text-anchor="middle">1,537 → 1,550 돌파가 진짜 위험 신호</text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="680" width="1280" height="40" fill="#000000" fill-opacity="0.4"/>
+  <text x="640" y="706" font-family="Georgia, serif" font-size="13" fill="#406040" text-anchor="middle" letter-spacing="1">WTI $73.56 (−1.68%) · GOLD $4,132.80 (−1.17%) · BTC $62,400 (−2.43%) · US10Y 4.509%</text>
+</svg>

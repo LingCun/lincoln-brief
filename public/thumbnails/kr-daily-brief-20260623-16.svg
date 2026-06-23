@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0c0a06"/>
+      <stop offset="100%" style="stop-color:#1a1510"/>
+    </linearGradient>
+    <linearGradient id="goldLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#d8b878;stop-opacity:0"/>
+      <stop offset="30%" style="stop-color:#d8b878;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#d8b878;stop-opacity:0.3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Subtle grid lines -->
+  <line x1="0" y1="240" x2="1280" y2="240" stroke="#d8b878" stroke-opacity="0.05" stroke-width="1"/>
+  <line x1="0" y1="480" x2="1280" y2="480" stroke="#d8b878" stroke-opacity="0.05" stroke-width="1"/>
+  <line x1="640" y1="0" x2="640" y2="720" stroke="#d8b878" stroke-opacity="0.05" stroke-width="1"/>
+
+  <!-- Top gold accent bar -->
+  <rect x="0" y="0" width="1280" height="4" fill="url(#goldLine)"/>
+
+  <!-- Lincoln Brief mark -->
+  <text x="48" y="54" font-family="Georgia, serif" font-size="18" fill="#d8b878" font-weight="bold" letter-spacing="3">LINCOLN BRIEF</text>
+  <text x="48" y="76" font-family="Georgia, serif" font-size="13" fill="#8a7040" letter-spacing="2">KR MARKET · DAILY BRIEF</text>
+
+  <!-- Edition label -->
+  <rect x="1040" y="28" width="200" height="36" rx="3" fill="#d8b878" fill-opacity="0.1" stroke="#d8b878" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="1140" y="51" font-family="Georgia, serif" font-size="14" fill="#c0a060" text-anchor="middle" letter-spacing="1">2026.06.23 · 16:00</text>
+
+  <!-- Diamond decorative -->
+  <polygon points="640,108 649,117 640,126 631,117" fill="#f87171" fill-opacity="0.7"/>
+
+  <!-- KOSPI main display -->
+  <text x="640" y="174" font-family="Georgia, serif" font-size="20" fill="#c0a060" text-anchor="middle" letter-spacing="4">KOSPI · 종가 확정</text>
+  <text x="640" y="262" font-family="Georgia, serif" font-size="88" fill="#ffffff" text-anchor="middle" font-weight="bold">8,203.84</text>
+  <polygon points="548,276 566,294 584,276" fill="#f87171"/>
+  <text x="596" y="298" font-family="Georgia, serif" font-size="36" fill="#f87171" font-weight="bold">−9.99%</text>
+  <text x="640" y="340" font-family="Georgia, serif" font-size="18" fill="#905050" text-anchor="middle">−910.71포인트 · 하루 전 종목 쓸어간 날</text>
+
+  <!-- Divider -->
+  <line x1="160" y1="372" x2="1120" y2="372" stroke="#d8b878" stroke-opacity="0.2" stroke-width="1"/>
+
+  <!-- SK하이닉스 panel -->
+  <rect x="80" y="394" width="340" height="200" rx="4" fill="#f87171" fill-opacity="0.05" stroke="#f87171" stroke-opacity="0.25" stroke-width="1"/>
+  <text x="250" y="428" font-family="Georgia, serif" font-size="15" fill="#d06060" text-anchor="middle" letter-spacing="2">SK하이닉스</text>
+  <text x="250" y="486" font-family="Georgia, serif" font-size="44" fill="#ffffff" text-anchor="middle" font-weight="bold">2,555,000</text>
+  <polygon points="202,508 216,522 230,508" fill="#f87171"/>
+  <text x="242" y="524" font-family="Georgia, serif" font-size="26" fill="#f87171" font-weight="bold">−12.47%</text>
+  <text x="250" y="574" font-family="Georgia, serif" font-size="12" fill="#705050" text-anchor="middle">어제 2,919,000원 → 오늘</text>
+
+  <!-- 삼성전자 panel -->
+  <rect x="450" y="394" width="340" height="200" rx="4" fill="#f87171" fill-opacity="0.04" stroke="#f87171" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="620" y="428" font-family="Georgia, serif" font-size="15" fill="#d06060" text-anchor="middle" letter-spacing="2">삼성전자</text>
+  <text x="620" y="486" font-family="Georgia, serif" font-size="44" fill="#ffffff" text-anchor="middle" font-weight="bold">310,000</text>
+  <polygon points="572,508 586,522 600,508" fill="#f87171"/>
+  <text x="612" y="524" font-family="Georgia, serif" font-size="26" fill="#f87171" font-weight="bold">−12.31%</text>
+  <text x="620" y="574" font-family="Georgia, serif" font-size="12" fill="#705050" text-anchor="middle">top12 공동 최대 낙폭</text>
+
+  <!-- 환율 panel -->
+  <rect x="820" y="394" width="380" height="200" rx="4" fill="#d8b878" fill-opacity="0.04" stroke="#d8b878" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="1010" y="428" font-family="Georgia, serif" font-size="15" fill="#c0a060" text-anchor="middle" letter-spacing="2">USD/KRW · 유일한 방어</text>
+  <text x="1010" y="490" font-family="Georgia, serif" font-size="46" fill="#ffffff" text-anchor="middle" font-weight="bold">1,537.18</text>
+  <polygon points="1010,510 1022,524 1034,510" fill="#6ee7b7" transform="rotate(180, 1022, 517)"/>
+  <text x="1040" y="526" font-family="Georgia, serif" font-size="22" fill="#6ee7b7">+0.38%</text>
+  <text x="1010" y="574" font-family="Georgia, serif" font-size="12" fill="#707050" text-anchor="middle">KOSPI −10% 하루에도 환율 방어</text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="680" width="1280" height="40" fill="#000000" fill-opacity="0.4"/>
+  <text x="640" y="706" font-family="Georgia, serif" font-size="13" fill="#8a7040" text-anchor="middle" letter-spacing="1">KOSDAQ 891.52 (−7.94%) · 현대차 511,000원 (−12.05%) · 신한지주 +0.21% 홀로 양전</text>
+</svg>

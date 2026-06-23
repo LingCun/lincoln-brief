@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#06080f"/>
+      <stop offset="100%" style="stop-color:#0d1220"/>
+    </linearGradient>
+    <linearGradient id="blueLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#5677b0;stop-opacity:0"/>
+      <stop offset="30%" style="stop-color:#5677b0;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#5677b0;stop-opacity:0.3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Grid -->
+  <line x1="0" y1="240" x2="1280" y2="240" stroke="#5677b0" stroke-opacity="0.05" stroke-width="1"/>
+  <line x1="0" y1="480" x2="1280" y2="480" stroke="#5677b0" stroke-opacity="0.05" stroke-width="1"/>
+  <line x1="640" y1="0" x2="640" y2="720" stroke="#5677b0" stroke-opacity="0.05" stroke-width="1"/>
+
+  <!-- Top blue accent bar -->
+  <rect x="0" y="0" width="1280" height="4" fill="url(#blueLine)"/>
+
+  <!-- Lincoln Brief mark -->
+  <text x="48" y="54" font-family="Georgia, serif" font-size="18" fill="#5677b0" font-weight="bold" letter-spacing="3">LINCOLN BRIEF</text>
+  <text x="48" y="76" font-family="Georgia, serif" font-size="13" fill="#3a5070" letter-spacing="2">KR MARKET · STOCK ANALYSIS</text>
+
+  <!-- Edition label -->
+  <rect x="1040" y="28" width="200" height="36" rx="3" fill="#5677b0" fill-opacity="0.1" stroke="#5677b0" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="1140" y="51" font-family="Georgia, serif" font-size="14" fill="#7090c0" text-anchor="middle" letter-spacing="1">2026.06.23 · 16:00</text>
+
+  <!-- Diamond -->
+  <polygon points="640,108 649,117 640,126 631,117" fill="#f87171" fill-opacity="0.7"/>
+
+  <!-- Main: SK하이닉스 -->
+  <text x="640" y="170" font-family="Georgia, serif" font-size="22" fill="#7090c0" text-anchor="middle" letter-spacing="4">SK하이닉스 000660</text>
+  <text x="640" y="268" font-family="Georgia, serif" font-size="88" fill="#ffffff" text-anchor="middle" font-weight="bold">2,555,000</text>
+  <text x="640" y="296" font-family="Georgia, serif" font-size="16" fill="#7090c0" text-anchor="middle">원</text>
+  <polygon points="548,312 566,330 584,312" fill="#f87171"/>
+  <text x="596" y="332" font-family="Georgia, serif" font-size="36" fill="#f87171" font-weight="bold">−12.47%</text>
+  <text x="640" y="370" font-family="Georgia, serif" font-size="16" fill="#905050" text-anchor="middle">−364,000원 · 어제 2,919,000원 (30일 최고가) 대비</text>
+
+  <!-- Divider -->
+  <line x1="160" y1="398" x2="1120" y2="398" stroke="#5677b0" stroke-opacity="0.2" stroke-width="1"/>
+
+  <!-- AVGO 연동 panel -->
+  <rect x="80" y="420" width="460" height="180" rx="4" fill="#5677b0" fill-opacity="0.05" stroke="#5677b0" stroke-opacity="0.25" stroke-width="1"/>
+  <text x="310" y="454" font-family="Georgia, serif" font-size="15" fill="#7090c0" text-anchor="middle" letter-spacing="2">AVGO 연동 구조</text>
+  <text x="140" y="490" font-family="Georgia, serif" font-size="13" fill="#888888">AVGO (전일)</text>
+  <text x="520" y="490" font-family="Georgia, serif" font-size="16" fill="#f87171" text-anchor="end">−4.67%</text>
+  <text x="140" y="518" font-family="Georgia, serif" font-size="13" fill="#888888">SK하이닉스 반응</text>
+  <text x="520" y="518" font-family="Georgia, serif" font-size="16" fill="#f87171" text-anchor="end">−12.47%</text>
+  <text x="140" y="546" font-family="Georgia, serif" font-size="13" fill="#888888">반응 배수</text>
+  <text x="520" y="546" font-family="Georgia, serif" font-size="16" fill="#fb923c" text-anchor="end">×2.67</text>
+  <text x="310" y="582" font-family="Georgia, serif" font-size="12" fill="#506080" text-anchor="middle">하락 때 더 크게 반응하는 비대칭</text>
+
+  <!-- 30일 추세 panel -->
+  <rect x="580" y="420" width="620" height="180" rx="4" fill="#f87171" fill-opacity="0.04" stroke="#f87171" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="890" y="454" font-family="Georgia, serif" font-size="15" fill="#d06060" text-anchor="middle" letter-spacing="2">30일 주요 수준</text>
+  <text x="610" y="490" font-family="Georgia, serif" font-size="13" fill="#888888">30일 최저가</text>
+  <text x="1170" y="490" font-family="Georgia, serif" font-size="16" fill="#6ee7b7" text-anchor="end">1,745,000원</text>
+  <text x="610" y="518" font-family="Georgia, serif" font-size="13" fill="#888888">오늘 종가</text>
+  <text x="1170" y="518" font-family="Georgia, serif" font-size="16" fill="#ffffff" text-anchor="end">2,555,000원</text>
+  <text x="610" y="546" font-family="Georgia, serif" font-size="13" fill="#888888">30일 최고가 (어제)</text>
+  <text x="1170" y="546" font-family="Georgia, serif" font-size="16" fill="#fbbf24" text-anchor="end">2,919,000원</text>
+  <text x="890" y="582" font-family="Georgia, serif" font-size="12" fill="#705050" text-anchor="middle">고점 하루 만에 최대 낙폭</text>
+
+  <!-- Bottom -->
+  <rect x="0" y="680" width="1280" height="40" fill="#000000" fill-opacity="0.4"/>
+  <text x="640" y="706" font-family="Georgia, serif" font-size="13" fill="#3a5070" text-anchor="middle" letter-spacing="1">KOSPI 8,203.84 (−9.99%) · AVGO $392.13 (−4.67%) · 2,400,000원 지지 여부가 다음 방향</text>
+</svg>
