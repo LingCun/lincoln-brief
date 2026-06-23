@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#060f08"/>
+      <stop offset="100%" style="stop-color:#0c1a10"/>
+    </linearGradient>
+    <linearGradient id="greenLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#50c878;stop-opacity:0"/>
+      <stop offset="30%" style="stop-color:#50c878;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#50c878;stop-opacity:0.3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Grid -->
+  <line x1="0" y1="240" x2="1280" y2="240" stroke="#50c878" stroke-opacity="0.05" stroke-width="1"/>
+  <line x1="0" y1="480" x2="1280" y2="480" stroke="#50c878" stroke-opacity="0.05" stroke-width="1"/>
+  <line x1="640" y1="0" x2="640" y2="720" stroke="#50c878" stroke-opacity="0.05" stroke-width="1"/>
+
+  <!-- Top green accent bar -->
+  <rect x="0" y="0" width="1280" height="4" fill="url(#greenLine)"/>
+
+  <!-- Lincoln Brief mark -->
+  <text x="48" y="54" font-family="Georgia, serif" font-size="18" fill="#50c878" font-weight="bold" letter-spacing="3">LINCOLN BRIEF</text>
+  <text x="48" y="76" font-family="Georgia, serif" font-size="13" fill="#306040" letter-spacing="2">US MARKET · ECONOMY ISSUE</text>
+
+  <!-- Edition label -->
+  <rect x="1030" y="28" width="210" height="36" rx="3" fill="#50c878" fill-opacity="0.1" stroke="#50c878" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="1135" y="51" font-family="Georgia, serif" font-size="14" fill="#70e090" text-anchor="middle" letter-spacing="1">2026.06.24 · 01:00 KST</text>
+
+  <!-- Diamond decorative -->
+  <polygon points="640,108 649,117 640,126 631,117" fill="#50c878" fill-opacity="0.5"/>
+
+  <!-- WTI main display -->
+  <text x="640" y="174" font-family="Georgia, serif" font-size="20" fill="#70e090" text-anchor="middle" letter-spacing="4">WTI CRUDE OIL</text>
+  <text x="640" y="262" font-family="Georgia, serif" font-size="88" fill="#ffffff" text-anchor="middle" font-weight="bold">$73.20</text>
+  <polygon points="548,296 566,314 584,296" fill="#f87171"/>
+  <text x="596" y="310" font-family="Georgia, serif" font-size="36" fill="#f87171" font-weight="bold">−2.17%</text>
+  <text x="640" y="352" font-family="Georgia, serif" font-size="18" fill="#405040" text-anchor="middle">BTC −2.28% · Gold −0.62% · 광범위한 리스크 오프</text>
+
+  <!-- Divider -->
+  <line x1="160" y1="378" x2="1120" y2="378" stroke="#50c878" stroke-opacity="0.2" stroke-width="1"/>
+
+  <!-- Left panel: macro indicators -->
+  <rect x="80" y="398" width="480" height="196" rx="4" fill="#f87171" fill-opacity="0.04" stroke="#f87171" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="320" y="432" font-family="Georgia, serif" font-size="15" fill="#a06060" text-anchor="middle" letter-spacing="1">멀티 에셋 동반 하락</text>
+  <text x="100" y="468" font-family="Georgia, serif" font-size="14" fill="#888888">WTI</text>
+  <text x="540" y="468" font-family="Georgia, serif" font-size="14" fill="#f87171" text-anchor="end">$73.20 (−2.17%)</text>
+  <text x="100" y="496" font-family="Georgia, serif" font-size="14" fill="#888888">BTC</text>
+  <text x="540" y="496" font-family="Georgia, serif" font-size="14" fill="#f87171" text-anchor="end">$62,497 (−2.28%)</text>
+  <text x="100" y="524" font-family="Georgia, serif" font-size="14" fill="#888888">Gold</text>
+  <text x="540" y="524" font-family="Georgia, serif" font-size="14" fill="#f87171" text-anchor="end">$4,155.80 (−0.62%)</text>
+  <text x="100" y="552" font-family="Georgia, serif" font-size="14" fill="#888888">USD/KRW</text>
+  <text x="540" y="552" font-family="Georgia, serif" font-size="14" fill="#c0a060" text-anchor="end">1,533.24 (보합)</text>
+  <text x="100" y="580" font-family="Georgia, serif" font-size="14" fill="#888888">US10Y</text>
+  <text x="540" y="580" font-family="Georgia, serif" font-size="14" fill="#50c878" text-anchor="end">4.477% (소폭 완화)</text>
+
+  <!-- Right panel: interpretation -->
+  <rect x="600" y="398" width="600" height="196" rx="4" fill="#50c878" fill-opacity="0.03" stroke="#50c878" stroke-opacity="0.12" stroke-width="1"/>
+  <text x="900" y="432" font-family="Georgia, serif" font-size="15" fill="#50c878" text-anchor="middle" letter-spacing="1">수요 둔화 우려 vs 공급 측 변수</text>
+  <text x="620" y="468" font-family="Georgia, serif" font-size="13" fill="#406040">WTI·주식 동반 하락 = 수요 우려 신호</text>
+  <text x="620" y="496" font-family="Georgia, serif" font-size="13" fill="#406040">$70 이탈 시 수요 둔화 구체화</text>
+  <text x="620" y="524" font-family="Georgia, serif" font-size="13" fill="#406040">US10Y 소폭 완화 = 연준 인하 기대 선반영?</text>
+  <text x="620" y="552" font-family="Georgia, serif" font-size="13" fill="#406040">달러 보합 = 신흥국 부담 제한적</text>
+  <text x="620" y="580" font-family="Georgia, serif" font-size="13" fill="#406040">한국: 원유 하락 = 에너지 비용 완화 기여</text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="690" width="1280" height="30" fill="#50c878" fill-opacity="0.04"/>
+  <text x="640" y="710" font-family="Georgia, serif" font-size="13" fill="#306040" text-anchor="middle" letter-spacing="1">원유 하락이 시사하는 수요 신호 — $70 지지 여부 주시</text>
+</svg>
