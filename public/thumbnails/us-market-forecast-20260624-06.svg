@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0c0606"/>
+      <stop offset="100%" style="stop-color:#1a1010"/>
+    </linearGradient>
+    <linearGradient id="redLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f87171;stop-opacity:0"/>
+      <stop offset="30%" style="stop-color:#f87171;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#f87171;stop-opacity:0.3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Subtle grid -->
+  <line x1="0" y1="240" x2="1280" y2="240" stroke="#f87171" stroke-opacity="0.05" stroke-width="1"/>
+  <line x1="0" y1="480" x2="1280" y2="480" stroke="#f87171" stroke-opacity="0.05" stroke-width="1"/>
+  <line x1="640" y1="0" x2="640" y2="720" stroke="#f87171" stroke-opacity="0.05" stroke-width="1"/>
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="1280" height="4" fill="url(#redLine)"/>
+
+  <!-- Lincoln Brief mark -->
+  <text x="48" y="54" font-family="Georgia, serif" font-size="18" fill="#f87171" font-weight="bold" letter-spacing="3">LINCOLN BRIEF</text>
+  <text x="48" y="76" font-family="Georgia, serif" font-size="13" fill="#903030" letter-spacing="2">US MARKET · MARKET FORECAST</text>
+
+  <!-- Edition label -->
+  <rect x="1030" y="28" width="210" height="36" rx="3" fill="#f87171" fill-opacity="0.1" stroke="#f87171" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="1135" y="51" font-family="Georgia, serif" font-size="14" fill="#d08080" text-anchor="middle" letter-spacing="1">2026.06.24 · 06:00 KST</text>
+
+  <!-- Diamond -->
+  <polygon points="640,108 649,117 640,126 631,117" fill="#f87171" fill-opacity="0.5"/>
+
+  <!-- Main display: Scenario summary -->
+  <text x="640" y="170" font-family="Georgia, serif" font-size="20" fill="#d08080" text-anchor="middle" letter-spacing="4">4주 시나리오 최종 업데이트</text>
+  <text x="640" y="248" font-family="Georgia, serif" font-size="72" fill="#ffffff" text-anchor="middle" font-weight="bold">경로 C · 47%</text>
+  <text x="640" y="298" font-family="Georgia, serif" font-size="24" fill="#f87171" text-anchor="middle">S&amp;P 7,100~7,300 · NASDAQ 23,500~25,000</text>
+  <text x="640" y="348" font-family="Georgia, serif" font-size="18" fill="#704040" text-anchor="middle">S&amp;P 7,400 이탈 · NVDA $200 붕괴 · DOW 하락 전환 확인</text>
+
+  <!-- Divider -->
+  <line x1="160" y1="374" x2="1120" y2="374" stroke="#f87171" stroke-opacity="0.2" stroke-width="1"/>
+
+  <!-- Scenarios table -->
+  <rect x="80" y="394" width="1120" height="200" rx="4" fill="#f87171" fill-opacity="0.03" stroke="#f87171" stroke-opacity="0.15" stroke-width="1"/>
+
+  <!-- Header row -->
+  <text x="170" y="424" font-family="Georgia, serif" font-size="14" fill="#903030" letter-spacing="1">시나리오</text>
+  <text x="590" y="424" font-family="Georgia, serif" font-size="14" fill="#903030" text-anchor="middle" letter-spacing="1">S&amp;P 500 범위</text>
+  <text x="900" y="424" font-family="Georgia, serif" font-size="14" fill="#903030" text-anchor="middle" letter-spacing="1">NASDAQ 범위</text>
+  <text x="1130" y="424" font-family="Georgia, serif" font-size="14" fill="#903030" text-anchor="end" letter-spacing="1">확률</text>
+  <line x1="120" y1="432" x2="1160" y2="432" stroke="#f87171" stroke-opacity="0.15" stroke-width="1"/>
+
+  <!-- Row A -->
+  <text x="170" y="458" font-family="Georgia, serif" font-size="15" fill="#888888">경로 A — 반등</text>
+  <text x="590" y="458" font-family="Georgia, serif" font-size="15" fill="#888888" text-anchor="middle">7,450+</text>
+  <text x="900" y="458" font-family="Georgia, serif" font-size="15" fill="#888888" text-anchor="middle">26,000+</text>
+  <text x="1130" y="458" font-family="Georgia, serif" font-size="15" fill="#6090c0" text-anchor="end">8%</text>
+
+  <!-- Row B -->
+  <text x="170" y="490" font-family="Georgia, serif" font-size="15" fill="#aaaaaa">경로 B — 박스</text>
+  <text x="590" y="490" font-family="Georgia, serif" font-size="15" fill="#aaaaaa" text-anchor="middle">7,300~7,450</text>
+  <text x="900" y="490" font-family="Georgia, serif" font-size="15" fill="#aaaaaa" text-anchor="middle">25,000~26,000</text>
+  <text x="1130" y="490" font-family="Georgia, serif" font-size="15" fill="#d0a060" text-anchor="end">30%</text>
+
+  <!-- Row C highlighted -->
+  <rect x="120" y="498" width="1040" height="34" rx="2" fill="#f87171" fill-opacity="0.08"/>
+  <text x="170" y="520" font-family="Georgia, serif" font-size="15" fill="#ffffff" font-weight="bold">경로 C — 추가 조정 ★</text>
+  <text x="590" y="520" font-family="Georgia, serif" font-size="15" fill="#ffffff" text-anchor="middle" font-weight="bold">7,100~7,300</text>
+  <text x="900" y="520" font-family="Georgia, serif" font-size="15" fill="#ffffff" text-anchor="middle" font-weight="bold">23,500~25,000</text>
+  <text x="1130" y="520" font-family="Georgia, serif" font-size="15" fill="#f87171" text-anchor="end" font-weight="bold">47%</text>
+
+  <!-- Row D -->
+  <text x="170" y="556" font-family="Georgia, serif" font-size="15" fill="#888888">경로 D — 급락</text>
+  <text x="590" y="556" font-family="Georgia, serif" font-size="15" fill="#888888" text-anchor="middle">6,800 이하</text>
+  <text x="900" y="556" font-family="Georgia, serif" font-size="15" fill="#888888" text-anchor="middle">23,500 이하</text>
+  <text x="1130" y="556" font-family="Georgia, serif" font-size="15" fill="#f87171" text-anchor="end">15%</text>
+
+  <!-- Bottom stats bar -->
+  <line x1="160" y1="614" x2="1120" y2="614" stroke="#f87171" stroke-opacity="0.15" stroke-width="1"/>
+  <text x="260" y="644" font-family="Georgia, serif" font-size="14" fill="#d08080" text-anchor="middle">핵심 하방 레벨</text>
+  <text x="260" y="666" font-family="Georgia, serif" font-size="13" fill="#704040" text-anchor="middle">S&amp;P 7,300 · NASDAQ 25,000</text>
+  <text x="640" y="644" font-family="Georgia, serif" font-size="14" fill="#d08080" text-anchor="middle">US10Y 4.493%</text>
+  <text x="640" y="666" font-family="Georgia, serif" font-size="13" fill="#704040" text-anchor="middle">4.6% 돌파 = 경로 C 가속 신호</text>
+  <text x="1020" y="644" font-family="Georgia, serif" font-size="14" fill="#d08080" text-anchor="middle">NVDA $200</text>
+  <text x="1020" y="666" font-family="Georgia, serif" font-size="13" fill="#704040" text-anchor="middle">이탈 확인 여부 — 내일 시가 주목</text>
+
+  <!-- Bottom accent bar -->
+  <rect x="0" y="716" width="1280" height="4" fill="#f87171" fill-opacity="0.35"/>
+</svg>
