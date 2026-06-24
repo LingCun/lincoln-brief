@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#060e0a"/>
+      <stop offset="100%" style="stop-color:#0e1812"/>
+    </linearGradient>
+    <linearGradient id="greenLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7a9d6e;stop-opacity:0"/>
+      <stop offset="30%" style="stop-color:#7a9d6e;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#7a9d6e;stop-opacity:0.3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Subtle grid lines -->
+  <line x1="0" y1="240" x2="1280" y2="240" stroke="#7a9d6e" stroke-opacity="0.05" stroke-width="1"/>
+  <line x1="0" y1="480" x2="1280" y2="480" stroke="#7a9d6e" stroke-opacity="0.05" stroke-width="1"/>
+  <line x1="640" y1="0" x2="640" y2="720" stroke="#7a9d6e" stroke-opacity="0.05" stroke-width="1"/>
+
+  <!-- Top green accent bar -->
+  <rect x="0" y="0" width="1280" height="4" fill="url(#greenLine)"/>
+
+  <!-- Lincoln Brief mark -->
+  <text x="48" y="54" font-family="Georgia, serif" font-size="18" fill="#7a9d6e" font-weight="bold" letter-spacing="3">LINCOLN BRIEF</text>
+  <text x="48" y="76" font-family="Georgia, serif" font-size="13" fill="#3a6030" letter-spacing="2">KR MARKET · ECONOMY ISSUE</text>
+
+  <!-- Edition label -->
+  <rect x="1040" y="28" width="200" height="36" rx="3" fill="#7a9d6e" fill-opacity="0.1" stroke="#7a9d6e" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="1140" y="51" font-family="Georgia, serif" font-size="14" fill="#90b080" text-anchor="middle" letter-spacing="1">2026.06.24 · 11:00</text>
+
+  <!-- Diamond decorative -->
+  <polygon points="640,108 649,117 640,126 631,117" fill="#f87171" fill-opacity="0.7"/>
+
+  <!-- US10Y main display -->
+  <text x="640" y="174" font-family="Georgia, serif" font-size="20" fill="#90b080" text-anchor="middle" letter-spacing="4">미국 10년물 국채 수익률</text>
+  <text x="640" y="272" font-family="Georgia, serif" font-size="100" fill="#ffffff" text-anchor="middle" font-weight="bold">4.493%</text>
+  <polygon points="548,292 566,310 584,292" fill="#f87171"/>
+  <text x="596" y="316" font-family="Georgia, serif" font-size="32" fill="#f87171" font-weight="bold">+0.94%</text>
+  <text x="640" y="356" font-family="Georgia, serif" font-size="18" fill="#804030" text-anchor="middle">고금리 장기화 재점화 — NASDAQ −2.21% 동반</text>
+
+  <!-- Divider -->
+  <line x1="160" y1="384" x2="1120" y2="384" stroke="#7a9d6e" stroke-opacity="0.2" stroke-width="1"/>
+
+  <!-- USD/KRW panel -->
+  <rect x="80" y="404" width="480" height="190" rx="4" fill="#7a9d6e" fill-opacity="0.05" stroke="#7a9d6e" stroke-opacity="0.25" stroke-width="1"/>
+  <text x="320" y="436" font-family="Georgia, serif" font-size="16" fill="#5a8050" text-anchor="middle" letter-spacing="2">USD/KRW</text>
+  <text x="320" y="498" font-family="Georgia, serif" font-size="52" fill="#ffffff" text-anchor="middle" font-weight="bold">1,539.28</text>
+  <text x="320" y="518" font-family="Georgia, serif" font-size="14" fill="#5a8050" text-anchor="middle">원 · 사실상 보합</text>
+  <text x="320" y="552" font-family="Georgia, serif" font-size="16" fill="#7a9d6e">4.5% 고착화 시 압력 가중</text>
+  <text x="320" y="578" font-family="Georgia, serif" font-size="13" fill="#3a5030" text-anchor="middle">1,540원 이탈 여부 주목</text>
+
+  <!-- Impact panel -->
+  <rect x="600" y="404" width="600" height="190" rx="4" fill="#7a9d6e" fill-opacity="0.04" stroke="#7a9d6e" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="900" y="436" font-family="Georgia, serif" font-size="16" fill="#5a8050" text-anchor="middle" letter-spacing="2">한국 경제 압박 경로</text>
+  <text x="680" y="470" font-family="Georgia, serif" font-size="14" fill="#888888">달러 강세</text>
+  <text x="1150" y="470" font-family="Georgia, serif" font-size="14" fill="#f87171" text-anchor="end">원화 약세 지속</text>
+  <text x="680" y="498" font-family="Georgia, serif" font-size="14" fill="#888888">AI 성장주 밸류</text>
+  <text x="1150" y="498" font-family="Georgia, serif" font-size="14" fill="#f87171" text-anchor="end">SK하이닉스 −2.50%</text>
+  <text x="680" y="526" font-family="Georgia, serif" font-size="14" fill="#888888">금융 조달 비용</text>
+  <text x="1150" y="526" font-family="Georgia, serif" font-size="14" fill="#f87171" text-anchor="end">KB금융 −1.37%</text>
+  <text x="680" y="554" font-family="Georgia, serif" font-size="14" fill="#888888">가계 이자 부담</text>
+  <text x="1150" y="554" font-family="Georgia, serif" font-size="14" fill="#f87171" text-anchor="end">내수 소비 위축 우려</text>
+  <text x="680" y="578" font-family="Georgia, serif" font-size="13" fill="#3a5030">고금리 장기화의 이중 압박</text>
+
+  <!-- Bottom stats bar -->
+  <line x1="160" y1="614" x2="1120" y2="614" stroke="#7a9d6e" stroke-opacity="0.15" stroke-width="1"/>
+  <text x="260" y="644" font-family="Georgia, serif" font-size="14" fill="#90b080" text-anchor="middle">GOLD $4,066.23</text>
+  <text x="260" y="666" font-family="Georgia, serif" font-size="13" fill="#3a6030" text-anchor="middle">−1.08% · 안전자산도 매도</text>
+  <text x="640" y="644" font-family="Georgia, serif" font-size="14" fill="#90b080" text-anchor="middle">WTI $72.72 / BTC $62,519</text>
+  <text x="640" y="666" font-family="Georgia, serif" font-size="13" fill="#3a6030" text-anchor="middle">−0.67% / −2.14% 동반 하락</text>
+  <text x="1020" y="644" font-family="Georgia, serif" font-size="14" fill="#90b080" text-anchor="middle">NASDAQ −2.21%</text>
+  <text x="1020" y="666" font-family="Georgia, serif" font-size="13" fill="#3a6030" text-anchor="middle">NVDA $200.04 / TSLA $381.61</text>
+
+  <!-- Bottom accent bar -->
+  <rect x="0" y="716" width="1280" height="4" fill="#7a9d6e" fill-opacity="0.5"/>
+</svg>
