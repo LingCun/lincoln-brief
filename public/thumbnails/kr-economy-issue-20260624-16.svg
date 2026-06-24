@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#080e08"/>
+      <stop offset="100%" style="stop-color:#0e1610"/>
+    </linearGradient>
+    <linearGradient id="greenLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7a9d6e;stop-opacity:0"/>
+      <stop offset="30%" style="stop-color:#7a9d6e;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#7a9d6e;stop-opacity:0.3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Subtle grid lines -->
+  <line x1="0" y1="240" x2="1280" y2="240" stroke="#7a9d6e" stroke-opacity="0.05" stroke-width="1"/>
+  <line x1="0" y1="480" x2="1280" y2="480" stroke="#7a9d6e" stroke-opacity="0.05" stroke-width="1"/>
+  <line x1="640" y1="0" x2="640" y2="720" stroke="#7a9d6e" stroke-opacity="0.05" stroke-width="1"/>
+
+  <!-- Top green accent bar -->
+  <rect x="0" y="0" width="1280" height="4" fill="url(#greenLine)"/>
+
+  <!-- Lincoln Brief mark -->
+  <text x="48" y="54" font-family="Georgia, serif" font-size="18" fill="#7a9d6e" font-weight="bold" letter-spacing="3">LINCOLN BRIEF</text>
+  <text x="48" y="76" font-family="Georgia, serif" font-size="13" fill="#4a6040" letter-spacing="2">KR MARKET · ECONOMY ISSUE</text>
+
+  <!-- Edition label -->
+  <rect x="1020" y="28" width="220" height="36" rx="3" fill="#7a9d6e" fill-opacity="0.1" stroke="#7a9d6e" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="1130" y="51" font-family="Georgia, serif" font-size="14" fill="#90b080" text-anchor="middle" letter-spacing="1">2026.06.24 · 거시경제</text>
+
+  <!-- Diamond decorative -->
+  <polygon points="640,108 649,117 640,126 631,117" fill="#7a9d6e" fill-opacity="0.8"/>
+
+  <!-- Headline -->
+  <text x="640" y="158" font-family="Georgia, serif" font-size="20" fill="#90b080" text-anchor="middle" letter-spacing="2">한국 vs 미국 역행 랠리</text>
+
+  <!-- Two-column comparison -->
+  <rect x="80" y="178" width="520" height="170" rx="4" fill="#f87171" fill-opacity="0.06" stroke="#f87171" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="340" y="210" font-family="Georgia, serif" font-size="16" fill="#f87171" text-anchor="middle" letter-spacing="2">미국 (전일 마감)</text>
+  <text x="340" y="258" font-family="Georgia, serif" font-size="56" fill="#ffffff" text-anchor="middle" font-weight="bold">−2.21%</text>
+  <text x="340" y="290" font-family="Georgia, serif" font-size="16" fill="#884040" text-anchor="middle">NASDAQ</text>
+  <text x="340" y="326" font-family="Georgia, serif" font-size="14" fill="#666666" text-anchor="middle">NVDA −4.13%  TSLA −5.79%</text>
+
+  <rect x="680" y="178" width="520" height="170" rx="4" fill="#4ade80" fill-opacity="0.06" stroke="#4ade80" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="940" y="210" font-family="Georgia, serif" font-size="16" fill="#4ade80" text-anchor="middle" letter-spacing="2">한국 (오늘 마감)</text>
+  <text x="940" y="258" font-family="Georgia, serif" font-size="56" fill="#ffffff" text-anchor="middle" font-weight="bold">+3.26%</text>
+  <text x="940" y="290" font-family="Georgia, serif" font-size="16" fill="#2a7040" text-anchor="middle">KOSPI</text>
+  <text x="940" y="326" font-family="Georgia, serif" font-size="14" fill="#666666" text-anchor="middle">삼성전자 +9.84%  바이오 +7~8%</text>
+
+  <!-- Divider -->
+  <line x1="160" y1="366" x2="1120" y2="366" stroke="#7a9d6e" stroke-opacity="0.2" stroke-width="1"/>
+
+  <!-- Paradox section -->
+  <text x="640" y="402" font-family="Georgia, serif" font-size="18" fill="#90b080" text-anchor="middle" letter-spacing="2">역설 — USD/KRW도 함께 올랐다</text>
+
+  <rect x="80" y="416" width="1120" height="68" rx="4" fill="#7a9d6e" fill-opacity="0.06" stroke="#7a9d6e" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="180" y="443" font-family="Georgia, serif" font-size="15" fill="#888888">USD/KRW</text>
+  <text x="460" y="443" font-family="Georgia, serif" font-size="22" fill="#ffffff" font-weight="bold" text-anchor="middle">1,547.81원</text>
+  <text x="460" y="466" font-family="Georgia, serif" font-size="14" fill="#f87171" text-anchor="middle">+0.57% (원화 약세)</text>
+  <text x="780" y="450" font-family="Georgia, serif" font-size="14" fill="#666666" text-anchor="middle">KOSPI 상승에도 원화 약세 지속</text>
+  <text x="780" y="472" font-family="Georgia, serif" font-size="13" fill="#4a6040" text-anchor="middle">→ 외국인보다 국내 자금이 주도했을 가능성</text>
+
+  <!-- Key data bottom -->
+  <rect x="80" y="498" width="350" height="100" rx="4" fill="#7a9d6e" fill-opacity="0.04" stroke="#7a9d6e" stroke-opacity="0.15" stroke-width="1"/>
+  <text x="255" y="524" font-family="Georgia, serif" font-size="14" fill="#7a9d6e" text-anchor="middle">한국 주요 상승</text>
+  <text x="120" y="550" font-family="Georgia, serif" font-size="13" fill="#888888">삼성전자</text>
+  <text x="400" y="550" font-family="Georgia, serif" font-size="13" fill="#4ade80" text-anchor="end">+9.84%</text>
+  <text x="120" y="572" font-family="Georgia, serif" font-size="13" fill="#888888">삼성바이오로직스</text>
+  <text x="400" y="572" font-family="Georgia, serif" font-size="13" fill="#4ade80" text-anchor="end">+8.80%</text>
+  <text x="120" y="594" font-family="Georgia, serif" font-size="13" fill="#888888">셀트리온</text>
+  <text x="400" y="594" font-family="Georgia, serif" font-size="13" fill="#4ade80" text-anchor="end">+7.60%</text>
+
+  <rect x="465" y="498" width="350" height="100" rx="4" fill="#7a9d6e" fill-opacity="0.04" stroke="#7a9d6e" stroke-opacity="0.15" stroke-width="1"/>
+  <text x="640" y="524" font-family="Georgia, serif" font-size="14" fill="#7a9d6e" text-anchor="middle">글로벌 지표</text>
+  <text x="480" y="550" font-family="Georgia, serif" font-size="13" fill="#888888">WTI</text>
+  <text x="790" y="550" font-family="Georgia, serif" font-size="13" fill="#f87171" text-anchor="end">$71.63 (−2.16%)</text>
+  <text x="480" y="572" font-family="Georgia, serif" font-size="13" fill="#888888">GOLD</text>
+  <text x="790" y="572" font-family="Georgia, serif" font-size="13" fill="#f87171" text-anchor="end">$4,093.50 (−0.88%)</text>
+  <text x="480" y="594" font-family="Georgia, serif" font-size="13" fill="#888888">US10Y</text>
+  <text x="790" y="594" font-family="Georgia, serif" font-size="13" fill="#f87171" text-anchor="end">4.493%</text>
+
+  <rect x="850" y="498" width="350" height="100" rx="4" fill="#7a9d6e" fill-opacity="0.04" stroke="#7a9d6e" stroke-opacity="0.15" stroke-width="1"/>
+  <text x="1025" y="524" font-family="Georgia, serif" font-size="14" fill="#7a9d6e" text-anchor="middle">핵심 질문</text>
+  <text x="870" y="552" font-family="Georgia, serif" font-size="13" fill="#888888">이 역행 랠리는</text>
+  <text x="870" y="572" font-family="Georgia, serif" font-size="13" fill="#888888">하루짜리인가</text>
+  <text x="870" y="592" font-family="Georgia, serif" font-size="13" fill="#7a9d6e">추세 전환인가?</text>
+
+  <!-- Bottom stats bar -->
+  <line x1="160" y1="618" x2="1120" y2="618" stroke="#7a9d6e" stroke-opacity="0.15" stroke-width="1"/>
+  <text x="260" y="648" font-family="Georgia, serif" font-size="14" fill="#90b080" text-anchor="middle">KOSPI 8,471 vs NASDAQ 25,587</text>
+  <text x="260" y="670" font-family="Georgia, serif" font-size="13" fill="#4a6040" text-anchor="middle">한국 +3.26% vs 미국 −2.21%</text>
+  <text x="640" y="648" font-family="Georgia, serif" font-size="14" fill="#90b080" text-anchor="middle">삼성전자 두 섹터 독립 수요</text>
+  <text x="640" y="670" font-family="Georgia, serif" font-size="13" fill="#4a6040" text-anchor="middle">AI 이외 광범위 포트폴리오 강점</text>
+  <text x="1020" y="648" font-family="Georgia, serif" font-size="14" fill="#90b080" text-anchor="middle">USD/KRW 역설</text>
+  <text x="1020" y="670" font-family="Georgia, serif" font-size="13" fill="#4a6040" text-anchor="middle">원화 약세 = 외국인 주도 아닐 가능성</text>
+
+  <!-- Bottom accent bar -->
+  <rect x="0" y="716" width="1280" height="4" fill="#7a9d6e" fill-opacity="0.35"/>
+</svg>

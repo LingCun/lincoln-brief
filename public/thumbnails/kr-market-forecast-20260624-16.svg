@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#140a08"/>
+      <stop offset="100%" style="stop-color:#1e1010"/>
+    </linearGradient>
+    <linearGradient id="redLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#d96552;stop-opacity:0"/>
+      <stop offset="30%" style="stop-color:#d96552;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#d96552;stop-opacity:0.3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Subtle grid lines -->
+  <line x1="0" y1="240" x2="1280" y2="240" stroke="#d96552" stroke-opacity="0.05" stroke-width="1"/>
+  <line x1="0" y1="480" x2="1280" y2="480" stroke="#d96552" stroke-opacity="0.05" stroke-width="1"/>
+  <line x1="640" y1="0" x2="640" y2="720" stroke="#d96552" stroke-opacity="0.05" stroke-width="1"/>
+
+  <!-- Top red accent bar -->
+  <rect x="0" y="0" width="1280" height="4" fill="url(#redLine)"/>
+
+  <!-- Lincoln Brief mark -->
+  <text x="48" y="54" font-family="Georgia, serif" font-size="18" fill="#d96552" font-weight="bold" letter-spacing="3">LINCOLN BRIEF</text>
+  <text x="48" y="76" font-family="Georgia, serif" font-size="13" fill="#804030" letter-spacing="2">KR MARKET · FORECAST</text>
+
+  <!-- Edition label -->
+  <rect x="1020" y="28" width="220" height="36" rx="3" fill="#d96552" fill-opacity="0.1" stroke="#d96552" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="1130" y="51" font-family="Georgia, serif" font-size="14" fill="#d08070" text-anchor="middle" letter-spacing="1">2026.06.24 · 4주 전망</text>
+
+  <!-- Diamond decorative -->
+  <polygon points="640,108 649,117 640,126 631,117" fill="#d96552" fill-opacity="0.8"/>
+
+  <!-- KOSPI display -->
+  <text x="640" y="158" font-family="Georgia, serif" font-size="20" fill="#d08070" text-anchor="middle" letter-spacing="4">KOSPI 마감 후 4주 시나리오</text>
+  <text x="640" y="258" font-family="Georgia, serif" font-size="80" fill="#ffffff" text-anchor="middle" font-weight="bold">8,471</text>
+  <polygon points="506,278 524,260 542,278" fill="#4ade80"/>
+  <text x="554" y="292" font-family="Georgia, serif" font-size="32" fill="#4ade80" font-weight="bold">+3.26%</text>
+  <text x="640" y="336" font-family="Georgia, serif" font-size="18" fill="#603020" text-anchor="middle">오전 8,233 → 마감 8,471 (+238pt)</text>
+
+  <!-- Divider -->
+  <line x1="160" y1="364" x2="1120" y2="364" stroke="#d96552" stroke-opacity="0.2" stroke-width="1"/>
+
+  <!-- Scenario table -->
+  <rect x="80" y="382" width="1120" height="40" rx="3" fill="#d96552" fill-opacity="0.15" stroke="#d96552" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="200" y="407" font-family="Georgia, serif" font-size="13" fill="#d08070" text-anchor="middle">시나리오</text>
+  <text x="480" y="407" font-family="Georgia, serif" font-size="13" fill="#d08070" text-anchor="middle">확률</text>
+  <text x="780" y="407" font-family="Georgia, serif" font-size="13" fill="#d08070" text-anchor="middle">KOSPI 경로</text>
+  <text x="1060" y="407" font-family="Georgia, serif" font-size="13" fill="#d08070" text-anchor="middle">핵심 조건</text>
+
+  <rect x="80" y="422" width="1120" height="42" rx="0" fill="#4ade80" fill-opacity="0.05"/>
+  <text x="200" y="448" font-family="Georgia, serif" font-size="14" fill="#4ade80" text-anchor="middle" font-weight="bold">불 시나리오</text>
+  <text x="480" y="448" font-family="Georgia, serif" font-size="14" fill="#4ade80" text-anchor="middle">20%</text>
+  <text x="780" y="448" font-family="Georgia, serif" font-size="13" fill="#cccccc" text-anchor="middle">8,471 → 8,600 → 8,700~8,800</text>
+  <text x="1060" y="448" font-family="Georgia, serif" font-size="12" fill="#888888" text-anchor="middle">NVDA $200 반등, 삼성전자 고점 재도전</text>
+
+  <rect x="80" y="464" width="1120" height="42" rx="0" fill="#ffffff" fill-opacity="0.02"/>
+  <text x="200" y="490" font-family="Georgia, serif" font-size="14" fill="#d8b878" text-anchor="middle" font-weight="bold">베이스 시나리오</text>
+  <text x="480" y="490" font-family="Georgia, serif" font-size="14" fill="#d8b878" text-anchor="middle">45%</text>
+  <text x="780" y="490" font-family="Georgia, serif" font-size="13" fill="#cccccc" text-anchor="middle">8,200~8,600 박스권 등락</text>
+  <text x="1060" y="490" font-family="Georgia, serif" font-size="12" fill="#888888" text-anchor="middle">NVDA $200 유지, 추가 촉매 부재</text>
+
+  <rect x="80" y="506" width="1120" height="42" rx="0" fill="#f87171" fill-opacity="0.05"/>
+  <text x="200" y="532" font-family="Georgia, serif" font-size="14" fill="#f87171" text-anchor="middle" font-weight="bold">베어 시나리오</text>
+  <text x="480" y="532" font-family="Georgia, serif" font-size="14" fill="#f87171" text-anchor="middle">30%</text>
+  <text x="780" y="532" font-family="Georgia, serif" font-size="13" fill="#cccccc" text-anchor="middle">8,471 → 8,200 → 8,000 재테스트</text>
+  <text x="1060" y="532" font-family="Georgia, serif" font-size="12" fill="#888888" text-anchor="middle">NVDA $190 이탈, USD/KRW 1,560원</text>
+
+  <rect x="80" y="548" width="1120" height="42" rx="0" fill="#ffffff" fill-opacity="0.01"/>
+  <text x="200" y="574" font-family="Georgia, serif" font-size="13" fill="#666666" text-anchor="middle">블랙 스완</text>
+  <text x="480" y="574" font-family="Georgia, serif" font-size="13" fill="#666666" text-anchor="middle">5%</text>
+  <text x="780" y="574" font-family="Georgia, serif" font-size="13" fill="#666666" text-anchor="middle">7,500 이하 급락</text>
+  <text x="1060" y="574" font-family="Georgia, serif" font-size="12" fill="#555555" text-anchor="middle">글로벌 금융 패닉</text>
+
+  <!-- Bottom stats bar -->
+  <line x1="160" y1="610" x2="1120" y2="610" stroke="#d96552" stroke-opacity="0.15" stroke-width="1"/>
+  <text x="260" y="640" font-family="Georgia, serif" font-size="14" fill="#d08070" text-anchor="middle">1순위 변수</text>
+  <text x="260" y="662" font-family="Georgia, serif" font-size="13" fill="#604030" text-anchor="middle">NVDA $200선 방어 여부</text>
+  <text x="640" y="640" font-family="Georgia, serif" font-size="14" fill="#d08070" text-anchor="middle">2순위 변수</text>
+  <text x="640" y="662" font-family="Georgia, serif" font-size="13" fill="#604030" text-anchor="middle">USD/KRW 1,550원 고착화 여부</text>
+  <text x="1020" y="640" font-family="Georgia, serif" font-size="14" fill="#d08070" text-anchor="middle">3순위 변수</text>
+  <text x="1020" y="662" font-family="Georgia, serif" font-size="13" fill="#604030" text-anchor="middle">삼성전자 362,500원 회복 여부</text>
+
+  <!-- Bottom accent bar -->
+  <rect x="0" y="716" width="1280" height="4" fill="#d96552" fill-opacity="0.35"/>
+</svg>
