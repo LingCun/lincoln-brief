@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0c0606"/>
+      <stop offset="100%" style="stop-color:#1a1010"/>
+    </linearGradient>
+    <linearGradient id="redLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e88060;stop-opacity:0"/>
+      <stop offset="30%" style="stop-color:#e88060;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#e88060;stop-opacity:0.3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Grid lines -->
+  <line x1="0" y1="240" x2="1280" y2="240" stroke="#e88060" stroke-opacity="0.05" stroke-width="1"/>
+  <line x1="0" y1="480" x2="1280" y2="480" stroke="#e88060" stroke-opacity="0.05" stroke-width="1"/>
+  <line x1="640" y1="0" x2="640" y2="720" stroke="#e88060" stroke-opacity="0.05" stroke-width="1"/>
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="1280" height="4" fill="url(#redLine)"/>
+
+  <!-- Lincoln Brief mark -->
+  <text x="48" y="54" font-family="Georgia, serif" font-size="18" fill="#e88060" font-weight="bold" letter-spacing="3">LINCOLN BRIEF</text>
+  <text x="48" y="76" font-family="Georgia, serif" font-size="13" fill="#886050" letter-spacing="2">US MARKET · MARKET FORECAST</text>
+
+  <!-- Edition label -->
+  <rect x="1030" y="28" width="210" height="36" rx="3" fill="#e88060" fill-opacity="0.1" stroke="#e88060" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="1135" y="51" font-family="Georgia, serif" font-size="14" fill="#c88070" text-anchor="middle" letter-spacing="1">2026.06.25 · 01:00 KST</text>
+
+  <!-- Diamond decorative -->
+  <polygon points="640,108 649,117 640,126 631,117" fill="#e88060" fill-opacity="0.5"/>
+
+  <!-- Main headline -->
+  <text x="640" y="168" font-family="Georgia, serif" font-size="20" fill="#c88070" text-anchor="middle" letter-spacing="3">4주 시나리오 · S&amp;P 500</text>
+  <text x="640" y="260" font-family="Georgia, serif" font-size="84" fill="#ffffff" text-anchor="middle" font-weight="bold">7,407.12</text>
+  <polygon points="548,282 566,264 584,282" fill="#4ade80"/>
+  <text x="596" y="296" font-family="Georgia, serif" font-size="32" fill="#4ade80" font-weight="bold">+0.57% 반등</text>
+  <text x="640" y="338" font-family="Georgia, serif" font-size="17" fill="#806050" text-anchor="middle">US10Y 4.402%(−9.1bp) · 7,400 선 회복 · 추세 전환 여부 미확인</text>
+
+  <!-- Divider -->
+  <line x1="160" y1="362" x2="1120" y2="362" stroke="#e88060" stroke-opacity="0.2" stroke-width="1"/>
+
+  <!-- Scenario table header -->
+  <text x="640" y="392" font-family="Georgia, serif" font-size="15" fill="#c88070" text-anchor="middle" letter-spacing="2">경로별 확률</text>
+
+  <!-- Scenario rows -->
+  <!-- Path A -->
+  <rect x="80" y="402" width="1120" height="46" rx="3" fill="#d8b878" fill-opacity="0.07"/>
+  <text x="120" y="430" font-family="Georgia, serif" font-size="14" fill="#d8b878" font-weight="bold">경로 A</text>
+  <text x="240" y="430" font-family="Georgia, serif" font-size="14" fill="#c0b070">7,300~7,550 박스 소화</text>
+  <text x="760" y="430" font-family="Georgia, serif" font-size="13" fill="#808060">US10Y 4.3~4.5% 유지·PCE 예상 수준</text>
+  <text x="1170" y="430" font-family="Georgia, serif" font-size="16" fill="#d8b878" text-anchor="end" font-weight="bold">40%</text>
+
+  <!-- Path B -->
+  <rect x="80" y="452" width="1120" height="46" rx="3" fill="#4ade80" fill-opacity="0.05"/>
+  <text x="120" y="480" font-family="Georgia, serif" font-size="14" fill="#4ade80" font-weight="bold">경로 B</text>
+  <text x="240" y="480" font-family="Georgia, serif" font-size="14" fill="#40a060">7,600+ 반등</text>
+  <text x="760" y="480" font-family="Georgia, serif" font-size="13" fill="#408060">PCE 하회·US10Y 4.3% 이하</text>
+  <text x="1170" y="480" font-family="Georgia, serif" font-size="16" fill="#4ade80" text-anchor="end" font-weight="bold">20%</text>
+
+  <!-- Path C -->
+  <rect x="80" y="502" width="1120" height="46" rx="3" fill="#f87171" fill-opacity="0.05"/>
+  <text x="120" y="530" font-family="Georgia, serif" font-size="14" fill="#f87171" font-weight="bold">경로 C</text>
+  <text x="240" y="530" font-family="Georgia, serif" font-size="14" fill="#c06050">7,200 이하 재하락</text>
+  <text x="760" y="530" font-family="Georgia, serif" font-size="13" fill="#806050">PCE 상회·US10Y 4.6%+ 돌파</text>
+  <text x="1170" y="530" font-family="Georgia, serif" font-size="16" fill="#f87171" text-anchor="end" font-weight="bold">30%</text>
+
+  <!-- Path D -->
+  <rect x="80" y="552" width="1120" height="46" rx="3" fill="#a05060" fill-opacity="0.05"/>
+  <text x="120" y="580" font-family="Georgia, serif" font-size="14" fill="#c07080" font-weight="bold">경로 D</text>
+  <text x="240" y="580" font-family="Georgia, serif" font-size="14" fill="#906070">7,000 이하 급락</text>
+  <text x="760" y="580" font-family="Georgia, serif" font-size="13" fill="#706070">경기침체 신호·신용 이벤트</text>
+  <text x="1170" y="580" font-family="Georgia, serif" font-size="16" fill="#c07080" text-anchor="end" font-weight="bold">10%</text>
+
+  <!-- Bottom stats bar -->
+  <line x1="160" y1="614" x2="1120" y2="614" stroke="#e88060" stroke-opacity="0.15" stroke-width="1"/>
+  <text x="260" y="644" font-family="Georgia, serif" font-size="14" fill="#c88070" text-anchor="middle">핵심 변수</text>
+  <text x="260" y="666" font-family="Georgia, serif" font-size="13" fill="#806050" text-anchor="middle">US10Y 4.3% 이하 여부</text>
+  <text x="640" y="644" font-family="Georgia, serif" font-size="14" fill="#c88070" text-anchor="middle">다음 분기점</text>
+  <text x="640" y="666" font-family="Georgia, serif" font-size="13" fill="#806050" text-anchor="middle">PCE 발표 · 7월 FOMC</text>
+  <text x="1020" y="644" font-family="Georgia, serif" font-size="14" fill="#c88070" text-anchor="middle">관찰 지표</text>
+  <text x="1020" y="666" font-family="Georgia, serif" font-size="13" fill="#806050" text-anchor="middle">NVDA $200 · S&amp;P 7,300</text>
+
+  <!-- Bottom accent bar -->
+  <rect x="0" y="716" width="1280" height="4" fill="#e88060" fill-opacity="0.35"/>
+</svg>
