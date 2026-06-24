@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#060a12"/>
+      <stop offset="100%" style="stop-color:#0e1520"/>
+    </linearGradient>
+    <linearGradient id="blueLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#5677b0;stop-opacity:0"/>
+      <stop offset="30%" style="stop-color:#5677b0;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#5677b0;stop-opacity:0.3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Subtle grid lines -->
+  <line x1="0" y1="240" x2="1280" y2="240" stroke="#5677b0" stroke-opacity="0.05" stroke-width="1"/>
+  <line x1="0" y1="480" x2="1280" y2="480" stroke="#5677b0" stroke-opacity="0.05" stroke-width="1"/>
+  <line x1="640" y1="0" x2="640" y2="720" stroke="#5677b0" stroke-opacity="0.05" stroke-width="1"/>
+
+  <!-- Top blue accent bar -->
+  <rect x="0" y="0" width="1280" height="4" fill="url(#blueLine)"/>
+
+  <!-- Lincoln Brief mark -->
+  <text x="48" y="54" font-family="Georgia, serif" font-size="18" fill="#5677b0" font-weight="bold" letter-spacing="3">LINCOLN BRIEF</text>
+  <text x="48" y="76" font-family="Georgia, serif" font-size="13" fill="#3a5070" letter-spacing="2">KR MARKET · STOCK ANALYSIS</text>
+
+  <!-- Edition label -->
+  <rect x="1040" y="28" width="200" height="36" rx="3" fill="#5677b0" fill-opacity="0.1" stroke="#5677b0" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="1140" y="51" font-family="Georgia, serif" font-size="14" fill="#7090c0" text-anchor="middle" letter-spacing="1">2026.06.24 · 11:00</text>
+
+  <!-- Diamond decorative -->
+  <polygon points="640,108 649,117 640,126 631,117" fill="#4ade80" fill-opacity="0.7"/>
+
+  <!-- 셀트리온 main display -->
+  <text x="640" y="174" font-family="Georgia, serif" font-size="20" fill="#7090c0" text-anchor="middle" letter-spacing="4">셀트리온 068270.KS</text>
+  <text x="640" y="262" font-family="Georgia, serif" font-size="88" fill="#ffffff" text-anchor="middle" font-weight="bold">174,000원</text>
+  <polygon points="548,276 566,258 584,276" fill="#4ade80"/>
+  <text x="596" y="298" font-family="Georgia, serif" font-size="36" fill="#4ade80" font-weight="bold">+8.41%</text>
+  <text x="640" y="340" font-family="Georgia, serif" font-size="18" fill="#3a6040" text-anchor="middle">+13,500원 · top12 최대 상승폭</text>
+
+  <!-- Divider -->
+  <line x1="160" y1="372" x2="1120" y2="372" stroke="#5677b0" stroke-opacity="0.2" stroke-width="1"/>
+
+  <!-- 삼성바이오로직스 panel -->
+  <rect x="80" y="394" width="480" height="200" rx="4" fill="#4ade80" fill-opacity="0.05" stroke="#4ade80" stroke-opacity="0.25" stroke-width="1"/>
+  <text x="320" y="428" font-family="Georgia, serif" font-size="15" fill="#3a9060" text-anchor="middle" letter-spacing="1">삼성바이오로직스 동반</text>
+  <text x="320" y="486" font-family="Georgia, serif" font-size="48" fill="#ffffff" text-anchor="middle" font-weight="bold">1,346,000</text>
+  <text x="320" y="510" font-family="Georgia, serif" font-size="14" fill="#3a9060" text-anchor="middle">원</text>
+  <polygon points="272,524 288,506 304,524" fill="#4ade80"/>
+  <text x="316" y="554" font-family="Georgia, serif" font-size="28" fill="#4ade80" font-weight="bold">+5.73%</text>
+  <text x="320" y="578" font-family="Georgia, serif" font-size="13" fill="#3a6040" text-anchor="middle">K-바이오 섹터 자금 유입</text>
+
+  <!-- Sparkline / history panel -->
+  <rect x="600" y="394" width="600" height="200" rx="4" fill="#4ade80" fill-opacity="0.04" stroke="#4ade80" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="900" y="428" font-family="Georgia, serif" font-size="16" fill="#3a9060" text-anchor="middle" letter-spacing="2">30일 경로</text>
+  <text x="680" y="462" font-family="Georgia, serif" font-size="14" fill="#888888">30일 전</text>
+  <text x="1150" y="462" font-family="Georgia, serif" font-size="14" fill="#aaaaaa" text-anchor="end">~184,095원</text>
+  <text x="680" y="490" font-family="Georgia, serif" font-size="14" fill="#888888">30일 고점</text>
+  <text x="1150" y="490" font-family="Georgia, serif" font-size="14" fill="#aaaaaa" text-anchor="end">189,238원</text>
+  <text x="680" y="518" font-family="Georgia, serif" font-size="14" fill="#888888">30일 저점</text>
+  <text x="1150" y="518" font-family="Georgia, serif" font-size="14" fill="#f87171" text-anchor="end">159,400원</text>
+  <text x="680" y="546" font-family="Georgia, serif" font-size="14" fill="#888888">전일</text>
+  <text x="1150" y="546" font-family="Georgia, serif" font-size="14" fill="#aaaaaa" text-anchor="end">160,500원</text>
+  <text x="680" y="578" font-family="Georgia, serif" font-size="14" fill="#888888">오늘</text>
+  <text x="1150" y="578" font-family="Georgia, serif" font-size="14" fill="#4ade80" text-anchor="end">174,000원 ▲</text>
+
+  <!-- Bottom stats bar -->
+  <line x1="160" y1="614" x2="1120" y2="614" stroke="#5677b0" stroke-opacity="0.15" stroke-width="1"/>
+  <text x="260" y="644" font-family="Georgia, serif" font-size="14" fill="#7090c0" text-anchor="middle">KOSPI 8,233.24</text>
+  <text x="260" y="666" font-family="Georgia, serif" font-size="13" fill="#3a5070" text-anchor="middle">+0.36% 바이오 방어</text>
+  <text x="640" y="644" font-family="Georgia, serif" font-size="14" fill="#7090c0" text-anchor="middle">저점 반등 +9.2%</text>
+  <text x="640" y="666" font-family="Georgia, serif" font-size="13" fill="#3a5070" text-anchor="middle">159,400원 → 174,000원</text>
+  <text x="1020" y="644" font-family="Georgia, serif" font-size="14" fill="#7090c0" text-anchor="middle">NASDAQ −2.21%</text>
+  <text x="1020" y="666" font-family="Georgia, serif" font-size="13" fill="#3a5070" text-anchor="middle">AI 하락 속 K-바이오 독립 강세</text>
+
+  <!-- Bottom accent bar -->
+  <rect x="0" y="716" width="1280" height="4" fill="#5677b0" fill-opacity="0.5"/>
+</svg>
