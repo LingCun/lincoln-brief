@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0608"/>
+      <stop offset="100%" style="stop-color:#180d12"/>
+    </linearGradient>
+    <linearGradient id="redLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f87171;stop-opacity:0"/>
+      <stop offset="30%" style="stop-color:#f87171;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#f87171;stop-opacity:0.3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Subtle grid lines -->
+  <line x1="0" y1="240" x2="1280" y2="240" stroke="#f87171" stroke-opacity="0.04" stroke-width="1"/>
+  <line x1="0" y1="480" x2="1280" y2="480" stroke="#f87171" stroke-opacity="0.04" stroke-width="1"/>
+  <line x1="640" y1="0" x2="640" y2="720" stroke="#f87171" stroke-opacity="0.04" stroke-width="1"/>
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="1280" height="4" fill="url(#redLine)"/>
+
+  <!-- Lincoln Brief mark (top left) -->
+  <text x="48" y="54" font-family="Georgia, serif" font-size="18" fill="#d8b878" font-weight="bold" letter-spacing="3">LINCOLN BRIEF</text>
+  <text x="48" y="76" font-family="Georgia, serif" font-size="13" fill="#8a7040" letter-spacing="2">US MARKET · STOCK ANALYSIS</text>
+
+  <!-- Edition label (top right) -->
+  <rect x="1020" y="28" width="220" height="36" rx="3" fill="#f87171" fill-opacity="0.1" stroke="#f87171" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="1130" y="51" font-family="Georgia, serif" font-size="14" fill="#e07070" text-anchor="middle" letter-spacing="1">2026.06.26 · 06:00 KST</text>
+
+  <!-- Diamond decorative -->
+  <polygon points="640,108 649,117 640,126 631,117" fill="#f87171" fill-opacity="0.5"/>
+
+  <!-- MSFT main display -->
+  <text x="640" y="174" font-family="Georgia, serif" font-size="20" fill="#e07070" text-anchor="middle" letter-spacing="6">MICROSOFT</text>
+  <text x="640" y="262" font-family="Georgia, serif" font-size="88" fill="#ffffff" text-anchor="middle" font-weight="bold">$352.83</text>
+  <polygon points="548,284 566,302 584,284" fill="#f87171"/>
+  <text x="596" y="298" font-family="Georgia, serif" font-size="36" fill="#f87171" font-weight="bold">−3.46%</text>
+  <text x="640" y="340" font-family="Georgia, serif" font-size="18" fill="#906060" text-anchor="middle">30일 고점 $460.52 대비 −23.4% · AI 투자 재평가</text>
+
+  <!-- Divider -->
+  <line x1="160" y1="366" x2="1120" y2="366" stroke="#d8b878" stroke-opacity="0.2" stroke-width="1"/>
+
+  <!-- Left panel: price levels -->
+  <rect x="80" y="386" width="480" height="208" rx="4" fill="#f87171" fill-opacity="0.04" stroke="#f87171" stroke-opacity="0.18" stroke-width="1"/>
+  <text x="320" y="420" font-family="Georgia, serif" font-size="16" fill="#e07070" text-anchor="middle" letter-spacing="2">30일 조정 궤적</text>
+  <text x="160" y="452" font-family="Georgia, serif" font-size="13" fill="#888888">30일 고점</text>
+  <text x="520" y="452" font-family="Georgia, serif" font-size="13" fill="#c07070" text-anchor="end">$460.52</text>
+  <text x="160" y="478" font-family="Georgia, serif" font-size="13" fill="#888888">전일 마감</text>
+  <text x="520" y="478" font-family="Georgia, serif" font-size="13" fill="#c07070" text-anchor="end">$365.46</text>
+  <text x="160" y="504" font-family="Georgia, serif" font-size="13" fill="#888888">오늘 마감</text>
+  <text x="520" y="504" font-family="Georgia, serif" font-size="14" fill="#f87171" font-weight="bold" text-anchor="end">$352.83</text>
+  <text x="160" y="530" font-family="Georgia, serif" font-size="13" fill="#888888">고점 대비 낙폭</text>
+  <text x="520" y="530" font-family="Georgia, serif" font-size="13" fill="#f87171" text-anchor="end">−$107.69 (−23.4%)</text>
+  <text x="160" y="556" font-family="Georgia, serif" font-size="13" fill="#888888">추정 P/E</text>
+  <text x="520" y="556" font-family="Georgia, serif" font-size="13" fill="#d8b878" text-anchor="end">약 21.77</text>
+  <text x="320" y="584" font-family="Georgia, serif" font-size="12" fill="#705050" text-anchor="middle">다음 지지선: $350 정수 레벨</text>
+
+  <!-- Right panel: scenario -->
+  <rect x="600" y="386" width="600" height="208" rx="4" fill="#d8b878" fill-opacity="0.02" stroke="#d8b878" stroke-opacity="0.12" stroke-width="1"/>
+  <text x="900" y="420" font-family="Georgia, serif" font-size="16" fill="#c0a060" text-anchor="middle" letter-spacing="2">4주 시나리오</text>
+  <text x="660" y="452" font-family="Georgia, serif" font-size="13" fill="#888888">반등 $370~$420</text>
+  <text x="1160" y="452" font-family="Georgia, serif" font-size="13" fill="#4ade80" text-anchor="end">20% — Q2 실적 호조</text>
+  <text x="660" y="480" font-family="Georgia, serif" font-size="14" fill="#d8b878">박스 $330~$370</text>
+  <text x="1160" y="480" font-family="Georgia, serif" font-size="14" fill="#d8b878" text-anchor="end">40% ← 베이스</text>
+  <text x="660" y="508" font-family="Georgia, serif" font-size="13" fill="#f87171">추가 하락 $300~$330</text>
+  <text x="1160" y="508" font-family="Georgia, serif" font-size="13" fill="#f87171" text-anchor="end">30% — AI 둔화</text>
+  <text x="660" y="536" font-family="Georgia, serif" font-size="13" fill="#888888">급락 $280 이하</text>
+  <text x="1160" y="536" font-family="Georgia, serif" font-size="13" fill="#888888" text-anchor="end">10% — 외생 충격</text>
+  <text x="900" y="572" font-family="Georgia, serif" font-size="12" fill="#706040" text-anchor="middle">Q2 실적(7月)이 방향 결정</text>
+
+  <!-- Bottom stats bar -->
+  <line x1="160" y1="614" x2="1120" y2="614" stroke="#d8b878" stroke-opacity="0.15" stroke-width="1"/>
+  <text x="260" y="644" font-family="Georgia, serif" font-size="14" fill="#e07070" text-anchor="middle">전일 종가</text>
+  <text x="260" y="666" font-family="Georgia, serif" font-size="14" fill="#c07070" text-anchor="middle">$365.46</text>
+  <text x="640" y="644" font-family="Georgia, serif" font-size="14" fill="#e07070" text-anchor="middle">당일 하락</text>
+  <text x="640" y="666" font-family="Georgia, serif" font-size="14" fill="#f87171" text-anchor="middle">−$12.63 (−3.46%)</text>
+  <text x="1020" y="644" font-family="Georgia, serif" font-size="14" fill="#c0a060" text-anchor="middle">시가총액</text>
+  <text x="1020" y="666" font-family="Georgia, serif" font-size="14" fill="#a09050" text-anchor="middle">약 $2.622조</text>
+
+  <!-- Bottom accent bar -->
+  <rect x="0" y="716" width="1280" height="4" fill="#f87171" fill-opacity="0.35"/>
+</svg>
