@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0c06"/>
+      <stop offset="100%" style="stop-color:#181a08"/>
+    </linearGradient>
+    <linearGradient id="greenLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#86efac;stop-opacity:0"/>
+      <stop offset="30%" style="stop-color:#86efac;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#86efac;stop-opacity:0.3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Subtle grid lines -->
+  <line x1="0" y1="240" x2="1280" y2="240" stroke="#86efac" stroke-opacity="0.05" stroke-width="1"/>
+  <line x1="0" y1="480" x2="1280" y2="480" stroke="#86efac" stroke-opacity="0.05" stroke-width="1"/>
+  <line x1="640" y1="0" x2="640" y2="720" stroke="#86efac" stroke-opacity="0.05" stroke-width="1"/>
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="1280" height="4" fill="url(#greenLine)"/>
+
+  <!-- Lincoln Brief mark (top left) -->
+  <text x="48" y="54" font-family="Georgia, serif" font-size="18" fill="#d8b878" font-weight="bold" letter-spacing="3">LINCOLN BRIEF</text>
+  <text x="48" y="76" font-family="Georgia, serif" font-size="13" fill="#8a7040" letter-spacing="2">US MARKET · ECONOMY ISSUE</text>
+
+  <!-- Edition label (top right) -->
+  <rect x="1020" y="28" width="220" height="36" rx="3" fill="#86efac" fill-opacity="0.08" stroke="#86efac" stroke-opacity="0.35" stroke-width="1"/>
+  <text x="1130" y="51" font-family="Georgia, serif" font-size="14" fill="#70c890" text-anchor="middle" letter-spacing="1">2026.06.26 · 06:00 KST</text>
+
+  <!-- Diamond decorative -->
+  <polygon points="640,108 649,117 640,126 631,117" fill="#86efac" fill-opacity="0.4"/>
+
+  <!-- Main headline -->
+  <text x="640" y="170" font-family="Georgia, serif" font-size="19" fill="#70c890" text-anchor="middle" letter-spacing="3">복합 인플레이션 구도</text>
+  <text x="640" y="240" font-family="Georgia, serif" font-size="58" fill="#ffffff" text-anchor="middle" font-weight="bold">기술 + 실물</text>
+  <text x="640" y="305" font-family="Georgia, serif" font-size="58" fill="#ffffff" text-anchor="middle" font-weight="bold">인플레이션</text>
+  <text x="640" y="352" font-family="Georgia, serif" font-size="18" fill="#608060" text-anchor="middle">AAPL 가격 인상 + Gold +1.29% + WTI +1.61% · PCE(6/27 예정)</text>
+
+  <!-- Divider -->
+  <line x1="160" y1="376" x2="1120" y2="376" stroke="#86efac" stroke-opacity="0.2" stroke-width="1"/>
+
+  <!-- Left panel: tech inflation -->
+  <rect x="80" y="394" width="500" height="196" rx="4" fill="#f87171" fill-opacity="0.04" stroke="#f87171" stroke-opacity="0.18" stroke-width="1"/>
+  <text x="330" y="428" font-family="Georgia, serif" font-size="15" fill="#c07070" text-anchor="middle" letter-spacing="2">기술 인플레이션</text>
+  <text x="140" y="462" font-family="Georgia, serif" font-size="13" fill="#888888">AAPL 가격 인상</text>
+  <text x="540" y="462" font-family="Georgia, serif" font-size="13" fill="#f87171" text-anchor="end">Mac·iPad ↑</text>
+  <text x="140" y="488" font-family="Georgia, serif" font-size="13" fill="#888888">메모리 쇼티지</text>
+  <text x="540" y="488" font-family="Georgia, serif" font-size="13" fill="#f87171" text-anchor="end">AAPL −6.12%</text>
+  <text x="140" y="514" font-family="Georgia, serif" font-size="13" fill="#888888">MSFT AI 재평가</text>
+  <text x="540" y="514" font-family="Georgia, serif" font-size="13" fill="#f87171" text-anchor="end">MSFT −3.46%</text>
+  <text x="140" y="540" font-family="Georgia, serif" font-size="13" fill="#888888">BTC 위험 회피</text>
+  <text x="540" y="540" font-family="Georgia, serif" font-size="13" fill="#f87171" text-anchor="end">$59,614 (−2.26%)</text>
+  <text x="330" y="574" font-family="Georgia, serif" font-size="12" fill="#705050" text-anchor="middle">소비자 기술 제품 가격 상승 압력</text>
+
+  <!-- Right panel: commodity inflation -->
+  <rect x="620" y="394" width="580" height="196" rx="4" fill="#86efac" fill-opacity="0.03" stroke="#86efac" stroke-opacity="0.15" stroke-width="1"/>
+  <text x="910" y="428" font-family="Georgia, serif" font-size="15" fill="#70c890" text-anchor="middle" letter-spacing="2">실물 인플레이션</text>
+  <text x="680" y="462" font-family="Georgia, serif" font-size="15" fill="#888888">Gold</text>
+  <text x="1160" y="462" font-family="Georgia, serif" font-size="15" fill="#4ade80" text-anchor="end">$4,041.60 (+1.29%)</text>
+  <text x="680" y="490" font-family="Georgia, serif" font-size="15" fill="#888888">WTI</text>
+  <text x="1160" y="490" font-family="Georgia, serif" font-size="15" fill="#4ade80" text-anchor="end">$71.47 (+1.61%)</text>
+  <text x="680" y="518" font-family="Georgia, serif" font-size="15" fill="#888888">US10Y</text>
+  <text x="1160" y="518" font-family="Georgia, serif" font-size="14" fill="#d8b878" text-anchor="end">4.392% · 박스 유지</text>
+  <text x="680" y="546" font-family="Georgia, serif" font-size="13" fill="#888888">USD/KRW</text>
+  <text x="1160" y="546" font-family="Georgia, serif" font-size="13" fill="#d8b878" text-anchor="end">1,544.73 (+0.13%)</text>
+  <text x="910" y="574" font-family="Georgia, serif" font-size="12" fill="#507050" text-anchor="middle">인플레이션 헤지 + 달러 약세 기대</text>
+
+  <!-- Bottom stats bar -->
+  <line x1="160" y1="610" x2="1120" y2="610" stroke="#86efac" stroke-opacity="0.15" stroke-width="1"/>
+  <text x="260" y="640" font-family="Georgia, serif" font-size="14" fill="#70c890" text-anchor="middle">다음 분기점</text>
+  <text x="260" y="662" font-family="Georgia, serif" font-size="14" fill="#508070" text-anchor="middle">PCE · 6/27 예정</text>
+  <text x="640" y="640" font-family="Georgia, serif" font-size="14" fill="#70c890" text-anchor="middle">Fed 딜레마</text>
+  <text x="640" y="662" font-family="Georgia, serif" font-size="14" fill="#608060" text-anchor="middle">성장 둔화 vs 인플레이션 재부각</text>
+  <text x="1020" y="640" font-family="Georgia, serif" font-size="14" fill="#70c890" text-anchor="middle">스태그플레이션</text>
+  <text x="1020" y="662" font-family="Georgia, serif" font-size="14" fill="#807050" text-anchor="middle">내러티브 재부각 가능성</text>
+
+  <!-- Bottom accent bar -->
+  <rect x="0" y="716" width="1280" height="4" fill="#86efac" fill-opacity="0.35"/>
+</svg>

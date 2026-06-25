@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#060a10"/>
+      <stop offset="100%" style="stop-color:#0d1520"/>
+    </linearGradient>
+    <linearGradient id="blueLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#60a0e0;stop-opacity:0"/>
+      <stop offset="30%" style="stop-color:#60a0e0;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#60a0e0;stop-opacity:0.3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Subtle grid lines -->
+  <line x1="0" y1="240" x2="1280" y2="240" stroke="#60a0e0" stroke-opacity="0.05" stroke-width="1"/>
+  <line x1="0" y1="480" x2="1280" y2="480" stroke="#60a0e0" stroke-opacity="0.05" stroke-width="1"/>
+  <line x1="640" y1="0" x2="640" y2="720" stroke="#60a0e0" stroke-opacity="0.05" stroke-width="1"/>
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="1280" height="4" fill="url(#blueLine)"/>
+
+  <!-- Lincoln Brief mark (top left) -->
+  <text x="48" y="54" font-family="Georgia, serif" font-size="18" fill="#d8b878" font-weight="bold" letter-spacing="3">LINCOLN BRIEF</text>
+  <text x="48" y="76" font-family="Georgia, serif" font-size="13" fill="#8a7040" letter-spacing="2">US MARKET · FORECAST</text>
+
+  <!-- Edition label (top right) -->
+  <rect x="1020" y="28" width="220" height="36" rx="3" fill="#60a0e0" fill-opacity="0.1" stroke="#60a0e0" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="1130" y="51" font-family="Georgia, serif" font-size="14" fill="#80b0e0" text-anchor="middle" letter-spacing="1">2026.06.26 · 06:00 KST</text>
+
+  <!-- Diamond decorative -->
+  <polygon points="640,108 649,117 640,126 631,117" fill="#60a0e0" fill-opacity="0.5"/>
+
+  <!-- Main display -->
+  <text x="640" y="174" font-family="Georgia, serif" font-size="20" fill="#80b0e0" text-anchor="middle" letter-spacing="4">S&amp;P 500 FORECAST</text>
+  <text x="640" y="258" font-family="Georgia, serif" font-size="80" fill="#ffffff" text-anchor="middle" font-weight="bold">7,357.49</text>
+  <text x="640" y="310" font-family="Georgia, serif" font-size="22" fill="#8080a0" text-anchor="middle">지지 7,300 · 저항 7,400 · 위험 7,200</text>
+  <text x="640" y="348" font-family="Georgia, serif" font-size="16" fill="#606880" text-anchor="middle">NVDA $195.74 · US10Y 4.392% · PCE 6/27 예정</text>
+
+  <!-- Divider -->
+  <line x1="160" y1="372" x2="1120" y2="372" stroke="#60a0e0" stroke-opacity="0.2" stroke-width="1"/>
+
+  <!-- Scenario panels -->
+  <!-- Base scenario (left) -->
+  <rect x="80" y="390" width="270" height="196" rx="4" fill="#d8b878" fill-opacity="0.05" stroke="#d8b878" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="215" y="422" font-family="Georgia, serif" font-size="13" fill="#c0a060" text-anchor="middle" letter-spacing="1">SLOT-06 베이스 38%</text>
+  <text x="215" y="460" font-family="Georgia, serif" font-size="28" fill="#d8b878" text-anchor="middle" font-weight="bold">7,200~7,400</text>
+  <text x="215" y="492" font-family="Georgia, serif" font-size="13" fill="#907840" text-anchor="middle">박스 소화</text>
+  <text x="215" y="524" font-family="Georgia, serif" font-size="12" fill="#705830" text-anchor="middle">US10Y 4.3~4.5%</text>
+  <text x="215" y="548" font-family="Georgia, serif" font-size="12" fill="#705830" text-anchor="middle">PCE 컨센서스 수준</text>
+  <text x="215" y="570" font-family="Georgia, serif" font-size="12" fill="#705830" text-anchor="middle">AAPL·MSFT 소화 중</text>
+
+  <!-- Bull scenario -->
+  <rect x="370" y="390" width="230" height="196" rx="4" fill="#4ade80" fill-opacity="0.04" stroke="#4ade80" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="485" y="422" font-family="Georgia, serif" font-size="13" fill="#507050" text-anchor="middle">불 18%</text>
+  <text x="485" y="460" font-family="Georgia, serif" font-size="26" fill="#4ade80" text-anchor="middle" font-weight="bold">7,600+</text>
+  <text x="485" y="492" font-family="Georgia, serif" font-size="12" fill="#407040" text-anchor="middle">PCE 하회</text>
+  <text x="485" y="516" font-family="Georgia, serif" font-size="12" fill="#407040" text-anchor="middle">US10Y 4.3% 이하</text>
+
+  <!-- Bear scenario -->
+  <rect x="620" y="390" width="270" height="196" rx="4" fill="#f87171" fill-opacity="0.05" stroke="#f87171" stroke-opacity="0.25" stroke-width="1"/>
+  <text x="755" y="422" font-family="Georgia, serif" font-size="13" fill="#b06060" text-anchor="middle">베어 32%</text>
+  <text x="755" y="460" font-family="Georgia, serif" font-size="26" fill="#f87171" text-anchor="middle" font-weight="bold">7,200 이하</text>
+  <text x="755" y="492" font-family="Georgia, serif" font-size="12" fill="#905050" text-anchor="middle">US10Y 4.6%+ 또는</text>
+  <text x="755" y="516" font-family="Georgia, serif" font-size="12" fill="#905050" text-anchor="middle">PCE 상회 시</text>
+  <text x="755" y="540" font-family="Georgia, serif" font-size="12" fill="#905050" text-anchor="middle">7,300 이탈 → 7,200</text>
+
+  <!-- Black swan -->
+  <rect x="910" y="390" width="290" height="196" rx="4" fill="#a855f7" fill-opacity="0.04" stroke="#a855f7" stroke-opacity="0.18" stroke-width="1"/>
+  <text x="1055" y="422" font-family="Georgia, serif" font-size="13" fill="#806090" text-anchor="middle">블랙스완 12%</text>
+  <text x="1055" y="460" font-family="Georgia, serif" font-size="26" fill="#a855f7" text-anchor="middle" font-weight="bold">7,000 이하</text>
+  <text x="1055" y="492" font-family="Georgia, serif" font-size="12" fill="#705080" text-anchor="middle">외생 충격</text>
+
+  <!-- Bottom stats bar -->
+  <line x1="160" y1="606" x2="1120" y2="606" stroke="#60a0e0" stroke-opacity="0.15" stroke-width="1"/>
+  <text x="260" y="636" font-family="Georgia, serif" font-size="14" fill="#80b0e0" text-anchor="middle">지지선</text>
+  <text x="260" y="658" font-family="Georgia, serif" font-size="16" fill="#8080b0" text-anchor="middle" font-weight="bold">7,300</text>
+  <text x="640" y="636" font-family="Georgia, serif" font-size="14" fill="#80b0e0" text-anchor="middle">핵심 이벤트</text>
+  <text x="640" y="658" font-family="Georgia, serif" font-size="14" fill="#608090" text-anchor="middle">PCE(6/27) · FOMC(7/28) · Q2실적(7月)</text>
+  <text x="1020" y="636" font-family="Georgia, serif" font-size="14" fill="#80b0e0" text-anchor="middle">NVDA 레벨</text>
+  <text x="1020" y="658" font-family="Georgia, serif" font-size="14" fill="#f87171" text-anchor="middle">$195.74 · $200 이탈 2일째</text>
+
+  <!-- Bottom accent bar -->
+  <rect x="0" y="716" width="1280" height="4" fill="#60a0e0" fill-opacity="0.35"/>
+</svg>
