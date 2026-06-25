@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#080e08"/>
+      <stop offset="100%" style="stop-color:#0e160e"/>
+    </linearGradient>
+    <linearGradient id="greenLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7a9d6e;stop-opacity:0"/>
+      <stop offset="30%" style="stop-color:#7a9d6e;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#7a9d6e;stop-opacity:0.3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Subtle grid lines -->
+  <line x1="0" y1="240" x2="1280" y2="240" stroke="#7a9d6e" stroke-opacity="0.05" stroke-width="1"/>
+  <line x1="0" y1="480" x2="1280" y2="480" stroke="#7a9d6e" stroke-opacity="0.05" stroke-width="1"/>
+  <line x1="640" y1="0" x2="640" y2="720" stroke="#7a9d6e" stroke-opacity="0.05" stroke-width="1"/>
+
+  <!-- Top green accent bar -->
+  <rect x="0" y="0" width="1280" height="4" fill="url(#greenLine)"/>
+
+  <!-- Lincoln Brief mark -->
+  <text x="48" y="54" font-family="Georgia, serif" font-size="18" fill="#7a9d6e" font-weight="bold" letter-spacing="3">LINCOLN BRIEF</text>
+  <text x="48" y="76" font-family="Georgia, serif" font-size="13" fill="#4a6040" letter-spacing="2">KR MARKET · ECONOMY ISSUE</text>
+
+  <!-- Edition label -->
+  <rect x="1010" y="28" width="230" height="36" rx="3" fill="#7a9d6e" fill-opacity="0.1" stroke="#7a9d6e" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="1125" y="51" font-family="Georgia, serif" font-size="14" fill="#8ab080" text-anchor="middle" letter-spacing="1">2026.06.25 · 경제 이슈</text>
+
+  <!-- Diamond decorative -->
+  <polygon points="640,108 649,117 640,126 631,117" fill="#7a9d6e" fill-opacity="0.7"/>
+
+  <!-- Headline -->
+  <text x="640" y="160" font-family="Georgia, serif" font-size="21" fill="#8ab080" text-anchor="middle" letter-spacing="2">NVDA $199 이탈 × KOSPI +5.77% 역설</text>
+
+  <!-- Split display: left=NVDA, right=SK하이닉스 -->
+  <!-- Left: NVDA falling -->
+  <rect x="80" y="186" width="500" height="160" rx="4" fill="#f87171" fill-opacity="0.05" stroke="#f87171" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="330" y="220" font-family="Georgia, serif" font-size="16" fill="#f87171" text-anchor="middle" letter-spacing="2">NVDA (전일 미국 마감)</text>
+  <text x="330" y="298" font-family="Georgia, serif" font-size="72" fill="#f87171" text-anchor="middle" font-weight="bold">$199</text>
+  <polygon points="294,316 312,334 330,316" fill="#f87171"/>
+  <text x="342" y="330" font-family="Georgia, serif" font-size="22" fill="#f87171">−0.52% · $200 이탈</text>
+
+  <!-- VS separator -->
+  <text x="640" y="282" font-family="Georgia, serif" font-size="32" fill="#7a9d6e" text-anchor="middle" font-weight="bold">VS</text>
+
+  <!-- Right: SK Hynix rising -->
+  <rect x="700" y="186" width="500" height="160" rx="4" fill="#4ade80" fill-opacity="0.05" stroke="#4ade80" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="950" y="220" font-family="Georgia, serif" font-size="16" fill="#4ade80" text-anchor="middle" letter-spacing="2">SK하이닉스 (오늘 장중)</text>
+  <text x="950" y="298" font-family="Georgia, serif" font-size="62" fill="#4ade80" text-anchor="middle" font-weight="bold">+11.29%</text>
+  <polygon points="910,308 928,290 946,308" fill="#4ade80"/>
+  <text x="958" y="322" font-family="Georgia, serif" font-size="22" fill="#4ade80">2,917,000원</text>
+
+  <!-- Analysis line -->
+  <text x="640" y="378" font-family="Georgia, serif" font-size="17" fill="#4a7040" text-anchor="middle">같은 날 NVDA 하락 + SK하이닉스 급등 — 어떻게 가능한가?</text>
+
+  <!-- Divider -->
+  <line x1="160" y1="400" x2="1120" y2="400" stroke="#7a9d6e" stroke-opacity="0.2" stroke-width="1"/>
+
+  <!-- Three explanations -->
+  <text x="640" y="436" font-family="Georgia, serif" font-size="15" fill="#8ab080" text-anchor="middle" letter-spacing="2">세 가지 배경</text>
+
+  <rect x="80" y="450" width="340" height="130" rx="4" fill="#7a9d6e" fill-opacity="0.05" stroke="#7a9d6e" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="250" y="476" font-family="Georgia, serif" font-size="14" fill="#7a9d6e" text-anchor="middle">① 미국 금리 하락</text>
+  <text x="250" y="500" font-family="Georgia, serif" font-size="22" fill="#ffffff" text-anchor="middle" font-weight="bold">US10Y 4.402%</text>
+  <text x="250" y="524" font-family="Georgia, serif" font-size="13" fill="#4a6040" text-anchor="middle">전일 4.493% → 0.091%p 하락</text>
+  <text x="250" y="562" font-family="Georgia, serif" font-size="13" fill="#3a5030" text-anchor="middle">밸류에이션 상향 · 이머징 유입</text>
+
+  <rect x="470" y="450" width="340" height="130" rx="4" fill="#7a9d6e" fill-opacity="0.05" stroke="#7a9d6e" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="640" y="476" font-family="Georgia, serif" font-size="14" fill="#7a9d6e" text-anchor="middle">② HBM 자체 모멘텀</text>
+  <text x="640" y="500" font-family="Georgia, serif" font-size="22" fill="#ffffff" text-anchor="middle" font-weight="bold">수주 독립성</text>
+  <text x="640" y="524" font-family="Georgia, serif" font-size="13" fill="#4a6040" text-anchor="middle">NVDA 주가 ≠ HBM 납품 물량</text>
+  <text x="640" y="562" font-family="Georgia, serif" font-size="13" fill="#3a5030" text-anchor="middle">기확정 계약 기반 매출 전망</text>
+
+  <rect x="860" y="450" width="340" height="130" rx="4" fill="#7a9d6e" fill-opacity="0.05" stroke="#7a9d6e" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="1030" y="476" font-family="Georgia, serif" font-size="14" fill="#7a9d6e" text-anchor="middle">③ 기술적 반등</text>
+  <text x="1030" y="500" font-family="Georgia, serif" font-size="22" fill="#ffffff" text-anchor="middle" font-weight="bold">−12.5% 반등</text>
+  <text x="1030" y="524" font-family="Georgia, serif" font-size="13" fill="#4a6040" text-anchor="middle">전전일 2,555,000원 과도 급락</text>
+  <text x="1030" y="562" font-family="Georgia, serif" font-size="13" fill="#3a5030" text-anchor="middle">저점 매수 수요 집중</text>
+
+  <!-- Bottom stats -->
+  <line x1="160" y1="604" x2="1120" y2="604" stroke="#7a9d6e" stroke-opacity="0.15" stroke-width="1"/>
+  <text x="260" y="636" font-family="Georgia, serif" font-size="14" fill="#8ab080" text-anchor="middle">USD/KRW 1,545.01원</text>
+  <text x="260" y="658" font-family="Georgia, serif" font-size="13" fill="#4a6040" text-anchor="middle">+0.64% · 원화 약세 역설</text>
+  <text x="640" y="636" font-family="Georgia, serif" font-size="14" fill="#8ab080" text-anchor="middle">KOSPI 8,959.57</text>
+  <text x="640" y="658" font-family="Georgia, serif" font-size="13" fill="#4a6040" text-anchor="middle">+5.77% · 9,000선 40pt</text>
+  <text x="1020" y="636" font-family="Georgia, serif" font-size="14" fill="#8ab080" text-anchor="middle">WTI $69.55</text>
+  <text x="1020" y="658" font-family="Georgia, serif" font-size="13" fill="#4a6040" text-anchor="middle">−1.12% · 에너지 비용 완화</text>
+
+  <!-- Bottom accent bar -->
+  <rect x="0" y="716" width="1280" height="4" fill="#7a9d6e" fill-opacity="0.5"/>
+</svg>
