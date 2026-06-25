@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d0a06"/>
+      <stop offset="100%" style="stop-color:#1a1408"/>
+    </linearGradient>
+    <linearGradient id="amberLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f59e0b;stop-opacity:0"/>
+      <stop offset="30%" style="stop-color:#f59e0b;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:0.3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Top amber accent bar -->
+  <rect x="0" y="0" width="1280" height="4" fill="url(#amberLine)"/>
+
+  <!-- Subtle grid lines -->
+  <line x1="0" y1="240" x2="1280" y2="240" stroke="#f59e0b" stroke-opacity="0.05" stroke-width="1"/>
+  <line x1="0" y1="480" x2="1280" y2="480" stroke="#f59e0b" stroke-opacity="0.05" stroke-width="1"/>
+  <line x1="640" y1="0" x2="640" y2="720" stroke="#f59e0b" stroke-opacity="0.05" stroke-width="1"/>
+
+  <!-- Lincoln Brief mark (top left) -->
+  <text x="48" y="54" font-family="Georgia, serif" font-size="18" fill="#d8b878" font-weight="bold" letter-spacing="3">LINCOLN BRIEF</text>
+  <text x="48" y="76" font-family="Georgia, serif" font-size="13" fill="#8a7040" letter-spacing="2">US MARKET · ECONOMY ISSUE</text>
+
+  <!-- Edition label (top right) -->
+  <rect x="1020" y="28" width="220" height="36" rx="3" fill="#f59e0b" fill-opacity="0.1" stroke="#f59e0b" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="1130" y="51" font-family="Georgia, serif" font-size="14" fill="#c09040" text-anchor="middle" letter-spacing="1">2026.06.26 · 01:00 KST</text>
+
+  <!-- Diamond decorative -->
+  <polygon points="640,108 649,117 640,126 631,117" fill="#f59e0b" fill-opacity="0.5"/>
+
+  <!-- Headline area -->
+  <text x="640" y="168" font-family="Georgia, serif" font-size="19" fill="#c09040" text-anchor="middle" letter-spacing="3">팀 쿡 · AAPL 가격 인상</text>
+  <text x="640" y="238" font-family="Georgia, serif" font-size="54" fill="#ffffff" text-anchor="middle" font-weight="bold">메모리 100년 홍수</text>
+  <text x="640" y="290" font-family="Georgia, serif" font-size="22" fill="#f59e0b" text-anchor="middle">Mac·iPad 가격 인상 → CPI → Fed</text>
+  <text x="640" y="334" font-family="Georgia, serif" font-size="16" fill="#605030" text-anchor="middle">AAPL $274.45(−6.36%) · Gold $4,056.40(+1.66%) · WTI $71.66(+1.88%)</text>
+
+  <!-- Divider -->
+  <line x1="160" y1="360" x2="1120" y2="360" stroke="#f59e0b" stroke-opacity="0.2" stroke-width="1"/>
+
+  <!-- Left panel: chain of effects -->
+  <rect x="80" y="378" width="500" height="210" rx="4" fill="#f59e0b" fill-opacity="0.03" stroke="#f59e0b" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="330" y="410" font-family="Georgia, serif" font-size="16" fill="#c09040" text-anchor="middle" letter-spacing="1">인플레이션 파급 경로</text>
+  <text x="110" y="444" font-family="Georgia, serif" font-size="14" fill="#d0a060">① AI 수요 → HBM 독점 → LPDDR 공급 타이트</text>
+  <text x="110" y="470" font-family="Georgia, serif" font-size="14" fill="#d0a060">② Apple: 메모리 비용 → Mac·iPad 가격 인상</text>
+  <text x="110" y="496" font-family="Georgia, serif" font-size="14" fill="#d0a060">③ 소비자 가전 CPI 항목 상승 (1~2개월 시차)</text>
+  <text x="110" y="522" font-family="Georgia, serif" font-size="14" fill="#d0a060">④ 코어 CPI 재가속 가능성</text>
+  <text x="110" y="548" font-family="Georgia, serif" font-size="14" fill="#d0a060">⑤ Fed 금리 인하 시계 → 지연 압력</text>
+  <text x="110" y="572" font-family="Georgia, serif" font-size="13" fill="#806040">기본 시나리오 (50%): 12월 FOMC 인하</text>
+
+  <!-- Right panel: macro signals -->
+  <rect x="620" y="378" width="580" height="210" rx="4" fill="#c0a060" fill-opacity="0.03" stroke="#c0a060" stroke-opacity="0.15" stroke-width="1"/>
+  <text x="910" y="410" font-family="Georgia, serif" font-size="16" fill="#c0a060" text-anchor="middle" letter-spacing="2">같은 날 인플레이션 신호</text>
+  <text x="640" y="446" font-family="Georgia, serif" font-size="15" fill="#888888">Gold</text>
+  <text x="1180" y="446" font-family="Georgia, serif" font-size="15" fill="#4ade80" text-anchor="end">$4,056.40 (+1.66%)</text>
+  <text x="640" y="474" font-family="Georgia, serif" font-size="15" fill="#888888">WTI</text>
+  <text x="1180" y="474" font-family="Georgia, serif" font-size="15" fill="#4ade80" text-anchor="end">$71.66 (+1.88%)</text>
+  <text x="640" y="502" font-family="Georgia, serif" font-size="15" fill="#888888">AAPL 가격 인상</text>
+  <text x="1180" y="502" font-family="Georgia, serif" font-size="15" fill="#f59e0b" text-anchor="end">코어 재화 CPI ↑</text>
+  <text x="640" y="530" font-family="Georgia, serif" font-size="15" fill="#888888">US10Y</text>
+  <text x="1180" y="530" font-family="Georgia, serif" font-size="15" fill="#4ade80" text-anchor="end">4.382% (↓ 11.8bp)</text>
+  <text x="640" y="568" font-family="Georgia, serif" font-size="13" fill="#605030">금리 하락 + 원자재 강세 = 인플레이션 기대 재부각</text>
+
+  <!-- Bottom -->
+  <line x1="160" y1="606" x2="1120" y2="606" stroke="#f59e0b" stroke-opacity="0.12" stroke-width="1"/>
+  <text x="640" y="640" font-family="Georgia, serif" font-size="15" fill="#706040" text-anchor="middle">다음 검증 포인트: PCE 발표 (6월 말) · BTC $59,392(−2.63%)</text>
+  <text x="640" y="668" font-family="Georgia, serif" font-size="13" fill="#504030" text-anchor="middle">한국 시사점: 삼성전자·SK하이닉스 메모리 ASP 상승 수혜 가능</text>
+
+  <!-- Bottom accent bar -->
+  <rect x="0" y="716" width="1280" height="4" fill="#f59e0b" fill-opacity="0.35"/>
+</svg>

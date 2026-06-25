@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#080c12"/>
+      <stop offset="100%" style="stop-color:#10151a"/>
+    </linearGradient>
+    <linearGradient id="blueLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#60a5fa;stop-opacity:0"/>
+      <stop offset="30%" style="stop-color:#60a5fa;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#60a5fa;stop-opacity:0.3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Top blue accent bar -->
+  <rect x="0" y="0" width="1280" height="4" fill="url(#blueLine)"/>
+
+  <!-- Subtle grid lines -->
+  <line x1="0" y1="240" x2="1280" y2="240" stroke="#60a5fa" stroke-opacity="0.05" stroke-width="1"/>
+  <line x1="0" y1="480" x2="1280" y2="480" stroke="#60a5fa" stroke-opacity="0.05" stroke-width="1"/>
+  <line x1="640" y1="0" x2="640" y2="720" stroke="#60a5fa" stroke-opacity="0.05" stroke-width="1"/>
+
+  <!-- Lincoln Brief mark (top left) -->
+  <text x="48" y="54" font-family="Georgia, serif" font-size="18" fill="#d8b878" font-weight="bold" letter-spacing="3">LINCOLN BRIEF</text>
+  <text x="48" y="76" font-family="Georgia, serif" font-size="13" fill="#8a7040" letter-spacing="2">US MARKET · MARKET FORECAST</text>
+
+  <!-- Edition label (top right) -->
+  <rect x="1020" y="28" width="220" height="36" rx="3" fill="#60a5fa" fill-opacity="0.1" stroke="#60a5fa" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="1130" y="51" font-family="Georgia, serif" font-size="14" fill="#80a8c0" text-anchor="middle" letter-spacing="1">2026.06.26 · 01:00 KST</text>
+
+  <!-- Diamond decorative -->
+  <polygon points="640,108 649,117 640,126 631,117" fill="#60a5fa" fill-opacity="0.5"/>
+
+  <!-- Headline -->
+  <text x="640" y="170" font-family="Georgia, serif" font-size="20" fill="#80a8c0" text-anchor="middle" letter-spacing="4">S&amp;P 500 · 4주 시나리오</text>
+  <text x="640" y="248" font-family="Georgia, serif" font-size="72" fill="#ffffff" text-anchor="middle" font-weight="bold">7,365.21</text>
+  <text x="640" y="294" font-family="Georgia, serif" font-size="22" fill="#60a5fa" text-anchor="middle">US10Y 4.382% · Gold +1.66% · 빅테크 재조정</text>
+  <text x="640" y="336" font-family="Georgia, serif" font-size="17" fill="#506070" text-anchor="middle">AAPL −6.36%·MSFT −3.69% 기술주 약세 vs JPM +1.36% 방어주 강세</text>
+
+  <!-- Divider -->
+  <line x1="160" y1="362" x2="1120" y2="362" stroke="#60a5fa" stroke-opacity="0.2" stroke-width="1"/>
+
+  <!-- 4 scenario panels -->
+  <!-- Bull -->
+  <rect x="80" y="382" width="260" height="182" rx="4" fill="#4ade80" fill-opacity="0.04" stroke="#4ade80" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="210" y="412" font-family="Georgia, serif" font-size="14" fill="#40a060" text-anchor="middle" letter-spacing="1">불 케이스 · 20%</text>
+  <text x="210" y="454" font-family="Georgia, serif" font-size="32" fill="#4ade80" text-anchor="middle" font-weight="bold">7,600+</text>
+  <text x="210" y="484" font-family="Georgia, serif" font-size="12" fill="#406050" text-anchor="middle">PCE 하락 + FOMC</text>
+  <text x="210" y="502" font-family="Georgia, serif" font-size="12" fill="#406050" text-anchor="middle">비둘기 신호</text>
+  <text x="210" y="548" font-family="Georgia, serif" font-size="12" fill="#406050" text-anchor="middle">US10Y → 4.2% 이하</text>
+
+  <!-- Base -->
+  <rect x="360" y="382" width="260" height="182" rx="4" fill="#60a5fa" fill-opacity="0.05" stroke="#60a5fa" stroke-opacity="0.3" stroke-width="2"/>
+  <text x="490" y="412" font-family="Georgia, serif" font-size="14" fill="#4080b0" text-anchor="middle" letter-spacing="1">베이스 · 40%</text>
+  <text x="490" y="454" font-family="Georgia, serif" font-size="32" fill="#60a5fa" text-anchor="middle" font-weight="bold">7,200~7,500</text>
+  <text x="490" y="484" font-family="Georgia, serif" font-size="12" fill="#406080" text-anchor="middle">PCE 보합 + FOMC</text>
+  <text x="490" y="502" font-family="Georgia, serif" font-size="12" fill="#406080" text-anchor="middle">동결 기조 유지</text>
+  <text x="490" y="548" font-family="Georgia, serif" font-size="12" fill="#406080" text-anchor="middle">순환 매매 · 방향 부재</text>
+
+  <!-- Bear -->
+  <rect x="640" y="382" width="260" height="182" rx="4" fill="#f87171" fill-opacity="0.04" stroke="#f87171" stroke-opacity="0.25" stroke-width="1"/>
+  <text x="770" y="412" font-family="Georgia, serif" font-size="14" fill="#c05050" text-anchor="middle" letter-spacing="1">베어 · 30%</text>
+  <text x="770" y="454" font-family="Georgia, serif" font-size="32" fill="#f87171" text-anchor="middle" font-weight="bold">7,000~7,200</text>
+  <text x="770" y="484" font-family="Georgia, serif" font-size="12" fill="#806060" text-anchor="middle">PCE 상승 + FOMC</text>
+  <text x="770" y="502" font-family="Georgia, serif" font-size="12" fill="#806060" text-anchor="middle">매파 강화</text>
+  <text x="770" y="548" font-family="Georgia, serif" font-size="12" fill="#806060" text-anchor="middle">빅테크 추가 약세</text>
+
+  <!-- Black Swan -->
+  <rect x="920" y="382" width="280" height="182" rx="4" fill="#a78bfa" fill-opacity="0.03" stroke="#a78bfa" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="1060" y="412" font-family="Georgia, serif" font-size="14" fill="#7060a0" text-anchor="middle" letter-spacing="1">블랙스완 · 10%</text>
+  <text x="1060" y="454" font-family="Georgia, serif" font-size="32" fill="#a78bfa" text-anchor="middle" font-weight="bold">6,800 이하</text>
+  <text x="1060" y="484" font-family="Georgia, serif" font-size="12" fill="#706090" text-anchor="middle">경기지표 급락 or</text>
+  <text x="1060" y="502" font-family="Georgia, serif" font-size="12" fill="#706090" text-anchor="middle">신용 이벤트</text>
+  <text x="1060" y="548" font-family="Georgia, serif" font-size="12" fill="#706090" text-anchor="middle">전면 조정 시나리오</text>
+
+  <!-- Bottom -->
+  <line x1="160" y1="584" x2="1120" y2="584" stroke="#60a5fa" stroke-opacity="0.12" stroke-width="1"/>
+  <text x="640" y="618" font-family="Georgia, serif" font-size="15" fill="#507090" text-anchor="middle">분기점: PCE 발표 (6월 말) · 7월 FOMC · Big Tech Q2 실적</text>
+  <text x="640" y="648" font-family="Georgia, serif" font-size="14" fill="#405060" text-anchor="middle">Gold $4,056.40(+1.66%) · WTI $71.66(+1.88%) · 인플레이션 기대 재부각</text>
+
+  <!-- Bottom accent bar -->
+  <rect x="0" y="716" width="1280" height="4" fill="#60a5fa" fill-opacity="0.35"/>
+</svg>
