@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f0c08;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1510;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="gold-line" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#d8b878;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c8a868;stop-opacity:0" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg-grad)"/>
+
+  <!-- Gold accent lines -->
+  <rect x="0" y="0" width="6" height="720" fill="#d8b878"/>
+  <rect x="0" y="100" width="1280" height="1" fill="url(#gold-line)" opacity="0.4"/>
+  <rect x="0" y="618" width="1280" height="1" fill="url(#gold-line)" opacity="0.3"/>
+
+  <!-- Lincoln Brief mark -->
+  <text x="40" y="68" font-family="'Apple SD Gothic Neo','Malgun Gothic',Arial,sans-serif" font-size="22" font-weight="700" fill="#d8b878" letter-spacing="3">LINCOLN BRIEF</text>
+  <text x="40" y="92" font-family="'Apple SD Gothic Neo','Malgun Gothic',Arial,sans-serif" font-size="14" fill="#8a7a5a" letter-spacing="1">KR 마감 시황</text>
+
+  <!-- Edition label -->
+  <text x="1240" y="54" font-family="'Apple SD Gothic Neo','Malgun Gothic',Arial,sans-serif" font-size="16" fill="#8a7a5a" text-anchor="end">6·25·2026 / 16:00 KST</text>
+  <text x="1240" y="78" font-family="'Apple SD Gothic Neo','Malgun Gothic',Arial,sans-serif" font-size="14" fill="#5a4a2a" text-anchor="end">daily-brief</text>
+
+  <!-- Diamond accent -->
+  <polygon points="640,112 650,122 640,132 630,122" fill="#d8b878" opacity="0.6"/>
+
+  <!-- Main headline -->
+  <text x="640" y="195" font-family="'Apple SD Gothic Neo','Malgun Gothic',Arial,sans-serif" font-size="44" font-weight="700" fill="#f0e0b0" text-anchor="middle">KOSPI 8,930.3</text>
+  <text x="640" y="250" font-family="'Apple SD Gothic Neo','Malgun Gothic',Arial,sans-serif" font-size="28" fill="#d8b878" text-anchor="middle">+459.28pt  +5.42%</text>
+
+  <!-- Up triangle for KOSPI -->
+  <polygon points="720,235 710,255 730,255" fill="#4caf50"/>
+
+  <!-- Divider line -->
+  <rect x="100" y="278" width="1080" height="1" fill="#3a2a1a"/>
+
+  <!-- Two columns: KOSPI and KOSDAQ -->
+  <!-- Left: KOSDAQ -->
+  <text x="320" y="330" font-family="'Apple SD Gothic Neo','Malgun Gothic',Arial,sans-serif" font-size="20" fill="#8a7a5a" text-anchor="middle" font-weight="600">KOSDAQ</text>
+  <text x="320" y="380" font-family="'Apple SD Gothic Neo','Malgun Gothic',Arial,sans-serif" font-size="38" font-weight="700" fill="#e55555" text-anchor="middle">887.81</text>
+  <!-- Down triangle -->
+  <polygon points="320,403 310,390 330,390" fill="#e55555"/>
+  <text x="320" y="430" font-family="'Apple SD Gothic Neo','Malgun Gothic',Arial,sans-serif" font-size="22" fill="#e55555" text-anchor="middle">−2.36%</text>
+
+  <!-- Center vertical line -->
+  <rect x="630" y="300" width="1" height="160" fill="#3a2a1a"/>
+  <text x="640" y="360" font-family="'Apple SD Gothic Neo','Malgun Gothic',Arial,sans-serif" font-size="14" fill="#4a3a1a" text-anchor="middle">vs</text>
+
+  <!-- Right: USD/KRW -->
+  <text x="960" y="330" font-family="'Apple SD Gothic Neo','Malgun Gothic',Arial,sans-serif" font-size="20" fill="#8a7a5a" text-anchor="middle" font-weight="600">USD/KRW</text>
+  <text x="960" y="380" font-family="'Apple SD Gothic Neo','Malgun Gothic',Arial,sans-serif" font-size="38" font-weight="700" fill="#f0d080" text-anchor="middle">1,540.53</text>
+  <polygon points="1030,368 1020,355 1040,355" fill="#f0d080"/>
+  <text x="960" y="430" font-family="'Apple SD Gothic Neo','Malgun Gothic',Arial,sans-serif" font-size="22" fill="#f0d080" text-anchor="middle">+0.34%</text>
+
+  <!-- Divider -->
+  <rect x="100" y="462" width="1080" height="1" fill="#3a2a1a"/>
+
+  <!-- Key movers row -->
+  <text x="640" y="500" font-family="'Apple SD Gothic Neo','Malgun Gothic',Arial,sans-serif" font-size="16" fill="#6a5a3a" text-anchor="middle" font-weight="600">TOP MOVERS</text>
+
+  <!-- SK하이닉스 -->
+  <text x="220" y="545" font-family="'Apple SD Gothic Neo','Malgun Gothic',Arial,sans-serif" font-size="17" fill="#c8c8c8" text-anchor="middle">SK하이닉스</text>
+  <polygon points="280,535 270,548 290,548" fill="#4caf50"/>
+  <text x="340" y="545" font-family="'Apple SD Gothic Neo','Malgun Gothic',Arial,sans-serif" font-size="19" font-weight="700" fill="#4caf50">+11.29%</text>
+
+  <!-- 삼성전자 -->
+  <text x="560" y="545" font-family="'Apple SD Gothic Neo','Malgun Gothic',Arial,sans-serif" font-size="17" fill="#c8c8c8" text-anchor="middle">삼성전자</text>
+  <polygon points="620,535 610,548 630,548" fill="#4caf50"/>
+  <text x="680" y="545" font-family="'Apple SD Gothic Neo','Malgun Gothic',Arial,sans-serif" font-size="19" font-weight="700" fill="#4caf50">+5.29%</text>
+
+  <!-- LG에너지솔루션 -->
+  <text x="900" y="545" font-family="'Apple SD Gothic Neo','Malgun Gothic',Arial,sans-serif" font-size="17" fill="#c8c8c8" text-anchor="middle">LG에너지솔루션</text>
+  <polygon points="1050,548 1040,535 1060,535" fill="#e55555"/>
+  <text x="1110" y="545" font-family="'Apple SD Gothic Neo','Malgun Gothic',Arial,sans-serif" font-size="19" font-weight="700" fill="#e55555">−3.69%</text>
+
+  <!-- Tagline -->
+  <text x="640" y="600" font-family="'Apple SD Gothic Neo','Malgun Gothic',Arial,sans-serif" font-size="20" fill="#8a7a5a" text-anchor="middle">9,000선 저항 재확인 — 장중 8,959에서 마감 8,930</text>
+
+  <!-- Bottom brand line -->
+  <rect x="0" y="680" width="1280" height="40" fill="#0a0804"/>
+  <text x="640" y="706" font-family="'Apple SD Gothic Neo','Malgun Gothic',Arial,sans-serif" font-size="14" fill="#4a3a1a" text-anchor="middle">lincoln-brief.vercel.app  |  — Lincoln</text>
+</svg>
