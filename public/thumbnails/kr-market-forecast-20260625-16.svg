@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f0808;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1010;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="red-line" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e5813a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e5813a;stop-opacity:0" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg-grad)"/>
+
+  <!-- Orange accent line -->
+  <rect x="0" y="0" width="6" height="720" fill="#e5813a"/>
+  <rect x="0" y="100" width="1280" height="1" fill="url(#red-line)" opacity="0.4"/>
+
+  <!-- Lincoln Brief mark -->
+  <text x="40" y="68" font-family="'Apple SD Gothic Neo','Malgun Gothic',Arial,sans-serif" font-size="22" font-weight="700" fill="#e5813a" letter-spacing="3">LINCOLN BRIEF</text>
+  <text x="40" y="92" font-family="'Apple SD Gothic Neo','Malgun Gothic',Arial,sans-serif" font-size="14" fill="#8a5a3a" letter-spacing="1">KR 시장 예측</text>
+
+  <!-- Edition label -->
+  <text x="1240" y="54" font-family="'Apple SD Gothic Neo','Malgun Gothic',Arial,sans-serif" font-size="16" fill="#8a5a3a" text-anchor="end">6·25·2026 / 16:00 KST</text>
+  <text x="1240" y="78" font-family="'Apple SD Gothic Neo','Malgun Gothic',Arial,sans-serif" font-size="14" fill="#4a2a1a" text-anchor="end">market-forecast</text>
+
+  <!-- Diamond accent -->
+  <polygon points="640,112 650,122 640,132 630,122" fill="#e5813a" opacity="0.6"/>
+
+  <!-- Main headline -->
+  <text x="640" y="175" font-family="'Apple SD Gothic Neo','Malgun Gothic',Arial,sans-serif" font-size="32" font-weight="700" fill="#f0d0b0" text-anchor="middle">KOSPI 9,000선 저항 재확인</text>
+  <text x="640" y="230" font-family="'Apple SD Gothic Neo','Malgun Gothic',Arial,sans-serif" font-size="48" font-weight="700" fill="#f0d0b0" text-anchor="middle">8,930.3 종가</text>
+  <text x="640" y="278" font-family="'Apple SD Gothic Neo','Malgun Gothic',Arial,sans-serif" font-size="26" fill="#e5813a" text-anchor="middle">+459pt  +5.42%  /  9,000까지 69.7pt</text>
+
+  <!-- Divider -->
+  <rect x="100" y="302" width="1080" height="1" fill="#2a1a0a"/>
+
+  <!-- Scenario table header -->
+  <text x="640" y="335" font-family="'Apple SD Gothic Neo','Malgun Gothic',Arial,sans-serif" font-size="16" fill="#6a4a2a" text-anchor="middle" font-weight="600" letter-spacing="2">목금(6/26~27) 시나리오</text>
+
+  <!-- Bull scenario -->
+  <rect x="100" y="350" width="1080" height="52" fill="#0a1a0a" rx="4"/>
+  <text x="130" y="382" font-family="'Apple SD Gothic Neo','Malgun Gothic',Arial,sans-serif" font-size="18" font-weight="700" fill="#4caf50">▲ 불 20%</text>
+  <text x="330" y="382" font-family="'Apple SD Gothic Neo','Malgun Gothic',Arial,sans-serif" font-size="16" fill="#c8d8c8">9,000 돌파 — NVDA $200 회복 · USD/KRW 1,530원대</text>
+
+  <!-- Base scenario -->
+  <rect x="100" y="408" width="1080" height="52" fill="#1a1a0a" rx="4"/>
+  <text x="130" y="440" font-family="'Apple SD Gothic Neo','Malgun Gothic',Arial,sans-serif" font-size="18" font-weight="700" fill="#e5813a">— 베이스 50%</text>
+  <text x="330" y="440" font-family="'Apple SD Gothic Neo','Malgun Gothic',Arial,sans-serif" font-size="16" fill="#c8c8a8">8,800~8,970 횡보 — 차익 실현 소화</text>
+
+  <!-- Bear scenario -->
+  <rect x="100" y="466" width="1080" height="52" fill="#1a0a0a" rx="4"/>
+  <text x="130" y="498" font-family="'Apple SD Gothic Neo','Malgun Gothic',Arial,sans-serif" font-size="18" font-weight="700" fill="#e55555">▼ 베어 25%</text>
+  <text x="330" y="498" font-family="'Apple SD Gothic Neo','Malgun Gothic',Arial,sans-serif" font-size="16" fill="#c8a8a8">8,600~8,700 조정 — NVDA $190 이탈</text>
+
+  <!-- Black swan -->
+  <rect x="100" y="524" width="1080" height="42" fill="#0f0f0f" rx="4"/>
+  <text x="130" y="551" font-family="'Apple SD Gothic Neo','Malgun Gothic',Arial,sans-serif" font-size="16" font-weight="600" fill="#666">블랙 스완 5%  —  8,400 이하</text>
+
+  <!-- Key variables -->
+  <text x="640" y="610" font-family="'Apple SD Gothic Neo','Malgun Gothic',Arial,sans-serif" font-size="18" fill="#8a5a3a" text-anchor="middle">핵심 변수 — 오늘 밤 NVDA 방향 · USD/KRW 1,535원 하락 여부</text>
+
+  <!-- Bottom brand line -->
+  <rect x="0" y="680" width="1280" height="40" fill="#080404"/>
+  <text x="640" y="706" font-family="'Apple SD Gothic Neo','Malgun Gothic',Arial,sans-serif" font-size="14" fill="#4a2a1a" text-anchor="middle">lincoln-brief.vercel.app  |  — Lincoln</text>
+</svg>
