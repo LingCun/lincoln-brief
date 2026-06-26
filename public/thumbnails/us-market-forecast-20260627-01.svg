@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#140808"/>
+      <stop offset="100%" style="stop-color:#1e1010"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Top accent line -->
+  <rect x="0" y="0" width="1280" height="3" fill="#e05252"/>
+
+  <!-- Left accent bar -->
+  <rect x="60" y="60" width="4" height="600" fill="#e05252" opacity="0.3"/>
+
+  <!-- Edition label top right -->
+  <rect x="1020" y="36" width="220" height="32" rx="4" fill="#e05252" opacity="0.15"/>
+  <text x="1130" y="57" font-family="Georgia, serif" font-size="13" fill="#e05252" text-anchor="middle" letter-spacing="2">US MARKET FORECAST</text>
+
+  <!-- Date -->
+  <text x="88" y="100" font-family="Georgia, serif" font-size="16" fill="#e05252" opacity="0.7" letter-spacing="3">2026.06.27 · SLOT 01</text>
+
+  <!-- Diamond separator -->
+  <polygon points="88,118 95,125 88,132 81,125" fill="#e05252"/>
+
+  <!-- Main headline -->
+  <text x="88" y="185" font-family="Georgia, serif" font-size="26" fill="#d0b0a0">S&amp;P 500 현재 위치</text>
+  <text x="88" y="265" font-family="Georgia, serif" font-size="80" font-weight="bold" fill="#f0e8e4">7,367.96</text>
+
+  <!-- Subtitle -->
+  <text x="88" y="315" font-family="Georgia, serif" font-size="20" fill="#c0a8a0" opacity="0.9">7,300 방어 성공 · PCE 발표가 다음 방향을 결정한다</text>
+
+  <!-- Divider -->
+  <line x1="88" y1="345" x2="760" y2="345" stroke="#e05252" stroke-width="1" opacity="0.4"/>
+
+  <!-- Scenario table -->
+  <text x="88" y="385" font-family="Georgia, serif" font-size="15" fill="#e05252" opacity="0.7" letter-spacing="2">4주 시나리오</text>
+
+  <!-- Scenario A - base -->
+  <rect x="88" y="400" width="620" height="48" rx="4" fill="#e05252" opacity="0.12"/>
+  <text x="104" y="420" font-family="Georgia, serif" font-size="13" fill="#e05252">베이스 (40%)</text>
+  <text x="104" y="440" font-family="Georgia, serif" font-size="17" font-weight="bold" fill="#f0e8e4">7,200~7,500 박스   PCE 컨센서스 수준</text>
+
+  <!-- Scenario B - bull -->
+  <rect x="88" y="455" width="620" height="48" rx="4" fill="#52c47a" opacity="0.08"/>
+  <text x="104" y="475" font-family="Georgia, serif" font-size="13" fill="#52c47a">반등 (25%)</text>
+  <text x="104" y="495" font-family="Georgia, serif" font-size="17" font-weight="bold" fill="#f0e8e4">7,600+   PCE 하회 + WTI 하락 효과 확인</text>
+
+  <!-- Scenario C - bear -->
+  <rect x="88" y="510" width="620" height="48" rx="4" fill="#e05252" opacity="0.08"/>
+  <text x="104" y="530" font-family="Georgia, serif" font-size="13" fill="#e05252">하락 (25%)</text>
+  <text x="104" y="550" font-family="Georgia, serif" font-size="17" font-weight="bold" fill="#f0e8e4">7,200 이하   PCE 상회 + US10Y 4.6%+</text>
+
+  <!-- Scenario D - black swan -->
+  <rect x="88" y="565" width="620" height="36" rx="4" fill="#666" opacity="0.10"/>
+  <text x="104" y="580" font-family="Georgia, serif" font-size="13" fill="#999">블랙 스완 (10%)</text>
+  <text x="104" y="596" font-family="Georgia, serif" font-size="15" fill="#c0b0b0">7,000 이하   외생 충격</text>
+
+  <!-- Key levels right side visual -->
+  <!-- Level indicator bar -->
+  <rect x="790" y="140" width="24" height="500" rx="4" fill="#333" opacity="0.6"/>
+
+  <!-- 7600 level -->
+  <rect x="790" y="140" width="24" height="60" rx="0" fill="#52c47a" opacity="0.4"/>
+  <text x="826" y="180" font-family="Georgia, serif" font-size="14" fill="#52c47a">7,600+ 반등 목표</text>
+
+  <!-- 7400 resistance -->
+  <line x1="780" y1="255" x2="1000" y2="255" stroke="#e05252" stroke-width="1" stroke-dasharray="6,3" opacity="0.7"/>
+  <text x="826" y="250" font-family="Georgia, serif" font-size="13" fill="#e05252">저항 7,400</text>
+
+  <!-- Current position 7368 -->
+  <rect x="786" y="262" width="32" height="20" rx="0" fill="#f0e8e4" opacity="0.9"/>
+  <text x="826" y="278" font-family="Georgia, serif" font-size="15" font-weight="bold" fill="#f0e8e4">현재 7,367</text>
+
+  <!-- 7300 support -->
+  <line x1="780" y1="320" x2="1000" y2="320" stroke="#52c47a" stroke-width="1" stroke-dasharray="6,3" opacity="0.7"/>
+  <text x="826" y="315" font-family="Georgia, serif" font-size="13" fill="#52c47a">지지 7,300 ✓ 방어</text>
+
+  <!-- 7200 -->
+  <line x1="780" y1="400" x2="1000" y2="400" stroke="#e05252" stroke-width="1" opacity="0.4"/>
+  <text x="826" y="395" font-family="Georgia, serif" font-size="13" fill="#e05252" opacity="0.7">위험 7,200</text>
+
+  <!-- 7000 -->
+  <line x1="780" y1="530" x2="1000" y2="530" stroke="#999" stroke-width="1" opacity="0.3"/>
+  <text x="826" y="525" font-family="Georgia, serif" font-size="13" fill="#999" opacity="0.6">7,000</text>
+
+  <!-- WTI note at bottom -->
+  <rect x="88" y="622" width="540" height="38" rx="4" fill="#e05252" opacity="0.10"/>
+  <text x="104" y="637" font-family="Georgia, serif" font-size="13" fill="#e05252" opacity="0.7">주요 변수</text>
+  <text x="104" y="653" font-family="Georgia, serif" font-size="15" fill="#f0e8e4">WTI $69 하락 → PCE 완화 가능성 · US10Y 4.376%</text>
+
+  <!-- Lincoln Brief branding -->
+  <text x="1220" y="700" font-family="Georgia, serif" font-size="13" fill="#e05252" opacity="0.5" text-anchor="end" letter-spacing="2">LINCOLN BRIEF</text>
+</svg>
