@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#060c14"/>
+      <stop offset="100%" style="stop-color:#0f1824"/>
+    </linearGradient>
+    <linearGradient id="blueLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#5677b0;stop-opacity:0"/>
+      <stop offset="30%" style="stop-color:#5677b0;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#5677b0;stop-opacity:0.3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Grid lines -->
+  <line x1="0" y1="240" x2="1280" y2="240" stroke="#5677b0" stroke-opacity="0.05" stroke-width="1"/>
+  <line x1="0" y1="480" x2="1280" y2="480" stroke="#5677b0" stroke-opacity="0.05" stroke-width="1"/>
+  <line x1="640" y1="0" x2="640" y2="720" stroke="#5677b0" stroke-opacity="0.05" stroke-width="1"/>
+
+  <!-- Top blue accent bar -->
+  <rect x="0" y="0" width="1280" height="4" fill="url(#blueLine)"/>
+
+  <!-- Lincoln Brief mark -->
+  <text x="48" y="54" font-family="Georgia, serif" font-size="18" fill="#5677b0" font-weight="bold" letter-spacing="3">LINCOLN BRIEF</text>
+  <text x="48" y="76" font-family="Georgia, serif" font-size="13" fill="#3a5080" letter-spacing="2">KR MARKET · 종목 분석</text>
+
+  <!-- Edition label -->
+  <rect x="1010" y="28" width="230" height="36" rx="3" fill="#5677b0" fill-opacity="0.1" stroke="#5677b0" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="1125" y="51" font-family="Georgia, serif" font-size="14" fill="#7090c0" text-anchor="middle" letter-spacing="1">2026.06.26 · 오전 시황</text>
+
+  <!-- Diamond decorative -->
+  <polygon points="640,108 649,117 640,126 631,117" fill="#f87171" fill-opacity="0.8"/>
+
+  <!-- SK Hynix main display -->
+  <text x="640" y="168" font-family="Georgia, serif" font-size="18" fill="#7090c0" text-anchor="middle" letter-spacing="4">SK하이닉스 (000660.KS)</text>
+  <text x="640" y="254" font-family="Georgia, serif" font-size="82" fill="#ffffff" text-anchor="middle" font-weight="bold">2,600,000</text>
+  <text x="640" y="282" font-family="Georgia, serif" font-size="22" fill="#9090a0" text-anchor="middle">원</text>
+  <!-- Down triangle -->
+  <polygon points="490,295 508,315 526,295" fill="#f87171"/>
+  <text x="540" y="320" font-family="Georgia, serif" font-size="36" fill="#f87171" font-weight="bold">-10.87%</text>
+  <text x="640" y="355" font-family="Georgia, serif" font-size="16" fill="#504050" text-anchor="middle">-317,000원 · 전일 2,917,000원 대비</text>
+
+  <!-- Divider -->
+  <line x1="160" y1="380" x2="1120" y2="380" stroke="#5677b0" stroke-opacity="0.2" stroke-width="1"/>
+
+  <!-- Recent 5-day panel -->
+  <rect x="80" y="400" width="520" height="210" rx="4" fill="#5677b0" fill-opacity="0.05" stroke="#5677b0" stroke-opacity="0.25" stroke-width="1"/>
+  <text x="340" y="432" font-family="Georgia, serif" font-size="15" fill="#5677b0" text-anchor="middle" letter-spacing="2">최근 5거래일</text>
+  <text x="100" y="462" font-family="Georgia, serif" font-size="13" fill="#606080">-4일 전 고점</text>
+  <text x="580" y="462" font-family="Georgia, serif" font-size="13" fill="#c0c0d0" text-anchor="end">2,919,000원</text>
+  <text x="100" y="487" font-family="Georgia, serif" font-size="13" fill="#606080">3일 전</text>
+  <text x="580" y="487" font-family="Georgia, serif" font-size="13" fill="#f87171" text-anchor="end">2,555,000원 (-12.5%)</text>
+  <text x="100" y="512" font-family="Georgia, serif" font-size="13" fill="#606080">2일 전</text>
+  <text x="580" y="512" font-family="Georgia, serif" font-size="13" fill="#7090c0" text-anchor="end">2,621,000원 (+2.6%)</text>
+  <text x="100" y="537" font-family="Georgia, serif" font-size="13" fill="#606080">어제</text>
+  <text x="580" y="537" font-family="Georgia, serif" font-size="13" fill="#4ade80" text-anchor="end">2,917,000원 (+11.29%)</text>
+  <text x="100" y="562" font-family="Georgia, serif" font-size="14" fill="#ffffff" font-weight="bold">오늘</text>
+  <text x="580" y="562" font-family="Georgia, serif" font-size="14" fill="#f87171" text-anchor="end" font-weight="bold">2,600,000원 (-10.87%)</text>
+  <text x="340" y="595" font-family="Georgia, serif" font-size="12" fill="#404060" text-anchor="middle">30일 고점 2,919,000원 / 저점 1,745,000원</text>
+
+  <!-- Right panel — US context -->
+  <rect x="640" y="400" width="560" height="210" rx="4" fill="#f87171" fill-opacity="0.04" stroke="#f87171" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="920" y="432" font-family="Georgia, serif" font-size="15" fill="#904040" text-anchor="middle" letter-spacing="2">미국 연동</text>
+  <text x="660" y="462" font-family="Georgia, serif" font-size="14" fill="#888888">NVDA</text>
+  <text x="1180" y="462" font-family="Georgia, serif" font-size="14" fill="#f87171" text-anchor="end">$195.74 (-1.64%)</text>
+  <text x="660" y="490" font-family="Georgia, serif" font-size="14" fill="#888888">AAPL</text>
+  <text x="1180" y="490" font-family="Georgia, serif" font-size="14" fill="#f87171" text-anchor="end">$275.15 (-6.12%)</text>
+  <text x="660" y="518" font-family="Georgia, serif" font-size="14" fill="#888888">NASDAQ</text>
+  <text x="1180" y="518" font-family="Georgia, serif" font-size="14" fill="#f87171" text-anchor="end">25,358.60 (-0.46%)</text>
+  <text x="660" y="546" font-family="Georgia, serif" font-size="14" fill="#888888">KOSPI</text>
+  <text x="1180" y="546" font-family="Georgia, serif" font-size="14" fill="#f87171" text-anchor="end">8,173 (-8.48%)</text>
+  <text x="660" y="574" font-family="Georgia, serif" font-size="14" fill="#888888">삼성전자</text>
+  <text x="1180" y="574" font-family="Georgia, serif" font-size="14" fill="#f87171" text-anchor="end">325,500원 (-9.21%)</text>
+
+  <!-- Bottom accent bar -->
+  <rect x="0" y="716" width="1280" height="4" fill="#5677b0" fill-opacity="0.5"/>
+</svg>

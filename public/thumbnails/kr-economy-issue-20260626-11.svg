@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#060e08"/>
+      <stop offset="100%" style="stop-color:#0c1810"/>
+    </linearGradient>
+    <linearGradient id="greenLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7a9d6e;stop-opacity:0"/>
+      <stop offset="30%" style="stop-color:#7a9d6e;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#7a9d6e;stop-opacity:0.3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Grid lines -->
+  <line x1="0" y1="240" x2="1280" y2="240" stroke="#7a9d6e" stroke-opacity="0.05" stroke-width="1"/>
+  <line x1="0" y1="480" x2="1280" y2="480" stroke="#7a9d6e" stroke-opacity="0.05" stroke-width="1"/>
+  <line x1="640" y1="0" x2="640" y2="720" stroke="#7a9d6e" stroke-opacity="0.05" stroke-width="1"/>
+
+  <!-- Top green accent bar -->
+  <rect x="0" y="0" width="1280" height="4" fill="url(#greenLine)"/>
+
+  <!-- Lincoln Brief mark -->
+  <text x="48" y="54" font-family="Georgia, serif" font-size="18" fill="#7a9d6e" font-weight="bold" letter-spacing="3">LINCOLN BRIEF</text>
+  <text x="48" y="76" font-family="Georgia, serif" font-size="13" fill="#406040" letter-spacing="2">KR MARKET · 경제 이슈</text>
+
+  <!-- Edition label -->
+  <rect x="1010" y="28" width="230" height="36" rx="3" fill="#7a9d6e" fill-opacity="0.1" stroke="#7a9d6e" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="1125" y="51" font-family="Georgia, serif" font-size="14" fill="#80a070" text-anchor="middle" letter-spacing="1">2026.06.26 · 오전 시황</text>
+
+  <!-- Diamond decorative -->
+  <polygon points="640,108 649,117 640,126 631,117" fill="#f87171" fill-opacity="0.8"/>
+
+  <!-- AAPL main display -->
+  <text x="640" y="164" font-family="Georgia, serif" font-size="19" fill="#80a070" text-anchor="middle" letter-spacing="3">AAPL 빅테크 충격 → KOSPI -8.48%</text>
+  <text x="640" y="258" font-family="Georgia, serif" font-size="90" fill="#ffffff" text-anchor="middle" font-weight="bold">$275.15</text>
+  <!-- Down triangle -->
+  <polygon points="480,274 498,294 516,274" fill="#f87171"/>
+  <text x="530" y="300" font-family="Georgia, serif" font-size="36" fill="#f87171" font-weight="bold">-6.12%</text>
+  <text x="640" y="342" font-family="Georgia, serif" font-size="17" fill="#304830" text-anchor="middle">AAPL 전일 $293.08 → $275.15 · 30일 고점($315.20) 대비 -12.7%</text>
+
+  <!-- Divider -->
+  <line x1="160" y1="372" x2="1120" y2="372" stroke="#7a9d6e" stroke-opacity="0.2" stroke-width="1"/>
+
+  <!-- US bigtech panel -->
+  <rect x="80" y="392" width="520" height="210" rx="4" fill="#7a9d6e" fill-opacity="0.05" stroke="#7a9d6e" stroke-opacity="0.25" stroke-width="1"/>
+  <text x="340" y="424" font-family="Georgia, serif" font-size="15" fill="#7a9d6e" text-anchor="middle" letter-spacing="2">미국 빅테크 하락</text>
+  <text x="100" y="456" font-family="Georgia, serif" font-size="14" fill="#888888">AAPL</text>
+  <text x="580" y="456" font-family="Georgia, serif" font-size="14" fill="#f87171" text-anchor="end">$275.15 (-6.12%)</text>
+  <text x="100" y="482" font-family="Georgia, serif" font-size="14" fill="#888888">MSFT</text>
+  <text x="580" y="482" font-family="Georgia, serif" font-size="14" fill="#f87171" text-anchor="end">$352.83 (-3.46%)</text>
+  <text x="100" y="508" font-family="Georgia, serif" font-size="14" fill="#888888">AMZN</text>
+  <text x="580" y="508" font-family="Georgia, serif" font-size="14" fill="#f87171" text-anchor="end">$227.01 (-3.10%)</text>
+  <text x="100" y="534" font-family="Georgia, serif" font-size="14" fill="#888888">META</text>
+  <text x="580" y="534" font-family="Georgia, serif" font-size="14" fill="#f87171" text-anchor="end">$542.87 (-2.65%)</text>
+  <text x="100" y="560" font-family="Georgia, serif" font-size="14" fill="#888888">NVDA</text>
+  <text x="580" y="560" font-family="Georgia, serif" font-size="14" fill="#f87171" text-anchor="end">$195.74 (-1.64%)</text>
+  <text x="100" y="586" font-family="Georgia, serif" font-size="13" fill="#408040">S&amp;P 500 -0.01% · DOW +0.14% (지수는 보합)</text>
+
+  <!-- Right panel — Korea impact -->
+  <rect x="640" y="392" width="560" height="210" rx="4" fill="#f87171" fill-opacity="0.04" stroke="#f87171" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="920" y="424" font-family="Georgia, serif" font-size="15" fill="#904040" text-anchor="middle" letter-spacing="2">한국 시장 전이</text>
+  <text x="660" y="456" font-family="Georgia, serif" font-size="14" fill="#888888">KOSPI</text>
+  <text x="1180" y="456" font-family="Georgia, serif" font-size="14" fill="#f87171" text-anchor="end">8,173 (-8.48%)</text>
+  <text x="660" y="482" font-family="Georgia, serif" font-size="14" fill="#888888">삼성전자</text>
+  <text x="1180" y="482" font-family="Georgia, serif" font-size="14" fill="#f87171" text-anchor="end">325,500원 (-9.21%)</text>
+  <text x="660" y="508" font-family="Georgia, serif" font-size="14" fill="#888888">SK하이닉스</text>
+  <text x="1180" y="508" font-family="Georgia, serif" font-size="14" fill="#f87171" text-anchor="end">2,600,000원 (-10.87%)</text>
+  <text x="660" y="534" font-family="Georgia, serif" font-size="14" fill="#888888">WTI</text>
+  <text x="1180" y="534" font-family="Georgia, serif" font-size="14" fill="#f87171" text-anchor="end">$70.41 (-2.10%)</text>
+  <text x="660" y="560" font-family="Georgia, serif" font-size="14" fill="#888888">BTC</text>
+  <text x="1180" y="560" font-family="Georgia, serif" font-size="14" fill="#f87171" text-anchor="end">$59,762 (-2.02%)</text>
+  <text x="920" y="588" font-family="Georgia, serif" font-size="12" fill="#604040" text-anchor="middle">USD/KRW 1,545.34원 보합 — 외국인 패닉 아님</text>
+
+  <!-- Bottom accent bar -->
+  <rect x="0" y="716" width="1280" height="4" fill="#7a9d6e" fill-opacity="0.5"/>
+</svg>
