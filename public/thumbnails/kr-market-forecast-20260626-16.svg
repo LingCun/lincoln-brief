@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#060e0a"/>
+      <stop offset="100%" style="stop-color:#0c1a10"/>
+    </linearGradient>
+    <linearGradient id="greenLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#34d399;stop-opacity:0"/>
+      <stop offset="30%" style="stop-color:#34d399;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#34d399;stop-opacity:0.3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Grid lines -->
+  <line x1="0" y1="240" x2="1280" y2="240" stroke="#34d399" stroke-opacity="0.05" stroke-width="1"/>
+  <line x1="0" y1="480" x2="1280" y2="480" stroke="#34d399" stroke-opacity="0.05" stroke-width="1"/>
+  <line x1="640" y1="0" x2="640" y2="720" stroke="#34d399" stroke-opacity="0.05" stroke-width="1"/>
+
+  <!-- Top green accent bar -->
+  <rect x="0" y="0" width="1280" height="4" fill="url(#greenLine)"/>
+
+  <!-- Lincoln Brief mark -->
+  <text x="48" y="54" font-family="Georgia, serif" font-size="18" fill="#34d399" font-weight="bold" letter-spacing="3">LINCOLN BRIEF</text>
+  <text x="48" y="76" font-family="Georgia, serif" font-size="13" fill="#1a8060" letter-spacing="2">KR MARKET · 시장 예측</text>
+
+  <!-- Edition label -->
+  <rect x="1010" y="28" width="230" height="36" rx="3" fill="#34d399" fill-opacity="0.1" stroke="#34d399" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="1125" y="51" font-family="Georgia, serif" font-size="14" fill="#50c090" text-anchor="middle" letter-spacing="1">2026.06.26 · 마감 후 전망</text>
+
+  <!-- Diamond decorative -->
+  <polygon points="640,108 649,117 640,126 631,117" fill="#34d399" fill-opacity="0.8"/>
+
+  <!-- Main headline -->
+  <text x="640" y="162" font-family="Georgia, serif" font-size="18" fill="#50c090" text-anchor="middle" letter-spacing="4">KOSPI 마감 후 시나리오</text>
+  <text x="640" y="232" font-family="Georgia, serif" font-size="72" fill="#ffffff" text-anchor="middle" font-weight="bold">8,411.21</text>
+  <text x="640" y="264" font-family="Georgia, serif" font-size="20" fill="#9090a0" text-anchor="middle">KOSPI 마감 · 8,000선 방어 성공</text>
+
+  <!-- Recovery badge -->
+  <rect x="280" y="280" width="340" height="36" rx="3" fill="#34d399" fill-opacity="0.1" stroke="#34d399" stroke-opacity="0.5" stroke-width="1"/>
+  <text x="450" y="303" font-family="Georgia, serif" font-size="15" fill="#34d399" text-anchor="middle">장중 저점 8,173.00 → +237pt 회복</text>
+  <rect x="660" y="280" width="340" height="36" rx="3" fill="#34d399" fill-opacity="0.1" stroke="#34d399" stroke-opacity="0.5" stroke-width="1"/>
+  <text x="830" y="303" font-family="Georgia, serif" font-size="15" fill="#34d399" text-anchor="middle">USD/KRW 1,536.41 (-0.41%) 원화강세</text>
+
+  <!-- Divider -->
+  <line x1="160" y1="336" x2="1120" y2="336" stroke="#34d399" stroke-opacity="0.2" stroke-width="1"/>
+
+  <!-- Scenario table header -->
+  <text x="640" y="370" font-family="Georgia, serif" font-size="16" fill="#34d399" text-anchor="middle" letter-spacing="3">향후 4주 시나리오</text>
+
+  <!-- Scenario rows -->
+  <rect x="80" y="386" width="1120" height="48" rx="3" fill="#34d399" fill-opacity="0.06" stroke="#34d399" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="106" y="415" font-family="Georgia, serif" font-size="14" fill="#4ade80" font-weight="bold">불 20%</text>
+  <text x="240" y="415" font-family="Georgia, serif" font-size="14" fill="#c0c0d0">AAPL $285↑·NVDA $205↑·USD/KRW 1,520원대</text>
+  <text x="1174" y="415" font-family="Georgia, serif" font-size="14" fill="#4ade80" text-anchor="end">8,700~9,000</text>
+
+  <rect x="80" y="442" width="1120" height="48" rx="3" fill="#d8b878" fill-opacity="0.04" stroke="#d8b878" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="106" y="471" font-family="Georgia, serif" font-size="14" fill="#d8b878" font-weight="bold">베이스 45%</text>
+  <text x="240" y="471" font-family="Georgia, serif" font-size="14" fill="#c0c0d0">AAPL $265~285·NVDA $185~205·환율 1,530~1,550</text>
+  <text x="1174" y="471" font-family="Georgia, serif" font-size="14" fill="#d8b878" text-anchor="end">8,000~8,500 박스</text>
+
+  <rect x="80" y="498" width="1120" height="48" rx="3" fill="#f87171" fill-opacity="0.04" stroke="#f87171" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="106" y="527" font-family="Georgia, serif" font-size="14" fill="#f87171" font-weight="bold">베어 25%</text>
+  <text x="240" y="527" font-family="Georgia, serif" font-size="14" fill="#c0c0d0">AAPL $255↓·NVDA $180↓·USD/KRW 1,570↑</text>
+  <text x="1174" y="527" font-family="Georgia, serif" font-size="14" fill="#f87171" text-anchor="end">7,500 테스트</text>
+
+  <rect x="80" y="554" width="1120" height="48" rx="3" fill="#9090a0" fill-opacity="0.04" stroke="#9090a0" stroke-opacity="0.15" stroke-width="1"/>
+  <text x="106" y="583" font-family="Georgia, serif" font-size="14" fill="#9090a0" font-weight="bold">블랙 스완 10%</text>
+  <text x="240" y="583" font-family="Georgia, serif" font-size="14" fill="#808090">글로벌 금융 패닉·미국 경기 급속 악화</text>
+  <text x="1174" y="583" font-family="Georgia, serif" font-size="14" fill="#9090a0" text-anchor="end">7,000 이하</text>
+
+  <!-- Key variables -->
+  <line x1="80" y1="618" x2="1200" y2="618" stroke="#34d399" stroke-opacity="0.15" stroke-width="1"/>
+  <text x="640" y="644" font-family="Georgia, serif" font-size="13" fill="#50c090" text-anchor="middle">핵심 변수: AAPL $270 방어 / NVDA $190 방어 / USD/KRW 1,540원 이탈 여부</text>
+
+  <!-- Bottom note -->
+  <text x="640" y="690" font-family="Georgia, serif" font-size="12" fill="#203020" text-anchor="middle">본 콘텐츠는 정보 제공 목적이며 투자 권유가 아닙니다 · lincoln-brief.vercel.app</text>
+</svg>
