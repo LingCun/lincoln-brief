@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d0a14"/>
+      <stop offset="100%" style="stop-color:#160e20"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Top accent line (purple for forecast) -->
+  <rect x="0" y="0" width="1280" height="3" fill="#a070e0"/>
+
+  <!-- Left accent bar -->
+  <rect x="60" y="60" width="4" height="600" fill="#a070e0" opacity="0.3"/>
+
+  <!-- Edition label top right -->
+  <rect x="1010" y="36" width="240" height="32" rx="4" fill="#a070e0" opacity="0.12"/>
+  <text x="1130" y="57" font-family="Georgia, serif" font-size="13" fill="#a070e0" text-anchor="middle" letter-spacing="2">US MARKET FORECAST</text>
+
+  <!-- Date -->
+  <text x="88" y="100" font-family="Georgia, serif" font-size="16" fill="#a070e0" opacity="0.7" letter-spacing="3">2026.06.27 · SLOT 06</text>
+
+  <!-- Diamond separator -->
+  <polygon points="88,118 95,125 88,132 81,125" fill="#a070e0"/>
+
+  <!-- Main headline -->
+  <text x="88" y="180" font-family="Georgia, serif" font-size="32" fill="#c0a0f0" opacity="0.9">PCE 통과 후 시장 포지션</text>
+  <text x="88" y="255" font-family="Georgia, serif" font-size="76" font-weight="bold" fill="#f0e8d8">7,354</text>
+
+  <!-- S&P change -->
+  <polygon points="310,258 330,234 290,234" fill="#e05252"/>
+  <text x="342" y="254" font-family="Georgia, serif" font-size="32" fill="#e05252" font-weight="bold">−0.05%</text>
+
+  <!-- Subtitle -->
+  <text x="88" y="300" font-family="Georgia, serif" font-size="20" fill="#c0b090" opacity="0.85">7,300 방어 유지 · PCE 보합 통과 · 다음: FOMC 7/28~29</text>
+
+  <!-- Divider line -->
+  <line x1="88" y1="332" x2="760" y2="332" stroke="#a070e0" stroke-width="1" opacity="0.3"/>
+
+  <!-- Scenario table -->
+  <text x="88" y="370" font-family="Georgia, serif" font-size="14" fill="#a070e0" opacity="0.7" letter-spacing="2">4주 시나리오</text>
+
+  <!-- Scenario A -->
+  <rect x="88" y="385" width="260" height="60" rx="4" fill="#a070e0" opacity="0.12"/>
+  <text x="218" y="407" font-family="Georgia, serif" font-size="12" fill="#a070e0" text-anchor="middle" letter-spacing="1">베이스 40%</text>
+  <text x="218" y="432" font-family="Georgia, serif" font-size="18" fill="#f0e8d8" text-anchor="middle" font-weight="bold">7,200~7,500</text>
+
+  <!-- Scenario B -->
+  <rect x="368" y="385" width="220" height="60" rx="4" fill="#52c47a" opacity="0.1"/>
+  <text x="478" y="407" font-family="Georgia, serif" font-size="12" fill="#52c47a" text-anchor="middle" letter-spacing="1">반등 25%</text>
+  <text x="478" y="432" font-family="Georgia, serif" font-size="18" fill="#f0e8d8" text-anchor="middle" font-weight="bold">7,500+</text>
+
+  <!-- Scenario C -->
+  <rect x="608" y="385" width="220" height="60" rx="4" fill="#e05252" opacity="0.1"/>
+  <text x="718" y="407" font-family="Georgia, serif" font-size="12" fill="#e05252" text-anchor="middle" letter-spacing="1">하락 25%</text>
+  <text x="718" y="432" font-family="Georgia, serif" font-size="18" fill="#f0e8d8" text-anchor="middle" font-weight="bold">7,200↓</text>
+
+  <!-- Key levels -->
+  <text x="88" y="488" font-family="Georgia, serif" font-size="13" fill="#a070e0" opacity="0.7" letter-spacing="1">핵심 레벨</text>
+  <text x="88" y="515" font-family="Georgia, serif" font-size="17" fill="#c0b090">저항 7,400 · 현재 7,354 · 지지 7,300 · 위험 7,200</text>
+
+  <!-- Key data row -->
+  <line x1="88" y1="540" x2="760" y2="540" stroke="#a070e0" stroke-width="1" opacity="0.2"/>
+
+  <text x="88" y="575" font-family="Georgia, serif" font-size="13" fill="#a070e0" opacity="0.6" letter-spacing="1">US10Y</text>
+  <text x="88" y="598" font-family="Georgia, serif" font-size="20" font-weight="bold" fill="#f0e8d8">4.372%</text>
+  <polygon points="172,584 182,598 162,598" fill="#52c47a"/>
+
+  <text x="300" y="575" font-family="Georgia, serif" font-size="13" fill="#a070e0" opacity="0.6" letter-spacing="1">WTI</text>
+  <text x="300" y="598" font-family="Georgia, serif" font-size="20" font-weight="bold" fill="#f0e8d8">$69.45</text>
+  <polygon points="386,598 376,584 396,584" fill="#e05252"/>
+  <text x="401" y="598" font-family="Georgia, serif" font-size="14" fill="#e05252">−3.43%</text>
+
+  <text x="520" y="575" font-family="Georgia, serif" font-size="13" fill="#a070e0" opacity="0.6" letter-spacing="1">NVDA</text>
+  <text x="520" y="598" font-family="Georgia, serif" font-size="20" font-weight="bold" fill="#f0e8d8">$192.53</text>
+  <text x="640" y="598" font-family="Georgia, serif" font-size="14" fill="#e05252">30일 신저점</text>
+
+  <!-- Bottom -->
+  <text x="88" y="660" font-family="Georgia, serif" font-size="15" fill="#a070e0" opacity="0.6">다음 분기점: FOMC 7/28~29 · Q2 실적 시즌</text>
+
+  <!-- Lincoln Brief branding -->
+  <text x="88" y="695" font-family="Georgia, serif" font-size="12" fill="#a070e0" opacity="0.4" letter-spacing="2">LINCOLN BRIEF</text>
+</svg>

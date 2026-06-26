@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0e16"/>
+      <stop offset="100%" style="stop-color:#141a24"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4a9eff;stop-opacity:0.8"/>
+      <stop offset="100%" style="stop-color:#4a9eff;stop-opacity:0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Top accent line (blue for tech) -->
+  <rect x="0" y="0" width="1280" height="3" fill="#4a9eff"/>
+
+  <!-- Left accent bar -->
+  <rect x="60" y="60" width="4" height="600" fill="#4a9eff" opacity="0.3"/>
+
+  <!-- Edition label top right -->
+  <rect x="1030" y="36" width="210" height="32" rx="4" fill="#4a9eff" opacity="0.12"/>
+  <text x="1135" y="57" font-family="Georgia, serif" font-size="13" fill="#4a9eff" text-anchor="middle" letter-spacing="2">US STOCK ANALYSIS</text>
+
+  <!-- Date -->
+  <text x="88" y="100" font-family="Georgia, serif" font-size="16" fill="#4a9eff" opacity="0.7" letter-spacing="3">2026.06.27 · SLOT 06</text>
+
+  <!-- Diamond separator -->
+  <polygon points="88,118 95,125 88,132 81,125" fill="#4a9eff"/>
+
+  <!-- Ticker label -->
+  <text x="88" y="180" font-family="Georgia, serif" font-size="42" font-weight="bold" fill="#f0e8d8" letter-spacing="4">MSFT</text>
+  <text x="88" y="220" font-family="Georgia, serif" font-size="20" fill="#4a9eff" opacity="0.8">Microsoft Corporation</text>
+
+  <!-- Main price -->
+  <text x="88" y="310" font-family="Georgia, serif" font-size="80" font-weight="bold" fill="#f0e8d8">$372.97</text>
+
+  <!-- Change indicator -->
+  <polygon points="430,283 450,307 410,307" fill="#52c47a"/>
+  <text x="462" y="307" font-family="Georgia, serif" font-size="34" fill="#52c47a" font-weight="bold">+5.71%</text>
+
+  <!-- Subtitle -->
+  <text x="88" y="355" font-family="Georgia, serif" font-size="20" fill="#c0b090" opacity="0.85">전일 $352.83 대비 +$20.14 · AI 소프트웨어 vs AI 반도체 분화</text>
+
+  <!-- Divider line -->
+  <line x1="88" y1="385" x2="760" y2="385" stroke="#4a9eff" stroke-width="1" opacity="0.3"/>
+
+  <!-- Stats grid -->
+  <!-- Row 1 -->
+  <text x="88" y="425" font-family="Georgia, serif" font-size="13" fill="#4a9eff" opacity="0.6" letter-spacing="1">30일 전</text>
+  <text x="88" y="450" font-family="Georgia, serif" font-size="22" font-weight="bold" fill="#f0e8d8">$409.43</text>
+
+  <text x="280" y="425" font-family="Georgia, serif" font-size="13" fill="#4a9eff" opacity="0.6" letter-spacing="1">30일 고점</text>
+  <text x="280" y="450" font-family="Georgia, serif" font-size="22" font-weight="bold" fill="#f0e8d8">$460.52</text>
+
+  <text x="480" y="425" font-family="Georgia, serif" font-size="13" fill="#4a9eff" opacity="0.6" letter-spacing="1">고점 대비</text>
+  <text x="480" y="450" font-family="Georgia, serif" font-size="22" font-weight="bold" fill="#e05252">−19.0%</text>
+
+  <!-- Row 2: comparison -->
+  <text x="88" y="500" font-family="Georgia, serif" font-size="13" fill="#4a9eff" opacity="0.6" letter-spacing="1">NVDA (비교)</text>
+  <text x="88" y="525" font-family="Georgia, serif" font-size="22" font-weight="bold" fill="#f0e8d8">$192.53</text>
+  <polygon points="222,525 212,511 232,511" fill="#e05252"/>
+  <text x="237" y="525" font-family="Georgia, serif" font-size="16" fill="#e05252">−1.64% / 30일 신저점</text>
+
+  <!-- Row 3: scenario -->
+  <text x="88" y="575" font-family="Georgia, serif" font-size="14" fill="#4a9eff" opacity="0.7">베이스(40%) — $350~$420 박스 소화 · Q2 실적(7월)이 방향 결정</text>
+
+  <!-- Bottom labels -->
+  <text x="88" y="640" font-family="Georgia, serif" font-size="14" fill="#4a9eff" opacity="0.6" letter-spacing="1">S&amp;P 500</text>
+  <text x="88" y="663" font-family="Georgia, serif" font-size="20" font-weight="bold" fill="#f0e8d8">7,354.02</text>
+  <polygon points="192,663 182,649 202,649" fill="#e05252"/>
+  <text x="207" y="663" font-family="Georgia, serif" font-size="14" fill="#e05252">−0.05%</text>
+
+  <text x="350" y="640" font-family="Georgia, serif" font-size="14" fill="#4a9eff" opacity="0.6" letter-spacing="1">US10Y</text>
+  <text x="350" y="663" font-family="Georgia, serif" font-size="20" font-weight="bold" fill="#f0e8d8">4.372%</text>
+
+  <!-- Lincoln Brief branding -->
+  <text x="88" y="700" font-family="Georgia, serif" font-size="12" fill="#4a9eff" opacity="0.4" letter-spacing="2">LINCOLN BRIEF</text>
+</svg>
