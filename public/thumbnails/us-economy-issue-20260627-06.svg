@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0c1008"/>
+      <stop offset="100%" style="stop-color:#141a10"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Top accent line (green for economy) -->
+  <rect x="0" y="0" width="1280" height="3" fill="#52c47a"/>
+
+  <!-- Left accent bar -->
+  <rect x="60" y="60" width="4" height="600" fill="#52c47a" opacity="0.3"/>
+
+  <!-- Edition label top right -->
+  <rect x="1020" y="36" width="230" height="32" rx="4" fill="#52c47a" opacity="0.12"/>
+  <text x="1135" y="57" font-family="Georgia, serif" font-size="13" fill="#52c47a" text-anchor="middle" letter-spacing="2">US ECONOMY ISSUE</text>
+
+  <!-- Date -->
+  <text x="88" y="100" font-family="Georgia, serif" font-size="16" fill="#52c47a" opacity="0.7" letter-spacing="3">2026.06.27 · SLOT 06</text>
+
+  <!-- Diamond separator -->
+  <polygon points="88,118 95,125 88,132 81,125" fill="#52c47a"/>
+
+  <!-- Main headline -->
+  <text x="88" y="185" font-family="Georgia, serif" font-size="36" fill="#a0d8b0" opacity="0.9">PCE 발표 후 보합 통과</text>
+
+  <!-- Big text -->
+  <text x="88" y="280" font-family="Georgia, serif" font-size="66" font-weight="bold" fill="#f0e8d8">FOMC 7/28</text>
+  <text x="88" y="340" font-family="Georgia, serif" font-size="30" fill="#52c47a">다음 분기점 — Fed 인하 시계</text>
+
+  <!-- Subtitle -->
+  <text x="88" y="385" font-family="Georgia, serif" font-size="19" fill="#c0b090" opacity="0.85">PCE 보합 통과 · US10Y 4.372% 소폭 하락 · 에너지 디플레이션 지속</text>
+
+  <!-- Divider line -->
+  <line x1="88" y1="412" x2="760" y2="412" stroke="#52c47a" stroke-width="1" opacity="0.3"/>
+
+  <!-- Key indicators -->
+  <text x="88" y="450" font-family="Georgia, serif" font-size="13" fill="#52c47a" opacity="0.7" letter-spacing="2">주요 거시 지표</text>
+
+  <!-- Row 1 -->
+  <text x="88" y="480" font-family="Georgia, serif" font-size="13" fill="#52c47a" opacity="0.6" letter-spacing="1">WTI (에너지)</text>
+  <text x="88" y="505" font-family="Georgia, serif" font-size="22" font-weight="bold" fill="#f0e8d8">$69.45</text>
+  <polygon points="187,505 177,491 197,491" fill="#e05252"/>
+  <text x="202" y="505" font-family="Georgia, serif" font-size="16" fill="#e05252">−3.43%</text>
+  <text x="280" y="505" font-family="Georgia, serif" font-size="13" fill="#52c47a" opacity="0.7">$70 이하 유지</text>
+
+  <text x="520" y="480" font-family="Georgia, serif" font-size="13" fill="#52c47a" opacity="0.6" letter-spacing="1">GOLD</text>
+  <text x="520" y="505" font-family="Georgia, serif" font-size="22" font-weight="bold" fill="#f0e8d8">$4,082.70</text>
+  <polygon points="646,491 656,505 636,505" fill="#52c47a"/>
+  <text x="661" y="505" font-family="Georgia, serif" font-size="16" fill="#52c47a">+1.30%</text>
+
+  <!-- Row 2 -->
+  <text x="88" y="545" font-family="Georgia, serif" font-size="13" fill="#52c47a" opacity="0.6" letter-spacing="1">US10Y</text>
+  <text x="88" y="570" font-family="Georgia, serif" font-size="22" font-weight="bold" fill="#f0e8d8">4.372%</text>
+  <polygon points="183,556 193,570 173,570" fill="#52c47a"/>
+  <text x="198" y="570" font-family="Georgia, serif" font-size="16" fill="#52c47a">전일 4.392% 대비 ↓</text>
+
+  <text x="520" y="545" font-family="Georgia, serif" font-size="13" fill="#52c47a" opacity="0.6" letter-spacing="1">USD/KRW</text>
+  <text x="520" y="570" font-family="Georgia, serif" font-size="22" font-weight="bold" fill="#f0e8d8">1,534.35</text>
+  <polygon points="652,556 662,570 642,570" fill="#52c47a"/>
+  <text x="667" y="570" font-family="Georgia, serif" font-size="16" fill="#52c47a">−0.78%</text>
+
+  <!-- Scenario -->
+  <rect x="88" y="600" width="650" height="48" rx="6" fill="#52c47a" opacity="0.08"/>
+  <text x="413" y="620" font-family="Georgia, serif" font-size="14" fill="#52c47a" text-anchor="middle" letter-spacing="1">베이스(40%) — 에너지 완화 지속 · 9월 인하 준비 경로</text>
+  <text x="413" y="640" font-family="Georgia, serif" font-size="14" fill="#a0d8b0" text-anchor="middle">S&amp;P 500 7,354 보합 통과 · 다음: FOMC 7/28~29</text>
+
+  <!-- Lincoln Brief branding -->
+  <text x="88" y="695" font-family="Georgia, serif" font-size="12" fill="#52c47a" opacity="0.4" letter-spacing="2">LINCOLN BRIEF</text>
+</svg>
