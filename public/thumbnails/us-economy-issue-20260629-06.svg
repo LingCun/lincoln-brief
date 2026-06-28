@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#081408"/>
+      <stop offset="100%" style="stop-color:#0f1e10"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Top accent line (green for economy-issue) -->
+  <rect x="0" y="0" width="1280" height="3" fill="#52c87a"/>
+
+  <!-- Left accent bar -->
+  <rect x="60" y="60" width="4" height="600" fill="#52c87a" opacity="0.3"/>
+
+  <!-- Edition label top right -->
+  <rect x="985" y="36" width="255" height="32" rx="4" fill="#52c87a" opacity="0.15"/>
+  <text x="1112" y="57" font-family="Georgia, serif" font-size="13" fill="#52c87a" text-anchor="middle" letter-spacing="2">US ECONOMY ISSUE</text>
+
+  <!-- Date -->
+  <text x="88" y="100" font-family="Georgia, serif" font-size="16" fill="#52c87a" opacity="0.7" letter-spacing="3">2026.06.29 · SLOT 06</text>
+
+  <!-- Diamond separator -->
+  <polygon points="88,118 95,125 88,132 81,125" fill="#52c87a"/>
+
+  <!-- Main headline -->
+  <text x="88" y="185" font-family="Georgia, serif" font-size="46" font-weight="bold" fill="#d8f0e0">FOMC까지</text>
+  <text x="88" y="260" font-family="Georgia, serif" font-size="80" font-weight="bold" fill="#52c87a">4주</text>
+  <text x="88" y="322" font-family="Georgia, serif" font-size="28" fill="#d8f0e0">고용(7/3)이 Fed 경로를 결정한다</text>
+
+  <!-- Divider line -->
+  <line x1="88" y1="356" x2="750" y2="356" stroke="#52c87a" stroke-width="1" opacity="0.4"/>
+
+  <!-- Data rows -->
+  <text x="88" y="396" font-family="Georgia, serif" font-size="18" fill="#52c87a">US10Y</text>
+  <text x="210" y="396" font-family="Georgia, serif" font-size="18" fill="#f0fff4">4.372%</text>
+  <polygon points="345,401 355,385 335,385" fill="#52c87a"/>
+  <text x="363" y="396" font-family="Georgia, serif" font-size="16" fill="#52c87a">소폭 하락</text>
+  <text x="510" y="396" font-family="Georgia, serif" font-size="14" fill="#a0c8a0">PCE 발표 후</text>
+
+  <text x="88" y="432" font-family="Georgia, serif" font-size="18" fill="#52c87a">Gold</text>
+  <text x="210" y="432" font-family="Georgia, serif" font-size="18" fill="#f0fff4">$4,096.30</text>
+  <polygon points="345,437 355,421 335,421" fill="#52c87a"/>
+  <text x="363" y="432" font-family="Georgia, serif" font-size="16" fill="#52c87a">+1.63%</text>
+  <text x="510" y="432" font-family="Georgia, serif" font-size="14" fill="#a0c8a0">완화 기대 + 안전자산</text>
+
+  <text x="88" y="468" font-family="Georgia, serif" font-size="18" fill="#52c87a">USD/KRW</text>
+  <text x="240" y="468" font-family="Georgia, serif" font-size="18" fill="#f0fff4">1,535</text>
+  <polygon points="345,473 363,449 327,449" fill="#e05252"/>
+  <text x="373" y="468" font-family="Georgia, serif" font-size="16" fill="#e05252">−0.74%</text>
+  <text x="510" y="468" font-family="Georgia, serif" font-size="14" fill="#a0c8a0">달러 약세</text>
+
+  <text x="88" y="504" font-family="Georgia, serif" font-size="18" fill="#52c87a">BTC</text>
+  <text x="210" y="504" font-family="Georgia, serif" font-size="18" fill="#f0fff4">$59,615</text>
+  <polygon points="345,509 363,485 327,485" fill="#e05252"/>
+  <text x="373" y="504" font-family="Georgia, serif" font-size="16" fill="#e05252">−0.54%</text>
+  <text x="510" y="504" font-family="Georgia, serif" font-size="14" fill="#a0c8a0">안전자산 이동에서 소외</text>
+
+  <!-- Divider -->
+  <line x1="88" y1="530" x2="750" y2="530" stroke="#52c87a" stroke-width="1" opacity="0.2"/>
+
+  <!-- Key signal -->
+  <rect x="88" y="546" width="320" height="32" rx="4" fill="#52c87a" opacity="0.15"/>
+  <text x="248" y="567" font-family="Georgia, serif" font-size="15" fill="#52c87a" text-anchor="middle" font-weight="bold">Gold↑ + US10Y↓ = Fed 완화 기대 반영</text>
+
+  <!-- Warning -->
+  <text x="88" y="608" font-family="Georgia, serif" font-size="15" fill="#e05252" opacity="0.8">⚠ WTI $69.23 — $70 회복 시 이란 에너지 충격 경보</text>
+
+  <!-- Lincoln Brief mark -->
+  <text x="88" y="660" font-family="Georgia, serif" font-size="20" fill="#52c87a" opacity="0.6" letter-spacing="2">LINCOLN BRIEF</text>
+
+  <!-- Bottom accent line -->
+  <rect x="0" y="717" width="1280" height="3" fill="#52c87a" opacity="0.4"/>
+</svg>
