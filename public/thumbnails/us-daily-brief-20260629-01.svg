@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f0c08"/>
+      <stop offset="100%" style="stop-color:#1a1510"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Top accent line -->
+  <rect x="0" y="0" width="1280" height="3" fill="#d8b878"/>
+
+  <!-- Left accent bar -->
+  <rect x="60" y="60" width="4" height="600" fill="#d8b878" opacity="0.3"/>
+
+  <!-- Edition label top right -->
+  <rect x="1030" y="36" width="210" height="32" rx="4" fill="#d8b878" opacity="0.15"/>
+  <text x="1135" y="57" font-family="Georgia, serif" font-size="13" fill="#d8b878" text-anchor="middle" letter-spacing="2">US DAILY BRIEF</text>
+
+  <!-- Date -->
+  <text x="88" y="100" font-family="Georgia, serif" font-size="16" fill="#d8b878" opacity="0.7" letter-spacing="3">2026.06.29 · SLOT 01</text>
+
+  <!-- Diamond separator -->
+  <polygon points="88,118 95,125 88,132 81,125" fill="#d8b878"/>
+
+  <!-- Main headline -->
+  <text x="88" y="190" font-family="Georgia, serif" font-size="58" font-weight="bold" fill="#f0e8d8">S&amp;P 500</text>
+  <text x="88" y="265" font-family="Georgia, serif" font-size="72" font-weight="bold" fill="#d8b878">7,354.02</text>
+
+  <!-- Change indicator (down) -->
+  <polygon points="430,272 448,248 412,248" fill="#e05252"/>
+  <text x="460" y="268" font-family="Georgia, serif" font-size="28" fill="#e05252" font-weight="bold">−0.05%</text>
+
+  <!-- Subtitle -->
+  <text x="88" y="315" font-family="Georgia, serif" font-size="20" fill="#c0b090" opacity="0.85">LLY $1,208(+7.1%) $1,200 돌파 · MSFT +5.7% · AVGO −3.7%</text>
+
+  <!-- Divider line -->
+  <line x1="88" y1="348" x2="700" y2="348" stroke="#d8b878" stroke-width="1" opacity="0.4"/>
+
+  <!-- Geopolitical risk badge -->
+  <rect x="88" y="360" width="240" height="34" rx="4" fill="#e05252" opacity="0.2"/>
+  <text x="208" y="382" font-family="Georgia, serif" font-size="15" fill="#e05252" text-anchor="middle" font-weight="bold">⚠ 미-이란 교전 지속</text>
+
+  <!-- Data rows -->
+  <text x="88" y="432" font-family="Georgia, serif" font-size="18" fill="#d8b878">Gold</text>
+  <text x="200" y="432" font-family="Georgia, serif" font-size="18" fill="#f0e8d8">$4,096.30</text>
+  <polygon points="330,437 340,421 320,421" fill="#52c87a"/>
+  <text x="348" y="432" font-family="Georgia, serif" font-size="16" fill="#52c87a">+1.63%</text>
+
+  <text x="88" y="468" font-family="Georgia, serif" font-size="18" fill="#d8b878">WTI</text>
+  <text x="200" y="468" font-family="Georgia, serif" font-size="18" fill="#f0e8d8">$69.23</text>
+  <polygon points="330,473 348,449 312,449" fill="#e05252"/>
+  <text x="358" y="468" font-family="Georgia, serif" font-size="16" fill="#e05252">−3.74%</text>
+
+  <text x="88" y="504" font-family="Georgia, serif" font-size="18" fill="#d8b878">US10Y</text>
+  <text x="200" y="504" font-family="Georgia, serif" font-size="18" fill="#f0e8d8">4.372%</text>
+  <text x="320" y="504" font-family="Georgia, serif" font-size="16" fill="#c0b090">소폭 하락</text>
+
+  <text x="88" y="540" font-family="Georgia, serif" font-size="18" fill="#d8b878">USD/KRW</text>
+  <text x="230" y="540" font-family="Georgia, serif" font-size="18" fill="#f0e8d8">1,535</text>
+  <polygon points="320,545 338,521 302,521" fill="#e05252"/>
+  <text x="348" y="540" font-family="Georgia, serif" font-size="16" fill="#e05252">−0.74%</text>
+
+  <!-- Divider -->
+  <line x1="88" y1="570" x2="700" y2="570" stroke="#d8b878" stroke-width="1" opacity="0.2"/>
+
+  <!-- Week ahead note -->
+  <text x="88" y="600" font-family="Georgia, serif" font-size="17" fill="#d8b878" opacity="0.8">6/30 Q2 분기말 리밸런싱 · FOMC 7/28~29 카운트다운</text>
+
+  <!-- Lincoln Brief mark -->
+  <text x="88" y="660" font-family="Georgia, serif" font-size="20" fill="#d8b878" opacity="0.6" letter-spacing="2">LINCOLN BRIEF</text>
+
+  <!-- Bottom accent line -->
+  <rect x="0" y="717" width="1280" height="3" fill="#d8b878" opacity="0.4"/>
+</svg>

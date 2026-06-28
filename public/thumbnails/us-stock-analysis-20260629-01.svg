@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#080c10"/>
+      <stop offset="100%" style="stop-color:#101820"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Top accent line -->
+  <rect x="0" y="0" width="1280" height="3" fill="#4a9eff"/>
+
+  <!-- Left accent bar -->
+  <rect x="60" y="60" width="4" height="600" fill="#4a9eff" opacity="0.3"/>
+
+  <!-- Edition label top right -->
+  <rect x="1010" y="36" width="230" height="32" rx="4" fill="#4a9eff" opacity="0.15"/>
+  <text x="1125" y="57" font-family="Georgia, serif" font-size="13" fill="#4a9eff" text-anchor="middle" letter-spacing="2">US STOCK ANALYSIS</text>
+
+  <!-- Date -->
+  <text x="88" y="100" font-family="Georgia, serif" font-size="16" fill="#4a9eff" opacity="0.7" letter-spacing="3">2026.06.29 · SLOT 01</text>
+
+  <!-- Diamond separator -->
+  <polygon points="88,118 95,125 88,132 81,125" fill="#4a9eff"/>
+
+  <!-- Ticker label -->
+  <text x="88" y="190" font-family="Georgia, serif" font-size="58" font-weight="bold" fill="#f0f4f8">LLY</text>
+  <text x="230" y="190" font-family="Georgia, serif" font-size="28" fill="#8ab8e8" opacity="0.8">Eli Lilly</text>
+
+  <!-- Price -->
+  <text x="88" y="275" font-family="Georgia, serif" font-size="72" font-weight="bold" fill="#4a9eff">$1,208.12</text>
+
+  <!-- Change indicator (up) -->
+  <polygon points="560,248 580,272 540,272" fill="#52c87a"/>
+  <text x="592" y="268" font-family="Georgia, serif" font-size="28" fill="#52c87a" font-weight="bold">+7.13%</text>
+
+  <!-- $1,200 breakthrough badge -->
+  <rect x="88" y="295" width="310" height="36" rx="4" fill="#52c87a" opacity="0.2"/>
+  <text x="243" y="319" font-family="Georgia, serif" font-size="16" fill="#52c87a" text-anchor="middle" font-weight="bold">$1,200 심리선 돌파 확인 ✓</text>
+
+  <!-- Divider line -->
+  <line x1="88" y1="350" x2="720" y2="350" stroke="#4a9eff" stroke-width="1" opacity="0.4"/>
+
+  <!-- Catalysts section -->
+  <text x="88" y="385" font-family="Georgia, serif" font-size="16" fill="#4a9eff" opacity="0.8" letter-spacing="1">CATALYSTS</text>
+
+  <text x="88" y="420" font-family="Georgia, serif" font-size="17" fill="#f0f4f8">• Leerink 목표주가 $1,232 상향 (Outperform 유지)</text>
+  <text x="88" y="452" font-family="Georgia, serif" font-size="17" fill="#f0f4f8">• EMA, Jaypirca CLL 전 치료 라인 지지</text>
+  <text x="88" y="484" font-family="Georgia, serif" font-size="17" fill="#f0f4f8">• BioArctic AB 신경퇴행성 질환 연구 협업</text>
+
+  <!-- Divider -->
+  <line x1="88" y1="510" x2="720" y2="510" stroke="#4a9eff" stroke-width="1" opacity="0.2"/>
+
+  <!-- 30-day data -->
+  <text x="88" y="545" font-family="Georgia, serif" font-size="17" fill="#8ab8e8">30일 저점</text>
+  <text x="230" y="545" font-family="Georgia, serif" font-size="17" fill="#f0f4f8">$988.09</text>
+  <text x="88" y="575" font-family="Georgia, serif" font-size="17" fill="#8ab8e8">30일 수익률</text>
+  <text x="230" y="575" font-family="Georgia, serif" font-size="17" fill="#52c87a" font-weight="bold">+20.0%</text>
+  <text x="88" y="605" font-family="Georgia, serif" font-size="17" fill="#8ab8e8">베이스 시나리오</text>
+  <text x="230" y="605" font-family="Georgia, serif" font-size="17" fill="#f0f4f8">$1,150~$1,280 박스 (40%)</text>
+
+  <!-- Lincoln Brief mark -->
+  <text x="88" y="660" font-family="Georgia, serif" font-size="20" fill="#4a9eff" opacity="0.5" letter-spacing="2">LINCOLN BRIEF</text>
+
+  <!-- Bottom accent line -->
+  <rect x="0" y="717" width="1280" height="3" fill="#4a9eff" opacity="0.4"/>
+</svg>
