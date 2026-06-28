@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#140808"/>
+      <stop offset="100%" style="stop-color:#200f0f"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Top accent line (red for market-forecast) -->
+  <rect x="0" y="0" width="1280" height="3" fill="#e05252"/>
+
+  <!-- Left accent bar -->
+  <rect x="60" y="60" width="4" height="600" fill="#e05252" opacity="0.3"/>
+
+  <!-- Edition label top right -->
+  <rect x="990" y="36" width="250" height="32" rx="4" fill="#e05252" opacity="0.15"/>
+  <text x="1115" y="57" font-family="Georgia, serif" font-size="13" fill="#e05252" text-anchor="middle" letter-spacing="2">US MARKET FORECAST</text>
+
+  <!-- Date -->
+  <text x="88" y="100" font-family="Georgia, serif" font-size="16" fill="#e05252" opacity="0.7" letter-spacing="3">2026.06.29 · SLOT 06</text>
+
+  <!-- Diamond separator -->
+  <polygon points="88,118 95,125 88,132 81,125" fill="#e05252"/>
+
+  <!-- Main headline -->
+  <text x="88" y="185" font-family="Georgia, serif" font-size="38" font-weight="bold" fill="#f0d8d8">Q2 실적 시즌 카운트다운</text>
+  <text x="88" y="250" font-family="Georgia, serif" font-size="64" font-weight="bold" fill="#e05252">4주</text>
+  <text x="200" y="250" font-family="Georgia, serif" font-size="42" font-weight="bold" fill="#f0d8d8"> 남았다</text>
+
+  <!-- Subtitle -->
+  <text x="88" y="298" font-family="Georgia, serif" font-size="18" fill="#c0a0a0" opacity="0.9">S&amp;P 500 7,354.02 · AI 소프트웨어 vs 반도체 분화 가속</text>
+
+  <!-- Divider line -->
+  <line x1="88" y1="330" x2="700" y2="330" stroke="#e05252" stroke-width="1" opacity="0.4"/>
+
+  <!-- Timeline -->
+  <text x="88" y="368" font-family="Georgia, serif" font-size="17" fill="#e05252" font-weight="bold">타임라인</text>
+
+  <text x="88" y="404" font-family="Georgia, serif" font-size="16" fill="#e08888">6/30</text>
+  <text x="165" y="404" font-family="Georgia, serif" font-size="16" fill="#f0d8d8">Q2 분기말 리밸런싱</text>
+
+  <text x="88" y="434" font-family="Georgia, serif" font-size="16" fill="#e08888">7/3</text>
+  <text x="165" y="434" font-family="Georgia, serif" font-size="16" fill="#f0d8d8">고용보고서 — Fed 경로 첫 관문</text>
+
+  <text x="88" y="464" font-family="Georgia, serif" font-size="16" fill="#e08888">7/21~25</text>
+  <text x="200" y="464" font-family="Georgia, serif" font-size="16" fill="#f0d8d8">빅테크 실적 집중 (GOOGL, TSLA, MSFT)</text>
+
+  <text x="88" y="494" font-family="Georgia, serif" font-size="16" fill="#e05252" font-weight="bold">7/28~29</text>
+  <text x="200" y="494" font-family="Georgia, serif" font-size="16" fill="#e05252" font-weight="bold">FOMC — 최대 이벤트 밀집</text>
+
+  <!-- Divider -->
+  <line x1="88" y1="520" x2="700" y2="520" stroke="#e05252" stroke-width="1" opacity="0.2"/>
+
+  <!-- AI split indicator -->
+  <text x="88" y="555" font-family="Georgia, serif" font-size="16" fill="#e05252">MSFT</text>
+  <text x="178" y="555" font-family="Georgia, serif" font-size="16" fill="#52c87a">+5.71% (30일 −8.9%)</text>
+  <text x="440" y="555" font-family="Georgia, serif" font-size="16" fill="#e05252">NVDA</text>
+  <text x="530" y="555" font-family="Georgia, serif" font-size="16" fill="#e05252">−1.64% (30일 −18.3%)</text>
+
+  <!-- Base scenario -->
+  <text x="88" y="595" font-family="Georgia, serif" font-size="16" fill="#e05252" opacity="0.8">베이스(40%): 7,200~7,500 박스 → Q2 실적 후 방향 결정</text>
+
+  <!-- Lincoln Brief mark -->
+  <text x="88" y="658" font-family="Georgia, serif" font-size="20" fill="#e05252" opacity="0.6" letter-spacing="2">LINCOLN BRIEF</text>
+
+  <!-- Bottom accent line -->
+  <rect x="0" y="717" width="1280" height="3" fill="#e05252" opacity="0.4"/>
+</svg>

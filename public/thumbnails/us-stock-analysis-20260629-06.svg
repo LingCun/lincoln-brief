@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#080c14"/>
+      <stop offset="100%" style="stop-color:#101820"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Top accent line (blue for stock-analysis) -->
+  <rect x="0" y="0" width="1280" height="3" fill="#5287e0"/>
+
+  <!-- Left accent bar -->
+  <rect x="60" y="60" width="4" height="600" fill="#5287e0" opacity="0.3"/>
+
+  <!-- Edition label top right -->
+  <rect x="1000" y="36" width="240" height="32" rx="4" fill="#5287e0" opacity="0.15"/>
+  <text x="1120" y="57" font-family="Georgia, serif" font-size="13" fill="#5287e0" text-anchor="middle" letter-spacing="2">US STOCK ANALYSIS</text>
+
+  <!-- Date -->
+  <text x="88" y="100" font-family="Georgia, serif" font-size="16" fill="#5287e0" opacity="0.7" letter-spacing="3">2026.06.29 · SLOT 06</text>
+
+  <!-- Diamond separator -->
+  <polygon points="88,118 95,125 88,132 81,125" fill="#5287e0"/>
+
+  <!-- Ticker label -->
+  <text x="88" y="185" font-family="Georgia, serif" font-size="42" font-weight="bold" fill="#c8d8f0">MICROSOFT</text>
+  <text x="88" y="240" font-family="Georgia, serif" font-size="30" fill="#5287e0" letter-spacing="4">MSFT</text>
+
+  <!-- Price -->
+  <text x="88" y="320" font-family="Georgia, serif" font-size="80" font-weight="bold" fill="#f0f4ff">$372.97</text>
+
+  <!-- Change indicator (up - green) -->
+  <polygon points="520,320 540,295 500,295" fill="#52c87a"/>
+  <text x="552" y="316" font-family="Georgia, serif" font-size="34" fill="#52c87a" font-weight="bold">+5.71%</text>
+
+  <!-- Subtitle -->
+  <text x="88" y="368" font-family="Georgia, serif" font-size="18" fill="#a0b8d8" opacity="0.9">전일 $352.83 · 30일 고점 $460.52 · 30일 저점 $352.83</text>
+
+  <!-- Divider line -->
+  <line x1="88" y1="400" x2="750" y2="400" stroke="#5287e0" stroke-width="1" opacity="0.4"/>
+
+  <!-- AI 분화 badge -->
+  <rect x="88" y="415" width="300" height="34" rx="4" fill="#5287e0" opacity="0.2"/>
+  <text x="238" y="437" font-family="Georgia, serif" font-size="15" fill="#88aaee" text-anchor="middle" font-weight="bold">AI 소프트웨어 vs AI 반도체 이분화</text>
+
+  <!-- Comparison rows -->
+  <text x="88" y="488" font-family="Georgia, serif" font-size="18" fill="#5287e0">MSFT (오늘)</text>
+  <text x="310" y="488" font-family="Georgia, serif" font-size="18" fill="#f0f4ff">+5.71%</text>
+  <text x="420" y="488" font-family="Georgia, serif" font-size="15" fill="#52c87a">AI 소프트웨어 ▲</text>
+
+  <text x="88" y="524" font-family="Georgia, serif" font-size="18" fill="#5287e0">NVDA (오늘)</text>
+  <text x="310" y="524" font-family="Georgia, serif" font-size="18" fill="#f0f4ff">−1.64%</text>
+  <text x="420" y="524" font-family="Georgia, serif" font-size="15" fill="#e05252">AI 반도체 ▼ 30일 신저점</text>
+
+  <text x="88" y="560" font-family="Georgia, serif" font-size="18" fill="#5287e0">MSFT (30일)</text>
+  <text x="310" y="560" font-family="Georgia, serif" font-size="18" fill="#f0f4ff">−8.9%</text>
+  <text x="420" y="560" font-family="Georgia, serif" font-size="15" fill="#c0b090">$409.43 → $372.97</text>
+
+  <!-- Divider -->
+  <line x1="88" y1="585" x2="700" y2="585" stroke="#5287e0" stroke-width="1" opacity="0.2"/>
+
+  <!-- Bottom note -->
+  <text x="88" y="615" font-family="Georgia, serif" font-size="16" fill="#5287e0" opacity="0.8">Q2 실적(7월) Azure 성장률 확인이 다음 관문</text>
+
+  <!-- Lincoln Brief mark -->
+  <text x="88" y="666" font-family="Georgia, serif" font-size="20" fill="#5287e0" opacity="0.6" letter-spacing="2">LINCOLN BRIEF</text>
+
+  <!-- Bottom accent line -->
+  <rect x="0" y="717" width="1280" height="3" fill="#5287e0" opacity="0.4"/>
+</svg>
