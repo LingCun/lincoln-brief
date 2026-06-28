@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#100808"/>
+      <stop offset="100%" style="stop-color:#1a1010"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Top accent line -->
+  <rect x="0" y="0" width="1280" height="3" fill="#e05252"/>
+
+  <!-- Left accent bar -->
+  <rect x="60" y="60" width="4" height="600" fill="#e05252" opacity="0.3"/>
+
+  <!-- Edition label top right -->
+  <rect x="1010" y="36" width="230" height="32" rx="4" fill="#e05252" opacity="0.15"/>
+  <text x="1125" y="57" font-family="Georgia, serif" font-size="13" fill="#e05252" text-anchor="middle" letter-spacing="2">US MARKET FORECAST</text>
+
+  <!-- Date -->
+  <text x="88" y="100" font-family="Georgia, serif" font-size="16" fill="#e05252" opacity="0.7" letter-spacing="3">2026.06.29 · SLOT 01</text>
+
+  <!-- Diamond separator -->
+  <polygon points="88,118 95,125 88,132 81,125" fill="#e05252"/>
+
+  <!-- Main headline -->
+  <text x="88" y="185" font-family="Georgia, serif" font-size="44" font-weight="bold" fill="#f8e8e8">이란 리스크 + 분기말</text>
+  <text x="88" y="250" font-family="Georgia, serif" font-size="58" font-weight="bold" fill="#e05252">월요일 시나리오</text>
+
+  <!-- Current level -->
+  <text x="88" y="300" font-family="Georgia, serif" font-size="22" fill="#c8a8a8" opacity="0.85">S&amp;P 500 출발점: 7,354.02</text>
+
+  <!-- Divider line -->
+  <line x1="88" y1="330" x2="800" y2="330" stroke="#e05252" stroke-width="1" opacity="0.4"/>
+
+  <!-- Level map -->
+  <text x="88" y="365" font-family="Georgia, serif" font-size="16" fill="#e05252" opacity="0.8" letter-spacing="1">LEVEL MAP</text>
+
+  <!-- Levels with bars -->
+  <rect x="88" y="378" width="320" height="28" rx="3" fill="#52c87a" opacity="0.15"/>
+  <text x="100" y="397" font-family="Georgia, serif" font-size="16" fill="#52c87a">7,500+</text>
+  <text x="250" y="397" font-family="Georgia, serif" font-size="15" fill="#c8d8c8">저항선 (돌파 미달)</text>
+
+  <rect x="88" y="414" width="320" height="28" rx="3" fill="#d8b878" opacity="0.25"/>
+  <text x="100" y="433" font-family="Georgia, serif" font-size="16" fill="#d8b878" font-weight="bold">7,354</text>
+  <text x="250" y="433" font-family="Georgia, serif" font-size="15" fill="#d8b878">▶ 현재 위치</text>
+
+  <rect x="88" y="450" width="320" height="28" rx="3" fill="#4a9eff" opacity="0.15"/>
+  <text x="100" y="469" font-family="Georgia, serif" font-size="16" fill="#4a9eff">7,300</text>
+  <text x="250" y="469" font-family="Georgia, serif" font-size="15" fill="#a8c8e8">지지선 (방어 중)</text>
+
+  <rect x="88" y="486" width="320" height="28" rx="3" fill="#e05252" opacity="0.15"/>
+  <text x="100" y="505" font-family="Georgia, serif" font-size="16" fill="#e05252">7,200</text>
+  <text x="250" y="505" font-family="Georgia, serif" font-size="15" fill="#e8a8a8">하방 리스크 진입선</text>
+
+  <!-- Scenarios -->
+  <text x="500" y="365" font-family="Georgia, serif" font-size="16" fill="#e05252" opacity="0.8" letter-spacing="1">SCENARIOS</text>
+  <text x="500" y="400" font-family="Georgia, serif" font-size="16" fill="#f0e8e8">베이스 (40%): 이란 현상유지 · 7,200~7,500 박스</text>
+  <text x="500" y="432" font-family="Georgia, serif" font-size="16" fill="#52c87a">불 (20%): 이란 완화 · 7,400~7,600</text>
+  <text x="500" y="464" font-family="Georgia, serif" font-size="16" fill="#e05252">베어 (30%): 이란 확전 · 7,000~7,200</text>
+  <text x="500" y="496" font-family="Georgia, serif" font-size="16" fill="#e05252" opacity="0.6">블랙스완 (10%): 원유 공급 충격 · 6,700↓</text>
+
+  <!-- Divider -->
+  <line x1="88" y1="530" x2="800" y2="530" stroke="#e05252" stroke-width="1" opacity="0.2"/>
+
+  <!-- FOMC countdown -->
+  <text x="88" y="565" font-family="Georgia, serif" font-size="17" fill="#e05252">FOMC 7/28~29</text>
+  <text x="260" y="565" font-family="Georgia, serif" font-size="17" fill="#f0e8e8">· 약 4주 카운트다운</text>
+  <text x="88" y="595" font-family="Georgia, serif" font-size="17" fill="#e05252">6/30 분기말</text>
+  <text x="230" y="595" font-family="Georgia, serif" font-size="17" fill="#f0e8e8">· 기관 리밸런싱 변동성</text>
+  <text x="88" y="625" font-family="Georgia, serif" font-size="17" fill="#e05252">고용보고서</text>
+  <text x="230" y="625" font-family="Georgia, serif" font-size="17" fill="#f0e8e8">· 7/3 다음 핵심 데이터</text>
+
+  <!-- Lincoln Brief mark -->
+  <text x="88" y="680" font-family="Georgia, serif" font-size="20" fill="#e05252" opacity="0.5" letter-spacing="2">LINCOLN BRIEF</text>
+
+  <!-- Bottom accent line -->
+  <rect x="0" y="717" width="1280" height="3" fill="#e05252" opacity="0.4"/>
+</svg>
