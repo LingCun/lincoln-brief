@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#140a0a"/>
+      <stop offset="100%" style="stop-color:#1e1010"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Top accent line (red for market-forecast) -->
+  <rect x="0" y="0" width="1280" height="3" fill="#d45b5b"/>
+
+  <!-- Left accent bar -->
+  <rect x="60" y="60" width="4" height="600" fill="#d45b5b" opacity="0.3"/>
+
+  <!-- Edition label top right -->
+  <rect x="1000" y="36" width="240" height="32" rx="4" fill="#d45b5b" opacity="0.15"/>
+  <text x="1120" y="57" font-family="Georgia, serif" font-size="13" fill="#d45b5b" text-anchor="middle" letter-spacing="2">US MARKET FORECAST</text>
+
+  <!-- Date + slot -->
+  <text x="88" y="100" font-family="Georgia, serif" font-size="16" fill="#d45b5b" opacity="0.7" letter-spacing="3">2026.06.30 · SLOT 01</text>
+
+  <!-- Diamond separator -->
+  <polygon points="88,118 95,125 88,132 81,125" fill="#d45b5b"/>
+
+  <!-- Main label -->
+  <text x="88" y="185" font-family="Georgia, serif" font-size="36" fill="#e09090" letter-spacing="2">Q2 마감 → Q3 개막</text>
+
+  <!-- S&P level -->
+  <text x="88" y="270" font-family="Georgia, serif" font-size="68" font-weight="bold" fill="#f0e8d8">S&amp;P 7,431</text>
+  <polygon points="600,242 620,266 580,266" fill="#52c87a"/>
+  <text x="630" y="262" font-family="Georgia, serif" font-size="28" fill="#52c87a" font-weight="bold">+1.05%</text>
+
+  <!-- Subtitle -->
+  <text x="88" y="310" font-family="Georgia, serif" font-size="18" fill="#c09090" opacity="0.85">NASDAQ 25,763(+1.84%) · WTI $70.99(+2.54%)</text>
+
+  <!-- Divider -->
+  <line x1="88" y1="345" x2="720" y2="345" stroke="#d45b5b" stroke-width="1" opacity="0.4"/>
+
+  <!-- Level map -->
+  <text x="88" y="382" font-family="Georgia, serif" font-size="16" fill="#d45b5b" font-weight="bold">레벨 지도</text>
+
+  <text x="88" y="412" font-family="Georgia, serif" font-size="16" fill="#9090a0">7,600+</text>
+  <text x="200" y="412" font-family="Georgia, serif" font-size="15" fill="#7090a0">불 시나리오 목표</text>
+
+  <text x="88" y="440" font-family="Georgia, serif" font-size="16" fill="#c09090">7,500</text>
+  <text x="200" y="440" font-family="Georgia, serif" font-size="15" fill="#c09090">1차 저항선</text>
+
+  <rect x="82" y="450" width="500" height="26" rx="3" fill="#d45b5b" opacity="0.1"/>
+  <text x="88" y="468" font-family="Georgia, serif" font-size="16" fill="#f0e8d8" font-weight="bold">7,431</text>
+  <text x="200" y="468" font-family="Georgia, serif" font-size="15" fill="#f0e8d8">현재 위치 ← 여기</text>
+
+  <text x="88" y="496" font-family="Georgia, serif" font-size="16" fill="#c09090">7,300</text>
+  <text x="200" y="496" font-family="Georgia, serif" font-size="15" fill="#c09090">지지선 (방어 중)</text>
+
+  <text x="88" y="522" font-family="Georgia, serif" font-size="16" fill="#9090a0">7,000</text>
+  <text x="200" y="522" font-family="Georgia, serif" font-size="15" fill="#7090a0">베어 구간</text>
+
+  <!-- FOMC countdown -->
+  <rect x="88" y="548" width="500" height="38" rx="4" fill="#d45b5b" opacity="0.12"/>
+  <text x="108" y="572" font-family="Georgia, serif" font-size="17" fill="#e09090" font-weight="bold">FOMC 7/28~29 · 29일 카운트다운</text>
+
+  <!-- Scenario -->
+  <text x="88" y="618" font-family="Georgia, serif" font-size="15" fill="#c09090">베이스(45%): 7,300~7,600 박스 · Q2 실적 시즌이 방향 결정</text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="680" width="1280" height="40" fill="#d45b5b" opacity="0.05"/>
+  <text x="88" y="706" font-family="Georgia, serif" font-size="14" fill="#d45b5b" opacity="0.6">lincoln-brief.vercel.app</text>
+  <text x="1192" y="706" font-family="Georgia, serif" font-size="14" fill="#d45b5b" opacity="0.6" text-anchor="end">— Lincoln</text>
+</svg>

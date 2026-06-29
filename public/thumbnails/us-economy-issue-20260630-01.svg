@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a140a"/>
+      <stop offset="100%" style="stop-color:#10201a"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Top accent line (green for economy-issue) -->
+  <rect x="0" y="0" width="1280" height="3" fill="#52c87a"/>
+
+  <!-- Left accent bar -->
+  <rect x="60" y="60" width="4" height="600" fill="#52c87a" opacity="0.3"/>
+
+  <!-- Edition label top right -->
+  <rect x="1000" y="36" width="240" height="32" rx="4" fill="#52c87a" opacity="0.12"/>
+  <text x="1120" y="57" font-family="Georgia, serif" font-size="13" fill="#52c87a" text-anchor="middle" letter-spacing="2">US ECONOMY ISSUE</text>
+
+  <!-- Date + slot -->
+  <text x="88" y="100" font-family="Georgia, serif" font-size="16" fill="#52c87a" opacity="0.7" letter-spacing="3">2026.06.30 · SLOT 01</text>
+
+  <!-- Diamond separator -->
+  <polygon points="88,118 95,125 88,132 81,125" fill="#52c87a"/>
+
+  <!-- Main topic label -->
+  <text x="88" y="180" font-family="Georgia, serif" font-size="32" fill="#80d8a0" letter-spacing="1">자산 구도 역전 — WTI vs Gold</text>
+
+  <!-- WTI highlight -->
+  <text x="88" y="258" font-family="Georgia, serif" font-size="28" fill="#80d8a0">WTI</text>
+  <text x="180" y="258" font-family="Georgia, serif" font-size="52" font-weight="bold" fill="#f0e8d8">$70.99</text>
+  <polygon points="490,232 512,258 468,258" fill="#52c87a"/>
+  <text x="522" y="254" font-family="Georgia, serif" font-size="30" fill="#52c87a" font-weight="bold">+2.54%</text>
+
+  <!-- Gold highlight -->
+  <text x="88" y="318" font-family="Georgia, serif" font-size="28" fill="#d8b878">Gold</text>
+  <text x="200" y="318" font-family="Georgia, serif" font-size="52" font-weight="bold" fill="#f0e8d8">$4,044</text>
+  <polygon points="490,318 512,294 468,294" fill="#e05252"/>
+  <text x="522" y="314" font-family="Georgia, serif" font-size="30" fill="#e05252" font-weight="bold">−0.85%</text>
+
+  <!-- Divider -->
+  <line x1="88" y1="354" x2="720" y2="354" stroke="#52c87a" stroke-width="1" opacity="0.4"/>
+
+  <!-- Comparison badge -->
+  <rect x="88" y="368" width="520" height="36" rx="4" fill="#52c87a" opacity="0.10"/>
+  <text x="108" y="391" font-family="Georgia, serif" font-size="16" fill="#80d8a0">어제: Gold↑+WTI↓ → 오늘: Gold↓+WTI↑  하루 만에 역전</text>
+
+  <!-- Iran signal -->
+  <text x="88" y="438" font-family="Georgia, serif" font-size="17" fill="#80d8a0">이란 리스크</text>
+  <text x="240" y="438" font-family="Georgia, serif" font-size="16" fill="#f0e8d8">"불확실성" → "공급 차질 우려"로 이동</text>
+
+  <!-- Key markers -->
+  <text x="88" y="474" font-family="Georgia, serif" font-size="17" fill="#52c87a">US10Y</text>
+  <text x="200" y="474" font-family="Georgia, serif" font-size="17" fill="#f0e8d8">4.376%</text>
+  <text x="310" y="474" font-family="Georgia, serif" font-size="15" fill="#80d8a0">소폭 상승</text>
+
+  <text x="88" y="508" font-family="Georgia, serif" font-size="17" fill="#52c87a">BTC</text>
+  <text x="200" y="508" font-family="Georgia, serif" font-size="17" fill="#f0e8d8">$60,561</text>
+  <polygon points="310,512 320,497 300,497" fill="#52c87a"/>
+  <text x="328" y="508" font-family="Georgia, serif" font-size="16" fill="#52c87a">+1.73% 위험 선호 회복</text>
+
+  <!-- Watch level -->
+  <rect x="88" y="538" width="460" height="36" rx="4" fill="#52c87a" opacity="0.10"/>
+  <text x="108" y="561" font-family="Georgia, serif" font-size="16" fill="#80d8a0">WTI $73 돌파 시 에너지 인플레 복귀 경계</text>
+
+  <!-- Next trigger -->
+  <text x="88" y="614" font-family="Georgia, serif" font-size="15" fill="#80d8a0" opacity="0.8">다음 분기점: 고용보고서(7/3) · WTI 방향 지속 여부</text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="680" width="1280" height="40" fill="#52c87a" opacity="0.05"/>
+  <text x="88" y="706" font-family="Georgia, serif" font-size="14" fill="#52c87a" opacity="0.6">lincoln-brief.vercel.app</text>
+  <text x="1192" y="706" font-family="Georgia, serif" font-size="14" fill="#52c87a" opacity="0.6" text-anchor="end">— Lincoln</text>
+</svg>
