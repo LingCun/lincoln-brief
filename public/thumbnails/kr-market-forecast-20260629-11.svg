@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#060e0a"/>
+      <stop offset="100%" style="stop-color:#0c1a10"/>
+    </linearGradient>
+    <linearGradient id="greenLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#34d399;stop-opacity:0"/>
+      <stop offset="30%" style="stop-color:#34d399;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#34d399;stop-opacity:0.3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Grid lines -->
+  <line x1="0" y1="240" x2="1280" y2="240" stroke="#34d399" stroke-opacity="0.05" stroke-width="1"/>
+  <line x1="0" y1="480" x2="1280" y2="480" stroke="#34d399" stroke-opacity="0.05" stroke-width="1"/>
+  <line x1="640" y1="0" x2="640" y2="720" stroke="#34d399" stroke-opacity="0.05" stroke-width="1"/>
+
+  <!-- Top green accent bar -->
+  <rect x="0" y="0" width="1280" height="4" fill="url(#greenLine)"/>
+
+  <!-- Lincoln Brief mark -->
+  <text x="48" y="54" font-family="Georgia, serif" font-size="18" fill="#34d399" font-weight="bold" letter-spacing="3">LINCOLN BRIEF</text>
+  <text x="48" y="76" font-family="Georgia, serif" font-size="13" fill="#1a8060" letter-spacing="2">KR MARKET · 시장 예측</text>
+
+  <!-- Edition label -->
+  <rect x="1010" y="28" width="230" height="36" rx="3" fill="#34d399" fill-opacity="0.1" stroke="#34d399" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="1125" y="51" font-family="Georgia, serif" font-size="14" fill="#50c090" text-anchor="middle" letter-spacing="1">2026.06.29 · 11:00 KST</text>
+
+  <!-- Diamond decorative -->
+  <polygon points="640,108 649,117 640,126 631,117" fill="#34d399" fill-opacity="0.8"/>
+
+  <!-- Main headline -->
+  <text x="640" y="162" font-family="Georgia, serif" font-size="17" fill="#30a070" text-anchor="middle" letter-spacing="3">KOSPI vs KOSDAQ 이분화 시나리오</text>
+
+  <!-- Two-box visual -->
+  <!-- Left: KOSPI box -->
+  <rect x="140" y="185" width="400" height="170" rx="5" fill="#f87171" fill-opacity="0.07" stroke="#f87171" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="340" y="215" font-family="Georgia, serif" font-size="14" fill="#f87171" text-anchor="middle" letter-spacing="2">KOSPI (반도체)</text>
+  <text x="340" y="275" font-family="Georgia, serif" font-size="52" fill="#ffffff" text-anchor="middle" font-weight="bold">8,332.30</text>
+  <polygon points="296,294 310,314 324,294" fill="#f87171"/>
+  <text x="340" y="320" font-family="Georgia, serif" font-size="28" fill="#f87171" text-anchor="middle" font-weight="bold">-0.94%</text>
+  <text x="340" y="346" font-family="Georgia, serif" font-size="12" fill="#504040" text-anchor="middle">삼성전자 -5.08% · SK하이닉스 -2.77%</text>
+
+  <!-- Right: KOSDAQ box -->
+  <rect x="740" y="185" width="400" height="170" rx="5" fill="#34d399" fill-opacity="0.07" stroke="#34d399" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="940" y="215" font-family="Georgia, serif" font-size="14" fill="#34d399" text-anchor="middle" letter-spacing="2">KOSDAQ (비반도체)</text>
+  <text x="940" y="275" font-family="Georgia, serif" font-size="52" fill="#ffffff" text-anchor="middle" font-weight="bold">910.42</text>
+  <polygon points="916,314 930,294 944,314" fill="#34d399"/>
+  <text x="940" y="320" font-family="Georgia, serif" font-size="28" fill="#34d399" text-anchor="middle" font-weight="bold">+6.94%</text>
+  <text x="940" y="346" font-family="Georgia, serif" font-size="12" fill="#305040" text-anchor="middle">LG에너지솔루션 +17.35% · 셀트리온 +8.20%</text>
+
+  <!-- Arrow between them -->
+  <text x="640" y="290" font-family="Georgia, serif" font-size="24" fill="#34d399" text-anchor="middle">←→</text>
+  <text x="640" y="330" font-family="Georgia, serif" font-size="13" fill="#1a6040" text-anchor="middle">7.88%pt</text>
+
+  <!-- Divider -->
+  <line x1="160" y1="374" x2="1120" y2="374" stroke="#34d399" stroke-opacity="0.2" stroke-width="1"/>
+
+  <!-- Two key variables -->
+  <rect x="80" y="392" width="520" height="80" rx="4" fill="#34d399" fill-opacity="0.05" stroke="#34d399" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="340" y="416" font-family="Georgia, serif" font-size="14" fill="#34d399" text-anchor="middle" letter-spacing="2">핵심 변수 1 — NVDA</text>
+  <text x="100" y="440" font-family="Georgia, serif" font-size="13" fill="#808080">$192.53 (30일 -18.3%)</text>
+  <text x="588" y="440" font-family="Georgia, serif" font-size="13" fill="#c0c0c0" text-anchor="end">$190 방어 → 반도체 안정 신호</text>
+  <text x="100" y="462" font-family="Georgia, serif" font-size="13" fill="#808080">$180 이탈 시</text>
+  <text x="588" y="462" font-family="Georgia, serif" font-size="13" fill="#f87171" text-anchor="end">삼성전자 300,000원대 위험</text>
+
+  <rect x="640" y="392" width="560" height="80" rx="4" fill="#34d399" fill-opacity="0.05" stroke="#34d399" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="920" y="416" font-family="Georgia, serif" font-size="14" fill="#34d399" text-anchor="middle" letter-spacing="2">핵심 변수 2 — LG에너지솔루션</text>
+  <text x="660" y="440" font-family="Georgia, serif" font-size="13" fill="#808080">389,000원 (오늘 +17.35%)</text>
+  <text x="1180" y="440" font-family="Georgia, serif" font-size="13" fill="#c0c0c0" text-anchor="end">380,000원 이상 → KOSDAQ 추가 강세</text>
+  <text x="660" y="462" font-family="Georgia, serif" font-size="13" fill="#808080">370,000원 이하 복귀 시</text>
+  <text x="1180" y="462" font-family="Georgia, serif" font-size="13" fill="#f87171" text-anchor="end">오늘 급등 단기 반등 판정</text>
+
+  <!-- Scenario table -->
+  <rect x="80" y="488" width="1120" height="170" rx="4" fill="#34d399" fill-opacity="0.04" stroke="#34d399" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="640" y="514" font-family="Georgia, serif" font-size="15" fill="#34d399" text-anchor="middle" letter-spacing="2">KOSPI 향후 4주 시나리오</text>
+  <text x="100" y="540" font-family="Georgia, serif" font-size="13" fill="#4ade80">불 (20%)</text>
+  <text x="400" y="540" font-family="Georgia, serif" font-size="13" fill="#808080" text-anchor="middle">NVDA $200 회복·LG에솔 380,000원+</text>
+  <text x="1180" y="540" font-family="Georgia, serif" font-size="13" fill="#c0c0c0" text-anchor="end">KOSPI 8,500 이상</text>
+  <text x="100" y="565" font-family="Georgia, serif" font-size="13" fill="#d8b878">베이스 (45%)</text>
+  <text x="400" y="565" font-family="Georgia, serif" font-size="13" fill="#808080" text-anchor="middle">NVDA $185~$200 · KOSDAQ 이분화 지속</text>
+  <text x="1180" y="565" font-family="Georgia, serif" font-size="13" fill="#c0c0c0" text-anchor="end">8,100~8,400 박스</text>
+  <text x="100" y="590" font-family="Georgia, serif" font-size="13" fill="#f87171">베어 (25%)</text>
+  <text x="400" y="590" font-family="Georgia, serif" font-size="13" fill="#808080" text-anchor="middle">NVDA $180 이하 · KOSDAQ 되돌림</text>
+  <text x="1180" y="590" font-family="Georgia, serif" font-size="13" fill="#c0c0c0" text-anchor="end">8,000선 재테스트</text>
+  <text x="100" y="615" font-family="Georgia, serif" font-size="13" fill="#9090a0">블랙 스완 (10%)</text>
+  <text x="400" y="615" font-family="Georgia, serif" font-size="13" fill="#808080" text-anchor="middle">글로벌 충격 · 원화 급등</text>
+  <text x="1180" y="615" font-family="Georgia, serif" font-size="13" fill="#c0c0c0" text-anchor="end">7,800선</text>
+  <line x1="100" y1="628" x2="1180" y2="628" stroke="#34d399" stroke-opacity="0.15" stroke-width="1"/>
+  <text x="100" y="648" font-family="Georgia, serif" font-size="12" fill="#304030">USD/KRW</text>
+  <text x="1180" y="648" font-family="Georgia, serif" font-size="12" fill="#9090a0" text-anchor="end">1,539.88원 (-0.43%) · 1,540원대 안정 여부 주시</text>
+
+  <!-- Bottom signature -->
+  <text x="640" y="700" font-family="Georgia, serif" font-size="12" fill="#203020" text-anchor="middle" letter-spacing="2">lincoln-brief.vercel.app</text>
+</svg>

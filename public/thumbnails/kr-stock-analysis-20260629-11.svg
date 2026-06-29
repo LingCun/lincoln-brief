@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#060c14"/>
+      <stop offset="100%" style="stop-color:#0f1824"/>
+    </linearGradient>
+    <linearGradient id="blueLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#5677b0;stop-opacity:0"/>
+      <stop offset="30%" style="stop-color:#5677b0;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#5677b0;stop-opacity:0.3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Grid lines -->
+  <line x1="0" y1="240" x2="1280" y2="240" stroke="#5677b0" stroke-opacity="0.05" stroke-width="1"/>
+  <line x1="0" y1="480" x2="1280" y2="480" stroke="#5677b0" stroke-opacity="0.05" stroke-width="1"/>
+  <line x1="640" y1="0" x2="640" y2="720" stroke="#5677b0" stroke-opacity="0.05" stroke-width="1"/>
+
+  <!-- Top blue accent bar -->
+  <rect x="0" y="0" width="1280" height="4" fill="url(#blueLine)"/>
+
+  <!-- Lincoln Brief mark -->
+  <text x="48" y="54" font-family="Georgia, serif" font-size="18" fill="#5677b0" font-weight="bold" letter-spacing="3">LINCOLN BRIEF</text>
+  <text x="48" y="76" font-family="Georgia, serif" font-size="13" fill="#3a5080" letter-spacing="2">KR MARKET · 종목 분석</text>
+
+  <!-- Edition label -->
+  <rect x="1010" y="28" width="230" height="36" rx="3" fill="#5677b0" fill-opacity="0.1" stroke="#5677b0" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="1125" y="51" font-family="Georgia, serif" font-size="14" fill="#7090c0" text-anchor="middle" letter-spacing="1">2026.06.29 · 11:00 KST</text>
+
+  <!-- Diamond decorative -->
+  <polygon points="640,108 649,117 640,126 631,117" fill="#4ade80" fill-opacity="0.8"/>
+
+  <!-- LG에너지솔루션 main display -->
+  <text x="640" y="165" font-family="Georgia, serif" font-size="18" fill="#7090c0" text-anchor="middle" letter-spacing="3">LG에너지솔루션 (373220.KS)</text>
+  <text x="640" y="262" font-family="Georgia, serif" font-size="84" fill="#ffffff" text-anchor="middle" font-weight="bold">389,000</text>
+  <text x="640" y="288" font-family="Georgia, serif" font-size="22" fill="#9090a0" text-anchor="middle">원</text>
+  <!-- Up triangle -->
+  <polygon points="478,302 496,282 514,302" fill="#4ade80"/>
+  <text x="528" y="307" font-family="Georgia, serif" font-size="36" fill="#4ade80" font-weight="bold">+17.35%</text>
+  <text x="640" y="342" font-family="Georgia, serif" font-size="16" fill="#405050" text-anchor="middle">+57,500원 · 전일 331,500원 대비</text>
+
+  <!-- Recovery note -->
+  <rect x="340" y="358" width="600" height="32" rx="3" fill="#5677b0" fill-opacity="0.08" stroke="#5677b0" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="640" y="379" font-family="Georgia, serif" font-size="14" fill="#7090c0" text-anchor="middle" letter-spacing="1">30일 최저점(331,500원)에서 급반등 · top12 상승폭 1위</text>
+
+  <!-- Divider -->
+  <line x1="160" y1="410" x2="1120" y2="410" stroke="#5677b0" stroke-opacity="0.2" stroke-width="1"/>
+
+  <!-- Left panel: 30-day history -->
+  <rect x="80" y="428" width="520" height="220" rx="4" fill="#5677b0" fill-opacity="0.05" stroke="#5677b0" stroke-opacity="0.25" stroke-width="1"/>
+  <text x="340" y="456" font-family="Georgia, serif" font-size="15" fill="#5677b0" text-anchor="middle" letter-spacing="2">30일 주요 국면</text>
+  <text x="100" y="484" font-family="Georgia, serif" font-size="13" fill="#606080">30일 전 시작</text>
+  <text x="580" y="484" font-family="Georgia, serif" font-size="13" fill="#c0c0d0" text-anchor="end">417,000원</text>
+  <text x="100" y="509" font-family="Georgia, serif" font-size="13" fill="#606080">30일 내 고점</text>
+  <text x="580" y="509" font-family="Georgia, serif" font-size="13" fill="#4ade80" text-anchor="end">458,000원</text>
+  <text x="100" y="534" font-family="Georgia, serif" font-size="13" fill="#606080">고점 이후 하락</text>
+  <text x="580" y="534" font-family="Georgia, serif" font-size="13" fill="#f87171" text-anchor="end">458,000 → 331,500원 (-27.6%)</text>
+  <text x="100" y="559" font-family="Georgia, serif" font-size="13" fill="#606080">전일 종가 (30일 최저)</text>
+  <text x="580" y="559" font-family="Georgia, serif" font-size="13" fill="#f87171" text-anchor="end">331,500원</text>
+  <text x="100" y="586" font-family="Georgia, serif" font-size="14" fill="#ffffff" font-weight="bold">오늘 마감</text>
+  <text x="580" y="586" font-family="Georgia, serif" font-size="14" fill="#4ade80" text-anchor="end" font-weight="bold">389,000원 (+17.35%)</text>
+  <text x="100" y="611" font-family="Georgia, serif" font-size="12" fill="#404060">고점 대비 현재</text>
+  <text x="580" y="611" font-family="Georgia, serif" font-size="12" fill="#9090a0" text-anchor="end">458,000원 대비 -14.85%</text>
+  <text x="100" y="636" font-family="Georgia, serif" font-size="12" fill="#404060">KOSDAQ 연동</text>
+  <text x="580" y="636" font-family="Georgia, serif" font-size="12" fill="#4ade80" text-anchor="end">KOSDAQ +6.94% 주도</text>
+
+  <!-- Right panel: scenario -->
+  <rect x="640" y="428" width="560" height="220" rx="4" fill="#5677b0" fill-opacity="0.05" stroke="#5677b0" stroke-opacity="0.25" stroke-width="1"/>
+  <text x="920" y="456" font-family="Georgia, serif" font-size="15" fill="#5677b0" text-anchor="middle" letter-spacing="2">향후 4주 시나리오</text>
+  <text x="660" y="484" font-family="Georgia, serif" font-size="13" fill="#4ade80">불 (20%)</text>
+  <text x="1180" y="484" font-family="Georgia, serif" font-size="13" fill="#c0c0d0" text-anchor="end">420,000원 이상</text>
+  <text x="660" y="509" font-family="Georgia, serif" font-size="13" fill="#d8b878">베이스 (50%)</text>
+  <text x="1180" y="509" font-family="Georgia, serif" font-size="13" fill="#c0c0d0" text-anchor="end">360,000~420,000원</text>
+  <text x="660" y="534" font-family="Georgia, serif" font-size="13" fill="#f87171">베어 (25%)</text>
+  <text x="1180" y="534" font-family="Georgia, serif" font-size="13" fill="#c0c0d0" text-anchor="end">370,000원 이하 복귀</text>
+  <text x="660" y="559" font-family="Georgia, serif" font-size="13" fill="#9090a0">블랙 스완 (5%)</text>
+  <text x="1180" y="559" font-family="Georgia, serif" font-size="13" fill="#c0c0d0" text-anchor="end">300,000원대 재진입</text>
+  <line x1="660" y1="573" x2="1180" y2="573" stroke="#5677b0" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="660" y="593" font-family="Georgia, serif" font-size="12" fill="#606080">베어 트리거</text>
+  <text x="1180" y="593" font-family="Georgia, serif" font-size="12" fill="#f87171" text-anchor="end">370,000원 이하 복귀</text>
+  <text x="660" y="618" font-family="Georgia, serif" font-size="12" fill="#606080">참조 변수</text>
+  <text x="1180" y="618" font-family="Georgia, serif" font-size="12" fill="#9090a0" text-anchor="end">KOSDAQ 방향 · NVDA $192.53</text>
+
+  <!-- Bottom signature -->
+  <text x="640" y="700" font-family="Georgia, serif" font-size="12" fill="#303050" text-anchor="middle" letter-spacing="2">lincoln-brief.vercel.app</text>
+</svg>
