@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#040e08"/>
+      <stop offset="100%" style="stop-color:#0a1810"/>
+    </linearGradient>
+    <linearGradient id="greenLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4ade80;stop-opacity:0"/>
+      <stop offset="30%" style="stop-color:#4ade80;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#4ade80;stop-opacity:0.3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Grid lines -->
+  <line x1="0" y1="240" x2="1280" y2="240" stroke="#4ade80" stroke-opacity="0.04" stroke-width="1"/>
+  <line x1="0" y1="480" x2="1280" y2="480" stroke="#4ade80" stroke-opacity="0.04" stroke-width="1"/>
+  <line x1="640" y1="0" x2="640" y2="720" stroke="#4ade80" stroke-opacity="0.04" stroke-width="1"/>
+
+  <!-- Top green accent bar -->
+  <rect x="0" y="0" width="1280" height="4" fill="url(#greenLine)"/>
+
+  <!-- Lincoln Brief mark -->
+  <text x="48" y="54" font-family="Georgia, serif" font-size="18" fill="#4ade80" font-weight="bold" letter-spacing="3">LINCOLN BRIEF</text>
+  <text x="48" y="76" font-family="Georgia, serif" font-size="13" fill="#2a6040" letter-spacing="2">KR MARKET · 경제 이슈</text>
+
+  <!-- Edition label -->
+  <rect x="990" y="28" width="250" height="36" rx="3" fill="#4ade80" fill-opacity="0.08" stroke="#4ade80" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="1115" y="51" font-family="Georgia, serif" font-size="14" fill="#70c090" text-anchor="middle" letter-spacing="1">2026.06.29 · 16:00 KST</text>
+
+  <!-- Diamond decorative -->
+  <polygon points="640,108 649,117 640,126 631,117" fill="#4ade80" fill-opacity="0.9"/>
+
+  <!-- Main headline -->
+  <text x="640" y="160" font-family="Georgia, serif" font-size="16" fill="#2a8050" text-anchor="middle" letter-spacing="2">한국 비반도체 성장주의 글로벌 재발견</text>
+
+  <!-- KOSDAQ center -->
+  <text x="640" y="210" font-family="Georgia, serif" font-size="14" fill="#4a9060" text-anchor="middle" letter-spacing="2">KOSDAQ</text>
+  <text x="640" y="290" font-family="Georgia, serif" font-size="80" fill="#ffffff" text-anchor="middle" font-weight="bold">920.57</text>
+  <!-- Up triangle -->
+  <polygon points="490,310 506,290 522,310" fill="#4ade80"/>
+  <text x="536" y="315" font-family="Georgia, serif" font-size="36" fill="#4ade80" font-weight="bold">+8.13%</text>
+  <text x="640" y="350" font-family="Georgia, serif" font-size="15" fill="#304830" text-anchor="middle">반도체 없이 만든 KOSDAQ 920pt</text>
+
+  <!-- Divider -->
+  <line x1="120" y1="376" x2="1160" y2="376" stroke="#4ade80" stroke-opacity="0.15" stroke-width="1"/>
+
+  <!-- Left panel: 비반도체 섹터 -->
+  <rect x="80" y="394" width="520" height="258" rx="4" fill="#4ade80" fill-opacity="0.04" stroke="#4ade80" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="340" y="422" font-family="Georgia, serif" font-size="14" fill="#4ade80" text-anchor="middle" letter-spacing="2">비반도체 급등 섹터</text>
+  <text x="100" y="452" font-family="Georgia, serif" font-size="13" fill="#608060">LG에너지솔루션 (2차전지)</text>
+  <text x="580" y="452" font-family="Georgia, serif" font-size="14" fill="#4ade80" text-anchor="end" font-weight="bold">+20.81%</text>
+  <text x="100" y="478" font-family="Georgia, serif" font-size="13" fill="#608060">POSCO홀딩스 (배터리 소재)</text>
+  <text x="580" y="478" font-family="Georgia, serif" font-size="14" fill="#4ade80" text-anchor="end" font-weight="bold">+9.18%</text>
+  <text x="100" y="504" font-family="Georgia, serif" font-size="13" fill="#608060">카카오 (IT 플랫폼)</text>
+  <text x="580" y="504" font-family="Georgia, serif" font-size="14" fill="#4ade80" text-anchor="end" font-weight="bold">+8.14%</text>
+  <text x="100" y="530" font-family="Georgia, serif" font-size="13" fill="#608060">셀트리온 (바이오시밀러)</text>
+  <text x="580" y="530" font-family="Georgia, serif" font-size="14" fill="#4ade80" text-anchor="end" font-weight="bold">+8.02%</text>
+  <text x="100" y="556" font-family="Georgia, serif" font-size="13" fill="#608060">삼성바이오로직스 (CMO)</text>
+  <text x="580" y="556" font-family="Georgia, serif" font-size="14" fill="#4ade80" text-anchor="end" font-weight="bold">+7.82%</text>
+  <line x1="100" y1="568" x2="580" y2="568" stroke="#4ade80" stroke-opacity="0.12" stroke-width="1"/>
+  <text x="100" y="590" font-family="Georgia, serif" font-size="13" fill="#406040">삼성전자 (반도체)</text>
+  <text x="580" y="590" font-family="Georgia, serif" font-size="13" fill="#f87171" text-anchor="end">-4.86%</text>
+  <text x="100" y="614" font-family="Georgia, serif" font-size="13" fill="#406040">SK하이닉스 (반도체)</text>
+  <text x="580" y="614" font-family="Georgia, serif" font-size="13" fill="#f87171" text-anchor="end">-1.68%</text>
+
+  <!-- Right panel: global trigger -->
+  <rect x="680" y="394" width="520" height="258" rx="4" fill="#4ade80" fill-opacity="0.04" stroke="#4ade80" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="940" y="422" font-family="Georgia, serif" font-size="14" fill="#4ade80" text-anchor="middle" letter-spacing="2">글로벌 연동 촉매</text>
+  <text x="700" y="452" font-family="Georgia, serif" font-size="13" fill="#608060">LLY (Eli Lilly) — 글로벌 바이오</text>
+  <text x="1180" y="452" font-family="Georgia, serif" font-size="14" fill="#4ade80" text-anchor="end" font-weight="bold">+7.13%</text>
+  <text x="700" y="478" font-family="Georgia, serif" font-size="13" fill="#608060">MSFT — 빅테크 성장주</text>
+  <text x="1180" y="478" font-family="Georgia, serif" font-size="14" fill="#4ade80" text-anchor="end" font-weight="bold">+5.71%</text>
+  <text x="700" y="504" font-family="Georgia, serif" font-size="13" fill="#608060">AAPL — 소비자 기술</text>
+  <text x="1180" y="504" font-family="Georgia, serif" font-size="14" fill="#4ade80" text-anchor="end" font-weight="bold">+3.14%</text>
+  <line x1="700" y1="516" x2="1180" y2="516" stroke="#4ade80" stroke-opacity="0.12" stroke-width="1"/>
+  <text x="700" y="542" font-family="Georgia, serif" font-size="13" fill="#608060">US10Y</text>
+  <text x="1180" y="542" font-family="Georgia, serif" font-size="13" fill="#4ade80" text-anchor="end">4.372% (하락 기조)</text>
+  <text x="700" y="568" font-family="Georgia, serif" font-size="13" fill="#608060">USD/KRW</text>
+  <text x="1180" y="568" font-family="Georgia, serif" font-size="13" fill="#4ade80" text-anchor="end">1,542.70원 (-0.24%)</text>
+  <text x="700" y="594" font-family="Georgia, serif" font-size="13" fill="#608060">BTC</text>
+  <text x="1180" y="594" font-family="Georgia, serif" font-size="13" fill="#4ade80" text-anchor="end">$59,947 (+0.70%)</text>
+  <line x1="700" y1="608" x2="1180" y2="608" stroke="#4ade80" stroke-opacity="0.12" stroke-width="1"/>
+  <text x="940" y="632" font-family="Georgia, serif" font-size="12" fill="#304830" text-anchor="middle">금리 하락 기조 + 원화 안정 = 성장주 우호 환경</text>
+
+  <!-- Bottom bar -->
+  <text x="640" y="696" font-family="Georgia, serif" font-size="11" fill="#203828" text-anchor="middle" letter-spacing="1">KOSPI 8,394.65(-0.20%) · KOSDAQ 920.57(+8.13%) · 2026년 Q2 마감</text>
+</svg>

@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#140610"/>
+      <stop offset="100%" style="stop-color:#1e0e18"/>
+    </linearGradient>
+    <linearGradient id="redLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#c05070;stop-opacity:0"/>
+      <stop offset="30%" style="stop-color:#c05070;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#c05070;stop-opacity:0.3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Grid lines -->
+  <line x1="0" y1="240" x2="1280" y2="240" stroke="#c05070" stroke-opacity="0.05" stroke-width="1"/>
+  <line x1="0" y1="480" x2="1280" y2="480" stroke="#c05070" stroke-opacity="0.05" stroke-width="1"/>
+  <line x1="640" y1="0" x2="640" y2="720" stroke="#c05070" stroke-opacity="0.05" stroke-width="1"/>
+
+  <!-- Top red accent bar -->
+  <rect x="0" y="0" width="1280" height="4" fill="url(#redLine)"/>
+
+  <!-- Lincoln Brief mark -->
+  <text x="48" y="54" font-family="Georgia, serif" font-size="18" fill="#c05070" font-weight="bold" letter-spacing="3">LINCOLN BRIEF</text>
+  <text x="48" y="76" font-family="Georgia, serif" font-size="13" fill="#803050" letter-spacing="2">KR MARKET · 시장 예측</text>
+
+  <!-- Edition label -->
+  <rect x="990" y="28" width="250" height="36" rx="3" fill="#c05070" fill-opacity="0.1" stroke="#c05070" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="1115" y="51" font-family="Georgia, serif" font-size="14" fill="#c07090" text-anchor="middle" letter-spacing="1">2026.06.29 · 16:00 KST</text>
+
+  <!-- Diamond decorative -->
+  <polygon points="640,108 649,117 640,126 631,117" fill="#c05070" fill-opacity="0.9"/>
+
+  <!-- Main headline -->
+  <text x="640" y="162" font-family="Georgia, serif" font-size="17" fill="#a04060" text-anchor="middle" letter-spacing="2">Q2 마감 · Q3 전망 시나리오</text>
+
+  <!-- KOSPI position -->
+  <text x="640" y="212" font-family="Georgia, serif" font-size="14" fill="#a06080" text-anchor="middle" letter-spacing="2">현재 위치 — KOSPI</text>
+  <text x="640" y="290" font-family="Georgia, serif" font-size="80" fill="#ffffff" text-anchor="middle" font-weight="bold">8,394</text>
+  <text x="640" y="316" font-family="Georgia, serif" font-size="16" fill="#909090" text-anchor="middle">(-0.20% · Q2 마감가)</text>
+
+  <!-- Scenario tag -->
+  <rect x="440" y="334" width="400" height="36" rx="3" fill="#c05070" fill-opacity="0.1" stroke="#c05070" stroke-opacity="0.35" stroke-width="1"/>
+  <text x="640" y="357" font-family="Georgia, serif" font-size="14" fill="#c07090" text-anchor="middle" letter-spacing="1">베이스 시나리오: 8,200~8,600 박스권</text>
+
+  <!-- Divider -->
+  <line x1="120" y1="392" x2="1160" y2="392" stroke="#c05070" stroke-opacity="0.18" stroke-width="1"/>
+
+  <!-- 4-scenario table -->
+  <rect x="80" y="410" width="1120" height="252" rx="4" fill="#c05070" fill-opacity="0.04" stroke="#c05070" stroke-opacity="0.2" stroke-width="1"/>
+
+  <!-- Header -->
+  <text x="160" y="438" font-family="Georgia, serif" font-size="13" fill="#c05070" letter-spacing="1">시나리오</text>
+  <text x="440" y="438" font-family="Georgia, serif" font-size="13" fill="#c05070" text-anchor="middle" letter-spacing="1">확률</text>
+  <text x="780" y="438" font-family="Georgia, serif" font-size="13" fill="#c05070" letter-spacing="1">핵심 조건</text>
+  <line x1="100" y1="446" x2="1180" y2="446" stroke="#c05070" stroke-opacity="0.2" stroke-width="1"/>
+
+  <!-- Row 1: 불 -->
+  <text x="120" y="470" font-family="Georgia, serif" font-size="13" fill="#4ade80">■</text>
+  <text x="140" y="470" font-family="Georgia, serif" font-size="13" fill="#c0d0b0">불 — 8,600 이상</text>
+  <text x="440" y="470" font-family="Georgia, serif" font-size="14" fill="#4ade80" text-anchor="middle" font-weight="bold">20%</text>
+  <text x="520" y="470" font-family="Georgia, serif" font-size="12" fill="#606060">NVDA $200 반등 · 삼성전자 340,000원 이상</text>
+
+  <!-- Row 2: 베이스 -->
+  <text x="120" y="500" font-family="Georgia, serif" font-size="13" fill="#c0a060">■</text>
+  <text x="140" y="500" font-family="Georgia, serif" font-size="13" fill="#c0d0b0">베이스 — 8,200~8,600</text>
+  <text x="440" y="500" font-family="Georgia, serif" font-size="14" fill="#c0a060" text-anchor="middle" font-weight="bold">45%</text>
+  <text x="520" y="500" font-family="Georgia, serif" font-size="12" fill="#606060">NVDA $185~$200 · KOSDAQ 강세 지속</text>
+
+  <!-- Row 3: 베어 -->
+  <text x="120" y="530" font-family="Georgia, serif" font-size="13" fill="#f87171">■</text>
+  <text x="140" y="530" font-family="Georgia, serif" font-size="13" fill="#c0d0b0">베어 — 8,000 재테스트</text>
+  <text x="440" y="530" font-family="Georgia, serif" font-size="14" fill="#f87171" text-anchor="middle" font-weight="bold">25%</text>
+  <text x="520" y="530" font-family="Georgia, serif" font-size="12" fill="#606060">NVDA $180 이하 · 삼성전자 300,000원대</text>
+
+  <!-- Row 4: 블랙 스완 -->
+  <text x="120" y="560" font-family="Georgia, serif" font-size="13" fill="#a03050">■</text>
+  <text x="140" y="560" font-family="Georgia, serif" font-size="13" fill="#c0d0b0">블랙 스완 — 7,800선</text>
+  <text x="440" y="560" font-family="Georgia, serif" font-size="14" fill="#a03050" text-anchor="middle" font-weight="bold">10%</text>
+  <text x="520" y="560" font-family="Georgia, serif" font-size="12" fill="#606060">글로벌 충격 · 원화 급격 약세</text>
+
+  <!-- Key variables -->
+  <line x1="100" y1="574" x2="1180" y2="574" stroke="#c05070" stroke-opacity="0.15" stroke-width="1"/>
+  <text x="640" y="598" font-family="Georgia, serif" font-size="13" fill="#a04060" text-anchor="middle" letter-spacing="1">핵심 변수</text>
+  <text x="340" y="622" font-family="Georgia, serif" font-size="13" fill="#808060" text-anchor="middle">NVDA $190 방어 여부</text>
+  <text x="940" y="622" font-family="Georgia, serif" font-size="13" fill="#808060" text-anchor="middle">LG에너지솔루션 400,000원 유지 여부</text>
+  <text x="340" y="644" font-family="Georgia, serif" font-size="12" fill="#504040" text-anchor="middle">($192.53 · -18.3% from 30d high)</text>
+  <text x="940" y="644" font-family="Georgia, serif" font-size="12" fill="#504040" text-anchor="middle">(400,500원 · +20.81% today)</text>
+
+  <!-- Bottom bar -->
+  <text x="640" y="696" font-family="Georgia, serif" font-size="11" fill="#503040" text-anchor="middle" letter-spacing="1">USD/KRW 1,542.70원 · US10Y 4.372% · 7월 첫 주 Q3 방향 확인</text>
+</svg>
