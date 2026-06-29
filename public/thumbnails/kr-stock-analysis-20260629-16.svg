@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#060c14"/>
+      <stop offset="100%" style="stop-color:#0f1824"/>
+    </linearGradient>
+    <linearGradient id="blueLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#5677b0;stop-opacity:0"/>
+      <stop offset="30%" style="stop-color:#5677b0;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#5677b0;stop-opacity:0.3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Grid lines -->
+  <line x1="0" y1="240" x2="1280" y2="240" stroke="#5677b0" stroke-opacity="0.05" stroke-width="1"/>
+  <line x1="0" y1="480" x2="1280" y2="480" stroke="#5677b0" stroke-opacity="0.05" stroke-width="1"/>
+  <line x1="640" y1="0" x2="640" y2="720" stroke="#5677b0" stroke-opacity="0.05" stroke-width="1"/>
+
+  <!-- Top blue accent bar -->
+  <rect x="0" y="0" width="1280" height="4" fill="url(#blueLine)"/>
+
+  <!-- Lincoln Brief mark -->
+  <text x="48" y="54" font-family="Georgia, serif" font-size="18" fill="#5677b0" font-weight="bold" letter-spacing="3">LINCOLN BRIEF</text>
+  <text x="48" y="76" font-family="Georgia, serif" font-size="13" fill="#3a5080" letter-spacing="2">KR MARKET · 종목 분석</text>
+
+  <!-- Edition label -->
+  <rect x="990" y="28" width="250" height="36" rx="3" fill="#5677b0" fill-opacity="0.1" stroke="#5677b0" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="1115" y="51" font-family="Georgia, serif" font-size="14" fill="#7090c0" text-anchor="middle" letter-spacing="1">2026.06.29 · 16:00 KST</text>
+
+  <!-- Diamond decorative -->
+  <polygon points="640,108 649,117 640,126 631,117" fill="#4ade80" fill-opacity="0.8"/>
+
+  <!-- POSCO홀딩스 main display -->
+  <text x="640" y="165" font-family="Georgia, serif" font-size="17" fill="#7090c0" text-anchor="middle" letter-spacing="2">POSCO홀딩스 (005490.KS)</text>
+  <text x="640" y="262" font-family="Georgia, serif" font-size="80" fill="#ffffff" text-anchor="middle" font-weight="bold">333,000</text>
+  <text x="640" y="290" font-family="Georgia, serif" font-size="22" fill="#9090a0" text-anchor="middle">원</text>
+  <!-- Up triangle -->
+  <polygon points="476,305 494,285 512,305" fill="#4ade80"/>
+  <text x="526" y="310" font-family="Georgia, serif" font-size="36" fill="#4ade80" font-weight="bold">+9.18%</text>
+  <text x="640" y="345" font-family="Georgia, serif" font-size="16" fill="#405050" text-anchor="middle">+28,000원 · 전일 305,000원 대비</text>
+
+  <!-- Recovery note -->
+  <rect x="320" y="360" width="640" height="32" rx="3" fill="#5677b0" fill-opacity="0.08" stroke="#5677b0" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="640" y="381" font-family="Georgia, serif" font-size="14" fill="#7090c0" text-anchor="middle" letter-spacing="1">30일 최저점(305,000원)에서 반등 · 2차전지 소재주 top12 2위</text>
+
+  <!-- Divider -->
+  <line x1="160" y1="412" x2="1120" y2="412" stroke="#5677b0" stroke-opacity="0.2" stroke-width="1"/>
+
+  <!-- Left panel: 30-day history -->
+  <rect x="80" y="430" width="520" height="220" rx="4" fill="#5677b0" fill-opacity="0.05" stroke="#5677b0" stroke-opacity="0.25" stroke-width="1"/>
+  <text x="340" y="458" font-family="Georgia, serif" font-size="15" fill="#5677b0" text-anchor="middle" letter-spacing="2">30일 주요 국면</text>
+  <text x="100" y="486" font-family="Georgia, serif" font-size="13" fill="#606080">30일 전 시작 (고점)</text>
+  <text x="580" y="486" font-family="Georgia, serif" font-size="13" fill="#4ade80" text-anchor="end">467,500원</text>
+  <text x="100" y="511" font-family="Georgia, serif" font-size="13" fill="#606080">30일 하락폭</text>
+  <text x="580" y="511" font-family="Georgia, serif" font-size="13" fill="#f87171" text-anchor="end">467,500 → 305,000원 (-34.8%)</text>
+  <text x="100" y="536" font-family="Georgia, serif" font-size="13" fill="#606080">전일 종가 (30일 저점)</text>
+  <text x="580" y="536" font-family="Georgia, serif" font-size="13" fill="#f87171" text-anchor="end">305,000원</text>
+  <text x="100" y="561" font-family="Georgia, serif" font-size="13" fill="#606080">오늘 마감</text>
+  <text x="580" y="561" font-family="Georgia, serif" font-size="13" fill="#4ade80" text-anchor="end">333,000원 (+9.18%)</text>
+  <line x1="100" y1="575" x2="580" y2="575" stroke="#5677b0" stroke-opacity="0.15" stroke-width="1"/>
+  <text x="100" y="598" font-family="Georgia, serif" font-size="13" fill="#606080">고점 대비 현재</text>
+  <text x="580" y="598" font-family="Georgia, serif" font-size="13" fill="#c0a060" text-anchor="end">-28.7% (회복 여력)</text>
+
+  <!-- Right panel: supply chain context -->
+  <rect x="680" y="430" width="520" height="220" rx="4" fill="#5677b0" fill-opacity="0.05" stroke="#5677b0" stroke-opacity="0.25" stroke-width="1"/>
+  <text x="940" y="458" font-family="Georgia, serif" font-size="15" fill="#5677b0" text-anchor="middle" letter-spacing="2">2차전지 공급망 동반 강세</text>
+  <text x="700" y="488" font-family="Georgia, serif" font-size="13" fill="#606080">LG에너지솔루션 (셀 제조)</text>
+  <text x="1180" y="488" font-family="Georgia, serif" font-size="13" fill="#4ade80" text-anchor="end">+20.81%</text>
+  <text x="700" y="514" font-family="Georgia, serif" font-size="13" fill="#606080">POSCO홀딩스 (소재·철강)</text>
+  <text x="1180" y="514" font-family="Georgia, serif" font-size="13" fill="#4ade80" text-anchor="end">+9.18%</text>
+  <line x1="700" y1="528" x2="1180" y2="528" stroke="#5677b0" stroke-opacity="0.15" stroke-width="1"/>
+  <text x="700" y="552" font-family="Georgia, serif" font-size="13" fill="#606080">KOSDAQ</text>
+  <text x="1180" y="552" font-family="Georgia, serif" font-size="13" fill="#4ade80" text-anchor="end">+8.13%</text>
+  <text x="700" y="576" font-family="Georgia, serif" font-size="13" fill="#606080">삼성전자</text>
+  <text x="1180" y="576" font-family="Georgia, serif" font-size="13" fill="#f87171" text-anchor="end">-4.86%</text>
+  <line x1="700" y1="590" x2="1180" y2="590" stroke="#5677b0" stroke-opacity="0.15" stroke-width="1"/>
+  <text x="940" y="614" font-family="Georgia, serif" font-size="12" fill="#404060" text-anchor="middle">베이스 시나리오 310,000~360,000원</text>
+  <text x="940" y="634" font-family="Georgia, serif" font-size="12" fill="#404060" text-anchor="middle">355,000원 이상이 불 전환 트리거</text>
+
+  <!-- Bottom bar -->
+  <text x="640" y="696" font-family="Georgia, serif" font-size="11" fill="#303050" text-anchor="middle" letter-spacing="1">POSCO홀딩스 005490.KS · USD/KRW 1,542.70 · KOSPI 8,394.65(-0.20%)</text>
+</svg>
