@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0e0800"/>
+      <stop offset="100%" style="stop-color:#1a1000"/>
+    </linearGradient>
+    <linearGradient id="orangeLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f97316;stop-opacity:0"/>
+      <stop offset="30%" style="stop-color:#f97316;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#f97316;stop-opacity:0.3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Grid lines -->
+  <line x1="0" y1="240" x2="1280" y2="240" stroke="#f97316" stroke-opacity="0.05" stroke-width="1"/>
+  <line x1="0" y1="480" x2="1280" y2="480" stroke="#f97316" stroke-opacity="0.05" stroke-width="1"/>
+  <line x1="640" y1="0" x2="640" y2="720" stroke="#f97316" stroke-opacity="0.05" stroke-width="1"/>
+
+  <!-- Top orange accent bar -->
+  <rect x="0" y="0" width="1280" height="4" fill="url(#orangeLine)"/>
+
+  <!-- Lincoln Brief mark -->
+  <text x="48" y="54" font-family="Georgia, serif" font-size="18" fill="#f97316" font-weight="bold" letter-spacing="3">LINCOLN BRIEF</text>
+  <text x="48" y="76" font-family="Georgia, serif" font-size="13" fill="#a04010" letter-spacing="2">KR MARKET · 경제 이슈</text>
+
+  <!-- Edition label -->
+  <rect x="1010" y="28" width="230" height="36" rx="3" fill="#f97316" fill-opacity="0.1" stroke="#f97316" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="1125" y="51" font-family="Georgia, serif" font-size="14" fill="#e08040" text-anchor="middle" letter-spacing="1">2026.06.29 · 11:00 KST</text>
+
+  <!-- Diamond decorative -->
+  <polygon points="640,108 649,117 640,126 631,117" fill="#f97316" fill-opacity="0.8"/>
+
+  <!-- Main headline -->
+  <text x="640" y="162" font-family="Georgia, serif" font-size="17" fill="#c06020" text-anchor="middle" letter-spacing="2">반도체 편중 경제의 두 얼굴</text>
+
+  <!-- Central comparison: Samsung vs KOSDAQ -->
+  <text x="340" y="215" font-family="Georgia, serif" font-size="14" fill="#f87171" text-anchor="middle" letter-spacing="2">삼성전자 (반도체)</text>
+  <text x="940" y="215" font-family="Georgia, serif" font-size="14" fill="#4ade80" text-anchor="middle" letter-spacing="2">KOSDAQ (비반도체)</text>
+
+  <text x="340" y="292" font-family="Georgia, serif" font-size="64" fill="#ffffff" text-anchor="middle" font-weight="bold">322,250</text>
+  <text x="340" y="316" font-family="Georgia, serif" font-size="18" fill="#909090" text-anchor="middle">원</text>
+  <polygon points="296,332 312,352 328,332" fill="#f87171"/>
+  <text x="342" y="358" font-family="Georgia, serif" font-size="30" fill="#f87171" font-weight="bold">-5.08%</text>
+
+  <line x1="580" y1="195" x2="580" y2="370" stroke="#f97316" stroke-opacity="0.25" stroke-width="1"/>
+  <text x="640" y="285" font-family="Georgia, serif" font-size="14" fill="#503010" text-anchor="middle">KOSPI</text>
+  <text x="640" y="310" font-family="Georgia, serif" font-size="32" fill="#808060" text-anchor="middle" font-weight="bold">-0.94%</text>
+  <text x="640" y="340" font-family="Georgia, serif" font-size="13" fill="#503010" text-anchor="middle">반도체에 눌린</text>
+  <text x="640" y="358" font-family="Georgia, serif" font-size="13" fill="#503010" text-anchor="middle">지수</text>
+
+  <text x="940" y="292" font-family="Georgia, serif" font-size="64" fill="#ffffff" text-anchor="middle" font-weight="bold">910.42</text>
+  <polygon points="916,352 932,332 948,352" fill="#4ade80"/>
+  <text x="942" y="358" font-family="Georgia, serif" font-size="30" fill="#4ade80" font-weight="bold">+6.94%</text>
+
+  <!-- Divider -->
+  <line x1="160" y1="378" x2="1120" y2="378" stroke="#f97316" stroke-opacity="0.2" stroke-width="1"/>
+
+  <!-- Two structural explanations -->
+  <rect x="80" y="396" width="520" height="140" rx="4" fill="#f97316" fill-opacity="0.04" stroke="#f97316" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="340" y="422" font-family="Georgia, serif" font-size="14" fill="#f97316" text-anchor="middle" letter-spacing="2">반도체 편중 리스크</text>
+  <text x="100" y="448" font-family="Georgia, serif" font-size="13" fill="#808060">NVDA 30일 고점 대비</text>
+  <text x="588" y="448" font-family="Georgia, serif" font-size="13" fill="#f87171" text-anchor="end">$235.74 → $192.53  -18.3%</text>
+  <text x="100" y="473" font-family="Georgia, serif" font-size="13" fill="#808060">AVGO (반도체 설계)</text>
+  <text x="588" y="473" font-family="Georgia, serif" font-size="13" fill="#f87171" text-anchor="end">$365.02  -3.67%</text>
+  <text x="100" y="498" font-family="Georgia, serif" font-size="13" fill="#808060">SK하이닉스</text>
+  <text x="588" y="498" font-family="Georgia, serif" font-size="13" fill="#f87171" text-anchor="end">2,599,000원  -2.77%</text>
+  <text x="100" y="523" font-family="Georgia, serif" font-size="13" fill="#808060">삼성전자 30일 스파크 고점</text>
+  <text x="588" y="523" font-family="Georgia, serif" font-size="13" fill="#9090a0" text-anchor="end">362,500원 → 현재 322,250원</text>
+
+  <rect x="640" y="396" width="560" height="140" rx="4" fill="#f97316" fill-opacity="0.04" stroke="#f97316" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="920" y="422" font-family="Georgia, serif" font-size="14" fill="#f97316" text-anchor="middle" letter-spacing="2">글로벌 바이오 붐 동조화</text>
+  <text x="660" y="448" font-family="Georgia, serif" font-size="13" fill="#808060">LLY (미국 · 바이오)</text>
+  <text x="1180" y="448" font-family="Georgia, serif" font-size="13" fill="#4ade80" text-anchor="end">$1,208.12  +7.13%</text>
+  <text x="660" y="473" font-family="Georgia, serif" font-size="13" fill="#808060">삼성바이오로직스 (CMO)</text>
+  <text x="1180" y="473" font-family="Georgia, serif" font-size="13" fill="#4ade80" text-anchor="end">1,438,000원  +7.07%</text>
+  <text x="660" y="498" font-family="Georgia, serif" font-size="13" fill="#808060">셀트리온 (바이오시밀러)</text>
+  <text x="1180" y="498" font-family="Georgia, serif" font-size="13" fill="#4ade80" text-anchor="end">179,500원  +8.20%</text>
+  <text x="660" y="523" font-family="Georgia, serif" font-size="13" fill="#808060">LG에너지솔루션 (2차전지)</text>
+  <text x="1180" y="523" font-family="Georgia, serif" font-size="13" fill="#4ade80" text-anchor="end">389,000원  +17.35%</text>
+
+  <!-- Bottom summary box -->
+  <rect x="80" y="552" width="1120" height="110" rx="4" fill="#f97316" fill-opacity="0.05" stroke="#f97316" stroke-opacity="0.25" stroke-width="1"/>
+  <text x="640" y="576" font-family="Georgia, serif" font-size="14" fill="#f97316" text-anchor="middle" letter-spacing="2">핵심 경제 시사점</text>
+  <text x="100" y="600" font-family="Georgia, serif" font-size="13" fill="#909060">USD/KRW</text>
+  <text x="640" y="600" font-family="Georgia, serif" font-size="13" fill="#c0c0a0" text-anchor="middle">1,539.88원 (-0.43%) — 반도체 하락에도 원화 강세 유지</text>
+  <text x="1180" y="600" font-family="Georgia, serif" font-size="13" fill="#4ade80" text-anchor="end">외국인 이탈 신호 없음</text>
+  <text x="100" y="625" font-family="Georgia, serif" font-size="13" fill="#909060">구조 질문</text>
+  <text x="640" y="625" font-family="Georgia, serif" font-size="13" fill="#c0c0a0" text-anchor="middle">반도체 집중 → 비반도체 다변화로 이동 중인가</text>
+  <text x="1180" y="625" font-family="Georgia, serif" font-size="13" fill="#808080" text-anchor="end">지속성 확인 필요</text>
+  <text x="100" y="650" font-family="Georgia, serif" font-size="13" fill="#909060">MSFT (미국)</text>
+  <text x="640" y="650" font-family="Georgia, serif" font-size="13" fill="#c0c0a0" text-anchor="middle">$372.97 (+5.71%) — 플랫폼·소프트웨어 강세</text>
+  <text x="1180" y="650" font-family="Georgia, serif" font-size="13" fill="#4ade80" text-anchor="end">카카오·NAVER 동반</text>
+
+  <!-- Bottom signature -->
+  <text x="640" y="700" font-family="Georgia, serif" font-size="12" fill="#402010" text-anchor="middle" letter-spacing="2">lincoln-brief.vercel.app</text>
+</svg>
