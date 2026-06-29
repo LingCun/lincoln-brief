@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0c0f14"/>
+      <stop offset="100%" style="stop-color:#141a22"/>
+    </linearGradient>
+    <linearGradient id="accentBlue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#5ba3d4;stop-opacity:0.8"/>
+      <stop offset="100%" style="stop-color:#3d7eb5;stop-opacity:0.4"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Top accent line (blue for stock-analysis) -->
+  <rect x="0" y="0" width="1280" height="3" fill="#5ba3d4"/>
+
+  <!-- Left accent bar -->
+  <rect x="60" y="60" width="4" height="600" fill="#5ba3d4" opacity="0.3"/>
+
+  <!-- Edition label top right -->
+  <rect x="1010" y="36" width="230" height="32" rx="4" fill="#5ba3d4" opacity="0.15"/>
+  <text x="1125" y="57" font-family="Georgia, serif" font-size="13" fill="#5ba3d4" text-anchor="middle" letter-spacing="2">US STOCK ANALYSIS</text>
+
+  <!-- Date + slot -->
+  <text x="88" y="100" font-family="Georgia, serif" font-size="16" fill="#5ba3d4" opacity="0.7" letter-spacing="3">2026.06.30 · SLOT 01</text>
+
+  <!-- Diamond separator -->
+  <polygon points="88,118 95,125 88,132 81,125" fill="#5ba3d4"/>
+
+  <!-- Ticker label -->
+  <text x="88" y="188" font-family="Georgia, serif" font-size="48" font-weight="bold" fill="#8fc8e8" letter-spacing="4">TSLA</text>
+
+  <!-- Main price -->
+  <text x="88" y="275" font-family="Georgia, serif" font-size="78" font-weight="bold" fill="#f0e8d8">$409.06</text>
+
+  <!-- Change (up, big) -->
+  <polygon points="560,248 580,272 540,272" fill="#52c87a"/>
+  <text x="590" y="268" font-family="Georgia, serif" font-size="32" fill="#52c87a" font-weight="bold">+7.73%</text>
+
+  <!-- Morgan Stanley badge -->
+  <rect x="88" y="300" width="540" height="36" rx="4" fill="#52c87a" opacity="0.12"/>
+  <text x="108" y="323" font-family="Georgia, serif" font-size="16" fill="#52c87a">Morgan Stanley 납품 목표 상향 · 유럽·중국 강한 수요</text>
+
+  <!-- Divider -->
+  <line x1="88" y1="360" x2="720" y2="360" stroke="#5ba3d4" stroke-width="1" opacity="0.4"/>
+
+  <!-- Key stats -->
+  <text x="88" y="398" font-family="Georgia, serif" font-size="17" fill="#5ba3d4">30일 저점</text>
+  <text x="240" y="398" font-family="Georgia, serif" font-size="17" fill="#f0e8d8">$375.12</text>
+  <text x="370" y="398" font-family="Georgia, serif" font-size="16" fill="#52c87a">+9.0% 반등</text>
+
+  <text x="88" y="434" font-family="Georgia, serif" font-size="17" fill="#5ba3d4">전일 종가</text>
+  <text x="240" y="434" font-family="Georgia, serif" font-size="17" fill="#f0e8d8">$379.71</text>
+  <polygon points="370,439 382,421 358,421" fill="#52c87a"/>
+  <text x="390" y="434" font-family="Georgia, serif" font-size="16" fill="#52c87a">+$29.35</text>
+
+  <text x="88" y="470" font-family="Georgia, serif" font-size="17" fill="#5ba3d4">애널리스트 PT</text>
+  <text x="260" y="470" font-family="Georgia, serif" font-size="17" fill="#f0e8d8">$421.16 평균</text>
+
+  <text x="88" y="506" font-family="Georgia, serif" font-size="17" fill="#5ba3d4">52주 범위</text>
+  <text x="240" y="506" font-family="Georgia, serif" font-size="17" fill="#f0e8d8">$288.77 ~ $498.83</text>
+
+  <!-- Scenario hint -->
+  <rect x="88" y="542" width="420" height="34" rx="4" fill="#5ba3d4" opacity="0.12"/>
+  <text x="108" y="564" font-family="Georgia, serif" font-size="15" fill="#8fc8e8">베이스(40%): Q2 납품 발표 전 $390~$430 박스</text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="680" width="1280" height="40" fill="#5ba3d4" opacity="0.05"/>
+  <text x="88" y="706" font-family="Georgia, serif" font-size="14" fill="#5ba3d4" opacity="0.6">lincoln-brief.vercel.app</text>
+  <text x="1192" y="706" font-family="Georgia, serif" font-size="14" fill="#5ba3d4" opacity="0.6" text-anchor="end">— Lincoln</text>
+</svg>

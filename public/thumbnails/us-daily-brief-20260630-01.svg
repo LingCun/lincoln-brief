@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f0c08"/>
+      <stop offset="100%" style="stop-color:#1a1510"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Top accent line -->
+  <rect x="0" y="0" width="1280" height="3" fill="#d8b878"/>
+
+  <!-- Left accent bar -->
+  <rect x="60" y="60" width="4" height="600" fill="#d8b878" opacity="0.3"/>
+
+  <!-- Edition label top right -->
+  <rect x="1020" y="36" width="220" height="32" rx="4" fill="#d8b878" opacity="0.15"/>
+  <text x="1130" y="57" font-family="Georgia, serif" font-size="13" fill="#d8b878" text-anchor="middle" letter-spacing="2">US DAILY BRIEF</text>
+
+  <!-- Date + slot -->
+  <text x="88" y="100" font-family="Georgia, serif" font-size="16" fill="#d8b878" opacity="0.7" letter-spacing="3">2026.06.30 · SLOT 01</text>
+
+  <!-- Diamond separator -->
+  <polygon points="88,118 95,125 88,132 81,125" fill="#d8b878"/>
+
+  <!-- Main headline -->
+  <text x="88" y="195" font-family="Georgia, serif" font-size="58" font-weight="bold" fill="#f0e8d8">S&amp;P 500</text>
+  <text x="88" y="275" font-family="Georgia, serif" font-size="72" font-weight="bold" fill="#d8b878">7,431.09</text>
+
+  <!-- Change indicator (up) -->
+  <polygon points="480,248 498,272 462,272" fill="#52c87a"/>
+  <text x="508" y="268" font-family="Georgia, serif" font-size="28" fill="#52c87a" font-weight="bold">+1.05%</text>
+
+  <!-- Subtitle -->
+  <text x="88" y="318" font-family="Georgia, serif" font-size="19" fill="#c0b090" opacity="0.85">NASDAQ +1.84% · TSLA +7.73% · AVGO +2.91%</text>
+
+  <!-- Divider line -->
+  <line x1="88" y1="350" x2="720" y2="350" stroke="#d8b878" stroke-width="1" opacity="0.4"/>
+
+  <!-- Q2 마감 badge -->
+  <rect x="88" y="362" width="220" height="34" rx="4" fill="#d8b878" opacity="0.18"/>
+  <text x="198" y="384" font-family="Georgia, serif" font-size="15" fill="#d8b878" text-anchor="middle" font-weight="bold">Q2 마지막 거래일</text>
+
+  <!-- TSLA highlight -->
+  <rect x="328" y="362" width="190" height="34" rx="4" fill="#52c87a" opacity="0.15"/>
+  <text x="423" y="384" font-family="Georgia, serif" font-size="15" fill="#52c87a" text-anchor="middle" font-weight="bold">TSLA +7.73%</text>
+
+  <!-- Data rows -->
+  <text x="88" y="438" font-family="Georgia, serif" font-size="18" fill="#d8b878">NASDAQ</text>
+  <text x="230" y="438" font-family="Georgia, serif" font-size="18" fill="#f0e8d8">25,763.71</text>
+  <polygon points="390,443 400,427 380,427" fill="#52c87a"/>
+  <text x="408" y="438" font-family="Georgia, serif" font-size="16" fill="#52c87a">+1.84%</text>
+
+  <text x="88" y="474" font-family="Georgia, serif" font-size="18" fill="#d8b878">WTI</text>
+  <text x="230" y="474" font-family="Georgia, serif" font-size="18" fill="#f0e8d8">$70.99</text>
+  <polygon points="380,455 398,479 362,479" fill="#52c87a"/>
+  <text x="406" y="474" font-family="Georgia, serif" font-size="16" fill="#52c87a">+2.54%</text>
+
+  <text x="88" y="510" font-family="Georgia, serif" font-size="18" fill="#d8b878">Gold</text>
+  <text x="230" y="510" font-family="Georgia, serif" font-size="18" fill="#f0e8d8">$4,044.10</text>
+  <polygon points="380,515 398,491 362,491" fill="#e05252"/>
+  <text x="406" y="510" font-family="Georgia, serif" font-size="16" fill="#e05252">−0.85%</text>
+
+  <text x="88" y="546" font-family="Georgia, serif" font-size="18" fill="#d8b878">US10Y</text>
+  <text x="230" y="546" font-family="Georgia, serif" font-size="18" fill="#f0e8d8">4.376%</text>
+  <text x="360" y="546" font-family="Georgia, serif" font-size="16" fill="#c0b090">소폭 상승</text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="680" width="1280" height="40" fill="#d8b878" opacity="0.07"/>
+  <text x="88" y="706" font-family="Georgia, serif" font-size="14" fill="#d8b878" opacity="0.6">lincoln-brief.vercel.app</text>
+  <text x="1192" y="706" font-family="Georgia, serif" font-size="14" fill="#d8b878" opacity="0.6" text-anchor="end">— Lincoln</text>
+</svg>
