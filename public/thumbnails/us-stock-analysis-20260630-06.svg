@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#08100f"/>
+      <stop offset="100%" style="stop-color:#101a18"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Top accent line -->
+  <rect x="0" y="0" width="1280" height="3" fill="#4a90d9"/>
+
+  <!-- Left accent bar -->
+  <rect x="60" y="60" width="4" height="600" fill="#4a90d9" opacity="0.3"/>
+
+  <!-- Edition label top right -->
+  <rect x="990" y="36" width="250" height="32" rx="4" fill="#4a90d9" opacity="0.15"/>
+  <text x="1115" y="57" font-family="Georgia, serif" font-size="13" fill="#4a90d9" text-anchor="middle" letter-spacing="2">US STOCK ANALYSIS</text>
+
+  <!-- Date + slot -->
+  <text x="88" y="100" font-family="Georgia, serif" font-size="16" fill="#4a90d9" opacity="0.7" letter-spacing="3">2026.06.30 · SLOT 06</text>
+
+  <!-- Diamond separator -->
+  <polygon points="88,118 95,125 88,132 81,125" fill="#4a90d9"/>
+
+  <!-- Ticker label -->
+  <text x="88" y="185" font-family="Georgia, serif" font-size="44" font-weight="bold" fill="#90c8f0">GOOGL</text>
+  <text x="88" y="240" font-family="Georgia, serif" font-size="26" fill="#7aacd8" opacity="0.85">Alphabet Inc.</text>
+
+  <!-- Main price -->
+  <text x="88" y="320" font-family="Georgia, serif" font-size="76" font-weight="bold" fill="#4a90d9">$353.65</text>
+
+  <!-- Change indicator (up) -->
+  <polygon points="530,294 548,318 512,318" fill="#52c87a"/>
+  <text x="558" y="314" font-family="Georgia, serif" font-size="32" fill="#52c87a" font-weight="bold">+4.82%</text>
+
+  <!-- Divider -->
+  <line x1="88" y1="350" x2="720" y2="350" stroke="#4a90d9" stroke-width="1" opacity="0.4"/>
+
+  <!-- 30-day badge -->
+  <rect x="88" y="362" width="260" height="34" rx="4" fill="#4a90d9" opacity="0.15"/>
+  <text x="218" y="384" font-family="Georgia, serif" font-size="15" fill="#4a90d9" text-anchor="middle" font-weight="bold">30일 저점 $337.39에서 반등</text>
+
+  <!-- NASDAQ badge -->
+  <rect x="368" y="362" width="220" height="34" rx="4" fill="#52c87a" opacity="0.12"/>
+  <text x="478" y="384" font-family="Georgia, serif" font-size="15" fill="#52c87a" text-anchor="middle" font-weight="bold">NASDAQ 대비 아웃퍼폼</text>
+
+  <!-- Data rows -->
+  <text x="88" y="440" font-family="Georgia, serif" font-size="18" fill="#4a90d9">30일 전 출발가</text>
+  <text x="310" y="440" font-family="Georgia, serif" font-size="18" fill="#d0e8f8">$396.78</text>
+  <polygon points="460,445 470,429 450,429" fill="#e05252"/>
+  <text x="478" y="440" font-family="Georgia, serif" font-size="16" fill="#e05252">−10.9%</text>
+
+  <text x="88" y="476" font-family="Georgia, serif" font-size="18" fill="#4a90d9">30일 저점</text>
+  <text x="310" y="476" font-family="Georgia, serif" font-size="18" fill="#d0e8f8">$337.39</text>
+  <text x="460" y="476" font-family="Georgia, serif" font-size="16" fill="#c0d8e8">2거래일 전</text>
+
+  <text x="88" y="512" font-family="Georgia, serif" font-size="18" fill="#4a90d9">NASDAQ</text>
+  <text x="310" y="512" font-family="Georgia, serif" font-size="18" fill="#d0e8f8">25,820.15</text>
+  <polygon points="460,493 478,517 442,517" fill="#52c87a"/>
+  <text x="486" y="512" font-family="Georgia, serif" font-size="16" fill="#52c87a">+2.07%</text>
+
+  <text x="88" y="548" font-family="Georgia, serif" font-size="18" fill="#4a90d9">다음 촉매</text>
+  <text x="310" y="548" font-family="Georgia, serif" font-size="18" fill="#d0e8f8">Q2 실적 (7월 중순)</text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="680" width="1280" height="40" fill="#4a90d9" opacity="0.07"/>
+  <text x="88" y="706" font-family="Georgia, serif" font-size="14" fill="#4a90d9" opacity="0.6">lincoln-brief.vercel.app</text>
+  <text x="1192" y="706" font-family="Georgia, serif" font-size="14" fill="#4a90d9" opacity="0.6" text-anchor="end">— Lincoln</text>
+</svg>
