@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#140608"/>
+      <stop offset="100%" style="stop-color:#241010"/>
+    </linearGradient>
+    <linearGradient id="redLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#d96552;stop-opacity:0"/>
+      <stop offset="30%" style="stop-color:#d96552;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#d96552;stop-opacity:0.3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Grid lines -->
+  <line x1="0" y1="240" x2="1280" y2="240" stroke="#d96552" stroke-opacity="0.05" stroke-width="1"/>
+  <line x1="0" y1="480" x2="1280" y2="480" stroke="#d96552" stroke-opacity="0.05" stroke-width="1"/>
+  <line x1="640" y1="0" x2="640" y2="720" stroke="#d96552" stroke-opacity="0.05" stroke-width="1"/>
+
+  <!-- Top red accent bar -->
+  <rect x="0" y="0" width="1280" height="4" fill="url(#redLine)"/>
+
+  <!-- Lincoln Brief mark -->
+  <text x="48" y="54" font-family="Georgia, serif" font-size="18" fill="#d96552" font-weight="bold" letter-spacing="3">LINCOLN BRIEF</text>
+  <text x="48" y="76" font-family="Georgia, serif" font-size="13" fill="#804040" letter-spacing="2">KR MARKET · 시장 예측</text>
+
+  <!-- Edition label -->
+  <rect x="990" y="28" width="250" height="36" rx="3" fill="#d96552" fill-opacity="0.08" stroke="#d96552" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="1115" y="51" font-family="Georgia, serif" font-size="14" fill="#c07060" text-anchor="middle" letter-spacing="1">2026.06.30 · 11:00 KST</text>
+
+  <!-- Diamond decorative -->
+  <polygon points="640,104 651,115 640,126 629,115" fill="#d96552" fill-opacity="0.9"/>
+
+  <!-- Main headline -->
+  <text x="640" y="162" font-family="Georgia, serif" font-size="16" fill="#904040" text-anchor="middle" letter-spacing="2">H1 마지막 거래일 · Q3 방향 시나리오</text>
+
+  <!-- KOSPI center -->
+  <text x="640" y="214" font-family="Georgia, serif" font-size="14" fill="#b06050" text-anchor="middle" letter-spacing="2">KOSPI — 반도체 주도 상승</text>
+  <text x="640" y="295" font-family="Georgia, serif" font-size="78" fill="#ffffff" text-anchor="middle" font-weight="bold">8,662</text>
+  <text x="640" y="323" font-family="Georgia, serif" font-size="22" fill="#9090a0" text-anchor="middle">.69</text>
+  <!-- Up triangle -->
+  <polygon points="490,338 506,318 522,338" fill="#4ade80"/>
+  <text x="536" y="343" font-family="Georgia, serif" font-size="28" fill="#4ade80" font-weight="bold">+3.19%</text>
+  <text x="640" y="376" font-family="Georgia, serif" font-size="14" fill="#604040" text-anchor="middle">어제 이분법 하루 만에 역전 · 반도체 +6% / LGE -8%</text>
+
+  <!-- Divider -->
+  <line x1="120" y1="400" x2="1160" y2="400" stroke="#d96552" stroke-opacity="0.15" stroke-width="1"/>
+
+  <!-- Scenario table header -->
+  <text x="640" y="430" font-family="Georgia, serif" font-size="15" fill="#d96552" text-anchor="middle" letter-spacing="2">향후 4주 KOSPI 시나리오</text>
+
+  <!-- Scenario rows -->
+  <rect x="80" y="446" width="1120" height="38" rx="3" fill="#4ade80" fill-opacity="0.06" stroke="#4ade80" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="100" y="470" font-family="Georgia, serif" font-size="14" fill="#4ade80">불  (20%)</text>
+  <text x="360" y="470" font-family="Georgia, serif" font-size="13" fill="#609060">NVDA $200↑ · 삼성전자 360,000원↑</text>
+  <text x="1180" y="470" font-family="Georgia, serif" font-size="14" fill="#4ade80" text-anchor="end">8,800 이상</text>
+
+  <rect x="80" y="490" width="1120" height="38" rx="3" fill="#d8b878" fill-opacity="0.06" stroke="#d8b878" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="100" y="514" font-family="Georgia, serif" font-size="14" fill="#d8b878">베이스  (48%)</text>
+  <text x="360" y="514" font-family="Georgia, serif" font-size="13" fill="#909070">NVDA $185~$200 유지 · 섹터 교대 지속</text>
+  <text x="1180" y="514" font-family="Georgia, serif" font-size="14" fill="#d8b878" text-anchor="end">8,400~8,800 박스</text>
+
+  <rect x="80" y="534" width="1120" height="38" rx="3" fill="#f87171" fill-opacity="0.06" stroke="#f87171" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="100" y="558" font-family="Georgia, serif" font-size="14" fill="#f87171">베어  (23%)</text>
+  <text x="360" y="558" font-family="Georgia, serif" font-size="13" fill="#907060">NVDA $180↓ · 원화 1,560원 이상</text>
+  <text x="1180" y="558" font-family="Georgia, serif" font-size="14" fill="#f87171" text-anchor="end">8,200 재테스트</text>
+
+  <rect x="80" y="578" width="1120" height="38" rx="3" fill="#c084fc" fill-opacity="0.06" stroke="#c084fc" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="100" y="602" font-family="Georgia, serif" font-size="14" fill="#c084fc">블랙 스완  (9%)</text>
+  <text x="360" y="602" font-family="Georgia, serif" font-size="13" fill="#806080">미국 충격 · 반도체+비반도체 동반 하락</text>
+  <text x="1180" y="602" font-family="Georgia, serif" font-size="14" fill="#c084fc" text-anchor="end">8,000 이탈</text>
+
+  <!-- Key watch line -->
+  <line x1="80" y1="628" x2="1200" y2="628" stroke="#d96552" stroke-opacity="0.15" stroke-width="1"/>
+  <text x="640" y="650" font-family="Georgia, serif" font-size="13" fill="#905050" text-anchor="middle" letter-spacing="1">관찰 포인트 — 삼성전자 340,000원 지지 · NVDA $190 방어 · USD/KRW 1,550원</text>
+
+  <!-- Bottom signature -->
+  <text x="640" y="690" font-family="Georgia, serif" font-size="12" fill="#503030" text-anchor="middle" letter-spacing="1">lincoln-brief.vercel.app · KR Market Forecast</text>
+</svg>
