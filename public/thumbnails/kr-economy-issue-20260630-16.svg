@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#040c08"/>
+      <stop offset="100%" style="stop-color:#081510"/>
+    </linearGradient>
+    <linearGradient id="greenLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#30a060;stop-opacity:0"/>
+      <stop offset="30%" style="stop-color:#30a060;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#30a060;stop-opacity:0.3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Grid lines -->
+  <line x1="0" y1="240" x2="1280" y2="240" stroke="#30a060" stroke-opacity="0.04" stroke-width="1"/>
+  <line x1="0" y1="480" x2="1280" y2="480" stroke="#30a060" stroke-opacity="0.04" stroke-width="1"/>
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="1280" height="4" fill="url(#greenLine)"/>
+
+  <!-- Lincoln Brief mark -->
+  <text x="48" y="54" font-family="Georgia, serif" font-size="18" fill="#40c080" font-weight="bold" letter-spacing="3">LINCOLN BRIEF</text>
+  <text x="48" y="76" font-family="Georgia, serif" font-size="13" fill="#306040" letter-spacing="2">KR MARKET · 경제 이슈</text>
+
+  <!-- Edition label -->
+  <rect x="970" y="28" width="270" height="36" rx="3" fill="#30a060" fill-opacity="0.08" stroke="#30a060" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="1105" y="51" font-family="Georgia, serif" font-size="14" fill="#40906a" text-anchor="middle" letter-spacing="1">2026.06.30 · 16:00 KST</text>
+
+  <!-- Diamond decorative -->
+  <polygon points="640,104 651,115 640,126 629,115" fill="#40c080" fill-opacity="0.9"/>
+
+  <!-- Main headline -->
+  <text x="640" y="156" font-family="Georgia, serif" font-size="18" fill="#60b880" text-anchor="middle" letter-spacing="2">USD/KRW — 오전 관찰선 1,550원 돌파 확인</text>
+
+  <!-- FX rate big display -->
+  <text x="640" y="260" font-family="Georgia, serif" font-size="96" fill="#ffffff" text-anchor="middle" font-weight="bold">1,550</text>
+  <text x="640" y="302" font-family="Georgia, serif" font-size="24" fill="#d8b878" text-anchor="middle">.40원  (+15.16원, +0.99%)</text>
+
+  <!-- Alert line -->
+  <rect x="160" y="322" width="960" height="44" rx="4" fill="#f87171" fill-opacity="0.10" stroke="#f87171" stroke-opacity="0.5" stroke-width="1"/>
+  <text x="640" y="349" font-family="Georgia, serif" font-size="15" fill="#fca5a5" text-anchor="middle" letter-spacing="1">H1 마감일 · 오전 관찰선 1,550원 돌파 · 다음 분기점 1,560원</text>
+
+  <!-- Divider -->
+  <line x1="120" y1="384" x2="1160" y2="384" stroke="#30a060" stroke-opacity="0.15" stroke-width="1"/>
+
+  <!-- Three data panels -->
+  <!-- US market context -->
+  <rect x="80" y="400" width="340" height="268" rx="4" fill="#30a060" fill-opacity="0.04" stroke="#30a060" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="250" y="428" font-family="Georgia, serif" font-size="14" fill="#40c080" text-anchor="middle" letter-spacing="2">달러 강세 배경</text>
+  <text x="100" y="460" font-family="Georgia, serif" font-size="13" fill="#708080">NASDAQ</text>
+  <text x="400" y="460" font-family="Georgia, serif" font-size="14" fill="#4ade80" text-anchor="end" font-weight="bold">25,820  +2.07%</text>
+  <text x="100" y="488" font-family="Georgia, serif" font-size="13" fill="#708080">TSLA</text>
+  <text x="400" y="488" font-family="Georgia, serif" font-size="14" fill="#4ade80" text-anchor="end" font-weight="bold">$411.84  +8.46%</text>
+  <text x="100" y="516" font-family="Georgia, serif" font-size="13" fill="#708080">US10Y</text>
+  <text x="400" y="516" font-family="Georgia, serif" font-size="14" fill="#fbbf24" text-anchor="end" font-weight="bold">4.38%</text>
+  <line x1="100" y1="532" x2="400" y2="532" stroke="#30a060" stroke-opacity="0.15" stroke-width="1"/>
+  <text x="250" y="556" font-family="Georgia, serif" font-size="12" fill="#406050" text-anchor="middle">미국 강세 → 달러 수요 증가</text>
+  <text x="250" y="578" font-family="Georgia, serif" font-size="12" fill="#406050" text-anchor="middle">→ 원화 약세 구조</text>
+  <text x="250" y="600" font-family="Georgia, serif" font-size="12" fill="#406050" text-anchor="middle">WTI $70.68 (-0.10%)</text>
+  <text x="250" y="622" font-family="Georgia, serif" font-size="12" fill="#406050" text-anchor="middle">BTC $59,178 (-1.60%)</text>
+  <text x="250" y="644" font-family="Georgia, serif" font-size="12" fill="#406050" text-anchor="middle">GOLD $4,034.90 (+0.31%)</text>
+
+  <!-- Effect on Korean market -->
+  <rect x="460" y="400" width="360" height="268" rx="4" fill="#30a060" fill-opacity="0.04" stroke="#30a060" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="640" y="428" font-family="Georgia, serif" font-size="14" fill="#40c080" text-anchor="middle" letter-spacing="2">이중 효과</text>
+  <text x="480" y="464" font-family="Georgia, serif" font-size="14" fill="#4ade80" font-weight="bold">▲ 호재</text>
+  <text x="480" y="490" font-family="Georgia, serif" font-size="12" fill="#406050">삼성전자·SK하이닉스 달러 수익</text>
+  <text x="480" y="510" font-family="Georgia, serif" font-size="12" fill="#406050">원화 환산 이익 증가</text>
+  <line x1="480" y1="526" x2="800" y2="526" stroke="#30a060" stroke-opacity="0.15" stroke-width="1"/>
+  <text x="480" y="552" font-family="Georgia, serif" font-size="14" fill="#f87171" font-weight="bold">▼ 악재</text>
+  <text x="480" y="578" font-family="Georgia, serif" font-size="12" fill="#504040">외국인 달러 환산 수익 악화</text>
+  <text x="480" y="598" font-family="Georgia, serif" font-size="12" fill="#504040">KOSPI 이탈 유인 증가</text>
+  <line x1="480" y1="614" x2="800" y2="614" stroke="#30a060" stroke-opacity="0.15" stroke-width="1"/>
+  <text x="640" y="638" font-family="Georgia, serif" font-size="12" fill="#406050" text-anchor="middle">오늘 오전·오후가 이 두 효과 압축</text>
+
+  <!-- Scenario levels -->
+  <rect x="860" y="400" width="360" height="268" rx="4" fill="#30a060" fill-opacity="0.04" stroke="#30a060" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="1040" y="428" font-family="Georgia, serif" font-size="14" fill="#40c080" text-anchor="middle" letter-spacing="2">환율 시나리오</text>
+  <text x="880" y="460" font-family="Georgia, serif" font-size="13" fill="#708080">1,530원대 회귀</text>
+  <text x="1200" y="460" font-family="Georgia, serif" font-size="13" fill="#4ade80" text-anchor="end">이탈 압력 완화</text>
+  <text x="880" y="494" font-family="Georgia, serif" font-size="13" fill="#d8b878">1,540~1,560원</text>
+  <text x="1200" y="494" font-family="Georgia, serif" font-size="13" fill="#d8b878" text-anchor="end">중립 구간</text>
+  <text x="880" y="528" font-family="Georgia, serif" font-size="13" fill="#fca5a5">1,560원 이상</text>
+  <text x="1200" y="528" font-family="Georgia, serif" font-size="13" fill="#f87171" text-anchor="end">이탈 압력 증가</text>
+  <text x="880" y="562" font-family="Georgia, serif" font-size="13" fill="#ef4444">1,580원 이상</text>
+  <text x="1200" y="562" font-family="Georgia, serif" font-size="13" fill="#ef4444" text-anchor="end">외국인 매도 위험</text>
+  <line x1="880" y1="578" x2="1200" y2="578" stroke="#30a060" stroke-opacity="0.15" stroke-width="1"/>
+  <text x="1040" y="604" font-family="Georgia, serif" font-size="12" fill="#406050" text-anchor="middle">Q3 첫 주 방향이 기준점</text>
+  <text x="1040" y="626" font-family="Georgia, serif" font-size="12" fill="#406050" text-anchor="middle">다음 관찰선: 1,560원</text>
+
+  <!-- Bottom signature -->
+  <text x="640" y="696" font-family="Georgia, serif" font-size="12" fill="#306050" text-anchor="middle" letter-spacing="1">lincoln-brief.vercel.app · KR Economy Issue</text>
+</svg>

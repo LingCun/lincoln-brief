@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#080c10"/>
+      <stop offset="100%" style="stop-color:#0f1520"/>
+    </linearGradient>
+    <linearGradient id="blueLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#6090d8;stop-opacity:0"/>
+      <stop offset="30%" style="stop-color:#6090d8;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#6090d8;stop-opacity:0.3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Grid lines -->
+  <line x1="0" y1="240" x2="1280" y2="240" stroke="#6090d8" stroke-opacity="0.04" stroke-width="1"/>
+  <line x1="0" y1="480" x2="1280" y2="480" stroke="#6090d8" stroke-opacity="0.04" stroke-width="1"/>
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="1280" height="4" fill="url(#blueLine)"/>
+
+  <!-- Lincoln Brief mark -->
+  <text x="48" y="54" font-family="Georgia, serif" font-size="18" fill="#6090d8" font-weight="bold" letter-spacing="3">LINCOLN BRIEF</text>
+  <text x="48" y="76" font-family="Georgia, serif" font-size="13" fill="#406090" letter-spacing="2">KR MARKET · 종목 분석</text>
+
+  <!-- Edition label -->
+  <rect x="970" y="28" width="270" height="36" rx="3" fill="#6090d8" fill-opacity="0.08" stroke="#6090d8" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="1105" y="51" font-family="Georgia, serif" font-size="14" fill="#5080b8" text-anchor="middle" letter-spacing="1">2026.06.30 · 16:00 KST</text>
+
+  <!-- Diamond decorative -->
+  <polygon points="640,104 651,115 640,126 629,115" fill="#6090d8" fill-opacity="0.9"/>
+
+  <!-- Company name headline -->
+  <text x="640" y="158" font-family="Georgia, serif" font-size="22" fill="#a0b8e0" text-anchor="middle" letter-spacing="3">LG에너지솔루션 · 373220.KS</text>
+
+  <!-- Price big display -->
+  <text x="640" y="270" font-family="Georgia, serif" font-size="96" fill="#ffffff" text-anchor="middle" font-weight="bold">362,000</text>
+  <text x="640" y="308" font-family="Georgia, serif" font-size="20" fill="#909090" text-anchor="middle">원</text>
+
+  <!-- Change display -->
+  <polygon points="570,320 582,306 594,320" fill="#f87171"/>
+  <text x="610" y="338" font-family="Georgia, serif" font-size="38" fill="#f87171" font-weight="bold">-9.61%</text>
+  <text x="640" y="370" font-family="Georgia, serif" font-size="18" fill="#f06060" text-anchor="middle">-38,500원 (전일 400,500원)</text>
+
+  <!-- Divider -->
+  <line x1="120" y1="392" x2="1160" y2="392" stroke="#6090d8" stroke-opacity="0.15" stroke-width="1"/>
+
+  <!-- Stats panels -->
+  <rect x="80" y="408" width="340" height="260" rx="4" fill="#6090d8" fill-opacity="0.05" stroke="#6090d8" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="250" y="436" font-family="Georgia, serif" font-size="14" fill="#6090d8" text-anchor="middle" letter-spacing="2">이틀 변동</text>
+  <text x="100" y="468" font-family="Georgia, serif" font-size="13" fill="#8090a0">6월 29일</text>
+  <text x="400" y="468" font-family="Georgia, serif" font-size="15" fill="#4ade80" text-anchor="end" font-weight="bold">+20.81%</text>
+  <text x="100" y="498" font-family="Georgia, serif" font-size="13" fill="#8090a0">6월 30일 (오늘)</text>
+  <text x="400" y="498" font-family="Georgia, serif" font-size="15" fill="#f87171" text-anchor="end" font-weight="bold">-9.61%</text>
+  <line x1="100" y1="514" x2="400" y2="514" stroke="#6090d8" stroke-opacity="0.15" stroke-width="1"/>
+  <text x="100" y="540" font-family="Georgia, serif" font-size="13" fill="#8090a0">이틀 합산</text>
+  <text x="400" y="540" font-family="Georgia, serif" font-size="15" fill="#86efac" text-anchor="end">+9.20%</text>
+  <text x="250" y="590" font-family="Georgia, serif" font-size="12" fill="#506070" text-anchor="middle">30일 고점 458,000원</text>
+  <text x="250" y="614" font-family="Georgia, serif" font-size="12" fill="#506070" text-anchor="middle">고점 대비 현재 -21.0%</text>
+  <text x="250" y="638" font-family="Georgia, serif" font-size="12" fill="#506070" text-anchor="middle">30일 저점 구간 ~331,500원</text>
+
+  <!-- Middle panel -->
+  <rect x="460" y="408" width="360" height="260" rx="4" fill="#6090d8" fill-opacity="0.05" stroke="#6090d8" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="640" y="436" font-family="Georgia, serif" font-size="14" fill="#6090d8" text-anchor="middle" letter-spacing="2">동반 종목</text>
+  <text x="480" y="468" font-family="Georgia, serif" font-size="13" fill="#8090a0">POSCO홀딩스</text>
+  <text x="800" y="468" font-family="Georgia, serif" font-size="14" fill="#f87171" text-anchor="end" font-weight="bold">317,000원  -4.80%</text>
+  <text x="480" y="498" font-family="Georgia, serif" font-size="13" fill="#8090a0">POSCO 전일</text>
+  <text x="800" y="498" font-family="Georgia, serif" font-size="13" fill="#4ade80" text-anchor="end">333,000원 +9.18%</text>
+  <line x1="480" y1="514" x2="800" y2="514" stroke="#6090d8" stroke-opacity="0.15" stroke-width="1"/>
+  <text x="640" y="550" font-family="Georgia, serif" font-size="12" fill="#506070" text-anchor="middle">2차전지·소재 섹터 동반 약세</text>
+  <text x="640" y="574" font-family="Georgia, serif" font-size="12" fill="#506070" text-anchor="middle">전일 분기 말 수급 이벤트 소화</text>
+
+  <!-- Right panel: scenario -->
+  <rect x="860" y="408" width="360" height="260" rx="4" fill="#6090d8" fill-opacity="0.05" stroke="#6090d8" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="1040" y="436" font-family="Georgia, serif" font-size="14" fill="#6090d8" text-anchor="middle" letter-spacing="2">시나리오</text>
+  <text x="880" y="468" font-family="Georgia, serif" font-size="12" fill="#8090a0">불 (15%)</text>
+  <text x="1200" y="468" font-family="Georgia, serif" font-size="12" fill="#86efac" text-anchor="end">400,000원 재돌파</text>
+  <text x="880" y="496" font-family="Georgia, serif" font-size="12" fill="#8090a0">베이스 (50%)</text>
+  <text x="1200" y="496" font-family="Georgia, serif" font-size="12" fill="#a0c0e0" text-anchor="end">340,000~390,000원</text>
+  <text x="880" y="524" font-family="Georgia, serif" font-size="12" fill="#8090a0">베어 (27%)</text>
+  <text x="1200" y="524" font-family="Georgia, serif" font-size="12" fill="#fca5a5" text-anchor="end">330,000원대 재하락</text>
+  <text x="880" y="552" font-family="Georgia, serif" font-size="12" fill="#8090a0">블랙 스완 (8%)</text>
+  <text x="1200" y="552" font-family="Georgia, serif" font-size="12" fill="#ef4444" text-anchor="end">300,000원대</text>
+  <line x1="880" y1="568" x2="1200" y2="568" stroke="#6090d8" stroke-opacity="0.15" stroke-width="1"/>
+  <text x="1040" y="598" font-family="Georgia, serif" font-size="12" fill="#506070" text-anchor="middle">350,000원 지지 여부가 관건</text>
+
+  <!-- Bottom signature -->
+  <text x="640" y="696" font-family="Georgia, serif" font-size="12" fill="#406080" text-anchor="middle" letter-spacing="1">lincoln-brief.vercel.app · KR Stock Analysis</text>
+</svg>
