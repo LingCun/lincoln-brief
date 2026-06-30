@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0c0a04"/>
+      <stop offset="100%" style="stop-color:#1a1510"/>
+    </linearGradient>
+    <linearGradient id="goldLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#d8b878;stop-opacity:0"/>
+      <stop offset="30%" style="stop-color:#d8b878;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#d8b878;stop-opacity:0.3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Grid lines -->
+  <line x1="0" y1="240" x2="1280" y2="240" stroke="#d8b878" stroke-opacity="0.04" stroke-width="1"/>
+  <line x1="0" y1="480" x2="1280" y2="480" stroke="#d8b878" stroke-opacity="0.04" stroke-width="1"/>
+  <line x1="640" y1="0" x2="640" y2="720" stroke="#d8b878" stroke-opacity="0.04" stroke-width="1"/>
+
+  <!-- Top gold accent bar -->
+  <rect x="0" y="0" width="1280" height="4" fill="url(#goldLine)"/>
+
+  <!-- Lincoln Brief mark -->
+  <text x="48" y="54" font-family="Georgia, serif" font-size="18" fill="#d8b878" font-weight="bold" letter-spacing="3">LINCOLN BRIEF</text>
+  <text x="48" y="76" font-family="Georgia, serif" font-size="13" fill="#907840" letter-spacing="2">KR MARKET · 데일리 시황</text>
+
+  <!-- Edition label -->
+  <rect x="990" y="28" width="250" height="36" rx="3" fill="#d8b878" fill-opacity="0.08" stroke="#d8b878" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="1115" y="51" font-family="Georgia, serif" font-size="14" fill="#b09050" text-anchor="middle" letter-spacing="1">2026.06.30 · 11:00 KST</text>
+
+  <!-- Diamond decorative -->
+  <polygon points="640,104 651,115 640,126 629,115" fill="#d8b878" fill-opacity="0.9"/>
+
+  <!-- Main headline -->
+  <text x="640" y="162" font-family="Georgia, serif" font-size="17" fill="#907840" text-anchor="middle" letter-spacing="2">H1 마지막 거래일 · 반도체 완전 역전</text>
+
+  <!-- KOSPI / KOSDAQ split display -->
+  <text x="320" y="230" font-family="Georgia, serif" font-size="14" fill="#807040" text-anchor="middle" letter-spacing="2">KOSPI</text>
+  <text x="320" y="295" font-family="Georgia, serif" font-size="64" fill="#ffffff" text-anchor="middle" font-weight="bold">8,662</text>
+  <text x="320" y="325" font-family="Georgia, serif" font-size="18" fill="#909090" text-anchor="middle">.69</text>
+  <!-- Up triangle for KOSPI -->
+  <polygon points="224,328 236,342 248,328" fill="#4ade80"/>
+  <text x="258" y="347" font-family="Georgia, serif" font-size="26" fill="#4ade80" font-weight="bold">+3.19%</text>
+  <text x="320" y="372" font-family="Georgia, serif" font-size="13" fill="#305030" text-anchor="middle">반도체 주도 강한 상승</text>
+
+  <!-- Vertical divider -->
+  <line x1="640" y1="195" x2="640" y2="390" stroke="#d8b878" stroke-opacity="0.25" stroke-width="1"/>
+
+  <!-- KOSDAQ -->
+  <text x="960" y="230" font-family="Georgia, serif" font-size="14" fill="#807040" text-anchor="middle" letter-spacing="2">KOSDAQ</text>
+  <text x="960" y="295" font-family="Georgia, serif" font-size="64" fill="#ffffff" text-anchor="middle" font-weight="bold">920</text>
+  <text x="960" y="325" font-family="Georgia, serif" font-size="18" fill="#909090" text-anchor="middle">.85</text>
+  <!-- Neutral for KOSDAQ -->
+  <rect x="890" y="330" width="140" height="20" rx="2" fill="#505050" fill-opacity="0.3"/>
+  <text x="960" y="345" font-family="Georgia, serif" font-size="16" fill="#909090" text-anchor="middle">+0.03% 보합</text>
+  <text x="960" y="372" font-family="Georgia, serif" font-size="13" fill="#504030" text-anchor="middle">비반도체 되돌림으로 보합</text>
+
+  <!-- Divider line -->
+  <line x1="120" y1="400" x2="1160" y2="400" stroke="#d8b878" stroke-opacity="0.12" stroke-width="1"/>
+
+  <!-- Bottom panels: Sector reversal -->
+  <rect x="80" y="416" width="520" height="240" rx="4" fill="#d8b878" fill-opacity="0.04" stroke="#d8b878" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="340" y="444" font-family="Georgia, serif" font-size="14" fill="#d8b878" text-anchor="middle" letter-spacing="2">반도체 — 역전 주역</text>
+  <text x="100" y="474" font-family="Georgia, serif" font-size="13" fill="#909070">삼성전자</text>
+  <text x="580" y="474" font-family="Georgia, serif" font-size="14" fill="#4ade80" text-anchor="end" font-weight="bold">342,500원  +6.04%</text>
+  <text x="100" y="500" font-family="Georgia, serif" font-size="13" fill="#909070">SK하이닉스</text>
+  <text x="580" y="500" font-family="Georgia, serif" font-size="14" fill="#4ade80" text-anchor="end" font-weight="bold">2,736,000원  +4.11%</text>
+  <text x="100" y="526" font-family="Georgia, serif" font-size="13" fill="#909070">KB금융</text>
+  <text x="580" y="526" font-family="Georgia, serif" font-size="14" fill="#4ade80" text-anchor="end" font-weight="bold">160,900원  +4.68%</text>
+  <line x1="100" y1="540" x2="580" y2="540" stroke="#d8b878" stroke-opacity="0.12" stroke-width="1"/>
+  <text x="100" y="562" font-family="Georgia, serif" font-size="12" fill="#605040">전일 NASDAQ  +2.07% · TSLA +8.46%</text>
+  <text x="100" y="584" font-family="Georgia, serif" font-size="12" fill="#605040">NVDA $194.97 (+1.27%) 반등 배경</text>
+  <text x="100" y="630" font-family="Georgia, serif" font-size="12" fill="#706040">USD/KRW 1,547.60원 (+0.81%) 원화 약세</text>
+
+  <!-- Right panel: 비반도체 되돌림 -->
+  <rect x="680" y="416" width="520" height="240" rx="4" fill="#d8b878" fill-opacity="0.04" stroke="#d8b878" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="940" y="444" font-family="Georgia, serif" font-size="14" fill="#d8b878" text-anchor="middle" letter-spacing="2">비반도체 — 전일 급등 되돌림</text>
+  <text x="700" y="474" font-family="Georgia, serif" font-size="13" fill="#909070">LG에너지솔루션</text>
+  <text x="1180" y="474" font-family="Georgia, serif" font-size="14" fill="#f87171" text-anchor="end" font-weight="bold">368,500원  -7.99%</text>
+  <text x="700" y="500" font-family="Georgia, serif" font-size="13" fill="#909070">POSCO홀딩스</text>
+  <text x="1180" y="500" font-family="Georgia, serif" font-size="14" fill="#f87171" text-anchor="end" font-weight="bold">322,750원  -3.08%</text>
+  <text x="700" y="526" font-family="Georgia, serif" font-size="13" fill="#909070">카카오</text>
+  <text x="1180" y="526" font-family="Georgia, serif" font-size="14" fill="#f87171" text-anchor="end" font-weight="bold">34,850원  -2.79%</text>
+  <line x1="700" y1="540" x2="1180" y2="540" stroke="#d8b878" stroke-opacity="0.12" stroke-width="1"/>
+  <text x="940" y="562" font-family="Georgia, serif" font-size="12" fill="#605040" text-anchor="middle">전일 LGE +20.81% → 오늘 되돌림</text>
+  <text x="940" y="630" font-family="Georgia, serif" font-size="12" fill="#706040" text-anchor="middle">이틀 합산 — 반도체·비반도체 교대 강세</text>
+
+  <!-- Bottom signature -->
+  <text x="640" y="690" font-family="Georgia, serif" font-size="12" fill="#504030" text-anchor="middle" letter-spacing="1">lincoln-brief.vercel.app · KR Daily Brief</text>
+</svg>
