@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0e1520"/>
+      <stop offset="100%" stop-color="#080c14"/>
+    </linearGradient>
+    <linearGradient id="accent-line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#5677b0"/>
+      <stop offset="100%" stop-color="#5677b000"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg-grad)"/>
+
+  <!-- Top accent line (blue) -->
+  <rect x="0" y="0" width="1280" height="4" fill="url(#accent-line)"/>
+
+  <!-- Left blue bar -->
+  <rect x="60" y="60" width="4" height="600" fill="#5677b0" opacity="0.6"/>
+
+  <!-- Brand -->
+  <text x="84" y="108" font-family="Georgia, serif" font-size="22" fill="#5677b0" opacity="0.9" letter-spacing="3">LINCOLN BRIEF</text>
+  <text x="84" y="135" font-family="Georgia, serif" font-size="13" fill="#3a5580" letter-spacing="2">US MARKET · 종목분석</text>
+
+  <!-- Edition label -->
+  <text x="1220" y="90" font-family="Georgia, serif" font-size="14" fill="#5677b0" opacity="0.7" text-anchor="end">2026.07.01 · SLOT 01</text>
+  <text x="1220" y="110" font-family="Georgia, serif" font-size="13" fill="#3a5580" text-anchor="end">STOCK ANALYSIS</text>
+
+  <!-- Ticker badge -->
+  <rect x="84" y="158" width="130" height="42" rx="4" fill="#5677b0" opacity="0.25"/>
+  <rect x="84" y="158" width="130" height="42" rx="4" fill="none" stroke="#5677b0" stroke-width="1.5"/>
+  <text x="149" y="185" font-family="Georgia, serif" font-size="22" fill="#5677b0" text-anchor="middle" font-weight="bold">AAPL</text>
+
+  <!-- Price headline -->
+  <text x="84" y="272" font-family="Georgia, serif" font-size="72" font-weight="bold" fill="#ffffff">$288.19</text>
+
+  <!-- Change row -->
+  <polygon points="84,302 106,322 64,322" fill="#6ec46e"/>
+  <text x="116" y="322" font-family="Georgia, serif" font-size="38" fill="#6ec46e" font-weight="bold">+2.29%</text>
+  <text x="310" y="322" font-family="Georgia, serif" font-size="28" fill="#a0b8d8">+$6.45</text>
+
+  <!-- Sub-label -->
+  <text x="84" y="360" font-family="Georgia, serif" font-size="20" fill="#6ec46e">12종목 최대 상승 · NASDAQ +1.26% 대비 아웃퍼폼</text>
+
+  <!-- Divider -->
+  <rect x="84" y="380" width="700" height="1" fill="#5677b0" opacity="0.3"/>
+
+  <!-- 30-day stats -->
+  <text x="84" y="416" font-family="Georgia, serif" font-size="17" fill="#3a5580" letter-spacing="1">30일 가격 데이터</text>
+
+  <text x="84" y="452" font-family="Georgia, serif" font-size="22" fill="#a0b8d8">30일 전 출발</text>
+  <text x="290" y="452" font-family="Georgia, serif" font-size="22" fill="#ffffff">$297.84</text>
+
+  <text x="480" y="452" font-family="Georgia, serif" font-size="22" fill="#a0b8d8">30일 고점</text>
+  <text x="660" y="452" font-family="Georgia, serif" font-size="22" fill="#ffffff">$315.20</text>
+
+  <text x="84" y="492" font-family="Georgia, serif" font-size="22" fill="#a0b8d8">30일 저점</text>
+  <text x="290" y="492" font-family="Georgia, serif" font-size="22" fill="#e87050">$275.15</text>
+
+  <text x="480" y="492" font-family="Georgia, serif" font-size="22" fill="#a0b8d8">저점 대비 반등</text>
+  <text x="700" y="492" font-family="Georgia, serif" font-size="22" fill="#6ec46e">+4.74%</text>
+
+  <text x="84" y="532" font-family="Georgia, serif" font-size="22" fill="#a0b8d8">30일 수익률</text>
+  <text x="290" y="532" font-family="Georgia, serif" font-size="22" fill="#e87050">−3.24%</text>
+
+  <!-- Divider -->
+  <rect x="84" y="555" width="700" height="1" fill="#5677b0" opacity="0.2"/>
+
+  <!-- Footer note -->
+  <text x="84" y="590" font-family="Georgia, serif" font-size="19" fill="#5677b0" opacity="0.85">베이스(40%): $285~$300 구간 탐색 · Q2 실적 7월 하순 기준점</text>
+
+  <!-- Brand mark -->
+  <polygon points="84,640 92,632 100,640 92,648" fill="#5677b0" opacity="0.5"/>
+  <text x="110" y="645" font-family="Georgia, serif" font-size="14" fill="#3a5580">lincoln-brief.vercel.app</text>
+
+  <!-- Right decorative -->
+  <rect x="1200" y="60" width="1" height="600" fill="#5677b0" opacity="0.15"/>
+  <polygon points="1240,60 1260,40 1280,60 1260,80" fill="#5677b0" opacity="0.3"/>
+</svg>
