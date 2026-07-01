@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#040e08"/>
+      <stop offset="100%" style="stop-color:#0a1810"/>
+    </linearGradient>
+    <linearGradient id="greenLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7a9d6e;stop-opacity:0"/>
+      <stop offset="30%" style="stop-color:#7a9d6e;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#7a9d6e;stop-opacity:0.3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Grid lines -->
+  <line x1="0" y1="240" x2="1280" y2="240" stroke="#7a9d6e" stroke-opacity="0.05" stroke-width="1"/>
+  <line x1="0" y1="480" x2="1280" y2="480" stroke="#7a9d6e" stroke-opacity="0.05" stroke-width="1"/>
+  <line x1="640" y1="0" x2="640" y2="720" stroke="#7a9d6e" stroke-opacity="0.05" stroke-width="1"/>
+
+  <!-- Top green accent bar -->
+  <rect x="0" y="0" width="1280" height="4" fill="url(#greenLine)"/>
+
+  <!-- Lincoln Brief mark -->
+  <text x="48" y="54" font-family="Georgia, serif" font-size="18" fill="#7a9d6e" font-weight="bold" letter-spacing="3">LINCOLN BRIEF</text>
+  <text x="48" y="76" font-family="Georgia, serif" font-size="13" fill="#2a6040" letter-spacing="2">KR MARKET · 경제 이슈</text>
+
+  <!-- Edition label -->
+  <rect x="990" y="28" width="250" height="36" rx="3" fill="#7a9d6e" fill-opacity="0.08" stroke="#7a9d6e" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="1115" y="51" font-family="Georgia, serif" font-size="14" fill="#70a080" text-anchor="middle" letter-spacing="1">2026.07.01 · 11:00 KST</text>
+
+  <!-- Diamond decorative -->
+  <polygon points="640,108 649,117 640,126 631,117" fill="#7a9d6e" fill-opacity="0.9"/>
+
+  <!-- Main headline -->
+  <text x="640" y="160" font-family="Georgia, serif" font-size="16" fill="#2a7050" text-anchor="middle" letter-spacing="2">1,550원 돌파 이틀째 · 다음 관찰선 1,560원</text>
+
+  <!-- USD/KRW center display -->
+  <text x="640" y="210" font-family="Georgia, serif" font-size="14" fill="#4a7060" text-anchor="middle" letter-spacing="2">USD/KRW</text>
+  <text x="640" y="290" font-family="Georgia, serif" font-size="78" fill="#ffffff" text-anchor="middle" font-weight="bold">1,554</text>
+  <text x="640" y="322" font-family="Georgia, serif" font-size="26" fill="#9090a0" text-anchor="middle">.58원</text>
+  <!-- Up triangle (KRW weakening) -->
+  <polygon points="476,338 492,318 508,338" fill="#f87171"/>
+  <text x="522" y="343" font-family="Georgia, serif" font-size="28" fill="#f87171" font-weight="bold">+0.83%</text>
+  <text x="640" y="376" font-family="Georgia, serif" font-size="14" fill="#304830" text-anchor="middle">어제 1,550.40원 → 이틀째 추가 약세</text>
+
+  <!-- Divider -->
+  <line x1="120" y1="400" x2="1160" y2="400" stroke="#7a9d6e" stroke-opacity="0.15" stroke-width="1"/>
+
+  <!-- Left panel: 달러 강세 배경 -->
+  <rect x="80" y="416" width="520" height="242" rx="4" fill="#7a9d6e" fill-opacity="0.04" stroke="#7a9d6e" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="340" y="444" font-family="Georgia, serif" font-size="14" fill="#7a9d6e" text-anchor="middle" letter-spacing="2">달러 자산 선호 지속</text>
+  <text x="100" y="474" font-family="Georgia, serif" font-size="13" fill="#608060">US10Y</text>
+  <text x="580" y="474" font-family="Georgia, serif" font-size="13" fill="#c0a060" text-anchor="end">4.418%  +1.05%</text>
+  <text x="100" y="500" font-family="Georgia, serif" font-size="13" fill="#608060">GOLD</text>
+  <text x="580" y="500" font-family="Georgia, serif" font-size="13" fill="#f87171" text-anchor="end">$3,989.00  -0.84%</text>
+  <text x="100" y="526" font-family="Georgia, serif" font-size="13" fill="#608060">BTC</text>
+  <text x="580" y="526" font-family="Georgia, serif" font-size="13" fill="#f87171" text-anchor="end">$59,174  -1.60%</text>
+  <line x1="100" y1="540" x2="580" y2="540" stroke="#7a9d6e" stroke-opacity="0.15" stroke-width="1"/>
+  <text x="100" y="562" font-family="Georgia, serif" font-size="13" fill="#608060">WTI</text>
+  <text x="580" y="562" font-family="Georgia, serif" font-size="13" fill="#4ade80" text-anchor="end">$69.77  +0.39%</text>
+  <text x="100" y="614" font-family="Georgia, serif" font-size="12" fill="#406050">금리 상승 + 안전자산 약세 = 달러 선호</text>
+
+  <!-- Right panel: 이중 효과 오늘 확인 -->
+  <rect x="680" y="416" width="520" height="242" rx="4" fill="#7a9d6e" fill-opacity="0.04" stroke="#7a9d6e" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="940" y="444" font-family="Georgia, serif" font-size="14" fill="#7a9d6e" text-anchor="middle" letter-spacing="2">오늘 확인된 효과</text>
+  <text x="700" y="476" font-family="Georgia, serif" font-size="13" fill="#f87171">외국인 이탈 압력</text>
+  <text x="1180" y="476" font-family="Georgia, serif" font-size="12" fill="#806060" text-anchor="end">KOSPI -1.18% · 반도체 동반 하락</text>
+  <text x="700" y="502" font-family="Georgia, serif" font-size="13" fill="#606060">수출 이익 개선 (미확인)</text>
+  <text x="1180" y="502" font-family="Georgia, serif" font-size="12" fill="#608060" text-anchor="end">삼성전자·SK하이닉스 모두 하락</text>
+  <line x1="700" y1="516" x2="1180" y2="516" stroke="#7a9d6e" stroke-opacity="0.15" stroke-width="1"/>
+  <text x="940" y="544" font-family="Georgia, serif" font-size="14" fill="#c0a060" text-anchor="middle">핵심 관찰선 — 1,560원</text>
+  <text x="700" y="570" font-family="Georgia, serif" font-size="13" fill="#608060">1,550~1,560원 유지</text>
+  <text x="1180" y="570" font-family="Georgia, serif" font-size="13" fill="#d8b878" text-anchor="end">중립~부담 혼재</text>
+  <text x="700" y="596" font-family="Georgia, serif" font-size="13" fill="#608060">1,560원 이상 돌파</text>
+  <text x="1180" y="596" font-family="Georgia, serif" font-size="13" fill="#f87171" text-anchor="end">이탈 압력 본격화</text>
+  <text x="940" y="634" font-family="Georgia, serif" font-size="12" fill="#406050" text-anchor="middle">오늘 1,554.58원 → 1,560원까지 5.42원</text>
+
+  <!-- Bottom signature -->
+  <text x="640" y="690" font-family="Georgia, serif" font-size="12" fill="#304030" text-anchor="middle" letter-spacing="1">lincoln-brief.vercel.app · KR Economy Issue</text>
+</svg>
