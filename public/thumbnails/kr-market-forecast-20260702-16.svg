@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#100604"/>
+      <stop offset="100%" style="stop-color:#241008"/>
+    </linearGradient>
+    <linearGradient id="redLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#d96552;stop-opacity:0"/>
+      <stop offset="30%" style="stop-color:#d96552;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#d96552;stop-opacity:0.3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Grid lines -->
+  <line x1="0" y1="240" x2="1280" y2="240" stroke="#d96552" stroke-opacity="0.06" stroke-width="1"/>
+  <line x1="0" y1="480" x2="1280" y2="480" stroke="#d96552" stroke-opacity="0.06" stroke-width="1"/>
+  <line x1="640" y1="0" x2="640" y2="720" stroke="#d96552" stroke-opacity="0.06" stroke-width="1"/>
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="1280" height="4" fill="url(#redLine)"/>
+
+  <!-- Lincoln Brief mark -->
+  <text x="48" y="54" font-family="Georgia, serif" font-size="18" fill="#e08d7c" font-weight="bold" letter-spacing="3">LINCOLN BRIEF</text>
+  <text x="48" y="76" font-family="Georgia, serif" font-size="13" fill="#d96552" letter-spacing="2">시장 예측 · 베이스 박스 하단 턱걸이</text>
+
+  <!-- Edition label -->
+  <rect x="970" y="28" width="270" height="36" rx="3" fill="#d96552" fill-opacity="0.1" stroke="#d96552" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="1105" y="51" font-family="Georgia, serif" font-size="14" fill="#e6a094" text-anchor="middle" letter-spacing="1">2026.07.02 · 16:00 KST</text>
+
+  <!-- Diamond decorative -->
+  <polygon points="640,104 651,115 640,126 629,115" fill="#d96552" fill-opacity="0.9"/>
+
+  <!-- Main headline -->
+  <text x="640" y="162" font-family="Georgia, serif" font-size="17" fill="#e08d7c" text-anchor="middle" letter-spacing="2">베이스 박스 하단에서 48pt — 베어 확률 40%</text>
+
+  <!-- Main price display -->
+  <text x="640" y="240" font-family="Georgia, serif" font-size="14" fill="#d96552" text-anchor="middle" letter-spacing="3">KOSPI</text>
+  <text x="640" y="320" font-family="Georgia, serif" font-size="76" fill="#ffffff" text-anchor="middle" font-weight="bold">7,648.09</text>
+  <polygon points="536,352 550,336 564,352" fill="#f87171"/>
+  <text x="578" y="358" font-family="Georgia, serif" font-size="30" fill="#f87171" font-weight="bold">-7.89%</text>
+  <text x="640" y="392" font-family="Georgia, serif" font-size="13" fill="#907060" text-anchor="middle">오전 -4.77% → 마감 낙폭 확대</text>
+
+  <!-- Divider line -->
+  <line x1="80" y1="420" x2="1200" y2="420" stroke="#d96552" stroke-opacity="0.2" stroke-width="1"/>
+
+  <!-- Stats panels -->
+  <rect x="80" y="440" width="360" height="230" rx="4" fill="#d96552" fill-opacity="0.06" stroke="#d96552" stroke-opacity="0.25" stroke-width="1"/>
+  <text x="260" y="468" font-family="Georgia, serif" font-size="14" fill="#e08d7c" text-anchor="middle" letter-spacing="2">오전 베이스 확률</text>
+  <text x="260" y="514" font-family="Georgia, serif" font-size="34" fill="#ffffff" text-anchor="middle" font-weight="bold">45% → 38%</text>
+  <text x="260" y="548" font-family="Georgia, serif" font-size="12" fill="#a08070" text-anchor="middle">"7,600~8,000" 박스</text>
+  <text x="260" y="606" font-family="Georgia, serif" font-size="12" fill="#907060" text-anchor="middle">하단 48pt 위에서</text>
+  <text x="260" y="628" font-family="Georgia, serif" font-size="12" fill="#907060" text-anchor="middle">간신히 마감</text>
+
+  <rect x="460" y="440" width="360" height="230" rx="4" fill="#d96552" fill-opacity="0.06" stroke="#d96552" stroke-opacity="0.25" stroke-width="1"/>
+  <text x="640" y="468" font-family="Georgia, serif" font-size="14" fill="#e08d7c" text-anchor="middle" letter-spacing="2">새 베이스 박스</text>
+  <text x="640" y="510" font-family="Georgia, serif" font-size="26" fill="#ffffff" text-anchor="middle" font-weight="bold">7,400~7,700</text>
+  <text x="640" y="548" font-family="Georgia, serif" font-size="12" fill="#a08070" text-anchor="middle">38% 확률 · 추가 하향</text>
+  <text x="640" y="606" font-family="Georgia, serif" font-size="12" fill="#907060" text-anchor="middle">베어 확률 40%로 상향</text>
+  <text x="640" y="628" font-family="Georgia, serif" font-size="12" fill="#907060" text-anchor="middle">블랙스완 14%로 상향</text>
+
+  <rect x="840" y="440" width="360" height="230" rx="4" fill="#d96552" fill-opacity="0.06" stroke="#d96552" stroke-opacity="0.25" stroke-width="1"/>
+  <text x="1020" y="468" font-family="Georgia, serif" font-size="14" fill="#e08d7c" text-anchor="middle" letter-spacing="2">반도체 투톱</text>
+  <text x="1020" y="510" font-family="Georgia, serif" font-size="22" fill="#f87171" text-anchor="middle" font-weight="bold">SK하이닉스 -14.57%</text>
+  <text x="1020" y="538" font-family="Georgia, serif" font-size="22" fill="#f87171" text-anchor="middle" font-weight="bold">삼성전자 -9.06%</text>
+  <text x="1020" y="606" font-family="Georgia, serif" font-size="12" fill="#907060" text-anchor="middle">현대차도 하락 전환</text>
+  <text x="1020" y="628" font-family="Georgia, serif" font-size="12" fill="#907060" text-anchor="middle">9종목은 여전히 상승</text>
+
+  <!-- Bottom signature -->
+  <text x="640" y="696" font-family="Georgia, serif" font-size="12" fill="#7a4a3a" text-anchor="middle" letter-spacing="1">lincoln-brief.vercel.app · KR Market Forecast</text>
+</svg>
