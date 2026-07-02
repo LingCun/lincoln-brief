@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-07-02T20:31:09.156Z",
+  "asOf": "2026-07-02T21:09:24.158Z",
   "asOfLabel": "7/2 한국·미국 마감",
   "source": "Yahoo Finance · KRX",
   "us": {
@@ -377,9 +377,9 @@
       {
         "ticker": "AVGO",
         "name": "Broadcom",
-        "price": 360.45,
-        "change": -8.889996337890636,
-        "changePct": -2.4069952959434224,
+        "price": 361.05,
+        "change": -8.289996337890614,
+        "changePct": -2.2445433530319616,
         "currency": "USD",
         "exchange": "NMS",
         "sparkline": [
@@ -412,7 +412,7 @@
           372.45001220703125,
           377.75,
           369.3399963378906,
-          360.45001220703125
+          361.04998779296875
         ],
         "available": true
       },
@@ -567,9 +567,9 @@
       {
         "symbol": "USDKRW",
         "label": "USD/KRW",
-        "close": 1539.15,
-        "change": -12.660058593749909,
-        "changePct": -0.8158252695708424,
+        "close": 1539.32,
+        "change": -12.490058593750064,
+        "changePct": -0.8048703206028032,
         "note": "하락"
       }
     ],
@@ -1159,29 +1159,29 @@
     },
     {
       "symbol": "USD/KRW",
-      "value": "1,539.15",
-      "change": "-0.82%",
+      "value": "1,539.32",
+      "change": "-0.80%",
       "up": false,
       "market": "fx"
     },
     {
       "symbol": "BTC",
-      "value": "$61,319",
-      "change": "+2.19%",
+      "value": "$61,477",
+      "change": "+2.45%",
       "up": true,
       "market": "crypto"
     },
     {
       "symbol": "GOLD",
-      "value": "$4,137.30",
-      "change": "+1.70%",
+      "value": "$4,136.30",
+      "change": "+1.67%",
       "up": true,
       "market": "commodity"
     },
     {
       "symbol": "WTI",
-      "value": "$68.50",
-      "change": "-0.12%",
+      "value": "$68.46",
+      "change": "-0.17%",
       "up": false,
       "market": "commodity"
     },
@@ -1201,9 +1201,9 @@
     },
     "crypto": {
       "source": "coingecko",
-      "btcUsd": 61350,
-      "change24hPct": 2.3020672481424502,
-      "asOf": "2026-07-02T20:30:09.000Z"
+      "btcUsd": 61495,
+      "change24hPct": 2.169012189935438,
+      "asOf": "2026-07-02T21:09:18.000Z"
     },
     "fred": {
       "source": "fred",
@@ -1263,15 +1263,15 @@
       "source": "twelvedata",
       "quotes": {
         "XAU/USD": {
-          "price": 4123.12201,
-          "previousClose": 4031.56804,
-          "changePct": 2.27093
+          "price": 4124.04128,
+          "previousClose": 4123.87904,
+          "changePct": 0.00393416
         }
       }
     },
     "yahoo": {
-      "usdKrw": 1538.92,
-      "btcUsd": 61318.54
+      "usdKrw": 1539.32,
+      "btcUsd": 61476.76
     }
   }
 }
