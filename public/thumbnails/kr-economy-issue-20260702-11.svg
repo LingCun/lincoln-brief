@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#040a06"/>
+      <stop offset="100%" style="stop-color:#0e1a10"/>
+    </linearGradient>
+    <linearGradient id="greenLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7a9d6e;stop-opacity:0"/>
+      <stop offset="30%" style="stop-color:#7a9d6e;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#7a9d6e;stop-opacity:0.3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Grid lines -->
+  <line x1="0" y1="240" x2="1280" y2="240" stroke="#7a9d6e" stroke-opacity="0.06" stroke-width="1"/>
+  <line x1="0" y1="480" x2="1280" y2="480" stroke="#7a9d6e" stroke-opacity="0.06" stroke-width="1"/>
+  <line x1="640" y1="0" x2="640" y2="720" stroke="#7a9d6e" stroke-opacity="0.06" stroke-width="1"/>
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="1280" height="4" fill="url(#greenLine)"/>
+
+  <!-- Lincoln Brief mark -->
+  <text x="48" y="54" font-family="Georgia, serif" font-size="18" fill="#a3c295" font-weight="bold" letter-spacing="3">LINCOLN BRIEF</text>
+  <text x="48" y="76" font-family="Georgia, serif" font-size="13" fill="#7a9d6e" letter-spacing="2">경제 이슈 · 원화·반도체 디커플링</text>
+
+  <!-- Edition label -->
+  <rect x="970" y="28" width="270" height="36" rx="3" fill="#7a9d6e" fill-opacity="0.1" stroke="#7a9d6e" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="1105" y="51" font-family="Georgia, serif" font-size="14" fill="#b3d0a7" text-anchor="middle" letter-spacing="1">2026.07.02 · 11:00 KST</text>
+
+  <!-- Diamond decorative -->
+  <polygon points="640,104 651,115 640,126 629,115" fill="#7a9d6e" fill-opacity="0.9"/>
+
+  <!-- Main headline -->
+  <text x="640" y="162" font-family="Georgia, serif" font-size="17" fill="#a3c295" text-anchor="middle" letter-spacing="2">KOSPI -4.77% 폭락에도 환율은 무덤덤</text>
+
+  <!-- Main price display -->
+  <text x="640" y="240" font-family="Georgia, serif" font-size="14" fill="#7a9d6e" text-anchor="middle" letter-spacing="3">USD/KRW</text>
+  <text x="640" y="320" font-family="Georgia, serif" font-size="76" fill="#ffffff" text-anchor="middle" font-weight="bold">1,552.47원</text>
+  <polygon points="536,336 550,336 543,350" fill="#4ade80"/>
+  <text x="578" y="358" font-family="Georgia, serif" font-size="30" fill="#4ade80" font-weight="bold">+0.25%</text>
+  <text x="640" y="392" font-family="Georgia, serif" font-size="13" fill="#6a8060" text-anchor="middle">사실상 보합 — 지수 급락과 괴리</text>
+
+  <!-- Divider line -->
+  <line x1="80" y1="420" x2="1200" y2="420" stroke="#7a9d6e" stroke-opacity="0.2" stroke-width="1"/>
+
+  <!-- Stats panels -->
+  <rect x="80" y="440" width="360" height="230" rx="4" fill="#7a9d6e" fill-opacity="0.06" stroke="#7a9d6e" stroke-opacity="0.25" stroke-width="1"/>
+  <text x="260" y="468" font-family="Georgia, serif" font-size="14" fill="#a3c295" text-anchor="middle" letter-spacing="2">KOSPI</text>
+  <text x="260" y="514" font-family="Georgia, serif" font-size="34" fill="#f87171" text-anchor="middle" font-weight="bold">-4.77%</text>
+  <text x="260" y="548" font-family="Georgia, serif" font-size="12" fill="#8090a8" text-anchor="middle">7,907.35 · 장중 급락</text>
+  <text x="260" y="606" font-family="Georgia, serif" font-size="12" fill="#6a8060" text-anchor="middle">KOSDAQ -5.33%</text>
+  <text x="260" y="628" font-family="Georgia, serif" font-size="12" fill="#6a8060" text-anchor="middle">지수만 급락</text>
+
+  <rect x="460" y="440" width="360" height="230" rx="4" fill="#7a9d6e" fill-opacity="0.06" stroke="#7a9d6e" stroke-opacity="0.25" stroke-width="1"/>
+  <text x="640" y="468" font-family="Georgia, serif" font-size="14" fill="#a3c295" text-anchor="middle" letter-spacing="2">반도체 투톱만 하락</text>
+  <text x="640" y="510" font-family="Georgia, serif" font-size="22" fill="#f87171" text-anchor="middle" font-weight="bold">SK하이닉스 -8.16%</text>
+  <text x="640" y="538" font-family="Georgia, serif" font-size="22" fill="#f87171" text-anchor="middle" font-weight="bold">삼성전자 -6.84%</text>
+  <text x="640" y="606" font-family="Georgia, serif" font-size="12" fill="#6a8060" text-anchor="middle">나머지 top12 10종목</text>
+  <text x="640" y="628" font-family="Georgia, serif" font-size="12" fill="#6a8060" text-anchor="middle">전원 상승</text>
+
+  <rect x="840" y="440" width="360" height="230" rx="4" fill="#7a9d6e" fill-opacity="0.06" stroke="#7a9d6e" stroke-opacity="0.25" stroke-width="1"/>
+  <text x="1020" y="468" font-family="Georgia, serif" font-size="14" fill="#a3c295" text-anchor="middle" letter-spacing="2">해석</text>
+  <text x="1020" y="514" font-family="Georgia, serif" font-size="22" fill="#ffffff" text-anchor="middle" font-weight="bold">반도체 국지적</text>
+  <text x="1020" y="540" font-family="Georgia, serif" font-size="22" fill="#ffffff" text-anchor="middle" font-weight="bold">충격 가능성</text>
+  <text x="1020" y="606" font-family="Georgia, serif" font-size="12" fill="#6a8060" text-anchor="middle">외국인 전면 이탈</text>
+  <text x="1020" y="628" font-family="Georgia, serif" font-size="12" fill="#6a8060" text-anchor="middle">신호는 미확인</text>
+
+  <!-- Bottom signature -->
+  <text x="640" y="696" font-family="Georgia, serif" font-size="12" fill="#4a6a40" text-anchor="middle" letter-spacing="1">lincoln-brief.vercel.app · KR Economy Issue</text>
+</svg>

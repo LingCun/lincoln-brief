@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#050a10"/>
+      <stop offset="100%" style="stop-color:#101a26"/>
+    </linearGradient>
+    <linearGradient id="blueLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#5677b0;stop-opacity:0"/>
+      <stop offset="30%" style="stop-color:#5677b0;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#5677b0;stop-opacity:0.3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Grid lines -->
+  <line x1="0" y1="240" x2="1280" y2="240" stroke="#5677b0" stroke-opacity="0.06" stroke-width="1"/>
+  <line x1="0" y1="480" x2="1280" y2="480" stroke="#5677b0" stroke-opacity="0.06" stroke-width="1"/>
+  <line x1="640" y1="0" x2="640" y2="720" stroke="#5677b0" stroke-opacity="0.06" stroke-width="1"/>
+
+  <!-- Top blue accent bar -->
+  <rect x="0" y="0" width="1280" height="4" fill="url(#blueLine)"/>
+
+  <!-- Lincoln Brief mark -->
+  <text x="48" y="54" font-family="Georgia, serif" font-size="18" fill="#7c9cc9" font-weight="bold" letter-spacing="3">LINCOLN BRIEF</text>
+  <text x="48" y="76" font-family="Georgia, serif" font-size="13" fill="#5677b0" letter-spacing="2">종목 분석 · SK하이닉스</text>
+
+  <!-- Edition label -->
+  <rect x="970" y="28" width="270" height="36" rx="3" fill="#5677b0" fill-opacity="0.1" stroke="#5677b0" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="1105" y="51" font-family="Georgia, serif" font-size="14" fill="#8fb0dd" text-anchor="middle" letter-spacing="1">2026.07.02 · 11:00 KST</text>
+
+  <!-- Diamond decorative -->
+  <polygon points="640,104 651,115 640,126 629,115" fill="#5677b0" fill-opacity="0.9"/>
+
+  <!-- Main headline -->
+  <text x="640" y="162" font-family="Georgia, serif" font-size="17" fill="#7c9cc9" text-anchor="middle" letter-spacing="2">top12 최대 하락 · 30일 고점 대비 -19.5%</text>
+
+  <!-- Main price display -->
+  <text x="640" y="240" font-family="Georgia, serif" font-size="14" fill="#5677b0" text-anchor="middle" letter-spacing="3">SK하이닉스 (000660)</text>
+  <text x="640" y="320" font-family="Georgia, serif" font-size="76" fill="#ffffff" text-anchor="middle" font-weight="bold">2,351,000원</text>
+  <polygon points="536,352 550,336 564,352" fill="#f87171"/>
+  <text x="578" y="358" font-family="Georgia, serif" font-size="30" fill="#f87171" font-weight="bold">-8.16%</text>
+  <text x="640" y="392" font-family="Georgia, serif" font-size="13" fill="#607090" text-anchor="middle">전일 2,560,000원 → 오늘 -209,000원</text>
+
+  <!-- Divider line -->
+  <line x1="80" y1="420" x2="1200" y2="420" stroke="#5677b0" stroke-opacity="0.2" stroke-width="1"/>
+
+  <!-- Stats panels -->
+  <rect x="80" y="440" width="360" height="230" rx="4" fill="#5677b0" fill-opacity="0.06" stroke="#5677b0" stroke-opacity="0.25" stroke-width="1"/>
+  <text x="260" y="468" font-family="Georgia, serif" font-size="14" fill="#7c9cc9" text-anchor="middle" letter-spacing="2">30일 고점 대비</text>
+  <text x="260" y="514" font-family="Georgia, serif" font-size="34" fill="#f87171" text-anchor="middle" font-weight="bold">-19.5%</text>
+  <text x="260" y="548" font-family="Georgia, serif" font-size="12" fill="#8090a8" text-anchor="middle">고점 2,919,000원</text>
+  <text x="260" y="606" font-family="Georgia, serif" font-size="12" fill="#607090" text-anchor="middle">30일 저점 대비</text>
+  <text x="260" y="632" font-family="Georgia, serif" font-size="18" fill="#4ade80" text-anchor="middle" font-weight="bold">+34.8%</text>
+
+  <rect x="460" y="440" width="360" height="230" rx="4" fill="#5677b0" fill-opacity="0.06" stroke="#5677b0" stroke-opacity="0.25" stroke-width="1"/>
+  <text x="640" y="468" font-family="Georgia, serif" font-size="14" fill="#7c9cc9" text-anchor="middle" letter-spacing="2">삼성전자 동반 하락</text>
+  <text x="640" y="514" font-family="Georgia, serif" font-size="34" fill="#f87171" text-anchor="middle" font-weight="bold">-6.84%</text>
+  <text x="640" y="548" font-family="Georgia, serif" font-size="12" fill="#8090a8" text-anchor="middle">293,000원</text>
+  <text x="640" y="606" font-family="Georgia, serif" font-size="12" fill="#607090" text-anchor="middle">반도체 대형주</text>
+  <text x="640" y="628" font-family="Georgia, serif" font-size="12" fill="#607090" text-anchor="middle">동반 매도 압력</text>
+
+  <rect x="840" y="440" width="360" height="230" rx="4" fill="#5677b0" fill-opacity="0.06" stroke="#5677b0" stroke-opacity="0.25" stroke-width="1"/>
+  <text x="1020" y="468" font-family="Georgia, serif" font-size="14" fill="#7c9cc9" text-anchor="middle" letter-spacing="2">향후 4주 베이스</text>
+  <text x="1020" y="510" font-family="Georgia, serif" font-size="24" fill="#ffffff" text-anchor="middle" font-weight="bold">2,050,000~</text>
+  <text x="1020" y="538" font-family="Georgia, serif" font-size="24" fill="#ffffff" text-anchor="middle" font-weight="bold">2,500,000원</text>
+  <text x="1020" y="606" font-family="Georgia, serif" font-size="12" fill="#607090" text-anchor="middle">하향 조정 · 박스권</text>
+  <text x="1020" y="628" font-family="Georgia, serif" font-size="12" fill="#607090" text-anchor="middle">44% 확률</text>
+
+  <!-- Bottom signature -->
+  <text x="640" y="696" font-family="Georgia, serif" font-size="12" fill="#4a5a78" text-anchor="middle" letter-spacing="1">lincoln-brief.vercel.app · KR Stock Analysis</text>
+</svg>
