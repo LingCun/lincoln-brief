@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-07-02T11:31:03.339Z",
+  "asOf": "2026-07-02T12:31:02.632Z",
   "asOfLabel": "7/2 한국·미국 마감",
   "source": "Yahoo Finance · KRX",
   "us": {
@@ -567,9 +567,9 @@
       {
         "symbol": "USDKRW",
         "label": "USD/KRW",
-        "close": 1546.57,
-        "change": -2.0399853515625637,
-        "changePct": -0.1317300915568777,
+        "close": 1544.88,
+        "change": -3.729985351562391,
+        "changePct": -0.24086021573182717,
         "note": "보합"
       }
     ],
@@ -1159,36 +1159,36 @@
     },
     {
       "symbol": "USD/KRW",
-      "value": "1,546.57",
-      "change": "-0.13%",
+      "value": "1,544.88",
+      "change": "-0.24%",
       "up": false,
       "market": "fx"
     },
     {
       "symbol": "BTC",
-      "value": "$61,201",
-      "change": "+2.00%",
+      "value": "$61,458",
+      "change": "+2.42%",
       "up": true,
       "market": "crypto"
     },
     {
       "symbol": "GOLD",
-      "value": "$4,075.80",
-      "change": "+0.18%",
+      "value": "$4,080.60",
+      "change": "+0.30%",
       "up": true,
       "market": "commodity"
     },
     {
       "symbol": "WTI",
-      "value": "$67.41",
-      "change": "-1.71%",
+      "value": "$67.13",
+      "change": "-2.11%",
       "up": false,
       "market": "commodity"
     },
     {
       "symbol": "US10Y",
       "value": "4.475%",
-      "change": "+1.89%",
+      "change": "+2.36%",
       "up": true,
       "market": "yield"
     }
@@ -1201,9 +1201,9 @@
     },
     "crypto": {
       "source": "coingecko",
-      "btcUsd": 61208,
-      "change24hPct": 4.467819234196672,
-      "asOf": "2026-07-02T11:30:57.000Z"
+      "btcUsd": 61199,
+      "change24hPct": 4.6768929799676515,
+      "asOf": "2026-07-02T12:30:11.000Z"
     },
     "fred": {
       "source": "fred",
@@ -1263,15 +1263,15 @@
       "source": "twelvedata",
       "quotes": {
         "XAU/USD": {
-          "price": 4065.42084,
+          "price": 4069.21606,
           "previousClose": 4031.56804,
-          "changePct": 0.83969313
+          "changePct": 0.9338307
         }
       }
     },
     "yahoo": {
-      "usdKrw": 1546.57,
-      "btcUsd": 61201.36
+      "usdKrw": 1544.29,
+      "btcUsd": 61458
     }
   }
 }
