@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-07-03T10:37:46.850Z",
+  "asOf": "2026-07-03T11:31:11.806Z",
   "asOfLabel": "7/3 한국·미국 마감",
   "source": "Yahoo Finance · KRX",
   "us": {
@@ -567,9 +567,9 @@
       {
         "symbol": "USDKRW",
         "label": "USD/KRW",
-        "close": 1530.59,
-        "change": -21.220058593750082,
-        "changePct": -1.367439170550273,
+        "close": 1530.58,
+        "change": -21.230058593750073,
+        "changePct": -1.3680835793130988,
         "note": "하락"
       }
     ],
@@ -1159,29 +1159,29 @@
     },
     {
       "symbol": "USD/KRW",
-      "value": "1,530.59",
+      "value": "1,530.58",
       "change": "-1.37%",
       "up": false,
       "market": "fx"
     },
     {
       "symbol": "BTC",
-      "value": "$61,745",
-      "change": "+0.42%",
+      "value": "$61,876",
+      "change": "+0.64%",
       "up": true,
       "market": "crypto"
     },
     {
       "symbol": "GOLD",
-      "value": "$4,192.80",
-      "change": "+1.95%",
+      "value": "$4,196.30",
+      "change": "+2.03%",
       "up": true,
       "market": "commodity"
     },
     {
       "symbol": "WTI",
-      "value": "$68.54",
-      "change": "-0.22%",
+      "value": "$68.51",
+      "change": "-0.26%",
       "up": false,
       "market": "commodity"
     },
@@ -1201,9 +1201,9 @@
     },
     "crypto": {
       "source": "coingecko",
-      "btcUsd": 61705,
-      "change24hPct": 0.8600447011845721,
-      "asOf": "2026-07-03T10:36:49.000Z"
+      "btcUsd": 61929,
+      "change24hPct": 1.176135388102202,
+      "asOf": "2026-07-03T11:30:12.000Z"
     },
     "fred": {
       "source": "fred",
@@ -1263,15 +1263,15 @@
       "source": "twelvedata",
       "quotes": {
         "XAU/USD": {
-          "price": 4176.40284,
+          "price": 4184.51732,
           "previousClose": 4123.87904,
-          "changePct": 1.27365
+          "changePct": 1.47042
         }
       }
     },
     "yahoo": {
-      "usdKrw": 1530.59,
-      "btcUsd": 61744.84
+      "usdKrw": 1530.58,
+      "btcUsd": 61875.98
     }
   }
 }
