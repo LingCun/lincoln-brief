@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#040a06"/>
+      <stop offset="100%" style="stop-color:#0e1a10"/>
+    </linearGradient>
+    <linearGradient id="greenLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7a9d6e;stop-opacity:0"/>
+      <stop offset="30%" style="stop-color:#7a9d6e;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#7a9d6e;stop-opacity:0.3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Grid lines -->
+  <line x1="0" y1="240" x2="1280" y2="240" stroke="#7a9d6e" stroke-opacity="0.06" stroke-width="1"/>
+  <line x1="0" y1="480" x2="1280" y2="480" stroke="#7a9d6e" stroke-opacity="0.06" stroke-width="1"/>
+  <line x1="640" y1="0" x2="640" y2="720" stroke="#7a9d6e" stroke-opacity="0.06" stroke-width="1"/>
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="1280" height="4" fill="url(#greenLine)"/>
+
+  <!-- Lincoln Brief mark -->
+  <text x="48" y="54" font-family="Georgia, serif" font-size="18" fill="#a3c295" font-weight="bold" letter-spacing="3">LINCOLN BRIEF</text>
+  <text x="48" y="76" font-family="Georgia, serif" font-size="13" fill="#7a9d6e" letter-spacing="2">경제 이슈 · 대형주·소형주 디커플링</text>
+
+  <!-- Edition label -->
+  <rect x="970" y="28" width="270" height="36" rx="3" fill="#7a9d6e" fill-opacity="0.1" stroke="#7a9d6e" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="1105" y="51" font-family="Georgia, serif" font-size="14" fill="#b3d0a7" text-anchor="middle" letter-spacing="1">2026.07.03 · 11:00 KST</text>
+
+  <!-- Diamond decorative -->
+  <polygon points="640,104 651,115 640,126 629,115" fill="#7a9d6e" fill-opacity="0.9"/>
+
+  <!-- Main headline -->
+  <text x="640" y="162" font-family="Georgia, serif" font-size="17" fill="#a3c295" text-anchor="middle" letter-spacing="2">KOSPI 반등에도 KOSDAQ은 홀로 역주행</text>
+
+  <!-- KOSPI / KOSDAQ split display -->
+  <text x="320" y="230" font-family="Georgia, serif" font-size="14" fill="#7a9d6e" text-anchor="middle" letter-spacing="3">KOSPI</text>
+  <text x="320" y="310" font-family="Georgia, serif" font-size="58" fill="#ffffff" text-anchor="middle" font-weight="bold">7,939.64</text>
+  <polygon points="236,336 250,320 264,336" fill="#4ade80"/>
+  <text x="280" y="342" font-family="Georgia, serif" font-size="26" fill="#4ade80" font-weight="bold">+3.81%</text>
+
+  <line x1="640" y1="195" x2="640" y2="395" stroke="#7a9d6e" stroke-opacity="0.25" stroke-width="1"/>
+
+  <text x="960" y="230" font-family="Georgia, serif" font-size="14" fill="#7a9d6e" text-anchor="middle" letter-spacing="3">KOSDAQ</text>
+  <text x="960" y="310" font-family="Georgia, serif" font-size="58" fill="#ffffff" text-anchor="middle" font-weight="bold">847.21</text>
+  <polygon points="876,320 890,336 904,320" fill="#f87171"/>
+  <text x="918" y="342" font-family="Georgia, serif" font-size="26" fill="#f87171" font-weight="bold">-2.25%</text>
+
+  <!-- Divider line -->
+  <line x1="80" y1="420" x2="1200" y2="420" stroke="#7a9d6e" stroke-opacity="0.2" stroke-width="1"/>
+
+  <!-- Stats panels -->
+  <rect x="80" y="440" width="360" height="230" rx="4" fill="#7a9d6e" fill-opacity="0.06" stroke="#7a9d6e" stroke-opacity="0.25" stroke-width="1"/>
+  <text x="260" y="468" font-family="Georgia, serif" font-size="14" fill="#a3c295" text-anchor="middle" letter-spacing="2">반도체 투톱 쏠림</text>
+  <text x="260" y="510" font-family="Georgia, serif" font-size="22" fill="#4ade80" text-anchor="middle" font-weight="bold">삼성전자 +7.78%</text>
+  <text x="260" y="538" font-family="Georgia, serif" font-size="22" fill="#4ade80" text-anchor="middle" font-weight="bold">SK하이닉스 +6.08%</text>
+  <text x="260" y="606" font-family="Georgia, serif" font-size="12" fill="#6a8060" text-anchor="middle">자금이 초대형주에</text>
+  <text x="260" y="628" font-family="Georgia, serif" font-size="12" fill="#6a8060" text-anchor="middle">집중되는 모습</text>
+
+  <rect x="460" y="440" width="360" height="230" rx="4" fill="#7a9d6e" fill-opacity="0.06" stroke="#7a9d6e" stroke-opacity="0.25" stroke-width="1"/>
+  <text x="640" y="468" font-family="Georgia, serif" font-size="14" fill="#a3c295" text-anchor="middle" letter-spacing="2">USD/KRW</text>
+  <text x="640" y="514" font-family="Georgia, serif" font-size="30" fill="#ffffff" text-anchor="middle" font-weight="bold">1,544.28원</text>
+  <text x="640" y="548" font-family="Georgia, serif" font-size="14" fill="#f87171" text-anchor="middle" font-weight="bold">-0.49%</text>
+  <text x="640" y="606" font-family="Georgia, serif" font-size="12" fill="#6a8060" text-anchor="middle">지수 반등에도</text>
+  <text x="640" y="628" font-family="Georgia, serif" font-size="12" fill="#6a8060" text-anchor="middle">환율은 여전히 조용</text>
+
+  <rect x="840" y="440" width="360" height="230" rx="4" fill="#7a9d6e" fill-opacity="0.06" stroke="#7a9d6e" stroke-opacity="0.25" stroke-width="1"/>
+  <text x="1020" y="468" font-family="Georgia, serif" font-size="14" fill="#a3c295" text-anchor="middle" letter-spacing="2">해석</text>
+  <text x="1020" y="514" font-family="Georgia, serif" font-size="22" fill="#ffffff" text-anchor="middle" font-weight="bold">대형주 국한</text>
+  <text x="1020" y="540" font-family="Georgia, serif" font-size="22" fill="#ffffff" text-anchor="middle" font-weight="bold">반등 · 온기 미확산</text>
+  <text x="1020" y="606" font-family="Georgia, serif" font-size="12" fill="#6a8060" text-anchor="middle">KOSDAQ 확산 여부가</text>
+  <text x="1020" y="628" font-family="Georgia, serif" font-size="12" fill="#6a8060" text-anchor="middle">다음 관찰 포인트</text>
+
+  <!-- Bottom signature -->
+  <text x="640" y="696" font-family="Georgia, serif" font-size="12" fill="#4a6a40" text-anchor="middle" letter-spacing="1">lincoln-brief.vercel.app · KR Economy Issue</text>
+</svg>
