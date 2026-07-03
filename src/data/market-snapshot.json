@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-07-03T10:31:07.623Z",
+  "asOf": "2026-07-03T10:37:46.850Z",
   "asOfLabel": "7/3 한국·미국 마감",
   "source": "Yahoo Finance · KRX",
   "us": {
@@ -567,9 +567,9 @@
       {
         "symbol": "USDKRW",
         "label": "USD/KRW",
-        "close": 1530.86,
-        "change": -20.9500585937501,
-        "changePct": -1.350040133953961,
+        "close": 1530.59,
+        "change": -21.220058593750082,
+        "changePct": -1.367439170550273,
         "note": "하락"
       }
     ],
@@ -1159,29 +1159,29 @@
     },
     {
       "symbol": "USD/KRW",
-      "value": "1,530.86",
-      "change": "-1.35%",
+      "value": "1,530.59",
+      "change": "-1.37%",
       "up": false,
       "market": "fx"
     },
     {
       "symbol": "BTC",
-      "value": "$61,657",
-      "change": "+0.28%",
+      "value": "$61,745",
+      "change": "+0.42%",
       "up": true,
       "market": "crypto"
     },
     {
       "symbol": "GOLD",
-      "value": "$4,192.70",
+      "value": "$4,192.80",
       "change": "+1.95%",
       "up": true,
       "market": "commodity"
     },
     {
       "symbol": "WTI",
-      "value": "$68.56",
-      "change": "-0.19%",
+      "value": "$68.54",
+      "change": "-0.22%",
       "up": false,
       "market": "commodity"
     },
@@ -1201,9 +1201,9 @@
     },
     "crypto": {
       "source": "coingecko",
-      "btcUsd": 61673,
-      "change24hPct": 0.9406235876671424,
-      "asOf": "2026-07-03T10:29:58.000Z"
+      "btcUsd": 61705,
+      "change24hPct": 0.8600447011845721,
+      "asOf": "2026-07-03T10:36:49.000Z"
     },
     "fred": {
       "source": "fred",
@@ -1263,15 +1263,15 @@
       "source": "twelvedata",
       "quotes": {
         "XAU/USD": {
-          "price": 4179.46436,
+          "price": 4176.40284,
           "previousClose": 4123.87904,
-          "changePct": 1.34789
+          "changePct": 1.27365
         }
       }
     },
     "yahoo": {
-      "usdKrw": 1530.86,
-      "btcUsd": 61656.8
+      "usdKrw": 1530.59,
+      "btcUsd": 61744.84
     }
   }
 }
