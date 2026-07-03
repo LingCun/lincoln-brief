@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a0e0e"/>
+      <stop offset="100%" stop-color="#0f0808"/>
+    </linearGradient>
+    <linearGradient id="accent-line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#d96552"/>
+      <stop offset="100%" stop-color="#d9655200"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg-grad)"/>
+
+  <!-- Top accent line (red) -->
+  <rect x="0" y="0" width="1280" height="4" fill="url(#accent-line)"/>
+
+  <!-- Left red bar -->
+  <rect x="60" y="60" width="4" height="600" fill="#d96552" opacity="0.6"/>
+
+  <!-- Brand -->
+  <text x="84" y="108" font-family="Georgia, serif" font-size="22" fill="#d96552" opacity="0.9" letter-spacing="3">LINCOLN BRIEF</text>
+  <text x="84" y="135" font-family="Georgia, serif" font-size="13" fill="#a04030" letter-spacing="2">US MARKET · 시장예측</text>
+
+  <!-- Edition label -->
+  <text x="1220" y="90" font-family="Georgia, serif" font-size="14" fill="#d96552" opacity="0.7" text-anchor="end">2026.07.04 · SLOT 01</text>
+  <text x="1220" y="110" font-family="Georgia, serif" font-size="13" fill="#a04030" text-anchor="end">MARKET FORECAST</text>
+
+  <!-- Main headline -->
+  <text x="84" y="215" font-family="Georgia, serif" font-size="44" font-weight="bold" fill="#ffffff">3일 연휴, 월요일 재개 대기</text>
+  <text x="84" y="270" font-family="Georgia, serif" font-size="34" fill="#d9a090">S&amp;P 500 <tspan fill="#ffffff" font-weight="bold">7,483.24</tspan></text>
+
+  <!-- Divider -->
+  <rect x="84" y="295" width="700" height="1" fill="#d96552" opacity="0.3"/>
+
+  <!-- Key events timeline -->
+  <text x="84" y="330" font-family="Georgia, serif" font-size="17" fill="#a04030" letter-spacing="1">향후 4주 핵심 이벤트</text>
+
+  <!-- Event boxes -->
+  <rect x="84" y="346" width="170" height="64" rx="3" fill="#d96552" opacity="0.2" stroke="#d96552" stroke-width="1.5"/>
+  <text x="169" y="370" font-family="Georgia, serif" font-size="15" fill="#d96552" text-anchor="middle">7/6 (월)</text>
+  <text x="169" y="392" font-family="Georgia, serif" font-size="14" fill="#ffffff" text-anchor="middle">정규 거래 재개</text>
+  <text x="169" y="408" font-family="Georgia, serif" font-size="12" fill="#a04030" text-anchor="middle">3일 연휴 후</text>
+
+  <rect x="270" y="346" width="170" height="64" rx="3" fill="#d96552" opacity="0.12" stroke="#d96552" stroke-width="1" stroke-dasharray="4"/>
+  <text x="355" y="370" font-family="Georgia, serif" font-size="15" fill="#d96552" text-anchor="middle">7/11경</text>
+  <text x="355" y="392" font-family="Georgia, serif" font-size="14" fill="#ffffff" text-anchor="middle">6월 CPI</text>
+  <text x="355" y="408" font-family="Georgia, serif" font-size="12" fill="#a04030" text-anchor="middle">물가 경로</text>
+
+  <rect x="456" y="346" width="200" height="64" rx="3" fill="#d96552" opacity="0.12" stroke="#d96552" stroke-width="1" stroke-dasharray="4"/>
+  <text x="556" y="370" font-family="Georgia, serif" font-size="15" fill="#d96552" text-anchor="middle">7월 하순</text>
+  <text x="556" y="392" font-family="Georgia, serif" font-size="14" fill="#ffffff" text-anchor="middle">빅테크 Q2 실적</text>
+  <text x="556" y="408" font-family="Georgia, serif" font-size="12" fill="#a04030" text-anchor="middle">밸류에이션 검증</text>
+
+  <rect x="672" y="346" width="160" height="64" rx="3" fill="#d96552" opacity="0.15" stroke="#d96552" stroke-width="1"/>
+  <text x="752" y="370" font-family="Georgia, serif" font-size="15" fill="#d96552" text-anchor="middle">7/28~29</text>
+  <text x="752" y="392" font-family="Georgia, serif" font-size="14" fill="#ffffff" text-anchor="middle">FOMC</text>
+  <text x="752" y="408" font-family="Georgia, serif" font-size="12" fill="#a04030" text-anchor="middle">금리 결정</text>
+
+  <!-- Divider -->
+  <rect x="84" y="428" width="700" height="1" fill="#d96552" opacity="0.2"/>
+
+  <!-- Key metrics -->
+  <text x="84" y="464" font-family="Georgia, serif" font-size="22" fill="#d9a090">US10Y</text>
+  <text x="190" y="464" font-family="Georgia, serif" font-size="22" fill="#e87050" font-weight="bold">4.485%</text>
+  <text x="330" y="464" font-family="Georgia, serif" font-size="18" fill="#808080">4.5%에 근접</text>
+
+  <text x="550" y="464" font-family="Georgia, serif" font-size="22" fill="#d9a090">FOMC까지</text>
+  <text x="700" y="464" font-family="Georgia, serif" font-size="22" fill="#ffffff" font-weight="bold">24일</text>
+
+  <text x="84" y="504" font-family="Georgia, serif" font-size="22" fill="#d9a090">TSLA</text>
+  <text x="150" y="504" font-family="Georgia, serif" font-size="22" fill="#e87050">-7.49%</text>
+  <text x="290" y="504" font-family="Georgia, serif" font-size="18" fill="#808080">최대 하락 유지</text>
+
+  <text x="550" y="504" font-family="Georgia, serif" font-size="22" fill="#d9a090">USD/KRW</text>
+  <text x="700" y="504" font-family="Georgia, serif" font-size="22" fill="#ffffff">1,530.39</text>
+
+  <!-- Divider -->
+  <rect x="84" y="528" width="700" height="1" fill="#d96552" opacity="0.2"/>
+
+  <!-- Scenario -->
+  <text x="84" y="564" font-family="Georgia, serif" font-size="19" fill="#d96552" opacity="0.85">베이스(45%): S&amp;P 7,300~7,600 박스 · 불(20%): 7,600+ 실적 서프라이즈</text>
+
+  <!-- Brand mark -->
+  <polygon points="84,612 92,604 100,612 92,620" fill="#d96552" opacity="0.5"/>
+  <text x="110" y="617" font-family="Georgia, serif" font-size="14" fill="#a04030">lincoln-brief.vercel.app</text>
+
+  <!-- Right decorative -->
+  <rect x="1200" y="60" width="1" height="600" fill="#d96552" opacity="0.15"/>
+  <polygon points="1240,60 1260,40 1280,60 1260,80" fill="#d96552" opacity="0.3"/>
+</svg>
