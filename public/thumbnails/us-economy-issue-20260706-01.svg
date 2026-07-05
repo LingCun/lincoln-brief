@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0e1a0e"/>
+      <stop offset="100%" stop-color="#080f08"/>
+    </linearGradient>
+    <linearGradient id="accent-line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7a9d6e"/>
+      <stop offset="100%" stop-color="#7a9d6e00"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg-grad)"/>
+
+  <!-- Top accent line (green) -->
+  <rect x="0" y="0" width="1280" height="4" fill="url(#accent-line)"/>
+
+  <!-- Left green bar -->
+  <rect x="60" y="60" width="4" height="600" fill="#7a9d6e" opacity="0.6"/>
+
+  <!-- Brand -->
+  <text x="84" y="108" font-family="Georgia, serif" font-size="22" fill="#7a9d6e" opacity="0.9" letter-spacing="3">LINCOLN BRIEF</text>
+  <text x="84" y="135" font-family="Georgia, serif" font-size="13" fill="#4a6d3e" letter-spacing="2">KR MARKET · 경제 이슈</text>
+
+  <!-- Edition label -->
+  <text x="1220" y="90" font-family="Georgia, serif" font-size="14" fill="#7a9d6e" opacity="0.7" text-anchor="end">2026.07.06 · SLOT 01</text>
+  <text x="1220" y="110" font-family="Georgia, serif" font-size="13" fill="#4a6d3e" text-anchor="end">ECONOMY ISSUE</text>
+
+  <!-- Main headline -->
+  <text x="84" y="200" font-family="Georgia, serif" font-size="32" font-weight="bold" fill="#ffffff">원화 강세 속 코스피 급등</text>
+  <text x="84" y="240" font-family="Georgia, serif" font-size="22" fill="#9abf8e">안전자산 Gold까지 함께 오른 이유</text>
+
+  <!-- Primary metric: USD/KRW -->
+  <text x="84" y="300" font-family="Georgia, serif" font-size="28" fill="#9abf8e">USD/KRW</text>
+  <text x="280" y="300" font-family="Georgia, serif" font-size="46" fill="#ffffff" font-weight="bold">1,529.16</text>
+  <polygon points="640,296 660,296 650,278" fill="#6ec46e"/>
+  <text x="670" y="296" font-family="Georgia, serif" font-size="26" fill="#6ec46e" font-weight="bold">-0.84% 원화강세</text>
+
+  <!-- Divider -->
+  <rect x="84" y="320" width="750" height="1" fill="#7a9d6e" opacity="0.3"/>
+
+  <!-- 코스피 / Gold -->
+  <text x="84" y="358" font-family="Georgia, serif" font-size="26" fill="#9abf8e">코스피</text>
+  <text x="220" y="358" font-family="Georgia, serif" font-size="26" fill="#ffffff" font-weight="bold">8,088.34</text>
+  <polygon points="420,338 438,358 402,358" fill="#6ec46e"/>
+  <text x="446" y="358" font-family="Georgia, serif" font-size="22" fill="#6ec46e">+5.76%</text>
+
+  <text x="84" y="398" font-family="Georgia, serif" font-size="26" fill="#9abf8e">Gold</text>
+  <text x="220" y="398" font-family="Georgia, serif" font-size="26" fill="#ffffff" font-weight="bold">$4,187.30</text>
+  <polygon points="460,378 478,398 442,398" fill="#6ec46e"/>
+  <text x="486" y="398" font-family="Georgia, serif" font-size="22" fill="#6ec46e">+1.81% · 동반 상승</text>
+
+  <!-- Divider -->
+  <rect x="84" y="418" width="750" height="1" fill="#7a9d6e" opacity="0.2"/>
+
+  <!-- Secondary metrics row -->
+  <text x="84" y="454" font-family="Georgia, serif" font-size="22" fill="#9abf8e">US10Y</text>
+  <text x="200" y="454" font-family="Georgia, serif" font-size="22" fill="#ffffff">4.485%</text>
+  <text x="340" y="454" font-family="Georgia, serif" font-size="18" fill="#808080">완전 정지</text>
+
+  <text x="600" y="454" font-family="Georgia, serif" font-size="22" fill="#9abf8e">BTC</text>
+  <text x="670" y="454" font-family="Georgia, serif" font-size="22" fill="#ffffff">$62,735</text>
+
+  <text x="84" y="494" font-family="Georgia, serif" font-size="22" fill="#9abf8e">SK하이닉스</text>
+  <text x="230" y="494" font-family="Georgia, serif" font-size="22" fill="#ffffff">+10.88%</text>
+
+  <text x="600" y="494" font-family="Georgia, serif" font-size="22" fill="#9abf8e">삼성전자</text>
+  <text x="740" y="494" font-family="Georgia, serif" font-size="20" fill="#ffffff">+8.22%</text>
+
+  <!-- Divider -->
+  <rect x="84" y="516" width="750" height="1" fill="#7a9d6e" opacity="0.2"/>
+
+  <!-- Interpretation box -->
+  <text x="84" y="550" font-family="Georgia, serif" font-size="18" fill="#9abf8e" letter-spacing="1">원화·금이 함께 오르는 이례적 조합</text>
+
+  <text x="84" y="578" font-family="Georgia, serif" font-size="18" fill="#c0d8b8">미국 주식·금리는 나흘째 완전 정지, 달러 약세 가능성 시사</text>
+
+  <!-- Divider -->
+  <rect x="84" y="598" width="750" height="1" fill="#7a9d6e" opacity="0.2"/>
+
+  <!-- Footer note -->
+  <text x="84" y="630" font-family="Georgia, serif" font-size="19" fill="#7a9d6e" opacity="0.85">다음 확인 지점: 오늘 밤 22:30 KST 미국 정규 거래 재개</text>
+
+  <!-- Brand mark -->
+  <polygon points="84,662 92,654 100,662 92,670" fill="#7a9d6e" opacity="0.5"/>
+  <text x="110" y="667" font-family="Georgia, serif" font-size="14" fill="#4a6d3e">lincoln-brief.vercel.app</text>
+
+  <!-- Right decorative -->
+  <rect x="1200" y="60" width="1" height="600" fill="#7a9d6e" opacity="0.15"/>
+  <polygon points="1240,60 1260,40 1280,60 1260,80" fill="#7a9d6e" opacity="0.3"/>
+</svg>
