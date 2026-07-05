@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0e1a0e"/>
+      <stop offset="100%" stop-color="#080f08"/>
+    </linearGradient>
+    <linearGradient id="accent-line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7a9d6e"/>
+      <stop offset="100%" stop-color="#7a9d6e00"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg-grad)"/>
+
+  <!-- Top accent line (green) -->
+  <rect x="0" y="0" width="1280" height="4" fill="url(#accent-line)"/>
+
+  <!-- Left green bar -->
+  <rect x="60" y="60" width="4" height="600" fill="#7a9d6e" opacity="0.6"/>
+
+  <!-- Brand -->
+  <text x="84" y="108" font-family="Georgia, serif" font-size="22" fill="#7a9d6e" opacity="0.9" letter-spacing="3">LINCOLN BRIEF</text>
+  <text x="84" y="135" font-family="Georgia, serif" font-size="13" fill="#4a6d3e" letter-spacing="2">US MARKET · 경제 이슈</text>
+
+  <!-- Edition label -->
+  <text x="1220" y="90" font-family="Georgia, serif" font-size="14" fill="#7a9d6e" opacity="0.7" text-anchor="end">2026.07.06 · SLOT 06</text>
+  <text x="1220" y="110" font-family="Georgia, serif" font-size="13" fill="#4a6d3e" text-anchor="end">ECONOMY ISSUE</text>
+
+  <!-- Main headline -->
+  <text x="84" y="200" font-family="Georgia, serif" font-size="30" font-weight="bold" fill="#ffffff">Q2 실적시즌 임박</text>
+  <text x="84" y="240" font-family="Georgia, serif" font-size="22" fill="#9abf8e">$4.72조 NVDA가 짊어진 AI 밸류에이션 시험대</text>
+
+  <!-- Primary metric: NVDA -->
+  <text x="84" y="300" font-family="Georgia, serif" font-size="28" fill="#9abf8e">NVDA</text>
+  <text x="220" y="300" font-family="Georgia, serif" font-size="46" fill="#ffffff" font-weight="bold">$194.83</text>
+  <polygon points="560,282 578,300 542,300" fill="#e87050"/>
+  <text x="588" y="296" font-family="Georgia, serif" font-size="26" fill="#e87050" font-weight="bold">-1.39%</text>
+
+  <!-- Divider -->
+  <rect x="84" y="320" width="750" height="1" fill="#7a9d6e" opacity="0.3"/>
+
+  <!-- AVGO / META -->
+  <text x="84" y="358" font-family="Georgia, serif" font-size="26" fill="#9abf8e">AVGO</text>
+  <text x="220" y="358" font-family="Georgia, serif" font-size="26" fill="#ffffff" font-weight="bold">$360.45</text>
+  <text x="446" y="358" font-family="Georgia, serif" font-size="22" fill="#e87050">-2.41%</text>
+
+  <text x="84" y="398" font-family="Georgia, serif" font-size="26" fill="#9abf8e">META</text>
+  <text x="220" y="398" font-family="Georgia, serif" font-size="26" fill="#ffffff" font-weight="bold">$582.90</text>
+  <text x="446" y="398" font-family="Georgia, serif" font-size="22" fill="#e87050">-4.90%</text>
+
+  <!-- Divider -->
+  <rect x="84" y="418" width="750" height="1" fill="#7a9d6e" opacity="0.2"/>
+
+  <!-- Secondary metrics row -->
+  <text x="84" y="454" font-family="Georgia, serif" font-size="22" fill="#9abf8e">시가총액</text>
+  <text x="220" y="454" font-family="Georgia, serif" font-size="22" fill="#ffffff">약 $4.72조</text>
+
+  <text x="600" y="454" font-family="Georgia, serif" font-size="22" fill="#9abf8e">FOMC까지</text>
+  <text x="750" y="454" font-family="Georgia, serif" font-size="22" fill="#ffffff">22일</text>
+
+  <text x="84" y="494" font-family="Georgia, serif" font-size="22" fill="#9abf8e">30일 수익률</text>
+  <text x="260" y="494" font-family="Georgia, serif" font-size="22" fill="#e87050">-12.82%</text>
+
+  <!-- Divider -->
+  <rect x="84" y="516" width="750" height="1" fill="#7a9d6e" opacity="0.2"/>
+
+  <!-- Interpretation box -->
+  <text x="84" y="550" font-family="Georgia, serif" font-size="18" fill="#9abf8e" letter-spacing="1">밸류에이션 재조정인가, 수요 둔화 신호인가</text>
+
+  <text x="84" y="578" font-family="Georgia, serif" font-size="18" fill="#c0d8b8">반도체·빅테크 소프트웨어 나란히 조정, 실적시즌이 분수령</text>
+
+  <!-- Divider -->
+  <rect x="84" y="598" width="750" height="1" fill="#7a9d6e" opacity="0.2"/>
+
+  <!-- Footer note -->
+  <text x="84" y="630" font-family="Georgia, serif" font-size="19" fill="#7a9d6e" opacity="0.85">다음 확인 지점: 7월 하순 Q2 실적 발표</text>
+
+  <!-- Brand mark -->
+  <polygon points="84,662 92,654 100,662 92,670" fill="#7a9d6e" opacity="0.5"/>
+  <text x="110" y="667" font-family="Georgia, serif" font-size="14" fill="#4a6d3e">lincoln-brief.vercel.app</text>
+
+  <!-- Right decorative -->
+  <rect x="1200" y="60" width="1" height="600" fill="#7a9d6e" opacity="0.15"/>
+  <polygon points="1240,60 1260,40 1280,60 1260,80" fill="#7a9d6e" opacity="0.3"/>
+</svg>
