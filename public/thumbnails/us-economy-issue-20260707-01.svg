@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#141a12"/>
+      <stop offset="100%" stop-color="#0a0d09"/>
+    </linearGradient>
+    <linearGradient id="accent-line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7a9d6e"/>
+      <stop offset="100%" stop-color="#7a9d6e00"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg-grad)"/>
+
+  <!-- Top accent line -->
+  <rect x="0" y="0" width="1280" height="4" fill="url(#accent-line)"/>
+
+  <!-- Left green bar -->
+  <rect x="60" y="60" width="4" height="600" fill="#7a9d6e" opacity="0.6"/>
+
+  <!-- Lincoln Brief brand -->
+  <text x="84" y="108" font-family="Georgia, serif" font-size="22" fill="#a3c398" opacity="0.9" letter-spacing="3">LINCOLN BRIEF</text>
+  <text x="84" y="135" font-family="Georgia, serif" font-size="13" fill="#7a9d6e" letter-spacing="2">US MARKET · 경제 이슈</text>
+
+  <!-- Edition label top right -->
+  <text x="1220" y="90" font-family="Georgia, serif" font-size="14" fill="#a3c398" opacity="0.7" text-anchor="end">2026.07.07 · SLOT 01</text>
+  <text x="1220" y="110" font-family="Georgia, serif" font-size="13" fill="#7a9d6e" text-anchor="end">AI 메모리 슈퍼사이클</text>
+
+  <!-- Main headline -->
+  <text x="84" y="196" font-family="Georgia, serif" font-size="30" font-weight="bold" fill="#ffffff">삼성전자 영업이익</text>
+  <text x="84" y="236" font-family="Georgia, serif" font-size="30" font-weight="bold" fill="#ffffff">전년비 18배 전망</text>
+
+  <!-- Samsung main data -->
+  <text x="84" y="304" font-family="Georgia, serif" font-size="26" fill="#a3c398">삼성전자</text>
+  <text x="260" y="304" font-family="Georgia, serif" font-size="28" fill="#ffffff">318,000원</text>
+  <polygon points="470,286 490,286 480,304" fill="#6ec46e"/>
+  <text x="498" y="304" font-family="Georgia, serif" font-size="24" fill="#6ec46e">+11.19%</text>
+
+  <!-- Divider line -->
+  <rect x="84" y="324" width="700" height="1" fill="#7a9d6e" opacity="0.3"/>
+
+  <!-- KOSPI row -->
+  <text x="84" y="366" font-family="Georgia, serif" font-size="24" fill="#a3c398">코스피</text>
+  <text x="240" y="366" font-family="Georgia, serif" font-size="26" fill="#ffffff" font-weight="bold">8,051.33</text>
+  <polygon points="440,350 460,350 450,366" fill="#6ec46e"/>
+  <text x="468" y="366" font-family="Georgia, serif" font-size="24" fill="#6ec46e">+5.27%</text>
+
+  <!-- Secondary row -->
+  <text x="84" y="408" font-family="Georgia, serif" font-size="22" fill="#a3c398">KOSDAQ</text>
+  <text x="220" y="408" font-family="Georgia, serif" font-size="22" fill="#ffffff">847.07</text>
+  <polygon points="380,392 392,392 386,408" fill="#e87050"/>
+  <text x="399" y="408" font-family="Georgia, serif" font-size="20" fill="#e87050">-2.27%</text>
+
+  <text x="84" y="444" font-family="Georgia, serif" font-size="22" fill="#a3c398">USD/KRW</text>
+  <text x="220" y="444" font-family="Georgia, serif" font-size="22" fill="#ffffff">1,530.67</text>
+  <polygon points="390,428 402,428 396,444" fill="#6ec46e"/>
+  <text x="409" y="444" font-family="Georgia, serif" font-size="20" fill="#6ec46e">-0.74% 원화 강세</text>
+
+  <!-- Divider -->
+  <rect x="84" y="468" width="700" height="1" fill="#7a9d6e" opacity="0.2"/>
+
+  <!-- Footer note -->
+  <text x="84" y="506" font-family="Georgia, serif" font-size="18" fill="#a3c398" opacity="0.9">Citi 목표가 53만원 유지 · 한국 정부 반도체 메가 프로젝트 드라이브</text>
+  <text x="84" y="536" font-family="Georgia, serif" font-size="18" fill="#8a94a6">이익 개선 vs 원화 강세, 수출 채산성 관전 포인트</text>
+
+  <!-- Bottom accent / divider -->
+  <rect x="84" y="562" width="700" height="1" fill="#7a9d6e" opacity="0.25"/>
+
+  <!-- Small diamond brand mark -->
+  <polygon points="84,596 92,588 100,596 92,604" fill="#7a9d6e" opacity="0.5"/>
+</svg>
