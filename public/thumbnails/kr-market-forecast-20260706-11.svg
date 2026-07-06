@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#140608"/>
+      <stop offset="100%" style="stop-color:#241010"/>
+    </linearGradient>
+    <linearGradient id="redLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#d96552;stop-opacity:0"/>
+      <stop offset="30%" style="stop-color:#d96552;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#d96552;stop-opacity:0.3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Grid lines -->
+  <line x1="0" y1="240" x2="1280" y2="240" stroke="#d96552" stroke-opacity="0.05" stroke-width="1"/>
+  <line x1="0" y1="480" x2="1280" y2="480" stroke="#d96552" stroke-opacity="0.05" stroke-width="1"/>
+  <line x1="640" y1="0" x2="640" y2="720" stroke="#d96552" stroke-opacity="0.05" stroke-width="1"/>
+
+  <!-- Top red accent bar -->
+  <rect x="0" y="0" width="1280" height="4" fill="url(#redLine)"/>
+
+  <!-- Lincoln Brief mark -->
+  <text x="48" y="54" font-family="Georgia, serif" font-size="18" fill="#d96552" font-weight="bold" letter-spacing="3">LINCOLN BRIEF</text>
+  <text x="48" y="76" font-family="Georgia, serif" font-size="13" fill="#804040" letter-spacing="2">KR MARKET · 시장 예측</text>
+
+  <!-- Edition label -->
+  <rect x="990" y="28" width="250" height="36" rx="3" fill="#d96552" fill-opacity="0.08" stroke="#d96552" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="1115" y="51" font-family="Georgia, serif" font-size="14" fill="#c07060" text-anchor="middle" letter-spacing="1">2026.07.06 · 11:00 KST</text>
+
+  <!-- Diamond decorative -->
+  <polygon points="640,104 651,115 640,126 629,115" fill="#d96552" fill-opacity="0.9"/>
+
+  <!-- Main headline -->
+  <text x="640" y="162" font-family="Georgia, serif" font-size="16" fill="#904040" text-anchor="middle" letter-spacing="2">베이스 박스 안 유지 · 상단→중하단 이동</text>
+
+  <!-- KOSPI center -->
+  <text x="640" y="214" font-family="Georgia, serif" font-size="14" fill="#b06050" text-anchor="middle" letter-spacing="2">KOSPI — 7,800~8,300 박스 안</text>
+  <text x="640" y="295" font-family="Georgia, serif" font-size="78" fill="#ffffff" text-anchor="middle" font-weight="bold">8,038</text>
+  <text x="640" y="323" font-family="Georgia, serif" font-size="22" fill="#9090a0" text-anchor="middle">.82</text>
+  <!-- Down triangle -->
+  <polygon points="490,320 506,338 522,320" fill="#f87171"/>
+  <text x="536" y="343" font-family="Georgia, serif" font-size="28" fill="#f87171" font-weight="bold">-0.61%</text>
+  <text x="640" y="376" font-family="Georgia, serif" font-size="14" fill="#604040" text-anchor="middle">KOSDAQ -2.51% 급락 · 반도체 투톱 방향 갈림</text>
+
+  <!-- Divider -->
+  <line x1="120" y1="400" x2="1160" y2="400" stroke="#d96552" stroke-opacity="0.15" stroke-width="1"/>
+
+  <!-- Scenario table header -->
+  <text x="640" y="430" font-family="Georgia, serif" font-size="15" fill="#d96552" text-anchor="middle" letter-spacing="2">향후 4주 KOSPI 시나리오 (재조정)</text>
+
+  <!-- Scenario rows -->
+  <rect x="80" y="446" width="1120" height="38" rx="3" fill="#4ade80" fill-opacity="0.06" stroke="#4ade80" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="100" y="470" font-family="Georgia, serif" font-size="14" fill="#4ade80">불  (12%)</text>
+  <text x="360" y="470" font-family="Georgia, serif" font-size="13" fill="#609060">KOSDAQ 확산 재개 · 반도체 투톱 동반 강세 복귀</text>
+  <text x="1180" y="470" font-family="Georgia, serif" font-size="14" fill="#4ade80" text-anchor="end">8,500 이상</text>
+
+  <rect x="80" y="490" width="1120" height="38" rx="3" fill="#d8b878" fill-opacity="0.06" stroke="#d8b878" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="100" y="514" font-family="Georgia, serif" font-size="14" fill="#d8b878">베이스  (45%)</text>
+  <text x="360" y="514" font-family="Georgia, serif" font-size="13" fill="#909070">오늘과 같은 완만한 조정 · 박스 내 등락 지속</text>
+  <text x="1180" y="514" font-family="Georgia, serif" font-size="14" fill="#d8b878" text-anchor="end">7,800~8,300 박스</text>
+
+  <rect x="80" y="534" width="1120" height="38" rx="3" fill="#f87171" fill-opacity="0.06" stroke="#f87171" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="100" y="558" font-family="Georgia, serif" font-size="14" fill="#f87171">베어  (33%)</text>
+  <text x="360" y="558" font-family="Georgia, serif" font-size="13" fill="#907060">코스닥 약세 지속 · 반도체 디커플링 심화</text>
+  <text x="1180" y="558" font-family="Georgia, serif" font-size="14" fill="#f87171" text-anchor="end">7,600 이탈</text>
+
+  <rect x="80" y="578" width="1120" height="38" rx="3" fill="#c084fc" fill-opacity="0.06" stroke="#c084fc" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="100" y="602" font-family="Georgia, serif" font-size="14" fill="#c084fc">블랙 스완  (10%)</text>
+  <text x="360" y="602" font-family="Georgia, serif" font-size="13" fill="#806080">메모리 업황 재충격 · 원화 약세 전환</text>
+  <text x="1180" y="602" font-family="Georgia, serif" font-size="14" fill="#c084fc" text-anchor="end">7,300 이탈</text>
+
+  <!-- Key watch line -->
+  <line x1="80" y1="628" x2="1200" y2="628" stroke="#d96552" stroke-opacity="0.15" stroke-width="1"/>
+  <text x="640" y="650" font-family="Georgia, serif" font-size="13" fill="#905050" text-anchor="middle" letter-spacing="1">관찰 포인트 — KOSDAQ 급락 지속 여부 · 반도체 투톱 재동조화 · USD/KRW 강세 지속</text>
+
+  <!-- Bottom signature -->
+  <text x="640" y="690" font-family="Georgia, serif" font-size="12" fill="#503030" text-anchor="middle" letter-spacing="1">lincoln-brief.vercel.app · KR Market Forecast</text>
+</svg>
