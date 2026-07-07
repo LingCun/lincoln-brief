@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0c0a04"/>
+      <stop offset="100%" style="stop-color:#1a1510"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Grid lines -->
+  <line x1="0" y1="240" x2="1280" y2="240" stroke="#7a9d6e" stroke-opacity="0.06" stroke-width="1"/>
+  <line x1="0" y1="480" x2="1280" y2="480" stroke="#7a9d6e" stroke-opacity="0.06" stroke-width="1"/>
+  <line x1="640" y1="0" x2="640" y2="720" stroke="#7a9d6e" stroke-opacity="0.06" stroke-width="1"/>
+
+  <!-- Top green accent bar (economy-issue category color) -->
+  <rect x="0" y="0" width="1280" height="4" fill="#7a9d6e"/>
+
+  <!-- Lincoln Brief mark -->
+  <text x="48" y="54" font-family="Georgia, serif" font-size="18" fill="#d8b878" font-weight="bold" letter-spacing="3">LINCOLN BRIEF</text>
+  <text x="48" y="76" font-family="Georgia, serif" font-size="13" fill="#907840" letter-spacing="2">KR MARKET · 경제 이슈</text>
+
+  <!-- Edition label -->
+  <rect x="950" y="28" width="290" height="36" rx="3" fill="#7a9d6e" fill-opacity="0.12" stroke="#7a9d6e" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="1095" y="51" font-family="Georgia, serif" font-size="14" fill="#a8c49c" text-anchor="middle" letter-spacing="1">2026.07.07 · 11:00 KST</text>
+
+  <!-- Diamond decorative -->
+  <polygon points="640,104 651,115 640,126 629,115" fill="#7a9d6e" fill-opacity="0.9"/>
+
+  <!-- Main headline -->
+  <text x="640" y="160" font-family="Georgia, serif" font-size="16" fill="#a8c49c" text-anchor="middle" letter-spacing="2">엇갈린 세 방향 — 지수 급락, 원화 강세, 미국은 상승</text>
+
+  <!-- Three-way divergence panels -->
+  <rect x="80" y="200" width="360" height="200" rx="4" fill="#f87171" fill-opacity="0.08" stroke="#f87171" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="260" y="232" font-family="Georgia, serif" font-size="14" fill="#e0a0a0" text-anchor="middle" letter-spacing="1">KOSPI</text>
+  <text x="260" y="300" font-family="Georgia, serif" font-size="42" fill="#ffffff" text-anchor="middle" font-weight="bold">7,500.20</text>
+  <text x="260" y="340" font-family="Georgia, serif" font-size="28" fill="#f87171" text-anchor="middle" font-weight="bold">-6.85%</text>
+  <text x="260" y="378" font-family="Georgia, serif" font-size="12" fill="#c08080" text-anchor="middle">큰 폭 하락</text>
+
+  <rect x="460" y="200" width="360" height="200" rx="4" fill="#4ade80" fill-opacity="0.08" stroke="#4ade80" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="640" y="232" font-family="Georgia, serif" font-size="14" fill="#a0d0a8" text-anchor="middle" letter-spacing="1">USD/KRW</text>
+  <text x="640" y="300" font-family="Georgia, serif" font-size="42" fill="#ffffff" text-anchor="middle" font-weight="bold">1,523.18원</text>
+  <text x="640" y="340" font-family="Georgia, serif" font-size="28" fill="#4ade80" text-anchor="middle" font-weight="bold">-0.51%</text>
+  <text x="640" y="378" font-family="Georgia, serif" font-size="12" fill="#80c090" text-anchor="middle">원화 강세</text>
+
+  <rect x="840" y="200" width="360" height="200" rx="4" fill="#4ade80" fill-opacity="0.08" stroke="#4ade80" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="1020" y="232" font-family="Georgia, serif" font-size="14" fill="#a0d0a8" text-anchor="middle" letter-spacing="1">S&amp;P 500 (전일)</text>
+  <text x="1020" y="300" font-family="Georgia, serif" font-size="42" fill="#ffffff" text-anchor="middle" font-weight="bold">7,537.43</text>
+  <text x="1020" y="340" font-family="Georgia, serif" font-size="28" fill="#4ade80" text-anchor="middle" font-weight="bold">+0.72%</text>
+  <text x="1020" y="378" font-family="Georgia, serif" font-size="12" fill="#80c090" text-anchor="middle">상승 마감</text>
+
+  <!-- Divider line -->
+  <line x1="80" y1="430" x2="1200" y2="430" stroke="#7a9d6e" stroke-opacity="0.2" stroke-width="1"/>
+
+  <text x="640" y="470" font-family="Georgia, serif" font-size="14" fill="#d8b878" text-anchor="middle" letter-spacing="1">top12 낙폭 분포</text>
+  <text x="640" y="510" font-family="Georgia, serif" font-size="16" fill="#e0a0a0" text-anchor="middle">수출 대형주 -6.85%~-8.62%</text>
+  <text x="640" y="544" font-family="Georgia, serif" font-size="16" fill="#c0b090" text-anchor="middle">금융·바이오·플랫폼주 -0.09%~-0.86%</text>
+  <text x="640" y="588" font-family="Georgia, serif" font-size="13" fill="#806040" text-anchor="middle">전면적 패닉보다 업종 집중 매도에 가까운 그림</text>
+
+  <!-- Bottom signature -->
+  <text x="640" y="696" font-family="Georgia, serif" font-size="12" fill="#605030" text-anchor="middle" letter-spacing="1">lincoln-brief.vercel.app · KR Economy Issue</text>
+</svg>
