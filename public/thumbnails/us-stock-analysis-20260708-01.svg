@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#131720"/>
+      <stop offset="100%" stop-color="#0a0c12"/>
+    </linearGradient>
+    <linearGradient id="accent-line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#5677b0"/>
+      <stop offset="100%" stop-color="#5677b000"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg-grad)"/>
+
+  <!-- Top accent line -->
+  <rect x="0" y="0" width="1280" height="4" fill="url(#accent-line)"/>
+
+  <!-- Left blue bar -->
+  <rect x="60" y="60" width="4" height="600" fill="#5677b0" opacity="0.6"/>
+
+  <!-- Lincoln Brief brand -->
+  <text x="84" y="108" font-family="Georgia, serif" font-size="22" fill="#7d9bd4" opacity="0.9" letter-spacing="3">LINCOLN BRIEF</text>
+  <text x="84" y="135" font-family="Georgia, serif" font-size="13" fill="#5677b0" letter-spacing="2">US MARKET · 종목 분석</text>
+
+  <!-- Edition label top right -->
+  <text x="1220" y="90" font-family="Georgia, serif" font-size="14" fill="#7d9bd4" opacity="0.7" text-anchor="end">2026.07.08 · SLOT 01</text>
+  <text x="1220" y="110" font-family="Georgia, serif" font-size="13" fill="#5677b0" text-anchor="end">버리의 숏 베팅</text>
+
+  <!-- Main headline -->
+  <text x="84" y="200" font-family="Georgia, serif" font-size="34" font-weight="bold" fill="#ffffff">TSLA, 랠리 되돌림</text>
+
+  <!-- TSLA main data -->
+  <text x="84" y="288" font-family="Georgia, serif" font-size="32" fill="#7d9bd4">TSLA</text>
+  <text x="230" y="288" font-family="Georgia, serif" font-size="32" fill="#ffffff" font-weight="bold">$407.63</text>
+  <polygon points="450,288 472,288 461,268" fill="#e87050"/>
+  <text x="481" y="288" font-family="Georgia, serif" font-size="28" fill="#e87050" font-weight="bold">-2.89%</text>
+
+  <!-- Divider line -->
+  <rect x="84" y="312" width="700" height="1" fill="#5677b0" opacity="0.3"/>
+
+  <!-- Delivery data row -->
+  <text x="84" y="356" font-family="Georgia, serif" font-size="22" fill="#7d9bd4">평균 목표가</text>
+  <text x="290" y="356" font-family="Georgia, serif" font-size="24" fill="#ffffff" font-weight="bold">$423.40</text>
+  <text x="84" y="392" font-family="Georgia, serif" font-size="20" fill="#8a94a6">현재가 대비 +3.86% — 격차 확대</text>
+
+  <!-- Divider -->
+  <rect x="84" y="418" width="700" height="1" fill="#5677b0" opacity="0.2"/>
+
+  <!-- Secondary data rows -->
+  <text x="84" y="456" font-family="Georgia, serif" font-size="20" fill="#7d9bd4">마이클 버리 숏</text>
+  <text x="290" y="456" font-family="Georgia, serif" font-size="20" fill="#ffffff">$416.22 기준가 공개</text>
+
+  <text x="84" y="492" font-family="Georgia, serif" font-size="20" fill="#7d9bd4">밸류에이션</text>
+  <text x="270" y="492" font-family="Georgia, serif" font-size="20" fill="#ffffff">P/E 약 373.87배</text>
+
+  <text x="84" y="528" font-family="Georgia, serif" font-size="20" fill="#7d9bd4">RBC캐피털</text>
+  <text x="240" y="528" font-family="Georgia, serif" font-size="20" fill="#ffffff">목표가 $500로 상향</text>
+
+  <!-- Bottom accent / divider -->
+  <rect x="84" y="558" width="700" height="1" fill="#5677b0" opacity="0.25"/>
+
+  <!-- Footer note -->
+  <text x="84" y="592" font-family="Georgia, serif" font-size="18" fill="#7d9bd4" opacity="0.85">전날 로보택시 랠리 +6.69% 상당 부분 되돌림</text>
+
+  <!-- Small diamond brand mark -->
+  <polygon points="84,630 92,622 100,630 92,638" fill="#5677b0" opacity="0.5"/>
+</svg>
