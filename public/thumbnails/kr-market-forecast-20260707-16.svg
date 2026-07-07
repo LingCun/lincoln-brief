@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0c0a04"/>
+      <stop offset="100%" style="stop-color:#1a1510"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Grid lines -->
+  <line x1="0" y1="240" x2="1280" y2="240" stroke="#d96552" stroke-opacity="0.06" stroke-width="1"/>
+  <line x1="0" y1="480" x2="1280" y2="480" stroke="#d96552" stroke-opacity="0.06" stroke-width="1"/>
+
+  <!-- Top red accent bar (market-forecast category color) -->
+  <rect x="0" y="0" width="1280" height="4" fill="#d96552"/>
+
+  <!-- Lincoln Brief mark -->
+  <text x="48" y="54" font-family="Georgia, serif" font-size="18" fill="#d8b878" font-weight="bold" letter-spacing="3">LINCOLN BRIEF</text>
+  <text x="48" y="76" font-family="Georgia, serif" font-size="13" fill="#907840" letter-spacing="2">KR MARKET · 시장 예측</text>
+
+  <!-- Edition label -->
+  <rect x="950" y="28" width="290" height="36" rx="3" fill="#d96552" fill-opacity="0.12" stroke="#d96552" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="1095" y="51" font-family="Georgia, serif" font-size="14" fill="#e0938a" text-anchor="middle" letter-spacing="1">2026.07.07 · 16:00 KST</text>
+
+  <!-- Diamond decorative -->
+  <polygon points="640,104 651,115 640,126 629,115" fill="#d96552" fill-opacity="0.9"/>
+
+  <!-- Main headline -->
+  <text x="640" y="160" font-family="Georgia, serif" font-size="16" fill="#e0938a" text-anchor="middle" letter-spacing="2">낮 재조정 박스(7,300~7,800) 상단권 안착</text>
+
+  <!-- KOSPI number -->
+  <text x="640" y="230" font-family="Georgia, serif" font-size="14" fill="#807040" text-anchor="middle" letter-spacing="2">KOSPI</text>
+  <text x="640" y="300" font-family="Georgia, serif" font-size="66" fill="#ffffff" text-anchor="middle" font-weight="bold">7,656.31</text>
+  <polygon points="470,325 484,341 498,325" fill="#f87171"/>
+  <text x="516" y="344" font-family="Georgia, serif" font-size="30" fill="#f87171" font-weight="bold" text-anchor="start">-4.91%</text>
+
+  <!-- Divider line -->
+  <line x1="80" y1="380" x2="1200" y2="380" stroke="#d96552" stroke-opacity="0.2" stroke-width="1"/>
+
+  <!-- Scenario bars -->
+  <text x="640" y="412" font-family="Georgia, serif" font-size="14" fill="#d8b878" text-anchor="middle" letter-spacing="2">향후 4주 시나리오 (소폭 재조정)</text>
+
+  <rect x="120" y="432" width="1040" height="46" rx="4" fill="#4ade80" fill-opacity="0.10" stroke="#4ade80" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="145" y="461" font-family="Georgia, serif" font-size="16" fill="#4ade80" font-weight="bold">불 10%</text>
+  <text x="700" y="461" font-family="Georgia, serif" font-size="14" fill="#a0d0a8" text-anchor="middle">8,000선 회복</text>
+
+  <rect x="120" y="486" width="1040" height="46" rx="4" fill="#d8b878" fill-opacity="0.10" stroke="#d8b878" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="145" y="515" font-family="Georgia, serif" font-size="16" fill="#d8b878" font-weight="bold">베이스 48%</text>
+  <text x="700" y="515" font-family="Georgia, serif" font-size="14" fill="#c0b090" text-anchor="middle">7,300~7,900 박스</text>
+
+  <rect x="120" y="540" width="1040" height="46" rx="4" fill="#f87171" fill-opacity="0.12" stroke="#f87171" stroke-opacity="0.35" stroke-width="1"/>
+  <text x="145" y="569" font-family="Georgia, serif" font-size="16" fill="#f87171" font-weight="bold">베어 30%</text>
+  <text x="700" y="569" font-family="Georgia, serif" font-size="14" fill="#e0a0a0" text-anchor="middle">7,000 이탈</text>
+
+  <rect x="120" y="594" width="1040" height="46" rx="4" fill="#f87171" fill-opacity="0.18" stroke="#f87171" stroke-opacity="0.5" stroke-width="1.5"/>
+  <text x="145" y="623" font-family="Georgia, serif" font-size="16" fill="#f87171" font-weight="bold">블랙스완 12%</text>
+  <text x="700" y="623" font-family="Georgia, serif" font-size="14" fill="#f0a0a0" text-anchor="middle">6,700대 급락</text>
+
+  <!-- Bottom signature -->
+  <text x="640" y="696" font-family="Georgia, serif" font-size="12" fill="#605030" text-anchor="middle" letter-spacing="1">lincoln-brief.vercel.app · KR Market Forecast</text>
+</svg>

@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0c0a04"/>
+      <stop offset="100%" style="stop-color:#1a1510"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Grid lines -->
+  <line x1="0" y1="240" x2="1280" y2="240" stroke="#5677b0" stroke-opacity="0.06" stroke-width="1"/>
+  <line x1="0" y1="480" x2="1280" y2="480" stroke="#5677b0" stroke-opacity="0.06" stroke-width="1"/>
+
+  <!-- Top blue accent bar (stock-analysis category color) -->
+  <rect x="0" y="0" width="1280" height="4" fill="#5677b0"/>
+
+  <!-- Lincoln Brief mark -->
+  <text x="48" y="54" font-family="Georgia, serif" font-size="18" fill="#d8b878" font-weight="bold" letter-spacing="3">LINCOLN BRIEF</text>
+  <text x="48" y="76" font-family="Georgia, serif" font-size="13" fill="#907840" letter-spacing="2">KR MARKET · 종목 분석</text>
+
+  <!-- Edition label -->
+  <rect x="950" y="28" width="290" height="36" rx="3" fill="#5677b0" fill-opacity="0.12" stroke="#5677b0" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="1095" y="51" font-family="Georgia, serif" font-size="14" fill="#7d9cd0" text-anchor="middle" letter-spacing="1">2026.07.07 · 16:00 KST</text>
+
+  <!-- Diamond decorative -->
+  <polygon points="640,104 651,115 640,126 629,115" fill="#5677b0" fill-opacity="0.9"/>
+
+  <!-- Main headline -->
+  <text x="640" y="160" font-family="Georgia, serif" font-size="16" fill="#7d9cd0" text-anchor="middle" letter-spacing="2">삼성전자 — 마감 기준 top12 최대 낙폭으로 자리 이동</text>
+
+  <!-- Ticker box -->
+  <text x="640" y="215" font-family="Georgia, serif" font-size="16" fill="#907840" text-anchor="middle" letter-spacing="3">삼성전자 (005930)</text>
+  <text x="640" y="300" font-family="Georgia, serif" font-size="70" fill="#ffffff" text-anchor="middle" font-weight="bold">296,000원</text>
+  <polygon points="470,330 484,346 498,330" fill="#f87171"/>
+  <text x="516" y="349" font-family="Georgia, serif" font-size="32" fill="#f87171" font-weight="bold" text-anchor="start">-6.92%</text>
+
+  <!-- Divider line -->
+  <line x1="80" y1="400" x2="1200" y2="400" stroke="#5677b0" stroke-opacity="0.2" stroke-width="1"/>
+
+  <!-- 4-day volatility strip -->
+  <text x="640" y="432" font-family="Georgia, serif" font-size="14" fill="#d8b878" text-anchor="middle" letter-spacing="2">최근 4거래일 등락률</text>
+
+  <rect x="120" y="452" width="240" height="90" rx="4" fill="#f87171" fill-opacity="0.08" stroke="#f87171" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="240" y="482" font-family="Georgia, serif" font-size="12" fill="#c08080" text-anchor="middle">3거래일 전</text>
+  <text x="240" y="518" font-family="Georgia, serif" font-size="26" fill="#f87171" text-anchor="middle" font-weight="bold">-9.06%</text>
+
+  <rect x="380" y="452" width="240" height="90" rx="4" fill="#4ade80" fill-opacity="0.08" stroke="#4ade80" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="500" y="482" font-family="Georgia, serif" font-size="12" fill="#80c090" text-anchor="middle">2거래일 전</text>
+  <text x="500" y="518" font-family="Georgia, serif" font-size="26" fill="#4ade80" text-anchor="middle" font-weight="bold">+8.22%</text>
+
+  <rect x="640" y="452" width="240" height="90" rx="4" fill="#4ade80" fill-opacity="0.08" stroke="#4ade80" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="760" y="482" font-family="Georgia, serif" font-size="12" fill="#80c090" text-anchor="middle">어제</text>
+  <text x="760" y="518" font-family="Georgia, serif" font-size="26" fill="#4ade80" text-anchor="middle" font-weight="bold">+2.75%</text>
+
+  <rect x="900" y="452" width="240" height="90" rx="4" fill="#f87171" fill-opacity="0.15" stroke="#f87171" stroke-opacity="0.5" stroke-width="1.5"/>
+  <text x="1020" y="482" font-family="Georgia, serif" font-size="12" fill="#f0a0a0" text-anchor="middle">오늘</text>
+  <text x="1020" y="518" font-family="Georgia, serif" font-size="26" fill="#f87171" text-anchor="middle" font-weight="bold">-6.92%</text>
+
+  <!-- 30-day range -->
+  <text x="640" y="590" font-family="Georgia, serif" font-size="13" fill="#806040" text-anchor="middle">30일 고점 362,500원 (-18.34%) · 30일 저점 286,000원 (+3.50%)</text>
+  <text x="640" y="618" font-family="Georgia, serif" font-size="13" fill="#806040" text-anchor="middle">베이스 시나리오 286,000~340,000원 박스 · 베어 확률 32%</text>
+
+  <!-- Bottom signature -->
+  <text x="640" y="696" font-family="Georgia, serif" font-size="12" fill="#605030" text-anchor="middle" letter-spacing="1">lincoln-brief.vercel.app · KR Stock Analysis</text>
+</svg>
