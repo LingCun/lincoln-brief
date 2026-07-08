@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#140b09"/>
+      <stop offset="100%" style="stop-color:#241612"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Grid lines -->
+  <line x1="0" y1="240" x2="1280" y2="240" stroke="#d96552" stroke-opacity="0.06" stroke-width="1"/>
+  <line x1="0" y1="480" x2="1280" y2="480" stroke="#d96552" stroke-opacity="0.06" stroke-width="1"/>
+
+  <!-- Top coral accent bar -->
+  <rect x="0" y="0" width="1280" height="4" fill="#d96552" fill-opacity="0.8"/>
+
+  <!-- Lincoln Brief mark -->
+  <text x="48" y="54" font-family="Georgia, serif" font-size="18" fill="#e08d7c" font-weight="bold" letter-spacing="3">LINCOLN BRIEF</text>
+  <text x="48" y="76" font-family="Georgia, serif" font-size="13" fill="#a05848" letter-spacing="2">KR MARKET · 시장 예측</text>
+
+  <!-- Edition label -->
+  <rect x="950" y="28" width="290" height="36" rx="3" fill="#d96552" fill-opacity="0.1" stroke="#d96552" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="1095" y="51" font-family="Georgia, serif" font-size="14" fill="#e08d7c" text-anchor="middle" letter-spacing="1">2026.07.08 · 16:00 KST</text>
+
+  <!-- Diamond decorative -->
+  <polygon points="640,104 651,115 640,126 629,115" fill="#d96552" fill-opacity="0.9"/>
+
+  <!-- Main headline -->
+  <text x="640" y="160" font-family="Georgia, serif" font-size="16" fill="#e08d7c" text-anchor="middle" letter-spacing="2">낮에 제시한 박스, 몇 시간 만에 이탈</text>
+
+  <!-- Current price -->
+  <text x="640" y="250" font-family="Georgia, serif" font-size="72" fill="#ffffff" text-anchor="middle" font-weight="bold">7,246.79</text>
+  <polygon points="500,272 512,286 524,272" fill="#f87171"/>
+  <text x="538" y="291" font-family="Georgia, serif" font-size="24" fill="#f87171" font-weight="bold">-5.35%</text>
+  <text x="640" y="330" font-family="Georgia, serif" font-size="14" fill="#a05848" text-anchor="middle">7,300~7,900 박스 이탈 — 베어 경로 현실화</text>
+
+  <!-- Divider line -->
+  <line x1="80" y1="368" x2="1200" y2="368" stroke="#d96552" stroke-opacity="0.2" stroke-width="1"/>
+
+  <!-- Scenario bars -->
+  <text x="80" y="404" font-family="Georgia, serif" font-size="13" fill="#a05848" letter-spacing="1">불 5%</text>
+  <rect x="80" y="414" width="1120" height="26" rx="3" fill="#d96552" fill-opacity="0.08"/>
+  <rect x="80" y="414" width="56" height="26" rx="3" fill="#4ade80" fill-opacity="0.7"/>
+  <text x="640" y="432" font-family="Georgia, serif" font-size="12" fill="#ffffff" text-anchor="middle">7,600 이상 반등</text>
+
+  <text x="80" y="466" font-family="Georgia, serif" font-size="13" fill="#a05848" letter-spacing="1">베이스 33%</text>
+  <rect x="80" y="476" width="1120" height="26" rx="3" fill="#d96552" fill-opacity="0.08"/>
+  <rect x="80" y="476" width="370" height="26" rx="3" fill="#d8b878" fill-opacity="0.8"/>
+  <text x="640" y="494" font-family="Georgia, serif" font-size="12" fill="#1a1510" text-anchor="middle" font-weight="bold">7,000~7,300 박스</text>
+
+  <text x="80" y="528" font-family="Georgia, serif" font-size="13" fill="#a05848" letter-spacing="1">베어 42%</text>
+  <rect x="80" y="538" width="1120" height="26" rx="3" fill="#d96552" fill-opacity="0.08"/>
+  <rect x="80" y="538" width="470" height="26" rx="3" fill="#f87171" fill-opacity="0.75"/>
+  <text x="640" y="556" font-family="Georgia, serif" font-size="12" fill="#ffffff" text-anchor="middle">7,000 이탈</text>
+
+  <text x="80" y="590" font-family="Georgia, serif" font-size="13" fill="#a05848" letter-spacing="1">블랙스완 20%</text>
+  <rect x="80" y="600" width="1120" height="26" rx="3" fill="#d96552" fill-opacity="0.08"/>
+  <rect x="80" y="600" width="224" height="26" rx="3" fill="#991b1b" fill-opacity="0.8"/>
+  <text x="640" y="618" font-family="Georgia, serif" font-size="12" fill="#ffffff" text-anchor="middle">6,700대 급락</text>
+
+  <text x="640" y="660" font-family="Georgia, serif" font-size="12" fill="#805040" text-anchor="middle">이틀 연속 급락 누적 -10.0% · 원화는 이틀째 강세 유지</text>
+
+  <!-- Bottom signature -->
+  <text x="640" y="696" font-family="Georgia, serif" font-size="12" fill="#603830" text-anchor="middle" letter-spacing="1">lincoln-brief.vercel.app · KR Market Forecast</text>
+</svg>
