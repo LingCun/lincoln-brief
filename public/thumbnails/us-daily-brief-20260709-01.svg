@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a1510"/>
+      <stop offset="100%" stop-color="#0f0c08"/>
+    </linearGradient>
+    <linearGradient id="accent-line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#d8b878"/>
+      <stop offset="100%" stop-color="#d8b87800"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg-grad)"/>
+
+  <!-- Top accent line -->
+  <rect x="0" y="0" width="1280" height="4" fill="url(#accent-line)"/>
+
+  <!-- Left gold bar -->
+  <rect x="60" y="60" width="4" height="600" fill="#d8b878" opacity="0.6"/>
+
+  <!-- Lincoln Brief brand -->
+  <text x="84" y="108" font-family="Georgia, serif" font-size="22" fill="#d8b878" opacity="0.9" letter-spacing="3">LINCOLN BRIEF</text>
+  <text x="84" y="135" font-family="Georgia, serif" font-size="13" fill="#a08858" letter-spacing="2">US MARKET · 데일리 시황</text>
+
+  <!-- Edition label top right -->
+  <text x="1220" y="90" font-family="Georgia, serif" font-size="14" fill="#d8b878" opacity="0.7" text-anchor="end">2026.07.09 · SLOT 01</text>
+  <text x="1220" y="110" font-family="Georgia, serif" font-size="13" fill="#a08858" text-anchor="end">유가 이틀째 급등</text>
+
+  <!-- Main headline -->
+  <text x="84" y="200" font-family="Georgia, serif" font-size="30" font-weight="bold" fill="#ffffff">다우 1.31% 급락</text>
+  <text x="84" y="240" font-family="Georgia, serif" font-size="30" font-weight="bold" fill="#ffffff">유가는 $75선 터치</text>
+
+  <!-- DOW main data -->
+  <text x="84" y="308" font-family="Georgia, serif" font-size="28" fill="#d8b878">DOW</text>
+  <text x="220" y="308" font-family="Georgia, serif" font-size="28" fill="#ffffff">52,231.35</text>
+  <polygon points="470,308 490,308 480,290" fill="#e87050"/>
+  <text x="498" y="308" font-family="Georgia, serif" font-size="24" fill="#e87050">-1.31%</text>
+
+  <!-- Divider line -->
+  <rect x="84" y="328" width="700" height="1" fill="#d8b878" opacity="0.3"/>
+
+  <!-- WTI row (headline mover) -->
+  <text x="84" y="376" font-family="Georgia, serif" font-size="26" fill="#a08858">WTI 유가</text>
+  <text x="260" y="376" font-family="Georgia, serif" font-size="30" fill="#ffffff" font-weight="bold">$75.11</text>
+  <polygon points="440,360 460,360 450,378" fill="#6ec46e"/>
+  <text x="468" y="376" font-family="Georgia, serif" font-size="26" fill="#6ec46e" font-weight="bold">+6.63%</text>
+
+  <!-- Secondary row -->
+  <text x="84" y="418" font-family="Georgia, serif" font-size="22" fill="#a08858">S&amp;P 500</text>
+  <text x="240" y="418" font-family="Georgia, serif" font-size="22" fill="#ffffff">7,459.41</text>
+  <polygon points="410,418 422,418 416,402" fill="#e87050"/>
+  <text x="429" y="418" font-family="Georgia, serif" font-size="20" fill="#e87050">-0.59%</text>
+
+  <text x="84" y="454" font-family="Georgia, serif" font-size="22" fill="#a08858">NASDAQ</text>
+  <text x="240" y="454" font-family="Georgia, serif" font-size="22" fill="#ffffff">25,716.16</text>
+  <polygon points="440,454 452,454 446,438" fill="#e87050"/>
+  <text x="459" y="454" font-family="Georgia, serif" font-size="20" fill="#e87050">-0.40%</text>
+
+  <!-- Divider -->
+  <rect x="84" y="478" width="700" height="1" fill="#d8b878" opacity="0.2"/>
+
+  <!-- Secondary data row -->
+  <text x="84" y="516" font-family="Georgia, serif" font-size="20" fill="#a08858">AVGO</text>
+  <text x="180" y="516" font-family="Georgia, serif" font-size="20" fill="#ffffff">$391.61</text>
+  <polygon points="340,500 352,500 346,516" fill="#6ec46e"/>
+  <text x="359" y="516" font-family="Georgia, serif" font-size="18" fill="#6ec46e">+5.62% 애플 반도체 계약</text>
+
+  <text x="84" y="550" font-family="Georgia, serif" font-size="20" fill="#a08858">TSLA</text>
+  <text x="180" y="550" font-family="Georgia, serif" font-size="20" fill="#ffffff">$393.86</text>
+  <polygon points="360,550 372,550 366,534" fill="#e87050"/>
+  <text x="379" y="550" font-family="Georgia, serif" font-size="18" fill="#e87050">-2.24% 3거래일 연속 하락</text>
+
+  <!-- Bottom accent / divider -->
+  <rect x="84" y="578" width="700" height="1" fill="#d8b878" opacity="0.25"/>
+
+  <!-- Footer note -->
+  <text x="84" y="612" font-family="Georgia, serif" font-size="18" fill="#d8b878" opacity="0.85">이란-미국 긴장 격화 — 강경 발언 공방</text>
+
+  <!-- Small diamond brand mark -->
+  <polygon points="84,650 92,642 100,650 92,658" fill="#d8b878" opacity="0.5"/>
+</svg>
