@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0c0a04"/>
+      <stop offset="100%" style="stop-color:#1a1510"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg)"/>
+
+  <!-- Grid lines -->
+  <line x1="0" y1="240" x2="1280" y2="240" stroke="#d8b878" stroke-opacity="0.04" stroke-width="1"/>
+  <line x1="0" y1="480" x2="1280" y2="480" stroke="#d8b878" stroke-opacity="0.04" stroke-width="1"/>
+  <line x1="640" y1="0" x2="640" y2="720" stroke="#d8b878" stroke-opacity="0.04" stroke-width="1"/>
+
+  <!-- Top gold accent bar -->
+  <rect x="0" y="0" width="1280" height="4" fill="#d8b878" fill-opacity="0.7"/>
+
+  <!-- Lincoln Brief mark -->
+  <text x="48" y="54" font-family="Georgia, serif" font-size="18" fill="#d8b878" font-weight="bold" letter-spacing="3">LINCOLN BRIEF</text>
+  <text x="48" y="76" font-family="Georgia, serif" font-size="13" fill="#907840" letter-spacing="2">KR MARKET · 데일리 시황</text>
+
+  <!-- Edition label -->
+  <rect x="950" y="28" width="290" height="36" rx="3" fill="#d8b878" fill-opacity="0.08" stroke="#d8b878" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="1095" y="51" font-family="Georgia, serif" font-size="14" fill="#b09050" text-anchor="middle" letter-spacing="1">2026.07.08 · 11:00 KST</text>
+
+  <!-- Diamond decorative -->
+  <polygon points="640,104 651,115 640,126 629,115" fill="#d8b878" fill-opacity="0.9"/>
+
+  <!-- Main headline -->
+  <text x="640" y="162" font-family="Georgia, serif" font-size="17" fill="#d8b878" text-anchor="middle" letter-spacing="2">코스닥 3.48% 급락 — 코스피의 세 배</text>
+
+  <!-- KOSPI / KOSDAQ split display -->
+  <text x="320" y="230" font-family="Georgia, serif" font-size="14" fill="#807040" text-anchor="middle" letter-spacing="2">KOSPI</text>
+  <text x="320" y="295" font-family="Georgia, serif" font-size="64" fill="#ffffff" text-anchor="middle" font-weight="bold">7,582</text>
+  <text x="320" y="325" font-family="Georgia, serif" font-size="18" fill="#909090" text-anchor="middle">.24</text>
+  <polygon points="200,320 212,334 224,320" fill="#f87171"/>
+  <text x="234" y="339" font-family="Georgia, serif" font-size="28" fill="#f87171" font-weight="bold">-0.97%</text>
+  <text x="320" y="375" font-family="Georgia, serif" font-size="12" fill="#807050" text-anchor="middle">소폭 하락, 박스 안 유지</text>
+
+  <!-- Vertical divider -->
+  <line x1="640" y1="195" x2="640" y2="395" stroke="#d8b878" stroke-opacity="0.25" stroke-width="1"/>
+
+  <!-- KOSDAQ -->
+  <text x="960" y="230" font-family="Georgia, serif" font-size="14" fill="#807040" text-anchor="middle" letter-spacing="2">KOSDAQ</text>
+  <text x="960" y="295" font-family="Georgia, serif" font-size="64" fill="#ffffff" text-anchor="middle" font-weight="bold">802</text>
+  <text x="960" y="325" font-family="Georgia, serif" font-size="18" fill="#909090" text-anchor="middle">.27</text>
+  <polygon points="890,320 902,334 914,320" fill="#f87171"/>
+  <text x="924" y="339" font-family="Georgia, serif" font-size="26" fill="#f87171" font-weight="bold">-3.48%</text>
+  <text x="960" y="375" font-family="Georgia, serif" font-size="12" fill="#807050" text-anchor="middle">KOSPI보다 낙폭 세 배 이상</text>
+
+  <!-- Divider line -->
+  <line x1="80" y1="410" x2="1200" y2="410" stroke="#d8b878" stroke-opacity="0.15" stroke-width="1"/>
+
+  <!-- Stats panels -->
+  <rect x="80" y="426" width="360" height="240" rx="4" fill="#d8b878" fill-opacity="0.05" stroke="#d8b878" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="260" y="454" font-family="Georgia, serif" font-size="14" fill="#d8b878" text-anchor="middle" letter-spacing="2">SK하이닉스 vs 삼성전자</text>
+  <text x="150" y="500" font-family="Georgia, serif" font-size="24" fill="#4ade80" font-weight="bold">+2.95%</text>
+  <text x="370" y="500" font-family="Georgia, serif" font-size="24" fill="#f87171" text-anchor="end" font-weight="bold">-2.36%</text>
+  <text x="260" y="530" font-family="Georgia, serif" font-size="12" fill="#806040" text-anchor="middle">반도체 투톱 방향 갈림</text>
+  <text x="260" y="600" font-family="Georgia, serif" font-size="12" fill="#605040" text-anchor="middle">LG에너지솔루션 -3.16% (신저가)</text>
+  <text x="260" y="622" font-family="Georgia, serif" font-size="12" fill="#605040" text-anchor="middle">기아 +2.93% · 카카오 -2.68%</text>
+
+  <rect x="460" y="426" width="360" height="240" rx="4" fill="#d8b878" fill-opacity="0.05" stroke="#d8b878" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="640" y="454" font-family="Georgia, serif" font-size="14" fill="#d8b878" text-anchor="middle" letter-spacing="2">top12 등락 분포</text>
+  <text x="640" y="500" font-family="Georgia, serif" font-size="26" fill="#ffffff" text-anchor="middle" font-weight="bold">5 상승 · 7 하락</text>
+  <text x="640" y="530" font-family="Georgia, serif" font-size="12" fill="#806040" text-anchor="middle">SK하이닉스·기아·셀트리온 등 상승</text>
+  <text x="640" y="600" font-family="Georgia, serif" font-size="12" fill="#605040" text-anchor="middle">반도체 대형주 내부 디커플링</text>
+
+  <rect x="840" y="426" width="360" height="240" rx="4" fill="#d8b878" fill-opacity="0.05" stroke="#d8b878" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="1020" y="454" font-family="Georgia, serif" font-size="14" fill="#d8b878" text-anchor="middle" letter-spacing="2">USD/KRW</text>
+  <text x="1020" y="500" font-family="Georgia, serif" font-size="34" fill="#ffffff" text-anchor="middle" font-weight="bold">1,509.08원</text>
+  <polygon points="940,522 952,508 964,522" fill="#4ade80"/>
+  <text x="978" y="527" font-family="Georgia, serif" font-size="22" fill="#4ade80" font-weight="bold">-1.29%</text>
+  <text x="1020" y="558" font-family="Georgia, serif" font-size="12" fill="#806040" text-anchor="middle">어제보다 원화 강세 확대</text>
+  <text x="1020" y="600" font-family="Georgia, serif" font-size="12" fill="#605040" text-anchor="middle">지난 미국 증시는 3대 지수 하락</text>
+
+  <!-- Bottom signature -->
+  <text x="640" y="696" font-family="Georgia, serif" font-size="12" fill="#605030" text-anchor="middle" letter-spacing="1">lincoln-brief.vercel.app · KR Daily Brief</text>
+</svg>
