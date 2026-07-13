@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-07-13T10:28:05.450Z",
+  "asOf": "2026-07-13T10:31:15.793Z",
   "asOfLabel": "7/13 한국·미국 마감",
   "source": "Yahoo Finance · KRX",
   "us": {
@@ -567,9 +567,9 @@
       {
         "symbol": "USDKRW",
         "label": "USD/KRW",
-        "close": 1492.18,
-        "change": -13.730034179687436,
-        "changePct": -0.9117433225130598,
+        "close": 1492.49,
+        "change": -13.420034179687491,
+        "changePct": -0.8911577634183021,
         "note": "하락"
       }
     ],
@@ -1159,29 +1159,29 @@
     },
     {
       "symbol": "USD/KRW",
-      "value": "1,492.18",
-      "change": "-0.91%",
+      "value": "1,492.49",
+      "change": "-0.89%",
       "up": false,
       "market": "fx"
     },
     {
       "symbol": "BTC",
-      "value": "$63,015",
-      "change": "-1.17%",
+      "value": "$63,040",
+      "change": "-1.13%",
       "up": false,
       "market": "crypto"
     },
     {
       "symbol": "GOLD",
-      "value": "$4,076.30",
-      "change": "-0.68%",
+      "value": "$4,076.40",
+      "change": "-0.67%",
       "up": false,
       "market": "commodity"
     },
     {
       "symbol": "WTI",
-      "value": "$73.50",
-      "change": "+2.93%",
+      "value": "$73.44",
+      "change": "+2.84%",
       "up": true,
       "market": "commodity"
     },
@@ -1202,8 +1202,8 @@
     "crypto": {
       "source": "coingecko",
       "btcUsd": 63032,
-      "change24hPct": -1.277078922552011,
-      "asOf": "2026-07-13T10:26:57.000Z"
+      "change24hPct": -1.2891026003016866,
+      "asOf": "2026-07-13T10:31:05.000Z"
     },
     "fred": {
       "source": "fred",
@@ -1263,15 +1263,15 @@
       "source": "twelvedata",
       "quotes": {
         "XAU/USD": {
-          "price": 4067.04695,
+          "price": 4065.25248,
           "previousClose": 4111.53882,
-          "changePct": -1.082122
+          "changePct": -1.12577
         }
       }
     },
     "yahoo": {
-      "usdKrw": 1492.48,
-      "btcUsd": 63014.17
+      "usdKrw": 1492.49,
+      "btcUsd": 63039.51
     }
   }
 }
