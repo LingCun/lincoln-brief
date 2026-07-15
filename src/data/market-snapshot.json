@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-07-15T20:10:17.395Z",
+  "asOf": "2026-07-15T20:31:39.136Z",
   "asOfLabel": "7/15 한국·미국 마감",
   "source": "Yahoo Finance · KRX",
   "us": {
@@ -335,9 +335,9 @@
       {
         "ticker": "BRK-B",
         "name": "Berkshire B",
-        "price": 488.97,
-        "change": -2.1199963378905977,
-        "changePct": -0.43169202258234374,
+        "price": 488.35,
+        "change": -2.7399963378906023,
+        "changePct": -0.5579417944415567,
         "currency": "USD",
         "exchange": "NYQ",
         "sparkline": [
@@ -370,7 +370,7 @@
           493.7099914550781,
           496.8500061035156,
           491.0899963378906,
-          488.9700012207031
+          488.3500061035156
         ],
         "available": true
       },
@@ -419,9 +419,9 @@
       {
         "ticker": "LLY",
         "name": "Eli Lilly",
-        "price": 1156.465,
-        "change": 3.924960937499918,
-        "changePct": 0.3405487709296905,
+        "price": 1156.63,
+        "change": 4.089960937500109,
+        "changePct": 0.35486497638962444,
         "currency": "USD",
         "exchange": "NYQ",
         "sparkline": [
@@ -454,16 +454,16 @@
           1188.5799560546875,
           1181.8699951171875,
           1152.5400390625,
-          1156.4649658203125
+          1156.6300048828125
         ],
         "available": true
       },
       {
         "ticker": "JPM",
         "name": "JPMorgan",
-        "price": 347.02,
-        "change": 4.129985351562482,
-        "changePct": 1.2044635816522462,
+        "price": 346.91,
+        "change": 4.019985351562525,
+        "changePct": 1.1723833240475623,
         "currency": "USD",
         "exchange": "NYQ",
         "sparkline": [
@@ -496,7 +496,7 @@
           336.4700012207031,
           334.5299987792969,
           342.8900146484375,
-          347.0199890136719
+          346.9100036621094
         ],
         "available": true
       },
@@ -567,9 +567,9 @@
       {
         "symbol": "USDKRW",
         "label": "USD/KRW",
-        "close": 1486.04,
-        "change": -1.8400048828125364,
-        "changePct": -0.12366621480053143,
+        "close": 1485.46,
+        "change": -2.4200048828124636,
+        "changePct": -0.16264785297676385,
         "note": "보합"
       }
     ],
@@ -1159,29 +1159,29 @@
     },
     {
       "symbol": "USD/KRW",
-      "value": "1,486.04",
-      "change": "-0.12%",
+      "value": "1,485.46",
+      "change": "-0.16%",
       "up": false,
       "market": "fx"
     },
     {
       "symbol": "BTC",
-      "value": "$64,904",
-      "change": "-0.08%",
-      "up": false,
+      "value": "$64,986",
+      "change": "+0.05%",
+      "up": true,
       "market": "crypto"
     },
     {
       "symbol": "GOLD",
-      "value": "$4,063.80",
-      "change": "+0.07%",
+      "value": "$4,068.20",
+      "change": "+0.17%",
       "up": true,
       "market": "commodity"
     },
     {
       "symbol": "WTI",
-      "value": "$80.32",
-      "change": "+1.24%",
+      "value": "$80.22",
+      "change": "+1.11%",
       "up": true,
       "market": "commodity"
     },
@@ -1201,16 +1201,16 @@
     },
     "crypto": {
       "source": "coingecko",
-      "btcUsd": 64927,
-      "change24hPct": 0.7461214459452676,
-      "asOf": "2026-07-15T20:09:26.000Z"
+      "btcUsd": 64961,
+      "change24hPct": 0.8541142754994907,
+      "asOf": "2026-07-15T20:31:32.000Z"
     },
     "fred": {
       "source": "fred",
       "series": {
         "DGS10": {
-          "value": 4.62,
-          "asOf": "2026-07-13"
+          "value": 4.58,
+          "asOf": "2026-07-14"
         },
         "SP500": {
           "value": 7543.59,
@@ -1252,10 +1252,10 @@
           "changePct": 0.3305
         },
         "TSLA": {
-          "price": 394.35,
+          "price": 394.46,
           "previousClose": 396.18,
-          "change": -1.83,
-          "changePct": -0.4619
+          "change": -1.72,
+          "changePct": -0.4341
         }
       }
     },
@@ -1263,15 +1263,15 @@
       "source": "twelvedata",
       "quotes": {
         "XAU/USD": {
-          "price": 4057.68718,
+          "price": 4061.32158,
           "previousClose": 4052.83213,
-          "changePct": 0.11979401
+          "changePct": 0.20946957
         }
       }
     },
     "yahoo": {
-      "usdKrw": 1486.04,
-      "btcUsd": 64918.98
+      "usdKrw": 1485.46,
+      "btcUsd": 64986.45
     }
   }
 }
