@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-07-17T14:31:13.166Z",
+  "asOf": "2026-07-17T14:44:53.839Z",
   "asOfLabel": "7/17 한국·미국 마감",
   "source": "Yahoo Finance · KRX",
   "us": {
@@ -7,33 +7,33 @@
       {
         "symbol": "^GSPC",
         "label": "S&P 500",
-        "close": 7488.86,
-        "change": -44.91001953125033,
-        "changePct": -0.5961161465617001,
+        "close": 7484.73,
+        "change": -49.04001953125044,
+        "changePct": -0.6509359776594521,
         "note": "하락"
       },
       {
         "symbol": "^IXIC",
         "label": "NASDAQ",
-        "close": 25545.184,
-        "change": -336.7652187499989,
-        "changePct": -1.3011586411197795,
+        "close": 25549.867,
+        "change": -332.08221875000163,
+        "changePct": -1.283064949796853,
         "note": "하락"
       },
       {
         "symbol": "^DJI",
         "label": "DOW",
-        "close": 52532.52,
-        "change": -20.4487500000032,
-        "changePct": -0.038910741840827406,
+        "close": 52477.05,
+        "change": -75.91874999999709,
+        "changePct": -0.1444613916316518,
         "note": "보합"
       },
       {
         "symbol": "NVDA",
         "label": "NVDA",
-        "close": 204.065,
-        "change": -3.3349938964843773,
-        "changePct": -1.6080009617304567,
+        "close": 203.24,
+        "change": -4.159993896484366,
+        "changePct": -2.005783037081797,
         "note": "큰 폭 하락"
       }
     ],
@@ -41,9 +41,9 @@
       {
         "ticker": "NVDA",
         "name": "NVIDIA",
-        "price": 203.995,
-        "change": -3.4049938964843705,
-        "changePct": -1.6417521681239011,
+        "price": 203.21,
+        "change": -4.189993896484367,
+        "changePct": -2.0202478398218466,
         "currency": "USD",
         "exchange": "NMS",
         "sparkline": [
@@ -76,16 +76,16 @@
           211.8000030517578,
           212.5,
           207.39999389648438,
-          203.9949951171875
+          203.2100067138672
         ],
         "available": true
       },
       {
         "ticker": "MSFT",
         "name": "Microsoft",
-        "price": 392.945,
-        "change": -8.155006103515632,
-        "changePct": -2.0331603040192907,
+        "price": 391.426,
+        "change": -9.674006103515637,
+        "changePct": -2.4118688497399265,
         "currency": "USD",
         "exchange": "NMS",
         "sparkline": [
@@ -118,16 +118,16 @@
           384.92999267578125,
           395.6300048828125,
           401.1000061035156,
-          392.9450988769531
+          391.4259033203125
         ],
         "available": true
       },
       {
         "ticker": "AAPL",
         "name": "Apple",
-        "price": 332.88,
-        "change": -0.38000976562500455,
-        "changePct": -0.11402801250958905,
+        "price": 332.83,
+        "change": -0.4300097656250159,
+        "changePct": -0.1290313127961057,
         "currency": "USD",
         "exchange": "NMS",
         "sparkline": [
@@ -160,16 +160,16 @@
           314.8599853515625,
           327.5,
           333.260009765625,
-          332.8800048828125
+          332.8299865722656
         ],
         "available": true
       },
       {
         "ticker": "GOOGL",
         "name": "Alphabet",
-        "price": 345.054,
-        "change": -9.405991455078151,
-        "changePct": -2.6536116012602804,
+        "price": 346.905,
+        "change": -7.554991455078152,
+        "changePct": -2.1314088013331176,
         "currency": "USD",
         "exchange": "NMS",
         "sparkline": [
@@ -202,16 +202,16 @@
           359.510009765625,
           370.9200134277344,
           354.4599914550781,
-          345.0539855957031
+          346.9049987792969
         ],
         "available": true
       },
       {
         "ticker": "AMZN",
         "name": "Amazon",
-        "price": 248.37,
-        "change": -1.519999389648433,
-        "changePct": -0.6082673949982003,
+        "price": 249.83,
+        "change": -0.059999389648424994,
+        "changePct": -0.024010320458990903,
         "currency": "USD",
         "exchange": "NMS",
         "sparkline": [
@@ -244,16 +244,16 @@
           247.49000549316406,
           254.9600067138672,
           249.88999938964844,
-          248.3704071044922
+          249.8300018310547
         ],
         "available": true
       },
       {
         "ticker": "META",
         "name": "Meta",
-        "price": 633.95,
-        "change": -30.589978027343705,
-        "changePct": -4.603181003217991,
+        "price": 634.595,
+        "change": -29.944978027343723,
+        "changePct": -4.506121379820369,
         "currency": "USD",
         "exchange": "NMS",
         "sparkline": [
@@ -286,16 +286,16 @@
           661.0399780273438,
           681.3099975585938,
           664.5399780273438,
-          633.9500122070312
+          634.594970703125
         ],
         "available": true
       },
       {
         "ticker": "TSLA",
         "name": "Tesla",
-        "price": 380.6,
-        "change": -10.459997558593727,
-        "changePct": -2.6747807558676397,
+        "price": 380.235,
+        "change": -10.824997558593736,
+        "changePct": -2.7681168174128556,
         "currency": "USD",
         "exchange": "NMS",
         "sparkline": [
@@ -328,16 +328,16 @@
           396.17999267578125,
           394.4599914550781,
           391.05999755859375,
-          380.6000061035156
+          380.2349853515625
         ],
         "available": true
       },
       {
         "ticker": "BRK-B",
         "name": "Berkshire B",
-        "price": 500.895,
-        "change": 7.775004882812482,
-        "changePct": 1.5766963335090054,
+        "price": 499.65,
+        "change": 6.530004882812477,
+        "changePct": 1.3242222881797066,
         "currency": "USD",
         "exchange": "NYQ",
         "sparkline": [
@@ -370,16 +370,16 @@
           491.0899963378906,
           488.3500061035156,
           493.1199951171875,
-          500.8949890136719
+          499.6499938964844
         ],
         "available": true
       },
       {
         "ticker": "AVGO",
         "name": "Broadcom",
-        "price": 370.57,
-        "change": -3.880012207031257,
-        "changePct": -1.036189632939849,
+        "price": 371.19,
+        "change": -3.2600122070312523,
+        "changePct": -0.8706134599426346,
         "currency": "USD",
         "exchange": "NMS",
         "sparkline": [
@@ -412,16 +412,16 @@
           389.1099853515625,
           394.2799987792969,
           374.45001220703125,
-          370.57000732421875
+          371.19000244140625
         ],
         "available": true
       },
       {
         "ticker": "LLY",
         "name": "Eli Lilly",
-        "price": 1182.665,
-        "change": 13.494956054687464,
-        "changePct": 1.1542338195006547,
+        "price": 1183.055,
+        "change": 13.884956054687564,
+        "changePct": 1.1875908150907968,
         "currency": "USD",
         "exchange": "NYQ",
         "sparkline": [
@@ -454,16 +454,16 @@
           1152.5400390625,
           1156.6300048828125,
           1169.1700439453125,
-          1182.6650390625
+          1183.0550537109375
         ],
         "available": true
       },
       {
         "ticker": "JPM",
         "name": "JPMorgan",
-        "price": 343.91,
-        "change": 0.76000610351565,
-        "changePct": 0.221479270591191,
+        "price": 344.74,
+        "change": 1.590006103515634,
+        "changePct": 0.4633560051862568,
         "currency": "USD",
         "exchange": "NYQ",
         "sparkline": [
@@ -496,7 +496,7 @@
           342.8900146484375,
           346.9100036621094,
           343.1499938964844,
-          343.9100036621094
+          344.739990234375
         ],
         "available": true
       },
@@ -538,7 +538,7 @@
           113.69999694824219,
           112.52999877929688,
           114.94999694824219,
-          116.06950378417969
+          116.06999969482422
         ],
         "available": true
       }
@@ -567,9 +567,9 @@
       {
         "symbol": "USDKRW",
         "label": "USD/KRW",
-        "close": 1484.23,
-        "change": -1.9699511718749818,
-        "changePct": -0.13254953819112072,
+        "close": 1484.2,
+        "change": -1.9999511718749545,
+        "changePct": -0.1345681091092746,
         "note": "보합"
       }
     ],
@@ -1084,111 +1084,111 @@
     {
       "symbol": "^GSPC",
       "label": "S&P 500",
-      "close": 7488.86,
-      "change": -44.91001953125033,
-      "changePct": -0.5961161465617001,
+      "close": 7484.73,
+      "change": -49.04001953125044,
+      "changePct": -0.6509359776594521,
       "note": "하락"
     },
     {
       "symbol": "^IXIC",
       "label": "NASDAQ",
-      "close": 25545.184,
-      "change": -336.7652187499989,
-      "changePct": -1.3011586411197795,
+      "close": 25549.867,
+      "change": -332.08221875000163,
+      "changePct": -1.283064949796853,
       "note": "하락"
     },
     {
       "symbol": "^DJI",
       "label": "DOW",
-      "close": 52532.52,
-      "change": -20.4487500000032,
-      "changePct": -0.038910741840827406,
+      "close": 52477.05,
+      "change": -75.91874999999709,
+      "changePct": -0.1444613916316518,
       "note": "보합"
     },
     {
       "symbol": "NVDA",
       "label": "NVDA",
-      "close": 204.065,
-      "change": -3.3349938964843773,
-      "changePct": -1.6080009617304567,
+      "close": 203.24,
+      "change": -4.159993896484366,
+      "changePct": -2.005783037081797,
       "note": "큰 폭 하락"
     }
   ],
   "ticker": [
     {
       "symbol": "S&P 500",
-      "value": "7,488.86",
-      "change": "-0.60%",
+      "value": "7,484.73",
+      "change": "-0.65%",
       "up": false,
       "market": "us"
     },
     {
       "symbol": "NASDAQ",
-      "value": "25,545.18",
-      "change": "-1.30%",
+      "value": "25,549.87",
+      "change": "-1.28%",
       "up": false,
       "market": "us"
     },
     {
       "symbol": "DOW",
-      "value": "52,532.52",
-      "change": "-0.04%",
+      "value": "52,477.05",
+      "change": "-0.14%",
       "up": false,
       "market": "us"
     },
     {
       "symbol": "NVDA",
-      "value": "$204.07",
-      "change": "-1.61%",
+      "value": "$203.24",
+      "change": "-2.01%",
       "up": false,
       "market": "us"
     },
     {
       "symbol": "TSLA",
-      "value": "$380.45",
-      "change": "-2.71%",
+      "value": "$380.24",
+      "change": "-2.77%",
       "up": false,
       "market": "us"
     },
     {
       "symbol": "AAPL",
-      "value": "$332.71",
-      "change": "-0.17%",
+      "value": "$332.84",
+      "change": "-0.13%",
       "up": false,
       "market": "us"
     },
     {
       "symbol": "USD/KRW",
-      "value": "1,484.23",
+      "value": "1,484.20",
       "change": "-0.13%",
       "up": false,
       "market": "fx"
     },
     {
       "symbol": "BTC",
-      "value": "$63,184",
-      "change": "-0.95%",
+      "value": "$63,219",
+      "change": "-0.89%",
       "up": false,
       "market": "crypto"
     },
     {
       "symbol": "GOLD",
-      "value": "$4,005.10",
-      "change": "+0.49%",
+      "value": "$3,999.70",
+      "change": "+0.35%",
       "up": true,
       "market": "commodity"
     },
     {
       "symbol": "WTI",
-      "value": "$80.99",
-      "change": "+2.58%",
+      "value": "$80.66",
+      "change": "+2.17%",
       "up": true,
       "market": "commodity"
     },
     {
       "symbol": "US10Y",
-      "value": "4.521%",
-      "change": "-1.05%",
+      "value": "4.529%",
+      "change": "-0.88%",
       "up": false,
       "market": "yield"
     }
@@ -1201,9 +1201,9 @@
     },
     "crypto": {
       "source": "coingecko",
-      "btcUsd": 63200,
-      "change24hPct": -2.364769885108694,
-      "asOf": "2026-07-17T14:29:57.000Z"
+      "btcUsd": 63223,
+      "change24hPct": -2.213854178506135,
+      "asOf": "2026-07-17T14:44:15.000Z"
     },
     "fred": {
       "source": "fred",
@@ -1234,28 +1234,28 @@
       "source": "finnhub",
       "quotes": {
         "AAPL": {
-          "price": 331.93,
+          "price": 332.7,
           "previousClose": 333.26,
-          "change": -1.33,
-          "changePct": -0.3991
+          "change": -0.56,
+          "changePct": -0.168
         },
         "MSFT": {
-          "price": 393.05,
+          "price": 391.45,
           "previousClose": 401.1,
-          "change": -8.05,
-          "changePct": -2.007
+          "change": -9.65,
+          "changePct": -2.4059
         },
         "NVDA": {
-          "price": 203.89,
+          "price": 203.27,
           "previousClose": 207.4,
-          "change": -3.51,
-          "changePct": -1.6924
+          "change": -4.13,
+          "changePct": -1.9913
         },
         "TSLA": {
-          "price": 381.08,
+          "price": 380.24,
           "previousClose": 391.06,
-          "change": -9.98,
-          "changePct": -2.552
+          "change": -10.82,
+          "changePct": -2.7668
         }
       }
     },
@@ -1263,15 +1263,15 @@
       "source": "twelvedata",
       "quotes": {
         "XAU/USD": {
-          "price": 4002.60799,
+          "price": 3996.08578,
           "previousClose": 3976.78276,
-          "changePct": 0.64940007
+          "changePct": 0.48539287
         }
       }
     },
     "yahoo": {
-      "usdKrw": 1484.09,
-      "btcUsd": 63184.01
+      "usdKrw": 1484.2,
+      "btcUsd": 63219.14
     }
   }
 }
