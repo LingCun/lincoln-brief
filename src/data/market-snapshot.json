@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-07-18T03:30:54.521Z",
+  "asOf": "2026-07-18T04:30:57.185Z",
   "asOfLabel": "7/18 한국·미국 마감",
   "source": "Yahoo Finance · KRX",
   "us": {
@@ -412,7 +412,7 @@
           389.1099853515625,
           394.2799987792969,
           374.45001220703125,
-          370.82501220703125
+          370.8299865722656
         ],
         "available": true
       },
@@ -1166,8 +1166,8 @@
     },
     {
       "symbol": "BTC",
-      "value": "$63,903",
-      "change": "+0.18%",
+      "value": "$63,940",
+      "change": "+0.24%",
       "up": true,
       "market": "crypto"
     },
@@ -1180,8 +1180,8 @@
     },
     {
       "symbol": "WTI",
-      "value": "$81.77",
-      "change": "+3.57%",
+      "value": "$81.78",
+      "change": "+3.58%",
       "up": true,
       "market": "commodity"
     },
@@ -1201,9 +1201,9 @@
     },
     "crypto": {
       "source": "coingecko",
-      "btcUsd": 63912,
-      "change24hPct": 0.4969814404057929,
-      "asOf": "2026-07-18T03:30:00.000Z"
+      "btcUsd": 63938,
+      "change24hPct": 0.9644535587025665,
+      "asOf": "2026-07-18T04:30:23.000Z"
     },
     "fred": {
       "source": "fred",
@@ -1217,8 +1217,8 @@
           "asOf": "2026-07-17"
         },
         "NASDAQCOM": {
-          "value": 25881.95,
-          "asOf": "2026-07-16"
+          "value": 25520.24,
+          "asOf": "2026-07-17"
         },
         "DJIA": {
           "value": 52146.42,
@@ -1263,15 +1263,15 @@
       "source": "twelvedata",
       "quotes": {
         "XAU/USD": {
-          "price": 4010.63097,
+          "price": 4010.62531,
           "previousClose": 4016.97584,
-          "changePct": -0.15795141
+          "changePct": -0.15809231
         }
       }
     },
     "yahoo": {
       "usdKrw": 1487.46,
-      "btcUsd": 63903.22
+      "btcUsd": 63940.27
     }
   }
 }
