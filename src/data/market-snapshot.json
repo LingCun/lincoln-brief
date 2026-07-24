@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-07-24T11:09:39.560Z",
+  "asOf": "2026-07-24T11:30:55.154Z",
   "asOfLabel": "7/24 한국·미국 마감",
   "source": "Yahoo Finance · KRX",
   "us": {
@@ -567,9 +567,9 @@
       {
         "symbol": "USDKRW",
         "label": "USD/KRW",
-        "close": 1460.86,
-        "change": -14.7700048828126,
-        "changePct": -1.0009287445998742,
+        "close": 1460.98,
+        "change": -14.650004882812482,
+        "changePct": -0.9927966247864359,
         "note": "하락"
       }
     ],
@@ -1159,29 +1159,29 @@
     },
     {
       "symbol": "USD/KRW",
-      "value": "1,460.86",
-      "change": "-1.00%",
+      "value": "1,460.98",
+      "change": "-0.99%",
       "up": false,
       "market": "fx"
     },
     {
       "symbol": "BTC",
-      "value": "$64,961",
-      "change": "-0.13%",
+      "value": "$64,972",
+      "change": "-0.11%",
       "up": false,
       "market": "crypto"
     },
     {
       "symbol": "GOLD",
-      "value": "$4,060.30",
-      "change": "+0.34%",
+      "value": "$4,062.80",
+      "change": "+0.40%",
       "up": true,
       "market": "commodity"
     },
     {
       "symbol": "WTI",
-      "value": "$90.06",
-      "change": "-2.31%",
+      "value": "$89.80",
+      "change": "-2.59%",
       "up": false,
       "market": "commodity"
     },
@@ -1201,13 +1201,29 @@
     },
     "crypto": {
       "source": "coingecko",
-      "btcUsd": 64950,
-      "change24hPct": -1.0865846409476974,
-      "asOf": "2026-07-24T11:04:00.000Z"
+      "btcUsd": 65013,
+      "change24hPct": -0.8877236167662065,
+      "asOf": "2026-07-24T11:29:10.000Z"
     },
     "fred": {
       "source": "fred",
       "series": {
+        "DGS10": {
+          "value": 4.67,
+          "asOf": "2026-07-22"
+        },
+        "SP500": {
+          "value": 7408.3,
+          "asOf": "2026-07-23"
+        },
+        "NASDAQCOM": {
+          "value": 25137.69,
+          "asOf": "2026-07-23"
+        },
+        "DJIA": {
+          "value": 51711.65,
+          "asOf": "2026-07-23"
+        },
         "DCOILWTICO": {
           "value": 84.38,
           "asOf": "2026-07-20"
@@ -1247,15 +1263,15 @@
       "source": "twelvedata",
       "quotes": {
         "XAU/USD": {
-          "price": 4061.9319,
+          "price": 4059.88831,
           "previousClose": 4049.51576,
-          "changePct": 0.30660802
+          "changePct": 0.25614297
         }
       }
     },
     "yahoo": {
-      "usdKrw": 1460.86,
-      "btcUsd": 64960.66
+      "usdKrw": 1460.61,
+      "btcUsd": 64972.29
     }
   }
 }
