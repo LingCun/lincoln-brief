@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-07-25T05:44:30.106Z",
+  "asOf": "2026-07-25T06:30:51.704Z",
   "asOfLabel": "7/25 한국·미국 마감",
   "source": "Yahoo Finance · KRX",
   "us": {
@@ -24,17 +24,17 @@
         "symbol": "^DJI",
         "label": "DOW",
         "close": 51947.25,
-        "change": 235.6015625,
-        "changePct": 0.45560636649352604,
-        "note": "보합"
+        "change": -271.328125,
+        "changePct": -0.519600752725398,
+        "note": "하락"
       },
       {
         "symbol": "NVDA",
         "label": "NVDA",
         "close": 206.84,
-        "change": -1.919994506835934,
-        "changePct": -0.9197138136411778,
-        "note": "하락"
+        "change": -5.219997558593747,
+        "changePct": -2.4615663579602853,
+        "note": "큰 폭 하락"
       }
     ],
     "top12": [
@@ -560,9 +560,9 @@
         "symbol": "KOSDAQ",
         "label": "KOSDAQ",
         "close": 748.22,
-        "change": -42.06002929687497,
-        "changePct": -5.322167806049264,
-        "note": "큰 폭 하락"
+        "change": -2.8700268554687227,
+        "changePct": -0.3821148934015866,
+        "note": "보합"
       },
       {
         "symbol": "USDKRW",
@@ -1101,17 +1101,17 @@
       "symbol": "^DJI",
       "label": "DOW",
       "close": 51947.25,
-      "change": 235.6015625,
-      "changePct": 0.45560636649352604,
-      "note": "보합"
+      "change": -271.328125,
+      "changePct": -0.519600752725398,
+      "note": "하락"
     },
     {
       "symbol": "NVDA",
       "label": "NVDA",
       "close": 206.84,
-      "change": -1.919994506835934,
-      "changePct": -0.9197138136411778,
-      "note": "하락"
+      "change": -5.219997558593747,
+      "changePct": -2.4615663579602853,
+      "note": "큰 폭 하락"
     }
   ],
   "ticker": [
@@ -1132,14 +1132,14 @@
     {
       "symbol": "DOW",
       "value": "51,947.25",
-      "change": "+0.46%",
-      "up": true,
+      "change": "-0.52%",
+      "up": false,
       "market": "us"
     },
     {
       "symbol": "NVDA",
       "value": "$206.84",
-      "change": "-0.92%",
+      "change": "-2.46%",
       "up": false,
       "market": "us"
     },
@@ -1153,7 +1153,7 @@
     {
       "symbol": "AAPL",
       "value": "$333.02",
-      "change": "+3.53%",
+      "change": "+2.19%",
       "up": true,
       "market": "us"
     },
@@ -1166,8 +1166,8 @@
     },
     {
       "symbol": "BTC",
-      "value": "$63,978",
-      "change": "-1.64%",
+      "value": "$63,926",
+      "change": "-0.27%",
       "up": false,
       "market": "crypto"
     },
@@ -1188,8 +1188,8 @@
     {
       "symbol": "US10Y",
       "value": "4.679%",
-      "change": "-0.51%",
-      "up": false,
+      "change": "+0.47%",
+      "up": true,
       "market": "yield"
     }
   ],
@@ -1201,9 +1201,9 @@
     },
     "crypto": {
       "source": "coingecko",
-      "btcUsd": 63983,
-      "change24hPct": -1.9227393417351604,
-      "asOf": "2026-07-25T05:42:40.000Z"
+      "btcUsd": 63955,
+      "change24hPct": -2.1680156292514003,
+      "asOf": "2026-07-25T06:30:13.000Z"
     },
     "fred": {
       "source": "fred",
@@ -1263,15 +1263,15 @@
       "source": "twelvedata",
       "quotes": {
         "XAU/USD": {
-          "price": 4055.98496,
+          "price": 4055.99659,
           "previousClose": 4053.47211,
-          "changePct": 0.061992532
+          "changePct": 0.062279447
         }
       }
     },
     "yahoo": {
       "usdKrw": 1462.1,
-      "btcUsd": 63977.74
+      "btcUsd": 63920.98
     }
   }
 }
