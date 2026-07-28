@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-07-28T21:31:09.988Z",
+  "asOf": "2026-07-28T22:04:53.266Z",
   "asOfLabel": "7/28 한국·미국 마감",
   "source": "Yahoo Finance · KRX",
   "us": {
@@ -567,9 +567,9 @@
       {
         "symbol": "USDKRW",
         "label": "USD/KRW",
-        "close": 1453.52,
-        "change": -10.919941406250018,
-        "changePct": -0.7456735573439758,
+        "close": 1453.56,
+        "change": -10.879941406250055,
+        "changePct": -0.7429421377159674,
         "note": "하락"
       }
     ],
@@ -1159,15 +1159,15 @@
     },
     {
       "symbol": "USD/KRW",
-      "value": "1,453.52",
-      "change": "-0.75%",
+      "value": "1,453.56",
+      "change": "-0.74%",
       "up": false,
       "market": "fx"
     },
     {
       "symbol": "BTC",
-      "value": "$63,826",
-      "change": "+0.16%",
+      "value": "$63,913",
+      "change": "+0.29%",
       "up": true,
       "market": "crypto"
     },
@@ -1201,9 +1201,9 @@
     },
     "crypto": {
       "source": "coingecko",
-      "btcUsd": 63858,
-      "change24hPct": -1.4127684033984864,
-      "asOf": "2026-07-28T21:29:00.000Z"
+      "btcUsd": 63907,
+      "change24hPct": -1.1341736517385492,
+      "asOf": "2026-07-28T22:04:46.000Z"
     },
     "fred": {
       "source": "fred",
@@ -1221,8 +1221,8 @@
           "asOf": "2026-07-27"
         },
         "DJIA": {
-          "value": 52210.08,
-          "asOf": "2026-07-27"
+          "value": 52747.32,
+          "asOf": "2026-07-28"
         },
         "DCOILWTICO": {
           "value": 84.38,
@@ -1263,15 +1263,15 @@
       "source": "twelvedata",
       "quotes": {
         "XAU/USD": {
-          "price": 4028.81627,
+          "price": 4026.21242,
           "previousClose": 4028.58082,
-          "changePct": 0.0058444899
+          "changePct": -0.058789934
         }
       }
     },
     "yahoo": {
-      "usdKrw": 1453.46,
-      "btcUsd": 63825.82
+      "usdKrw": 1453.56,
+      "btcUsd": 63917.16
     }
   }
 }
