@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-07-28T09:30:57.440Z",
+  "asOf": "2026-07-28T09:36:57.338Z",
   "asOfLabel": "7/28 한국·미국 마감",
   "source": "Yahoo Finance · KRX",
   "us": {
@@ -8,24 +8,24 @@
         "symbol": "^GSPC",
         "label": "S&P 500",
         "close": 7413.18,
-        "change": 4.880195312500291,
-        "changePct": 0.06587470055426772,
+        "change": 1.200019531250291,
+        "changePct": 0.0161902694612297,
         "note": "보합"
       },
       {
         "symbol": "^IXIC",
         "label": "NASDAQ",
         "close": 24932.082,
-        "change": -205.60745312500148,
-        "changePct": -0.8179250265160759,
-        "note": "하락"
+        "change": -43.738312500001484,
+        "changePct": -0.17512262641524193,
+        "note": "보합"
       },
       {
         "symbol": "^DJI",
         "label": "DOW",
         "close": 52210.08,
-        "change": 498.43156250000175,
-        "changePct": 0.9638670929286245,
+        "change": 262.83000000000175,
+        "changePct": 0.5059555606889715,
         "note": "상승"
       },
       {
@@ -567,9 +567,9 @@
       {
         "symbol": "USDKRW",
         "label": "USD/KRW",
-        "close": 1461.18,
-        "change": 3.1699902343750637,
-        "changePct": 0.21741896236258618,
+        "close": 1461.59,
+        "change": 3.579990234374918,
+        "changePct": 0.2455394826096154,
         "note": "보합"
       }
     ],
@@ -1085,24 +1085,24 @@
       "symbol": "^GSPC",
       "label": "S&P 500",
       "close": 7413.18,
-      "change": 4.880195312500291,
-      "changePct": 0.06587470055426772,
+      "change": 1.200019531250291,
+      "changePct": 0.0161902694612297,
       "note": "보합"
     },
     {
       "symbol": "^IXIC",
       "label": "NASDAQ",
       "close": 24932.082,
-      "change": -205.60745312500148,
-      "changePct": -0.8179250265160759,
-      "note": "하락"
+      "change": -43.738312500001484,
+      "changePct": -0.17512262641524193,
+      "note": "보합"
     },
     {
       "symbol": "^DJI",
       "label": "DOW",
       "close": 52210.08,
-      "change": 498.43156250000175,
-      "changePct": 0.9638670929286245,
+      "change": 262.83000000000175,
+      "changePct": 0.5059555606889715,
       "note": "상승"
     },
     {
@@ -1118,21 +1118,21 @@
     {
       "symbol": "S&P 500",
       "value": "7,413.18",
-      "change": "+0.07%",
+      "change": "+0.02%",
       "up": true,
       "market": "us"
     },
     {
       "symbol": "NASDAQ",
       "value": "24,932.08",
-      "change": "-0.82%",
+      "change": "-0.18%",
       "up": false,
       "market": "us"
     },
     {
       "symbol": "DOW",
       "value": "52,210.08",
-      "change": "+0.96%",
+      "change": "+0.51%",
       "up": true,
       "market": "us"
     },
@@ -1159,36 +1159,36 @@
     },
     {
       "symbol": "USD/KRW",
-      "value": "1,461.18",
-      "change": "+0.22%",
+      "value": "1,461.59",
+      "change": "+0.25%",
       "up": true,
       "market": "fx"
     },
     {
       "symbol": "BTC",
-      "value": "$63,437",
-      "change": "-0.45%",
+      "value": "$63,449",
+      "change": "-0.43%",
       "up": false,
       "market": "crypto"
     },
     {
       "symbol": "GOLD",
-      "value": "$4,043.90",
-      "change": "-0.75%",
+      "value": "$4,042.00",
+      "change": "-0.80%",
       "up": false,
       "market": "commodity"
     },
     {
       "symbol": "WTI",
-      "value": "$80.86",
-      "change": "-2.12%",
+      "value": "$80.56",
+      "change": "-2.48%",
       "up": false,
       "market": "commodity"
     },
     {
       "symbol": "US10Y",
       "value": "4.641%",
-      "change": "-1.32%",
+      "change": "-0.81%",
       "up": false,
       "market": "yield"
     }
@@ -1201,9 +1201,9 @@
     },
     "crypto": {
       "source": "coingecko",
-      "btcUsd": 63399,
-      "change24hPct": -2.7195718838660117,
-      "asOf": "2026-07-28T09:28:30.000Z"
+      "btcUsd": 63465,
+      "change24hPct": -2.6984482173295063,
+      "asOf": "2026-07-28T09:34:30.000Z"
     },
     "fred": {
       "source": "fred",
@@ -1263,15 +1263,15 @@
       "source": "twelvedata",
       "quotes": {
         "XAU/USD": {
-          "price": 4040.61072,
+          "price": 4035.66715,
           "previousClose": 4076.96247,
-          "changePct": -0.89163808
+          "changePct": -1.012894
         }
       }
     },
     "yahoo": {
-      "usdKrw": 1461.38,
-      "btcUsd": 63436.53
+      "usdKrw": 1461.59,
+      "btcUsd": 63449.34
     }
   }
 }
