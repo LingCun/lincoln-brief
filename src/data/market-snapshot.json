@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-07-28T20:16:11.143Z",
+  "asOf": "2026-07-28T20:31:14.323Z",
   "asOfLabel": "7/28 한국·미국 마감",
   "source": "Yahoo Finance · KRX",
   "us": {
@@ -552,8 +552,8 @@
         "symbol": "KOSPI",
         "label": "KOSPI",
         "close": 6023.66,
-        "change": -1073.2301367187501,
-        "changePct": -15.12254122641609,
+        "change": -666.9601171875001,
+        "changePct": -9.968584458623644,
         "note": "큰 폭 하락"
       },
       {
@@ -567,9 +567,9 @@
       {
         "symbol": "USDKRW",
         "label": "USD/KRW",
-        "close": 1453.3,
-        "change": -11.139941406250045,
-        "changePct": -0.7606963652980369,
+        "close": 1453.4,
+        "change": -11.039941406249909,
+        "changePct": -0.7538678162280006,
         "note": "하락"
       }
     ],
@@ -1159,29 +1159,29 @@
     },
     {
       "symbol": "USD/KRW",
-      "value": "1,453.30",
-      "change": "-0.76%",
+      "value": "1,453.40",
+      "change": "-0.75%",
       "up": false,
       "market": "fx"
     },
     {
       "symbol": "BTC",
-      "value": "$63,921",
-      "change": "+0.31%",
+      "value": "$63,820",
+      "change": "+0.15%",
       "up": true,
       "market": "crypto"
     },
     {
       "symbol": "GOLD",
-      "value": "$4,023.20",
-      "change": "-1.26%",
+      "value": "$4,026.30",
+      "change": "-1.18%",
       "up": false,
       "market": "commodity"
     },
     {
       "symbol": "WTI",
-      "value": "$79.14",
-      "change": "-4.20%",
+      "value": "$79.00",
+      "change": "-4.37%",
       "up": false,
       "market": "commodity"
     },
@@ -1201,16 +1201,16 @@
     },
     "crypto": {
       "source": "coingecko",
-      "btcUsd": 63911,
-      "change24hPct": -1.5096487359151585,
-      "asOf": "2026-07-28T20:14:30.000Z"
+      "btcUsd": 63863,
+      "change24hPct": -1.6695339264942715,
+      "asOf": "2026-07-28T20:28:40.000Z"
     },
     "fred": {
       "source": "fred",
       "series": {
         "DGS10": {
-          "value": 4.69,
-          "asOf": "2026-07-24"
+          "value": 4.65,
+          "asOf": "2026-07-27"
         },
         "SP500": {
           "value": 7413.18,
@@ -1263,15 +1263,15 @@
       "source": "twelvedata",
       "quotes": {
         "XAU/USD": {
-          "price": 4024.25512,
+          "price": 4027.75981,
           "previousClose": 4076.96247,
-          "changePct": -1.29281
+          "changePct": -1.20685
         }
       }
     },
     "yahoo": {
-      "usdKrw": 1453.3,
-      "btcUsd": 63921.46
+      "usdKrw": 1453.4,
+      "btcUsd": 63819.53
     }
   }
 }
