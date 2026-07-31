@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-07-31T07:31:02.369Z",
+  "asOf": "2026-07-31T08:31:08.861Z",
   "asOfLabel": "7/31 한국·미국 마감",
   "source": "Yahoo Finance · KRX",
   "us": {
@@ -567,9 +567,9 @@
       {
         "symbol": "USDKRW",
         "label": "USD/KRW",
-        "close": 1429.8,
-        "change": -12.480029296875045,
-        "changePct": -0.865298627407271,
+        "close": 1430.2,
+        "change": -12.080029296874955,
+        "changePct": -0.8375647621470625,
         "note": "하락"
       }
     ],
@@ -1159,29 +1159,29 @@
     },
     {
       "symbol": "USD/KRW",
-      "value": "1,429.80",
-      "change": "-0.87%",
+      "value": "1,430.20",
+      "change": "-0.84%",
       "up": false,
       "market": "fx"
     },
     {
       "symbol": "BTC",
-      "value": "$63,916",
-      "change": "-1.25%",
+      "value": "$63,866",
+      "change": "-1.33%",
       "up": false,
       "market": "crypto"
     },
     {
       "symbol": "GOLD",
-      "value": "$4,134.60",
-      "change": "+0.84%",
+      "value": "$4,122.00",
+      "change": "+0.53%",
       "up": true,
       "market": "commodity"
     },
     {
       "symbol": "WTI",
-      "value": "$82.38",
-      "change": "-1.45%",
+      "value": "$82.20",
+      "change": "-1.66%",
       "up": false,
       "market": "commodity"
     },
@@ -1201,9 +1201,9 @@
     },
     "crypto": {
       "source": "coingecko",
-      "btcUsd": 63955,
-      "change24hPct": -0.0505971758856859,
-      "asOf": "2026-07-31T07:29:20.000Z"
+      "btcUsd": 63911,
+      "change24hPct": -0.4562306573898858,
+      "asOf": "2026-07-31T08:29:10.000Z"
     },
     "fred": {
       "source": "fred",
@@ -1263,15 +1263,15 @@
       "source": "twelvedata",
       "quotes": {
         "XAU/USD": {
-          "price": 4074.62694,
+          "price": 4059.11195,
           "previousClose": 4103.49754,
-          "changePct": -0.7035608
+          "changePct": -1.081653
         }
       }
     },
     "yahoo": {
-      "usdKrw": 1429.8,
-      "btcUsd": 63916.1
+      "usdKrw": 1430.2,
+      "btcUsd": 63866.45
     }
   }
 }
