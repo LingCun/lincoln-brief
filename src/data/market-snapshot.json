@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-07T07:17:16.934Z",
+  "asOf": "2026-08-07T07:31:08.222Z",
   "asOfLabel": "8/7 한국·미국 마감",
   "source": "Yahoo Finance · KRX",
   "us": {
@@ -567,9 +567,9 @@
       {
         "symbol": "USDKRW",
         "label": "USD/KRW",
-        "close": 1417.28,
-        "change": -3.8800341796875273,
-        "changePct": -0.2730188076198706,
+        "close": 1418.28,
+        "change": -2.8800341796875273,
+        "changePct": -0.20265375541255784,
         "note": "보합"
       }
     ],
@@ -1159,29 +1159,29 @@
     },
     {
       "symbol": "USD/KRW",
-      "value": "1,417.28",
-      "change": "-0.27%",
+      "value": "1,418.28",
+      "change": "-0.20%",
       "up": false,
       "market": "fx"
     },
     {
       "symbol": "BTC",
-      "value": "$64,300",
-      "change": "+0.06%",
+      "value": "$64,352",
+      "change": "+0.14%",
       "up": true,
       "market": "crypto"
     },
     {
       "symbol": "GOLD",
-      "value": "$4,350.80",
+      "value": "$4,350.50",
       "change": "+2.56%",
       "up": true,
       "market": "commodity"
     },
     {
       "symbol": "WTI",
-      "value": "$77.90",
-      "change": "+0.79%",
+      "value": "$77.77",
+      "change": "+0.62%",
       "up": true,
       "market": "commodity"
     },
@@ -1201,9 +1201,9 @@
     },
     "crypto": {
       "source": "coingecko",
-      "btcUsd": 64292,
-      "change24hPct": -0.8545088232913886,
-      "asOf": "2026-08-07T07:15:10.000Z"
+      "btcUsd": 64358,
+      "change24hPct": -0.7354029127119299,
+      "asOf": "2026-08-07T07:29:00.000Z"
     },
     "fred": {
       "source": "fred",
@@ -1263,15 +1263,15 @@
       "source": "twelvedata",
       "quotes": {
         "XAU/USD": {
-          "price": 4290.98573,
+          "price": 4285.49944,
           "previousClose": 4240.8196,
-          "changePct": 1.18293
+          "changePct": 1.053566
         }
       }
     },
     "yahoo": {
-      "usdKrw": 1417.28,
-      "btcUsd": 64299.61
+      "usdKrw": 1418.38,
+      "btcUsd": 64351.59
     }
   }
 }
