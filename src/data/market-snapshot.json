@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-07T20:31:10.988Z",
+  "asOf": "2026-08-07T20:41:49.944Z",
   "asOfLabel": "8/7 한국·미국 마감",
   "source": "Yahoo Finance · KRX",
   "us": {
@@ -567,9 +567,9 @@
       {
         "symbol": "USDKRW",
         "label": "USD/KRW",
-        "close": 1406.7,
-        "change": -15.600048828124955,
-        "changePct": -1.0968184133142858,
+        "close": 1406.67,
+        "change": -15.630048828124927,
+        "changePct": -1.0989276728917352,
         "note": "하락"
       }
     ],
@@ -1159,29 +1159,29 @@
     },
     {
       "symbol": "USD/KRW",
-      "value": "1,406.70",
+      "value": "1,406.67",
       "change": "-1.10%",
       "up": false,
       "market": "fx"
     },
     {
       "symbol": "BTC",
-      "value": "$64,928",
-      "change": "+1.04%",
+      "value": "$64,920",
+      "change": "+1.02%",
       "up": true,
       "market": "crypto"
     },
     {
       "symbol": "GOLD",
-      "value": "$4,398.80",
-      "change": "+3.70%",
+      "value": "$4,395.60",
+      "change": "+3.62%",
       "up": true,
       "market": "commodity"
     },
     {
       "symbol": "WTI",
-      "value": "$77.03",
-      "change": "-0.34%",
+      "value": "$77.08",
+      "change": "-0.27%",
       "up": false,
       "market": "commodity"
     },
@@ -1201,9 +1201,9 @@
     },
     "crypto": {
       "source": "coingecko",
-      "btcUsd": 64951,
-      "change24hPct": 0.8342814201919161,
-      "asOf": "2026-08-07T20:28:20.000Z"
+      "btcUsd": 64920,
+      "change24hPct": 0.7489735423812443,
+      "asOf": "2026-08-07T20:39:40.000Z"
     },
     "fred": {
       "source": "fred",
@@ -1263,15 +1263,15 @@
       "source": "twelvedata",
       "quotes": {
         "XAU/USD": {
-          "price": 4338.65035,
+          "price": 4341.53005,
           "previousClose": 4240.8196,
-          "changePct": 2.30688
+          "changePct": 2.37479
         }
       }
     },
     "yahoo": {
-      "usdKrw": 1406.7,
-      "btcUsd": 64928.32
+      "usdKrw": 1406.67,
+      "btcUsd": 64920.44
     }
   }
 }
