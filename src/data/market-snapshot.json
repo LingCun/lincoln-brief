@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-13T21:46:23.550Z",
+  "asOf": "2026-08-13T22:30:57.557Z",
   "asOfLabel": "8/13 한국·미국 마감",
   "source": "Yahoo Finance · KRX",
   "us": {
@@ -567,9 +567,9 @@
       {
         "symbol": "USDKRW",
         "label": "USD/KRW",
-        "close": 1418.25,
-        "change": 1.7900390625,
-        "changePct": 0.12637413777056164,
+        "close": 1418.12,
+        "change": 1.6600390624998909,
+        "changePct": 0.11719632804877697,
         "note": "보합"
       }
     ],
@@ -662,11 +662,12 @@
         "ticker": "373220.KS",
         "name": "LG에너지솔루션",
         "price": 365500,
-        "change": 7000,
-        "changePct": 1.9525801952580195,
+        "change": 11000,
+        "changePct": 3.1029619181946404,
         "currency": "KRW",
         "exchange": "KSC",
         "sparkline": [
+          348000,
           354000,
           362500,
           354500,
@@ -695,8 +696,7 @@
           360000,
           367500,
           354500,
-          358500,
-          365500
+          358500
         ],
         "available": true
       },
@@ -1159,29 +1159,29 @@
     },
     {
       "symbol": "USD/KRW",
-      "value": "1,418.25",
-      "change": "+0.13%",
+      "value": "1,418.12",
+      "change": "+0.12%",
       "up": true,
       "market": "fx"
     },
     {
       "symbol": "BTC",
-      "value": "$63,384",
-      "change": "-0.03%",
-      "up": false,
+      "value": "$63,544",
+      "change": "+0.22%",
+      "up": true,
       "market": "crypto"
     },
     {
       "symbol": "GOLD",
-      "value": "$4,407.10",
-      "change": "-0.04%",
-      "up": false,
+      "value": "$4,410.10",
+      "change": "+0.03%",
+      "up": true,
       "market": "commodity"
     },
     {
       "symbol": "WTI",
-      "value": "$81.21",
-      "change": "-2.47%",
+      "value": "$81.04",
+      "change": "-2.68%",
       "up": false,
       "market": "commodity"
     },
@@ -1201,9 +1201,9 @@
     },
     "crypto": {
       "source": "coingecko",
-      "btcUsd": 63392,
-      "change24hPct": -0.12019217785553568,
-      "asOf": "2026-08-13T21:44:50.000Z"
+      "btcUsd": 63544,
+      "change24hPct": 0.17752172016648368,
+      "asOf": "2026-08-13T22:28:40.000Z"
     },
     "fred": {
       "source": "fred",
@@ -1221,8 +1221,8 @@
           "asOf": "2026-08-12"
         },
         "DJIA": {
-          "value": 53770.27,
-          "asOf": "2026-08-12"
+          "value": 53839.99,
+          "asOf": "2026-08-13"
         },
         "DCOILWTICO": {
           "value": 84.77,
@@ -1263,15 +1263,15 @@
       "source": "twelvedata",
       "quotes": {
         "XAU/USD": {
-          "price": 4351.33048,
+          "price": 4357.5692,
           "previousClose": 4351.17522,
-          "changePct": 0.0035682314
+          "changePct": 0.14694835
         }
       }
     },
     "yahoo": {
-      "usdKrw": 1418.25,
-      "btcUsd": 63384.08
+      "usdKrw": 1418.12,
+      "btcUsd": 63541.82
     }
   }
 }
