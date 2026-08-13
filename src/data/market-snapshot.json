@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-13T22:30:57.557Z",
+  "asOf": "2026-08-13T22:42:49.401Z",
   "asOfLabel": "8/13 한국·미국 마감",
   "source": "Yahoo Finance · KRX",
   "us": {
@@ -560,16 +560,16 @@
         "symbol": "KOSDAQ",
         "label": "KOSDAQ",
         "close": 861.37,
-        "change": 3.5299731445312545,
-        "changePct": 0.4114955042924331,
-        "note": "보합"
+        "change": 6.9000292968750045,
+        "changePct": 0.8075215669893138,
+        "note": "상승"
       },
       {
         "symbol": "USDKRW",
         "label": "USD/KRW",
-        "close": 1418.12,
-        "change": 1.6600390624998909,
-        "changePct": 0.11719632804877697,
+        "close": 1418.08,
+        "change": 1.6200390624999272,
+        "changePct": 0.11437238659592511,
         "note": "보합"
       }
     ],
@@ -578,12 +578,11 @@
         "ticker": "005930.KS",
         "name": "삼성전자",
         "price": 268000,
-        "change": 28500,
-        "changePct": 11.899791231732777,
+        "change": 12500,
+        "changePct": 4.892367906066536,
         "currency": "KRW",
         "exchange": "KSC",
         "sparkline": [
-          314500,
           286000,
           309500,
           318000,
@@ -612,7 +611,8 @@
           231000,
           230000,
           239500,
-          255500
+          255500,
+          268000
         ],
         "available": true
       },
@@ -662,12 +662,11 @@
         "ticker": "373220.KS",
         "name": "LG에너지솔루션",
         "price": 365500,
-        "change": 11000,
-        "changePct": 3.1029619181946404,
+        "change": 7000,
+        "changePct": 1.9525801952580195,
         "currency": "KRW",
         "exchange": "KSC",
         "sparkline": [
-          348000,
           354000,
           362500,
           354500,
@@ -696,7 +695,8 @@
           360000,
           367500,
           354500,
-          358500
+          358500,
+          365500
         ],
         "available": true
       },
@@ -830,12 +830,11 @@
         "ticker": "005490.KS",
         "name": "POSCO홀딩스",
         "price": 325500,
-        "change": -1000,
-        "changePct": -0.3062787136294028,
+        "change": 500,
+        "changePct": 0.15384615384615385,
         "currency": "KRW",
         "exchange": "KSC",
         "sparkline": [
-          315000,
           317500,
           320000,
           321500,
@@ -864,7 +863,8 @@
           331000,
           336000,
           326500,
-          325000
+          325000,
+          325500
         ],
         "available": true
       },
@@ -872,12 +872,11 @@
         "ticker": "105560.KS",
         "name": "KB금융",
         "price": 168100,
-        "change": 1500,
-        "changePct": 0.900360144057623,
+        "change": 2100,
+        "changePct": 1.2650602409638554,
         "currency": "KRW",
         "exchange": "KSC",
         "sparkline": [
-          158500,
           165000,
           170100,
           170900,
@@ -906,7 +905,8 @@
           175800,
           171700,
           166600,
-          166000
+          166000,
+          168100
         ],
         "available": true
       },
@@ -1159,29 +1159,29 @@
     },
     {
       "symbol": "USD/KRW",
-      "value": "1,418.12",
-      "change": "+0.12%",
+      "value": "1,418.08",
+      "change": "+0.11%",
       "up": true,
       "market": "fx"
     },
     {
       "symbol": "BTC",
-      "value": "$63,544",
-      "change": "+0.22%",
+      "value": "$63,502",
+      "change": "+0.16%",
       "up": true,
       "market": "crypto"
     },
     {
       "symbol": "GOLD",
-      "value": "$4,410.10",
-      "change": "+0.03%",
+      "value": "$4,411.80",
+      "change": "+0.07%",
       "up": true,
       "market": "commodity"
     },
     {
       "symbol": "WTI",
-      "value": "$81.04",
-      "change": "-2.68%",
+      "value": "$81.10",
+      "change": "-2.61%",
       "up": false,
       "market": "commodity"
     },
@@ -1201,9 +1201,9 @@
     },
     "crypto": {
       "source": "coingecko",
-      "btcUsd": 63544,
-      "change24hPct": 0.17752172016648368,
-      "asOf": "2026-08-13T22:28:40.000Z"
+      "btcUsd": 63511,
+      "change24hPct": 0.28122870114714216,
+      "asOf": "2026-08-13T22:41:10.000Z"
     },
     "fred": {
       "source": "fred",
@@ -1263,15 +1263,15 @@
       "source": "twelvedata",
       "quotes": {
         "XAU/USD": {
-          "price": 4357.5692,
+          "price": 4362.18107,
           "previousClose": 4351.17522,
-          "changePct": 0.14694835
+          "changePct": 0.25293971
         }
       }
     },
     "yahoo": {
-      "usdKrw": 1418.12,
-      "btcUsd": 63541.82
+      "usdKrw": 1418.08,
+      "btcUsd": 63507.69
     }
   }
 }
