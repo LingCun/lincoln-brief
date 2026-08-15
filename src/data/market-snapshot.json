@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-08-14T23:30:51.128Z",
-  "asOfLabel": "8/14 한국·미국 마감",
+  "asOf": "2026-08-15T00:30:53.070Z",
+  "asOfLabel": "8/15 한국·미국 마감",
   "source": "Yahoo Finance · KRX",
   "us": {
     "snapshot": [
@@ -704,12 +704,11 @@
         "ticker": "207940.KS",
         "name": "삼성바이오로직스",
         "price": 1548000,
-        "change": -1000,
-        "changePct": -0.06455777921239508,
+        "change": -16000,
+        "changePct": -1.0230179028132993,
         "currency": "KRW",
         "exchange": "KSC",
         "sparkline": [
-          1406000,
           1421000,
           1405000,
           1422000,
@@ -738,7 +737,8 @@
           1569000,
           1609000,
           1549000,
-          1564000
+          1564000,
+          1548000
         ],
         "available": true
       },
@@ -998,12 +998,11 @@
         "ticker": "055550.KS",
         "name": "신한지주",
         "price": 107400,
-        "change": 3600,
-        "changePct": 3.4682080924855487,
+        "change": 800,
+        "changePct": 0.7504690431519699,
         "currency": "KRW",
         "exchange": "KSC",
         "sparkline": [
-          102200,
           107300,
           107700,
           108600,
@@ -1032,7 +1031,8 @@
           106400,
           104500,
           103800,
-          106600
+          106600,
+          107400
         ],
         "available": true
       },
@@ -1040,12 +1040,11 @@
         "ticker": "035720.KS",
         "name": "카카오",
         "price": 40000,
-        "change": 450,
-        "changePct": 1.1378002528445006,
+        "change": -100,
+        "changePct": -0.24937655860349126,
         "currency": "KRW",
         "exchange": "KSC",
         "sparkline": [
-          35250,
           35500,
           35600,
           35400,
@@ -1074,7 +1073,8 @@
           39550,
           40700,
           39550,
-          40100
+          40100,
+          40000
         ],
         "available": true
       }
@@ -1166,8 +1166,8 @@
     },
     {
       "symbol": "BTC",
-      "value": "$62,887",
-      "change": "-0.81%",
+      "value": "$62,953",
+      "change": "-0.71%",
       "up": false,
       "market": "crypto"
     },
@@ -1201,9 +1201,9 @@
     },
     "crypto": {
       "source": "coingecko",
-      "btcUsd": 62886,
-      "change24hPct": -0.8474311369935225,
-      "asOf": "2026-08-14T23:29:10.000Z"
+      "btcUsd": 62952,
+      "change24hPct": -0.6940435415695061,
+      "asOf": "2026-08-15T00:28:30.000Z"
     },
     "fred": {
       "source": "fred",
@@ -1213,8 +1213,8 @@
           "asOf": "2026-08-13"
         },
         "SP500": {
-          "value": 7798.99,
-          "asOf": "2026-08-13"
+          "value": 7785.76,
+          "asOf": "2026-08-14"
         },
         "NASDAQCOM": {
           "value": 26803.03,
@@ -1263,15 +1263,15 @@
       "source": "twelvedata",
       "quotes": {
         "XAU/USD": {
-          "price": 4375.69513,
+          "price": 4375.70577,
           "previousClose": 4376.56187,
-          "changePct": -0.01980413
+          "changePct": -0.019561017
         }
       }
     },
     "yahoo": {
       "usdKrw": 1416.48,
-      "btcUsd": 62890.16
+      "btcUsd": 62953.11
     }
   }
 }
