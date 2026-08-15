@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-15T07:31:03.171Z",
+  "asOf": "2026-08-15T08:29:44.054Z",
   "asOfLabel": "8/15 한국·미국 마감",
   "source": "Yahoo Finance · KRX",
   "us": {
@@ -23,9 +23,9 @@
       {
         "symbol": "^DJI",
         "label": "DOW",
-        "close": 53732.4,
-        "change": -107.58828124999854,
-        "changePct": -0.19982968920419808,
+        "close": 53732.41,
+        "change": -107.57828124999651,
+        "changePct": -0.1998111156488886,
         "note": "보합"
       },
       {
@@ -1100,9 +1100,9 @@
     {
       "symbol": "^DJI",
       "label": "DOW",
-      "close": 53732.4,
-      "change": -107.58828124999854,
-      "changePct": -0.19982968920419808,
+      "close": 53732.41,
+      "change": -107.57828124999651,
+      "changePct": -0.1998111156488886,
       "note": "보합"
     },
     {
@@ -1131,7 +1131,7 @@
     },
     {
       "symbol": "DOW",
-      "value": "53,732.40",
+      "value": "53,732.41",
       "change": "-0.20%",
       "up": false,
       "market": "us"
@@ -1166,8 +1166,8 @@
     },
     {
       "symbol": "BTC",
-      "value": "$63,004",
-      "change": "+0.05%",
+      "value": "$62,977",
+      "change": "+0.00%",
       "up": true,
       "market": "crypto"
     },
@@ -1201,9 +1201,9 @@
     },
     "crypto": {
       "source": "coingecko",
-      "btcUsd": 63022,
-      "change24hPct": -0.03182016580387997,
-      "asOf": "2026-08-15T07:29:30.000Z"
+      "btcUsd": 62993,
+      "change24hPct": 0.41368551394322955,
+      "asOf": "2026-08-15T08:27:50.000Z"
     },
     "fred": {
       "source": "fred",
@@ -1263,15 +1263,15 @@
       "source": "twelvedata",
       "quotes": {
         "XAU/USD": {
-          "price": 4375.69738,
+          "price": 4375.68407,
           "previousClose": 4376.56187,
-          "changePct": -0.01975272
+          "changePct": -0.02005684
         }
       }
     },
     "yahoo": {
       "usdKrw": 1412,
-      "btcUsd": 63004.1
+      "btcUsd": 62977.15
     }
   }
 }
