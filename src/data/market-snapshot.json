@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-17T06:30:54.286Z",
+  "asOf": "2026-08-17T06:57:03.004Z",
   "asOfLabel": "8/17 한국·미국 마감",
   "source": "Yahoo Finance · KRX",
   "us": {
@@ -567,9 +567,9 @@
       {
         "symbol": "USDKRW",
         "label": "USD/KRW",
-        "close": 1412.41,
-        "change": -4.439975585937418,
-        "changePct": -0.3133694930616256,
+        "close": 1414.02,
+        "change": -2.829975585937518,
+        "changePct": -0.19973713764346737,
         "note": "보합"
       }
     ],
@@ -1159,22 +1159,22 @@
     },
     {
       "symbol": "USD/KRW",
-      "value": "1,412.41",
-      "change": "-0.31%",
+      "value": "1,414.02",
+      "change": "-0.20%",
       "up": false,
       "market": "fx"
     },
     {
       "symbol": "BTC",
-      "value": "$63,510",
-      "change": "+0.77%",
+      "value": "$63,569",
+      "change": "+0.86%",
       "up": true,
       "market": "crypto"
     },
     {
       "symbol": "GOLD",
-      "value": "$4,451.70",
-      "change": "+1.63%",
+      "value": "$4,455.10",
+      "change": "+1.71%",
       "up": true,
       "market": "commodity"
     },
@@ -1201,9 +1201,9 @@
     },
     "crypto": {
       "source": "coingecko",
-      "btcUsd": 63520,
-      "change24hPct": 0.7966381685263433,
-      "asOf": "2026-08-17T06:28:30.000Z"
+      "btcUsd": 63599,
+      "change24hPct": 0.9225517441670168,
+      "asOf": "2026-08-17T06:54:50.000Z"
     },
     "fred": {
       "source": "fred",
@@ -1263,15 +1263,15 @@
       "source": "twelvedata",
       "quotes": {
         "XAU/USD": {
-          "price": 4396.52518,
+          "price": 4402.15196,
           "previousClose": 4375.54686,
-          "changePct": 0.47944453
+          "changePct": 0.60804057
         }
       }
     },
     "yahoo": {
-      "usdKrw": 1412.41,
-      "btcUsd": 63509.64
+      "usdKrw": 1414.02,
+      "btcUsd": 63568.5
     }
   }
 }
