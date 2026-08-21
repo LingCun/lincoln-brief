@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-21T09:37:03.245Z",
+  "asOf": "2026-08-21T10:31:24.528Z",
   "asOfLabel": "8/21 한국·미국 마감",
   "source": "Yahoo Finance · KRX",
   "us": {
@@ -567,9 +567,9 @@
       {
         "symbol": "USDKRW",
         "label": "USD/KRW",
-        "close": 1383.88,
-        "change": -5.520024414062391,
-        "changePct": -0.3972955460678284,
+        "close": 1383.8,
+        "change": -5.6000244140625455,
+        "changePct": -0.4030534270664193,
         "note": "보합"
       }
     ],
@@ -1159,29 +1159,29 @@
     },
     {
       "symbol": "USD/KRW",
-      "value": "1,383.88",
+      "value": "1,383.80",
       "change": "-0.40%",
       "up": false,
       "market": "fx"
     },
     {
       "symbol": "BTC",
-      "value": "$77,872",
-      "change": "+6.63%",
+      "value": "$77,837",
+      "change": "+6.58%",
       "up": true,
       "market": "crypto"
     },
     {
       "symbol": "GOLD",
-      "value": "$4,643.50",
-      "change": "+2.82%",
+      "value": "$4,641.80",
+      "change": "+2.78%",
       "up": true,
       "market": "commodity"
     },
     {
       "symbol": "WTI",
-      "value": "$86.22",
-      "change": "-1.83%",
+      "value": "$87.22",
+      "change": "-0.69%",
       "up": false,
       "market": "commodity"
     },
@@ -1201,9 +1201,9 @@
     },
     "crypto": {
       "source": "coingecko",
-      "btcUsd": 77884,
-      "change24hPct": 8.241902837299095,
-      "asOf": "2026-08-21T09:34:50.000Z"
+      "btcUsd": 77860,
+      "change24hPct": 8.247592609445103,
+      "asOf": "2026-08-21T10:29:20.000Z"
     },
     "fred": {
       "source": "fred",
@@ -1263,15 +1263,15 @@
       "source": "twelvedata",
       "quotes": {
         "XAU/USD": {
-          "price": 4583.8811,
+          "price": 4587.04235,
           "previousClose": 4519.34377,
-          "changePct": 1.42802
+          "changePct": 1.49797
         }
       }
     },
     "yahoo": {
-      "usdKrw": 1383.88,
-      "btcUsd": 77871.72
+      "usdKrw": 1383.8,
+      "btcUsd": 77837.41
     }
   }
 }
