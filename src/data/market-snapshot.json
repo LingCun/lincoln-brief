@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-22T02:54:41.706Z",
+  "asOf": "2026-08-22T03:42:21.757Z",
   "asOfLabel": "8/22 한국·미국 마감",
   "source": "Yahoo Finance · KRX",
   "us": {
@@ -567,9 +567,9 @@
       {
         "symbol": "USDKRW",
         "label": "USD/KRW",
-        "close": 1385,
-        "change": -5.7900390625,
-        "changePct": -0.4163129516230167,
+        "close": 1383.9,
+        "change": -6.890039062499909,
+        "changePct": -0.49540468862894127,
         "note": "보합"
       }
     ],
@@ -1159,15 +1159,15 @@
     },
     {
       "symbol": "USD/KRW",
-      "value": "1,385.00",
-      "change": "-0.42%",
+      "value": "1,383.90",
+      "change": "-0.50%",
       "up": false,
       "market": "fx"
     },
     {
       "symbol": "BTC",
-      "value": "$78,444",
-      "change": "+7.41%",
+      "value": "$78,616",
+      "change": "+7.64%",
       "up": true,
       "market": "crypto"
     },
@@ -1201,9 +1201,9 @@
     },
     "crypto": {
       "source": "coingecko",
-      "btcUsd": 78399,
-      "change24hPct": 5.282310039360515,
-      "asOf": "2026-08-22T02:52:00.000Z"
+      "btcUsd": 78673,
+      "change24hPct": 5.570810922950068,
+      "asOf": "2026-08-22T03:40:20.000Z"
     },
     "fred": {
       "source": "fred",
@@ -1217,8 +1217,8 @@
           "asOf": "2026-08-21"
         },
         "NASDAQCOM": {
-          "value": 26067.17,
-          "asOf": "2026-08-20"
+          "value": 26180.45,
+          "asOf": "2026-08-21"
         },
         "DJIA": {
           "value": 53277.01,
@@ -1263,15 +1263,15 @@
       "source": "twelvedata",
       "quotes": {
         "XAU/USD": {
-          "price": 4608.27843,
+          "price": 4608.25915,
           "previousClose": 4603.92129,
-          "changePct": 0.094639759
+          "changePct": 0.094220985
         }
       }
     },
     "yahoo": {
-      "usdKrw": 1385,
-      "btcUsd": 78443.71
+      "usdKrw": 1383.9,
+      "btcUsd": 78607.96
     }
   }
 }
