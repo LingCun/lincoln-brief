@@ -37,3 +37,8 @@ commit-msg.txt
 deploy.bat
 run-dev.bat
 .vercel
+
+# 슬라이드쇼 영상 작업 폴더 (원본 이미지·렌더 결과는 커밋하지 않음)
+video-input/*
+!video-input/.gitkeep
+video-output/

@@ -14,6 +14,7 @@ npm run preview              # preview built site, search works here
 npm run fetch:market         # refresh src/data/market-snapshot.json from Yahoo Finance (+ KRX if KRX_API_KEY)
 npm run generate:daily-brief # generate today's draft post + SVG thumbnail from the snapshot
 npm run inline:thumbnails    # MUST run after creating/editing any thumbnail SVG that references a photo
+npm run make:video           # video-input/ 이미지들 → 9:16 세로 슬라이드쇼 mp4 (ffmpeg 필요)
 ```
 
 블로그 글 관리 GUI: `https://lincoln-brief.vercel.app/keystatic` — 자세히는 아래 "CMS — Keystatic admin" 절.

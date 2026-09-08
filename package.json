@@ -14,6 +14,7 @@
     "fetch:market": "node scripts/fetch-market.mjs",
     "generate:daily-brief": "node scripts/generate-daily-brief.mjs",
     "inline:thumbnails": "node scripts/inline-thumbnail-photos.mjs",
+    "make:video": "node scripts/images-to-video.mjs",
     "test": "vitest run",
     "test:watch": "vitest"
   },
