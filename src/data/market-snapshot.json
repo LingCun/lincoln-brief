@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-09-16T20:58:32.795Z",
+  "asOf": "2026-09-16T23:34:38.499Z",
   "asOfLabel": "9/16 한국·미국 마감",
   "source": "Yahoo Finance · KRX",
   "us": {
@@ -567,9 +567,9 @@
       {
         "symbol": "USDKRW",
         "label": "USD/KRW",
-        "close": 1377.33,
-        "change": 13.760053710937427,
-        "changePct": 1.0091197557107525,
+        "close": 1377.22,
+        "change": 13.650053710937527,
+        "changePct": 1.001052696129448,
         "note": "상승"
       }
     ],
@@ -1159,29 +1159,29 @@
     },
     {
       "symbol": "USD/KRW",
-      "value": "1,377.33",
-      "change": "+1.01%",
+      "value": "1,377.22",
+      "change": "+1.00%",
       "up": true,
       "market": "fx"
     },
     {
       "symbol": "BTC",
-      "value": "$76,110",
-      "change": "+0.66%",
+      "value": "$76,045",
+      "change": "+0.57%",
       "up": true,
       "market": "crypto"
     },
     {
       "symbol": "GOLD",
-      "value": "$4,303.70",
-      "change": "-0.67%",
+      "value": "$4,310.10",
+      "change": "-0.52%",
       "up": false,
       "market": "commodity"
     },
     {
       "symbol": "WTI",
-      "value": "$102.13",
-      "change": "-3.50%",
+      "value": "$101.99",
+      "change": "-3.63%",
       "up": false,
       "market": "commodity"
     },
@@ -1201,9 +1201,9 @@
     },
     "crypto": {
       "source": "coingecko",
-      "btcUsd": 76077,
-      "change24hPct": 0.2293314692448586,
-      "asOf": "2026-09-16T20:56:50.000Z"
+      "btcUsd": 76032,
+      "change24hPct": 0.6207503885512726,
+      "asOf": "2026-09-16T23:32:00.000Z"
     },
     "fred": {
       "source": "fred",
@@ -1221,8 +1221,8 @@
           "asOf": "2026-09-15"
         },
         "DJIA": {
-          "value": 52093.11,
-          "asOf": "2026-09-15"
+          "value": 51461.9,
+          "asOf": "2026-09-16"
         },
         "DCOILWTICO": {
           "value": 107.02,
@@ -1263,15 +1263,15 @@
       "source": "twelvedata",
       "quotes": {
         "XAU/USD": {
-          "price": 4262.6618,
-          "previousClose": 4293.79613,
-          "changePct": -0.72510033
+          "price": 4272.04897,
+          "previousClose": 4264.06814,
+          "changePct": 0.18716469
         }
       }
     },
     "yahoo": {
-      "usdKrw": 1377.33,
-      "btcUsd": 76109.54
+      "usdKrw": 1377.19,
+      "btcUsd": 76044.79
     }
   }
 }
