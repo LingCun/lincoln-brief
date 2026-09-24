@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-09-24T07:20:05.979Z",
+  "asOf": "2026-09-24T13:19:38.006Z",
   "asOfLabel": "9/24 한국·미국 마감",
   "source": "Yahoo Finance · KRX",
   "us": {
@@ -23,9 +23,9 @@
       {
         "symbol": "^DJI",
         "label": "DOW",
-        "close": 51511.6,
-        "change": -537.2281250000015,
-        "changePct": -1.0321618071972711,
+        "close": 51511.59,
+        "change": -537.2381250000035,
+        "changePct": -1.0321810199257075,
         "note": "하락"
       },
       {
@@ -567,9 +567,9 @@
       {
         "symbol": "USDKRW",
         "label": "USD/KRW",
-        "close": 1368.17,
-        "change": 17.810014648437573,
-        "changePct": 1.3189086496665394,
+        "close": 1366.74,
+        "change": 16.38001464843751,
+        "changePct": 1.2130109619749296,
         "note": "상승"
       }
     ],
@@ -1100,9 +1100,9 @@
     {
       "symbol": "^DJI",
       "label": "DOW",
-      "close": 51511.6,
-      "change": -537.2281250000015,
-      "changePct": -1.0321618071972711,
+      "close": 51511.59,
+      "change": -537.2381250000035,
+      "changePct": -1.0321810199257075,
       "note": "하락"
     },
     {
@@ -1131,7 +1131,7 @@
     },
     {
       "symbol": "DOW",
-      "value": "51,511.60",
+      "value": "51,511.59",
       "change": "-1.03%",
       "up": false,
       "market": "us"
@@ -1159,37 +1159,37 @@
     },
     {
       "symbol": "USD/KRW",
-      "value": "1,368.17",
-      "change": "+1.32%",
+      "value": "1,366.74",
+      "change": "+1.21%",
       "up": true,
       "market": "fx"
     },
     {
       "symbol": "BTC",
-      "value": "$84,163",
-      "change": "-0.26%",
+      "value": "$83,822",
+      "change": "-0.67%",
       "up": false,
       "market": "crypto"
     },
     {
       "symbol": "GOLD",
-      "value": "$4,318.50",
-      "change": "+0.00%",
-      "up": true,
+      "value": "$4,315.10",
+      "change": "-0.08%",
+      "up": false,
       "market": "commodity"
     },
     {
       "symbol": "WTI",
-      "value": "$92.44",
-      "change": "+0.30%",
+      "value": "$93.73",
+      "change": "+1.70%",
       "up": true,
       "market": "commodity"
     },
     {
       "symbol": "US10Y",
-      "value": "5.114%",
-      "change": "+3.04%",
-      "up": true,
+      "value": "5.098%",
+      "change": "-0.31%",
+      "up": false,
       "market": "yield"
     }
   ],
@@ -1201,9 +1201,9 @@
     },
     "crypto": {
       "source": "coingecko",
-      "btcUsd": 84118,
-      "change24hPct": -2.6477789028796783,
-      "asOf": "2026-09-24T07:18:00.000Z"
+      "btcUsd": 83776,
+      "change24hPct": -1.8806559653129156,
+      "asOf": "2026-09-24T13:18:00.000Z"
     },
     "fred": {
       "source": "fred",
@@ -1263,15 +1263,15 @@
       "source": "twelvedata",
       "quotes": {
         "XAU/USD": {
-          "price": 4286.14246,
+          "price": 4277.69112,
           "previousClose": 4286.97334,
-          "changePct": -0.019381506
+          "changePct": -0.21652152
         }
       }
     },
     "yahoo": {
-      "usdKrw": 1368.17,
-      "btcUsd": 84162.98
+      "usdKrw": 1366.78,
+      "btcUsd": 83821.62
     }
   }
 }
