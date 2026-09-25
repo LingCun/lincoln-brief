@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-09-25T20:18:07.233Z",
+  "asOf": "2026-09-25T23:52:42.332Z",
   "asOfLabel": "9/25 한국·미국 마감",
   "source": "Yahoo Finance · KRX",
   "us": {
@@ -419,9 +419,9 @@
       {
         "ticker": "LLY",
         "name": "Eli Lilly",
-        "price": 1184.33,
-        "change": 2.4399853515624272,
-        "changePct": 0.2064477507484671,
+        "price": 1183.46,
+        "change": 1.5699853515625364,
+        "changePct": 0.13283684032388926,
         "currency": "USD",
         "exchange": "NYQ",
         "sparkline": [
@@ -454,7 +454,7 @@
           1170.1400146484375,
           1150.989990234375,
           1181.8900146484375,
-          1184.3299560546875
+          1183.4599609375
         ],
         "available": true
       },
@@ -567,9 +567,9 @@
       {
         "symbol": "USDKRW",
         "label": "USD/KRW",
-        "close": 1355.79,
-        "change": -11.569985351562536,
-        "changePct": -0.8461550341907783,
+        "close": 1355.28,
+        "change": -12.079985351562527,
+        "changePct": -0.8834531857721898,
         "note": "하락"
       }
     ],
@@ -1159,29 +1159,29 @@
     },
     {
       "symbol": "USD/KRW",
-      "value": "1,355.79",
-      "change": "-0.85%",
+      "value": "1,355.28",
+      "change": "-0.88%",
       "up": false,
       "market": "fx"
     },
     {
       "symbol": "BTC",
-      "value": "$83,975",
-      "change": "-0.48%",
+      "value": "$84,070",
+      "change": "-0.37%",
       "up": false,
       "market": "crypto"
     },
     {
       "symbol": "GOLD",
-      "value": "$4,326.80",
-      "change": "+0.67%",
+      "value": "$4,320.50",
+      "change": "+0.52%",
       "up": true,
       "market": "commodity"
     },
     {
       "symbol": "WTI",
-      "value": "$92.53",
-      "change": "-2.20%",
+      "value": "$92.44",
+      "change": "-2.29%",
       "up": false,
       "market": "commodity"
     },
@@ -1201,9 +1201,9 @@
     },
     "crypto": {
       "source": "coingecko",
-      "btcUsd": 83954,
-      "change24hPct": -0.3219305368582432,
-      "asOf": "2026-09-25T20:15:50.000Z"
+      "btcUsd": 84064,
+      "change24hPct": -0.3856489636434189,
+      "asOf": "2026-09-25T23:50:20.000Z"
     },
     "fred": {
       "source": "fred",
@@ -1221,8 +1221,8 @@
           "asOf": "2026-09-24"
         },
         "DJIA": {
-          "value": 51349.98,
-          "asOf": "2026-09-24"
+          "value": 51828.62,
+          "asOf": "2026-09-25"
         },
         "DCOILWTICO": {
           "value": 96.41,
@@ -1263,15 +1263,15 @@
       "source": "twelvedata",
       "quotes": {
         "XAU/USD": {
-          "price": 4290.83834,
-          "previousClose": 4275.2841,
-          "changePct": 0.36381769
+          "price": 4286.13784,
+          "previousClose": 4286.73973,
+          "changePct": -0.01404074
         }
       }
     },
     "yahoo": {
-      "usdKrw": 1355.79,
-      "btcUsd": 83975
+      "usdKrw": 1355.28,
+      "btcUsd": 84070.38
     }
   }
 }
