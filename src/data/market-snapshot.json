@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-09-26T14:12:32.556Z",
+  "asOf": "2026-09-26T18:24:17.658Z",
   "asOfLabel": "9/26 한국·미국 마감",
   "source": "Yahoo Finance · KRX",
   "us": {
@@ -1166,9 +1166,9 @@
     },
     {
       "symbol": "BTC",
-      "value": "$83,933",
-      "change": "-0.12%",
-      "up": false,
+      "value": "$84,083",
+      "change": "+0.06%",
+      "up": true,
       "market": "crypto"
     },
     {
@@ -1201,9 +1201,9 @@
     },
     "crypto": {
       "source": "coingecko",
-      "btcUsd": 83922,
-      "change24hPct": 0.47135297159630063,
-      "asOf": "2026-09-26T14:10:20.000Z"
+      "btcUsd": 84070,
+      "change24hPct": 0.08206217767527804,
+      "asOf": "2026-09-26T18:22:10.000Z"
     },
     "fred": {
       "source": "fred",
@@ -1263,15 +1263,15 @@
       "source": "twelvedata",
       "quotes": {
         "XAU/USD": {
-          "price": 4286.22028,
+          "price": 4286.12676,
           "previousClose": 4286.73973,
-          "changePct": -0.012117601
+          "changePct": -0.014299212
         }
       }
     },
     "yahoo": {
       "usdKrw": 1354.4,
-      "btcUsd": 83933.12
+      "btcUsd": 84082.6
     }
   }
 }
